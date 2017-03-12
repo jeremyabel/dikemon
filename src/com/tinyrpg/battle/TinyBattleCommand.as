@@ -116,8 +116,7 @@ package com.tinyrpg.battle
 				{
 					break;
 				}
-			}
-			
+			}	
 		}
 		
 		

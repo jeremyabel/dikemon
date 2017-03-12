@@ -20,9 +20,9 @@ package com.tinyrpg.display
 			this.item = item;
 			
 			// Make quantity text field
-			this.quantityField = TinyFontManager.returnTextField();
-			this.quantityField.x = 80;
-			this.quantityField.y = 1;
+			this.quantityField = TinyFontManager.returnTextField( 'right' );
+			this.quantityField.x = 126;
+			this.quantityField.y = 4;
 			
 			// Add 'em up
 			this.addChild( this.quantityField );
@@ -34,9 +34,9 @@ package com.tinyrpg.display
 		
 		public function updateQuantity() : void
 		{
-			TinyLogManager.log('updateQuantity', this);
+			TinyLogManager.log('updateQuantity: ' + this.item.quantity, this);
 			
-			this.quantityField.htmlText = TinyFontManager.returnHtmlText( this.item.quantity + 'battleItemHP', 'right' );
+			this.quantityField.htmlText = TinyFontManager.returnHtmlText( this.item.quantity.toString(), 'battleItemHP', 'right' );
 		}
 	}
 }

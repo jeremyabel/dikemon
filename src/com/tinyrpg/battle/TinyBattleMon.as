@@ -131,8 +131,8 @@ package com.tinyrpg.battle
 			
 			// Item select menu
 			this.itemSelectorList = new TinyBattleItemList( this.m_testPlayerTrainer );
-			this.itemSelectorList.x = 25;
-			this.itemSelectorList.y = 20;
+			this.itemSelectorList.x = 28;
+			this.itemSelectorList.y = 49;
 			this.itemSelectorList.visible = false;
 			
 			// Player ball display

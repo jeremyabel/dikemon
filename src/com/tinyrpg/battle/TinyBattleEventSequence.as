@@ -633,14 +633,10 @@ package com.tinyrpg.battle
 		private function doPlayAttackAnim( attackAnim : TinyMoveFXAnimation ) : void
 		{
 			TinyLogManager.log('doPlayAttackAnim', this);
-			
-			var palette : TinyBattlePalette = this.m_hostBattle.getBattlePalette();
-			
-			TinyLogManager.log( palette.toString(), this );
-			
+							
 			this.currentAttackAnimation = attackAnim;
 			this.currentAttackAnimation.addEventListener( Event.COMPLETE, this.onPlayAttackAnimComplete );
-			this.currentAttackAnimation.setBattlePalette( palette );
+			this.currentAttackAnimation.setBattlePalette( this.m_hostBattle.getBattlePalette() );
 			this.currentAttackAnimation.captureBattleBitmap( this.m_hostBattle );
 			this.currentAttackAnimation.play();
 			this.currentAttackAnimation.x = 

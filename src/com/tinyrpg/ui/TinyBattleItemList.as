@@ -1,12 +1,16 @@
 package com.tinyrpg.ui 
 {
+	import flash.text.TextField;
+	
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyItemDataList;
+	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.display.TinySelectableItemItem;
-	import com.tinyrpg.events.TinyBattleEvent;
+	import com.tinyrpg.events.TinyBattleMonEvent;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -15,6 +19,8 @@ package com.tinyrpg.ui
 	public class TinyBattleItemList extends TinySelectList 
 	{
 		private var trainer : TinyTrainer;
+		private var descriptionTextField : TextField;
+		private var descriptionBox : TinyContentBox;
 		
 		private static const CANCEL_OPTION : String = 'CANCEL';
 		
@@ -38,8 +44,21 @@ package com.tinyrpg.ui
 			newItemArray.push( new TinySelectableItem( CANCEL_OPTION, newItemArray.length ) );
 			
 			super( '', newItemArray, 124, 48, 10, 1, 0 );
+			
+			// Make description text field
+			this.descriptionTextField = TinyFontManager.returnTextField('none');
+			this.descriptionTextField.width = 141;
+			this.descriptionTextField.height = 20;
+			
+			// Make description content box
+			this.descriptionBox = new TinyContentBox( this.descriptionTextField, 144, 33 );
+			this.descriptionBox.x = -28;
+			this.descriptionBox.y = 49;
+			
+			// Add 'em up
+			this.addChild( this.descriptionBox );
 		}
-		
+
 		public function removeItem( targetItem : TinyItem ) : void
 		{
 			TinyLogManager.log('removeItem: ' + targetItem.name, this);
@@ -148,7 +167,7 @@ package com.tinyrpg.ui
 				}
 				else
 				{
-					this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.ITEM_USED, null, TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ) ) );
+					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ) ) );
 				}
 			}
 		}

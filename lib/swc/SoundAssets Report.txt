@@ -3,66 +3,56 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1         188209         188209    Scene 1 (AS 3.0 Classes Export Frame)
+      1        2071588        2071588    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0             0                  7737
+Scene 1              0             0                  7209
 
 ActionScript Bytes    Location
 ------------------    --------
-               345    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBattleStart
-               335    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBossDie
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBuy
-               332    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCancel
-               352    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundComputerAttack
-               332    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCursor
-               345    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyAttack
-               337    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyDie
-               340    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundErrorBuzz
-               340    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundExplosion
-               342    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFishAttack
-               330    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFlash
-               330    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHealA
-               327    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHitA
-               350    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundImpossibleHit
-               327    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundMiss
-               332    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundPickup
-               347    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRachelAttack
-               335    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRecruit
-               340    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRonAttack
-               332    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundSelect
-               327    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundText
-               335    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundUseItem
+               399    Scene 1:Frame 1:com.tinyrpg.media.music.MusicTitle
+               411    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBattleStart
+               387    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBuy
+               396    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCancel
+               396    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCursor
+               411    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyAttack
+               402    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyDie
+               405    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundErrorBuzz
+               408    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFishAttack
+               393    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHealA
+               390    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHitA
+               417    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundImpossibleHit
+               390    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundMiss
+               414    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRachelAttack
+               399    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRecruit
+               405    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRonAttack
+               396    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundSelect
+               390    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundText
 
 Event Sounds: 44KHz Stereo 16 kbps MP3
 
 
-Sound name             Bytes         Format
--------------------    ----------    ------
-text.wav                      880    44KHz Mono 80 kbps MP3
-select.wav                    445    11KHz Mono 16 kbps MP3
-Ron_Shoot.wav               33922    22KHz Stereo 64 kbps MP3
-Recruit.wav                 10522    22KHz Stereo 48 kbps MP3
-Rachel_Attack.wav            2400    44KHz Stereo 80 kbps MP3
-present.wav                   531    11KHz Mono 16 kbps MP3
-pickup.wav                    877    11KHz Mono 16 kbps MP3
-Miss.wav                     2400    44KHz Stereo 80 kbps MP3
-ImpossibleHit.wav            4571    44KHz Mono 80 kbps MP3
-Hit_Default.wav              2183    44KHz Stereo 80 kbps MP3
-Heal_001.wav                 8913    44KHz Stereo 80 kbps MP3
-flash.wav                    9998    44KHz Mono 80 kbps MP3
-Fish_Attack.wav              5656    44KHz Stereo 80 kbps MP3
-Explosion.wav               26715    44KHz Stereo 80 kbps MP3
-error.wav                    4566    44KHz Mono 112 kbps MP3
-EnemyDie.wav                 6525    44KHz Stereo 80 kbps MP3
-EnemyDefault.mp3            19985    44KHz Mono 80 kbps MP3
-cursverti.wav                 445    11KHz Mono 16 kbps MP3
-curshoriz.wav                 358    22KHz Mono 32 kbps MP3
-Computer_Attack.wav          2261    11KHz Mono 16 kbps MP3
-buy.wav                      2066    22KHz Mono 48 kbps MP3
-Boss_Die.wav                27366    44KHz Stereo 80 kbps MP3
-Battle - Start.wav           6091    44KHz Stereo 80 kbps MP3
+Sound name              Bytes         Format
+--------------------    ----------    ------
+text.wav                      1059    44KHz Mono 80 kbps MP3
+select.wav                     535    11KHz Mono 16 kbps MP3
+Ron_Shoot.wav                30591    22KHz Stereo 48 kbps MP3
+Recruit.wav                  12651    22KHz Stereo 48 kbps MP3
+Rachel_Attack.wav              951    11KHz Mono 16 kbps MP3
+Miss.wav                      1367    22KHz Mono 32 kbps MP3
+ImpossibleHit.wav             3005    22KHz Mono 48 kbps MP3
+Hit_Default.wav                951    22KHz Mono 24 kbps MP3
+Heal_001.wav                  6723    22KHz Stereo 48 kbps MP3
+Fish_Attack.wav               1679    11KHz Mono 16 kbps MP3
+error.wav                     5490    44KHz Mono 112 kbps MP3
+EnemyDie.wav                  1887    11KHz Mono 16 kbps MP3
+EnemyDefault.mp3              5111    11KHz Mono 16 kbps MP3
+cursverti.wav                  535    11KHz Mono 16 kbps MP3
+curshoriz.wav                  431    22KHz Mono 32 kbps MP3
+buy.wav                       2485    22KHz Mono 48 kbps MP3
+Battle - Start.wav            4539    22KHz Stereo 48 kbps MP3
+01 - Let's Play!.mp3       1983650    11KHz Mono 16 kbps MP3
 
 
 
