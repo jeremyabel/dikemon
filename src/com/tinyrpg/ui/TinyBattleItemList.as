@@ -52,8 +52,8 @@ package com.tinyrpg.ui
 			
 			// Make description content box
 			this.descriptionBox = new TinyContentBox( this.descriptionTextField, 144, 33 );
-			this.descriptionBox.x = -28;
-			this.descriptionBox.y = 49;
+			this.descriptionBox.x = -20;
+			this.descriptionBox.y = 55;
 			
 			// Add 'em up
 			this.addChild( this.descriptionBox );
