@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MOVES>
+  <MOVE>
+    <ORIG_MOVE_NAME>Absorb</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex; Ralph; Mercy</WHO>
+    <DESCRIPTION>An attack that absorbs half the damage inflicted.</DESCRIPTION>
+    <EFFECT>HIT ABSORB</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>GRASS</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Agility</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton; Chris; Ralph; Quinn; Yulia</WHO>
+    <DESCRIPTION>Relaxes the body to sharply boost Speed.</DESCRIPTION>
+    <EFFECT>SPEED_UP_2</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>0</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Ancient Power</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Evan A.; Mercy; Quinn</WHO>
+    <DESCRIPTION>An ancient power is used to attack. It may also raise all the user's stats.</DESCRIPTION>
+    <EFFECT>HIT ALL_STATS_UP</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>ROCK</TYPE>
+    <ACC>100</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Astonish</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex</WHO>
+    <DESCRIPTION>An attack using a startling shout. It also may make the foe flinch.</DESCRIPTION>
+    <EFFECT>HIT FLINCH</EFFECT>
+    <POWER>30</POWER>
+    <TYPE>GHOST</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Bite</ORIG_MOVE_NAME>
+    <MOVE_NAME>Munch</MOVE_NAME>
+    <WHO>Markuska; Jason; Quinn; Clegg</WHO>
+    <DESCRIPTION>Bites with vicious fangs. May cause flinching.</DESCRIPTION>
+    <EFFECT>HIT FLINCH</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>DARK</TYPE>
+    <ACC>100</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Blaze Kick</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill</WHO>
+    <DESCRIPTION>A fiery kick with a high critical-hit ratio. It may also burn the foe.</DESCRIPTION>
+    <EFFECT>HIT BURN HIGH_CRITICAL</EFFECT>
+    <POWER>85</POWER>
+    <TYPE>FIRE</TYPE>
+    <ACC>90</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Bubble</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Yulia</WHO>
+    <DESCRIPTION>A spray of bubbles hits the foe. It may lower the foe's Speed stat.</DESCRIPTION>
+    <EFFECT>HIT SPEED_DOWN</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Bulk Up</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill</WHO>
+    <DESCRIPTION>Bulks up the body to boost both Attack and Defense.</DESCRIPTION>
+    <EFFECT>ATTACK_UP DEFENSE_UP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Clamp</ORIG_MOVE_NAME>
+    <MOVE_NAME>Cling</MOVE_NAME>
+    <WHO>Clegg</WHO>
+    <DESCRIPTION>Grips the target in the attacker's shell for two to five turns.</DESCRIPTION>
+    <EFFECT>HIT MULTI_HIT</EFFECT>
+    <POWER>35</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>75</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>100</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Confuse Ray</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi</WHO>
+    <DESCRIPTION>A sinister ray that confuses the foe.</DESCRIPTION>
+    <EFFECT>CONFUSE </EFFECT>
+    <POWER>0</POWER>
+    <TYPE>GHOST</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Confusion</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton; Mercy; Nash</WHO>
+    <DESCRIPTION>A psychic attack that may cause confusion.</DESCRIPTION>
+    <EFFECT>HIT CONFUSE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>100</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Cosmic Power</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Nash</WHO>
+    <DESCRIPTION>Raises Defense and Sp. Def with a mystic power.</DESCRIPTION>
+    <EFFECT>DEFENSE_UP SP_DEFENSE_UP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Crunch</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska; Jason; Clegg</WHO>
+    <DESCRIPTION>The foe is crunched with sharp fangs. It may lower the foe's Sp. Def.</DESCRIPTION>
+    <EFFECT>HIT SP_DEFENSE_DOWN</EFFECT>
+    <POWER>80</POWER>
+    <TYPE>DARK</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>20</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Detect</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ralph</WHO>
+    <DESCRIPTION>Evades attack, but may fail if used in succession.</DESCRIPTION>
+    <EFFECT>PROTECT</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>0</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>3</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Double Edge</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Stark; Nash</WHO>
+    <DESCRIPTION>A life-risking tackle that also hurts the user.</DESCRIPTION>
+    <EFFECT>HIT RECOIL</EFFECT>
+    <POWER>120</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Double Kick</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill; Chris</WHO>
+    <DESCRIPTION>A double-kicking attack that strikes the foe twice.</DESCRIPTION>
+    <EFFECT>HIT DOUBLE_HIT</EFFECT>
+    <POWER>30</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Dragon Breath</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Jason; Abel</WHO>
+    <DESCRIPTION>The foe is hit with an incredible blast of breath that may also paralyze.</DESCRIPTION>
+    <EFFECT>HIT PARALYZE</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>DRAGON</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Dragon Dance</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel; Yulia</WHO>
+    <DESCRIPTION>A mystical dance that ups Attack and Speed.</DESCRIPTION>
+    <EFFECT>ATTACK_UP SPEED_UP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>DRAGON</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Dream Eater</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi</WHO>
+    <DESCRIPTION>Steals HP from a sleeping victim.</DESCRIPTION>
+    <EFFECT>HIT DREAM_EATER</EFFECT>
+    <POWER>100</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Dynamic Punch</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon</WHO>
+    <DESCRIPTION>The foe is punched with the user's full power. It confuses the foe if it hits.</DESCRIPTION>
+    <EFFECT>HIT CONFUSE</EFFECT>
+    <POWER>100</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>50</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Ember</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska; Bill</WHO>
+    <DESCRIPTION>The foe is attacked with small flames. The foe may suffer a burn.</DESCRIPTION>
+    <EFFECT>HIT BURN</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>FIRE</TYPE>
+    <ACC>100</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Explosion</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Stark</WHO>
+    <DESCRIPTION>The user explodes to inflict terrible damage even while fainting itself.</DESCRIPTION>
+    <EFFECT>HIT EXPLOSION</EFFECT>
+    <POWER>250</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Fake Out</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex</WHO>
+    <DESCRIPTION>An attack that hits first and causes flinching. Usable only on 1st turn.</DESCRIPTION>
+    <EFFECT>HIT FLINCH</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>1</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Fake Tears</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ron</WHO>
+    <DESCRIPTION>Feigns crying to sharply lower the foe's Sp. Def.</DESCRIPTION>
+    <EFFECT>SP_DEFENSE_DOWN_2</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>DARK</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>False Swipe</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ralph</WHO>
+    <DESCRIPTION>An attack that leaves the foe with at least 1 HP.</DESCRIPTION>
+    <EFFECT>HIT FALSE_SWIPE</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Feint Attack</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska; Jason; Ron</WHO>
+    <DESCRIPTION>Draws the foe close, then strikes without fail.</DESCRIPTION>
+    <EFFECT>HIT ALWAYS_HIT</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>DARK</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Fire Punch</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill</WHO>
+    <DESCRIPTION>A fiery punch that may burn the foe.</DESCRIPTION>
+    <EFFECT>HIT BURN</EFFECT>
+    <POWER>75</POWER>
+    <TYPE>FIRE</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Flamethrower</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska</WHO>
+    <DESCRIPTION>The foe is scorched with intense flames. The foe may suffer a burn.</DESCRIPTION>
+    <EFFECT>HIT BURN</EFFECT>
+    <POWER>95</POWER>
+    <TYPE>FIRE</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Focus Energy</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon; Bill</WHO>
+    <DESCRIPTION>Focuses power to raise the critical-hit ratio.</DESCRIPTION>
+    <EFFECT>CRIT_CHANCE_UP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Fury Swipes</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex; Ron</WHO>
+    <DESCRIPTION>Rakes the foe with sharp claws, etc., 2 to 5 times.</DESCRIPTION>
+    <EFFECT>MULTI_HIT</EFFECT>
+    <POWER>18</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>80</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Growl</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex; Bill; Dave</WHO>
+    <DESCRIPTION>The user growls in a cute way, making the foe lower its Attack. stat.</DESCRIPTION>
+    <EFFECT>ATTACK_DOWN</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Heal Bell</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Mercy</WHO>
+    <DESCRIPTION>Chimes soothingly to heal all status abnormalities.</DESCRIPTION>
+    <EFFECT>HEAL_BELL</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Howl</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska</WHO>
+    <DESCRIPTION>The user howls to raise its spirit and boost its Attack stat.</DESCRIPTION>
+    <EFFECT>ATTACK_UP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Hydro Pump</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex; Ziggy; Yulia; Clegg</WHO>
+    <DESCRIPTION>Blasts water at high power to strike the foe.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>120</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>80</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Hyper Beam</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton; Jason; Quinn</WHO>
+    <DESCRIPTION>A severely damaging attack that makes the user rest on the next turn.</DESCRIPTION>
+    <EFFECT>HIT RECHARGE</EFFECT>
+    <POWER>150</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>90</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Hypnosis</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi</WHO>
+    <DESCRIPTION>A hypnotizing move that may induce sleep.</DESCRIPTION>
+    <EFFECT>SLEEP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>60</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Iron Defense</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton</WHO>
+    <DESCRIPTION>Hardens the body's surface to sharply raise Defense.</DESCRIPTION>
+    <EFFECT>DEFENSE_UP_2</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>STEEL</TYPE>
+    <ACC>0</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Karate Chop</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon</WHO>
+    <DESCRIPTION>The target is attacked with a sharp chop. Critical hits land more easily.</DESCRIPTION>
+    <EFFECT>HIT HIGH_CRITICAL</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>100</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Leaf Blade</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ralph</WHO>
+    <DESCRIPTION>Slashes with a sharp leaf. High critical-hit ratio.</DESCRIPTION>
+    <EFFECT>HIT HIGH_CRITICAL</EFFECT>
+    <POWER>70</POWER>
+    <TYPE>GRASS</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Leer</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon; Maruska; Ralph; Ron; Yulia</WHO>
+    <DESCRIPTION>The foe is given an intimidating look that lowers its Defense.</DESCRIPTION>
+    <EFFECT>DEFENSE_DOWN</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Lick</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi; Ron</WHO>
+    <DESCRIPTION>Licks with a long tongue to injure. May also paralyze.</DESCRIPTION>
+    <EFFECT>HIT PARALYZE</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>GHOST</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Low Kick</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon</WHO>
+    <DESCRIPTION>A low, tripping kick that inflicts more damage on heavier foes.</DESCRIPTION>
+    <EFFECT>HIT LOW_KICK</EFFECT>
+    <POWER>1</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Luster Purge</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel</WHO>
+    <DESCRIPTION>Attacks with a burst of light. May lower Sp. Def.</DESCRIPTION>
+    <EFFECT>HIT SP_DEFENSE_DOWN</EFFECT>
+    <POWER>70</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>100</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>50</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Mean Look</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi</WHO>
+    <DESCRIPTION>Fixes the foe with a mean look that prevents escape.</DESCRIPTION>
+    <EFFECT>MEAN_LOOK</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Mega Punch</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Evan A.</WHO>
+    <DESCRIPTION>A strong punch thrown with incredible power.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>80</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>85</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Metal Claw</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton</WHO>
+    <DESCRIPTION>The foe is attacked with steel claws. It may also raise the user's Attack.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_UP</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>STEEL</TYPE>
+    <ACC>95</ACC>
+    <PP>35</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Meteor Mash</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton</WHO>
+    <DESCRIPTION>Fires a meteor-like punch. May raise Attack.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_UP</EFFECT>
+    <POWER>100</POWER>
+    <TYPE>STEEL</TYPE>
+    <ACC>85</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>20</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Metronome</ORIG_MOVE_NAME>
+    <MOVE_NAME>Whatever</MOVE_NAME>
+    <WHO>Evan A.</WHO>
+    <DESCRIPTION>Waggles a finger to use any Pokémon move at random.</DESCRIPTION>
+    <EFFECT>METRONOME</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SPECIAL</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Mud Slap</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Dave</WHO>
+    <DESCRIPTION>Hurls mud in the foe's face to reduce its accuracy.</DESCRIPTION>
+    <EFFECT>HIT ACCURACY_DOWN</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>GROUND</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>100</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Mud Sport</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Dave</WHO>
+    <DESCRIPTION>Covers the user in mud to raise electrical resistance.</DESCRIPTION>
+    <EFFECT>MUD_SPORT</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>GROUND</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Muddy Water</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Dave</WHO>
+    <DESCRIPTION>Attacks with muddy water. May lower accuracy.</DESCRIPTION>
+    <EFFECT>HIT ACCURACY_DOWN</EFFECT>
+    <POWER>95</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>85</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Night Shade</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Kristi</WHO>
+    <DESCRIPTION>An attack with a mirage that inflicts damage matching the user's level.</DESCRIPTION>
+    <EFFECT>HIT LEVEL_DAMAGE</EFFECT>
+    <POWER>1</POWER>
+    <TYPE>GHOST</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Pound</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Evan A.; Ralph</WHO>
+    <DESCRIPTION>Pounds the foe with forelegs or tail.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>35</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Protect</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Dave; Stark; Abel</WHO>
+    <DESCRIPTION>Evades attack, but may fail if used in succession.</DESCRIPTION>
+    <EFFECT>PROTECT</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>3</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Psychic</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton; Evan A.; Abel; Nash</WHO>
+    <DESCRIPTION>A powerful psychic attack that may lower Sp. Def.</DESCRIPTION>
+    <EFFECT>HIT SP_DEFENSE_DOWN</EFFECT>
+    <POWER>90</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Psywave</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel</WHO>
+    <DESCRIPTION>The foe is attacked with an odd, hot energy wave that varies in intensity.</DESCRIPTION>
+    <EFFECT>HIT PSYWAVE</EFFECT>
+    <POWER>1</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>80</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Quick Attack</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill; Chris; Ralph</WHO>
+    <DESCRIPTION>	An extremely fast attack that always strikes first.</DESCRIPTION>
+    <EFFECT>HIT QUICK_ATTACK</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>1</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Rain Dance</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ziggy</WHO>
+    <DESCRIPTION>Boosts the power of Water-type moves for 5 turns.</DESCRIPTION>
+    <EFFECT>RAIN_DANCE</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>0</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Rapid Spin</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Stark</WHO>
+    <DESCRIPTION>A high-speed spinning attack.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Recover</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel; Mercy; Ziggy</WHO>
+    <DESCRIPTION>Recovers up to half the user's maximum HP.</DESCRIPTION>
+    <EFFECT>RESTORE_HP</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Refresh</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel; Ziggy; Nash</WHO>
+    <DESCRIPTION>Heals poisoning, paralysis, or a burn.</DESCRIPTION>
+    <EFFECT>REFRESH</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Rest</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Nash; Ron</WHO>
+    <DESCRIPTION>The user sleeps for two turns to fully restore HP and heal any status problem.</DESCRIPTION>
+    <EFFECT>REST</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>PSYCHIC</TYPE>
+    <ACC>0</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Safeguard</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Abel; Mercy; Ziggy</WHO>
+    <DESCRIPTION>Prevents status abnormality with a mystical power.</DESCRIPTION>
+    <EFFECT>SAFEGUARD</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Sand Attack</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill; Chris; Jason</WHO>
+    <DESCRIPTION>A lot of sand is hurled in the foe's face, reducing its accuracy.</DESCRIPTION>
+    <EFFECT>ACCURACY_DOWN</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>GROUND</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Scary Face</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon; Brenton; Quinn; Clegg</WHO>
+    <DESCRIPTION>Frightens the foe with a scary face to sharply reduce its Speed.</DESCRIPTION>
+    <EFFECT>SPEED_DOWN_2</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>90</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Scratch</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill; Ron</WHO>
+    <DESCRIPTION>Scratches the target with sharp claws.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>35</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Screech</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Jason; Ralph; Clegg</WHO>
+    <DESCRIPTION>Emits a screech to sharply reduce the foe's Defense.</DESCRIPTION>
+    <EFFECT>DEFENSE_DOWN_2</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>85</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Self Destruct</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Stark</WHO>
+    <DESCRIPTION>The user blows up to inflict severe damage, even making itself faint.</DESCRIPTION>
+    <EFFECT>HIT EXPLOSION</EFFECT>
+    <POWER>200</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>5</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Slam</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ralph</WHO>
+    <DESCRIPTION>Slams the foe with a long tail, vine, etc.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>80</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>75</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Slash</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Bill; Ron</WHO>
+    <DESCRIPTION>Slashes with claws, etc. Has a high critical-hit ratio.</DESCRIPTION>
+    <EFFECT>HIT HIGH_CRITICAL</EFFECT>
+    <POWER>70</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Smog</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Maruska</WHO>
+    <DESCRIPTION>The foe is attacked with a discharge of filthy gases. It may also poison the target.</DESCRIPTION>
+    <EFFECT>HIT POISON</EFFECT>
+    <POWER>20</POWER>
+    <TYPE>POISON</TYPE>
+    <ACC>70</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>40</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Smokescreen</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Yulia</WHO>
+    <DESCRIPTION>An obscuring cloud of smoke or ink reduces the foe's accuracy.</DESCRIPTION>
+    <EFFECT>ACCURACY_DOWN</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Snore</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ron</WHO>
+    <DESCRIPTION>A loud attack that can be used only while asleep.</DESCRIPTION>
+    <EFFECT>SNORE</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Spite</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ron</WHO>
+    <DESCRIPTION>Spitefully cuts the PP of the foe's last move.</DESCRIPTION>
+    <EFFECT>SPITE</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>GHOST</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Submission</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Gagnon</WHO>
+    <DESCRIPTION>A reckless, full-body throw attack that also hurts the user a little.</DESCRIPTION>
+    <EFFECT>HIT RECOIL</EFFECT>
+    <POWER>80</POWER>
+    <TYPE>FIGHTING</TYPE>
+    <ACC>80</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Supersonic</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Quinn</WHO>
+    <DESCRIPTION>Emits bizarre sound waves that may confuse the foe.</DESCRIPTION>
+    <EFFECT>CONFUSE</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>55</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Swift</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Nash</WHO>
+    <DESCRIPTION>Sprays star-shaped rays that never miss.</DESCRIPTION>
+    <EFFECT>HIT ALWAYS_HIT</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Tackle</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Chris; Dave; Stark</WHO>
+    <DESCRIPTION>Charges the foe with a full-body tackle.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>35</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>95</ACC>
+    <PP>35</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Tail Whip</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Chris; Ziggy</WHO>
+    <DESCRIPTION>The user wags its tail cutely, making the foe lower its Defense stat.</DESCRIPTION>
+    <EFFECT>DEFENSE_DOWN</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Take Down</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Brenton; Dave; Stark; Quinn</WHO>
+    <DESCRIPTION>A reckless charge attack that also hurts the user.</DESCRIPTION>
+    <EFFECT>HIT RECOIL</EFFECT>
+    <POWER>90</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>85</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Thrash</ORIG_MOVE_NAME>
+    <MOVE_NAME>Panic Flail</MOVE_NAME>
+    <WHO>Ron</WHO>
+    <DESCRIPTION>A rampage of 2 to 3 turns that confuses the user.</DESCRIPTION>
+    <EFFECT>HIT RAMPAGE</EFFECT>
+    <POWER>90</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>100</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Thunder</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Chris</WHO>
+    <DESCRIPTION>A brutal lightning attack that may also leave the foe paralyzed.</DESCRIPTION>
+    <EFFECT>HIT PARALYZE</EFFECT>
+    <POWER>120</POWER>
+    <TYPE>ELECTRIC</TYPE>
+    <ACC>70</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>30</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Thunder Shock</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Chris</WHO>
+    <DESCRIPTION>An electrical attack that may paralyze the foe.</DESCRIPTION>
+    <EFFECT>HIT PARALYZE</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>ELECTRIC</TYPE>
+    <ACC>100</ACC>
+    <PP>30</PP>
+    <EFFECT_ACC>10</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Twister</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ziggy; Yulia</WHO>
+    <DESCRIPTION>Whips up a vicious twister to tear at the foe.</DESCRIPTION>
+    <EFFECT>HIT FLINCH</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>DRAGON</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>20</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Uproar</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex</WHO>
+    <DESCRIPTION>The user attacks in an uproar that prevents sleep for two to five turns.</DESCRIPTION>
+    <EFFECT>UPROAR</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>100</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Water Gun</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Dave; Ziggy; Yulia</WHO>
+    <DESCRIPTION>Squirts water to attack the foe.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>40</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>100</ACC>
+    <PP>25</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Water Pulse</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Ziggy; Clegg</WHO>
+    <DESCRIPTION>Attacks with ultrasonic waves. May confuse the foe.</DESCRIPTION>
+    <EFFECT>HIT CONFUSE</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>100</ACC>
+    <PP>20</PP>
+    <EFFECT_ACC>20</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Water Sport</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Alex; Ziggy</WHO>
+    <DESCRIPTION>The user soaks itself with water. This weakens Fire-type moves for five turns.</DESCRIPTION>
+    <EFFECT>WATER_SPORT</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>WATER</TYPE>
+    <ACC>100</ACC>
+    <PP>15</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Wing Attack</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Quinn</WHO>
+    <DESCRIPTION>Strikes the foe with wings spread wide.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>60</POWER>
+    <TYPE>FLYING</TYPE>
+    <ACC>100</ACC>
+    <PP>35</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>Wish</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO>Nash</WHO>
+    <DESCRIPTION>A wish that restores HP. It takes time to work.</DESCRIPTION>
+    <EFFECT>WISH</EFFECT>
+    <POWER>0</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>100</ACC>
+    <PP>10</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY>0</PRIORITY>
+  </MOVE>
+   <MOVE>
+    <ORIG_MOVE_NAME>TEST HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT</EFFECT>
+    <POWER>5000</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST HEAL_STATUS</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HEAL_STATUS</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST ALWAYS_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT ALWAYS_HIT</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_UP</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>ATTACK_UP</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_UP_2</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>ATTACK_UP_2</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_DOWN</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>ATTACK_DOWN</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_DOWN_2</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>ATTACK_DOWN_2</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_UP_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_UP</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_UP_2_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_UP_2</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>SELF</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_DOWN_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_DOWN</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST STAT_MOD_DOWN_2_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT ATTACK_DOWN_2</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST CONFUSE</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>CONFUSE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST POISON</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>POISON</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST PARALYZE</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>PARALYZE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST SLEEP</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>SLEEP</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST BURN</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>BURN</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST FLINCH</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>FLINCH</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST MEAN_LOOK</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>MEAN_LOOK</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST RECOIL</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT RECOIL</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST EXPLOSION</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT EXPLOSION</EFFECT>
+    <POWER>5000</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST MULTI_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT MULTI_HIT</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST DOUBLE_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT DOUBLE_HIT</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST FALSE_SWIPE</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT FALSE_SWIPE</EFFECT>
+    <POWER>500</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST LOW_KICK</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT LOW_KICK</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST HIGH_CRITICAL</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT HIGH_CRITICAL</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST RECHARGE</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT RECHARGE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST CONFUSE_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT CONFUSE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST POISON_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT POISON</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST PARALYZE_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT PARALYZE</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST SLEEP_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT SLEEP</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST BURN_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT BURN</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+  <MOVE>
+    <ORIG_MOVE_NAME>TEST FLINCH_HIT</ORIG_MOVE_NAME>
+    <MOVE_NAME></MOVE_NAME>
+    <WHO></WHO>
+    <DESCRIPTION>Test move for a single move effect.</DESCRIPTION>
+    <EFFECT>HIT FLINCH</EFFECT>
+    <POWER>50</POWER>
+    <TYPE>NORMAL</TYPE>
+    <ACC>0</ACC>
+    <PP>40</PP>
+    <EFFECT_ACC>0</EFFECT_ACC>
+    <TARGET>ENEMY</TARGET>
+    <PRIORITY></PRIORITY>
+  </MOVE>
+</MOVES>

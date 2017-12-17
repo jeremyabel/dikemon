@@ -1,0 +1,2921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVENTS>
+	<EVENT_FLAGS>
+		
+		<!-- CHARACTER RECRUITMENT -->
+		<FLAG>recruit_andy</FLAG>
+		<FLAG>recruit_asa</FLAG>
+		<FLAG>recruit_jason</FLAG>
+		<FLAG>recruit_fish</FLAG>
+		<FLAG>recruit_megan</FLAG>
+		<FLAG>recruit_rachel</FLAG>
+		<FLAG>recruit_ralph</FLAG>
+		<FLAG>recruit_ron</FLAG>
+		<FLAG>recruit_all_done</FLAG>
+		
+		<!-- STORY STUFF - INTRO -->
+		<FLAG>first_battle_done</FLAG>
+		<FLAG>met_drunk_evan</FLAG>
+		
+		<!-- STORY STUFF - ASA & GREEN -->
+		<FLAG>asa_talked_to</FLAG>
+		<FLAG>has_green</FLAG>
+		<FLAG>asa_quest_done</FLAG>
+		
+		<!-- STORY STUFF - RACHEL & BUNNIES -->
+		<FLAG>rachel_bunnies_released</FLAG>
+		<FLAG>found_bunny_MAP_FAIR_ENTRANCE</FLAG>
+		<FLAG>found_bunny_MAP_ANDY_ROOM</FLAG>
+		<FLAG>found_bunny_MAP_RON_BASE</FLAG>
+		<FLAG>found_bunny_MAP_WEIRD_PLACE</FLAG>
+		<FLAG>found_bunny_MAP_FISH_PRE_ANTECHAMBER</FLAG>
+		<FLAG>found_all_bunnies</FLAG>
+		
+		<!-- STORY STUFF - RALPH & MAIL BOX -->
+		<FLAG>ralph_talked_to</FLAG>
+		<FLAG>film_mailed</FLAG>
+		
+		<!-- STORY STUFF - MEGAN & CYBORG PARTS -->
+		<FLAG>megan_talked_to</FLAG>
+		<FLAG>found_part_robot</FLAG>
+		<FLAG>found_part_ufo</FLAG>
+		<FLAG>found_part_dvd</FLAG>
+		<FLAG>found_all_parts</FLAG>
+		
+		<!-- STORY STUFF - JASON & SLIME -->
+		<FLAG>jason_talked_to</FLAG>
+		
+		<!-- STORY STUFF - RON & ZERGLING -->
+		<FLAG>ron_talked_and_rejected</FLAG>
+		
+		<!-- STORY STUFF - ANDY & BLOOD PAINTNG -->
+		<FLAG>andy_talked_to</FLAG>
+		<FLAG>andy_quest_done</FLAG>
+		
+		<!-- STORY STUFF - FINALE -->
+		<FLAG>door_opened</FLAG>
+		
+		<!-- NPCS - NICOLE -->
+		<FLAG>talk_nicole_1</FLAG>
+		<FLAG>talk_nicole_2</FLAG>
+		<FLAG>talk_nicole_3</FLAG>
+		
+		<!-- NPCS - ANDREW -->
+		<FLAG>talk_andrew_1</FLAG>
+		<FLAG>talk_andrew_2</FLAG>
+		
+		<!-- NPCS - ELLEN -->
+		<FLAG>talk_ellen_1</FLAG>
+		<FLAG>talk_ellen_2</FLAG>
+		<FLAG>talk_ellen_3</FLAG>
+		
+	</EVENT_FLAGS>
+	
+	<!-- INTRODUCTION -->
+	<EVENT_introduction>
+		<SEQUENCE>
+			<PLAY_ANIM>
+				<TARGET>PLAYER</TARGET>
+				<ANIM_NAME>DIE</ANIM_NAME>
+				<SYNC>TRUE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>60</PAUSE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>W[delay 2]h[delay 2]a,[delay 10] where[delay 4] am[delay 4] I[delay 6].[delay 6].[delay 6].[delay 6]?   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>24</PAUSE>
+			<PLAY_ANIM>
+				<TARGET>PLAYER</TARGET>
+				<ANIM_NAME>IDLE_DIR</ANIM_NAME>
+				<DIRECTION>DOWN</DIRECTION>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>5</PAUSE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_introduction>
+	
+	<!-- FIRST BATTLE -->
+	<EVENT_first_battle_west>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>first_battle_done</FLAG>
+				<SEQUENCE><END></END></SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TIME>1</TIME>
+							<SYNC>TRUE</SYNC>
+						</WALK>
+						<WALK>
+							<TARGET>PUKE_RIGHT</TARGET>
+							<DIRECTION>LEFT</DIRECTION>
+							<TIME>22</TIME>
+							<SYNC>FALSE</SYNC>
+						</WALK>
+						<DIALOG>
+							<SPEAKER>CREATURE</SPEAKER>
+							<TEXT>Where do you think you're[delay 2] goin'?!?[delay 6]   [end]</TEXT>
+						</DIALOG>
+						<BATTLE>
+							<ENEMIES>$ERT+X_C0MPBARF</ENEMIES>
+							<RUNABLE>FALSE</RUNABLE>
+							<FORCE_START>PLAYER</FORCE_START>
+							<FORCE_END>1</FORCE_END>
+							<IMPOSSIBLE>TRUE</IMPOSSIBLE>
+							<IN_BATTLE_EVENT>
+								<NAME>first_battle_evan_enter</NAME>
+								<CONDITION>ON_FORCE_END</CONDITION>
+							</IN_BATTLE_EVENT>
+						</BATTLE>
+						<SET_FLAG>first_battle_done</SET_FLAG>
+						<SUB_SEQUENCE>meet_evan</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_first_battle_west>
+	<EVENT_first_battle_east>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>first_battle_done</FLAG>
+				<SEQUENCE><END></END></SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>LEFT</DIRECTION>
+							<TIME>1</TIME>
+							<SYNC>TRUE</SYNC>
+						</WALK>
+						<WALK>
+							<TARGET>PUKE_LEFT</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TIME>22</TIME>
+							<SYNC>FALSE</SYNC>
+						</WALK>
+						<DIALOG>
+							<SPEAKER>CREATURE</SPEAKER>
+							<TEXT>Where do you think you're[delay 2] goin'?!?[delay 6]   [end]</TEXT>
+						</DIALOG>
+						<BATTLE>
+							<ENEMIES>$ERT+X_C0MPBARF</ENEMIES>
+							<RUNABLE>FALSE</RUNABLE>
+							<FORCE_START>PLAYER</FORCE_START>
+							<FORCE_END>1</FORCE_END>
+							<IMPOSSIBLE>TRUE</IMPOSSIBLE>
+							<IN_BATTLE_EVENT>
+								<NAME>first_battle_evan_enter</NAME>
+								<CONDITION>ON_FORCE_END</CONDITION>
+							</IN_BATTLE_EVENT>
+						</BATTLE>
+						<SET_FLAG>first_battle_done</SET_FLAG>
+						<SUB_SEQUENCE>meet_evan</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_first_battle_east>
+	<EVENT_first_battle_south>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>first_battle_done</FLAG>
+				<SEQUENCE><END></END></SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>UP</DIRECTION>
+							<TIME>1</TIME>
+							<SYNC>TRUE</SYNC>
+						</WALK>
+						<WALK>
+							<TARGET>PUKE_LEFT</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TIME>22</TIME>
+							<SYNC>FALSE</SYNC>
+						</WALK>
+						<DIALOG>
+							<SPEAKER>CREATURE</SPEAKER>
+							<TEXT>Where do you think you're[delay 2] goin'?!?[delay 6]   [end]</TEXT>
+						</DIALOG>
+						<BATTLE>
+							<ENEMIES>$ERT+X_C0MPBARF</ENEMIES>
+							<RUNABLE>FALSE</RUNABLE>
+							<FORCE_START>PLAYER</FORCE_START>
+							<FORCE_END>1</FORCE_END>
+							<IMPOSSIBLE>TRUE</IMPOSSIBLE>
+							<IN_BATTLE_EVENT>
+								<NAME>first_battle_evan_enter</NAME>
+								<CONDITION>ON_FORCE_END</CONDITION>
+							</IN_BATTLE_EVENT>
+						</BATTLE>
+						<SET_FLAG>first_battle_done</SET_FLAG>
+						<SUB_SEQUENCE>meet_evan</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_first_battle_south>
+	
+	<!-- DRUNK EVAN ENTERS BATTLE -->
+	<EVENT_first_battle_evan_enter>
+		<SEQUENCE>
+			<PAUSE>24</PAUSE>
+			<ADD_NPC>
+				<BATTLE>TRUE</BATTLE>
+				<NAME>Evan?</NAME>
+				<LOCATION>236,130</LOCATION>
+			</ADD_NPC>
+			<PLAY_ANIM>
+				<BATTLE>TRUE</BATTLE>
+				<TARGET>Evan?</TARGET>
+				<ANIM_NAME>VICTORY</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<!--
+			<PLAY_FX>
+				<BATTLE>TRUE</BATTLE>
+				<TARGET>Evan?</TARGET>
+				<FX_NAME>TELEPORT</FX_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_FX>
+			<PAUSE>10</PAUSE>
+			-->
+			<PLAY_ANIM>
+				<BATTLE>TRUE</BATTLE>
+				<TARGET>Evan?</TARGET>
+				<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+				<SYNC>TRUE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>24</PAUSE>
+			<ATTACK>
+				<ATTACKER>Evan?</ATTACKER>
+				<DEFENDER>$ERT+X_C0MPBARF</DEFENDER>
+				<DAMAGE>999999</DAMAGE>
+			</ATTACK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_first_battle_evan_enter>
+	
+	<!-- MEETING DRUNK EVAN -->
+	<EVENT_meet_evan>
+		<SEQUENCE>
+			<ADD_NPC>
+				<BATTLE>FALSE</BATTLE>
+				<NAME>Evan?</NAME>
+				<LOCATION>170,160</LOCATION>
+				<FACING>LEFT</FACING>
+			</ADD_NPC>
+			<REMOVE_NPC><NAME>PUKE_LEFT</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>PUKE_RIGHT</NAME></REMOVE_NPC>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION>150,160</POSITION>
+				<FACING>RIGHT</FACING>
+			</SET_POSITION> 
+			<PLAY_MUSIC>
+				<NAME>EVAN THEME</NAME>
+			</PLAY_MUSIC>
+			<PAUSE>15</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+			 	<TEXT>Ww[delay 4]ah[delay 2]ha - [halt]wut[delay 4] r[delay 2] u[delay 2] doin[delay 8] he[delay 2]e[delay 3]rr[delay 2]e[delay 2]e[delay 4] [name] *hic*   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>I have no idea![halt][br]I was just [player dialog_meet_evan] when I somehow got teleported here...   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Are you drunk?!?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>*Barf*[br]Oh,[delay 4] I need to leave.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>Go find other brahs and we'll get a party going.[halt]Away!   [end]</TEXT>
+			</DIALOG>
+			<PLAY_ANIM>
+				<BATTLE>FALSE</BATTLE>
+				<TARGET>Evan?</TARGET>
+				<ANIM_NAME>VICTORY</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<REMOVE_NPC><NAME>Evan?</NAME></REMOVE_NPC>
+			<PAUSE>15</PAUSE>
+			<PLAY_MUSIC>
+				<NAME>MAP</NAME>
+			</PLAY_MUSIC>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<SET_FLAG>met_drunk_evan</SET_FLAG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>W[delay 2]T[delay 2]F[delay 2] is going on![halt] .[delay 2].[delay 2].[delay 2]I guess there are others here.[delay 4] Maybe they'll have some answers...  [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>...and a BAC under 0.5...   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>24</PAUSE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>...A mysterious voice whispers to you from the darkness...   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>"Press the X button to close or cancel, and the SHIFT button to display the menu..."[end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_meet_evan>
+	
+	<!-- FISH is added and grooves  -->
+	<EVENT_fish_groove>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>recruit_fish</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<END></END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<ADD_NPC>
+							<BATTLE>FALSE</BATTLE>
+							<NAME>FISH</NAME>
+							<LOCATION>167,69</LOCATION>
+							<FACING>LEFT</FACING>
+						</ADD_NPC>
+						<PAUSE>1</PAUSE>
+						<PLAY_ANIM>
+							<BATTLE>FALSE</BATTLE>
+							<TARGET>FISH</TARGET>
+							<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+							<SYNC>TRUE</SYNC>
+						</PLAY_ANIM>
+						<PAUSE>2</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_fish_groove>
+	
+	<!-- FISH is introduced and recruited. Witty banter ensues! -->
+	<EVENT_fish_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>recruit_fish</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<END></END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<PAUSE>8</PAUSE>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>WHO INTERRUPTS MY JAM SESSION?!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uh,[delay 5] hey.[delay 3].[delay 3].[delay 5]fish.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>YES IT IS I.[delay 5] FISH![delay 3] The one and only.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Um,[delay 4] a pleasure?[delay 5] Do you know where I am?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>I KNOW ALL.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh go-[end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>I AM FISH.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ok,[delay 4] got it.[delay 5] But my question...[end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>FISH KNOWS.[delay 6] You are in the domain of Fish, which is a subdomain of Computer.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>Actually,[delay 4] to be more precise,[delay 5] the domain of Fish is this aquatic container.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>YOU ARE NOT ALLOWED![delay 6]   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Yes sir.[delay 6][br]So this is the domain of.[delay 3].[delay 3].[delay 3]a computer?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>Yes,[delay 6] he is a tyrant.[delay 5] He violates my borders and enters my domain repeatedly,[delay 8] if you know what I mean.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh god,[delay 5] TMI.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>His visa has been revoked,[delay 7] and yet he sneaks in[delay 2] and out[delay 2] and in[delay 2] and out[delay 2] and in and out...   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>How evil![delay 7] Are there any other domains?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>Why yes,[delay 6] there are the domains of [list_players].   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ok,[delay 5] thanks for the info.[halt] I'll be off to find the others,[delay 3] then-[end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>And I shall accompany you,[delay 5] for it is[br]dangerous,[delay 5] and I wish to aid your quest.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uh,[delay 6] that's alright bu-[end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>FISH</SPEAKER>
+							<TEXT>FUCK YOU.[delay 7][br]I AM FISH.[delay 7][br]I AM COMING.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>.[delay 4].[delay 4].   [end]</TEXT>
+						</DIALOG>
+						<WALK>
+							<TARGET>FISH</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TIME>24</TIME>
+						</WALK>
+						<REMOVE_NPC><NAME>FISH</NAME></REMOVE_NPC>
+						<RECRUIT>FISH</RECRUIT>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_fish_talk>
+	
+	<!-- Talking to ANDY -->
+	<EVENT_andy_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>andy_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>andy_quest_done</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Check this out. How about those reds, that specular on the intestines there, the texture of the exposed fat.   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Purdy,[delay 5] huh?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>ANDY</SPEAKER>
+								<TEXT>That's sweetdiculous![delay 8] Fuck sketching, let's eviscerate some flesh! WE'LL MAKE GORE HOLES! FOR OUR DICKS!   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Yeah[delay 3].[delay 3].[delay 3].Ok then   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>ANDY</SPEAKER>
+								<TEXT>Blo[delay 1]o[delay 1]o[delay 1]o[delay 1]o[delay 1]o[delay 1]o[delay 1]d   [end]</TEXT>
+							</DIALOG>
+							<PLAY_ANIM>
+								<TARGET>ANDY</TARGET>
+								<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+								<SYNC>FALSE</SYNC>
+							</PLAY_ANIM>
+							<REMOVE_NPC><NAME>ANDY</NAME></REMOVE_NPC>
+							<RECRUIT>Andy</RECRUIT>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>ANDY</SPEAKER>
+									<TEXT>Hey,[delay 4] how's the slaying going?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Still in progress!   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>ANDY</SPEAKER>
+									<TEXT>K,[delay 6] I'll see you later then.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Don't go anywhere!  [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Andy![delay 7] Thank god you're all right!   [end]</TEXT>
+						</DIALOG>
+						<CONDITIONAL>
+							<PLAYER>MEGAN</PLAYER>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>ANDY</SPEAKER>
+									<TEXT>Oh hey,[delay 7] waddup Squishy?   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>ANDY</SPEAKER>
+										<TEXT>Oh hey,[delay 7] waddup [name]?   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<SET_FLAG>andy_talked_to</SET_FLAG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>I've been searching far and wide for you![halt] I need your help to assult the castle and free ourselves from this place.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Are you drawing battleplans?[halt][br]That's perfec-   [end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>ANDY</SPEAKER>
+							<TEXT>Naw,[delay 7] just brutal doodling another guthook.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh,[delay 6] well drop that pen and lets go fuck some shit up!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>ANDY</SPEAKER>
+							<TEXT>Maybe I'll catch up to you later.[delay 7] I just wanna keep drawing these gore dicks.[delay 6] Feelin' the productivity itch, na wa I mean?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ugh. Slaying bad dudes is productive too!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>ANDY</SPEAKER>
+							<TEXT>Yeah[delay 6] probably, I just wanna make some cool art shit.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Fine, I'll show you murder can be artful!    [end]</TEXT>
+						</DIALOG>
+						
+						<CONDITIONAL>
+							<PLAYER>MEGAN</PLAYER>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>ANDY</SPEAKER>
+									<TEXT><![CDATA[K babe.[halt] <3 u   [end]]]></TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>I hate you.   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>ANDY</SPEAKER>
+										<TEXT>K!   [end]</TEXT>
+									</DIALOG>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_andy_talk>
+	
+	<EVENT_andy_gore_paint>
+		<SEQUENCE>
+			<PAUSE>10</PAUSE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>You cover the paper in the blood and guts of the enemy!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>...and we'll just move these intestines over here, put another eyeball up there....   [end]</TEXT>
+			</DIALOG>			
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Perfect! Let's just hope Andy agrees.   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>andy_quest_done</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_andy_gore_paint>
+	
+	<!-- Talking to ASA -->
+	<EVENT_asa_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>asa_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>has_green</FLAG>
+						<SEQUENCE>
+							<PAUSE>2</PAUSE>
+							<ADD_NPC>
+								<NAME>GREEN</NAME>
+								<LOCATION>PLAYER</LOCATION>
+								<EVENT>green_talk</EVENT>
+								<FACING>DYNAMIC</FACING>
+							</ADD_NPC>
+							<WALK>
+								<TARGET>GREEN</TARGET>
+								<DIRECTION>LEFT</DIRECTION>
+								<TIME>20</TIME>
+								<SYNC>FALSE</SYNC>
+							</WALK>
+							<PAUSE>8</PAUSE>
+							<WALK>
+								<TARGET>GREEN</TARGET>
+								<DIRECTION>RIGHT</DIRECTION>
+								<TIME>1</TIME>
+								<SYNC>FALSE</SYNC>
+							</WALK>
+							<PAUSE>8</PAUSE>
+							<WALK>
+								<TARGET>PLAYER</TARGET>
+								<DIRECTION>LEFT</DIRECTION>
+								<TIME>1</TIME>
+								<SYNC>FALSE</SYNC>
+							</WALK>
+							<PAUSE>3</PAUSE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Ok,[delay 6] thanks for following me,[delay 4] Green.   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>GREEN</SPEAKER>
+								<TEXT>Yeah,[delay 6] no problem.[br][delay 7]So what's up?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Oh nothing,[halt] just, you know[halt]...uh...  [end]</TEXT>
+							</DIALOG>
+							<!-- GREEN GETS SET ON FIRE -->
+							<PLAY_ANIM>
+								<TARGET>PLAYER</TARGET>
+								<ANIM_NAME>USE_ITEM</ANIM_NAME>
+								<SYNC>FALSE</SYNC>
+							</PLAY_ANIM>
+							<WALK>
+								<TARGET>PLAYER</TARGET>
+								<DIRECTION>LEFT</DIRECTION>
+								<TIME>1</TIME>
+								<SYNC>TRUE</SYNC>
+							</WALK>
+							<PAUSE>24</PAUSE>
+							<PLAY_FX>
+								<TARGET>GREEN</TARGET>
+								<FX_NAME>FIRE</FX_NAME>
+								<SYNC>TRUE</SYNC>
+								<LOOP>TRUE</LOOP>
+							</PLAY_FX>
+							<PLAY_ANIM>
+								<TARGET>GREEN</TARGET>
+								<ANIM_NAME>FIRE_FLAIL</ANIM_NAME>
+								<SYNC>TRUE</SYNC>
+							</PLAY_ANIM>
+							<PAUSE>24</PAUSE>
+							<WALK>
+								<TARGET>PLAYER</TARGET>
+								<DIRECTION>RIGHT</DIRECTION>
+								<TIME>1</TIME>
+								<SYNC>FALSE</SYNC>
+							</WALK>
+							<PAUSE>7</PAUSE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>So Asa[delay 7], pretty crazy Burning Man this year, eh![halt] What'd ya' think of the Burning Of The Man?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>ASA</SPEAKER>
+								<TEXT>Close enough.   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Sweet,[delay 6] let's go!   [end]</TEXT>
+							</DIALOG>
+							<PLAY_ANIM>
+								<TARGET>ASA</TARGET>
+								<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+								<SYNC>FALSE</SYNC>
+							</PLAY_ANIM>
+							<SET_FLAG>asa_quest_done</SET_FLAG>
+							<REMOVE_NPC><NAME>ASA</NAME></REMOVE_NPC>
+							<RECRUIT>Asa</RECRUIT>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>ASA</SPEAKER>
+									<TEXT>BURNING MAN!   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey Asa,[delay 6] why so glum?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>ASA</SPEAKER>
+							<TEXT>I really want to go to Burning Man[delay 6] but I can't find it!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Well I'll help you[delay 4] after we go defeat the evil Computer overlord!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>ASA</SPEAKER>
+							<TEXT>NO![delay 7] I'm a Burner![delay 6] I wanna see the Burning Man!    [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ok,[delay 5] I'll find you a Burning Man.   [end]</TEXT>
+						</DIALOG>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TIME>1</TIME>
+							<SYNC>TRUE</SYNC>
+						</WALK>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hmm.[delay 2].[delay 2].[delay 2].[delay 2] What'll burn.[delay 2].[delay 2].[delay 2].[delay 2]maybe something green.[delay 1].[delay 1].[delay 1].   [end]</TEXT>
+						</DIALOG>
+						<SET_FLAG>asa_talked_to</SET_FLAG>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_asa_talk>
+	
+	<EVENT_green_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>asa_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>has_green</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>GREEN</SPEAKER>
+								<TEXT>Hot hot hot!   [end]</TEXT>
+							</DIALOG>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Oh[delay 3] hey Green...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>GREEN</SPEAKER>
+									<TEXT>Heya [name]!   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Say,[delay 4] what's the deal with your surname?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>GREEN</SPEAKER>
+									<TEXT>Oh,[delay 3] in the old world,[delay 3] my family lived in treehouses.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>GREEN</SPEAKER>
+									<TEXT>They would actually stay warm in the winter by coating themselves in tree sap and leaves to lock in the heat.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>So,[delay 4] would you say that you can get pretty hot?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>GREEN</SPEAKER>
+									<TEXT>Haha,[delay 5] sometimes.[delay 7] *sexy wink*   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>	
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Great,[delay 4] come with me.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>GREEN</SPEAKER>
+									<TEXT>You got it!   [end]</TEXT>
+								</DIALOG>
+								<PLAY_ANIM>
+									<TARGET>GREEN</TARGET>
+									<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+									<DIRECTION>LEFT</DIRECTION>
+									<SYNC>FALSE</SYNC>
+								</PLAY_ANIM>
+								<SET_FLAG>has_green</SET_FLAG>
+								<REMOVE_NPC><NAME>GREEN</NAME></REMOVE_NPC>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh hey Green...[halt] How'd you get in here?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>GREEN</SPEAKER>
+							<TEXT>Well, I was sitting at my computer and I had Starcraft on one monitor and anime on the other one and I think maybe the nerd force of them combi-[end_int]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Yeah I think I've heard enough.   [end]</TEXT>
+						</DIALOG>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_green_talk>
+	
+	<!-- GREEN flails around on fire -->
+	<EVENT_green_flail>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>asa_quest_done</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<ADD_NPC>
+						<NAME>GREEN</NAME>
+						<LOCATION>106,142</LOCATION>
+						<EVENT>green_talk</EVENT>
+					</ADD_NPC>
+					<PLAY_FX>
+						<TARGET>GREEN</TARGET>
+						<FX_NAME>FIRE</FX_NAME>
+						<SYNC>TRUE</SYNC>
+						<LOOP>TRUE</LOOP>
+					</PLAY_FX>
+					<PLAY_ANIM>
+						<TARGET>GREEN</TARGET>
+						<ANIM_NAME>FIRE_FLAIL</ANIM_NAME>
+						<SYNC>TRUE</SYNC>
+					</PLAY_ANIM>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_green_flail>
+	
+	<!-- Talking to JASON -->
+	<EVENT_jason_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>jason_talked_to</FLAG>
+				<SEQUENCE>
+					<DIALOG_CHOICE>
+						<CHOICE_ONE>
+							<TEXT>Fight the Brain Slug.</TEXT>
+							<SEQUENCE>
+								<BATTLE>
+									<ENEMIES>Brain Slug</ENEMIES>
+									<RUNABLE>FALSE</RUNABLE>
+									<BOSS>TRUE</BOSS>
+								</BATTLE>
+								<PLAY_MUSIC>
+									<NAME>MAP</NAME>
+								</PLAY_MUSIC>
+								<PAUSE>15</PAUSE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>We did it![halt] The Master Brain Slug is dead![halt] You're FREE!!!   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>JASON</SPEAKER>
+									<TEXT>Uhhhhh...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Oh...[halt]Shit...Maybe I need to hit it harder?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>JASON</SPEAKER>
+									<TEXT>Uhhhhh thanks... [name]...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Jason![halt] That's great![halt] Welcome back buddy![halt] Let's go kick some butt.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>JASON</SPEAKER>
+									<TEXT>....uuhhhhh...   [end]</TEXT>
+								</DIALOG>
+								<PLAY_ANIM>
+									<TARGET>JASON</TARGET>
+									<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+									<SYNC>FALSE</SYNC>
+									<DIRECTION>LEFT</DIRECTION>
+								</PLAY_ANIM>
+								<REMOVE_NPC><NAME>JASON</NAME></REMOVE_NPC>
+								<RECRUIT>Jason</RECRUIT>
+								<END></END>
+							</SEQUENCE>
+						</CHOICE_ONE>
+						<CHOICE_TWO>
+							<TEXT>Leave the Brain Slug alone.</TEXT>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>JASON</SPEAKER>
+									<TEXT>Uuuhhhhhh...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Patience![halt] We'll handle that brain boss soon.    [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+						</CHOICE_TWO>
+					</DIALOG_CHOICE>
+					<END></END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>JASON</SPEAKER>
+							<TEXT>Uuuhhhhhh...   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey Jason...   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>JASON</SPEAKER>
+							<TEXT>Uhehe   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>You're not looking so good...[halt] Is that a brain slug you've got there, buddy?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>JASON</SPEAKER>
+							<TEXT>...  [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hmm,[delay 4] why don't I just try and remove that thing for ya?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>JASON</SPEAKER>
+							<TEXT>Uh!   [end]</TEXT>
+						</DIALOG>
+						<PAUSE>1</PAUSE>
+						<DIALOG_CHOICE>
+							<CHOICE_ONE>
+								<TEXT>Fight the Brain Slug.</TEXT>
+								<SEQUENCE>
+									<BATTLE>
+										<ENEMIES>Brain Slug</ENEMIES>
+										<RUNABLE>FALSE</RUNABLE>
+										<BOSS>TRUE</BOSS>
+									</BATTLE>
+									<PLAY_MUSIC>
+									 	<NAME>MAP</NAME>
+									 </PLAY_MUSIC>
+									<PAUSE>15</PAUSE>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>We did it![halt] The Master Brain Slug is dead![halt] You're FREE!!!   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>JASON</SPEAKER>
+										<TEXT>Uhhhhh...   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Oh...[halt]Shit...Maybe I need to hit it harder?   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>JASON</SPEAKER>
+										<TEXT>Uhhhhh thanks... [name]...   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Jason![halt] That's great![halt] Welcome back buddy![halt] Let's go kick some butt.   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>JASON</SPEAKER>
+										<TEXT>....uuhhhhh...   [end]</TEXT>
+									</DIALOG>
+									<PLAY_ANIM>
+										<TARGET>JASON</TARGET>
+										<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+										<SYNC>FALSE</SYNC>
+										<DIRECTION>LEFT</DIRECTION>
+									</PLAY_ANIM>
+									<REMOVE_NPC><NAME>JASON</NAME></REMOVE_NPC>
+									<RECRUIT>Jason</RECRUIT>
+									<END></END>
+								</SEQUENCE>
+							</CHOICE_ONE>
+							<CHOICE_TWO>
+								<TEXT>Leave the Brain Slug alone.</TEXT>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>JASON</SPEAKER>
+										<TEXT>Uuuuhhhhh...   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Patience![halt] We'll handle that brain boss soon.   [end]</TEXT>
+									</DIALOG>
+									<SET_FLAG>jason_talked_to</SET_FLAG>
+									<END></END>
+								</SEQUENCE>
+							</CHOICE_TWO>
+						</DIALOG_CHOICE>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_jason_talk>
+	
+	<!-- Talking to MEGAN -->
+	<EVENT_megan_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>megan_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>found_all_parts</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Here you go![delay 4]   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>MEGAN</SPEAKER>
+								<TEXT>What's this?[delay 4]   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>New batteries![delay 4]   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>MEGAN</SPEAKER>
+								<TEXT>Oh! Cool![delay 4]   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>You want to go beat some dudes up?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>MEGAN</SPEAKER>
+								<TEXT>Duh.[delay 6] Let's go!   [end]</TEXT>
+							</DIALOG>
+							<PLAY_ANIM>
+								<TARGET>MEGAN</TARGET>
+								<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+								<SYNC>FALSE</SYNC>
+								<DIRECTION>LEFT</DIRECTION>
+							</PLAY_ANIM>
+							<REMOVE_NPC><NAME>MEGAN</NAME></REMOVE_NPC>
+							<RECRUIT>Megan</RECRUIT>
+							<END></END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>*waves*   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>MEGAN</SPEAKER>
+									<TEXT>...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>I better find your cyborg parts...   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Hmm, I wonder if there's anything around here that has batteries in it...   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<END></END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey Megan.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>MEGAN</SPEAKER>
+							<TEXT>[delay 6]Huh?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>MEGAN</SPEAKER>
+							<TEXT>I can't hear you.[delay 7] Batteries dead.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>!!![halt][br]I'll go find you some new cyborg parts!   [end]</TEXT>
+						</DIALOG>
+						<SET_FLAG>megan_talked_to</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_megan_talk>
+	
+	<EVENT_megan_robot_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_part_robot</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Cool,[delay 3] a toy robot! This thing oughta have some batteries in it...   [end]</TEXT>
+								</DIALOG>
+								<PLAY_SOUND>PICKUP</PLAY_SOUND>
+								<PAUSE>7</PAUSE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>[megan_progress]   [end]</TEXT>
+								</DIALOG>
+								<SET_FLAG>found_part_robot</SET_FLAG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_robot_find>
+	
+	<EVENT_megan_dvd_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_part_dvd</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Score, a DVD player! DVD remotes are prime battery-pickin' territory.   [end]</TEXT>
+								</DIALOG>
+								<PLAY_SOUND>PICKUP</PLAY_SOUND>
+								<PAUSE>7</PAUSE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>[megan_progress]   [end]</TEXT>
+								</DIALOG>
+								<SET_FLAG>found_part_dvd</SET_FLAG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_dvd_find>
+	
+	<EVENT_megan_crane_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_all_parts</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>This crane game is plugged into the wall. No batteries here!   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_crane_find>
+	
+	<EVENT_megan_jukebox_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_all_parts</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>"Cutesy Classics Jukebox." This thing's definitely plugged into the wall.   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_jukebox_find>
+	
+	<EVENT_megan_sphinx_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_all_parts</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>What's a mummy doing in here anyway?   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_sphinx_find>
+	
+	<EVENT_megan_track_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_all_parts</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Aw man, someone already took the batteries out of these little cars!   [end]</TEXT>
+								</DIALOG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_track_find>
+	
+	<EVENT_megan_ufo_find>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>found_part_ufo</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<FLAG>megan_talked_to</FLAG>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Ooh, a little UFO. This guy's gotta have a few extra-terrestrial batteries in there.   [end]</TEXT>
+								</DIALOG>
+								<PLAY_SOUND>PICKUP</PLAY_SOUND>
+								<PAUSE>7</PAUSE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>[megan_progress]   [end]</TEXT>
+								</DIALOG>
+								<SET_FLAG>found_part_ufo</SET_FLAG>
+								<END></END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<PAUSE>1</PAUSE>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<FINAL_END></FINAL_END>
+		</SEQUENCE>
+	</EVENT_megan_ufo_find>
+	
+	<!-- Talking to RACHEL -->
+	<EVENT_rachel_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>rachel_bunnies_released</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>found_all_bunnies</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>RACHEL</SPEAKER>
+								<TEXT>Bunnies[delay 3]?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Bunnies!   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>RACHEL</SPEAKER>
+								<TEXT>Thank god   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Now that the bunnies are safe,[delay 7] would you join us on a quest to make this world safe for all cute things?  [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>RACHEL</SPEAKER>
+								<TEXT>Gladly.   [end]</TEXT>
+							</DIALOG>
+							<WALK>
+								<TARGET>RACHEL</TARGET>
+								<DIRECTION>RIGHT</DIRECTION>
+								<TIME>12</TIME>
+								<SYNC>FALSE</SYNC>
+							</WALK>
+							<REMOVE_NPC><NAME>Rachel</NAME></REMOVE_NPC>
+							<RECRUIT>Rachel</RECRUIT>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>RACHEL</SPEAKER>
+									<TEXT>Bunnies?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>The search continues!   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey Ray-Ray!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RACHEL</SPEAKER>
+							<TEXT>Oh hello [name],[delay 6] have you seen my five bunnies?[halt] They've gotten out and I'm so worried!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh no![halt] I haven't seen them,[delay 4] but I swear that they shall be found!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RACHEL</SPEAKER>
+							<TEXT>My hero!   [end]</TEXT>
+						</DIALOG>
+						<SET_FLAG>rachel_bunnies_released</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rachel_talk>
+	
+	<!-- Talking to BUNNIES -->
+	<EVENT_bunny_talk_MAP_FAIR_ENTRANCE>
+		<SEQUENCE>
+			<PLAY_SOUND>PICKUP</PLAY_SOUND>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Gotcha!   [end]</TEXT>
+			</DIALOG>
+			<REMOVE_NPC><NAME>BUNNY</NAME></REMOVE_NPC>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[bunny_progress]   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>found_bunny_MAP_FAIR_ENTRANCE</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_bunny_talk_MAP_FAIR_ENTRANCE>
+	<EVENT_bunny_talk_MAP_ANDY_ROOM>
+		<SEQUENCE>
+			<PLAY_SOUND>PICKUP</PLAY_SOUND>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Gotcha!   [end]</TEXT>
+			</DIALOG>
+			<REMOVE_NPC><NAME>BUNNY</NAME></REMOVE_NPC>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[bunny_progress]   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>found_bunny_MAP_ANDY_ROOM</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_bunny_talk_MAP_ANDY_ROOM>
+	<EVENT_bunny_talk_MAP_RON_BASE>
+		<SEQUENCE>
+			<PLAY_SOUND>PICKUP</PLAY_SOUND>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Gotcha!   [end]</TEXT>
+			</DIALOG>
+			<REMOVE_NPC><NAME>BUNNY</NAME></REMOVE_NPC>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[bunny_progress]   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>found_bunny_MAP_RON_BASE</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_bunny_talk_MAP_RON_BASE>
+	<EVENT_bunny_talk_MAP_WEIRD_PLACE>
+		<SEQUENCE>
+			<PLAY_SOUND>PICKUP</PLAY_SOUND>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Gotcha!   [end]</TEXT>
+			</DIALOG>
+			<REMOVE_NPC><NAME>BUNNY</NAME></REMOVE_NPC>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[bunny_progress]   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>found_bunny_MAP_WEIRD_PLACE</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_bunny_talk_MAP_WEIRD_PLACE>
+	<EVENT_bunny_talk_MAP_FISH_PRE_ANTECHAMBER>
+		<SEQUENCE>
+			<PLAY_SOUND>PICKUP</PLAY_SOUND>	
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Gotcha!   [end]</TEXT>
+			</DIALOG>
+			<REMOVE_NPC><NAME>BUNNY</NAME></REMOVE_NPC>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[bunny_progress]   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>found_bunny_MAP_FISH_PRE_ANTECHAMBER</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_bunny_talk_MAP_FISH_PRE_ANTECHAMBER>
+	
+	
+	<!-- Talking to RON -->
+	<EVENT_ron_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>ron_talked_and_rejected</FLAG>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER>RON</SPEAKER>
+						<TEXT>C'mon,[delay 6] let's play some Star Cra[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 1]a[delay 1]ft!   [end]</TEXT>
+					</DIALOG>
+					<DIALOG_CHOICE>
+						<CHOICE_ONE>
+							<TEXT>Oh fine.</TEXT>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>RON</SPEAKER>
+									<TEXT>Oh ya[delay 2]a[delay 2]a[delay 2]a[delay 1]a[delay 1]a[delay1]!   [end]</TEXT>
+								</DIALOG>
+								<BATTLE>
+									<ENEMIES>"Space Marine"</ENEMIES>
+									<RUNABLE>FALSE</RUNABLE>
+									<BOSS>TRUE</BOSS>
+								</BATTLE>
+								<PLAY_ANIM>
+									<TARGET>SPACE MARINE</TARGET>
+									<ANIM_NAME>DIE</ANIM_NAME>
+									<SYNC>FALSE</SYNC>
+								</PLAY_ANIM>
+								<DIALOG>
+									<SPEAKER>RON</SPEAKER>
+									<TEXT>Man,[delay 6] you've got some skills,[delay 4] that's for sure.[halt] Fine,[delay 5] I gues I'll join your little computer quest.   [end]</TEXT>
+								</DIALOG>
+								<PLAY_ANIM>
+									<TARGET>RON</TARGET>
+									<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+									<SYNC>FALSE</SYNC>
+								</PLAY_ANIM>
+								<REMOVE_NPC><NAME>RON</NAME></REMOVE_NPC>
+								<RECRUIT>Ron</RECRUIT>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_ONE>
+						<CHOICE_TWO>
+							<TEXT>Maybe another time.</TEXT>
+							<SEQUENCE>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_TWO>
+					</DIALOG_CHOICE>
+					<END></END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RON</SPEAKER>
+							<TEXT>Whoa,[delay 5] hey [name]. I'm just puttin' the finishing touches on this here space   marine suit.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RON</SPEAKER>
+							<TEXT>It should really[delay 1] help me step up my Starcraft game!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Wait,[delay 8] how long have you been in here working on that thing?!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RON</SPEAKER>
+							<TEXT>Oh,[delay 5] you know,[delay 6] like an hour or so.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Well[delay 2].[delay 2].[delay 2].[delay 4]how about joining us and getting out of here?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RON</SPEAKER>
+							<TEXT>Or[delay 3] how bout some 'Craft?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uh,[delay 6] I think this is a bit more urgent.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RON</SPEAKER>
+							<TEXT>C'mon,[delay 6] you know you wanna play some Star Cra[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 1]aft!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG_CHOICE>
+							<CHOICE_ONE>
+								<TEXT>Oh fine.</TEXT>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>RON</SPEAKER>
+										<TEXT>Oh ya[delay 2]a[delay 2]a[delay 2]a[delay 1]a[delay 1]ay!   [end]</TEXT>
+									</DIALOG>
+									<BATTLE>
+										<ENEMIES>"Space Marine"</ENEMIES>
+										<RUNABLE>FALSE</RUNABLE>
+										<BOSS>TRUE</BOSS>
+									</BATTLE>
+									<PLAY_MUSIC>
+										<NAME>MAP</NAME>
+									</PLAY_MUSIC>
+									<PLAY_ANIM>
+										<TARGET>SPACE MARINE</TARGET>
+										<ANIM_NAME>DIE</ANIM_NAME>
+										<SYNC>FALSE</SYNC>
+									</PLAY_ANIM>
+									<DIALOG>
+										<SPEAKER>RON</SPEAKER>
+										<TEXT>Man,[delay 6] you've got some skills,[delay 4] that's for sure.[halt] Fine,[delay 5] I gues I'll join your little computer quest.   [end]</TEXT>
+									</DIALOG>
+									<PLAY_ANIM>
+										<TARGET>RON</TARGET>
+										<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+										<SYNC>FALSE</SYNC>
+									</PLAY_ANIM>
+									<REMOVE_NPC><NAME>RON</NAME></REMOVE_NPC>
+									<RECRUIT>Ron</RECRUIT>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</CHOICE_ONE>
+							<CHOICE_TWO>
+								<TEXT>Maybe another time.</TEXT>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>RON</SPEAKER>
+										<TEXT>Oh,[delay 5] you'll be back.[halt] They always come crawling back...   [end]</TEXT>
+									</DIALOG>
+									<SET_FLAG>ron_talked_and_rejected</SET_FLAG>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</CHOICE_TWO>
+						</DIALOG_CHOICE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ron_talk>
+	
+	<!-- talking to Ron's "Space Marine" -->
+	<EVENT_robot_talk>
+		<SEQUENCE>
+			<CONDITION>
+				<FLAG>recruited_ron</FLAG>
+				<SEQUENCE>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>I think Ron's halloween costume was better...   [end]</TEXT>
+						</DIALOG>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_robot_talk>
+	
+	<!-- "Space Marine" is dead -->
+	<EVENT_robot_dead>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>recruit_ron</FLAG>
+				<SEQUENCE>
+					<SET_POSITION>
+						<TARGET>SPACE MARINE</TARGET>
+						<POSITION>230,110</POSITION>
+					</SET_POSITION>
+					<PLAY_ANIM>
+						<TARGET>SPACE MARINE</TARGET>
+						<ANIM_NAME>DIE</ANIM_NAME>
+						<SYNC>FALSE</SYNC>
+					</PLAY_ANIM>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_robot_dead>
+	
+	<EVENT_ralph_loiter>
+		<SEQUENCE>
+			<PLAY_ANIM>
+				<TARGET>RALPH</TARGET>
+				<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>1</PAUSE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ralph_loiter>
+	
+	<EVENT_ralph_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>ralph_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>film_mailed</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>Films sent.   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>RALPH</SPEAKER>
+								<TEXT>Thanks so much![halt] You shall be justly credited.   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>So,[delay 4] you doing anything?[halt] Wanna come overthrow some evil?   [end]</TEXT>
+							</DIALOG>
+							<DIALOG>
+								<SPEAKER>RALPH</SPEAKER>
+								<TEXT>You know it.   [end]</TEXT>
+							</DIALOG>
+							<PAUSE>3</PAUSE>
+							<PLAY_ANIM>
+								<TARGET>RALPH</TARGET>
+								<ANIM_NAME>WALK_TO_PLAYER</ANIM_NAME>
+								<SYNC>FALSE</SYNC>
+								<DIRECTION>LEFT</DIRECTION>
+							</PLAY_ANIM>
+							<REMOVE_NPC><NAME>RALPH</NAME></REMOVE_NPC>
+							<RECRUIT>RALPH</RECRUIT>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Still looking for that mailbox!   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>RALPH</SPEAKER>
+									<TEXT>You're my only hope!   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<PAUSE>1</PAUSE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>[name].   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ralph.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>How are you?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Good.[halt] Yourself?   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>Well,[delay 5] honestly [name],[delay 6] things could be better.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh?[end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>I just finished shooting Grim Reaper Park Ranger.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>I need to get it developed.[halt] Everything hangs on this.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Omigosh.[delay 3] Exciting![delay 6] I'll definitely go get it mailed for development!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>So eager to see it!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>RALPH</SPEAKER>
+							<TEXT>God Speed!   [end]</TEXT>
+						</DIALOG>
+						<PLAY_ANIM>
+							<TARGET>RALPH</TARGET>
+							<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+							<SYNC>FALSE</SYNC>
+							<DIRECTION>LEFT</DIRECTION>
+						</PLAY_ANIM>
+						<PAUSE>1</PAUSE>
+						<SET_FLAG>ralph_talked_to</SET_FLAG>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ralph_talk>
+	
+	
+	<EVENT_recruit_all_done>
+		<SEQUENCE>
+			<PAUSE>4</PAUSE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<PAUSE>6</PAUSE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Well, it looks like we've got everybody![halt] Let's go take down the Computer!   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>recruit_all_done</SET_FLAG>
+			<PAUSE>1</PAUSE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_recruit_all_done>
+	
+	<EVENT_finale>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TIME>10</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<PAUSE>40</PAUSE>
+			<PAUSE>40</PAUSE>
+			<DIALOG>
+				<SPEAKER>COMPUTER</SPEAKER>
+				<TEXT>So,[delay 5] you've made it.[halt] You all have impressed me greatly, but you must leave.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>COMPUTER</SPEAKER>
+				<TEXT>Your place is out there,[delay 5] creating monuments in my image.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>We aren't your slave, Computer![halt] AND WE SHALL BE FREE!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>COMPUTER</SPEAKER>
+				<TEXT>Impudent fools! Without me,[delay 6] you're nothing!!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>5</PAUSE>
+			<BATTLE>
+				<ENEMIES>Computer</ENEMIES>
+				<RUNABLE>FALSE</RUNABLE>
+			</BATTLE>
+			<PLAY_MUSIC>
+				<NAME>EVAN THEME</NAME>
+			</PLAY_MUSIC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_finale>
+	
+	<!-- PLAYER BEATS COMPUTER -->
+	<EVENT_fight_drunk_evan>
+		<SEQUENCE>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION>160,188</POSITION>
+				<FACING>UP</FACING>
+			</SET_POSITION>
+			<PLAY_ANIM>
+				<TARGET>COMPUTER NPC</TARGET>
+				<ANIM_NAME>DIE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<ADD_NPC>
+				<NAME>EVAN?</NAME>
+				<LOCATION>144,130</LOCATION>
+				<FACING>DOWN</FACING>
+			</ADD_NPC>
+			<PAUSE>18</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>Looks like we got a party ova' hea'!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Evan?[halt] What are you doing here?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>*burp* Woooo![delay 5] Partyin'![halt] You brought all my frieeendsss! LET'S GET FUCKED UP!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Uh,[delay 6] OK,[delay 6] but how about after we finish this villian over here first?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>What?![halt] No man,[delay 4] I can't let you do that.[halt] Computer is our master!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>!!?    [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>You can't leave. We need you all.[halt] To make stuff together![halt] And laser dance party together!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>DON'T LEAVE ME![end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>...[delay 6]Evan...[halt] This has to end...   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>FINE THEN![halt] COME AT ME BRO!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>8</PAUSE>
+			<BATTLE>
+				<ENEMIES>Drunk Evan</ENEMIES>
+				<RUNABLE>FALSE</RUNABLE>
+				<BOSS>TRUE</BOSS>
+			</BATTLE>
+			<PLAY_MUSIC>
+				<NAME>MAP</NAME>
+			</PLAY_MUSIC>
+			<END></END>			 
+		</SEQUENCE>			
+	</EVENT_fight_drunk_evan>
+	
+	<!-- DRUNK EVAN SPLITS IN TWO -->
+	<EVENT_fight_dark_evan_1>
+		<SEQUENCE>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION>160,188</POSITION>
+				<FACING>UP</FACING>
+			</SET_POSITION>
+			<PLAY_SOUND>BOSS DEATH</PLAY_SOUND>
+			<PLAY_ANIM>
+				<TARGET>EVAN?</TARGET>
+				<ANIM_NAME>DEATH_SHAKE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<FLASH_SCREEN>
+				<COLOR>0x000000</COLOR>
+				<TIME>1</TIME>
+				<FADE>FALSE</FADE>
+				<SYNC>FALSE</SYNC>
+			</FLASH_SCREEN>
+			<PLAY_NUKE></PLAY_NUKE>
+			<PLAY_SOUND>EXPLOSION</PLAY_SOUND>
+			<ADD_NPC>
+				<NAME>DARK EVAN</NAME>
+				<LOCATION>135,120</LOCATION>
+				<FACING>DOWN</FACING>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NAME>EVAN</NAME>
+				<LOCATION>165, 120</LOCATION>
+				<FACING>DOWN</FACING>
+			</ADD_NPC>
+			<REMOVE_NPC><NAME>EVAN?</NAME></REMOVE_NPC>
+			<FLASH_SCREEN>
+				<COLOR>0xFFFFFF</COLOR>
+				<TIME>30</TIME>
+				<FADE>TRUE</FADE>
+				<SYNC>FALSE</SYNC>
+			</FLASH_SCREEN>
+			<PAUSE>55</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>Finally, I'm free!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>4</PAUSE>
+			<PLAY_ANIM>
+				<TARGET>DARK EVAN</TARGET>
+				<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<DIALOG>
+				<SPEAKER>DARK EVAN</SPEAKER>
+				<TEXT>NOOOO!!![halt] THEN YOU SHALL DIE TOO!   [end]</TEXT>
+			</DIALOG>
+			<SET_POSITION>
+				<TARGET>EVAN</TARGET>
+				<POSITION>165,120</POSITION>
+				<FACING>LEFT</FACING>
+			</SET_POSITION>
+			<PLAY_ANIM>
+				<TARGET>EVAN</TARGET>
+				<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+				<DIRECTION>LEFT</DIRECTION>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>20</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>We'll see about that!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>8</PAUSE>
+			<RECRUIT>EVAN</RECRUIT>
+			<BATTLE>
+				<ENEMIES>Dark Evan</ENEMIES>
+				<FORCE_END>1</FORCE_END>
+				<FORCE_START>ENEMY</FORCE_START>
+				<IMPOSSIBLE>TRUE</IMPOSSIBLE>
+				<IN_BATTLE_EVENT>
+					<NAME>dark_evan_impossible</NAME>
+					<CONDITION>ON_FORCE_END</CONDITION>
+				</IN_BATTLE_EVENT>
+			</BATTLE>
+			<PLAY_MUSIC>
+				<NAME>MAP</NAME>
+			</PLAY_MUSIC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_fight_dark_evan_1>
+	
+	<!-- PLAYER CANNOT DEFEAT DARK EVAN -->
+	<EVENT_fight_dark_evan_2>
+		<SEQUENCE>
+			<SET_POSITION>
+				<TARGET>DARK EVAN</TARGET>
+				<POSITION>150, 120</POSITION>
+				<FACING>DOWN</FACING>
+			</SET_POSITION>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION>120, 160</POSITION>
+				<FACING>UP</FACING>
+			</SET_POSITION>
+			<SET_POSITION>
+				<TARGET>EVAN</TARGET>
+				<POSITION>180, 170</POSITION>
+				<FACING>LEFT</FACING>
+			</SET_POSITION>
+			<PAUSE>24</PAUSE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<PAUSE>2</PAUSE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Nothing's working!   [end]</TEXT>
+			</DIALOG>
+			<WALK>
+				<TARGET>EVAN</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<PAUSE>2</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>No,[delay 6] we need to use our secret weapon!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>What's that?[end]</TEXT>
+			</DIALOG>
+			<PAUSE>3</PAUSE>
+			<ADD_NPC>
+				<NAME>FISH</NAME>
+				<LOCATION>PLAYER</LOCATION>
+				<FACING>RIGHT</FACING>
+			</ADD_NPC>
+			<PLAY_ANIM>
+				<TARGET>FISH</TARGET>
+				<ANIM_NAME>FISH_EMERGE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<PAUSE>5</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVAN</SPEAKER>
+				<TEXT>JEREMY, I RELEASE YOU FROM YOUR FISH FORM! JOIN US!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>3</PAUSE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			
+			<!-- FISH TRANSFORMS INTO JEREMY -->
+			<PLAY_MUSIC>
+				<NAME>FRIENDSHIP</NAME>
+			</PLAY_MUSIC>
+			<PLAY_ANIM>
+				<TARGET>FISH</TARGET>
+				<ANIM_NAME>DEATH_SHAKE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<FLASH_SCREEN>
+				<COLOR>0x000000</COLOR>
+				<TIME>1</TIME>
+				<FADE>FALSE</FADE>
+				<SYNC>FALSE</SYNC>
+			</FLASH_SCREEN>
+			<REMOVE_NPC><NAME>FISH</NAME></REMOVE_NPC>
+			<ADD_NPC>
+				<NAME>JEREMY</NAME>
+				<LOCATION>135, 165</LOCATION>
+				<FACING>RIGHT</FACING>
+			</ADD_NPC>
+			<FLASH_SCREEN>
+				<COLOR>0xFFFFFF</COLOR>
+				<TIME>30</TIME>
+				<FADE>TRUE</FADE>
+				<SYNC>FALSE</SYNC>
+			</FLASH_SCREEN>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<PAUSE>30</PAUSE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>...[delay 7]Abel's our secret weapon?[halt] Really?   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>8</PAUSE>
+			<SET_POSITION>
+				<TARGET>JEREMY</TARGET>
+				<POSITION>135,165</POSITION>
+				<FACING>LEFT</FACING>
+			</SET_POSITION>
+			<PAUSE>18</PAUSE>
+			<DIALOG>
+				<SPEAKER>JEREMY</SPEAKER>
+				<TEXT>No![halt][delay 9] THE POWER OF FRIENDSHIP IS!   [end]</TEXT>
+			</DIALOG>
+			<SET_POSITION>
+				<TARGET>JEREMY</TARGET>
+				<POSITION>135,165</POSITION>
+				<FACING>DOWN</FACING>
+			</SET_POSITION>
+			<PAUSE>10</PAUSE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<SET_POSITION>
+				<TARGET>EVAN</TARGET>
+				<POSITION>180, 170</POSITION>
+				<FACING>DOWN</FACING>
+			</SET_POSITION>
+			<PAUSE>10</PAUSE>
+			
+			<!-- EVERYBODY TRANSFORMS INTO HYBRID -->
+			<EVERYBODY_OUT></EVERYBODY_OUT>
+			<PAUSE>40</PAUSE>
+			<DIALOG>
+				<SPEAKER>1</SPEAKER>
+				<TEXT>Earth!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>2</SPEAKER>
+				<TEXT>Fire!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>3</SPEAKER>
+				<TEXT>Wind!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>4</SPEAKER>
+				<TEXT>Water!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>5</SPEAKER>
+				<TEXT>Heart!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>6</SPEAKER>
+				<TEXT>Uh...[delay 6] INTERNET?!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>[player dialog_end_hybrid]    [end]</TEXT>
+			</DIALOG>
+			<PAUSE>30</PAUSE>
+			<SET_POSITION>
+				<TARGET>JEREMY</TARGET>
+				<POSITION>135,165</POSITION>
+				<FACING>UP</FACING>
+			</SET_POSITION>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TIME>1</TIME>
+				<SYNC>FALSE</SYNC>
+			</WALK>
+			<SET_POSITION>
+				<TARGET>EVAN</TARGET>
+				<POSITION>180, 170</POSITION>
+				<FACING>UP</FACING>
+			</SET_POSITION>
+			<PAUSE>5</PAUSE>
+			<DIALOG>
+				<SPEAKER>EVERYONE</SPEAKER>
+				<TEXT>With our powers combined, WE WILL FUCK YOU UP!    [end]</TEXT>
+			</DIALOG>
+			<PAUSE>10</PAUSE>
+			<SUCK_TO_CENTER></SUCK_TO_CENTER>
+			<FLASH_SCREEN>
+				<COLOR>0xFFFFFF</COLOR>
+				<IN_ONLY>TRUE</IN_ONLY>
+				<TIME>90</TIME>
+				<SYNC>FALSE</SYNC>
+			</FLASH_SCREEN>
+			<DIALOG_CUSTOM>
+				<SPEAKER> </SPEAKER>
+				<TEXT>OMG!    [end]</TEXT>
+				<WIDTH>35</WIDTH>
+				<HEIGHT>20</HEIGHT>
+				<X>100</X><Y>60</Y>
+				<TIME>20</TIME>
+			</DIALOG_CUSTOM>
+			<DIALOG_CUSTOM>
+				<SPEAKER> </SPEAKER>
+				<TEXT>AAAAAHHHHHH!     [end]</TEXT>
+				<WIDTH>80</WIDTH>
+				<HEIGHT>20</HEIGHT>
+				<X>30</X><Y>190</Y>
+				<TIME>34</TIME>
+			</DIALOG_CUSTOM>
+			<DIALOG_CUSTOM>
+				<SPEAKER> </SPEAKER>
+				<TEXT>WTF IS HAPPENING TO ME?!     [end]</TEXT>
+				<WIDTH>160</WIDTH>
+				<HEIGHT>20</HEIGHT>
+				<X>125</X><Y>45</Y>
+				<TIME>30</TIME>
+			</DIALOG_CUSTOM>
+			<SHOW_HYBRID></SHOW_HYBRID>
+			<DIALOG_CUSTOM>
+				<SPEAKER> </SPEAKER>
+				<TEXT>BLLLARRUAAHH[end]</TEXT>
+				<WIDTH>100</WIDTH>
+				<HEIGHT>20</HEIGHT>
+				<X>20</X><Y>70</Y>
+				<TIME>20</TIME>
+			</DIALOG_CUSTOM>
+			<PAUSE>30</PAUSE>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>WE ARE ONE!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>MALE, FEMALE!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>PRINT, INTERACTIVE   [end]</TEXT>
+			</DIALOG>			
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>WE ARE THE ALPHA AND THE OMEGA!    [end]</TEXT>
+			</DIALOG>
+			<SET_POSITION>
+				<TARGET>DARK EVAN</TARGET>
+				<POSITION>85,140</POSITION>
+				<FACING>RIGHT</FACING>
+			</SET_POSITION>
+			<PLAY_ANIM>
+				<TARGET>DARK EVAN</TARGET>
+				<ANIM_NAME>BATTLE_IDLE</ANIM_NAME>
+				<SYNC>FALSE</SYNC>
+			</PLAY_ANIM>
+			<REMOVE_NPC><NAME>ASA</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>ANDY</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>EVAN</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>JEREMY</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>JASON</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>MEGAN</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>RACHEL</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>RALPH</NAME></REMOVE_NPC>
+			<REMOVE_NPC><NAME>RON</NAME></REMOVE_NPC>
+			<FADE_FLASH_OUT>30</FADE_FLASH_OUT>
+			<PAUSE>20</PAUSE>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>Sweet,[delay 6] now I have a boob!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>Hot.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>WTF! NOW I HAVE A DICK!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>Still hot.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>HYBRID</SPEAKER>
+				<TEXT>QUIET IN THERE!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>DARK EVAN</SPEAKER>
+				<TEXT>I'll shut you up for good!   [end]</TEXT>
+			</DIALOG>
+			<PAUSE>10</PAUSE>
+			<BATTLE>
+				<ENEMIES>Dark Evan</ENEMIES>
+				<RUNABLE>FALSE</RUNABLE>
+				<FINAL>TRUE</FINAL>
+				<BOSS>TRUE</BOSS>
+			</BATTLE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_fight_dark_evan_2>
+		
+	<EVENT_dark_evan_impossible>
+		<SEQUENCE>
+			<PAUSE>10</PAUSE>
+			<DIALOG>
+				<BATTLE>TRUE</BATTLE>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>No![halt] He's too powerful![end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_dark_evan_impossible>
+	
+	<EVENT_check_door>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>recruit_all_done</FLAG>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Is everybody ready to go?   [end]</TEXT>
+					</DIALOG>
+					<DIALOG_CHOICE>
+						<CHOICE_ONE>
+							<TEXT>Let's do it!</TEXT>
+							<SEQUENCE>
+								<PAUSE>4</PAUSE>
+								<SET_FLAG>door_opened</SET_FLAG>
+								<OPEN_DOOR></OPEN_DOOR>
+								<PAUSE>15</PAUSE>
+								<WALK>
+									<TARGET>PLAYER</TARGET>
+									<DIRECTION>UP</DIRECTION>
+									<TIME>12</TIME>
+									<SYNC>TRUE</SYNC>
+								</WALK>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_ONE>
+						<CHOICE_TWO>
+							<TEXT>Not just yet.</TEXT>
+							<SEQUENCE>
+								<PAUSE>1</PAUSE>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_TWO>
+					</DIALOG_CHOICE>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>	
+							<SPEAKER></SPEAKER>
+							<TEXT>The door is shut tight.   [end]</TEXT>
+						</DIALOG>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_door>
+	
+	<EVENT_check_mailbox>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<FLAG>ralph_talked_to</FLAG>
+				<SEQUENCE>
+					<CONDITIONAL>
+						<FLAG>film_mailed</FLAG>
+						<SEQUENCE>
+							<DIALOG>
+								<SPEAKER>PLAYER</SPEAKER>
+								<TEXT>.[delay 3].[delay 3].[delay 3]Does this place even have a postal service?   [end]</TEXT>
+							</DIALOG>
+							<FINAL_END></FINAL_END>
+						</SEQUENCE>
+						<ELSE>
+							<SEQUENCE>
+								<PLAY_SOUND>PICKUP</PLAY_SOUND>
+								<PAUSE>3</PAUSE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>God speed, little film!   [end]</TEXT>
+								</DIALOG>
+								<SET_FLAG>film_mailed</SET_FLAG>
+								<PAUSE>2</PAUSE>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</ELSE>
+					</CONDITIONAL>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>You have nothing to mail!   [end]</TEXT>
+						</DIALOG>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_mailbox>
+	
+	<EVENT_check_soda_machine>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Revive! brand Soda: $100"   [end]</TEXT>
+			</DIALOG>
+			<CONDITIONAL>
+				<GOLD>100</GOLD>
+				<SEQUENCE>
+					<DIALOG_CHOICE>
+						<INTRO_TEXT>Buy a Revive! Soda?</INTRO_TEXT>
+						<CHOICE_ONE>
+							<TEXT>Yes</TEXT>
+							<SEQUENCE>
+								<TAKE_GOLD>100</TAKE_GOLD>
+								<PAUSE>1</PAUSE>
+								<GIVE_ITEM>Revive! Soda</GIVE_ITEM>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_ONE>
+						<CHOICE_TWO>
+							<TEXT>No</TEXT>
+							<SEQUENCE>
+								<PAUSE>1</PAUSE>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+						</CHOICE_TWO>
+					</DIALOG_CHOICE>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Man, that stuff's expensive...   [end]</TEXT>
+						</DIALOG>
+						<PAUSE>1</PAUSE>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_soda_machine>
+	
+	<EVENT_weird_thing>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>A weird thing blocks your path![halt] You feel compelled to turn away.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_weird_thing>
+	
+	<EVENT_null>
+		<SEQUENCE>
+			<PAUSE>1</PAUSE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_null>
+	
+	<EVENT_andrew_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<PLAYER>RACHEL</PLAYER>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Andrew!    [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>ANDREW</SPEAKER>
+						<TEXT>Hey babe.[halt] What's up?   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Oh, you know, defeating evil, freeing friends, petting bunnies.   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>ANDREW</SPEAKER>
+						<TEXT>Need some muscle?   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Oh come on, I got this!   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>ANDREW</SPEAKER>
+						<TEXT>K, well if you needa bodyguard, I'm here.   [end]</TEXT>
+					</DIALOG>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<PLAYER>ASA</PLAYER>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Hey Andrew.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>ANDREW</SPEAKER>
+									<TEXT>Hey.[halt] Shouldn't you be grabbing Evan's balls?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Oh, right. See you later.   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Oh hey Andrew!   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>ANDREW</SPEAKER>
+										<TEXT>Hey [name].   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Wanna help us stop the evil Computer that has imprisoned us?   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>ANDREW</SPEAKER>
+										<TEXT>Nope, I'm hunting the Batman.   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Oh, ok. Well, have fun with that!   [end]</TEXT>
+									</DIALOG>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_andrew_talk>
+	
+	<EVENT_ellen_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<PLAYER>MEGAN</PLAYER>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Ellen!   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>ELLEN</SPEAKER>
+						<TEXT>Oh hey BFF and childhood friend!   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>MEGAN</SPEAKER>
+						<TEXT>That's me!   [end]</TEXT>
+					</DIALOG>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<PLAYER>ANDY</PLAYER>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Waddup Ellen?!   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>ELLEN</SPEAKER>
+									<TEXT>Babies![halt] I was just hanging my neph.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>SCALZO!!!    [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>ELLEN</SPEAKER>
+									<TEXT>SCALZO!!!    [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Greetings Ellen, whatcha' listening to?   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>ELLEN</SPEAKER>
+										<TEXT>Shangra-La's, practicing for a new video!   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Another million-viewer?   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>ELLEN</SPEAKER>
+										<TEXT>Maybe!   [end]</TEXT>
+									</DIALOG>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ellen_talk>
+	
+	<EVENT_nicole_talk>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<PLAYER>RALPH</PLAYER>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Nicole. Ssshhh.[halt] Tell me what you know.   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>NICOLE</SPEAKER>
+						<TEXT>I must be discrete. Asa's close by...[halt] Be careful.   [end]</TEXT>
+					</DIALOG>
+					<DIALOG>
+						<SPEAKER>PLAYER</SPEAKER>
+						<TEXT>Time to get naked.   [end]</TEXT>
+					</DIALOG>
+					<FINAL_END></FINAL_END>
+				</SEQUENCE>
+				<ELSE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<PLAYER>ASA</PLAYER>
+							<SEQUENCE>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Hey babe.   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>NICOLE</SPEAKER>
+									<TEXT>Hey babe. Wanna do some more woodworking in your room tonight?   [end]</TEXT>
+								</DIALOG>
+								<DIALOG>
+									<SPEAKER>PLAYER</SPEAKER>
+									<TEXT>Yeah.[halt] I do love woodworking.   [end]</TEXT>
+								</DIALOG>
+								<FINAL_END></FINAL_END>
+							</SEQUENCE>
+							<ELSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Knee Coal!   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>NICOLE</SPEAKER>
+										<TEXT>Haha!   [end]</TEXT>
+									</DIALOG>
+									<FINAL_END></FINAL_END>
+								</SEQUENCE>
+							</ELSE>
+						</CONDITIONAL>
+						<FINAL_END></FINAL_END>
+					</SEQUENCE>
+				</ELSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_nicole_talk>
+	
+	<EVENT_giant_head_talk>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>GIANT HEAD</SPEAKER>
+				<TEXT>I'm selling these fine leather jackets. Would you like to buy-   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>No, no! I have enough of those already!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_giant_head_talk>
+	
+	<EVENT_check_computer>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>It's just a hollow plastic box painted to look like a computer!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_computer>
+	
+	<EVENT_check_spring>
+		<SEQUENCE>
+			<PAUSE>3</PAUSE>
+			<PLAY_SOUND>HEAL</PLAY_SOUND>
+			<HEAL_ALL></HEAL_ALL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_spring>
+	
+	<EVENT_check_fixotron>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>FIXOTRON</SPEAKER>
+				<TEXT>*BEEP BOOP* I AM FIX-O-TRON. I WILL BE FIXING YOUR GAME NOW.   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>andy_talked_to</SET_FLAG>
+			<PAUSE>3</PAUSE>
+			<DIALOG>
+				<SPEAKER>FIXOTRON</SPEAKER>
+				<TEXT>*BEEP BOOP* FIXING COMPLETE. *BEEP BOOP*   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_fixotron>
+</EVENTS>

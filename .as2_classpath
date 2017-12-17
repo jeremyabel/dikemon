@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/core</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/coreyoneil</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/coreyoneil/collision</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/battle</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/data</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/debug</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/display</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/events</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/managers</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/maps</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/misc</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/ui</AS2Classpath>
+    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/utils</AS2Classpath>
 </AS2Classpath>

@@ -1,0 +1,66 @@
+.battleBoxTitle {
+	font-family: "kroeger 04_65_8pt_st";
+	font-size: 8px;
+	color: #000000;
+}
+
+.battleLevelText {
+	font-family: "kroeger 04_65_8pt_st";
+	font-size: 8px;
+	color: #000000;
+}
+
+.battleCharName {
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #000000;
+}
+
+.battleHP_Red { 
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #EC2327;
+}
+
+.battleHP_Black { 
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #000000;
+}
+
+.battleItemText {
+	font-family: "04b03_8pt_st";
+	font-size: 8pt;
+	color: #000000;	
+}
+
+.battleItemHP {
+	font-family: "dkmn0706 Regular_6pt_st";
+	font-size: 6px;
+	color: #000000;
+}
+
+.battleSwitchCommand {
+	font-family: "dkmn0706 Regular_6pt_st";
+	font-size: 6px;
+	color: #000000;
+}
+
+.selecterText {
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #000000;
+}
+
+.dialogText { 
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #000000;
+	leading: -2px;
+}
+
+.menuTextWhite {
+	font-family: "mono 07_55_8pt_st";
+	font-size: 8px;
+	color: #FFFFFF;
+}
