@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:fdb11ffae3eafdfca9e198a20b70aa05:9273ddd8db1768d7e87852ec2b1861cd:16d4c247739e90076faf38794855a350$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_smokescreen.png" width="377" height="377">
+    <sprite n="smokescreen_00000" x="195" y="81" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="smokescreen_00001" x="215" y="234" w="12" h="12" pX="0.5" pY="0.5" oX="52" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_00002" x="227" y="234" w="12" h="12" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="smokescreen_00003" x="292" y="276" w="12" h="12" pX="0.5" pY="0.5" oX="56" oY="53" oW="160" oH="144"/>
+    <sprite n="smokescreen_00004" x="292" y="288" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_00005" x="359" y="295" w="12" h="12" pX="0.5" pY="0.5" oX="60" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_00006" x="359" y="307" w="12" h="12" pX="0.5" pY="0.5" oX="62" oY="64" oW="160" oH="144"/>
+    <sprite n="smokescreen_00007" x="364" y="109" w="12" h="12" pX="0.5" pY="0.5" oX="64" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_00008" x="364" y="121" w="12" h="12" pX="0.5" pY="0.5" oX="66" oY="51" oW="160" oH="144"/>
+    <sprite n="smokescreen_00009" x="319" y="313" w="12" h="12" pX="0.5" pY="0.5" oX="68" oY="47" oW="160" oH="144"/>
+    <sprite n="smokescreen_00010" x="331" y="313" w="12" h="12" pX="0.5" pY="0.5" oX="70" oY="44" oW="160" oH="144"/>
+    <sprite n="smokescreen_00011" x="343" y="313" w="12" h="12" pX="0.5" pY="0.5" oX="72" oY="45" oW="160" oH="144"/>
+    <sprite n="smokescreen_00012" x="320" y="325" w="12" h="12" pX="0.5" pY="0.5" oX="74" oY="47" oW="160" oH="144"/>
+    <sprite n="smokescreen_00013" x="332" y="325" w="12" h="12" pX="0.5" pY="0.5" oX="76" oY="51" oW="160" oH="144"/>
+    <sprite n="smokescreen_00014" x="320" y="337" w="12" h="12" pX="0.5" pY="0.5" oX="78" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_00015" x="332" y="337" w="12" h="12" pX="0.5" pY="0.5" oX="80" oY="49" oW="160" oH="144"/>
+    <sprite n="smokescreen_00016" x="344" y="325" w="12" h="12" pX="0.5" pY="0.5" oX="82" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00017" x="344" y="337" w="12" h="12" pX="0.5" pY="0.5" oX="84" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00018" x="330" y="349" w="12" h="12" pX="0.5" pY="0.5" oX="86" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00019" x="342" y="349" w="12" h="12" pX="0.5" pY="0.5" oX="88" oY="37" oW="160" oH="144"/>
+    <sprite n="smokescreen_00020" x="330" y="361" w="12" h="12" pX="0.5" pY="0.5" oX="90" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00021" x="342" y="361" w="12" h="12" pX="0.5" pY="0.5" oX="92" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00022" x="356" y="319" w="12" h="12" pX="0.5" pY="0.5" oX="94" oY="48" oW="160" oH="144"/>
+    <sprite n="smokescreen_00023" x="356" y="331" w="12" h="12" pX="0.5" pY="0.5" oX="94" oY="48" oW="160" oH="144"/>
+    <sprite n="smokescreen_00024" x="356" y="343" w="12" h="12" pX="0.5" pY="0.5" oX="94" oY="48" oW="160" oH="144"/>
+    <sprite n="smokescreen_00025" x="354" y="355" w="12" h="12" pX="0.5" pY="0.5" oX="94" oY="48" oW="160" oH="144"/>
+    <sprite n="smokescreen_00026" x="270" y="277" w="22" h="22" pX="0.5" pY="0.5" oX="89" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00027" x="304" y="283" w="22" h="22" pX="0.5" pY="0.5" oX="89" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00028" x="297" y="305" w="22" h="22" pX="0.5" pY="0.5" oX="89" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00029" x="298" y="327" w="22" h="22" pX="0.5" pY="0.5" oX="89" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_00030" x="342" y="47" w="30" h="30" pX="0.5" pY="0.5" oX="85" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00031" x="344" y="200" w="30" h="30" pX="0.5" pY="0.5" oX="85" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00032" x="282" y="246" w="30" h="30" pX="0.5" pY="0.5" oX="85" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00033" x="267" y="309" w="30" h="30" pX="0.5" pY="0.5" oX="85" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_00034" x="337" y="77" w="32" h="32" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="smokescreen_00035" x="332" y="109" w="32" h="32" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="smokescreen_00036" x="312" y="201" w="32" h="32" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="smokescreen_00037" x="73" y="198" w="33" h="32" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="smokescreen_00038" x="0" y="158" w="40" h="40" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="smokescreen_00039" x="0" y="118" w="43" h="40" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="smokescreen_00040" x="0" y="78" w="46" h="40" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="smokescreen_00041" x="0" y="38" w="50" h="40" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="smokescreen_00042" x="267" y="339" w="31" h="8" pX="0.5" pY="0.5" oX="104" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00043" x="267" y="347" w="31" h="8" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00044" x="139" y="364" w="59" h="13" pX="0.5" pY="0.5" oX="84" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00045" x="139" y="352" w="63" h="12" pX="0.5" pY="0.5" oX="85" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00046" x="190" y="160" w="66" h="11" pX="0.5" pY="0.5" oX="86" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00047" x="140" y="291" w="66" h="11" pX="0.5" pY="0.5" oX="89" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00048" x="211" y="267" w="66" h="10" pX="0.5" pY="0.5" oX="92" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00049" x="312" y="233" w="65" h="9" pX="0.5" pY="0.5" oX="95" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00050" x="312" y="259" w="61" h="8" pX="0.5" pY="0.5" oX="99" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00051" x="320" y="184" w="56" h="8" pX="0.5" pY="0.5" oX="104" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00052" x="325" y="153" w="52" h="8" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00053" x="150" y="17" w="76" h="13" pX="0.5" pY="0.5" oX="84" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00054" x="43" y="157" w="73" h="12" pX="0.5" pY="0.5" oX="85" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00055" x="184" y="188" w="69" h="11" pX="0.5" pY="0.5" oX="86" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00056" x="204" y="277" w="66" h="11" pX="0.5" pY="0.5" oX="89" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00057" x="206" y="299" w="66" h="10" pX="0.5" pY="0.5" oX="92" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00058" x="312" y="242" w="65" h="9" pX="0.5" pY="0.5" oX="95" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00059" x="312" y="267" w="61" h="8" pX="0.5" pY="0.5" oX="99" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00060" x="320" y="192" w="56" h="8" pX="0.5" pY="0.5" oX="104" oY="36" oW="160" oH="144"/>
+    <sprite n="smokescreen_00061" x="312" y="275" w="59" h="8" pX="0.5" pY="0.5" oX="101" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00062" x="226" y="17" w="76" h="13" pX="0.5" pY="0.5" oX="84" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00063" x="40" y="186" w="73" h="12" pX="0.5" pY="0.5" oX="85" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00064" x="268" y="92" w="69" h="11" pX="0.5" pY="0.5" oX="86" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00065" x="206" y="288" w="64" h="11" pX="0.5" pY="0.5" oX="88" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_00066" x="253" y="190" w="67" h="11" pX="0.5" pY="0.5" oX="87" oY="34" oW="160" oH="144"/>
+    <sprite n="smokescreen_00067" x="73" y="32" w="74" h="11" pX="0.5" pY="0.5" oX="86" oY="33" oW="160" oH="144"/>
+    <sprite n="smokescreen_00068" x="124" y="82" w="73" h="12" pX="0.5" pY="0.5" oX="87" oY="32" oW="160" oH="144"/>
+    <sprite n="smokescreen_00069" x="76" y="18" w="74" h="14" pX="0.5" pY="0.5" oX="86" oY="30" oW="160" oH="144"/>
+    <sprite n="smokescreen_00070" x="302" y="17" w="71" h="13" pX="0.5" pY="0.5" oX="89" oY="30" oW="160" oH="144"/>
+    <sprite n="smokescreen_00071" x="0" y="0" w="76" h="19" pX="0.5" pY="0.5" oX="84" oY="29" oW="160" oH="144"/>
+    <sprite n="smokescreen_00072" x="0" y="19" w="73" h="19" pX="0.5" pY="0.5" oX="85" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00073" x="187" y="126" w="69" h="18" pX="0.5" pY="0.5" oX="86" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00074" x="140" y="273" w="64" h="18" pX="0.5" pY="0.5" oX="88" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00075" x="256" y="138" w="67" h="18" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00076" x="150" y="0" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00077" x="43" y="123" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00078" x="224" y="0" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00079" x="197" y="81" w="71" h="16" pX="0.5" pY="0.5" oX="89" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00080" x="175" y="217" w="68" h="17" pX="0.5" pY="0.5" oX="92" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00081" x="73" y="302" w="66" h="17" pX="0.5" pY="0.5" oX="94" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00082" x="187" y="144" w="69" h="16" pX="0.5" pY="0.5" oX="91" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00083" x="269" y="47" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00084" x="43" y="140" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00085" x="298" y="0" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00086" x="40" y="169" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00087" x="150" y="30" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00088" x="113" y="171" w="71" h="16" pX="0.5" pY="0.5" oX="89" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00089" x="264" y="121" w="68" h="17" pX="0.5" pY="0.5" oX="92" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00090" x="73" y="319" w="66" h="17" pX="0.5" pY="0.5" oX="94" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00091" x="106" y="216" w="69" h="16" pX="0.5" pY="0.5" oX="91" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00092" x="120" y="94" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="28" oW="160" oH="144"/>
+    <sprite n="smokescreen_00093" x="0" y="198" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00094" x="224" y="30" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00095" x="116" y="126" w="71" h="17" pX="0.5" pY="0.5" oX="87" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00096" x="256" y="156" w="69" h="16" pX="0.5" pY="0.5" oX="86" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00097" x="139" y="320" w="64" h="16" pX="0.5" pY="0.5" oX="88" oY="27" oW="160" oH="144"/>
+    <sprite n="smokescreen_00098" x="73" y="268" w="67" h="17" pX="0.5" pY="0.5" oX="87" oY="26" oW="160" oH="144"/>
+    <sprite n="smokescreen_00099" x="298" y="30" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="25" oW="160" oH="144"/>
+    <sprite n="smokescreen_00100" x="0" y="215" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="24" oW="160" oH="144"/>
+    <sprite n="smokescreen_00101" x="0" y="232" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="23" oW="160" oH="144"/>
+    <sprite n="smokescreen_00102" x="0" y="268" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="23" oW="160" oH="144"/>
+    <sprite n="smokescreen_00103" x="76" y="0" w="74" h="18" pX="0.5" pY="0.5" oX="86" oY="21" oW="160" oH="144"/>
+    <sprite n="smokescreen_00104" x="124" y="64" w="71" h="18" pX="0.5" pY="0.5" oX="87" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00105" x="106" y="198" w="69" h="18" pX="0.5" pY="0.5" oX="86" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00106" x="139" y="302" w="64" h="18" pX="0.5" pY="0.5" oX="88" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00107" x="253" y="172" w="67" h="18" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00108" x="50" y="43" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00109" x="0" y="285" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00110" x="197" y="47" w="72" h="17" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00111" x="184" y="171" w="69" h="17" pX="0.5" pY="0.5" oX="91" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00112" x="175" y="199" w="68" h="18" pX="0.5" pY="0.5" oX="92" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00113" x="73" y="336" w="66" h="17" pX="0.5" pY="0.5" oX="94" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00114" x="243" y="201" w="69" h="16" pX="0.5" pY="0.5" oX="91" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00115" x="120" y="110" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00116" x="0" y="302" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00117" x="50" y="60" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00118" x="0" y="319" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00119" x="195" y="64" w="72" h="17" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00120" x="268" y="75" w="69" h="17" pX="0.5" pY="0.5" oX="91" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00121" x="264" y="103" w="68" h="18" pX="0.5" pY="0.5" oX="92" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00122" x="73" y="353" w="66" h="17" pX="0.5" pY="0.5" oX="94" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00123" x="243" y="217" w="69" h="16" pX="0.5" pY="0.5" oX="91" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00124" x="192" y="97" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00125" x="0" y="336" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00126" x="50" y="77" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00127" x="116" y="143" w="71" h="17" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00128" x="145" y="247" w="67" h="16" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00129" x="139" y="336" w="64" h="16" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00130" x="73" y="285" w="67" h="17" pX="0.5" pY="0.5" oX="87" oY="18" oW="160" oH="144"/>
+    <sprite n="smokescreen_00131" x="46" y="94" w="74" h="17" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="144"/>
+    <sprite n="smokescreen_00132" x="0" y="353" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+    <sprite n="smokescreen_00133" x="0" y="250" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00134" x="124" y="47" w="73" h="17" pX="0.5" pY="0.5" oX="87" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00135" x="46" y="111" w="74" h="12" pX="0.5" pY="0.5" oX="86" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00136" x="113" y="187" w="71" h="11" pX="0.5" pY="0.5" oX="87" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00137" x="144" y="263" w="67" h="10" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00138" x="203" y="309" w="64" h="10" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00139" x="215" y="246" w="67" h="11" pX="0.5" pY="0.5" oX="87" oY="18" oW="160" oH="144"/>
+    <sprite n="smokescreen_00140" x="116" y="160" w="74" h="11" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="144"/>
+    <sprite n="smokescreen_00141" x="269" y="63" w="73" h="12" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+    <sprite n="smokescreen_00142" x="192" y="113" w="72" h="13" pX="0.5" pY="0.5" oX="88" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00143" x="243" y="233" w="69" h="13" pX="0.5" pY="0.5" oX="91" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00144" x="198" y="367" w="63" h="10" pX="0.5" pY="0.5" oX="97" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00145" x="203" y="319" w="64" h="10" pX="0.5" pY="0.5" oX="94" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00146" x="203" y="329" w="64" h="10" pX="0.5" pY="0.5" oX="91" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00147" x="203" y="349" w="64" h="9" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00148" x="212" y="257" w="67" h="10" pX="0.5" pY="0.5" oX="87" oY="18" oW="160" oH="144"/>
+    <sprite n="smokescreen_00149" x="72" y="232" w="74" h="11" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="144"/>
+    <sprite n="smokescreen_00150" x="72" y="243" w="73" h="12" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+    <sprite n="smokescreen_00151" x="72" y="255" w="72" h="13" pX="0.5" pY="0.5" oX="88" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00152" x="146" y="234" w="69" h="13" pX="0.5" pY="0.5" oX="91" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00153" x="312" y="251" w="63" h="8" pX="0.5" pY="0.5" oX="97" oY="21" oW="160" oH="144"/>
+    <sprite n="smokescreen_00154" x="202" y="358" w="64" h="9" pX="0.5" pY="0.5" oX="94" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00155" x="203" y="339" w="64" h="10" pX="0.5" pY="0.5" oX="91" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00156" x="266" y="358" w="64" h="9" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00157" x="261" y="367" w="61" h="10" pX="0.5" pY="0.5" oX="87" oY="18" oW="160" oH="144"/>
+    <sprite n="smokescreen_00158" x="320" y="173" w="57" h="11" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="144"/>
+    <sprite n="smokescreen_00159" x="323" y="141" w="52" h="12" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+    <sprite n="smokescreen_00160" x="325" y="161" w="47" h="12" pX="0.5" pY="0.5" oX="88" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00161" x="330" y="283" w="39" h="12" pX="0.5" pY="0.5" oX="91" oY="15" oW="160" oH="144"/>
+    <sprite n="smokescreen_00162" x="0" y="370" w="29" h="6" pX="0.5" pY="0.5" oX="97" oY="21" oW="160" oH="144"/>
+    <sprite n="smokescreen_00163" x="29" y="370" w="29" h="6" pX="0.5" pY="0.5" oX="94" oY="20" oW="160" oH="144"/>
+    <sprite n="smokescreen_00164" x="58" y="370" w="29" h="6" pX="0.5" pY="0.5" oX="91" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00165" x="87" y="370" w="29" h="6" pX="0.5" pY="0.5" oX="88" oY="19" oW="160" oH="144"/>
+    <sprite n="smokescreen_00166" x="330" y="295" w="29" h="6" pX="0.5" pY="0.5" oX="87" oY="18" oW="160" oH="144"/>
+    <sprite n="smokescreen_00167" x="330" y="301" w="29" h="6" pX="0.5" pY="0.5" oX="86" oY="17" oW="160" oH="144"/>
+    <sprite n="smokescreen_00168" x="330" y="307" w="29" h="6" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+</TextureAtlas>

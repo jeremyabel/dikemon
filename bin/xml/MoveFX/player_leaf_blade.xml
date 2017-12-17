@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e3f838f44624160115e8b97f5d3b8902:2bc3f830d5e98a0a2c1be871511bdabd:dbf4e2d94670670d5e9cbc92df36c68a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_leaf_blade.png" width="727" height="727">
+    <sprite n="razor_leaf_00000" x="149" y="448" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00001" x="124" y="623" w="12" h="7" pX="0.5" pY="0.5" oX="34" oY="61" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00002" x="140" y="185" w="16" h="9" pX="0.5" pY="0.5" oX="32" oY="58" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00003" x="476" y="211" w="20" h="11" pX="0.5" pY="0.5" oX="30" oY="54" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00004" x="585" y="80" w="24" h="14" pX="0.5" pY="0.5" oX="28" oY="50" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00005" x="522" y="389" w="28" h="16" pX="0.5" pY="0.5" oX="26" oY="46" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00006" x="248" y="358" w="32" h="18" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00007" x="660" y="705" w="36" h="21" pX="0.5" pY="0.5" oX="22" oY="39" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00008" x="373" y="243" w="40" h="32" pX="0.5" pY="0.5" oX="20" oY="36" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00009" x="334" y="646" w="44" h="34" pX="0.5" pY="0.5" oX="18" oY="33" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00010" x="333" y="680" w="48" h="34" pX="0.5" pY="0.5" oX="16" oY="31" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00011" x="673" y="507" w="52" h="36" pX="0.5" pY="0.5" oX="14" oY="28" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00012" x="606" y="642" w="56" h="36" pX="0.5" pY="0.5" oX="12" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00013" x="436" y="174" w="60" h="37" pX="0.5" pY="0.5" oX="10" oY="24" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00014" x="413" y="243" w="64" h="37" pX="0.5" pY="0.5" oX="8" oY="23" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00015" x="659" y="147" w="68" h="36" pX="0.5" pY="0.5" oX="6" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00016" x="496" y="174" w="72" h="35" pX="0.5" pY="0.5" oX="4" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00017" x="398" y="280" w="76" h="35" pX="0.5" pY="0.5" oX="2" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00018" x="398" y="315" w="76" h="33" pX="0.5" pY="0.5" oX="2" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00019" x="400" y="211" w="76" h="32" pX="0.5" pY="0.5" oX="2" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00020" x="373" y="582" w="78" h="31" pX="0.5" pY="0.5" oX="1" oY="23" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00021" x="373" y="613" w="81" h="30" pX="0.5" pY="0.5" oX="0" oY="23" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00022" x="645" y="331" w="82" h="29" pX="0.5" pY="0.5" oX="0" oY="24" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00023" x="356" y="406" w="84" h="29" pX="0.5" pY="0.5" oX="0" oY="24" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00024" x="560" y="350" w="85" h="29" pX="0.5" pY="0.5" oX="0" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00025" x="474" y="329" w="86" h="29" pX="0.5" pY="0.5" oX="0" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00026" x="567" y="290" w="86" h="29" pX="0.5" pY="0.5" oX="2" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00027" x="474" y="298" w="86" h="31" pX="0.5" pY="0.5" oX="3" oY="24" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00028" x="560" y="319" w="85" h="31" pX="0.5" pY="0.5" oX="5" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00029" x="467" y="358" w="85" h="31" pX="0.5" pY="0.5" oX="6" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00030" x="477" y="238" w="88" h="31" pX="0.5" pY="0.5" oX="4" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00031" x="568" y="176" w="89" h="31" pX="0.5" pY="0.5" oX="3" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00032" x="283" y="518" w="91" h="32" pX="0.5" pY="0.5" oX="2" oY="27" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00033" x="280" y="243" w="93" h="32" pX="0.5" pY="0.5" oX="0" oY="27" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00034" x="280" y="550" w="93" h="32" pX="0.5" pY="0.5" oX="0" oY="28" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00035" x="306" y="211" w="94" h="32" pX="0.5" pY="0.5" oX="0" oY="28" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00036" x="280" y="582" w="93" h="32" pX="0.5" pY="0.5" oX="0" oY="29" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00037" x="280" y="614" w="93" h="32" pX="0.5" pY="0.5" oX="0" oY="29" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00038" x="241" y="646" w="93" h="32" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00039" x="241" y="678" w="92" h="32" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00040" x="476" y="142" w="92" h="32" pX="0.5" pY="0.5" oX="0" oY="31" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00041" x="568" y="147" w="91" h="29" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00042" x="477" y="269" w="90" h="29" pX="0.5" pY="0.5" oX="0" oY="34" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00043" x="568" y="207" w="89" h="29" pX="0.5" pY="0.5" oX="0" oY="34" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00044" x="567" y="261" w="88" h="29" pX="0.5" pY="0.5" oX="0" oY="35" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00045" x="381" y="348" w="86" h="29" pX="0.5" pY="0.5" oX="0" oY="35" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00046" x="355" y="377" w="85" h="29" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00047" x="356" y="435" w="84" h="29" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00048" x="645" y="360" w="82" h="29" pX="0.5" pY="0.5" oX="0" oY="37" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00049" x="440" y="418" w="81" h="29" pX="0.5" pY="0.5" oX="0" oY="37" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00050" x="281" y="491" w="80" h="27" pX="0.5" pY="0.5" oX="0" oY="40" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00051" x="361" y="491" w="79" h="27" pX="0.5" pY="0.5" oX="0" oY="40" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00052" x="601" y="474" w="75" h="27" pX="0.5" pY="0.5" oX="2" oY="41" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00053" x="600" y="501" w="73" h="27" pX="0.5" pY="0.5" oX="3" oY="41" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00054" x="601" y="557" w="71" h="27" pX="0.5" pY="0.5" oX="4" oY="42" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00055" x="657" y="212" w="69" h="29" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00056" x="657" y="241" w="69" h="29" pX="0.5" pY="0.5" oX="3" oY="41" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00057" x="605" y="584" w="68" h="29" pX="0.5" pY="0.5" oX="2" oY="41" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00058" x="530" y="580" w="71" h="29" pX="0.5" pY="0.5" oX="0" oY="42" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00059" x="496" y="209" w="72" h="29" pX="0.5" pY="0.5" oX="0" oY="42" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00060" x="527" y="551" w="73" h="29" pX="0.5" pY="0.5" oX="0" oY="43" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00061" x="526" y="522" w="74" h="29" pX="0.5" pY="0.5" oX="0" oY="43" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00062" x="530" y="609" w="75" h="29" pX="0.5" pY="0.5" oX="0" oY="44" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00063" x="530" y="638" w="75" h="29" pX="0.5" pY="0.5" oX="0" oY="44" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00064" x="374" y="518" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="43" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00065" x="378" y="643" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="43" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00066" x="381" y="675" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="44" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00067" x="662" y="642" w="59" h="32" pX="0.5" pY="0.5" oX="18" oY="44" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00068" x="440" y="476" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="45" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00069" x="450" y="508" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="45" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00070" x="450" y="540" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="46" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00071" x="451" y="572" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="46" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00072" x="454" y="604" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="47" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00073" x="454" y="636" w="76" h="32" pX="0.5" pY="0.5" oX="0" oY="47" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00074" x="373" y="550" w="77" h="32" pX="0.5" pY="0.5" oX="0" oY="48" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00075" x="457" y="668" w="75" h="32" pX="0.5" pY="0.5" oX="1" oY="48" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00076" x="653" y="299" w="74" h="32" pX="0.5" pY="0.5" oX="2" oY="49" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00077" x="526" y="490" w="74" h="32" pX="0.5" pY="0.5" oX="2" oY="49" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00078" x="655" y="270" w="72" h="29" pX="0.5" pY="0.5" oX="3" oY="52" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00079" x="600" y="528" w="71" h="29" pX="0.5" pY="0.5" oX="4" oY="52" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00080" x="605" y="613" w="68" h="29" pX="0.5" pY="0.5" oX="6" oY="53" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00081" x="657" y="183" w="70" h="29" pX="0.5" pY="0.5" oX="5" oY="53" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00082" x="532" y="667" w="74" h="29" pX="0.5" pY="0.5" oX="3" oY="54" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00083" x="601" y="445" w="76" h="29" pX="0.5" pY="0.5" oX="2" oY="54" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00084" x="521" y="433" w="79" h="29" pX="0.5" pY="0.5" oX="0" oY="55" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00085" x="440" y="447" w="81" h="29" pX="0.5" pY="0.5" oX="0" oY="55" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00086" x="440" y="389" w="82" h="29" pX="0.5" pY="0.5" oX="0" oY="56" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00087" x="356" y="464" w="84" h="27" pX="0.5" pY="0.5" oX="0" oY="58" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00088" x="552" y="379" w="85" h="27" pX="0.5" pY="0.5" oX="0" oY="59" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00089" x="637" y="389" w="85" h="28" pX="0.5" pY="0.5" oX="0" oY="59" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00090" x="457" y="700" w="83" h="27" pX="0.5" pY="0.5" oX="2" oY="60" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00091" x="540" y="406" w="82" h="27" pX="0.5" pY="0.5" oX="3" oY="60" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00092" x="521" y="462" w="80" h="28" pX="0.5" pY="0.5" oX="5" oY="59" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00093" x="622" y="417" w="79" h="28" pX="0.5" pY="0.5" oX="6" oY="59" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00094" x="568" y="236" w="89" h="25" pX="0.5" pY="0.5" oX="4" oY="60" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00095" x="629" y="0" w="98" h="26" pX="0.5" pY="0.5" oX="3" oY="60" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00096" x="124" y="701" w="107" h="25" pX="0.5" pY="0.5" oX="2" oY="61" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00097" x="148" y="617" w="117" h="26" pX="0.5" pY="0.5" oX="0" oY="61" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00098" x="317" y="116" w="125" h="27" pX="0.5" pY="0.5" oX="0" oY="60" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00099" x="150" y="518" w="133" h="32" pX="0.5" pY="0.5" oX="0" oY="56" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00100" x="320" y="80" w="141" h="36" pX="0.5" pY="0.5" oX="0" oY="52" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00101" x="157" y="177" w="149" h="41" pX="0.5" pY="0.5" oX="0" oY="48" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00102" x="160" y="82" w="157" h="45" pX="0.5" pY="0.5" oX="0" oY="44" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00103" x="157" y="127" w="155" h="50" pX="0.5" pY="0.5" oX="5" oY="40" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00104" x="585" y="94" w="110" h="53" pX="0.5" pY="0.5" oX="5" oY="37" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00105" x="124" y="643" w="117" h="58" pX="0.5" pY="0.5" oX="6" oY="33" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00106" x="461" y="80" w="124" h="62" pX="0.5" pY="0.5" oX="7" oY="29" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00107" x="148" y="550" w="132" h="67" pX="0.5" pY="0.5" oX="7" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00108" x="140" y="218" w="140" h="72" pX="0.5" pY="0.5" oX="7" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00109" x="320" y="0" w="155" h="80" pX="0.5" pY="0.5" oX="0" oY="17" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00110" x="160" y="0" w="160" h="82" pX="0.5" pY="0.5" oX="0" oY="13" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00111" x="0" y="378" w="149" h="86" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00112" x="0" y="95" w="157" h="90" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00113" x="0" y="0" w="160" h="95" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00114" x="0" y="548" w="148" h="75" pX="0.5" pY="0.5" oX="0" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00115" x="475" y="0" w="154" h="80" pX="0.5" pY="0.5" oX="2" oY="17" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00116" x="0" y="464" w="150" h="84" pX="0.5" pY="0.5" oX="10" oY="13" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00117" x="132" y="290" w="116" h="88" pX="0.5" pY="0.5" oX="12" oY="9" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00118" x="0" y="623" w="124" h="92" pX="0.5" pY="0.5" oX="12" oY="5" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00119" x="0" y="282" w="132" h="96" pX="0.5" pY="0.5" oX="12" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00120" x="0" y="185" w="140" h="97" pX="0.5" pY="0.5" oX="12" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00121" x="149" y="378" w="131" h="70" pX="0.5" pY="0.5" oX="20" oY="23" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00122" x="150" y="448" w="131" h="70" pX="0.5" pY="0.5" oX="28" oY="19" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00123" x="312" y="143" w="124" h="68" pX="0.5" pY="0.5" oX="36" oY="17" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00124" x="629" y="26" w="75" h="68" pX="0.5" pY="0.5" oX="44" oY="13" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00125" x="248" y="290" w="75" h="68" pX="0.5" pY="0.5" oX="52" oY="9" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00126" x="323" y="275" w="75" h="68" pX="0.5" pY="0.5" oX="60" oY="5" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00127" x="280" y="358" w="75" h="68" pX="0.5" pY="0.5" oX="68" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00128" x="281" y="426" w="75" h="65" pX="0.5" pY="0.5" oX="76" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00129" x="540" y="696" w="60" h="31" pX="0.5" pY="0.5" oX="84" oY="30" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00130" x="600" y="696" w="60" h="31" pX="0.5" pY="0.5" oX="92" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00131" x="662" y="674" w="60" h="31" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00132" x="436" y="143" w="38" h="31" pX="0.5" pY="0.5" oX="108" oY="18" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00133" x="677" y="445" w="38" h="31" pX="0.5" pY="0.5" oX="116" oY="14" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00134" x="676" y="476" w="36" h="31" pX="0.5" pY="0.5" oX="124" oY="10" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00135" x="132" y="282" w="8" h="7" pX="0.5" pY="0.5" oX="132" oY="30" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00136" x="645" y="319" w="8" h="7" pX="0.5" pY="0.5" oX="140" oY="26" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00137" x="552" y="358" w="8" h="7" pX="0.5" pY="0.5" oX="148" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00138" x="601" y="584" w="4" h="7" pX="0.5" pY="0.5" oX="156" oY="18" oW="160" oH="144"/>
+    <sprite n="razor_leaf_00139" x="280" y="426" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:541952b150bcc434dfc36fce396979df:73ba3c2d42eee31cdf26974a72514bbe:8df9edf5896530ff3334a38303fb99de$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_rain_dance.png" width="1310" height="1310">
+    <sprite n="rain_dance_00000" x="319" y="95" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00001" x="312" y="494" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00002" x="797" y="251" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00003" x="455" y="1120" w="4" h="3" pX="0.5" pY="0.5" oX="125" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00004" x="629" y="368" w="6" h="6" pX="0.5" pY="0.5" oX="125" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00005" x="1171" y="1203" w="108" h="11" pX="0.5" pY="0.5" oX="25" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00006" x="1171" y="1189" w="110" h="14" pX="0.5" pY="0.5" oX="25" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00007" x="1112" y="453" w="153" h="19" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00008" x="462" y="1015" w="155" h="22" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00009" x="315" y="577" w="157" h="27" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00010" x="157" y="1123" w="158" h="30" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00011" x="472" y="583" w="157" h="35" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00012" x="315" y="1123" w="155" h="39" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00013" x="470" y="1120" w="153" h="43" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00014" x="924" y="852" w="151" h="47" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00015" x="623" y="1120" w="142" h="50" pX="0.5" pY="0.5" oX="11" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00016" x="1073" y="933" w="142" h="55" pX="0.5" pY="0.5" oX="13" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00017" x="927" y="1057" w="142" h="58" pX="0.5" pY="0.5" oX="15" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00018" x="1075" y="870" w="143" h="63" pX="0.5" pY="0.5" oX="17" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00019" x="923" y="1115" w="141" h="66" pX="0.5" pY="0.5" oX="19" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00020" x="160" y="190" w="160" h="69" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00021" x="474" y="454" w="155" h="71" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00022" x="467" y="1238" w="155" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00023" x="465" y="1163" w="155" h="75" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00024" x="310" y="1162" w="155" h="78" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00025" x="462" y="932" w="155" h="83" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00026" x="639" y="90" w="159" h="86" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00027" x="0" y="969" w="155" h="91" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00028" x="157" y="259" w="160" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00029" x="621" y="748" w="155" h="71" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00030" x="617" y="983" w="155" h="74" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00031" x="320" y="94" w="159" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00032" x="614" y="819" w="155" h="82" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00033" x="310" y="859" w="151" h="87" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00034" x="157" y="1033" w="150" h="90" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00035" x="160" y="95" w="159" h="95" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00036" x="0" y="296" w="155" h="98" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00037" x="1206" y="1130" w="104" h="59" pX="0.5" pY="0.5" oX="55" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00038" x="928" y="1248" w="103" h="62" pX="0.5" pY="0.5" oX="57" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00039" x="928" y="1181" w="101" h="67" pX="0.5" pY="0.5" oX="59" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00040" x="1211" y="1059" w="99" h="71" pX="0.5" pY="0.5" oX="61" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00041" x="639" y="176" w="159" h="75" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00042" x="776" y="770" w="155" h="79" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00043" x="617" y="901" w="153" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00044" x="958" y="0" w="160" h="87" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00045" x="639" y="0" w="159" h="90" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00046" x="629" y="536" w="159" h="55" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00047" x="472" y="525" w="157" h="58" pX="0.5" pY="0.5" oX="3" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00048" x="0" y="1245" w="155" h="63" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00049" x="314" y="1240" w="153" h="66" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00050" x="622" y="1237" w="151" h="71" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00051" x="479" y="90" w="160" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00052" x="772" y="981" w="155" h="78" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00053" x="155" y="411" w="160" h="83" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00054" x="155" y="325" w="160" h="86" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00055" x="320" y="173" w="157" h="86" pX="0.5" pY="0.5" oX="3" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00056" x="769" y="849" w="155" h="50" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_00057" x="610" y="1057" w="155" h="63" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00058" x="317" y="259" w="160" h="74" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00059" x="765" y="1059" w="155" h="79" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00060" x="770" y="899" w="155" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00061" x="153" y="494" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00062" x="479" y="0" w="160" h="90" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00063" x="160" y="0" w="160" h="95" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00064" x="310" y="761" w="142" h="98" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00065" x="1069" y="1059" w="142" h="62" pX="0.5" pY="0.5" oX="7" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00066" x="1102" y="609" w="151" h="62" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_00067" x="1112" y="228" w="153" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00068" x="958" y="87" w="155" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00069" x="629" y="591" w="157" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00070" x="464" y="618" w="158" h="82" pX="0.5" pY="0.5" oX="1" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00071" x="798" y="0" w="160" h="88" pX="0.5" pY="0.5" oX="0" oY="3" oW="160" oH="144"/>
+    <sprite n="rain_dance_00072" x="0" y="590" w="155" h="95" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00073" x="0" y="492" w="153" h="98" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00074" x="1064" y="1121" w="142" h="63" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00075" x="957" y="388" w="155" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00076" x="479" y="165" w="160" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00077" x="786" y="617" w="157" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00078" x="315" y="416" w="159" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00079" x="452" y="763" w="157" h="83" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00080" x="474" y="368" w="155" h="86" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00081" x="155" y="675" w="153" h="91" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00082" x="0" y="1151" w="151" h="94" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00083" x="0" y="0" w="160" h="99" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00084" x="949" y="454" w="155" h="58" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00085" x="947" y="586" w="155" h="63" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00086" x="943" y="649" w="155" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00087" x="629" y="465" w="159" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00088" x="637" y="251" w="160" h="74" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00089" x="957" y="166" w="155" h="74" pX="0.5" pY="0.5" oX="5" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00090" x="768" y="1138" w="155" h="82" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_00091" x="0" y="685" w="155" h="95" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00092" x="0" y="394" w="155" h="98" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00093" x="1029" y="1184" w="142" h="59" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00094" x="1086" y="808" w="146" h="62" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00095" x="620" y="1170" w="148" h="67" pX="0.5" pY="0.5" oX="11" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00096" x="1090" y="737" w="147" h="71" pX="0.5" pY="0.5" oX="13" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00097" x="1112" y="378" w="150" h="75" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00098" x="1113" y="87" w="154" h="78" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00099" x="779" y="692" w="156" h="78" pX="0.5" pY="0.5" oX="3" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00100" x="155" y="856" w="155" h="87" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00101" x="155" y="943" w="152" h="90" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00102" x="1031" y="1243" w="138" h="63" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00103" x="935" y="715" w="155" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00104" x="797" y="254" w="160" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00105" x="957" y="240" w="155" h="74" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00106" x="798" y="175" w="159" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00107" x="455" y="1037" w="155" h="83" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00108" x="308" y="675" w="155" h="86" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00109" x="307" y="1032" w="148" h="91" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00110" x="155" y="581" w="151" h="94" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00111" x="0" y="875" w="155" h="94" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00112" x="477" y="318" w="160" h="50" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_00113" x="1113" y="165" w="154" h="63" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00114" x="1104" y="472" w="155" h="66" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00115" x="1102" y="538" w="151" h="71" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00116" x="957" y="314" w="155" h="74" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00117" x="788" y="476" w="159" h="74" pX="0.5" pY="0.5" oX="1" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00118" x="637" y="325" w="160" h="74" pX="0.5" pY="0.5" oX="0" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_00119" x="1118" y="0" w="160" h="87" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00120" x="155" y="766" w="155" h="90" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00121" x="788" y="550" w="159" h="67" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00122" x="155" y="1240" w="159" h="70" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00123" x="622" y="673" w="157" h="75" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00124" x="797" y="325" w="160" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00125" x="315" y="333" w="159" h="83" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00126" x="307" y="946" w="155" h="86" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00127" x="461" y="846" w="153" h="86" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00128" x="0" y="780" w="155" h="95" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00129" x="0" y="198" w="157" h="98" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00130" x="463" y="700" w="158" h="63" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00131" x="629" y="399" w="160" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00132" x="931" y="781" w="155" h="71" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00133" x="1112" y="303" w="153" h="75" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00134" x="927" y="978" w="144" h="79" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00135" x="773" y="1220" w="155" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00136" x="312" y="495" w="160" h="82" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_00137" x="0" y="1060" w="157" h="91" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00138" x="320" y="0" w="159" h="94" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00139" x="0" y="99" w="160" h="99" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00140" x="1098" y="671" w="155" h="66" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00141" x="1071" y="988" w="142" h="71" pX="0.5" pY="0.5" oX="13" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00142" x="789" y="404" w="160" h="72" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00143" x="306" y="604" w="158" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00144" x="947" y="512" w="155" h="74" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00145" x="925" y="899" w="148" h="79" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00146" x="477" y="236" w="160" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_00147" x="151" y="1153" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00148" x="798" y="88" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00149" x="788" y="465" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00150" x="463" y="675" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00151" x="461" y="932" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00152" x="465" y="1162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00153" x="621" y="700" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00154" x="769" y="899" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00155" x="769" y="900" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00156" x="620" y="1237" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00157" x="621" y="1237" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00158" x="957" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00159" x="1112" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00160" x="319" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00161" x="313" y="494" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00162" x="314" y="494" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00163" x="797" y="252" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00164" x="797" y="253" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00165" x="788" y="466" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00166" x="463" y="676" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_00167" x="461" y="933" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

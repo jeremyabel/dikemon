@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3c33484a4151919d1745e5541bee2199:548e756d31b1d89fd6267510ce8ec4f4:2d4381cf81d3b575749440e05ca72e7e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_double_edge.png" width="128" height="128">
+    <sprite n="double_edge_00000" x="96" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00001" x="97" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00002" x="98" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00003" x="99" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00004" x="100" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00005" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00006" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00007" x="0" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00008" x="0" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00009" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00010" x="64" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00011" x="96" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00012" x="32" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00013" x="32" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00014" x="32" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00015" x="64" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00016" x="96" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00017" x="64" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00018" x="64" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="double_edge_00019" x="101" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00020" x="102" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00021" x="103" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00022" x="104" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00023" x="105" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00024" x="106" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00025" x="107" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00026" x="108" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00027" x="109" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00028" x="110" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00029" x="111" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00030" x="112" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00031" x="113" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="double_edge_00032" x="114" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

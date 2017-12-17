@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c435433e37442ba21b98f1e387315f25:d8f617e37b15faa4c63f80c24048e3fa:1fe58ce1d49fcfcb99eca29d008b172e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_take_down.png" width="97" height="97">
+    <sprite n="take_down_00000" x="0" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00001" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00002" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00003" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00004" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00005" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00006" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00007" x="72" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00008" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="take_down_00009" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00010" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00011" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00012" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00013" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00014" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00015" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00016" x="72" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="take_down_00017" x="1" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00018" x="2" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00019" x="3" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00020" x="4" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00021" x="5" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00022" x="6" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00023" x="7" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00024" x="8" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00025" x="9" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00026" x="10" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00027" x="11" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00028" x="12" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_00029" x="13" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

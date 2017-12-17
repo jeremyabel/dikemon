@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:86f6ff938d0711ab56354f48b7bf47db:306bde227250f9bc45b28d105fff8deb:f1aef4e081fd25582f8bb1286771086a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_swift.png" width="254" height="254">
+    <sprite n="swift_00000" x="52" y="197" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00001" x="233" y="126" w="14" h="13" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="144"/>
+    <sprite n="swift_00002" x="228" y="167" w="14" h="13" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="144"/>
+    <sprite n="swift_00003" x="235" y="139" w="14" h="13" pX="0.5" pY="0.5" oX="61" oY="60" oW="160" oH="144"/>
+    <sprite n="swift_00004" x="235" y="152" w="14" h="13" pX="0.5" pY="0.5" oX="65" oY="58" oW="160" oH="144"/>
+    <sprite n="swift_00005" x="236" y="180" w="14" h="13" pX="0.5" pY="0.5" oX="65" oY="58" oW="160" oH="144"/>
+    <sprite n="swift_00006" x="168" y="196" w="34" h="19" pX="0.5" pY="0.5" oX="53" oY="48" oW="160" oH="144"/>
+    <sprite n="swift_00007" x="201" y="148" w="34" h="19" pX="0.5" pY="0.5" oX="57" oY="46" oW="160" oH="144"/>
+    <sprite n="swift_00008" x="194" y="167" w="34" h="19" pX="0.5" pY="0.5" oX="57" oY="46" oW="160" oH="144"/>
+    <sprite n="swift_00009" x="202" y="186" w="34" h="19" pX="0.5" pY="0.5" oX="65" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_00010" x="202" y="205" w="34" h="19" pX="0.5" pY="0.5" oX="65" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_00011" x="186" y="224" w="34" h="19" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="swift_00012" x="0" y="198" w="54" h="27" pX="0.5" pY="0.5" oX="57" oY="36" oW="160" oH="144"/>
+    <sprite n="swift_00013" x="112" y="43" w="54" h="27" pX="0.5" pY="0.5" oX="57" oY="36" oW="160" oH="144"/>
+    <sprite n="swift_00014" x="105" y="97" w="54" h="27" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="swift_00015" x="52" y="124" w="54" h="27" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="swift_00016" x="52" y="151" w="54" h="27" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="swift_00017" x="111" y="178" w="50" h="27" pX="0.5" pY="0.5" oX="77" oY="26" oW="160" oH="144"/>
+    <sprite n="swift_00018" x="166" y="35" w="50" h="27" pX="0.5" pY="0.5" oX="77" oY="26" oW="160" oH="144"/>
+    <sprite n="swift_00019" x="107" y="70" w="55" h="27" pX="0.5" pY="0.5" oX="81" oY="24" oW="160" oH="144"/>
+    <sprite n="swift_00020" x="52" y="43" w="60" h="27" pX="0.5" pY="0.5" oX="89" oY="20" oW="160" oH="144"/>
+    <sprite n="swift_00021" x="47" y="70" w="60" h="27" pX="0.5" pY="0.5" oX="89" oY="20" oW="160" oH="144"/>
+    <sprite n="swift_00022" x="47" y="97" w="58" h="27" pX="0.5" pY="0.5" oX="93" oY="18" oW="160" oH="144"/>
+    <sprite n="swift_00023" x="210" y="65" w="42" h="27" pX="0.5" pY="0.5" oX="101" oY="14" oW="160" oH="144"/>
+    <sprite n="swift_00024" x="162" y="89" w="42" h="27" pX="0.5" pY="0.5" oX="101" oY="14" oW="160" oH="144"/>
+    <sprite n="swift_00025" x="214" y="0" w="40" h="27" pX="0.5" pY="0.5" oX="109" oY="10" oW="160" oH="144"/>
+    <sprite n="swift_00026" x="0" y="225" w="47" h="29" pX="0.5" pY="0.5" oX="104" oY="6" oW="160" oH="144"/>
+    <sprite n="swift_00027" x="47" y="225" w="47" h="29" pX="0.5" pY="0.5" oX="104" oY="6" oW="160" oH="144"/>
+    <sprite n="swift_00028" x="0" y="130" w="52" h="34" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00029" x="0" y="164" w="52" h="34" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00030" x="160" y="0" w="54" h="35" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00031" x="52" y="0" w="54" h="43" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00032" x="106" y="0" w="54" h="43" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00033" x="0" y="0" w="52" h="46" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00034" x="0" y="46" w="47" h="42" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00035" x="0" y="88" w="47" h="42" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00036" x="216" y="27" w="37" h="38" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00037" x="160" y="116" w="41" h="34" pX="0.5" pY="0.5" oX="97" oY="2" oW="160" oH="144"/>
+    <sprite n="swift_00038" x="204" y="92" w="41" h="34" pX="0.5" pY="0.5" oX="97" oY="2" oW="160" oH="144"/>
+    <sprite n="swift_00039" x="54" y="197" w="57" h="22" pX="0.5" pY="0.5" oX="89" oY="10" oW="160" oH="144"/>
+    <sprite n="swift_00040" x="111" y="205" w="57" h="22" pX="0.5" pY="0.5" oX="89" oY="10" oW="160" oH="144"/>
+    <sprite n="swift_00041" x="52" y="178" w="59" h="19" pX="0.5" pY="0.5" oX="91" oY="11" oW="160" oH="144"/>
+    <sprite n="swift_00042" x="106" y="124" w="54" h="27" pX="0.5" pY="0.5" oX="104" oY="7" oW="160" oH="144"/>
+    <sprite n="swift_00043" x="106" y="151" w="54" h="27" pX="0.5" pY="0.5" oX="104" oY="7" oW="160" oH="144"/>
+    <sprite n="swift_00044" x="94" y="227" w="48" h="27" pX="0.5" pY="0.5" oX="112" oY="3" oW="160" oH="144"/>
+    <sprite n="swift_00045" x="142" y="227" w="44" h="27" pX="0.5" pY="0.5" oX="116" oY="1" oW="160" oH="144"/>
+    <sprite n="swift_00046" x="166" y="62" w="44" h="27" pX="0.5" pY="0.5" oX="116" oY="1" oW="160" oH="144"/>
+    <sprite n="swift_00047" x="160" y="150" w="34" h="24" pX="0.5" pY="0.5" oX="124" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00048" x="201" y="126" w="32" h="22" pX="0.5" pY="0.5" oX="128" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00049" x="161" y="174" w="32" h="22" pX="0.5" pY="0.5" oX="128" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00050" x="220" y="224" w="24" h="18" pX="0.5" pY="0.5" oX="136" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00051" x="236" y="193" w="14" h="13" pX="0.5" pY="0.5" oX="140" oY="3" oW="160" oH="144"/>
+    <sprite n="swift_00052" x="236" y="206" w="14" h="13" pX="0.5" pY="0.5" oX="140" oY="3" oW="160" oH="144"/>
+    <sprite n="swift_00053" x="168" y="215" w="12" h="12" pX="0.5" pY="0.5" oX="148" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00054" x="220" y="242" w="12" h="12" pX="0.5" pY="0.5" oX="148" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00055" x="193" y="186" w="8" h="10" pX="0.5" pY="0.5" oX="152" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00056" x="53" y="197" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00057" x="253" y="27" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00058" x="160" y="174" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00059" x="193" y="174" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00060" x="201" y="186" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00061" x="253" y="28" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00062" x="160" y="175" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00063" x="193" y="175" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="swift_00064" x="201" y="187" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a84ba7f7525d811e85d688ab97d423b8:ace3067ac8cdc593bf348ad2941e2f3d:7db91887a3270dcddd9dc5f3ac0cac5a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_dynamic_punch.png" width="352" height="352">
+    <sprite n="dynamic_punch_00000" x="232" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00001" x="160" y="272" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00002" x="160" y="288" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00003" x="160" y="304" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00004" x="160" y="320" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00005" x="156" y="336" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00006" x="232" y="144" w="24" h="24" pX="0.5" pY="0.5" oX="119" oY="28" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00007" x="232" y="168" w="24" h="24" pX="0.5" pY="0.5" oX="119" oY="28" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00008" x="256" y="316" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00009" x="256" y="332" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00010" x="320" y="136" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00011" x="320" y="152" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00012" x="320" y="168" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00013" x="108" y="324" w="24" h="24" pX="0.5" pY="0.5" oX="113" oY="28" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00014" x="132" y="324" w="24" h="24" pX="0.5" pY="0.5" oX="113" oY="28" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00015" x="320" y="184" w="16" h="16" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00016" x="336" y="136" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00017" x="336" y="152" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00018" x="336" y="168" w="16" h="16" pX="0.5" pY="0.5" oX="123" oY="32" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00019" x="320" y="0" w="25" h="40" pX="0.5" pY="0.5" oX="123" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00020" x="79" y="304" w="29" h="44" pX="0.5" pY="0.5" oX="119" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00021" x="280" y="264" w="35" h="44" pX="0.5" pY="0.5" oX="113" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00022" x="312" y="308" w="31" h="40" pX="0.5" pY="0.5" oX="117" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00023" x="40" y="304" w="39" h="48" pX="0.5" pY="0.5" oX="117" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00024" x="128" y="144" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00025" x="184" y="200" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00026" x="240" y="200" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00027" x="296" y="200" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00028" x="64" y="208" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00029" x="0" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00030" x="64" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00031" x="128" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00032" x="192" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00033" x="176" y="264" w="56" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00034" x="56" y="272" w="56" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00035" x="0" y="208" w="64" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00036" x="256" y="72" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00037" x="256" y="136" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00038" x="0" y="144" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00039" x="64" y="144" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00040" x="0" y="240" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00041" x="120" y="208" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="8" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00042" x="256" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00043" x="0" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00044" x="64" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00045" x="128" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00046" x="192" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00047" x="0" y="304" w="40" h="44" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00048" x="184" y="144" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00049" x="112" y="272" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00050" x="232" y="264" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00051" x="176" y="296" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00052" x="280" y="308" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00053" x="315" y="264" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00054" x="224" y="316" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00055" x="320" y="40" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00056" x="320" y="72" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00057" x="320" y="104" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00058" x="233" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00059" x="234" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00060" x="235" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00061" x="236" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00062" x="237" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00063" x="238" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00064" x="239" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00065" x="232" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00066" x="233" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00067" x="234" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00068" x="235" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00069" x="236" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00070" x="237" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00071" x="238" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00072" x="239" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00073" x="232" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00074" x="233" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00075" x="234" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00076" x="235" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00077" x="236" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00078" x="237" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00079" x="238" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00080" x="239" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00081" x="232" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00082" x="233" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00083" x="234" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00084" x="235" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00085" x="236" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00086" x="237" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00087" x="238" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00088" x="239" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00089" x="184" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00090" x="185" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00091" x="186" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00092" x="187" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00093" x="188" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dynamic_punch_00094" x="189" y="196" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

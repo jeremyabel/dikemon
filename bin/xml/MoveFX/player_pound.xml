@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:085e0c75af114aee0bb628b94ef7bbfa:4d6f21df178418b5de5cab6296b992ae:5d4749299fb63a827393f3db32dd8ed8$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_pound.png" width="80" height="80">
+    <sprite n="pound_00000" x="0" y="72" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pound_00001" x="24" y="48" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00002" x="24" y="64" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00003" x="40" y="48" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00004" x="40" y="64" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00005" x="48" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00006" x="64" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00007" x="56" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="pound_00008" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="pound_00009" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="pound_00010" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="pound_00011" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="pound_00012" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="pound_00013" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+</TextureAtlas>

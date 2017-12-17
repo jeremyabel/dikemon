@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4ae7a344c334c1806ac59112be6c5eec:1f6e98c5c5c4009b893eb591f016c24c:ecdbed29dfd6381c6ae41323fe304dfb$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_bubble.png" width="263" height="263">
+    <sprite n="bubble_00000" x="168" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="bubble_00001" x="240" y="156" w="8" h="8" pX="0.5" pY="0.5" oX="53" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00002" x="240" y="164" w="8" h="8" pX="0.5" pY="0.5" oX="54" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00003" x="240" y="172" w="8" h="8" pX="0.5" pY="0.5" oX="55" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00004" x="249" y="18" w="8" h="8" pX="0.5" pY="0.5" oX="56" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00005" x="233" y="227" w="8" h="8" pX="0.5" pY="0.5" oX="57" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00006" x="241" y="227" w="8" h="8" pX="0.5" pY="0.5" oX="58" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00007" x="249" y="227" w="8" h="8" pX="0.5" pY="0.5" oX="58" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00008" x="248" y="187" w="15" h="8" pX="0.5" pY="0.5" oX="53" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00009" x="248" y="195" w="15" h="8" pX="0.5" pY="0.5" oX="54" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00010" x="248" y="203" w="15" h="8" pX="0.5" pY="0.5" oX="55" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00011" x="248" y="211" w="15" h="8" pX="0.5" pY="0.5" oX="56" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00012" x="248" y="219" w="15" h="8" pX="0.5" pY="0.5" oX="57" oY="72" oW="160" oH="144"/>
+    <sprite n="bubble_00013" x="249" y="0" w="14" h="9" pX="0.5" pY="0.5" oX="58" oY="71" oW="160" oH="144"/>
+    <sprite n="bubble_00014" x="249" y="9" w="13" h="9" pX="0.5" pY="0.5" oX="59" oY="71" oW="160" oH="144"/>
+    <sprite n="bubble_00015" x="51" y="123" w="20" h="9" pX="0.5" pY="0.5" oX="53" oY="71" oW="160" oH="144"/>
+    <sprite n="bubble_00016" x="152" y="167" w="19" h="9" pX="0.5" pY="0.5" oX="54" oY="71" oW="160" oH="144"/>
+    <sprite n="bubble_00017" x="171" y="167" w="18" h="10" pX="0.5" pY="0.5" oX="55" oY="70" oW="160" oH="144"/>
+    <sprite n="bubble_00018" x="189" y="167" w="18" h="10" pX="0.5" pY="0.5" oX="55" oY="70" oW="160" oH="144"/>
+    <sprite n="bubble_00019" x="222" y="173" w="17" h="10" pX="0.5" pY="0.5" oX="57" oY="70" oW="160" oH="144"/>
+    <sprite n="bubble_00020" x="71" y="120" w="17" h="10" pX="0.5" pY="0.5" oX="58" oY="70" oW="160" oH="144"/>
+    <sprite n="bubble_00021" x="206" y="156" w="16" h="11" pX="0.5" pY="0.5" oX="59" oY="69" oW="160" oH="144"/>
+    <sprite n="bubble_00022" x="70" y="250" w="17" h="13" pX="0.5" pY="0.5" oX="60" oY="67" oW="160" oH="144"/>
+    <sprite n="bubble_00023" x="87" y="250" w="17" h="13" pX="0.5" pY="0.5" oX="61" oY="67" oW="160" oH="144"/>
+    <sprite n="bubble_00024" x="216" y="235" w="16" h="13" pX="0.5" pY="0.5" oX="62" oY="67" oW="160" oH="144"/>
+    <sprite n="bubble_00025" x="209" y="125" w="15" h="14" pX="0.5" pY="0.5" oX="63" oY="66" oW="160" oH="144"/>
+    <sprite n="bubble_00026" x="104" y="249" w="15" h="14" pX="0.5" pY="0.5" oX="63" oY="66" oW="160" oH="144"/>
+    <sprite n="bubble_00027" x="207" y="167" w="15" h="13" pX="0.5" pY="0.5" oX="64" oY="66" oW="160" oH="144"/>
+    <sprite n="bubble_00028" x="232" y="235" w="16" h="13" pX="0.5" pY="0.5" oX="64" oY="66" oW="160" oH="144"/>
+    <sprite n="bubble_00029" x="216" y="248" w="15" h="15" pX="0.5" pY="0.5" oX="65" oY="65" oW="160" oH="144"/>
+    <sprite n="bubble_00030" x="231" y="248" w="15" h="15" pX="0.5" pY="0.5" oX="65" oY="65" oW="160" oH="144"/>
+    <sprite n="bubble_00031" x="207" y="139" w="18" h="17" pX="0.5" pY="0.5" oX="65" oY="63" oW="160" oH="144"/>
+    <sprite n="bubble_00032" x="135" y="114" w="17" h="17" pX="0.5" pY="0.5" oX="66" oY="63" oW="160" oH="144"/>
+    <sprite n="bubble_00033" x="172" y="108" w="17" h="18" pX="0.5" pY="0.5" oX="66" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00034" x="118" y="116" w="17" h="18" pX="0.5" pY="0.5" oX="67" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00035" x="182" y="196" w="17" h="18" pX="0.5" pY="0.5" oX="67" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00036" x="152" y="108" w="20" h="18" pX="0.5" pY="0.5" oX="65" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00037" x="243" y="136" w="20" h="18" pX="0.5" pY="0.5" oX="65" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00038" x="241" y="78" w="19" h="20" pX="0.5" pY="0.5" oX="66" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00039" x="189" y="106" w="20" h="20" pX="0.5" pY="0.5" oX="66" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00040" x="150" y="216" w="17" h="18" pX="0.5" pY="0.5" oX="67" oY="63" oW="160" oH="144"/>
+    <sprite n="bubble_00041" x="119" y="244" w="17" h="19" pX="0.5" pY="0.5" oX="67" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00042" x="182" y="177" w="17" h="19" pX="0.5" pY="0.5" oX="68" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00043" x="165" y="197" w="17" h="19" pX="0.5" pY="0.5" oX="68" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00044" x="100" y="163" w="18" h="18" pX="0.5" pY="0.5" oX="68" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00045" x="224" y="120" w="19" h="19" pX="0.5" pY="0.5" oX="67" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00046" x="152" y="148" w="19" h="19" pX="0.5" pY="0.5" oX="67" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00047" x="243" y="98" w="20" h="19" pX="0.5" pY="0.5" oX="67" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00048" x="243" y="117" w="20" h="19" pX="0.5" pY="0.5" oX="67" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00049" x="199" y="216" w="17" h="17" pX="0.5" pY="0.5" oX="68" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00050" x="216" y="201" w="17" h="17" pX="0.5" pY="0.5" oX="69" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00051" x="216" y="218" w="17" h="17" pX="0.5" pY="0.5" oX="69" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00052" x="225" y="139" w="18" h="17" pX="0.5" pY="0.5" oX="69" oY="62" oW="160" oH="144"/>
+    <sprite n="bubble_00053" x="152" y="234" w="17" h="17" pX="0.5" pY="0.5" oX="70" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00054" x="201" y="233" w="15" h="16" pX="0.5" pY="0.5" oX="72" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00055" x="185" y="233" w="16" h="16" pX="0.5" pY="0.5" oX="72" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00056" x="246" y="248" w="15" h="15" pX="0.5" pY="0.5" oX="73" oY="61" oW="160" oH="144"/>
+    <sprite n="bubble_00057" x="248" y="171" w="15" h="16" pX="0.5" pY="0.5" oX="73" oY="60" oW="160" oH="144"/>
+    <sprite n="bubble_00058" x="167" y="216" w="17" h="18" pX="0.5" pY="0.5" oX="74" oY="58" oW="160" oH="144"/>
+    <sprite n="bubble_00059" x="199" y="180" w="17" h="18" pX="0.5" pY="0.5" oX="74" oY="58" oW="160" oH="144"/>
+    <sprite n="bubble_00060" x="222" y="156" w="18" h="17" pX="0.5" pY="0.5" oX="74" oY="58" oW="160" oH="144"/>
+    <sprite n="bubble_00061" x="199" y="198" w="17" h="18" pX="0.5" pY="0.5" oX="75" oY="57" oW="160" oH="144"/>
+    <sprite n="bubble_00062" x="216" y="183" w="17" h="18" pX="0.5" pY="0.5" oX="75" oY="57" oW="160" oH="144"/>
+    <sprite n="bubble_00063" x="169" y="234" w="16" h="17" pX="0.5" pY="0.5" oX="77" oY="57" oW="160" oH="144"/>
+    <sprite n="bubble_00064" x="248" y="154" w="15" h="17" pX="0.5" pY="0.5" oX="78" oY="57" oW="160" oH="144"/>
+    <sprite n="bubble_00065" x="133" y="199" w="15" h="20" pX="0.5" pY="0.5" oX="78" oY="56" oW="160" oH="144"/>
+    <sprite n="bubble_00066" x="135" y="219" w="15" h="20" pX="0.5" pY="0.5" oX="79" oY="56" oW="160" oH="144"/>
+    <sprite n="bubble_00067" x="118" y="134" w="17" h="22" pX="0.5" pY="0.5" oX="79" oY="54" oW="160" oH="144"/>
+    <sprite n="bubble_00068" x="171" y="126" w="18" h="21" pX="0.5" pY="0.5" oX="79" oY="54" oW="160" oH="144"/>
+    <sprite n="bubble_00069" x="135" y="131" w="17" h="22" pX="0.5" pY="0.5" oX="80" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00070" x="86" y="205" w="17" h="22" pX="0.5" pY="0.5" oX="80" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00071" x="100" y="119" w="18" h="22" pX="0.5" pY="0.5" oX="80" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00072" x="224" y="98" w="19" h="22" pX="0.5" pY="0.5" oX="79" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00073" x="222" y="75" w="19" h="23" pX="0.5" pY="0.5" oX="79" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00074" x="203" y="26" w="19" h="25" pX="0.5" pY="0.5" oX="80" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00075" x="203" y="51" w="19" h="25" pX="0.5" pY="0.5" oX="80" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00076" x="100" y="141" w="18" h="22" pX="0.5" pY="0.5" oX="80" oY="54" oW="160" oH="144"/>
+    <sprite n="bubble_00077" x="69" y="181" w="17" h="23" pX="0.5" pY="0.5" oX="81" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00078" x="69" y="204" w="17" h="23" pX="0.5" pY="0.5" oX="81" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00079" x="70" y="227" w="18" h="23" pX="0.5" pY="0.5" oX="81" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00080" x="83" y="134" w="17" h="23" pX="0.5" pY="0.5" oX="82" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00081" x="222" y="27" w="19" h="24" pX="0.5" pY="0.5" oX="80" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00082" x="222" y="51" w="19" h="24" pX="0.5" pY="0.5" oX="81" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00083" x="152" y="126" w="19" h="22" pX="0.5" pY="0.5" oX="81" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00084" x="35" y="242" w="20" h="21" pX="0.5" pY="0.5" oX="81" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00085" x="189" y="147" w="17" h="20" pX="0.5" pY="0.5" oX="82" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00086" x="148" y="176" w="17" h="20" pX="0.5" pY="0.5" oX="82" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00087" x="171" y="147" w="18" h="20" pX="0.5" pY="0.5" oX="82" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00088" x="148" y="196" w="17" h="20" pX="0.5" pY="0.5" oX="83" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00089" x="165" y="177" w="17" h="20" pX="0.5" pY="0.5" oX="83" oY="53" oW="160" oH="144"/>
+    <sprite n="bubble_00090" x="116" y="181" w="15" h="21" pX="0.5" pY="0.5" oX="86" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00091" x="118" y="202" w="15" h="21" pX="0.5" pY="0.5" oX="86" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00092" x="136" y="239" w="16" h="18" pX="0.5" pY="0.5" oX="86" oY="52" oW="160" oH="144"/>
+    <sprite n="bubble_00093" x="184" y="214" w="15" h="19" pX="0.5" pY="0.5" oX="87" oY="51" oW="160" oH="144"/>
+    <sprite n="bubble_00094" x="118" y="223" w="17" h="21" pX="0.5" pY="0.5" oX="87" oY="49" oW="160" oH="144"/>
+    <sprite n="bubble_00095" x="189" y="126" w="18" h="21" pX="0.5" pY="0.5" oX="87" oY="49" oW="160" oH="144"/>
+    <sprite n="bubble_00096" x="131" y="178" w="17" h="21" pX="0.5" pY="0.5" oX="88" oY="49" oW="160" oH="144"/>
+    <sprite n="bubble_00097" x="118" y="156" w="17" h="22" pX="0.5" pY="0.5" oX="88" oY="48" oW="160" oH="144"/>
+    <sprite n="bubble_00098" x="135" y="153" w="17" h="22" pX="0.5" pY="0.5" oX="89" oY="48" oW="160" oH="144"/>
+    <sprite n="bubble_00099" x="103" y="205" w="15" h="22" pX="0.5" pY="0.5" oX="91" oY="48" oW="160" oH="144"/>
+    <sprite n="bubble_00100" x="103" y="227" w="15" h="22" pX="0.5" pY="0.5" oX="91" oY="48" oW="160" oH="144"/>
+    <sprite n="bubble_00101" x="209" y="101" w="15" h="24" pX="0.5" pY="0.5" oX="92" oY="47" oW="160" oH="144"/>
+    <sprite n="bubble_00102" x="85" y="157" w="15" h="24" pX="0.5" pY="0.5" oX="92" oY="47" oW="160" oH="144"/>
+    <sprite n="bubble_00103" x="151" y="56" w="18" h="26" pX="0.5" pY="0.5" oX="92" oY="45" oW="160" oH="144"/>
+    <sprite n="bubble_00104" x="169" y="55" w="17" h="26" pX="0.5" pY="0.5" oX="93" oY="45" oW="160" oH="144"/>
+    <sprite n="bubble_00105" x="35" y="161" w="17" h="27" pX="0.5" pY="0.5" oX="93" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00106" x="35" y="188" w="17" h="27" pX="0.5" pY="0.5" oX="94" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00107" x="35" y="215" w="17" h="27" pX="0.5" pY="0.5" oX="94" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00108" x="190" y="0" w="20" h="26" pX="0.5" pY="0.5" oX="92" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00109" x="230" y="0" w="19" h="27" pX="0.5" pY="0.5" oX="93" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00110" x="114" y="0" w="19" h="29" pX="0.5" pY="0.5" oX="93" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00111" x="133" y="0" w="19" h="29" pX="0.5" pY="0.5" oX="93" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00112" x="151" y="29" w="17" h="27" pX="0.5" pY="0.5" oX="94" oY="45" oW="160" oH="144"/>
+    <sprite n="bubble_00113" x="134" y="58" w="17" h="28" pX="0.5" pY="0.5" oX="94" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00114" x="118" y="88" w="17" h="28" pX="0.5" pY="0.5" oX="95" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00115" x="135" y="86" w="17" h="28" pX="0.5" pY="0.5" oX="95" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00116" x="168" y="28" w="18" h="27" pX="0.5" pY="0.5" oX="95" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00117" x="152" y="0" w="19" h="28" pX="0.5" pY="0.5" oX="94" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00118" x="171" y="0" w="19" h="28" pX="0.5" pY="0.5" oX="94" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00119" x="210" y="0" w="20" h="26" pX="0.5" pY="0.5" oX="94" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00120" x="152" y="82" w="19" h="26" pX="0.5" pY="0.5" oX="95" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00121" x="241" y="53" w="17" h="25" pX="0.5" pY="0.5" oX="95" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00122" x="50" y="132" w="17" h="25" pX="0.5" pY="0.5" oX="95" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00123" x="52" y="183" w="17" h="25" pX="0.5" pY="0.5" oX="96" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00124" x="67" y="157" w="18" h="24" pX="0.5" pY="0.5" oX="96" oY="44" oW="160" oH="144"/>
+    <sprite n="bubble_00125" x="52" y="208" w="17" h="25" pX="0.5" pY="0.5" oX="97" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00126" x="55" y="233" w="15" h="25" pX="0.5" pY="0.5" oX="99" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00127" x="67" y="132" w="16" h="25" pX="0.5" pY="0.5" oX="99" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00128" x="88" y="227" w="15" h="23" pX="0.5" pY="0.5" oX="100" oY="43" oW="160" oH="144"/>
+    <sprite n="bubble_00129" x="86" y="181" w="15" h="24" pX="0.5" pY="0.5" oX="100" oY="42" oW="160" oH="144"/>
+    <sprite n="bubble_00130" x="101" y="181" w="15" h="24" pX="0.5" pY="0.5" oX="100" oY="42" oW="160" oH="144"/>
+    <sprite n="bubble_00131" x="186" y="28" w="17" h="26" pX="0.5" pY="0.5" oX="101" oY="40" oW="160" oH="144"/>
+    <sprite n="bubble_00132" x="204" y="76" w="18" h="25" pX="0.5" pY="0.5" oX="101" oY="40" oW="160" oH="144"/>
+    <sprite n="bubble_00133" x="186" y="54" w="17" h="26" pX="0.5" pY="0.5" oX="102" oY="39" oW="160" oH="144"/>
+    <sprite n="bubble_00134" x="187" y="80" w="17" h="26" pX="0.5" pY="0.5" oX="102" oY="39" oW="160" oH="144"/>
+    <sprite n="bubble_00135" x="241" y="27" w="16" h="26" pX="0.5" pY="0.5" oX="104" oY="39" oW="160" oH="144"/>
+    <sprite n="bubble_00136" x="52" y="157" w="15" h="26" pX="0.5" pY="0.5" oX="105" oY="39" oW="160" oH="144"/>
+    <sprite n="bubble_00137" x="87" y="31" w="15" h="29" pX="0.5" pY="0.5" oX="105" oY="38" oW="160" oH="144"/>
+    <sprite n="bubble_00138" x="103" y="90" w="15" h="29" pX="0.5" pY="0.5" oX="106" oY="38" oW="160" oH="144"/>
+    <sprite n="bubble_00139" x="19" y="102" w="17" h="31" pX="0.5" pY="0.5" oX="106" oY="36" oW="160" oH="144"/>
+    <sprite n="bubble_00140" x="51" y="33" w="18" h="30" pX="0.5" pY="0.5" oX="106" oY="36" oW="160" oH="144"/>
+    <sprite n="bubble_00141" x="51" y="63" w="18" h="30" pX="0.5" pY="0.5" oX="106" oY="36" oW="160" oH="144"/>
+    <sprite n="bubble_00142" x="18" y="165" w="17" h="31" pX="0.5" pY="0.5" oX="107" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00143" x="0" y="197" w="18" h="31" pX="0.5" pY="0.5" oX="107" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00144" x="56" y="0" w="19" h="31" pX="0.5" pY="0.5" oX="106" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00145" x="0" y="101" w="19" h="32" pX="0.5" pY="0.5" oX="106" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00146" x="0" y="0" w="19" h="34" pX="0.5" pY="0.5" oX="107" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00147" x="0" y="34" w="19" h="34" pX="0.5" pY="0.5" oX="107" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00148" x="0" y="228" w="18" h="31" pX="0.5" pY="0.5" oX="107" oY="36" oW="160" oH="144"/>
+    <sprite n="bubble_00149" x="19" y="70" w="17" h="32" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00150" x="18" y="133" w="17" h="32" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00151" x="0" y="133" w="18" h="32" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00152" x="0" y="165" w="18" h="32" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00153" x="0" y="68" w="19" h="33" pX="0.5" pY="0.5" oX="107" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00154" x="37" y="0" w="19" h="33" pX="0.5" pY="0.5" oX="108" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00155" x="75" y="0" w="19" h="31" pX="0.5" pY="0.5" oX="108" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00156" x="94" y="0" w="20" h="30" pX="0.5" pY="0.5" oX="108" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00157" x="86" y="90" w="17" h="29" pX="0.5" pY="0.5" oX="109" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00158" x="117" y="29" w="17" h="29" pX="0.5" pY="0.5" oX="109" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00159" x="69" y="31" w="18" h="29" pX="0.5" pY="0.5" oX="109" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00160" x="134" y="29" w="17" h="29" pX="0.5" pY="0.5" oX="110" oY="35" oW="160" oH="144"/>
+    <sprite n="bubble_00161" x="69" y="60" w="17" h="30" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00162" x="102" y="30" w="15" h="30" pX="0.5" pY="0.5" oX="113" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00163" x="103" y="60" w="15" h="30" pX="0.5" pY="0.5" oX="113" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00164" x="171" y="81" w="16" h="27" pX="0.5" pY="0.5" oX="113" oY="34" oW="160" oH="144"/>
+    <sprite n="bubble_00165" x="35" y="133" w="15" h="28" pX="0.5" pY="0.5" oX="114" oY="33" oW="160" oH="144"/>
+    <sprite n="bubble_00166" x="69" y="90" w="17" h="30" pX="0.5" pY="0.5" oX="114" oY="31" oW="160" oH="144"/>
+    <sprite n="bubble_00167" x="51" y="93" w="18" h="30" pX="0.5" pY="0.5" oX="114" oY="31" oW="160" oH="144"/>
+    <sprite n="bubble_00168" x="86" y="60" w="17" h="30" pX="0.5" pY="0.5" oX="115" oY="31" oW="160" oH="144"/>
+    <sprite n="bubble_00169" x="18" y="196" w="17" h="31" pX="0.5" pY="0.5" oX="115" oY="30" oW="160" oH="144"/>
+    <sprite n="bubble_00170" x="18" y="227" w="17" h="31" pX="0.5" pY="0.5" oX="116" oY="30" oW="160" oH="144"/>
+    <sprite n="bubble_00171" x="36" y="101" w="15" h="31" pX="0.5" pY="0.5" oX="118" oY="30" oW="160" oH="144"/>
+    <sprite n="bubble_00172" x="118" y="58" w="16" h="30" pX="0.5" pY="0.5" oX="118" oY="30" oW="160" oH="144"/>
+    <sprite n="bubble_00173" x="36" y="35" w="15" h="33" pX="0.5" pY="0.5" oX="119" oY="29" oW="160" oH="144"/>
+    <sprite n="bubble_00174" x="36" y="68" w="15" h="33" pX="0.5" pY="0.5" oX="119" oY="29" oW="160" oH="144"/>
+    <sprite n="bubble_00175" x="19" y="0" w="18" h="35" pX="0.5" pY="0.5" oX="119" oY="27" oW="160" oH="144"/>
+    <sprite n="bubble_00176" x="19" y="35" w="17" h="35" pX="0.5" pY="0.5" oX="120" oY="27" oW="160" oH="144"/>
+</TextureAtlas>

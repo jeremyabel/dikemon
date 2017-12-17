@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:af5ba18b2cb01184e8751e2ee1d02a8a:a674dba42f5469a881bc8f972c446bc5:0f8a0a89a0dacef27ca767f0ec6bba8b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_karate_chop.png" width="136" height="136">
+    <sprite n="karate_chop_00000" x="24" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00001" x="25" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00002" x="0" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00003" x="16" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00004" x="32" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00005" x="120" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00006" x="120" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00007" x="120" y="56" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00008" x="48" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00009" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00010" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00011" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00012" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00013" x="0" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00014" x="32" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00015" x="56" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="karate_chop_00016" x="64" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00017" x="72" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00018" x="72" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00019" x="72" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00020" x="80" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00021" x="96" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00022" x="112" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00023" x="80" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00024" x="104" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00025" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00026" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00027" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00028" x="24" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00029" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="16" oW="160" oH="144"/>
+    <sprite n="karate_chop_00030" x="88" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00031" x="88" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00032" x="96" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00033" x="112" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00034" x="104" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00035" x="112" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00036" x="120" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="karate_chop_00037" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00038" x="96" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00039" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00040" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00041" x="96" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00042" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00043" x="48" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="karate_chop_00044" x="26" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00045" x="27" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00046" x="28" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00047" x="29" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00048" x="30" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00049" x="31" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00050" x="24" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00051" x="25" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="karate_chop_00052" x="26" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

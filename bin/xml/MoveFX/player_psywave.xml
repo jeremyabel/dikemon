@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:fb2140f9ee6cf606821a7408674eb865:3d70a40278182674398ec85916e9f6c4:072a7f4e2c1850d48d5b554d79551c83$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_psywave.png" width="377" height="377">
+    <sprite n="psywave_00000" x="341" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00001" x="139" y="69" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00002" x="193" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00003" x="332" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00004" x="183" y="207" w="8" h="16" pX="0.5" pY="0.5" oX="54" oY="55" oW="160" oH="144"/>
+    <sprite n="psywave_00005" x="191" y="207" w="8" h="16" pX="0.5" pY="0.5" oX="54" oY="55" oW="160" oH="144"/>
+    <sprite n="psywave_00006" x="199" y="207" w="8" h="16" pX="0.5" pY="0.5" oX="58" oY="53" oW="160" oH="144"/>
+    <sprite n="psywave_00007" x="211" y="227" w="8" h="16" pX="0.5" pY="0.5" oX="58" oY="53" oW="160" oH="144"/>
+    <sprite n="psywave_00008" x="308" y="316" w="8" h="16" pX="0.5" pY="0.5" oX="60" oY="52" oW="160" oH="144"/>
+    <sprite n="psywave_00009" x="211" y="207" w="10" h="20" pX="0.5" pY="0.5" oX="63" oY="48" oW="160" oH="144"/>
+    <sprite n="psywave_00010" x="276" y="193" w="10" h="20" pX="0.5" pY="0.5" oX="63" oY="48" oW="160" oH="144"/>
+    <sprite n="psywave_00011" x="338" y="250" w="10" h="20" pX="0.5" pY="0.5" oX="67" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_00012" x="338" y="270" w="10" h="20" pX="0.5" pY="0.5" oX="69" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_00013" x="308" y="296" w="10" h="20" pX="0.5" pY="0.5" oX="69" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_00014" x="224" y="333" w="26" h="35" pX="0.5" pY="0.5" oX="55" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_00015" x="327" y="98" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00016" x="351" y="135" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00017" x="353" y="98" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00018" x="284" y="222" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00019" x="328" y="176" w="23" h="37" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_00020" x="170" y="332" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00021" x="221" y="152" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00022" x="267" y="152" w="21" h="41" pX="0.5" pY="0.5" oX="78" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00023" x="288" y="140" w="20" h="41" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00024" x="308" y="138" w="20" h="41" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00025" x="0" y="236" w="43" h="54" pX="0.5" pY="0.5" oX="60" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_00026" x="0" y="290" w="43" h="54" pX="0.5" pY="0.5" oX="60" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_00027" x="43" y="236" w="42" h="55" pX="0.5" pY="0.5" oX="64" oY="27" oW="160" oH="144"/>
+    <sprite n="psywave_00028" x="43" y="291" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00029" x="81" y="291" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00030" x="109" y="169" w="37" h="54" pX="0.5" pY="0.5" oX="75" oY="24" oW="160" oH="144"/>
+    <sprite n="psywave_00031" x="345" y="0" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00032" x="341" y="33" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00033" x="0" y="139" w="66" h="33" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00034" x="209" y="34" w="66" h="32" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00035" x="279" y="0" w="66" h="32" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00036" x="70" y="69" w="69" h="34" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_00037" x="140" y="34" w="69" h="34" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_00038" x="70" y="35" w="70" h="34" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00039" x="0" y="0" w="70" h="35" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00040" x="0" y="35" w="70" h="35" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00041" x="0" y="344" w="62" h="33" pX="0.5" pY="0.5" oX="65" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00042" x="62" y="344" w="62" h="33" pX="0.5" pY="0.5" oX="69" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00043" x="70" y="136" w="62" h="33" pX="0.5" pY="0.5" oX="69" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00044" x="250" y="335" w="26" h="35" pX="0.5" pY="0.5" oX="55" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_00045" x="351" y="172" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00046" x="351" y="209" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00047" x="267" y="266" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00048" x="291" y="259" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00049" x="328" y="213" w="23" h="37" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_00050" x="244" y="152" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00051" x="281" y="99" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00052" x="240" y="225" w="22" h="41" pX="0.5" pY="0.5" oX="75" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00053" x="124" y="332" w="23" h="42" pX="0.5" pY="0.5" oX="78" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00054" x="147" y="332" w="23" h="42" pX="0.5" pY="0.5" oX="78" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00055" x="66" y="169" w="43" h="54" pX="0.5" pY="0.5" oX="60" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_00056" x="85" y="223" w="42" h="55" pX="0.5" pY="0.5" oX="64" oY="27" oW="160" oH="144"/>
+    <sprite n="psywave_00057" x="127" y="223" w="42" h="55" pX="0.5" pY="0.5" oX="64" oY="27" oW="160" oH="144"/>
+    <sprite n="psywave_00058" x="167" y="101" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00059" x="205" y="99" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00060" x="162" y="278" w="37" h="54" pX="0.5" pY="0.5" oX="75" oY="24" oW="160" oH="144"/>
+    <sprite n="psywave_00061" x="132" y="136" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00062" x="136" y="103" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00063" x="70" y="103" w="66" h="33" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00064" x="0" y="172" w="66" h="32" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00065" x="0" y="204" w="66" h="32" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00066" x="210" y="0" w="69" h="34" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_00067" x="140" y="0" w="70" h="34" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00068" x="0" y="105" w="70" h="34" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00069" x="70" y="0" w="70" h="35" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00070" x="0" y="70" w="70" h="35" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00071" x="209" y="66" w="62" h="33" pX="0.5" pY="0.5" oX="65" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00072" x="279" y="32" w="62" h="33" pX="0.5" pY="0.5" oX="69" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00073" x="140" y="68" w="62" h="33" pX="0.5" pY="0.5" oX="69" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00074" x="282" y="303" w="26" h="35" pX="0.5" pY="0.5" oX="55" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_00075" x="351" y="246" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00076" x="241" y="266" w="26" h="37" pX="0.5" pY="0.5" oX="58" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00077" x="276" y="338" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00078" x="300" y="338" w="24" h="37" pX="0.5" pY="0.5" oX="64" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_00079" x="315" y="250" w="23" h="37" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_00080" x="304" y="97" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00081" x="328" y="135" w="23" h="41" pX="0.5" pY="0.5" oX="72" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00082" x="262" y="225" w="22" h="41" pX="0.5" pY="0.5" oX="75" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00083" x="308" y="179" w="20" h="41" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00084" x="288" y="181" w="20" h="41" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psywave_00085" x="119" y="278" w="43" h="54" pX="0.5" pY="0.5" oX="60" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_00086" x="169" y="223" w="42" h="55" pX="0.5" pY="0.5" oX="64" oY="27" oW="160" oH="144"/>
+    <sprite n="psywave_00087" x="199" y="278" w="42" h="55" pX="0.5" pY="0.5" oX="64" oY="27" oW="160" oH="144"/>
+    <sprite n="psywave_00088" x="243" y="99" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00089" x="183" y="154" w="38" h="53" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="psywave_00090" x="146" y="169" w="37" h="54" pX="0.5" pY="0.5" oX="75" oY="24" oW="160" oH="144"/>
+    <sprite n="psywave_00091" x="193" y="333" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00092" x="271" y="66" w="31" h="33" pX="0.5" pY="0.5" oX="83" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_00093" x="302" y="65" w="30" h="32" pX="0.5" pY="0.5" oX="87" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_00094" x="332" y="66" w="29" h="32" pX="0.5" pY="0.5" oX="94" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_00095" x="211" y="246" w="29" h="32" pX="0.5" pY="0.5" oX="94" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_00096" x="221" y="193" w="28" h="32" pX="0.5" pY="0.5" oX="102" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00097" x="249" y="193" w="27" h="32" pX="0.5" pY="0.5" oX="106" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00098" x="255" y="303" w="27" h="32" pX="0.5" pY="0.5" oX="106" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_00099" x="241" y="303" w="14" h="28" pX="0.5" pY="0.5" oX="113" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00100" x="308" y="220" w="14" h="28" pX="0.5" pY="0.5" oX="113" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_00101" x="361" y="66" w="14" h="28" pX="0.5" pY="0.5" oX="117" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_00102" x="327" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00103" x="376" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00104" x="327" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00105" x="240" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00106" x="342" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00107" x="139" y="70" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00108" x="194" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00109" x="333" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00110" x="328" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00111" x="376" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00112" x="327" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00113" x="327" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00114" x="240" y="267" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00115" x="343" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00116" x="344" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00117" x="139" y="71" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00118" x="195" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00119" x="334" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00120" x="329" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00121" x="376" y="2" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00122" x="240" y="268" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00123" x="139" y="72" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00124" x="196" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00125" x="335" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00126" x="330" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00127" x="331" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00128" x="376" y="3" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00129" x="240" y="269" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00130" x="139" y="73" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00131" x="197" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00132" x="198" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00133" x="336" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00134" x="376" y="4" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00135" x="240" y="270" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00136" x="139" y="74" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00137" x="337" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00138" x="376" y="5" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00139" x="240" y="271" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00140" x="139" y="75" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00141" x="338" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00142" x="376" y="6" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00143" x="240" y="272" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00144" x="139" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00145" x="339" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00146" x="340" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00147" x="376" y="7" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00148" x="240" y="273" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00149" x="139" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00150" x="376" y="8" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00151" x="240" y="274" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00152" x="139" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00153" x="376" y="9" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00154" x="240" y="275" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00155" x="139" y="79" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00156" x="376" y="10" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00157" x="240" y="276" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00158" x="240" y="277" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00159" x="139" y="80" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00160" x="376" y="11" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00161" x="139" y="81" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00162" x="376" y="12" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00163" x="139" y="82" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00164" x="376" y="13" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00165" x="139" y="83" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00166" x="376" y="14" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00167" x="139" y="84" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00168" x="376" y="15" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00169" x="139" y="85" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00170" x="376" y="16" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00171" x="139" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00172" x="376" y="17" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00173" x="139" y="87" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00174" x="376" y="18" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00175" x="139" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00176" x="376" y="19" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00177" x="139" y="89" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_00178" x="376" y="20" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

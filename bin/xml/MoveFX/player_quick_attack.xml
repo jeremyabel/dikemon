@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6c7890be7b7d13640868efb3685c7cb5:cec37372da26678010e32f0883ef5ae0:7914fc633c5e7dd9e274695cc5b39457$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_quick_attack.png" width="120" height="120">
+    <sprite n="quick_attack_00000" x="0" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00001" x="40" y="56" w="26" h="56" pX="0.5" pY="0.5" oX="15" oY="44" oW="160" oH="144"/>
+    <sprite n="quick_attack_00002" x="0" y="0" w="42" h="56" pX="0.5" pY="0.5" oX="15" oY="44" oW="160" oH="144"/>
+    <sprite n="quick_attack_00003" x="0" y="56" w="40" h="56" pX="0.5" pY="0.5" oX="16" oY="44" oW="160" oH="144"/>
+    <sprite n="quick_attack_00004" x="42" y="0" w="22" h="40" pX="0.5" pY="0.5" oX="25" oY="52" oW="160" oH="144"/>
+    <sprite n="quick_attack_00005" x="64" y="0" w="20" h="40" pX="0.5" pY="0.5" oX="26" oY="52" oW="160" oH="144"/>
+    <sprite n="quick_attack_00006" x="108" y="24" w="6" h="24" pX="0.5" pY="0.5" oX="33" oY="60" oW="160" oH="144"/>
+    <sprite n="quick_attack_00007" x="108" y="0" w="8" h="24" pX="0.5" pY="0.5" oX="32" oY="60" oW="160" oH="144"/>
+    <sprite n="quick_attack_00008" x="0" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00009" x="0" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00010" x="0" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00011" x="0" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00012" x="0" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00013" x="0" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00014" x="0" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00015" x="84" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00016" x="84" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00017" x="66" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00018" x="90" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00019" x="66" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00020" x="66" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00021" x="90" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="quick_attack_00022" x="1" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00023" x="1" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00024" x="1" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00025" x="1" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00026" x="1" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00027" x="1" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00028" x="1" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00029" x="1" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00030" x="2" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00031" x="2" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00032" x="2" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00033" x="2" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00034" x="2" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00035" x="2" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00036" x="2" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00037" x="2" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00038" x="3" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00039" x="3" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00040" x="3" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00041" x="3" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00042" x="3" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00043" x="3" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00044" x="3" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00045" x="3" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_00046" x="4" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

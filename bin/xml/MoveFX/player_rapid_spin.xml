@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:d31759ecce1152e16fd887c324882b50:8ae0586105822d6517704564649cf803:cd4293b0d01f008e87eb31a8c3ca2e36$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_rapid_spin.png" width="224" height="224">
+    <sprite n="rapid_spin_00000" x="0" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00001" x="85" y="208" w="31" h="16" pX="0.5" pY="0.5" oX="32" oY="84" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00002" x="116" y="208" w="31" h="16" pX="0.5" pY="0.5" oX="32" oY="80" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00003" x="147" y="204" w="31" h="16" pX="0.5" pY="0.5" oX="9" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00004" x="108" y="128" w="54" h="28" pX="0.5" pY="0.5" oX="9" oY="72" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00005" x="54" y="160" w="31" h="28" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00006" x="54" y="132" w="54" h="28" pX="0.5" pY="0.5" oX="9" oY="64" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00007" x="162" y="48" w="54" h="40" pX="0.5" pY="0.5" oX="9" oY="60" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00008" x="54" y="52" w="54" h="40" pX="0.5" pY="0.5" oX="9" oY="56" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00009" x="108" y="52" w="54" h="40" pX="0.5" pY="0.5" oX="9" oY="52" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00010" x="0" y="60" w="54" h="52" pX="0.5" pY="0.5" oX="9" oY="48" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00011" x="0" y="112" w="54" h="52" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00012" x="0" y="164" w="54" h="52" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00013" x="0" y="0" w="54" h="60" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00014" x="54" y="0" w="54" h="52" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00015" x="108" y="0" w="54" h="52" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00016" x="162" y="0" w="54" h="48" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00017" x="162" y="88" w="54" h="40" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00018" x="54" y="92" w="54" h="40" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00019" x="108" y="92" w="54" h="36" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00020" x="54" y="188" w="31" h="28" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00021" x="162" y="128" w="54" h="28" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00022" x="85" y="160" w="31" h="24" pX="0.5" pY="0.5" oX="32" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00023" x="178" y="204" w="31" h="16" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00024" x="164" y="156" w="31" h="16" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00025" x="181" y="172" w="31" h="16" pX="0.5" pY="0.5" oX="32" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00026" x="0" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00027" x="0" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00028" x="0" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00029" x="0" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00030" x="0" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00031" x="0" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00032" x="0" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00033" x="1" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00034" x="1" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00035" x="1" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00036" x="1" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00037" x="1" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00038" x="1" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00039" x="1" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00040" x="1" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00041" x="2" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00042" x="2" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00043" x="2" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00044" x="2" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00045" x="2" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00046" x="2" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00047" x="2" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00048" x="2" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00049" x="3" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00050" x="3" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00051" x="3" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00052" x="3" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00053" x="3" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00054" x="3" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00055" x="3" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00056" x="3" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00057" x="4" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00058" x="4" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00059" x="4" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00060" x="4" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00061" x="4" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00062" x="4" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00063" x="4" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00064" x="4" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00065" x="5" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00066" x="5" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00067" x="85" y="184" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00068" x="109" y="184" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00069" x="116" y="156" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00070" x="133" y="180" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00071" x="140" y="156" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00072" x="157" y="180" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00073" x="5" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00074" x="5" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00075" x="5" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00076" x="5" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00077" x="5" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00078" x="5" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00079" x="6" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00080" x="6" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00081" x="6" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00082" x="6" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00083" x="6" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00084" x="6" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00085" x="6" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00086" x="6" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00087" x="7" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_00088" x="7" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

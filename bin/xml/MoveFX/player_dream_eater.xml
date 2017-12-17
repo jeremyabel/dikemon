@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2b100c61df12f2f1cd90f7311675be29:e771f372f37c4c3302cada24c3bce0c2:adce4f0d44939003970b53718574e56c$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_dream_eater.png" width="1224" height="1224">
+    <sprite n="dream_eater_00000" x="474" y="1223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00001" x="806" y="803" w="8" h="8" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00002" x="1176" y="420" w="8" h="8" pX="0.5" pY="0.5" oX="120" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00003" x="806" y="811" w="8" h="8" pX="0.5" pY="0.5" oX="119" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00004" x="450" y="612" w="10" h="10" pX="0.5" pY="0.5" oX="118" oY="23" oW="160" oH="144"/>
+    <sprite n="dream_eater_00005" x="599" y="429" w="10" h="10" pX="0.5" pY="0.5" oX="118" oY="23" oW="160" oH="144"/>
+    <sprite n="dream_eater_00006" x="831" y="521" w="14" h="14" pX="0.5" pY="0.5" oX="115" oY="22" oW="160" oH="144"/>
+    <sprite n="dream_eater_00007" x="220" y="1130" w="14" h="14" pX="0.5" pY="0.5" oX="115" oY="22" oW="160" oH="144"/>
+    <sprite n="dream_eater_00008" x="994" y="789" w="18" h="18" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="dream_eater_00009" x="662" y="1131" w="20" h="20" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="dream_eater_00010" x="662" y="1151" w="20" h="20" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="dream_eater_00011" x="1200" y="894" w="24" h="24" pX="0.5" pY="0.5" oX="107" oY="18" oW="160" oH="144"/>
+    <sprite n="dream_eater_00012" x="656" y="1191" w="26" h="26" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="dream_eater_00013" x="1176" y="1080" w="26" h="26" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="dream_eater_00014" x="1146" y="1081" w="30" h="30" pX="0.5" pY="0.5" oX="103" oY="16" oW="160" oH="144"/>
+    <sprite n="dream_eater_00015" x="549" y="855" w="32" h="32" pX="0.5" pY="0.5" oX="101" oY="15" oW="160" oH="144"/>
+    <sprite n="dream_eater_00016" x="1176" y="1046" w="34" h="34" pX="0.5" pY="0.5" oX="100" oY="14" oW="160" oH="144"/>
+    <sprite n="dream_eater_00017" x="1142" y="1111" w="36" h="36" pX="0.5" pY="0.5" oX="98" oY="14" oW="160" oH="144"/>
+    <sprite n="dream_eater_00018" x="1142" y="1147" w="36" h="36" pX="0.5" pY="0.5" oX="98" oY="14" oW="160" oH="144"/>
+    <sprite n="dream_eater_00019" x="316" y="1074" w="40" h="40" pX="0.5" pY="0.5" oX="95" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00020" x="1182" y="738" w="42" h="42" pX="0.5" pY="0.5" oX="94" oY="11" oW="160" oH="144"/>
+    <sprite n="dream_eater_00021" x="274" y="1076" w="42" h="42" pX="0.5" pY="0.5" oX="94" oY="11" oW="160" oH="144"/>
+    <sprite n="dream_eater_00022" x="956" y="1175" w="44" h="44" pX="0.5" pY="0.5" oX="92" oY="11" oW="160" oH="144"/>
+    <sprite n="dream_eater_00023" x="1176" y="228" w="48" h="48" pX="0.5" pY="0.5" oX="89" oY="9" oW="160" oH="144"/>
+    <sprite n="dream_eater_00024" x="1176" y="276" w="48" h="48" pX="0.5" pY="0.5" oX="89" oY="9" oW="160" oH="144"/>
+    <sprite n="dream_eater_00025" x="1172" y="428" w="52" h="52" pX="0.5" pY="0.5" oX="86" oY="8" oW="160" oH="144"/>
+    <sprite n="dream_eater_00026" x="1172" y="480" w="52" h="52" pX="0.5" pY="0.5" oX="86" oY="8" oW="160" oH="144"/>
+    <sprite n="dream_eater_00027" x="1120" y="1025" w="56" h="56" pX="0.5" pY="0.5" oX="83" oY="6" oW="160" oH="144"/>
+    <sprite n="dream_eater_00028" x="358" y="1166" w="58" h="58" pX="0.5" pY="0.5" oX="82" oY="5" oW="160" oH="144"/>
+    <sprite n="dream_eater_00029" x="416" y="1166" w="58" h="58" pX="0.5" pY="0.5" oX="82" oY="5" oW="160" oH="144"/>
+    <sprite n="dream_eater_00030" x="1120" y="967" w="58" h="58" pX="0.5" pY="0.5" oX="81" oY="6" oW="160" oH="144"/>
+    <sprite n="dream_eater_00031" x="474" y="1161" w="62" h="62" pX="0.5" pY="0.5" oX="78" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00032" x="896" y="1097" w="62" h="62" pX="0.5" pY="0.5" oX="78" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00033" x="152" y="1076" w="68" h="68" pX="0.5" pY="0.5" oX="74" oY="2" oW="160" oH="144"/>
+    <sprite n="dream_eater_00034" x="1128" y="894" w="72" h="72" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00035" x="1048" y="967" w="72" h="72" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00036" x="974" y="1040" w="74" h="73" pX="0.5" pY="0.5" oX="70" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00037" x="1054" y="894" w="74" h="73" pX="0.5" pY="0.5" oX="70" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00038" x="974" y="966" w="74" h="74" pX="0.5" pY="0.5" oX="69" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00039" x="916" y="789" w="78" h="76" pX="0.5" pY="0.5" oX="66" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00040" x="900" y="865" w="78" h="76" pX="0.5" pY="0.5" oX="66" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00041" x="1098" y="738" w="84" h="80" pX="0.5" pY="0.5" oX="62" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00042" x="856" y="306" w="88" h="82" pX="0.5" pY="0.5" oX="60" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00043" x="856" y="388" w="88" h="82" pX="0.5" pY="0.5" oX="60" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00044" x="935" y="620" w="90" h="83" pX="0.5" pY="0.5" oX="58" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00045" x="1025" y="642" w="90" h="84" pX="0.5" pY="0.5" oX="57" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00046" x="1115" y="654" w="90" h="84" pX="0.5" pY="0.5" oX="57" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00047" x="845" y="470" w="94" h="86" pX="0.5" pY="0.5" oX="54" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00048" x="806" y="840" w="94" h="86" pX="0.5" pY="0.5" oX="54" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00049" x="706" y="803" w="100" h="90" pX="0.5" pY="0.5" oX="50" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00050" x="727" y="521" w="104" h="89" pX="0.5" pY="0.5" oX="48" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00051" x="720" y="610" w="104" h="89" pX="0.5" pY="0.5" oX="48" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00052" x="252" y="1131" w="106" h="93" pX="0.5" pY="0.5" oX="46" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00053" x="148" y="1144" w="104" h="80" pX="0.5" pY="0.5" oX="46" oY="13" oW="160" oH="144"/>
+    <sprite n="dream_eater_00054" x="831" y="556" w="104" h="80" pX="0.5" pY="0.5" oX="46" oY="13" oW="160" oH="144"/>
+    <sprite n="dream_eater_00055" x="748" y="330" w="108" h="83" pX="0.5" pY="0.5" oX="43" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00056" x="1064" y="234" w="112" h="97" pX="0.5" pY="0.5" oX="41" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00057" x="1064" y="331" w="112" h="97" pX="0.5" pY="0.5" oX="41" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00058" x="682" y="1015" w="120" h="102" pX="0.5" pY="0.5" oX="36" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00059" x="682" y="1117" w="120" h="102" pX="0.5" pY="0.5" oX="36" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00060" x="944" y="234" w="120" h="96" pX="0.5" pY="0.5" oX="35" oY="6" oW="160" oH="144"/>
+    <sprite n="dream_eater_00061" x="944" y="330" w="120" h="91" pX="0.5" pY="0.5" oX="34" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00062" x="944" y="421" w="120" h="91" pX="0.5" pY="0.5" oX="34" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00063" x="425" y="855" w="124" h="94" pX="0.5" pY="0.5" oX="31" oY="11" oW="160" oH="144"/>
+    <sprite n="dream_eater_00064" x="609" y="342" w="128" h="102" pX="0.5" pY="0.5" oX="29" oY="5" oW="160" oH="144"/>
+    <sprite n="dream_eater_00065" x="599" y="444" w="128" h="102" pX="0.5" pY="0.5" oX="29" oY="5" oW="160" oH="144"/>
+    <sprite n="dream_eater_00066" x="289" y="840" w="136" h="112" pX="0.5" pY="0.5" oX="24" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00067" x="463" y="429" w="136" h="112" pX="0.5" pY="0.5" oX="23" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00068" x="460" y="541" w="136" h="108" pX="0.5" pY="0.5" oX="23" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00069" x="450" y="649" w="136" h="103" pX="0.5" pY="0.5" oX="22" oY="10" oW="160" oH="144"/>
+    <sprite n="dream_eater_00070" x="446" y="752" w="136" h="103" pX="0.5" pY="0.5" oX="22" oY="10" oW="160" oH="144"/>
+    <sprite n="dream_eater_00071" x="469" y="323" w="140" h="106" pX="0.5" pY="0.5" oX="19" oY="9" oW="160" oH="144"/>
+    <sprite n="dream_eater_00072" x="307" y="612" w="143" h="114" pX="0.5" pY="0.5" oX="17" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00073" x="303" y="726" w="143" h="114" pX="0.5" pY="0.5" oX="17" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00074" x="0" y="1144" w="148" h="80" pX="0.5" pY="0.5" oX="12" oY="42" oW="160" oH="144"/>
+    <sprite n="dream_eater_00075" x="0" y="783" w="149" h="122" pX="0.5" pY="0.5" oX="11" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00076" x="0" y="905" w="149" h="122" pX="0.5" pY="0.5" oX="11" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00077" x="320" y="261" w="149" h="114" pX="0.5" pY="0.5" oX="11" oY="8" oW="160" oH="144"/>
+    <sprite n="dream_eater_00078" x="314" y="375" w="149" h="114" pX="0.5" pY="0.5" oX="11" oY="8" oW="160" oH="144"/>
+    <sprite n="dream_eater_00079" x="0" y="1027" w="152" h="117" pX="0.5" pY="0.5" oX="8" oY="7" oW="160" oH="144"/>
+    <sprite n="dream_eater_00080" x="480" y="0" w="155" h="127" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00081" x="0" y="530" w="155" h="127" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00082" x="480" y="127" w="144" h="88" pX="0.5" pY="0.5" oX="0" oY="44" oW="160" oH="144"/>
+    <sprite n="dream_eater_00083" x="160" y="134" w="160" h="132" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00084" x="320" y="0" w="160" h="132" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00085" x="0" y="404" w="160" h="126" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="dream_eater_00086" x="947" y="0" w="159" h="117" pX="0.5" pY="0.5" oX="1" oY="13" oW="160" oH="144"/>
+    <sprite n="dream_eater_00087" x="947" y="117" w="159" h="117" pX="0.5" pY="0.5" oX="1" oY="13" oW="160" oH="144"/>
+    <sprite n="dream_eater_00088" x="0" y="0" w="160" h="135" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00089" x="0" y="135" w="160" h="135" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00090" x="160" y="521" w="160" h="89" pX="0.5" pY="0.5" oX="0" oY="47" oW="160" oH="144"/>
+    <sprite n="dream_eater_00091" x="160" y="0" w="160" h="134" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00092" x="0" y="270" w="160" h="134" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00093" x="790" y="0" w="157" h="120" pX="0.5" pY="0.5" oX="0" oY="10" oW="160" oH="144"/>
+    <sprite n="dream_eater_00094" x="155" y="610" w="152" h="109" pX="0.5" pY="0.5" oX="2" oY="18" oW="160" oH="144"/>
+    <sprite n="dream_eater_00095" x="151" y="719" w="152" h="109" pX="0.5" pY="0.5" oX="2" oY="18" oW="160" oH="144"/>
+    <sprite n="dream_eater_00096" x="635" y="0" w="155" h="124" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="dream_eater_00097" x="160" y="266" w="154" h="129" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="dream_eater_00098" x="320" y="132" w="154" h="129" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="dream_eater_00099" x="160" y="395" w="151" h="126" pX="0.5" pY="0.5" oX="0" oY="2" oW="160" oH="144"/>
+    <sprite n="dream_eater_00100" x="0" y="657" w="151" h="126" pX="0.5" pY="0.5" oX="0" oY="2" oW="160" oH="144"/>
+    <sprite n="dream_eater_00101" x="474" y="215" w="142" h="108" pX="0.5" pY="0.5" oX="3" oY="16" oW="160" oH="144"/>
+    <sprite n="dream_eater_00102" x="790" y="120" w="136" h="98" pX="0.5" pY="0.5" oX="6" oY="23" oW="160" oH="144"/>
+    <sprite n="dream_eater_00103" x="635" y="124" w="136" h="98" pX="0.5" pY="0.5" oX="6" oY="23" oW="160" oH="144"/>
+    <sprite n="dream_eater_00104" x="320" y="489" w="140" h="123" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00105" x="149" y="828" w="140" h="124" pX="0.5" pY="0.5" oX="2" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00106" x="152" y="952" w="140" h="124" pX="0.5" pY="0.5" oX="2" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00107" x="292" y="952" w="136" h="122" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00108" x="428" y="949" w="132" h="120" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00109" x="616" y="222" w="132" h="120" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00110" x="560" y="899" w="122" h="116" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00111" x="560" y="1015" w="122" h="116" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00112" x="596" y="546" w="124" h="117" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00113" x="586" y="663" w="124" h="118" pX="0.5" pY="0.5" oX="6" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00114" x="582" y="781" w="124" h="118" pX="0.5" pY="0.5" oX="6" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00115" x="682" y="899" w="120" h="116" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00116" x="1106" y="0" w="116" h="114" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00117" x="1106" y="114" w="116" h="114" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="dream_eater_00118" x="1047" y="536" w="106" h="106" pX="0.5" pY="0.5" oX="13" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00119" x="748" y="222" w="108" h="108" pX="0.5" pY="0.5" oX="11" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00120" x="1064" y="428" w="108" h="108" pX="0.5" pY="0.5" oX="11" oY="3" oW="160" oH="144"/>
+    <sprite n="dream_eater_00121" x="737" y="413" w="108" h="108" pX="0.5" pY="0.5" oX="10" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00122" x="939" y="512" w="108" h="108" pX="0.5" pY="0.5" oX="10" oY="4" oW="160" oH="144"/>
+    <sprite n="dream_eater_00123" x="710" y="699" w="104" h="104" pX="0.5" pY="0.5" oX="11" oY="6" oW="160" oH="144"/>
+    <sprite n="dream_eater_00124" x="824" y="636" w="102" h="102" pX="0.5" pY="0.5" oX="12" oY="7" oW="160" oH="144"/>
+    <sprite n="dream_eater_00125" x="814" y="738" w="102" h="102" pX="0.5" pY="0.5" oX="12" oY="7" oW="160" oH="144"/>
+    <sprite n="dream_eater_00126" x="802" y="1114" w="92" h="92" pX="0.5" pY="0.5" oX="16" oY="13" oW="160" oH="144"/>
+    <sprite n="dream_eater_00127" x="802" y="926" w="94" h="94" pX="0.5" pY="0.5" oX="14" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00128" x="802" y="1020" w="94" h="94" pX="0.5" pY="0.5" oX="14" oY="12" oW="160" oH="144"/>
+    <sprite n="dream_eater_00129" x="358" y="1074" w="92" h="92" pX="0.5" pY="0.5" oX="14" oY="14" oW="160" oH="144"/>
+    <sprite n="dream_eater_00130" x="450" y="1069" w="92" h="92" pX="0.5" pY="0.5" oX="14" oY="14" oW="160" oH="144"/>
+    <sprite n="dream_eater_00131" x="856" y="218" w="88" h="88" pX="0.5" pY="0.5" oX="15" oY="16" oW="160" oH="144"/>
+    <sprite n="dream_eater_00132" x="926" y="703" w="86" h="86" pX="0.5" pY="0.5" oX="16" oY="17" oW="160" oH="144"/>
+    <sprite n="dream_eater_00133" x="1012" y="726" w="86" h="86" pX="0.5" pY="0.5" oX="16" oY="17" oW="160" oH="144"/>
+    <sprite n="dream_eater_00134" x="896" y="941" w="78" h="78" pX="0.5" pY="0.5" oX="19" oY="22" oW="160" oH="144"/>
+    <sprite n="dream_eater_00135" x="896" y="1019" w="78" h="78" pX="0.5" pY="0.5" oX="18" oY="22" oW="160" oH="144"/>
+    <sprite n="dream_eater_00136" x="994" y="812" w="78" h="78" pX="0.5" pY="0.5" oX="18" oY="22" oW="160" oH="144"/>
+    <sprite n="dream_eater_00137" x="1072" y="818" w="76" h="76" pX="0.5" pY="0.5" oX="18" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00138" x="1148" y="818" w="76" h="76" pX="0.5" pY="0.5" oX="18" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00139" x="978" y="890" w="76" h="76" pX="0.5" pY="0.5" oX="18" oY="24" oW="160" oH="144"/>
+    <sprite n="dream_eater_00140" x="1153" y="584" w="70" h="70" pX="0.5" pY="0.5" oX="20" oY="27" oW="160" oH="144"/>
+    <sprite n="dream_eater_00141" x="1048" y="1039" w="70" h="70" pX="0.5" pY="0.5" oX="20" oY="27" oW="160" oH="144"/>
+    <sprite n="dream_eater_00142" x="894" y="1159" w="62" h="62" pX="0.5" pY="0.5" oX="23" oY="32" oW="160" oH="144"/>
+    <sprite n="dream_eater_00143" x="958" y="1113" w="62" h="62" pX="0.5" pY="0.5" oX="22" oY="32" oW="160" oH="144"/>
+    <sprite n="dream_eater_00144" x="1020" y="1113" w="62" h="62" pX="0.5" pY="0.5" oX="22" oY="32" oW="160" oH="144"/>
+    <sprite n="dream_eater_00145" x="1082" y="1109" w="60" h="60" pX="0.5" pY="0.5" oX="22" oY="34" oW="160" oH="144"/>
+    <sprite n="dream_eater_00146" x="542" y="1131" w="60" h="60" pX="0.5" pY="0.5" oX="22" oY="34" oW="160" oH="144"/>
+    <sprite n="dream_eater_00147" x="602" y="1131" w="60" h="60" pX="0.5" pY="0.5" oX="22" oY="34" oW="160" oH="144"/>
+    <sprite n="dream_eater_00148" x="220" y="1076" w="54" h="54" pX="0.5" pY="0.5" oX="24" oY="37" oW="160" oH="144"/>
+    <sprite n="dream_eater_00149" x="1172" y="532" w="52" h="52" pX="0.5" pY="0.5" oX="24" oY="39" oW="160" oH="144"/>
+    <sprite n="dream_eater_00150" x="1088" y="1169" w="52" h="52" pX="0.5" pY="0.5" oX="24" oY="39" oW="160" oH="144"/>
+    <sprite n="dream_eater_00151" x="1176" y="324" w="48" h="48" pX="0.5" pY="0.5" oX="25" oY="41" oW="160" oH="144"/>
+    <sprite n="dream_eater_00152" x="1176" y="372" w="48" h="48" pX="0.5" pY="0.5" oX="25" oY="41" oW="160" oH="144"/>
+    <sprite n="dream_eater_00153" x="1000" y="1175" w="44" h="44" pX="0.5" pY="0.5" oX="26" oY="44" oW="160" oH="144"/>
+    <sprite n="dream_eater_00154" x="1044" y="1175" w="44" h="44" pX="0.5" pY="0.5" oX="26" oY="44" oW="160" oH="144"/>
+    <sprite n="dream_eater_00155" x="1178" y="966" w="44" h="44" pX="0.5" pY="0.5" oX="26" oY="44" oW="160" oH="144"/>
+    <sprite n="dream_eater_00156" x="1182" y="780" w="38" h="38" pX="0.5" pY="0.5" oX="28" oY="47" oW="160" oH="144"/>
+    <sprite n="dream_eater_00157" x="1140" y="1183" w="36" h="36" pX="0.5" pY="0.5" oX="28" oY="49" oW="160" oH="144"/>
+    <sprite n="dream_eater_00158" x="1178" y="1010" w="36" h="36" pX="0.5" pY="0.5" oX="28" oY="49" oW="160" oH="144"/>
+    <sprite n="dream_eater_00159" x="536" y="1191" w="32" h="32" pX="0.5" pY="0.5" oX="29" oY="51" oW="160" oH="144"/>
+    <sprite n="dream_eater_00160" x="568" y="1191" w="30" h="30" pX="0.5" pY="0.5" oX="30" oY="52" oW="160" oH="144"/>
+    <sprite n="dream_eater_00161" x="598" y="1191" w="30" h="30" pX="0.5" pY="0.5" oX="30" oY="52" oW="160" oH="144"/>
+    <sprite n="dream_eater_00162" x="1118" y="1081" w="28" h="28" pX="0.5" pY="0.5" oX="30" oY="54" oW="160" oH="144"/>
+    <sprite n="dream_eater_00163" x="628" y="1191" w="28" h="28" pX="0.5" pY="0.5" oX="30" oY="54" oW="160" oH="144"/>
+    <sprite n="dream_eater_00164" x="1025" y="620" w="22" h="22" pX="0.5" pY="0.5" oX="32" oY="57" oW="160" oH="144"/>
+    <sprite n="dream_eater_00165" x="662" y="1171" w="20" h="20" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="dream_eater_00166" x="926" y="120" w="20" h="20" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="dream_eater_00167" x="958" y="1097" w="16" h="16" pX="0.5" pY="0.5" oX="33" oY="61" oW="160" oH="144"/>
+    <sprite n="dream_eater_00168" x="831" y="535" w="14" h="14" pX="0.5" pY="0.5" oX="34" oY="62" oW="160" oH="144"/>
+    <sprite n="dream_eater_00169" x="234" y="1130" w="14" h="14" pX="0.5" pY="0.5" oX="34" oY="62" oW="160" oH="144"/>
+    <sprite n="dream_eater_00170" x="289" y="828" w="12" h="12" pX="0.5" pY="0.5" oX="34" oY="64" oW="160" oH="144"/>
+</TextureAtlas>

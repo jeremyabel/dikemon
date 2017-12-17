@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:7962497383b00add88e475412fa8111b:e4714d9fc03dce6e8d2debc9fbaf218d:39381186aaf779f89881b71d0655c58f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_metal_claw.png" width="267" height="267">
+    <sprite n="metal_claw_00000" x="0" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00001" x="0" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00002" x="0" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00003" x="0" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00004" x="1" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00005" x="1" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00006" x="1" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00007" x="1" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00008" x="2" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00009" x="2" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00010" x="2" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00011" x="2" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00012" x="3" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00013" x="3" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00014" x="3" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00015" x="3" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00016" x="4" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00017" x="4" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00018" x="4" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00019" x="4" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00020" x="5" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00021" x="5" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00022" x="5" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00023" x="5" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00024" x="6" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00025" x="6" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00026" x="6" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00027" x="6" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00028" x="7" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00029" x="226" y="125" w="7" h="7" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00030" x="226" y="132" w="7" h="7" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00031" x="226" y="139" w="7" h="7" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00032" x="217" y="167" w="15" h="15" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00033" x="189" y="189" w="23" h="23" pX="0.5" pY="0.5" oX="37" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00034" x="158" y="217" w="23" h="23" pX="0.5" pY="0.5" oX="37" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00035" x="233" y="138" w="31" h="31" pX="0.5" pY="0.5" oX="29" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00036" x="40" y="169" w="31" h="31" pX="0.5" pY="0.5" oX="29" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00037" x="120" y="47" w="39" h="39" pX="0.5" pY="0.5" oX="21" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00038" x="159" y="47" w="39" h="39" pX="0.5" pY="0.5" oX="21" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00039" x="0" y="216" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00040" x="40" y="0" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00041" x="0" y="0" w="40" h="54" pX="0.5" pY="0.5" oX="20" oY="41" oW="160" oH="144"/>
+    <sprite n="metal_claw_00042" x="0" y="54" w="40" h="54" pX="0.5" pY="0.5" oX="20" oY="41" oW="160" oH="144"/>
+    <sprite n="metal_claw_00043" x="80" y="0" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="metal_claw_00044" x="120" y="0" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="metal_claw_00045" x="198" y="47" w="39" h="39" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="metal_claw_00046" x="120" y="86" w="39" h="39" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="metal_claw_00047" x="40" y="200" w="31" h="31" pX="0.5" pY="0.5" oX="20" oY="65" oW="160" oH="144"/>
+    <sprite n="metal_claw_00048" x="40" y="231" w="31" h="31" pX="0.5" pY="0.5" oX="20" oY="65" oW="160" oH="144"/>
+    <sprite n="metal_claw_00049" x="158" y="240" w="23" h="23" pX="0.5" pY="0.5" oX="20" oY="73" oW="160" oH="144"/>
+    <sprite n="metal_claw_00050" x="181" y="217" w="23" h="23" pX="0.5" pY="0.5" oX="20" oY="73" oW="160" oH="144"/>
+    <sprite n="metal_claw_00051" x="217" y="182" w="15" h="15" pX="0.5" pY="0.5" oX="20" oY="81" oW="160" oH="144"/>
+    <sprite n="metal_claw_00052" x="212" y="197" w="15" h="15" pX="0.5" pY="0.5" oX="20" oY="81" oW="160" oH="144"/>
+    <sprite n="metal_claw_00053" x="226" y="146" w="7" h="7" pX="0.5" pY="0.5" oX="20" oY="89" oW="160" oH="144"/>
+    <sprite n="metal_claw_00054" x="226" y="153" w="7" h="7" pX="0.5" pY="0.5" oX="20" oY="89" oW="160" oH="144"/>
+    <sprite n="metal_claw_00055" x="7" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00056" x="7" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00057" x="7" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00058" x="8" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00059" x="8" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00060" x="8" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00061" x="8" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00062" x="226" y="160" w="7" h="7" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00063" x="112" y="161" w="7" h="7" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00064" x="250" y="197" w="15" h="15" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00065" x="250" y="212" w="15" h="15" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00066" x="181" y="240" w="23" h="23" pX="0.5" pY="0.5" oX="37" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00067" x="204" y="212" w="23" h="23" pX="0.5" pY="0.5" oX="37" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00068" x="71" y="169" w="31" h="31" pX="0.5" pY="0.5" oX="29" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00069" x="71" y="200" w="31" h="31" pX="0.5" pY="0.5" oX="29" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00070" x="159" y="86" w="39" h="39" pX="0.5" pY="0.5" oX="21" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00071" x="198" y="86" w="39" h="39" pX="0.5" pY="0.5" oX="21" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00072" x="160" y="0" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00073" x="200" y="0" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="40" oW="160" oH="144"/>
+    <sprite n="metal_claw_00074" x="0" y="108" w="40" h="54" pX="0.5" pY="0.5" oX="20" oY="41" oW="160" oH="144"/>
+    <sprite n="metal_claw_00075" x="0" y="162" w="40" h="54" pX="0.5" pY="0.5" oX="20" oY="41" oW="160" oH="144"/>
+    <sprite n="metal_claw_00076" x="40" y="47" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="metal_claw_00077" x="80" y="47" w="40" h="47" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="metal_claw_00078" x="40" y="94" w="39" h="39" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="metal_claw_00079" x="79" y="94" w="39" h="39" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="metal_claw_00080" x="71" y="231" w="31" h="31" pX="0.5" pY="0.5" oX="20" oY="65" oW="160" oH="144"/>
+    <sprite n="metal_claw_00081" x="102" y="169" w="31" h="31" pX="0.5" pY="0.5" oX="20" oY="65" oW="160" oH="144"/>
+    <sprite n="metal_claw_00082" x="204" y="235" w="23" h="23" pX="0.5" pY="0.5" oX="20" oY="73" oW="160" oH="144"/>
+    <sprite n="metal_claw_00083" x="227" y="197" w="23" h="23" pX="0.5" pY="0.5" oX="20" oY="73" oW="160" oH="144"/>
+    <sprite n="metal_claw_00084" x="227" y="220" w="15" h="15" pX="0.5" pY="0.5" oX="20" oY="81" oW="160" oH="144"/>
+    <sprite n="metal_claw_00085" x="242" y="227" w="15" h="15" pX="0.5" pY="0.5" oX="20" oY="81" oW="160" oH="144"/>
+    <sprite n="metal_claw_00086" x="119" y="161" w="7" h="7" pX="0.5" pY="0.5" oX="20" oY="89" oW="160" oH="144"/>
+    <sprite n="metal_claw_00087" x="126" y="161" w="7" h="7" pX="0.5" pY="0.5" oX="20" oY="89" oW="160" oH="144"/>
+    <sprite n="metal_claw_00088" x="9" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00089" x="9" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00090" x="9" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00091" x="9" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00092" x="10" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00093" x="10" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00094" x="10" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00095" x="10" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00096" x="11" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00097" x="11" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00098" x="11" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00099" x="11" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00100" x="12" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00101" x="12" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00102" x="12" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00103" x="12" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00104" x="13" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00105" x="13" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00106" x="13" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00107" x="13" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00108" x="14" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00109" x="14" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00110" x="14" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00111" x="14" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00112" x="15" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00113" x="15" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00114" x="15" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00115" x="15" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00116" x="16" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00117" x="16" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00118" x="16" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00119" x="16" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00120" x="17" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00121" x="17" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00122" x="17" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00123" x="17" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00124" x="18" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00125" x="18" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00126" x="18" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00127" x="18" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00128" x="19" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00129" x="19" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00130" x="19" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00131" x="19" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00132" x="20" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00133" x="20" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00134" x="20" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00135" x="20" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00136" x="21" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00137" x="21" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00138" x="21" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00139" x="240" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00140" x="240" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00141" x="237" y="48" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00142" x="237" y="78" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00143" x="237" y="108" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00144" x="118" y="125" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00145" x="40" y="133" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00146" x="76" y="133" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00147" x="154" y="125" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00148" x="190" y="125" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00149" x="102" y="200" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00150" x="102" y="228" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00151" x="130" y="200" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00152" x="21" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00153" x="22" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00154" x="22" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00155" x="133" y="169" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00156" x="130" y="228" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00157" x="161" y="161" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00158" x="22" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00159" x="22" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00160" x="23" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_00161" x="189" y="161" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00162" x="232" y="169" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="metal_claw_00163" x="161" y="189" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+</TextureAtlas>

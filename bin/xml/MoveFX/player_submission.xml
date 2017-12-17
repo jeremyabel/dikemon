@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4fa753bb4de9874f1ffb00206f1164a9:323f6844b1b7f7a58ed266834158eaf0:07eaa5c993ae96e3efa7ba243062f797$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_submission.png" width="120" height="120">
+    <sprite n="submission_00000" x="72" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00001" x="73" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00002" x="74" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00003" x="75" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00004" x="76" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00005" x="77" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00006" x="78" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00007" x="79" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00008" x="80" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00009" x="81" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00010" x="82" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00011" x="83" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00012" x="84" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00013" x="85" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00014" x="86" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00015" x="87" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00016" x="88" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00017" x="89" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00018" x="90" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00019" x="91" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00020" x="92" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00021" x="93" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00022" x="94" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00023" x="95" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00024" x="72" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00025" x="73" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00026" x="74" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00027" x="75" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00028" x="76" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00029" x="77" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00030" x="78" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00031" x="79" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00032" x="80" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00033" x="81" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00034" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00035" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00036" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00037" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00038" x="0" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00039" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00040" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="submission_00041" x="82" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00042" x="83" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00043" x="84" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00044" x="85" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00045" x="86" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00046" x="87" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00047" x="88" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00048" x="89" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00049" x="90" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00050" x="91" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00051" x="92" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00052" x="93" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00053" x="94" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00054" x="95" y="97" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00055" x="72" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00056" x="73" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00057" x="74" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00058" x="75" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00059" x="76" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00060" x="77" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00061" x="78" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00062" x="79" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00063" x="80" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00064" x="81" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00065" x="82" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00066" x="83" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00067" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00068" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00069" x="24" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00070" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00071" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00072" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00073" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="28" oW="160" oH="144"/>
+    <sprite n="submission_00074" x="84" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00075" x="85" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00076" x="86" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00077" x="87" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00078" x="88" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00079" x="89" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00080" x="90" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00081" x="91" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00082" x="92" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00083" x="93" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00084" x="94" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00085" x="95" y="98" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00086" x="72" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00087" x="73" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00088" x="74" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00089" x="75" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00090" x="76" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00091" x="77" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00092" x="78" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00093" x="79" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00094" x="80" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00095" x="81" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00096" x="82" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00097" x="83" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00098" x="84" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00099" x="85" y="99" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_00100" x="48" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_00101" x="72" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_00102" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_00103" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_00104" x="72" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2cca6849c439e68971d58856af061d75:2c2ff3142858050c611ee0599c8af8d1:7367f4db36413f473da3c9fad75ebe2b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_bite.png" width="224" height="224">
+    <sprite n="bite_00000" x="0" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="bite_00001" x="0" y="0" w="32" h="58" pX="0.5" pY="0.5" oX="112" oY="10" oW="160" oH="144"/>
+    <sprite n="bite_00002" x="0" y="116" w="32" h="56" pX="0.5" pY="0.5" oX="112" oY="11" oW="160" oH="144"/>
+    <sprite n="bite_00003" x="176" y="86" w="32" h="54" pX="0.5" pY="0.5" oX="112" oY="12" oW="160" oH="144"/>
+    <sprite n="bite_00004" x="0" y="172" w="32" h="48" pX="0.5" pY="0.5" oX="112" oY="15" oW="160" oH="144"/>
+    <sprite n="bite_00005" x="32" y="171" w="32" h="42" pX="0.5" pY="0.5" oX="112" oY="18" oW="160" oH="144"/>
+    <sprite n="bite_00006" x="96" y="182" w="32" h="36" pX="0.5" pY="0.5" oX="112" oY="21" oW="160" oH="144"/>
+    <sprite n="bite_00007" x="132" y="142" w="32" h="28" pX="0.5" pY="0.5" oX="112" oY="25" oW="160" oH="144"/>
+    <sprite n="bite_00008" x="128" y="170" w="32" h="18" pX="0.5" pY="0.5" oX="112" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00009" x="156" y="188" w="32" h="18" pX="0.5" pY="0.5" oX="112" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00010" x="32" y="39" w="36" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00011" x="176" y="30" w="36" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00012" x="176" y="58" w="36" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00013" x="140" y="60" w="36" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00014" x="128" y="188" w="28" h="24" pX="0.5" pY="0.5" oX="120" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00015" x="104" y="63" w="36" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00016" x="104" y="0" w="36" h="33" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="bite_00017" x="96" y="145" w="32" h="36" pX="0.5" pY="0.5" oX="112" oY="21" oW="160" oH="144"/>
+    <sprite n="bite_00018" x="64" y="169" w="32" h="42" pX="0.5" pY="0.5" oX="112" oY="18" oW="160" oH="144"/>
+    <sprite n="bite_00019" x="64" y="121" w="32" h="48" pX="0.5" pY="0.5" oX="112" oY="15" oW="160" oH="144"/>
+    <sprite n="bite_00020" x="140" y="88" w="32" h="54" pX="0.5" pY="0.5" oX="112" oY="12" oW="160" oH="144"/>
+    <sprite n="bite_00021" x="68" y="65" w="32" h="56" pX="0.5" pY="0.5" oX="112" oY="11" oW="160" oH="144"/>
+    <sprite n="bite_00022" x="0" y="58" w="32" h="58" pX="0.5" pY="0.5" oX="112" oY="10" oW="160" oH="144"/>
+    <sprite n="bite_00023" x="32" y="67" w="32" h="56" pX="0.5" pY="0.5" oX="112" oY="11" oW="160" oH="144"/>
+    <sprite n="bite_00024" x="100" y="91" w="32" h="54" pX="0.5" pY="0.5" oX="112" oY="12" oW="160" oH="144"/>
+    <sprite n="bite_00025" x="32" y="123" w="32" h="48" pX="0.5" pY="0.5" oX="112" oY="15" oW="160" oH="144"/>
+    <sprite n="bite_00026" x="172" y="140" w="32" h="42" pX="0.5" pY="0.5" oX="112" oY="18" oW="160" oH="144"/>
+    <sprite n="bite_00027" x="32" y="0" w="36" h="39" pX="0.5" pY="0.5" oX="108" oY="21" oW="160" oH="144"/>
+    <sprite n="bite_00028" x="68" y="0" w="36" h="35" pX="0.5" pY="0.5" oX="108" oY="25" oW="160" oH="144"/>
+    <sprite n="bite_00029" x="140" y="0" w="36" h="30" pX="0.5" pY="0.5" oX="108" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00030" x="176" y="0" w="36" h="30" pX="0.5" pY="0.5" oX="108" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00031" x="140" y="30" w="36" h="30" pX="0.5" pY="0.5" oX="108" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00032" x="104" y="33" w="36" h="30" pX="0.5" pY="0.5" oX="108" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00033" x="68" y="35" w="36" h="30" pX="0.5" pY="0.5" oX="108" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00034" x="156" y="206" w="32" h="18" pX="0.5" pY="0.5" oX="112" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00035" x="208" y="86" w="16" h="8" pX="0.5" pY="0.5" oX="120" oY="36" oW="160" oH="144"/>
+    <sprite n="bite_00036" x="188" y="182" w="32" h="18" pX="0.5" pY="0.5" oX="112" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00037" x="188" y="200" w="32" h="18" pX="0.5" pY="0.5" oX="112" oY="30" oW="160" oH="144"/>
+    <sprite n="bite_00038" x="0" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="bite_00039" x="0" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

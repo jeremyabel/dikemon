@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a16b6dbcd453d29a64669d77adfb80c3:bd7f320f8694dfa985d87b352dd26674:deebd25ab7cceec3ee35ad74418c3734$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_agility.png" width="1056" height="1056">
+    <sprite n="agility_00000" x="154" y="504" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="agility_00001" x="868" y="928" w="30" h="68" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00002" x="1012" y="480" w="30" h="68" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00003" x="980" y="648" w="62" h="68" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00004" x="790" y="928" w="78" h="68" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00005" x="806" y="860" w="94" h="68" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00006" x="264" y="920" w="110" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00007" x="374" y="920" w="110" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00008" x="784" y="304" w="142" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00009" x="318" y="252" w="156" h="84" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00010" x="638" y="84" w="154" h="84" pX="0.5" pY="0.5" oX="6" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00011" x="952" y="84" w="94" h="76" pX="0.5" pY="0.5" oX="8" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00012" x="146" y="980" w="94" h="76" pX="0.5" pY="0.5" oX="8" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00013" x="942" y="800" w="114" h="76" pX="0.5" pY="0.5" oX="12" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00014" x="598" y="692" w="126" h="76" pX="0.5" pY="0.5" oX="14" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00015" x="476" y="532" w="138" h="76" pX="0.5" pY="0.5" oX="16" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00016" x="0" y="0" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00017" x="0" y="84" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00018" x="620" y="328" w="142" h="68" pX="0.5" pY="0.5" oX="18" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00019" x="614" y="556" w="136" h="68" pX="0.5" pY="0.5" oX="24" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00020" x="474" y="608" w="134" h="68" pX="0.5" pY="0.5" oX="26" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00021" x="608" y="624" w="132" h="68" pX="0.5" pY="0.5" oX="28" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00022" x="466" y="676" w="132" h="68" pX="0.5" pY="0.5" oX="28" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00023" x="454" y="744" w="126" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00024" x="478" y="388" w="142" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00025" x="0" y="756" w="148" h="84" pX="0.5" pY="0.5" oX="10" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00026" x="160" y="0" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00027" x="0" y="168" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00028" x="308" y="700" w="146" h="76" pX="0.5" pY="0.5" oX="6" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00029" x="904" y="404" w="140" h="76" pX="0.5" pY="0.5" oX="18" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00030" x="926" y="328" w="130" h="76" pX="0.5" pY="0.5" oX="30" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00031" x="158" y="420" w="160" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00032" x="474" y="252" w="160" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00033" x="160" y="84" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00034" x="160" y="252" w="158" h="84" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00035" x="634" y="168" w="150" h="84" pX="0.5" pY="0.5" oX="10" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00036" x="740" y="640" w="120" h="68" pX="0.5" pY="0.5" oX="18" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00037" x="724" y="708" w="120" h="68" pX="0.5" pY="0.5" oX="18" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00038" x="860" y="648" w="120" h="68" pX="0.5" pY="0.5" oX="34" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00039" x="706" y="776" w="118" h="68" pX="0.5" pY="0.5" oX="42" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00040" x="696" y="844" w="110" h="68" pX="0.5" pY="0.5" oX="50" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00041" x="320" y="168" w="158" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00042" x="480" y="84" w="158" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00043" x="150" y="708" w="154" h="60" pX="0.5" pY="0.5" oX="6" oY="30" oW="160" oH="144"/>
+    <sprite n="agility_00044" x="478" y="472" w="140" h="60" pX="0.5" pY="0.5" oX="20" oY="30" oW="160" oH="144"/>
+    <sprite n="agility_00045" x="580" y="768" w="126" h="60" pX="0.5" pY="0.5" oX="34" oY="30" oW="160" oH="144"/>
+    <sprite n="agility_00046" x="792" y="84" w="160" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00047" x="318" y="420" w="160" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00048" x="320" y="0" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00049" x="0" y="588" w="150" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00050" x="640" y="0" w="158" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00051" x="798" y="0" w="154" h="84" pX="0.5" pY="0.5" oX="6" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00052" x="0" y="504" w="154" h="84" pX="0.5" pY="0.5" oX="6" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00053" x="620" y="396" w="142" h="84" pX="0.5" pY="0.5" oX="18" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00054" x="900" y="876" w="98" h="36" pX="0.5" pY="0.5" oX="24" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00055" x="900" y="912" w="96" h="36" pX="0.5" pY="0.5" oX="30" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00056" x="658" y="996" w="106" h="36" pX="0.5" pY="0.5" oX="36" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00057" x="764" y="996" w="106" h="36" pX="0.5" pY="0.5" oX="36" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00058" x="0" y="1008" w="112" h="36" pX="0.5" pY="0.5" oX="48" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00059" x="634" y="252" w="150" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00060" x="158" y="496" w="160" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00061" x="318" y="496" w="158" h="76" pX="0.5" pY="0.5" oX="2" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00062" x="150" y="632" w="158" h="76" pX="0.5" pY="0.5" oX="2" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00063" x="618" y="480" w="140" h="76" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00064" x="762" y="388" w="142" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00065" x="784" y="220" w="144" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00066" x="0" y="840" w="146" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00067" x="0" y="924" w="146" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00068" x="0" y="672" w="150" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00069" x="318" y="336" w="152" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00070" x="478" y="168" w="156" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00071" x="0" y="252" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00072" x="160" y="168" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00073" x="308" y="632" w="158" h="68" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00074" x="148" y="768" w="154" h="68" pX="0.5" pY="0.5" oX="6" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00075" x="792" y="160" w="150" h="60" pX="0.5" pY="0.5" oX="10" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00076" x="302" y="776" w="146" h="60" pX="0.5" pY="0.5" oX="14" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00077" x="474" y="328" w="146" h="60" pX="0.5" pY="0.5" oX="14" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00078" x="154" y="572" w="160" h="60" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="agility_00079" x="314" y="572" w="160" h="60" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="agility_00080" x="320" y="84" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00081" x="0" y="420" w="158" h="84" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00082" x="160" y="336" w="158" h="84" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00083" x="762" y="472" w="126" h="84" pX="0.5" pY="0.5" oX="34" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00084" x="942" y="160" w="114" h="84" pX="0.5" pY="0.5" oX="46" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00085" x="382" y="836" w="110" h="84" pX="0.5" pY="0.5" oX="50" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00086" x="484" y="920" w="106" h="84" pX="0.5" pY="0.5" oX="54" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00087" x="590" y="912" w="106" h="84" pX="0.5" pY="0.5" oX="54" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00088" x="964" y="716" w="90" h="84" pX="0.5" pY="0.5" oX="62" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00089" x="480" y="0" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00090" x="0" y="336" w="160" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00091" x="454" y="1004" w="102" h="52" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00092" x="556" y="1004" w="102" h="52" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00093" x="240" y="1004" w="108" h="52" pX="0.5" pY="0.5" oX="2" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00094" x="348" y="1004" w="106" h="52" pX="0.5" pY="0.5" oX="8" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00095" x="824" y="800" w="118" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00096" x="148" y="836" w="118" h="60" pX="0.5" pY="0.5" oX="0" oY="14" oW="160" oH="144"/>
+    <sprite n="agility_00097" x="750" y="556" w="126" h="84" pX="0.5" pY="0.5" oX="0" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00098" x="928" y="244" w="128" h="84" pX="0.5" pY="0.5" oX="2" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00099" x="888" y="480" w="124" h="84" pX="0.5" pY="0.5" oX="10" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00100" x="876" y="564" w="120" h="84" pX="0.5" pY="0.5" oX="18" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00101" x="266" y="836" w="116" h="84" pX="0.5" pY="0.5" oX="26" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00102" x="844" y="716" w="120" h="84" pX="0.5" pY="0.5" oX="34" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00103" x="146" y="896" w="118" h="84" pX="0.5" pY="0.5" oX="42" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00104" x="492" y="828" w="110" h="84" pX="0.5" pY="0.5" oX="50" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00105" x="952" y="0" w="100" h="84" pX="0.5" pY="0.5" oX="58" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00106" x="602" y="828" w="94" h="84" pX="0.5" pY="0.5" oX="66" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00107" x="696" y="912" w="94" h="84" pX="0.5" pY="0.5" oX="66" oY="6" oW="160" oH="144"/>
+    <sprite n="agility_00108" x="150" y="588" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="agility_00109" x="148" y="756" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="agility_00110" x="149" y="756" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

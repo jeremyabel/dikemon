@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c6a9cd210c238c2da940f095f565ba45:e155dd002b94b8ca013bd387327e3d0d:5fdc83ff7d2c07de1233e0626704ce91$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_thundershock.png" width="368" height="368">
+    <sprite n="thundershock_00000" x="240" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thundershock_00001" x="264" y="352" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="33" oW="160" oH="144"/>
+    <sprite n="thundershock_00002" x="280" y="352" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="33" oW="160" oH="144"/>
+    <sprite n="thundershock_00003" x="296" y="352" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="33" oW="160" oH="144"/>
+    <sprite n="thundershock_00004" x="241" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thundershock_00005" x="242" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thundershock_00006" x="0" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00007" x="0" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00008" x="0" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00009" x="0" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00010" x="0" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00011" x="200" y="200" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00012" x="200" y="232" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00013" x="200" y="264" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00014" x="200" y="296" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00015" x="200" y="328" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00016" x="0" y="200" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00017" x="0" y="240" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00018" x="0" y="280" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00019" x="0" y="320" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00020" x="40" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00021" x="232" y="200" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00022" x="232" y="232" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00023" x="232" y="264" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00024" x="232" y="296" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00025" x="232" y="328" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00026" x="40" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00027" x="40" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00028" x="40" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00029" x="40" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00030" x="40" y="200" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00031" x="240" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00032" x="240" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00033" x="240" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00034" x="240" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00035" x="240" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00036" x="40" y="240" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00037" x="40" y="280" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00038" x="40" y="320" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00039" x="80" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00040" x="80" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00041" x="240" y="160" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00042" x="264" y="192" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00043" x="264" y="224" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00044" x="264" y="256" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00045" x="264" y="288" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00046" x="80" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00047" x="80" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00048" x="80" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00049" x="80" y="200" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00050" x="80" y="240" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00051" x="264" y="320" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00052" x="272" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00053" x="272" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00054" x="272" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00055" x="272" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00056" x="80" y="280" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00057" x="80" y="320" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00058" x="120" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00059" x="120" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00060" x="120" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00061" x="272" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00062" x="272" y="160" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00063" x="296" y="192" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00064" x="296" y="224" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00065" x="296" y="256" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00066" x="120" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00067" x="120" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00068" x="120" y="200" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00069" x="120" y="240" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00070" x="120" y="280" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00071" x="296" y="288" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00072" x="296" y="320" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00073" x="304" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00074" x="304" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00075" x="304" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00076" x="120" y="320" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00077" x="160" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00078" x="160" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00079" x="160" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00080" x="160" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00081" x="304" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00082" x="304" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00083" x="304" y="160" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00084" x="328" y="192" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00085" x="328" y="224" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00086" x="160" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00087" x="160" y="200" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00088" x="160" y="240" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00089" x="160" y="280" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00090" x="160" y="320" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00091" x="328" y="256" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00092" x="328" y="288" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00093" x="328" y="320" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00094" x="336" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00095" x="336" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00096" x="200" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00097" x="200" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00098" x="200" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00099" x="200" y="120" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00100" x="200" y="160" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="thundershock_00101" x="336" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+    <sprite n="thundershock_00102" x="336" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="24" oW="160" oH="144"/>
+</TextureAtlas>

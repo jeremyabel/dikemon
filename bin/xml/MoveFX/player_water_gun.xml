@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:851bcf41f7d43b114cd110e0ac05838c:ce35002dbac36f242a0b193d2965007a:7aa1def12ae89297ed1fe421d07f76fb$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_water_gun.png" width="280" height="280">
+    <sprite n="water_gun_00000" x="160" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="water_gun_00001" x="212" y="41" w="8" h="8" pX="0.5" pY="0.5" oX="54" oY="67" oW="160" oH="144"/>
+    <sprite n="water_gun_00002" x="78" y="125" w="8" h="8" pX="0.5" pY="0.5" oX="56" oY="66" oW="160" oH="144"/>
+    <sprite n="water_gun_00003" x="266" y="75" w="8" h="8" pX="0.5" pY="0.5" oX="58" oY="64" oW="160" oH="144"/>
+    <sprite n="water_gun_00004" x="202" y="88" w="8" h="8" pX="0.5" pY="0.5" oX="60" oY="62" oW="160" oH="144"/>
+    <sprite n="water_gun_00005" x="244" y="256" w="8" h="8" pX="0.5" pY="0.5" oX="62" oY="60" oW="160" oH="144"/>
+    <sprite n="water_gun_00006" x="260" y="240" w="8" h="8" pX="0.5" pY="0.5" oX="64" oY="59" oW="160" oH="144"/>
+    <sprite n="water_gun_00007" x="78" y="133" w="8" h="8" pX="0.5" pY="0.5" oX="66" oY="57" oW="160" oH="144"/>
+    <sprite n="water_gun_00008" x="266" y="83" w="8" h="8" pX="0.5" pY="0.5" oX="68" oY="55" oW="160" oH="144"/>
+    <sprite n="water_gun_00009" x="252" y="256" w="8" h="8" pX="0.5" pY="0.5" oX="70" oY="54" oW="160" oH="144"/>
+    <sprite n="water_gun_00010" x="156" y="269" w="26" h="11" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="water_gun_00011" x="166" y="119" w="26" h="11" pX="0.5" pY="0.5" oX="56" oY="51" oW="160" oH="144"/>
+    <sprite n="water_gun_00012" x="176" y="88" w="26" h="11" pX="0.5" pY="0.5" oX="58" oY="49" oW="160" oH="144"/>
+    <sprite n="water_gun_00013" x="182" y="269" w="26" h="10" pX="0.5" pY="0.5" oX="60" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00014" x="252" y="48" w="26" h="9" pX="0.5" pY="0.5" oX="62" oY="47" oW="160" oH="144"/>
+    <sprite n="water_gun_00015" x="250" y="57" w="26" h="9" pX="0.5" pY="0.5" oX="64" oY="46" oW="160" oH="144"/>
+    <sprite n="water_gun_00016" x="160" y="153" w="26" h="8" pX="0.5" pY="0.5" oX="66" oY="45" oW="160" oH="144"/>
+    <sprite n="water_gun_00017" x="186" y="153" w="26" h="8" pX="0.5" pY="0.5" oX="68" oY="43" oW="160" oH="144"/>
+    <sprite n="water_gun_00018" x="250" y="66" w="26" h="9" pX="0.5" pY="0.5" oX="70" oY="42" oW="160" oH="144"/>
+    <sprite n="water_gun_00019" x="0" y="0" w="44" h="29" pX="0.5" pY="0.5" oX="54" oY="40" oW="160" oH="144"/>
+    <sprite n="water_gun_00020" x="0" y="29" w="44" h="29" pX="0.5" pY="0.5" oX="56" oY="39" oW="160" oH="144"/>
+    <sprite n="water_gun_00021" x="44" y="0" w="44" h="29" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="water_gun_00022" x="0" y="58" w="44" h="28" pX="0.5" pY="0.5" oX="60" oY="36" oW="160" oH="144"/>
+    <sprite n="water_gun_00023" x="44" y="29" w="44" h="27" pX="0.5" pY="0.5" oX="62" oY="35" oW="160" oH="144"/>
+    <sprite n="water_gun_00024" x="88" y="0" w="44" h="27" pX="0.5" pY="0.5" oX="64" oY="34" oW="160" oH="144"/>
+    <sprite n="water_gun_00025" x="0" y="86" w="44" h="26" pX="0.5" pY="0.5" oX="66" oY="33" oW="160" oH="144"/>
+    <sprite n="water_gun_00026" x="44" y="56" w="44" h="26" pX="0.5" pY="0.5" oX="68" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00027" x="88" y="27" w="44" h="25" pX="0.5" pY="0.5" oX="70" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00028" x="132" y="0" w="44" h="24" pX="0.5" pY="0.5" oX="72" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00029" x="0" y="112" w="44" h="24" pX="0.5" pY="0.5" oX="74" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00030" x="44" y="82" w="44" h="23" pX="0.5" pY="0.5" oX="76" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00031" x="88" y="52" w="44" h="23" pX="0.5" pY="0.5" oX="78" oY="27" oW="160" oH="144"/>
+    <sprite n="water_gun_00032" x="132" y="24" w="44" h="22" pX="0.5" pY="0.5" oX="80" oY="27" oW="160" oH="144"/>
+    <sprite n="water_gun_00033" x="176" y="0" w="44" h="22" pX="0.5" pY="0.5" oX="82" oY="26" oW="160" oH="144"/>
+    <sprite n="water_gun_00034" x="0" y="136" w="44" h="21" pX="0.5" pY="0.5" oX="84" oY="26" oW="160" oH="144"/>
+    <sprite n="water_gun_00035" x="44" y="105" w="44" h="20" pX="0.5" pY="0.5" oX="86" oY="25" oW="160" oH="144"/>
+    <sprite n="water_gun_00036" x="88" y="75" w="44" h="20" pX="0.5" pY="0.5" oX="88" oY="25" oW="160" oH="144"/>
+    <sprite n="water_gun_00037" x="132" y="46" w="44" h="19" pX="0.5" pY="0.5" oX="90" oY="25" oW="160" oH="144"/>
+    <sprite n="water_gun_00038" x="176" y="22" w="44" h="19" pX="0.5" pY="0.5" oX="92" oY="24" oW="160" oH="144"/>
+    <sprite n="water_gun_00039" x="132" y="88" w="44" h="13" pX="0.5" pY="0.5" oX="94" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00040" x="44" y="150" w="44" h="11" pX="0.5" pY="0.5" oX="96" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00041" x="122" y="119" w="44" h="10" pX="0.5" pY="0.5" oX="98" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00042" x="36" y="269" w="42" h="11" pX="0.5" pY="0.5" oX="100" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00043" x="78" y="269" w="40" h="11" pX="0.5" pY="0.5" oX="102" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00044" x="118" y="269" w="38" h="11" pX="0.5" pY="0.5" oX="104" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00045" x="100" y="257" w="36" h="12" pX="0.5" pY="0.5" oX="106" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00046" x="220" y="26" w="34" h="13" pX="0.5" pY="0.5" oX="108" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00047" x="88" y="120" w="32" h="15" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00048" x="70" y="207" w="32" h="16" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00049" x="220" y="39" w="32" h="17" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00050" x="160" y="101" w="32" h="18" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00051" x="142" y="207" w="32" h="20" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00052" x="174" y="207" w="32" h="20" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00053" x="206" y="207" w="32" h="22" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00054" x="212" y="248" w="32" h="22" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00055" x="244" y="156" w="32" h="22" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00056" x="36" y="223" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00057" x="36" y="246" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="water_gun_00058" x="70" y="161" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00059" x="70" y="184" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="water_gun_00060" x="68" y="223" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00061" x="68" y="246" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="water_gun_00062" x="168" y="65" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00063" x="88" y="135" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="31" oW="160" oH="144"/>
+    <sprite n="water_gun_00064" x="142" y="161" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="32" oW="160" oH="144"/>
+    <sprite n="water_gun_00065" x="142" y="184" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="32" oW="160" oH="144"/>
+    <sprite n="water_gun_00066" x="140" y="227" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="33" oW="160" oH="144"/>
+    <sprite n="water_gun_00067" x="160" y="130" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="33" oW="160" oH="144"/>
+    <sprite n="water_gun_00068" x="174" y="161" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="water_gun_00069" x="174" y="184" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="water_gun_00070" x="172" y="227" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="35" oW="160" oH="144"/>
+    <sprite n="water_gun_00071" x="212" y="138" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="36" oW="160" oH="144"/>
+    <sprite n="water_gun_00072" x="206" y="161" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="36" oW="160" oH="144"/>
+    <sprite n="water_gun_00073" x="206" y="184" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="36" oW="160" oH="144"/>
+    <sprite n="water_gun_00074" x="238" y="178" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="37" oW="160" oH="144"/>
+    <sprite n="water_gun_00075" x="238" y="201" w="32" h="23" pX="0.5" pY="0.5" oX="110" oY="37" oW="160" oH="144"/>
+    <sprite n="water_gun_00076" x="220" y="0" w="34" h="26" pX="0.5" pY="0.5" oX="108" oY="38" oW="160" oH="144"/>
+    <sprite n="water_gun_00077" x="0" y="157" w="34" h="26" pX="0.5" pY="0.5" oX="108" oY="38" oW="160" oH="144"/>
+    <sprite n="water_gun_00078" x="44" y="125" w="34" h="25" pX="0.5" pY="0.5" oX="108" oY="39" oW="160" oH="144"/>
+    <sprite n="water_gun_00079" x="88" y="95" w="34" h="25" pX="0.5" pY="0.5" oX="108" oY="39" oW="160" oH="144"/>
+    <sprite n="water_gun_00080" x="0" y="183" w="34" h="24" pX="0.5" pY="0.5" oX="108" oY="40" oW="160" oH="144"/>
+    <sprite n="water_gun_00081" x="0" y="207" w="34" h="24" pX="0.5" pY="0.5" oX="108" oY="40" oW="160" oH="144"/>
+    <sprite n="water_gun_00082" x="132" y="65" w="36" h="23" pX="0.5" pY="0.5" oX="108" oY="41" oW="160" oH="144"/>
+    <sprite n="water_gun_00083" x="176" y="41" w="36" h="23" pX="0.5" pY="0.5" oX="108" oY="41" oW="160" oH="144"/>
+    <sprite n="water_gun_00084" x="0" y="231" w="36" h="22" pX="0.5" pY="0.5" oX="108" oY="42" oW="160" oH="144"/>
+    <sprite n="water_gun_00085" x="0" y="253" w="36" h="22" pX="0.5" pY="0.5" oX="108" oY="42" oW="160" oH="144"/>
+    <sprite n="water_gun_00086" x="34" y="161" w="36" h="21" pX="0.5" pY="0.5" oX="108" oY="43" oW="160" oH="144"/>
+    <sprite n="water_gun_00087" x="34" y="182" w="36" h="21" pX="0.5" pY="0.5" oX="108" oY="43" oW="160" oH="144"/>
+    <sprite n="water_gun_00088" x="34" y="203" w="36" h="20" pX="0.5" pY="0.5" oX="108" oY="44" oW="160" oH="144"/>
+    <sprite n="water_gun_00089" x="140" y="250" w="36" h="19" pX="0.5" pY="0.5" oX="108" oY="45" oW="160" oH="144"/>
+    <sprite n="water_gun_00090" x="176" y="250" w="36" h="19" pX="0.5" pY="0.5" oX="108" oY="45" oW="160" oH="144"/>
+    <sprite n="water_gun_00091" x="204" y="229" w="36" h="19" pX="0.5" pY="0.5" oX="108" oY="45" oW="160" oH="144"/>
+    <sprite n="water_gun_00092" x="244" y="138" w="36" h="18" pX="0.5" pY="0.5" oX="108" oY="46" oW="160" oH="144"/>
+    <sprite n="water_gun_00093" x="122" y="101" w="38" h="18" pX="0.5" pY="0.5" oX="106" oY="46" oW="160" oH="144"/>
+    <sprite n="water_gun_00094" x="212" y="56" w="38" h="17" pX="0.5" pY="0.5" oX="106" oY="47" oW="160" oH="144"/>
+    <sprite n="water_gun_00095" x="212" y="73" w="38" h="17" pX="0.5" pY="0.5" oX="106" oY="47" oW="160" oH="144"/>
+    <sprite n="water_gun_00096" x="212" y="90" w="38" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00097" x="212" y="106" w="38" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00098" x="212" y="122" w="38" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00099" x="240" y="224" w="38" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00100" x="120" y="129" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00101" x="120" y="145" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00102" x="102" y="161" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00103" x="102" y="177" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00104" x="102" y="193" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00105" x="102" y="209" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00106" x="100" y="225" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00107" x="100" y="241" w="40" h="16" pX="0.5" pY="0.5" oX="106" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00108" x="254" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="120" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00109" x="254" y="16" w="26" h="16" pX="0.5" pY="0.5" oX="120" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00110" x="254" y="32" w="26" h="16" pX="0.5" pY="0.5" oX="120" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00111" x="200" y="64" w="12" h="12" pX="0.5" pY="0.5" oX="120" oY="52" oW="160" oH="144"/>
+    <sprite n="water_gun_00112" x="200" y="76" w="12" h="12" pX="0.5" pY="0.5" oX="120" oY="52" oW="160" oH="144"/>
+    <sprite n="water_gun_00113" x="250" y="123" w="12" h="12" pX="0.5" pY="0.5" oX="120" oY="52" oW="160" oH="144"/>
+    <sprite n="water_gun_00114" x="250" y="75" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00115" x="250" y="91" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00116" x="250" y="107" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00117" x="192" y="99" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00118" x="192" y="115" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00119" x="192" y="131" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+    <sprite n="water_gun_00120" x="244" y="240" w="16" h="16" pX="0.5" pY="0.5" oX="118" oY="48" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:61ed92ab1823fb6930e6e8ddb2e7278e:bef241d7656e13e9e6d68b40affab43a:7c4762cd98148408710f6d4b858a4eba$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_screech.png" width="119" height="119">
+    <sprite n="screech_00000" x="21" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00001" x="0" y="103" w="8" h="16" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="screech_00002" x="8" y="103" w="8" h="16" pX="0.5" pY="0.5" oX="56" oY="62" oW="160" oH="144"/>
+    <sprite n="screech_00003" x="16" y="103" w="8" h="16" pX="0.5" pY="0.5" oX="58" oY="61" oW="160" oH="144"/>
+    <sprite n="screech_00004" x="104" y="75" w="14" h="19" pX="0.5" pY="0.5" oX="54" oY="60" oW="160" oH="144"/>
+    <sprite n="screech_00005" x="99" y="94" w="14" h="19" pX="0.5" pY="0.5" oX="56" oY="59" oW="160" oH="144"/>
+    <sprite n="screech_00006" x="37" y="98" w="15" h="21" pX="0.5" pY="0.5" oX="58" oY="56" oW="160" oH="144"/>
+    <sprite n="screech_00007" x="52" y="98" w="15" h="21" pX="0.5" pY="0.5" oX="60" oY="55" oW="160" oH="144"/>
+    <sprite n="screech_00008" x="104" y="54" w="15" h="21" pX="0.5" pY="0.5" oX="62" oY="54" oW="160" oH="144"/>
+    <sprite n="screech_00009" x="67" y="94" w="16" h="23" pX="0.5" pY="0.5" oX="63" oY="53" oW="160" oH="144"/>
+    <sprite n="screech_00010" x="83" y="86" w="16" h="23" pX="0.5" pY="0.5" oX="65" oY="52" oW="160" oH="144"/>
+    <sprite n="screech_00011" x="53" y="62" w="17" h="25" pX="0.5" pY="0.5" oX="67" oY="49" oW="160" oH="144"/>
+    <sprite n="screech_00012" x="70" y="61" w="17" h="25" pX="0.5" pY="0.5" oX="69" oY="48" oW="160" oH="144"/>
+    <sprite n="screech_00013" x="87" y="61" w="17" h="25" pX="0.5" pY="0.5" oX="71" oY="47" oW="160" oH="144"/>
+    <sprite n="screech_00014" x="101" y="0" w="18" h="27" pX="0.5" pY="0.5" oX="72" oY="46" oW="160" oH="144"/>
+    <sprite n="screech_00015" x="101" y="27" w="18" h="27" pX="0.5" pY="0.5" oX="74" oY="45" oW="160" oH="144"/>
+    <sprite n="screech_00016" x="63" y="0" w="19" h="29" pX="0.5" pY="0.5" oX="76" oY="42" oW="160" oH="144"/>
+    <sprite n="screech_00017" x="63" y="29" w="19" h="29" pX="0.5" pY="0.5" oX="78" oY="41" oW="160" oH="144"/>
+    <sprite n="screech_00018" x="82" y="0" w="19" h="29" pX="0.5" pY="0.5" oX="80" oY="40" oW="160" oH="144"/>
+    <sprite n="screech_00019" x="43" y="0" w="20" h="31" pX="0.5" pY="0.5" oX="81" oY="39" oW="160" oH="144"/>
+    <sprite n="screech_00020" x="43" y="31" w="20" h="31" pX="0.5" pY="0.5" oX="83" oY="38" oW="160" oH="144"/>
+    <sprite n="screech_00021" x="22" y="0" w="21" h="33" pX="0.5" pY="0.5" oX="85" oY="35" oW="160" oH="144"/>
+    <sprite n="screech_00022" x="0" y="70" w="21" h="33" pX="0.5" pY="0.5" oX="87" oY="34" oW="160" oH="144"/>
+    <sprite n="screech_00023" x="22" y="33" w="21" h="33" pX="0.5" pY="0.5" oX="89" oY="33" oW="160" oH="144"/>
+    <sprite n="screech_00024" x="0" y="0" w="22" h="35" pX="0.5" pY="0.5" oX="90" oY="32" oW="160" oH="144"/>
+    <sprite n="screech_00025" x="0" y="35" w="22" h="35" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="screech_00026" x="82" y="29" w="16" h="32" pX="0.5" pY="0.5" oX="94" oY="33" oW="160" oH="144"/>
+    <sprite n="screech_00027" x="21" y="70" w="16" h="32" pX="0.5" pY="0.5" oX="96" oY="32" oW="160" oH="144"/>
+    <sprite n="screech_00028" x="37" y="66" w="16" h="32" pX="0.5" pY="0.5" oX="98" oY="31" oW="160" oH="144"/>
+    <sprite n="screech_00029" x="118" y="75" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00030" x="22" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00031" x="118" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00032" x="23" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00033" x="118" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00034" x="118" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00035" x="118" y="79" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00036" x="118" y="80" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00037" x="118" y="81" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00038" x="118" y="82" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00039" x="118" y="83" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00040" x="118" y="84" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00041" x="118" y="85" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00042" x="118" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00043" x="118" y="87" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00044" x="118" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00045" x="118" y="89" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00046" x="118" y="90" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00047" x="118" y="91" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00048" x="118" y="92" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00049" x="118" y="93" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00050" x="22" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00051" x="43" y="62" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00052" x="24" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00053" x="63" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00054" x="98" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00055" x="67" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00056" x="67" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00057" x="53" y="87" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00058" x="70" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00059" x="83" y="109" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00060" x="113" y="94" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00061" x="99" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00062" x="22" y="67" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00063" x="23" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00064" x="43" y="63" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00065" x="44" y="62" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00066" x="24" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00067" x="25" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00068" x="63" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00069" x="64" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00070" x="98" y="30" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00071" x="99" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00072" x="100" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00073" x="68" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00074" x="68" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00075" x="53" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00076" x="54" y="87" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00077" x="71" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00078" x="83" y="110" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00079" x="84" y="109" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="screech_00080" x="113" y="95" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

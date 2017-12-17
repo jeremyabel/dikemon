@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f460269523cef3cc7b97825f06ecc8bc:1fabef9d2a5c39188c4c8eaaa3fc4894:c9899220cf235ac595b9133e88b96214$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_metronome.png" width="199" height="199">
+    <sprite n="metronome_00000" x="0" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metronome_00001" x="159" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="65" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00002" x="172" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="65" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00003" x="185" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="64" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00004" x="0" y="85" w="13" h="19" pX="0.5" pY="0.5" oX="63" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00005" x="13" y="86" w="13" h="19" pX="0.5" pY="0.5" oX="63" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00006" x="61" y="33" w="13" h="18" pX="0.5" pY="0.5" oX="61" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00007" x="74" y="33" w="13" h="18" pX="0.5" pY="0.5" oX="61" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00008" x="87" y="33" w="13" h="18" pX="0.5" pY="0.5" oX="60" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00009" x="100" y="33" w="13" h="18" pX="0.5" pY="0.5" oX="57" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00010" x="113" y="33" w="13" h="18" pX="0.5" pY="0.5" oX="57" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00011" x="178" y="88" w="19" h="20" pX="0.5" pY="0.5" oX="56" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00012" x="0" y="105" w="21" h="20" pX="0.5" pY="0.5" oX="53" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00013" x="21" y="105" w="21" h="20" pX="0.5" pY="0.5" oX="53" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00014" x="26" y="86" w="21" h="19" pX="0.5" pY="0.5" oX="52" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00015" x="25" y="16" w="20" h="17" pX="0.5" pY="0.5" oX="50" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00016" x="45" y="16" w="20" h="17" pX="0.5" pY="0.5" oX="50" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00017" x="1" y="0" w="18" h="16" pX="0.5" pY="0.5" oX="49" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00018" x="19" y="0" w="18" h="16" pX="0.5" pY="0.5" oX="49" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00019" x="37" y="0" w="16" h="16" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00020" x="126" y="33" w="23" h="18" pX="0.5" pY="0.5" oX="51" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00021" x="149" y="33" w="23" h="18" pX="0.5" pY="0.5" oX="51" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00022" x="172" y="33" w="22" h="18" pX="0.5" pY="0.5" oX="52" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00023" x="65" y="16" w="18" h="17" pX="0.5" pY="0.5" oX="54" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00024" x="83" y="16" w="18" h="17" pX="0.5" pY="0.5" oX="54" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00025" x="53" y="0" w="17" h="16" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00026" x="70" y="0" w="16" h="16" pX="0.5" pY="0.5" oX="54" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00027" x="86" y="0" w="18" h="16" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00028" x="20" y="50" w="21" h="18" pX="0.5" pY="0.5" oX="54" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00029" x="61" y="51" w="21" h="18" pX="0.5" pY="0.5" oX="54" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00030" x="0" y="49" w="20" h="18" pX="0.5" pY="0.5" oX="55" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00031" x="82" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="55" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00032" x="104" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="55" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00033" x="126" y="51" w="23" h="18" pX="0.5" pY="0.5" oX="54" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00034" x="101" y="16" w="23" h="17" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00035" x="124" y="16" w="23" h="17" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00036" x="104" y="0" w="24" h="16" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00037" x="147" y="16" w="22" h="17" pX="0.5" pY="0.5" oX="54" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00038" x="42" y="106" w="21" h="20" pX="0.5" pY="0.5" oX="54" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00039" x="63" y="106" w="19" h="20" pX="0.5" pY="0.5" oX="55" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00040" x="82" y="106" w="19" h="20" pX="0.5" pY="0.5" oX="55" oY="61" oW="160" oH="144"/>
+    <sprite n="metronome_00041" x="47" y="87" w="19" h="19" pX="0.5" pY="0.5" oX="55" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00042" x="149" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00043" x="171" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00044" x="41" y="50" w="20" h="18" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00045" x="169" y="16" w="20" h="17" pX="0.5" pY="0.5" oX="52" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00046" x="0" y="32" w="20" h="17" pX="0.5" pY="0.5" oX="52" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00047" x="20" y="33" w="20" h="17" pX="0.5" pY="0.5" oX="51" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00048" x="40" y="33" w="21" h="17" pX="0.5" pY="0.5" oX="50" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00049" x="128" y="0" w="22" h="16" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00050" x="150" y="0" w="24" h="16" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00051" x="174" y="0" w="24" h="16" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00052" x="0" y="16" w="25" h="16" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00053" x="19" y="68" w="22" h="18" pX="0.5" pY="0.5" oX="52" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00054" x="58" y="69" w="22" h="18" pX="0.5" pY="0.5" oX="52" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00055" x="0" y="67" w="19" h="18" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00056" x="41" y="68" w="17" h="18" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00057" x="80" y="69" w="17" h="18" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00058" x="97" y="69" w="21" h="18" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00059" x="118" y="69" w="21" h="18" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00060" x="139" y="69" w="20" h="18" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00061" x="101" y="106" w="21" h="20" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00062" x="122" y="106" w="21" h="20" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00063" x="143" y="107" w="21" h="20" pX="0.5" pY="0.5" oX="55" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00064" x="164" y="108" w="22" h="20" pX="0.5" pY="0.5" oX="55" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00065" x="0" y="125" w="22" h="20" pX="0.5" pY="0.5" oX="55" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00066" x="41" y="126" w="24" h="20" pX="0.5" pY="0.5" oX="54" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00067" x="66" y="87" w="24" h="19" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00068" x="90" y="87" w="24" h="19" pX="0.5" pY="0.5" oX="53" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00069" x="114" y="87" w="22" h="19" pX="0.5" pY="0.5" oX="53" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00070" x="136" y="87" w="22" h="19" pX="0.5" pY="0.5" oX="53" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00071" x="158" y="88" w="20" h="19" pX="0.5" pY="0.5" oX="54" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00072" x="65" y="126" w="19" h="21" pX="0.5" pY="0.5" oX="55" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00073" x="84" y="126" w="19" h="21" pX="0.5" pY="0.5" oX="55" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00074" x="22" y="125" w="19" h="20" pX="0.5" pY="0.5" oX="55" oY="66" oW="160" oH="144"/>
+    <sprite n="metronome_00075" x="103" y="126" w="19" h="21" pX="0.5" pY="0.5" oX="54" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00076" x="122" y="126" w="19" h="21" pX="0.5" pY="0.5" oX="54" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00077" x="141" y="127" w="20" h="21" pX="0.5" pY="0.5" oX="53" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00078" x="161" y="128" w="20" h="21" pX="0.5" pY="0.5" oX="52" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00079" x="0" y="145" w="20" h="21" pX="0.5" pY="0.5" oX="51" oY="65" oW="160" oH="144"/>
+    <sprite n="metronome_00080" x="20" y="146" w="23" h="23" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00081" x="43" y="147" w="23" h="23" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00082" x="66" y="147" w="25" h="24" pX="0.5" pY="0.5" oX="49" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00083" x="91" y="147" w="25" h="24" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00084" x="116" y="147" w="25" h="24" pX="0.5" pY="0.5" oX="50" oY="64" oW="160" oH="144"/>
+    <sprite n="metronome_00085" x="19" y="169" w="22" h="26" pX="0.5" pY="0.5" oX="51" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00086" x="141" y="148" w="19" h="25" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00087" x="160" y="149" w="19" h="25" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00088" x="181" y="128" w="18" h="25" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00089" x="179" y="153" w="18" h="26" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00090" x="0" y="166" w="19" h="27" pX="0.5" pY="0.5" oX="54" oY="62" oW="160" oH="144"/>
+    <sprite n="metronome_00091" x="41" y="170" w="21" h="27" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00092" x="62" y="171" w="21" h="27" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00093" x="83" y="171" w="22" h="28" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="metronome_00094" x="105" y="171" w="21" h="28" pX="0.5" pY="0.5" oX="55" oY="63" oW="160" oH="144"/>
+</TextureAtlas>

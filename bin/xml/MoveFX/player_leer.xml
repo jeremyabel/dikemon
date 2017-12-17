@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6beeb3fa8b090484cd7f369f13ddf63a:0c8dec0d5ec8fb6eee8b28b17d7d7879:ba830677ec2e16aea54106e5f1eb893d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_leer.png" width="328" height="328">
+    <sprite n="leer_00000" x="0" y="316" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="leer_00001" x="0" y="306" w="16" h="10" pX="0.5" pY="0.5" oX="56" oY="63" oW="160" oH="144"/>
+    <sprite n="leer_00002" x="0" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00003" x="82" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00004" x="164" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00005" x="246" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00006" x="0" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00007" x="82" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00008" x="164" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00009" x="246" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00010" x="0" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00011" x="0" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00012" x="0" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00013" x="0" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00014" x="82" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00015" x="164" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00016" x="246" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00017" x="82" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00018" x="82" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00019" x="82" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00020" x="164" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00021" x="246" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00022" x="164" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00023" x="246" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="leer_00024" x="164" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+</TextureAtlas>

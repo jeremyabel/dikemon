@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4276fb4e962391ed197f5b377744c4b5:f1e8af855aef44e0a5b99f3ab206eaab:50c967afffdae06e08401d636ec55974$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_recover.png" width="594" height="594">
+    <sprite n="recover_00000" x="83" y="592" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="recover_00001" x="536" y="58" w="56" h="56" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="recover_00002" x="0" y="0" w="88" h="104" pX="0.5" pY="0.5" oX="0" oY="20" oW="160" oH="144"/>
+    <sprite n="recover_00003" x="0" y="104" w="88" h="104" pX="0.5" pY="0.5" oX="0" oY="20" oW="160" oH="144"/>
+    <sprite n="recover_00004" x="0" y="208" w="86" h="100" pX="0.5" pY="0.5" oX="0" oY="22" oW="160" oH="144"/>
+    <sprite n="recover_00005" x="83" y="404" w="74" h="96" pX="0.5" pY="0.5" oX="10" oY="24" oW="160" oH="144"/>
+    <sprite n="recover_00006" x="157" y="396" w="67" h="92" pX="0.5" pY="0.5" oX="15" oY="26" oW="160" oH="144"/>
+    <sprite n="recover_00007" x="84" y="308" w="73" h="96" pX="0.5" pY="0.5" oX="11" oY="24" oW="160" oH="144"/>
+    <sprite n="recover_00008" x="86" y="208" w="73" h="96" pX="0.5" pY="0.5" oX="11" oY="24" oW="160" oH="144"/>
+    <sprite n="recover_00009" x="0" y="308" w="84" h="96" pX="0.5" pY="0.5" oX="0" oY="24" oW="160" oH="144"/>
+    <sprite n="recover_00010" x="0" y="404" w="83" h="96" pX="0.5" pY="0.5" oX="1" oY="24" oW="160" oH="144"/>
+    <sprite n="recover_00011" x="0" y="500" w="83" h="94" pX="0.5" pY="0.5" oX="0" oY="25" oW="160" oH="144"/>
+    <sprite n="recover_00012" x="83" y="500" w="82" h="92" pX="0.5" pY="0.5" oX="0" oY="26" oW="160" oH="144"/>
+    <sprite n="recover_00013" x="157" y="304" w="82" h="92" pX="0.5" pY="0.5" oX="0" oY="26" oW="160" oH="144"/>
+    <sprite n="recover_00014" x="159" y="206" w="78" h="84" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="recover_00015" x="165" y="488" w="80" h="88" pX="0.5" pY="0.5" oX="0" oY="28" oW="160" oH="144"/>
+    <sprite n="recover_00016" x="224" y="396" w="80" h="88" pX="0.5" pY="0.5" oX="0" oY="28" oW="160" oH="144"/>
+    <sprite n="recover_00017" x="245" y="484" w="79" h="88" pX="0.5" pY="0.5" oX="1" oY="28" oW="160" oH="144"/>
+    <sprite n="recover_00018" x="88" y="0" w="79" h="88" pX="0.5" pY="0.5" oX="1" oY="28" oW="160" oH="144"/>
+    <sprite n="recover_00019" x="88" y="88" w="79" h="86" pX="0.5" pY="0.5" oX="0" oY="29" oW="160" oH="144"/>
+    <sprite n="recover_00020" x="167" y="0" w="78" h="84" pX="0.5" pY="0.5" oX="0" oY="30" oW="160" oH="144"/>
+    <sprite n="recover_00021" x="167" y="84" w="77" h="82" pX="0.5" pY="0.5" oX="0" oY="31" oW="160" oH="144"/>
+    <sprite n="recover_00022" x="320" y="80" w="75" h="78" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="recover_00023" x="321" y="0" w="75" h="78" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="recover_00024" x="244" y="84" w="76" h="80" pX="0.5" pY="0.5" oX="0" oY="32" oW="160" oH="144"/>
+    <sprite n="recover_00025" x="245" y="0" w="76" h="80" pX="0.5" pY="0.5" oX="0" oY="32" oW="160" oH="144"/>
+    <sprite n="recover_00026" x="237" y="206" w="76" h="80" pX="0.5" pY="0.5" oX="0" oY="32" oW="160" oH="144"/>
+    <sprite n="recover_00027" x="239" y="286" w="75" h="78" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="recover_00028" x="313" y="204" w="75" h="78" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="recover_00029" x="314" y="282" w="73" h="74" pX="0.5" pY="0.5" oX="0" oY="35" oW="160" oH="144"/>
+    <sprite n="recover_00030" x="396" y="0" w="70" h="70" pX="0.5" pY="0.5" oX="1" oY="37" oW="160" oH="144"/>
+    <sprite n="recover_00031" x="304" y="394" w="72" h="72" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="recover_00032" x="387" y="282" w="72" h="72" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="recover_00033" x="388" y="204" w="72" h="72" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="recover_00034" x="395" y="78" w="72" h="72" pX="0.5" pY="0.5" oX="0" oY="36" oW="160" oH="144"/>
+    <sprite n="recover_00035" x="466" y="0" w="70" h="70" pX="0.5" pY="0.5" oX="1" oY="37" oW="160" oH="144"/>
+    <sprite n="recover_00036" x="467" y="70" w="68" h="68" pX="0.5" pY="0.5" oX="2" oY="38" oW="160" oH="144"/>
+    <sprite n="recover_00037" x="528" y="230" w="66" h="66" pX="0.5" pY="0.5" oX="3" oY="39" oW="160" oH="144"/>
+    <sprite n="recover_00038" x="460" y="262" w="66" h="66" pX="0.5" pY="0.5" oX="3" oY="39" oW="160" oH="144"/>
+    <sprite n="recover_00039" x="526" y="296" w="64" h="64" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="recover_00040" x="459" y="328" w="64" h="64" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="recover_00041" x="523" y="360" w="64" h="64" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="recover_00042" x="457" y="392" w="64" h="64" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="recover_00043" x="521" y="424" w="64" h="64" pX="0.5" pY="0.5" oX="4" oY="40" oW="160" oH="144"/>
+    <sprite n="recover_00044" x="534" y="170" w="60" h="60" pX="0.5" pY="0.5" oX="6" oY="42" oW="160" oH="144"/>
+    <sprite n="recover_00045" x="536" y="0" w="58" h="58" pX="0.5" pY="0.5" oX="7" oY="43" oW="160" oH="144"/>
+    <sprite n="recover_00046" x="535" y="114" w="56" h="56" pX="0.5" pY="0.5" oX="8" oY="44" oW="160" oH="144"/>
+    <sprite n="recover_00047" x="376" y="406" w="56" h="56" pX="0.5" pY="0.5" oX="8" oY="44" oW="160" oH="144"/>
+    <sprite n="recover_00048" x="432" y="456" w="56" h="56" pX="0.5" pY="0.5" oX="8" oY="44" oW="160" oH="144"/>
+    <sprite n="recover_00049" x="376" y="462" w="56" h="56" pX="0.5" pY="0.5" oX="8" oY="44" oW="160" oH="144"/>
+    <sprite n="recover_00050" x="324" y="518" w="56" h="56" pX="0.5" pY="0.5" oX="8" oY="44" oW="160" oH="144"/>
+    <sprite n="recover_00051" x="436" y="150" w="54" h="54" pX="0.5" pY="0.5" oX="9" oY="45" oW="160" oH="144"/>
+    <sprite n="recover_00052" x="405" y="354" w="52" h="52" pX="0.5" pY="0.5" oX="10" oY="46" oW="160" oH="144"/>
+    <sprite n="recover_00053" x="324" y="466" w="52" h="52" pX="0.5" pY="0.5" oX="10" oY="46" oW="160" oH="144"/>
+    <sprite n="recover_00054" x="430" y="518" w="48" h="48" pX="0.5" pY="0.5" oX="12" oY="48" oW="160" oH="144"/>
+    <sprite n="recover_00055" x="380" y="518" w="50" h="50" pX="0.5" pY="0.5" oX="11" oY="47" oW="160" oH="144"/>
+    <sprite n="recover_00056" x="478" y="512" w="48" h="48" pX="0.5" pY="0.5" oX="12" oY="48" oW="160" oH="144"/>
+    <sprite n="recover_00057" x="526" y="488" w="48" h="48" pX="0.5" pY="0.5" oX="12" oY="48" oW="160" oH="144"/>
+    <sprite n="recover_00058" x="526" y="536" w="48" h="48" pX="0.5" pY="0.5" oX="12" oY="48" oW="160" oH="144"/>
+    <sprite n="recover_00059" x="346" y="158" w="46" h="46" pX="0.5" pY="0.5" oX="13" oY="49" oW="160" oH="144"/>
+    <sprite n="recover_00060" x="392" y="158" w="44" h="44" pX="0.5" pY="0.5" oX="14" oY="50" oW="160" oH="144"/>
+    <sprite n="recover_00061" x="490" y="138" w="44" h="44" pX="0.5" pY="0.5" oX="14" oY="50" oW="160" oH="144"/>
+    <sprite n="recover_00062" x="186" y="166" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00063" x="226" y="166" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00064" x="266" y="164" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00065" x="306" y="164" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00066" x="490" y="182" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00067" x="488" y="222" w="40" h="40" pX="0.5" pY="0.5" oX="16" oY="52" oW="160" oH="144"/>
+    <sprite n="recover_00068" x="333" y="356" w="36" h="36" pX="0.5" pY="0.5" oX="18" oY="54" oW="160" oH="144"/>
+    <sprite n="recover_00069" x="369" y="356" w="36" h="36" pX="0.5" pY="0.5" oX="18" oY="54" oW="160" oH="144"/>
+    <sprite n="recover_00070" x="122" y="174" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="recover_00071" x="88" y="174" w="34" h="34" pX="0.5" pY="0.5" oX="19" oY="55" oW="160" oH="144"/>
+    <sprite n="recover_00072" x="154" y="174" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="recover_00073" x="239" y="364" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="recover_00074" x="271" y="364" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="recover_00075" x="303" y="364" w="30" h="30" pX="0.5" pY="0.5" oX="21" oY="57" oW="160" oH="144"/>
+    <sprite n="recover_00076" x="460" y="204" w="28" h="28" pX="0.5" pY="0.5" oX="22" oY="58" oW="160" oH="144"/>
+</TextureAtlas>

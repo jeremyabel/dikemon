@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6c675cb8fb7428c480fc45989fac356e:b6aaa1f7c6d1e41b64b6b36d70330af2:a92a9bb8a05420398db70038c5e260ab$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_safeguard.png" width="491" height="491">
+    <sprite n="safeguard_00000" x="189" y="296" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00001" x="38" y="298" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00002" x="232" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00003" x="0" y="360" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00004" x="380" y="235" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00005" x="116" y="60" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00006" x="341" y="177" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00007" x="0" y="0" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00008" x="380" y="118" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00009" x="420" y="59" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00010" x="38" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00011" x="226" y="236" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00012" x="379" y="177" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00013" x="76" y="238" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00014" x="38" y="357" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00015" x="270" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00016" x="0" y="419" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00017" x="152" y="297" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00018" x="418" y="235" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00019" x="76" y="297" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00020" x="38" y="416" w="37" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00021" x="76" y="356" w="37" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00022" x="0" y="60" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00023" x="38" y="59" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00024" x="77" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00025" x="308" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00026" x="0" y="120" w="38" h="60" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00027" x="38" y="118" w="38" h="60" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00028" x="75" y="416" w="37" h="60" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00029" x="346" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00030" x="384" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00031" x="188" y="355" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00032" x="422" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00033" x="114" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00034" x="417" y="118" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00035" x="154" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00036" x="114" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00037" x="264" y="236" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00038" x="152" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00039" x="192" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00040" x="114" y="236" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00041" x="0" y="180" w="38" h="60" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00042" x="38" y="178" w="38" h="60" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00043" x="417" y="177" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00044" x="302" y="236" w="39" h="57" pX="0.5" pY="0.5" oX="52" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00045" x="341" y="235" w="39" h="57" pX="0.5" pY="0.5" oX="52" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00046" x="454" y="118" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00047" x="190" y="296" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00048" x="227" y="294" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00049" x="226" y="355" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00050" x="264" y="294" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00051" x="302" y="293" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00052" x="152" y="177" w="37" h="60" pX="0.5" pY="0.5" oX="54" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00053" x="190" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00054" x="230" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00055" x="114" y="295" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00056" x="150" y="354" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00057" x="340" y="293" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00058" x="0" y="240" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00059" x="113" y="356" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00060" x="112" y="416" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00061" x="189" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00062" x="378" y="292" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00063" x="416" y="292" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00064" x="228" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00065" x="454" y="292" w="37" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00066" x="149" y="415" w="37" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00067" x="268" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00068" x="452" y="351" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00069" x="334" y="409" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00070" x="77" y="59" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00071" x="116" y="0" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00072" x="76" y="118" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00073" x="38" y="238" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00074" x="154" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00075" x="193" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00076" x="372" y="409" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00077" x="227" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00078" x="266" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00079" x="186" y="412" w="37" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00080" x="306" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00081" x="265" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00082" x="264" y="352" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00083" x="304" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00084" x="344" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="safeguard_00085" x="223" y="412" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00086" x="0" y="300" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00087" x="76" y="178" w="38" h="60" pX="0.5" pY="0.5" oX="52" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00088" x="302" y="351" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="32" oW="160" oH="144"/>
+    <sprite n="safeguard_00089" x="303" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00090" x="342" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="53" oY="33" oW="160" oH="144"/>
+    <sprite n="safeguard_00091" x="382" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00092" x="152" y="237" w="37" h="60" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00093" x="189" y="236" w="37" h="60" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00094" x="340" y="351" w="38" h="58" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00095" x="410" y="409" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00096" x="448" y="409" w="38" h="57" pX="0.5" pY="0.5" oX="53" oY="37" oW="160" oH="144"/>
+    <sprite n="safeguard_00097" x="378" y="350" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00098" x="415" y="350" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00099" x="260" y="412" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00100" x="297" y="410" w="37" h="59" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="safeguard_00101" x="226" y="294" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00102" x="226" y="295" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00103" x="188" y="354" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00104" x="189" y="354" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00105" x="341" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00106" x="113" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00107" x="452" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00108" x="453" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00109" x="490" y="351" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00110" x="302" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00111" x="452" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00112" x="342" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00113" x="114" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00114" x="490" y="352" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00115" x="303" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00116" x="453" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00117" x="343" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00118" x="115" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00119" x="490" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00120" x="304" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00121" x="454" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00122" x="344" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00123" x="116" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00124" x="490" y="354" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00125" x="305" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00126" x="455" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00127" x="345" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00128" x="117" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00129" x="490" y="355" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00130" x="306" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00131" x="456" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00132" x="346" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00133" x="118" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00134" x="490" y="356" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00135" x="307" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00136" x="457" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00137" x="347" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00138" x="119" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00139" x="490" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00140" x="308" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00141" x="458" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00142" x="348" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00143" x="120" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00144" x="490" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00145" x="309" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00146" x="459" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00147" x="349" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00148" x="121" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00149" x="490" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00150" x="310" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00151" x="460" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00152" x="350" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00153" x="122" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00154" x="490" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00155" x="311" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00156" x="461" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00157" x="351" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00158" x="123" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00159" x="490" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00160" x="312" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_00161" x="462" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

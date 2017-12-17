@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:fa4268409fae550ed7626d526304f593:b3c1000c6c61d6d4420dd40f0094e2a5:00072b2032aa387fdabab99c95ec0147$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_struggle.png" width="72" height="72">
+    <sprite n="struggle_00000" x="24" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="struggle_00001" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="struggle_00002" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="struggle_00003" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="struggle_00004" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="struggle_00005" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+    <sprite n="struggle_00006" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="28" oW="160" oH="144"/>
+</TextureAtlas>

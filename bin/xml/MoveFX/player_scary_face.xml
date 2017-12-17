@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:575f6d7af09e5926e36482496a6f2aad:6d3962c2c5937883f8e0ed470989a4e5:c1ebf91f4b0968312374d97471212872$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_scary_face.png" width="574" height="574">
+    <sprite n="scary_face_00000" x="0" y="561" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scary_face_00001" x="0" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00002" x="82" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00003" x="164" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00004" x="246" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00005" x="328" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00006" x="410" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00007" x="492" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00008" x="0" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00009" x="82" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00010" x="164" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00011" x="246" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00012" x="328" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00013" x="410" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00014" x="492" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00015" x="0" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00016" x="0" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00017" x="0" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00018" x="0" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00019" x="0" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00020" x="0" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00021" x="0" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00022" x="0" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00023" x="0" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00024" x="82" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00025" x="164" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00026" x="246" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00027" x="328" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00028" x="410" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00029" x="492" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00030" x="82" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00031" x="82" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00032" x="82" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00033" x="82" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00034" x="82" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00035" x="82" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00036" x="82" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00037" x="82" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00038" x="164" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00039" x="246" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00040" x="328" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00041" x="410" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00042" x="492" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00043" x="164" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00044" x="246" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00045" x="328" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00046" x="410" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00047" x="492" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00048" x="164" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00049" x="164" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00050" x="164" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00051" x="164" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00052" x="164" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00053" x="164" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00054" x="246" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00055" x="328" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00056" x="410" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00057" x="492" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00058" x="246" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00059" x="328" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00060" x="410" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00061" x="492" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00062" x="246" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00063" x="246" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00064" x="246" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00065" x="246" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00066" x="328" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00067" x="410" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00068" x="492" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00069" x="328" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00070" x="328" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+    <sprite n="scary_face_00071" x="328" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="48" oY="22" oW="160" oH="144"/>
+</TextureAtlas>

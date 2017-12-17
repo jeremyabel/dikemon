@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0a08e79f9b2dd9546b2b3f7fb3a5bcf4:c1d03531548c881d2647dded874dd38d:2bb43b0ad44f016e8aca9a17a4d233b0$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_wing_attack.png" width="168" height="168">
+    <sprite n="wing_attack_00000" x="152" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00001" x="0" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00002" x="56" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00003" x="112" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00004" x="0" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00005" x="56" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00006" x="112" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00007" x="0" y="48" w="56" h="24" pX="0.5" pY="0.5" oX="96" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00008" x="56" y="48" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00009" x="104" y="48" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00010" x="0" y="72" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00011" x="0" y="96" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00012" x="0" y="120" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00013" x="0" y="144" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00014" x="48" y="72" w="48" h="24" pX="0.5" pY="0.5" oX="100" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00015" x="96" y="72" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00016" x="48" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00017" x="48" y="120" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00018" x="48" y="144" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00019" x="88" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00020" x="128" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00021" x="88" y="120" w="40" h="24" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="wing_attack_00022" x="153" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00023" x="154" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00024" x="155" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00025" x="156" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00026" x="157" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00027" x="158" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00028" x="159" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00029" x="160" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00030" x="161" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00031" x="162" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00032" x="163" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00033" x="164" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00034" x="165" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00035" x="166" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00036" x="167" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00037" x="152" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00038" x="153" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00039" x="154" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00040" x="155" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00041" x="156" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00042" x="157" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00043" x="158" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00044" x="159" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00045" x="160" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00046" x="161" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00047" x="162" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00048" x="163" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00049" x="164" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00050" x="165" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00051" x="166" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00052" x="167" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00053" x="152" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00054" x="153" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00055" x="154" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00056" x="155" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00057" x="156" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00058" x="157" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00059" x="158" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00060" x="159" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00061" x="160" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00062" x="161" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00063" x="162" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00064" x="163" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00065" x="164" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00066" x="165" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00067" x="166" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00068" x="167" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00069" x="152" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00070" x="153" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00071" x="154" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00072" x="155" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00073" x="156" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00074" x="157" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00075" x="158" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00076" x="159" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00077" x="160" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00078" x="161" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00079" x="162" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00080" x="163" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00081" x="164" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00082" x="165" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00083" x="166" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00084" x="167" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00085" x="152" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00086" x="153" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00087" x="154" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00088" x="155" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00089" x="156" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00090" x="157" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00091" x="158" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00092" x="159" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00093" x="160" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00094" x="161" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00095" x="162" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00096" x="163" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_00097" x="164" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5303909892e79aba11f344c57d35a7fd:8b3f7820c3c59fe439ee664fddb26012:26e193fa43dd04b1b5946c571f7492b1$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_scratch.png" width="138" height="138">
+    <sprite n="scratch_00000" x="36" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00001" x="60" y="114" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00002" x="84" y="114" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00003" x="108" y="114" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00004" x="0" y="108" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00005" x="30" y="108" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00006" x="72" y="0" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00007" x="0" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00008" x="0" y="36" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00009" x="36" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00010" x="0" y="72" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00011" x="36" y="36" w="36" h="36" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00012" x="36" y="72" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00013" x="72" y="30" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00014" x="102" y="0" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00015" x="64" y="72" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00016" x="130" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00017" x="102" y="28" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00018" x="72" y="58" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00019" x="64" y="86" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00020" x="92" y="86" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00021" x="102" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00022" x="120" y="86" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00023" x="36" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_00024" x="100" y="30" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="scratch_00025" x="100" y="58" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+</TextureAtlas>

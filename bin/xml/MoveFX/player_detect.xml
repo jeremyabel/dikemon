@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:38838a8b38f1ef5420e958875a49cef8:b6c20c46ef07e0bf6ba7f2c657ed22f6:b71da358a40a377d31a8ab4f0b952590$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_detect.png" width="84" height="84">
+    <sprite n="detect_00000" x="20" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00001" x="20" y="64" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00002" x="64" y="20" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00003" x="32" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00004" x="44" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00005" x="56" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00006" x="68" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="detect_00007" x="32" y="32" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00008" x="32" y="52" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00009" x="0" y="64" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00010" x="52" y="32" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00011" x="64" y="0" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00012" x="52" y="52" w="20" h="20" pX="0.5" pY="0.5" oX="44" oY="60" oW="160" oH="144"/>
+    <sprite n="detect_00013" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="40" oY="56" oW="160" oH="144"/>
+    <sprite n="detect_00014" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="40" oY="56" oW="160" oH="144"/>
+    <sprite n="detect_00015" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="40" oY="56" oW="160" oH="144"/>
+    <sprite n="detect_00016" x="21" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00017" x="22" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00018" x="23" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00019" x="24" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00020" x="25" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00021" x="26" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00022" x="27" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00023" x="28" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00024" x="29" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00025" x="30" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00026" x="31" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00027" x="20" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00028" x="21" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00029" x="22" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00030" x="23" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00031" x="24" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00032" x="25" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00033" x="26" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00034" x="27" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00035" x="28" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00036" x="29" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00037" x="30" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00038" x="31" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00039" x="20" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00040" x="21" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00041" x="22" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_00042" x="23" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

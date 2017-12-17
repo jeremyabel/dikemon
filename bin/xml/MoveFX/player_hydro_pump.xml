@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:7ae076879b568a1dce386768f32c579f:82724c9cd3cd33e215d0e57d0125c859:02d4d240b42a56cac3ea6f338930fd39$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_hydro_pump.png" width="376" height="376">
+    <sprite n="hydro_pump_00000" x="96" y="202" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00001" x="160" y="326" w="16" h="21" pX="0.5" pY="0.5" oX="92" oY="39" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00002" x="176" y="326" w="16" h="21" pX="0.5" pY="0.5" oX="92" oY="39" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00003" x="192" y="320" w="16" h="27" pX="0.5" pY="0.5" oX="92" oY="33" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00004" x="208" y="320" w="16" h="27" pX="0.5" pY="0.5" oX="92" oY="33" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00005" x="352" y="283" w="16" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00006" x="224" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00007" x="120" y="106" w="16" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00008" x="120" y="149" w="16" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00009" x="120" y="53" w="16" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00010" x="144" y="0" w="16" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00011" x="24" y="318" w="16" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00012" x="0" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00013" x="0" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00014" x="96" y="159" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00015" x="136" y="53" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00016" x="160" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00017" x="40" y="318" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00018" x="160" y="215" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00019" x="184" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00020" x="136" y="268" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00021" x="160" y="252" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00022" x="184" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00023" x="208" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="92" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00024" x="64" y="265" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00025" x="160" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00026" x="184" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00027" x="64" y="308" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00028" x="184" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="92" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00029" x="24" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00030" x="0" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00031" x="24" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="100" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00032" x="48" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="100" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00033" x="208" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00034" x="208" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00035" x="232" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00036" x="232" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00037" x="184" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00038" x="208" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00039" x="232" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00040" x="208" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00041" x="232" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00042" x="256" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="100" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00043" x="256" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00044" x="256" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00045" x="280" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00046" x="280" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00047" x="304" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="100" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00048" x="0" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="100" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00049" x="24" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="100" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00050" x="48" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="108" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00051" x="72" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="108" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00052" x="304" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00053" x="328" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00054" x="352" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00055" x="328" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00056" x="232" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00057" x="256" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00058" x="280" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00059" x="256" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00060" x="280" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00061" x="304" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="108" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00062" x="352" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00063" x="136" y="96" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00064" x="160" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00065" x="184" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="108" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00066" x="0" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="108" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00067" x="24" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="108" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00068" x="48" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="108" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00069" x="72" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="116" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00070" x="96" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="116" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00071" x="208" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00072" x="232" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00073" x="256" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00074" x="280" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00075" x="280" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00076" x="304" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00077" x="328" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00078" x="352" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00079" x="304" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00080" x="328" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="116" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00081" x="304" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00082" x="328" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00083" x="352" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00084" x="136" y="139" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00085" x="160" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="116" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00086" x="0" y="265" w="24" h="53" pX="0.5" pY="0.5" oX="116" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00087" x="24" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="116" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00088" x="48" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="124" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00089" x="72" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="124" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00090" x="184" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00091" x="208" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00092" x="232" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00093" x="256" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00094" x="352" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00095" x="328" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00096" x="352" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00097" x="136" y="305" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00098" x="160" y="289" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00099" x="184" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="124" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00100" x="280" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00101" x="304" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00102" x="328" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00103" x="352" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00104" x="88" y="212" w="24" h="43" pX="0.5" pY="0.5" oX="124" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00105" x="96" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="124" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00106" x="120" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="124" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00107" x="0" y="318" w="24" h="53" pX="0.5" pY="0.5" oX="132" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00108" x="24" y="265" w="24" h="53" pX="0.5" pY="0.5" oX="132" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00109" x="88" y="255" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00110" x="88" y="298" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00111" x="112" y="202" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00112" x="112" y="245" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00113" x="208" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00114" x="232" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00115" x="256" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00116" x="280" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00117" x="304" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00118" x="328" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="132" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00119" x="112" y="288" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00120" x="136" y="182" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00121" x="160" y="172" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00122" x="136" y="225" w="24" h="43" pX="0.5" pY="0.5" oX="132" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00123" x="48" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="132" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00124" x="72" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="132" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00125" x="96" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="132" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00126" x="48" y="265" w="16" h="53" pX="0.5" pY="0.5" oX="140" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00127" x="72" y="212" w="16" h="53" pX="0.5" pY="0.5" oX="140" oY="7" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00128" x="240" y="320" w="16" h="43" pX="0.5" pY="0.5" oX="140" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00129" x="256" y="320" w="16" h="43" pX="0.5" pY="0.5" oX="140" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00130" x="272" y="320" w="16" h="43" pX="0.5" pY="0.5" oX="140" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00131" x="288" y="320" w="16" h="43" pX="0.5" pY="0.5" oX="140" oY="17" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00132" x="304" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="140" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00133" x="320" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="140" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00134" x="336" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="140" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00135" x="352" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="140" oY="23" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00136" x="88" y="341" w="16" h="27" pX="0.5" pY="0.5" oX="140" oY="33" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00137" x="104" y="341" w="16" h="27" pX="0.5" pY="0.5" oX="140" oY="33" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00138" x="120" y="331" w="16" h="27" pX="0.5" pY="0.5" oX="140" oY="33" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00139" x="136" y="342" w="16" h="21" pX="0.5" pY="0.5" oX="140" oY="39" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00140" x="64" y="351" w="16" h="21" pX="0.5" pY="0.5" oX="140" oY="39" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00141" x="120" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00142" x="368" y="283" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00143" x="184" y="320" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00144" x="304" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00145" x="112" y="331" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00146" x="152" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00147" x="120" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00148" x="0" y="371" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00149" x="0" y="372" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00150" x="80" y="351" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00151" x="40" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00152" x="96" y="203" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00153" x="97" y="202" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00154" x="120" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00155" x="121" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00156" x="368" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00157" x="369" y="283" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00158" x="184" y="321" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00159" x="185" y="320" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00160" x="304" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00161" x="305" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00162" x="112" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00163" x="113" y="331" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00164" x="152" y="343" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00165" x="153" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00166" x="120" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00167" x="121" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00168" x="1" y="371" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00169" x="0" y="373" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00170" x="1" y="372" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00171" x="80" y="352" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00172" x="81" y="351" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00173" x="40" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00174" x="41" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00175" x="96" y="204" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00176" x="97" y="203" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00177" x="98" y="202" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00178" x="120" y="194" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00179" x="121" y="193" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00180" x="122" y="192" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00181" x="368" y="285" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00182" x="369" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00183" x="370" y="283" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00184" x="184" y="322" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00185" x="185" y="321" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00186" x="186" y="320" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00187" x="304" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00188" x="305" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00189" x="306" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00190" x="112" y="333" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00191" x="113" y="332" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00192" x="114" y="331" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00193" x="152" y="344" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00194" x="153" y="343" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00195" x="154" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00196" x="120" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00197" x="121" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00198" x="122" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00199" x="2" y="371" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00200" x="0" y="374" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00201" x="0" y="375" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00202" x="1" y="373" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00203" x="2" y="372" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00204" x="80" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00205" x="81" y="352" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00206" x="82" y="351" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00207" x="40" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00208" x="41" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00209" x="42" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00210" x="96" y="205" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00211" x="97" y="204" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00212" x="98" y="203" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_00213" x="99" y="202" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

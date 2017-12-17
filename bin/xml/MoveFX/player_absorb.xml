@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e92c3b0689153f86f5e8e8a0f92a4a1a:a1ac7a1aa869e904d63be6e9e7af7e3a:8dc6b3a13dfd7fa819d9b95425f9344d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_absorb.png" width="637" height="637">
+    <sprite n="absorb_00000" x="482" y="549" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_00001" x="92" y="195" w="4" h="4" pX="0.5" pY="0.5" oX="116" oY="31" oW="160" oH="144"/>
+    <sprite n="absorb_00002" x="289" y="106" w="4" h="4" pX="0.5" pY="0.5" oX="114" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00003" x="285" y="146" w="4" h="4" pX="0.5" pY="0.5" oX="112" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00004" x="551" y="161" w="4" h="4" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="absorb_00005" x="360" y="356" w="4" h="4" pX="0.5" pY="0.5" oX="108" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00006" x="258" y="397" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="36" oW="160" oH="144"/>
+    <sprite n="absorb_00007" x="426" y="408" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00008" x="548" y="620" w="25" h="13" pX="0.5" pY="0.5" oX="102" oY="38" oW="160" oH="144"/>
+    <sprite n="absorb_00009" x="496" y="614" w="24" h="13" pX="0.5" pY="0.5" oX="100" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00010" x="613" y="356" w="24" h="14" pX="0.5" pY="0.5" oX="97" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00011" x="576" y="592" w="23" h="14" pX="0.5" pY="0.5" oX="95" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_00012" x="482" y="495" w="22" h="14" pX="0.5" pY="0.5" oX="93" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00013" x="576" y="606" w="21" h="14" pX="0.5" pY="0.5" oX="91" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_00014" x="573" y="620" w="20" h="14" pX="0.5" pY="0.5" oX="89" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00015" x="465" y="453" w="39" h="42" pX="0.5" pY="0.5" oX="87" oY="16" oW="160" oH="144"/>
+    <sprite n="absorb_00016" x="483" y="549" w="37" h="41" pX="0.5" pY="0.5" oX="85" oY="18" oW="160" oH="144"/>
+    <sprite n="absorb_00017" x="568" y="503" w="35" h="41" pX="0.5" pY="0.5" oX="83" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_00018" x="604" y="370" w="33" h="40" pX="0.5" pY="0.5" oX="81" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_00019" x="563" y="553" w="32" h="39" pX="0.5" pY="0.5" oX="78" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_00020" x="607" y="246" w="30" h="38" pX="0.5" pY="0.5" oX="76" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_00021" x="520" y="592" w="28" h="37" pX="0.5" pY="0.5" oX="74" oY="28" oW="160" oH="144"/>
+    <sprite n="absorb_00022" x="88" y="338" w="90" h="48" pX="0.5" pY="0.5" oX="30" oY="30" oW="160" oH="144"/>
+    <sprite n="absorb_00023" x="289" y="142" w="88" h="46" pX="0.5" pY="0.5" oX="30" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00024" x="470" y="116" w="86" h="45" pX="0.5" pY="0.5" oX="30" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00025" x="367" y="280" w="84" h="44" pX="0.5" pY="0.5" oX="30" oY="34" oW="160" oH="144"/>
+    <sprite n="absorb_00026" x="366" y="237" w="82" h="43" pX="0.5" pY="0.5" oX="30" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00027" x="258" y="498" w="80" h="42" pX="0.5" pY="0.5" oX="30" oY="36" oW="160" oH="144"/>
+    <sprite n="absorb_00028" x="338" y="550" w="78" h="41" pX="0.5" pY="0.5" oX="30" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00029" x="192" y="106" w="97" h="40" pX="0.5" pY="0.5" oX="30" oY="38" oW="160" oH="144"/>
+    <sprite n="absorb_00030" x="98" y="129" w="94" h="39" pX="0.5" pY="0.5" oX="30" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00031" x="92" y="258" w="91" h="39" pX="0.5" pY="0.5" oX="30" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00032" x="279" y="280" w="88" h="38" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_00033" x="463" y="207" w="85" h="37" pX="0.5" pY="0.5" oX="30" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00034" x="451" y="296" w="82" h="37" pX="0.5" pY="0.5" oX="30" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_00035" x="558" y="0" w="79" h="37" pX="0.5" pY="0.5" oX="30" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00036" x="98" y="0" w="96" h="65" pX="0.5" pY="0.5" oX="30" oY="16" oW="160" oH="144"/>
+    <sprite n="absorb_00037" x="0" y="195" w="92" h="64" pX="0.5" pY="0.5" oX="30" oY="18" oW="160" oH="144"/>
+    <sprite n="absorb_00038" x="0" y="321" w="88" h="62" pX="0.5" pY="0.5" oX="30" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_00039" x="0" y="499" w="84" h="56" pX="0.5" pY="0.5" oX="30" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_00040" x="557" y="74" w="80" h="54" pX="0.5" pY="0.5" oX="30" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_00041" x="258" y="446" w="76" h="52" pX="0.5" pY="0.5" oX="30" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_00042" x="504" y="413" w="72" h="50" pX="0.5" pY="0.5" oX="30" oY="28" oW="160" oH="144"/>
+    <sprite n="absorb_00043" x="168" y="397" w="90" h="48" pX="0.5" pY="0.5" oX="30" oY="30" oW="160" oH="144"/>
+    <sprite n="absorb_00044" x="377" y="144" w="88" h="46" pX="0.5" pY="0.5" oX="30" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00045" x="280" y="235" w="86" h="45" pX="0.5" pY="0.5" oX="30" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00046" x="551" y="165" w="84" h="44" pX="0.5" pY="0.5" oX="30" oY="34" oW="160" oH="144"/>
+    <sprite n="absorb_00047" x="256" y="540" w="82" h="43" pX="0.5" pY="0.5" oX="30" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00048" x="444" y="370" w="80" h="42" pX="0.5" pY="0.5" oX="30" oY="36" oW="160" oH="144"/>
+    <sprite n="absorb_00049" x="426" y="412" w="78" h="41" pX="0.5" pY="0.5" oX="30" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00050" x="96" y="168" w="97" h="40" pX="0.5" pY="0.5" oX="30" oY="38" oW="160" oH="144"/>
+    <sprite n="absorb_00051" x="193" y="196" w="94" h="39" pX="0.5" pY="0.5" oX="30" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00052" x="178" y="358" w="91" h="39" pX="0.5" pY="0.5" oX="30" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00053" x="276" y="318" w="88" h="38" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_00054" x="548" y="209" w="85" h="37" pX="0.5" pY="0.5" oX="30" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00055" x="450" y="333" w="82" h="37" pX="0.5" pY="0.5" oX="30" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_00056" x="558" y="37" w="79" h="37" pX="0.5" pY="0.5" oX="30" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00057" x="0" y="130" w="96" h="65" pX="0.5" pY="0.5" oX="30" oY="16" oW="160" oH="144"/>
+    <sprite n="absorb_00058" x="288" y="0" w="92" h="64" pX="0.5" pY="0.5" oX="30" oY="18" oW="160" oH="144"/>
+    <sprite n="absorb_00059" x="470" y="0" w="88" h="62" pX="0.5" pY="0.5" oX="30" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_00060" x="0" y="555" w="84" h="56" pX="0.5" pY="0.5" oX="30" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_00061" x="84" y="556" w="80" h="54" pX="0.5" pY="0.5" oX="30" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_00062" x="334" y="446" w="76" h="52" pX="0.5" pY="0.5" oX="30" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_00063" x="338" y="498" w="74" h="52" pX="0.5" pY="0.5" oX="28" oY="28" oW="160" oH="144"/>
+    <sprite n="absorb_00064" x="92" y="208" w="92" h="50" pX="0.5" pY="0.5" oX="28" oY="30" oW="160" oH="144"/>
+    <sprite n="absorb_00065" x="168" y="445" w="90" h="48" pX="0.5" pY="0.5" oX="28" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00066" x="287" y="188" w="88" h="47" pX="0.5" pY="0.5" oX="28" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00067" x="364" y="324" w="86" h="46" pX="0.5" pY="0.5" oX="28" oY="34" oW="160" oH="144"/>
+    <sprite n="absorb_00068" x="276" y="356" w="84" h="45" pX="0.5" pY="0.5" oX="28" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00069" x="316" y="591" w="82" h="44" pX="0.5" pY="0.5" oX="28" oY="36" oW="160" oH="144"/>
+    <sprite n="absorb_00070" x="533" y="290" w="80" h="43" pX="0.5" pY="0.5" oX="28" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00071" x="380" y="62" w="99" h="42" pX="0.5" pY="0.5" oX="28" oY="38" oW="160" oH="144"/>
+    <sprite n="absorb_00072" x="184" y="235" w="96" h="41" pX="0.5" pY="0.5" oX="28" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00073" x="90" y="297" w="93" h="41" pX="0.5" pY="0.5" oX="28" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00074" x="168" y="493" w="90" h="40" pX="0.5" pY="0.5" oX="28" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_00075" x="293" y="64" w="87" h="39" pX="0.5" pY="0.5" oX="28" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00076" x="360" y="370" w="84" h="38" pX="0.5" pY="0.5" oX="28" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_00077" x="556" y="128" w="81" h="37" pX="0.5" pY="0.5" oX="28" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00078" x="0" y="0" w="98" h="65" pX="0.5" pY="0.5" oX="28" oY="16" oW="160" oH="144"/>
+    <sprite n="absorb_00079" x="98" y="65" w="94" h="64" pX="0.5" pY="0.5" oX="28" oY="18" oW="160" oH="144"/>
+    <sprite n="absorb_00080" x="0" y="259" w="90" h="62" pX="0.5" pY="0.5" oX="28" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_00081" x="0" y="383" w="86" h="58" pX="0.5" pY="0.5" oX="28" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_00082" x="86" y="444" w="82" h="56" pX="0.5" pY="0.5" oX="28" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_00083" x="479" y="62" w="78" h="54" pX="0.5" pY="0.5" oX="28" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_00084" x="451" y="244" w="74" h="52" pX="0.5" pY="0.5" oX="28" oY="28" oW="160" oH="144"/>
+    <sprite n="absorb_00085" x="193" y="146" w="92" h="50" pX="0.5" pY="0.5" oX="28" oY="30" oW="160" oH="144"/>
+    <sprite n="absorb_00086" x="166" y="533" w="90" h="48" pX="0.5" pY="0.5" oX="28" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00087" x="375" y="190" w="88" h="47" pX="0.5" pY="0.5" oX="28" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00088" x="465" y="161" w="86" h="46" pX="0.5" pY="0.5" oX="28" oY="34" oW="160" oH="144"/>
+    <sprite n="absorb_00089" x="258" y="401" w="84" h="45" pX="0.5" pY="0.5" oX="28" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00090" x="525" y="246" w="82" h="44" pX="0.5" pY="0.5" oX="28" oY="36" oW="160" oH="144"/>
+    <sprite n="absorb_00091" x="524" y="370" w="80" h="43" pX="0.5" pY="0.5" oX="28" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00092" x="194" y="64" w="99" h="42" pX="0.5" pY="0.5" oX="28" oY="38" oW="160" oH="144"/>
+    <sprite n="absorb_00093" x="183" y="276" w="96" h="41" pX="0.5" pY="0.5" oX="28" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00094" x="183" y="317" w="93" h="41" pX="0.5" pY="0.5" oX="28" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00095" x="380" y="104" w="90" h="40" pX="0.5" pY="0.5" oX="28" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_00096" x="293" y="103" w="87" h="39" pX="0.5" pY="0.5" oX="28" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00097" x="342" y="408" w="84" h="38" pX="0.5" pY="0.5" oX="28" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_00098" x="532" y="333" w="81" h="37" pX="0.5" pY="0.5" oX="28" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00099" x="0" y="65" w="98" h="65" pX="0.5" pY="0.5" oX="28" oY="16" oW="160" oH="144"/>
+    <sprite n="absorb_00100" x="194" y="0" w="94" h="64" pX="0.5" pY="0.5" oX="28" oY="18" oW="160" oH="144"/>
+    <sprite n="absorb_00101" x="380" y="0" w="90" h="62" pX="0.5" pY="0.5" oX="28" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_00102" x="0" y="441" w="86" h="58" pX="0.5" pY="0.5" oX="28" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_00103" x="84" y="500" w="82" h="56" pX="0.5" pY="0.5" oX="28" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_00104" x="86" y="386" w="82" h="58" pX="0.5" pY="0.5" oX="24" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_00105" x="164" y="581" w="78" h="56" pX="0.5" pY="0.5" oX="24" oY="28" oW="160" oH="144"/>
+    <sprite n="absorb_00106" x="242" y="583" w="74" h="54" pX="0.5" pY="0.5" oX="24" oY="30" oW="160" oH="144"/>
+    <sprite n="absorb_00107" x="412" y="498" w="70" h="52" pX="0.5" pY="0.5" oX="24" oY="32" oW="160" oH="144"/>
+    <sprite n="absorb_00108" x="416" y="550" w="67" h="51" pX="0.5" pY="0.5" oX="24" oY="33" oW="160" oH="144"/>
+    <sprite n="absorb_00109" x="504" y="463" w="63" h="49" pX="0.5" pY="0.5" oX="24" oY="35" oW="160" oH="144"/>
+    <sprite n="absorb_00110" x="576" y="413" w="59" h="47" pX="0.5" pY="0.5" oX="24" oY="37" oW="160" oH="144"/>
+    <sprite n="absorb_00111" x="410" y="453" w="55" h="45" pX="0.5" pY="0.5" oX="24" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_00112" x="576" y="460" w="51" h="43" pX="0.5" pY="0.5" oX="24" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_00113" x="521" y="512" w="47" h="41" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_00114" x="520" y="553" w="43" h="39" pX="0.5" pY="0.5" oX="24" oY="45" oW="160" oH="144"/>
+    <sprite n="absorb_00115" x="482" y="512" w="39" h="37" pX="0.5" pY="0.5" oX="24" oY="47" oW="160" oH="144"/>
+    <sprite n="absorb_00116" x="398" y="601" w="36" h="35" pX="0.5" pY="0.5" oX="24" oY="49" oW="160" oH="144"/>
+    <sprite n="absorb_00117" x="603" y="503" w="34" h="34" pX="0.5" pY="0.5" oX="24" oY="50" oW="160" oH="144"/>
+    <sprite n="absorb_00118" x="434" y="601" w="32" h="32" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="absorb_00119" x="466" y="601" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="54" oW="160" oH="144"/>
+    <sprite n="absorb_00120" x="548" y="592" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="absorb_00121" x="0" y="611" w="26" h="26" pX="0.5" pY="0.5" oX="24" oY="58" oW="160" oH="144"/>
+    <sprite n="absorb_00122" x="26" y="611" w="24" h="26" pX="0.5" pY="0.5" oX="24" oY="58" oW="160" oH="144"/>
+    <sprite n="absorb_00123" x="613" y="284" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="absorb_00124" x="613" y="308" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="absorb_00125" x="316" y="583" w="8" h="8" pX="0.5" pY="0.5" oX="34" oY="69" oW="160" oH="144"/>
+    <sprite n="absorb_00126" x="324" y="583" w="8" h="8" pX="0.5" pY="0.5" oX="34" oY="69" oW="160" oH="144"/>
+    <sprite n="absorb_00127" x="557" y="62" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_00128" x="192" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_00129" x="183" y="258" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_00130" x="613" y="332" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="absorb_00131" x="50" y="611" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="absorb_00132" x="496" y="590" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+</TextureAtlas>

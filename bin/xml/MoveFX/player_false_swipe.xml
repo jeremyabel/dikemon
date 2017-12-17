@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:db3fae489b090bcf310b0cb34e33bd68:de2b9a0b48147e8ce26f2764765c5c1d:b92e6bcc1bf4c133884118164ed038d2$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_false_swipe.png" width="190" height="190">
+    <sprite n="false_swipe_00000" x="0" y="188" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00001" x="172" y="140" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00002" x="172" y="156" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00003" x="104" y="166" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00004" x="38" y="166" w="22" h="22" pX="0.5" pY="0.5" oX="126" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00005" x="60" y="166" w="22" h="22" pX="0.5" pY="0.5" oX="126" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00006" x="82" y="166" w="22" h="22" pX="0.5" pY="0.5" oX="126" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00007" x="38" y="128" w="34" h="38" pX="0.5" pY="0.5" oX="114" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00008" x="72" y="128" w="34" h="38" pX="0.5" pY="0.5" oX="114" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00009" x="106" y="128" w="34" h="38" pX="0.5" pY="0.5" oX="114" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00010" x="38" y="0" w="40" h="44" pX="0.5" pY="0.5" oX="108" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00011" x="78" y="0" w="40" h="44" pX="0.5" pY="0.5" oX="108" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00012" x="118" y="0" w="40" h="44" pX="0.5" pY="0.5" oX="108" oY="16" oW="160" oH="144"/>
+    <sprite n="false_swipe_00013" x="38" y="44" w="38" h="46" pX="0.5" pY="0.5" oX="110" oY="12" oW="160" oH="144"/>
+    <sprite n="false_swipe_00014" x="76" y="44" w="38" h="46" pX="0.5" pY="0.5" oX="110" oY="12" oW="160" oH="144"/>
+    <sprite n="false_swipe_00015" x="114" y="44" w="38" h="46" pX="0.5" pY="0.5" oX="110" oY="12" oW="160" oH="144"/>
+    <sprite n="false_swipe_00016" x="158" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00017" x="158" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00018" x="140" y="140" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00019" x="0" y="0" w="38" h="50" pX="0.5" pY="0.5" oX="110" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00020" x="0" y="50" w="38" h="50" pX="0.5" pY="0.5" oX="110" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00021" x="0" y="100" w="38" h="50" pX="0.5" pY="0.5" oX="110" oY="8" oW="160" oH="144"/>
+    <sprite n="false_swipe_00022" x="0" y="189" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00023" x="1" y="188" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00024" x="1" y="189" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00025" x="0" y="150" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00026" x="152" y="64" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00027" x="38" y="90" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00028" x="2" y="188" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00029" x="2" y="189" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00030" x="3" y="188" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="false_swipe_00031" x="76" y="90" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00032" x="114" y="90" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00033" x="152" y="102" w="38" h="38" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="false_swipe_00034" x="3" y="189" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

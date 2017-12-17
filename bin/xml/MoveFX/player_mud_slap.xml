@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:384e084eb423633426724d762267183b:1e402651f98b2ae59d68cfb86cbd7d85:d652af44c7cca35e27e116513b926211$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_mud_slap.png" width="318" height="318">
+    <sprite n="mud_slap_00000" x="128" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mud_slap_00001" x="128" y="141" w="14" h="11" pX="0.5" pY="0.5" oX="57" oY="68" oW="160" oH="144"/>
+    <sprite n="mud_slap_00002" x="250" y="304" w="14" h="11" pX="0.5" pY="0.5" oX="61" oY="66" oW="160" oH="144"/>
+    <sprite n="mud_slap_00003" x="304" y="203" w="14" h="11" pX="0.5" pY="0.5" oX="65" oY="64" oW="160" oH="144"/>
+    <sprite n="mud_slap_00004" x="0" y="296" w="14" h="19" pX="0.5" pY="0.5" oX="69" oY="58" oW="160" oH="144"/>
+    <sprite n="mud_slap_00005" x="250" y="279" w="34" h="25" pX="0.5" pY="0.5" oX="53" oY="56" oW="160" oH="144"/>
+    <sprite n="mud_slap_00006" x="284" y="279" w="34" h="25" pX="0.5" pY="0.5" oX="57" oY="54" oW="160" oH="144"/>
+    <sprite n="mud_slap_00007" x="216" y="293" w="34" h="25" pX="0.5" pY="0.5" oX="61" oY="52" oW="160" oH="144"/>
+    <sprite n="mud_slap_00008" x="54" y="288" w="34" h="29" pX="0.5" pY="0.5" oX="65" oY="46" oW="160" oH="144"/>
+    <sprite n="mud_slap_00009" x="250" y="246" w="34" h="33" pX="0.5" pY="0.5" oX="69" oY="44" oW="160" oH="144"/>
+    <sprite n="mud_slap_00010" x="148" y="94" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="42" oW="160" oH="144"/>
+    <sprite n="mud_slap_00011" x="202" y="94" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00012" x="256" y="0" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00013" x="0" y="253" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00014" x="148" y="0" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00015" x="0" y="0" w="74" h="53" pX="0.5" pY="0.5" oX="53" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00016" x="256" y="129" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00017" x="256" y="43" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00018" x="256" y="86" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00019" x="0" y="159" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00020" x="0" y="53" w="74" h="53" pX="0.5" pY="0.5" oX="53" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00021" x="162" y="219" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00022" x="54" y="159" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00023" x="54" y="202" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00024" x="74" y="106" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00025" x="74" y="0" w="74" h="53" pX="0.5" pY="0.5" oX="53" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00026" x="162" y="258" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00027" x="54" y="245" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00028" x="108" y="153" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00029" x="148" y="47" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00030" x="0" y="106" w="74" h="53" pX="0.5" pY="0.5" oX="53" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00031" x="250" y="168" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00032" x="108" y="196" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00033" x="108" y="239" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00034" x="202" y="0" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00035" x="74" y="53" w="74" h="53" pX="0.5" pY="0.5" oX="53" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00036" x="250" y="207" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00037" x="162" y="133" w="54" h="43" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00038" x="162" y="176" w="54" h="43" pX="0.5" pY="0.5" oX="65" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00039" x="0" y="206" w="54" h="47" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00040" x="202" y="47" w="54" h="47" pX="0.5" pY="0.5" oX="73" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00041" x="284" y="246" w="34" h="33" pX="0.5" pY="0.5" oX="77" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00042" x="216" y="256" w="34" h="37" pX="0.5" pY="0.5" oX="81" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00043" x="216" y="133" w="34" h="41" pX="0.5" pY="0.5" oX="85" oY="32" oW="160" oH="144"/>
+    <sprite n="mud_slap_00044" x="216" y="174" w="34" h="41" pX="0.5" pY="0.5" oX="89" oY="30" oW="160" oH="144"/>
+    <sprite n="mud_slap_00045" x="216" y="215" w="34" h="41" pX="0.5" pY="0.5" oX="93" oY="28" oW="160" oH="144"/>
+    <sprite n="mud_slap_00046" x="88" y="288" w="14" h="27" pX="0.5" pY="0.5" oX="97" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_00047" x="128" y="106" w="14" h="35" pX="0.5" pY="0.5" oX="101" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_00048" x="304" y="168" w="14" h="35" pX="0.5" pY="0.5" oX="105" oY="32" oW="160" oH="144"/>
+</TextureAtlas>

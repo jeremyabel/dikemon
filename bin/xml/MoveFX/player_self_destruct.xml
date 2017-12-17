@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3309519074513cf55eaf278168436c09:b7f87ba016f31eabf598555a4e850d9c:68092cab3b00ec9c57faa6a337ee9aa6$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_self_destruct.png" width="340" height="340">
+    <sprite n="self_destruct_00000" x="144" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00001" x="144" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00002" x="144" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00003" x="128" y="272" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00004" x="192" y="256" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00005" x="208" y="320" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00006" x="224" y="320" w="16" h="16" pX="0.5" pY="0.5" oX="132" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00007" x="304" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="124" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00008" x="192" y="0" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00009" x="192" y="64" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00010" x="192" y="128" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00011" x="192" y="192" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00012" x="0" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00013" x="0" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00014" x="0" y="144" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00015" x="0" y="216" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00016" x="64" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00017" x="248" y="212" w="56" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="self_destruct_00018" x="264" y="244" w="56" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="self_destruct_00019" x="248" y="180" w="64" h="32" pX="0.5" pY="0.5" oX="92" oY="40" oW="160" oH="144"/>
+    <sprite n="self_destruct_00020" x="128" y="144" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00021" x="128" y="208" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00022" x="144" y="272" w="64" h="64" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00023" x="208" y="256" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00024" x="248" y="0" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00025" x="248" y="64" w="56" h="64" pX="0.5" pY="0.5" oX="100" oY="8" oW="160" oH="144"/>
+    <sprite n="self_destruct_00026" x="64" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00027" x="64" y="144" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00028" x="64" y="216" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00029" x="128" y="0" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00030" x="128" y="72" w="64" h="72" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00031" x="296" y="128" w="40" h="44" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00032" x="0" y="288" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00033" x="48" y="288" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00034" x="96" y="288" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00035" x="248" y="128" w="48" h="52" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00036" x="304" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00037" x="304" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00038" x="304" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00039" x="304" y="212" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00040" x="264" y="276" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00041" x="264" y="308" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="self_destruct_00042" x="144" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00043" x="145" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00044" x="145" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00045" x="145" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00046" x="145" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00047" x="146" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00048" x="146" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00049" x="146" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00050" x="146" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00051" x="147" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00052" x="147" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00053" x="147" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00054" x="147" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00055" x="148" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00056" x="148" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00057" x="148" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00058" x="148" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00059" x="149" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00060" x="149" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00061" x="149" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00062" x="149" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00063" x="150" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00064" x="150" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00065" x="150" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00066" x="150" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00067" x="151" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00068" x="151" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00069" x="151" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00070" x="151" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00071" x="152" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00072" x="152" y="337" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00073" x="152" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00074" x="152" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="self_destruct_00075" x="153" y="336" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

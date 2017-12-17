@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a4b58228eced559802ed53f6dce36ca1:47ff57014bd40510de9af7889d0aa40c:3aa7f79c37d6d6159bd8f1cde798e1d7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_spite.png" width="285" height="285">
+    <sprite n="spite_00000" x="220" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00001" x="133" y="266" w="23" h="15" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00002" x="261" y="179" w="23" h="15" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00003" x="0" y="268" w="23" h="16" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00004" x="220" y="268" w="23" h="17" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00005" x="243" y="268" w="23" h="17" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00006" x="29" y="267" w="23" h="18" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00007" x="52" y="267" w="23" h="18" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00008" x="197" y="265" w="23" h="19" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00009" x="87" y="266" w="23" h="19" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00010" x="110" y="266" w="23" h="19" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00011" x="174" y="265" w="23" h="20" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00012" x="261" y="137" w="23" h="21" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00013" x="261" y="158" w="23" h="21" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00014" x="261" y="93" w="23" h="22" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00015" x="261" y="115" w="23" h="22" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00016" x="261" y="24" w="23" h="23" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00017" x="261" y="47" w="23" h="23" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00018" x="261" y="70" w="23" h="23" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00019" x="261" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00020" x="174" y="240" w="24" h="25" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00021" x="198" y="240" w="24" h="25" pX="0.5" pY="0.5" oX="115" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00022" x="87" y="240" w="29" h="26" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00023" x="116" y="240" w="29" h="26" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00024" x="145" y="240" w="29" h="26" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00025" x="29" y="240" w="29" h="27" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00026" x="58" y="240" w="29" h="27" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00027" x="0" y="240" w="29" h="28" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00028" x="232" y="210" w="29" h="29" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00029" x="232" y="239" w="29" h="29" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00030" x="0" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00031" x="29" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00032" x="58" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00033" x="87" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="1" oW="160" oH="144"/>
+    <sprite n="spite_00034" x="116" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="2" oW="160" oH="144"/>
+    <sprite n="spite_00035" x="145" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="2" oW="160" oH="144"/>
+    <sprite n="spite_00036" x="174" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="3" oW="160" oH="144"/>
+    <sprite n="spite_00037" x="203" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="3" oW="160" oH="144"/>
+    <sprite n="spite_00038" x="232" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="4" oW="160" oH="144"/>
+    <sprite n="spite_00039" x="0" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="4" oW="160" oH="144"/>
+    <sprite n="spite_00040" x="29" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="4" oW="160" oH="144"/>
+    <sprite n="spite_00041" x="58" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="5" oW="160" oH="144"/>
+    <sprite n="spite_00042" x="87" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="6" oW="160" oH="144"/>
+    <sprite n="spite_00043" x="116" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="6" oW="160" oH="144"/>
+    <sprite n="spite_00044" x="145" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="7" oW="160" oH="144"/>
+    <sprite n="spite_00045" x="174" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="7" oW="160" oH="144"/>
+    <sprite n="spite_00046" x="203" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="7" oW="160" oH="144"/>
+    <sprite n="spite_00047" x="232" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="8" oW="160" oH="144"/>
+    <sprite n="spite_00048" x="0" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="8" oW="160" oH="144"/>
+    <sprite n="spite_00049" x="29" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="9" oW="160" oH="144"/>
+    <sprite n="spite_00050" x="58" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="10" oW="160" oH="144"/>
+    <sprite n="spite_00051" x="87" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="10" oW="160" oH="144"/>
+    <sprite n="spite_00052" x="116" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="11" oW="160" oH="144"/>
+    <sprite n="spite_00053" x="145" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="11" oW="160" oH="144"/>
+    <sprite n="spite_00054" x="174" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="11" oW="160" oH="144"/>
+    <sprite n="spite_00055" x="203" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="12" oW="160" oH="144"/>
+    <sprite n="spite_00056" x="232" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="13" oW="160" oH="144"/>
+    <sprite n="spite_00057" x="0" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="13" oW="160" oH="144"/>
+    <sprite n="spite_00058" x="29" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="14" oW="160" oH="144"/>
+    <sprite n="spite_00059" x="58" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="14" oW="160" oH="144"/>
+    <sprite n="spite_00060" x="87" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="15" oW="160" oH="144"/>
+    <sprite n="spite_00061" x="116" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="15" oW="160" oH="144"/>
+    <sprite n="spite_00062" x="145" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="15" oW="160" oH="144"/>
+    <sprite n="spite_00063" x="174" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="16" oW="160" oH="144"/>
+    <sprite n="spite_00064" x="203" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="17" oW="160" oH="144"/>
+    <sprite n="spite_00065" x="232" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="17" oW="160" oH="144"/>
+    <sprite n="spite_00066" x="0" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="18" oW="160" oH="144"/>
+    <sprite n="spite_00067" x="29" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="18" oW="160" oH="144"/>
+    <sprite n="spite_00068" x="58" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="19" oW="160" oH="144"/>
+    <sprite n="spite_00069" x="87" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="19" oW="160" oH="144"/>
+    <sprite n="spite_00070" x="116" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="19" oW="160" oH="144"/>
+    <sprite n="spite_00071" x="145" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="20" oW="160" oH="144"/>
+    <sprite n="spite_00072" x="174" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="21" oW="160" oH="144"/>
+    <sprite n="spite_00073" x="203" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="21" oW="160" oH="144"/>
+    <sprite n="spite_00074" x="232" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="22" oW="160" oH="144"/>
+    <sprite n="spite_00075" x="0" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="22" oW="160" oH="144"/>
+    <sprite n="spite_00076" x="29" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="22" oW="160" oH="144"/>
+    <sprite n="spite_00077" x="58" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="23" oW="160" oH="144"/>
+    <sprite n="spite_00078" x="87" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="23" oW="160" oH="144"/>
+    <sprite n="spite_00079" x="116" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="24" oW="160" oH="144"/>
+    <sprite n="spite_00080" x="145" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="25" oW="160" oH="144"/>
+    <sprite n="spite_00081" x="174" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="25" oW="160" oH="144"/>
+    <sprite n="spite_00082" x="203" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="26" oW="160" oH="144"/>
+    <sprite n="spite_00083" x="232" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="26" oW="160" oH="144"/>
+    <sprite n="spite_00084" x="0" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="26" oW="160" oH="144"/>
+    <sprite n="spite_00085" x="29" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="27" oW="160" oH="144"/>
+    <sprite n="spite_00086" x="58" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="spite_00087" x="87" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="28" oW="160" oH="144"/>
+    <sprite n="spite_00088" x="116" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="spite_00089" x="145" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="29" oW="160" oH="144"/>
+    <sprite n="spite_00090" x="174" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="30" oW="160" oH="144"/>
+    <sprite n="spite_00091" x="203" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="30" oW="160" oH="144"/>
+    <sprite n="spite_00092" x="232" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="30" oW="160" oH="144"/>
+    <sprite n="spite_00093" x="0" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="31" oW="160" oH="144"/>
+    <sprite n="spite_00094" x="29" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="32" oW="160" oH="144"/>
+    <sprite n="spite_00095" x="58" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="32" oW="160" oH="144"/>
+    <sprite n="spite_00096" x="87" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="33" oW="160" oH="144"/>
+    <sprite n="spite_00097" x="116" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="33" oW="160" oH="144"/>
+    <sprite n="spite_00098" x="145" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="126" oY="33" oW="160" oH="144"/>
+    <sprite n="spite_00099" x="174" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="spite_00100" x="203" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="110" oY="34" oW="160" oH="144"/>
+    <sprite n="spite_00101" x="220" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00102" x="220" y="267" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00103" x="221" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00104" x="221" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00105" x="221" y="267" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00106" x="197" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00107" x="198" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="spite_00108" x="199" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1c8d67bd5a21b414cec0f656bb6dd393:1d11ff923d966fe63ecb4ee9e0f78ab0:b7e8f34912c42f60add382c27244bf2e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_smog.png" width="420" height="420">
+    <sprite n="smog_00000" x="289" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00001" x="383" y="361" w="28" h="4" pX="0.5" pY="0.5" oX="132" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00002" x="383" y="365" w="28" h="4" pX="0.5" pY="0.5" oX="132" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00003" x="383" y="357" w="29" h="4" pX="0.5" pY="0.5" oX="131" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00004" x="135" y="416" w="30" h="4" pX="0.5" pY="0.5" oX="130" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00005" x="165" y="416" w="30" h="4" pX="0.5" pY="0.5" oX="130" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00006" x="386" y="342" w="31" h="5" pX="0.5" pY="0.5" oX="129" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00007" x="386" y="347" w="31" h="5" pX="0.5" pY="0.5" oX="129" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00008" x="384" y="352" w="31" h="5" pX="0.5" pY="0.5" oX="126" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00009" x="385" y="328" w="31" h="7" pX="0.5" pY="0.5" oX="124" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00010" x="386" y="335" w="31" h="7" pX="0.5" pY="0.5" oX="124" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00011" x="379" y="384" w="39" h="7" pX="0.5" pY="0.5" oX="121" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00012" x="379" y="370" w="41" h="7" pX="0.5" pY="0.5" oX="119" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00013" x="379" y="377" w="41" h="7" pX="0.5" pY="0.5" oX="119" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00014" x="333" y="370" w="46" h="7" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00015" x="363" y="86" w="48" h="7" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00016" x="363" y="93" w="48" h="7" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00017" x="362" y="54" w="49" h="9" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00018" x="362" y="63" w="49" h="9" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00019" x="364" y="100" w="48" h="7" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00020" x="364" y="107" w="48" h="7" pX="0.5" pY="0.5" oX="104" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00021" x="364" y="114" w="48" h="7" pX="0.5" pY="0.5" oX="104" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00022" x="362" y="72" w="49" h="7" pX="0.5" pY="0.5" oX="99" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00023" x="362" y="79" w="49" h="7" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00024" x="337" y="335" w="49" h="7" pX="0.5" pY="0.5" oX="97" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00025" x="345" y="298" w="63" h="8" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00026" x="343" y="306" w="63" h="8" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00027" x="337" y="342" w="49" h="7" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00028" x="361" y="121" w="50" h="7" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00029" x="361" y="128" w="50" h="7" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00030" x="337" y="349" w="47" h="7" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00031" x="333" y="377" w="46" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00032" x="333" y="384" w="46" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00033" x="332" y="405" w="42" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00034" x="362" y="29" w="56" h="8" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00035" x="362" y="37" w="56" h="8" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00036" x="377" y="398" w="36" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00037" x="374" y="405" w="36" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00038" x="343" y="314" w="50" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00039" x="336" y="356" w="47" h="7" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00040" x="336" y="363" w="47" h="7" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00041" x="374" y="412" w="36" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00042" x="332" y="412" w="42" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00043" x="377" y="391" w="42" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00044" x="362" y="45" w="50" h="9" pX="0.5" pY="0.5" oX="85" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00045" x="333" y="391" w="44" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00046" x="333" y="398" w="44" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00047" x="340" y="321" w="50" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00048" x="335" y="328" w="50" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00049" x="365" y="14" w="52" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00050" x="365" y="0" w="54" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00051" x="365" y="7" w="54" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00052" x="362" y="21" w="58" h="8" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00053" x="135" y="407" w="63" h="9" pX="0.5" pY="0.5" oX="85" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00054" x="345" y="289" w="63" h="9" pX="0.5" pY="0.5" oX="85" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00055" x="73" y="188" w="66" h="7" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00056" x="72" y="253" w="67" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00057" x="135" y="354" w="67" h="7" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00058" x="68" y="409" w="67" h="8" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00059" x="273" y="315" w="67" h="8" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00060" x="143" y="103" w="74" h="8" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00061" x="134" y="379" w="66" h="8" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00062" x="350" y="181" w="66" h="8" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00063" x="207" y="299" w="68" h="9" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00064" x="140" y="159" w="71" h="9" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00065" x="139" y="185" w="71" h="9" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00066" x="213" y="131" w="71" h="11" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00067" x="282" y="167" w="70" h="11" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00068" x="281" y="196" w="70" h="11" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00069" x="203" y="341" w="67" h="13" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00070" x="270" y="341" w="67" h="13" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00071" x="139" y="245" w="69" h="13" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00072" x="70" y="295" w="68" h="13" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00073" x="68" y="308" w="68" h="13" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00074" x="211" y="158" w="71" h="15" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00075" x="143" y="88" w="73" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00076" x="290" y="87" w="73" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00077" x="281" y="207" w="70" h="15" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00078" x="278" y="238" w="70" h="15" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00079" x="206" y="308" w="67" h="15" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00080" x="355" y="135" w="65" h="15" pX="0.5" pY="0.5" oX="95" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00081" x="352" y="166" w="65" h="15" pX="0.5" pY="0.5" oX="95" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00082" x="70" y="278" w="68" h="17" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00083" x="211" y="142" w="71" h="16" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00084" x="210" y="173" w="71" h="16" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00085" x="143" y="56" w="73" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00086" x="208" y="220" w="70" h="16" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00087" x="208" y="236" w="70" h="16" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00088" x="139" y="258" w="69" h="16" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00089" x="138" y="274" w="69" h="16" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00090" x="275" y="300" w="68" h="15" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00091" x="202" y="354" w="67" h="15" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00092" x="269" y="354" w="67" h="15" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00093" x="279" y="268" w="69" h="16" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00094" x="67" y="321" w="68" h="17" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00095" x="67" y="338" w="68" h="17" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00096" x="216" y="55" w="73" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00097" x="210" y="189" w="71" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00098" x="284" y="133" w="71" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00099" x="139" y="194" w="71" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00100" x="210" y="205" w="71" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00101" x="216" y="71" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00102" x="289" y="55" w="73" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00103" x="143" y="72" w="73" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00104" x="290" y="71" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00105" x="278" y="222" w="70" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00106" x="208" y="252" w="70" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00107" x="207" y="283" w="69" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00108" x="278" y="253" w="71" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00109" x="208" y="268" w="71" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00110" x="216" y="86" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00111" x="141" y="111" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00112" x="0" y="207" w="72" h="17" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00113" x="289" y="117" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00114" x="141" y="126" w="72" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00115" x="198" y="387" w="67" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00116" x="138" y="290" w="69" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00117" x="276" y="284" w="69" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00118" x="217" y="101" w="73" h="15" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00119" x="290" y="102" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00120" x="215" y="116" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00121" x="0" y="224" w="72" h="17" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00122" x="0" y="241" w="72" h="17" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00123" x="266" y="369" w="67" h="16" pX="0.5" pY="0.5" oX="87" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00124" x="266" y="385" w="67" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00125" x="265" y="401" w="67" h="16" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00126" x="138" y="306" w="68" h="16" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00127" x="135" y="322" w="68" h="16" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00128" x="135" y="338" w="68" h="16" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00129" x="351" y="150" w="66" h="16" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00130" x="351" y="211" w="66" h="16" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00131" x="198" y="403" w="61" h="17" pX="0.5" pY="0.5" oX="99" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00132" x="72" y="77" w="71" h="17" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00133" x="72" y="94" w="71" h="17" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00134" x="0" y="42" w="71" h="19" pX="0.5" pY="0.5" oX="89" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00135" x="0" y="258" w="70" h="19" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00136" x="0" y="277" w="70" h="19" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00137" x="0" y="359" w="67" h="20" pX="0.5" pY="0.5" oX="93" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00138" x="73" y="168" w="66" h="20" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00139" x="72" y="195" w="66" h="20" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00140" x="349" y="249" w="61" h="20" pX="0.5" pY="0.5" oX="99" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00141" x="348" y="269" w="61" h="20" pX="0.5" pY="0.5" oX="99" oY="0" oW="160" oH="144"/>
+    <sprite n="smog_00142" x="0" y="0" w="72" h="21" pX="0.5" pY="0.5" oX="88" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00143" x="0" y="21" w="71" h="21" pX="0.5" pY="0.5" oX="89" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00144" x="72" y="0" w="71" h="21" pX="0.5" pY="0.5" oX="89" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00145" x="0" y="296" w="68" h="21" pX="0.5" pY="0.5" oX="92" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00146" x="0" y="317" w="67" h="21" pX="0.5" pY="0.5" oX="93" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00147" x="0" y="338" w="67" h="21" pX="0.5" pY="0.5" oX="93" oY="2" oW="160" oH="144"/>
+    <sprite n="smog_00148" x="135" y="387" w="63" h="20" pX="0.5" pY="0.5" oX="97" oY="3" oW="160" oH="144"/>
+    <sprite n="smog_00149" x="351" y="189" w="61" h="22" pX="0.5" pY="0.5" oX="99" oY="3" oW="160" oH="144"/>
+    <sprite n="smog_00150" x="348" y="227" w="61" h="22" pX="0.5" pY="0.5" oX="99" oY="3" oW="160" oH="144"/>
+    <sprite n="smog_00151" x="71" y="21" w="72" h="19" pX="0.5" pY="0.5" oX="88" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00152" x="71" y="40" w="72" h="19" pX="0.5" pY="0.5" oX="88" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00153" x="72" y="111" w="69" h="19" pX="0.5" pY="0.5" oX="90" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00154" x="72" y="130" w="68" h="19" pX="0.5" pY="0.5" oX="92" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00155" x="72" y="149" w="68" h="19" pX="0.5" pY="0.5" oX="92" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00156" x="72" y="215" w="67" h="19" pX="0.5" pY="0.5" oX="93" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00157" x="0" y="379" w="68" h="20" pX="0.5" pY="0.5" oX="92" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00158" x="0" y="399" w="68" h="20" pX="0.5" pY="0.5" oX="92" oY="5" oW="160" oH="144"/>
+    <sprite n="smog_00159" x="72" y="59" w="71" h="18" pX="0.5" pY="0.5" oX="89" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00160" x="0" y="99" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00161" x="0" y="117" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00162" x="282" y="149" w="69" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00163" x="281" y="178" w="69" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00164" x="216" y="37" w="73" h="18" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00165" x="143" y="0" w="74" h="18" pX="0.5" pY="0.5" oX="86" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00166" x="217" y="0" w="74" h="18" pX="0.5" pY="0.5" oX="86" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00167" x="143" y="18" w="73" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00168" x="0" y="135" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00169" x="0" y="153" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00170" x="70" y="260" w="68" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00171" x="139" y="209" w="69" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00172" x="139" y="227" w="69" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00173" x="289" y="37" w="73" h="18" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00174" x="0" y="171" w="73" h="18" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00175" x="216" y="18" w="73" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00176" x="0" y="61" w="72" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00177" x="0" y="80" w="72" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00178" x="68" y="373" w="66" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00179" x="67" y="355" w="67" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00180" x="68" y="391" w="67" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00181" x="140" y="142" w="71" h="17" pX="0.5" pY="0.5" oX="87" oY="7" oW="160" oH="144"/>
+    <sprite n="smog_00182" x="139" y="168" w="71" h="17" pX="0.5" pY="0.5" oX="87" oY="7" oW="160" oH="144"/>
+    <sprite n="smog_00183" x="291" y="0" w="74" h="18" pX="0.5" pY="0.5" oX="86" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00184" x="289" y="18" w="73" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00185" x="143" y="37" w="73" h="19" pX="0.5" pY="0.5" oX="87" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00186" x="0" y="189" w="72" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00187" x="203" y="323" w="66" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00188" x="269" y="323" w="66" h="18" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00189" x="72" y="234" w="67" h="19" pX="0.5" pY="0.5" oX="90" oY="6" oW="160" oH="144"/>
+    <sprite n="smog_00190" x="134" y="361" w="66" h="18" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+    <sprite n="smog_00191" x="200" y="369" w="66" h="18" pX="0.5" pY="0.5" oX="92" oY="7" oW="160" oH="144"/>
+</TextureAtlas>

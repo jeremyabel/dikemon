@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:416fda0853d335dc5b06e8e07b96b1df:9e05cdcbcfb9e23f468e69599112ad6c:1dacab90825e57462f0c9d6c8d905e97$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_ancient_power.png" width="333" height="333">
+    <sprite n="ancient_power_00000" x="101" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00001" x="27" y="314" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="84" oW="160" oH="144"/>
+    <sprite n="ancient_power_00002" x="270" y="214" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="81" oW="160" oH="144"/>
+    <sprite n="ancient_power_00003" x="250" y="306" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="78" oW="160" oH="144"/>
+    <sprite n="ancient_power_00004" x="266" y="308" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="75" oW="160" oH="144"/>
+    <sprite n="ancient_power_00005" x="282" y="308" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="72" oW="160" oH="144"/>
+    <sprite n="ancient_power_00006" x="140" y="196" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="69" oW="160" oH="144"/>
+    <sprite n="ancient_power_00007" x="298" y="300" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="67" oW="160" oH="144"/>
+    <sprite n="ancient_power_00008" x="314" y="300" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="64" oW="160" oH="144"/>
+    <sprite n="ancient_power_00009" x="298" y="316" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="62" oW="160" oH="144"/>
+    <sprite n="ancient_power_00010" x="304" y="0" w="27" h="34" pX="0.5" pY="0.5" oX="48" oY="60" oW="160" oH="144"/>
+    <sprite n="ancient_power_00011" x="131" y="263" w="27" h="33" pX="0.5" pY="0.5" oX="48" oY="58" oW="160" oH="144"/>
+    <sprite n="ancient_power_00012" x="269" y="276" w="27" h="32" pX="0.5" pY="0.5" oX="48" oY="56" oW="160" oH="144"/>
+    <sprite n="ancient_power_00013" x="119" y="233" w="27" h="30" pX="0.5" pY="0.5" oX="48" oY="55" oW="160" oH="144"/>
+    <sprite n="ancient_power_00014" x="296" y="272" w="27" h="28" pX="0.5" pY="0.5" oX="48" oY="54" oW="160" oH="144"/>
+    <sprite n="ancient_power_00015" x="196" y="307" w="27" h="26" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="ancient_power_00016" x="223" y="307" w="27" h="24" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="ancient_power_00017" x="293" y="250" w="27" h="22" pX="0.5" pY="0.5" oX="48" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_00018" x="0" y="314" w="27" h="19" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="ancient_power_00019" x="244" y="133" w="37" h="36" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="ancient_power_00020" x="290" y="183" w="37" h="34" pX="0.5" pY="0.5" oX="48" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_00021" x="159" y="192" w="37" h="33" pX="0.5" pY="0.5" oX="48" oY="50" oW="160" oH="144"/>
+    <sprite n="ancient_power_00022" x="46" y="232" w="37" h="31" pX="0.5" pY="0.5" oX="48" oY="49" oW="160" oH="144"/>
+    <sprite n="ancient_power_00023" x="196" y="214" w="37" h="29" pX="0.5" pY="0.5" oX="48" oY="48" oW="160" oH="144"/>
+    <sprite n="ancient_power_00024" x="233" y="214" w="37" h="29" pX="0.5" pY="0.5" oX="48" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_00025" x="196" y="276" w="37" h="31" pX="0.5" pY="0.5" oX="48" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_00026" x="146" y="225" w="37" h="34" pX="0.5" pY="0.5" oX="48" oY="46" oW="160" oH="144"/>
+    <sprite n="ancient_power_00027" x="290" y="147" w="37" h="36" pX="0.5" pY="0.5" oX="48" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_00028" x="196" y="135" w="48" h="38" pX="0.5" pY="0.5" oX="48" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_00029" x="196" y="173" w="48" h="41" pX="0.5" pY="0.5" oX="48" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_00030" x="54" y="109" w="48" h="46" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="ancient_power_00031" x="0" y="264" w="48" h="50" pX="0.5" pY="0.5" oX="48" oY="44" oW="160" oH="144"/>
+    <sprite n="ancient_power_00032" x="54" y="55" w="48" h="54" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="144"/>
+    <sprite n="ancient_power_00033" x="54" y="0" w="48" h="55" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_00034" x="48" y="303" w="37" h="30" pX="0.5" pY="0.5" oX="59" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_00035" x="158" y="259" w="37" h="33" pX="0.5" pY="0.5" oX="59" oY="41" oW="160" oH="144"/>
+    <sprite n="ancient_power_00036" x="94" y="263" w="37" h="35" pX="0.5" pY="0.5" oX="59" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_00037" x="149" y="155" w="47" h="37" pX="0.5" pY="0.5" oX="59" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_00038" x="54" y="155" w="47" h="40" pX="0.5" pY="0.5" oX="59" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_00039" x="250" y="43" w="47" h="45" pX="0.5" pY="0.5" oX="59" oY="40" oW="160" oH="144"/>
+    <sprite n="ancient_power_00040" x="102" y="107" w="47" h="49" pX="0.5" pY="0.5" oX="59" oY="39" oW="160" oH="144"/>
+    <sprite n="ancient_power_00041" x="102" y="54" w="47" h="53" pX="0.5" pY="0.5" oX="59" oY="38" oW="160" oH="144"/>
+    <sprite n="ancient_power_00042" x="102" y="0" w="47" h="54" pX="0.5" pY="0.5" oX="59" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_00043" x="85" y="303" w="37" h="30" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_00044" x="159" y="292" w="37" h="33" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="ancient_power_00045" x="122" y="298" w="37" h="35" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_00046" x="47" y="195" w="47" h="37" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_00047" x="101" y="156" w="47" h="40" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_00048" x="242" y="88" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="35" oW="160" oH="144"/>
+    <sprite n="ancient_power_00049" x="149" y="106" w="47" h="49" pX="0.5" pY="0.5" oX="69" oY="34" oW="160" oH="144"/>
+    <sprite n="ancient_power_00050" x="149" y="0" w="47" h="53" pX="0.5" pY="0.5" oX="69" oY="33" oW="160" oH="144"/>
+    <sprite n="ancient_power_00051" x="0" y="156" w="47" h="54" pX="0.5" pY="0.5" oX="69" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_00052" x="83" y="233" w="36" h="30" pX="0.5" pY="0.5" oX="80" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_00053" x="195" y="243" w="36" h="33" pX="0.5" pY="0.5" oX="80" oY="31" oW="160" oH="144"/>
+    <sprite n="ancient_power_00054" x="297" y="43" w="36" h="35" pX="0.5" pY="0.5" oX="80" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_00055" x="94" y="196" w="46" h="37" pX="0.5" pY="0.5" oX="80" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_00056" x="48" y="263" w="46" h="40" pX="0.5" pY="0.5" oX="80" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_00057" x="244" y="169" w="46" h="45" pX="0.5" pY="0.5" oX="80" oY="30" oW="160" oH="144"/>
+    <sprite n="ancient_power_00058" x="196" y="86" w="46" h="49" pX="0.5" pY="0.5" oX="80" oY="29" oW="160" oH="144"/>
+    <sprite n="ancient_power_00059" x="149" y="53" w="46" h="53" pX="0.5" pY="0.5" oX="80" oY="28" oW="160" oH="144"/>
+    <sprite n="ancient_power_00060" x="0" y="210" w="46" h="54" pX="0.5" pY="0.5" oX="80" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_00061" x="233" y="276" w="36" h="30" pX="0.5" pY="0.5" oX="90" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_00062" x="231" y="243" w="36" h="33" pX="0.5" pY="0.5" oX="90" oY="26" oW="160" oH="144"/>
+    <sprite n="ancient_power_00063" x="297" y="78" w="36" h="35" pX="0.5" pY="0.5" oX="90" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_00064" x="196" y="46" w="54" h="40" pX="0.5" pY="0.5" oX="90" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_00065" x="250" y="0" w="54" h="43" pX="0.5" pY="0.5" oX="90" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_00066" x="196" y="0" w="54" h="46" pX="0.5" pY="0.5" oX="90" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_00067" x="0" y="107" w="54" h="49" pX="0.5" pY="0.5" oX="90" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_00068" x="0" y="54" w="54" h="53" pX="0.5" pY="0.5" oX="90" oY="23" oW="160" oH="144"/>
+    <sprite n="ancient_power_00069" x="0" y="0" w="54" h="54" pX="0.5" pY="0.5" oX="90" oY="22" oW="160" oH="144"/>
+    <sprite n="ancient_power_00070" x="289" y="113" w="44" h="34" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="ancient_power_00071" x="267" y="243" w="26" h="33" pX="0.5" pY="0.5" oX="100" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_00072" x="293" y="217" w="26" h="33" pX="0.5" pY="0.5" oX="100" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_00073" x="195" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00074" x="94" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00075" x="46" y="210" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00076" x="46" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00077" x="47" y="263" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00078" x="83" y="232" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00079" x="158" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00080" x="195" y="276" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00081" x="233" y="306" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00082" x="148" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00083" x="195" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_00084" x="95" y="195" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

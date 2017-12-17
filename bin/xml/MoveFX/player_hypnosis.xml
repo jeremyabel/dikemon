@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9aa76eaff7354e71145f915897e2153e:a7903297d4c9c172ad83ef485c833266:e853645420cef0a03cb3c3c26e8bd265$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_hypnosis.png" width="262" height="262">
+    <sprite n="hypnosis_00000" x="261" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00001" x="0" y="186" w="16" h="24" pX="0.5" pY="0.5" oX="46" oY="55" oW="160" oH="144"/>
+    <sprite n="hypnosis_00002" x="16" y="186" w="16" h="24" pX="0.5" pY="0.5" oX="48" oY="54" oW="160" oH="144"/>
+    <sprite n="hypnosis_00003" x="32" y="186" w="16" h="24" pX="0.5" pY="0.5" oX="50" oY="53" oW="160" oH="144"/>
+    <sprite n="hypnosis_00004" x="246" y="211" w="16" h="24" pX="0.5" pY="0.5" oX="52" oY="52" oW="160" oH="144"/>
+    <sprite n="hypnosis_00005" x="246" y="235" w="16" h="24" pX="0.5" pY="0.5" oX="54" oY="51" oW="160" oH="144"/>
+    <sprite n="hypnosis_00006" x="120" y="206" w="18" h="28" pX="0.5" pY="0.5" oX="55" oY="48" oW="160" oH="144"/>
+    <sprite n="hypnosis_00007" x="138" y="228" w="18" h="28" pX="0.5" pY="0.5" oX="57" oY="47" oW="160" oH="144"/>
+    <sprite n="hypnosis_00008" x="106" y="234" w="18" h="28" pX="0.5" pY="0.5" oX="59" oY="46" oW="160" oH="144"/>
+    <sprite n="hypnosis_00009" x="228" y="211" w="18" h="28" pX="0.5" pY="0.5" oX="61" oY="45" oW="160" oH="144"/>
+    <sprite n="hypnosis_00010" x="166" y="186" w="35" h="35" pX="0.5" pY="0.5" oX="46" oY="44" oW="160" oH="144"/>
+    <sprite n="hypnosis_00011" x="37" y="102" w="36" h="37" pX="0.5" pY="0.5" oX="48" oY="41" oW="160" oH="144"/>
+    <sprite n="hypnosis_00012" x="48" y="180" w="36" h="37" pX="0.5" pY="0.5" oX="50" oY="40" oW="160" oH="144"/>
+    <sprite n="hypnosis_00013" x="84" y="183" w="36" h="37" pX="0.5" pY="0.5" oX="52" oY="39" oW="160" oH="144"/>
+    <sprite n="hypnosis_00014" x="42" y="217" w="36" h="37" pX="0.5" pY="0.5" oX="54" oY="38" oW="160" oH="144"/>
+    <sprite n="hypnosis_00015" x="0" y="102" w="37" h="39" pX="0.5" pY="0.5" oX="55" oY="37" oW="160" oH="144"/>
+    <sprite n="hypnosis_00016" x="223" y="0" w="38" h="41" pX="0.5" pY="0.5" oX="57" oY="34" oW="160" oH="144"/>
+    <sprite n="hypnosis_00017" x="223" y="41" w="38" h="41" pX="0.5" pY="0.5" oX="59" oY="33" oW="160" oH="144"/>
+    <sprite n="hypnosis_00018" x="223" y="82" w="38" h="41" pX="0.5" pY="0.5" oX="61" oY="32" oW="160" oH="144"/>
+    <sprite n="hypnosis_00019" x="84" y="142" w="38" h="41" pX="0.5" pY="0.5" oX="63" oY="31" oW="160" oH="144"/>
+    <sprite n="hypnosis_00020" x="168" y="0" w="55" h="48" pX="0.5" pY="0.5" oX="46" oY="31" oW="160" oH="144"/>
+    <sprite n="hypnosis_00021" x="168" y="48" w="55" h="48" pX="0.5" pY="0.5" oX="48" oY="30" oW="160" oH="144"/>
+    <sprite n="hypnosis_00022" x="0" y="0" w="56" h="50" pX="0.5" pY="0.5" oX="50" oY="27" oW="160" oH="144"/>
+    <sprite n="hypnosis_00023" x="56" y="0" w="56" h="50" pX="0.5" pY="0.5" oX="52" oY="26" oW="160" oH="144"/>
+    <sprite n="hypnosis_00024" x="112" y="0" w="56" h="50" pX="0.5" pY="0.5" oX="54" oY="25" oW="160" oH="144"/>
+    <sprite n="hypnosis_00025" x="0" y="50" w="49" h="52" pX="0.5" pY="0.5" oX="63" oY="24" oW="160" oH="144"/>
+    <sprite n="hypnosis_00026" x="49" y="50" w="49" h="52" pX="0.5" pY="0.5" oX="65" oY="23" oW="160" oH="144"/>
+    <sprite n="hypnosis_00027" x="0" y="211" w="42" h="41" pX="0.5" pY="0.5" oX="55" oY="33" oW="160" oH="144"/>
+    <sprite n="hypnosis_00028" x="0" y="142" w="42" h="41" pX="0.5" pY="0.5" oX="57" oY="32" oW="160" oH="144"/>
+    <sprite n="hypnosis_00029" x="42" y="139" w="42" h="41" pX="0.5" pY="0.5" oX="59" oY="31" oW="160" oH="144"/>
+    <sprite n="hypnosis_00030" x="211" y="168" w="42" h="43" pX="0.5" pY="0.5" oX="61" oY="30" oW="160" oH="144"/>
+    <sprite n="hypnosis_00031" x="168" y="141" w="43" h="45" pX="0.5" pY="0.5" oX="63" oY="27" oW="160" oH="144"/>
+    <sprite n="hypnosis_00032" x="98" y="97" w="44" h="45" pX="0.5" pY="0.5" oX="64" oY="26" oW="160" oH="144"/>
+    <sprite n="hypnosis_00033" x="168" y="96" w="44" h="45" pX="0.5" pY="0.5" oX="66" oY="25" oW="160" oH="144"/>
+    <sprite n="hypnosis_00034" x="212" y="123" w="44" h="45" pX="0.5" pY="0.5" oX="68" oY="24" oW="160" oH="144"/>
+    <sprite n="hypnosis_00035" x="98" y="50" w="44" h="47" pX="0.5" pY="0.5" oX="70" oY="23" oW="160" oH="144"/>
+    <sprite n="hypnosis_00036" x="73" y="102" w="25" h="32" pX="0.5" pY="0.5" oX="72" oY="37" oW="160" oH="144"/>
+    <sprite n="hypnosis_00037" x="142" y="50" w="26" h="34" pX="0.5" pY="0.5" oX="73" oY="34" oW="160" oH="144"/>
+    <sprite n="hypnosis_00038" x="142" y="84" w="26" h="34" pX="0.5" pY="0.5" oX="75" oY="33" oW="160" oH="144"/>
+    <sprite n="hypnosis_00039" x="142" y="118" w="26" h="34" pX="0.5" pY="0.5" oX="77" oY="32" oW="160" oH="144"/>
+    <sprite n="hypnosis_00040" x="201" y="211" w="27" h="36" pX="0.5" pY="0.5" oX="79" oY="31" oW="160" oH="144"/>
+    <sprite n="hypnosis_00041" x="166" y="221" w="27" h="36" pX="0.5" pY="0.5" oX="81" oY="30" oW="160" oH="144"/>
+    <sprite n="hypnosis_00042" x="138" y="152" w="28" h="38" pX="0.5" pY="0.5" oX="82" oY="27" oW="160" oH="144"/>
+    <sprite n="hypnosis_00043" x="138" y="190" w="28" h="38" pX="0.5" pY="0.5" oX="84" oY="26" oW="160" oH="144"/>
+    <sprite n="hypnosis_00044" x="78" y="220" w="28" h="38" pX="0.5" pY="0.5" oX="86" oY="25" oW="160" oH="144"/>
+    <sprite n="hypnosis_00045" x="122" y="142" w="16" h="32" pX="0.5" pY="0.5" oX="88" oY="24" oW="160" oH="144"/>
+    <sprite n="hypnosis_00046" x="122" y="174" w="16" h="32" pX="0.5" pY="0.5" oX="90" oY="23" oW="160" oH="144"/>
+    <sprite n="hypnosis_00047" x="261" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00048" x="261" y="2" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00049" x="261" y="3" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00050" x="261" y="4" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00051" x="261" y="5" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00052" x="261" y="6" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00053" x="261" y="7" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00054" x="261" y="8" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00055" x="261" y="9" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00056" x="261" y="10" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00057" x="261" y="11" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00058" x="261" y="12" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00059" x="261" y="13" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00060" x="261" y="14" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00061" x="261" y="15" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00062" x="261" y="16" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00063" x="261" y="17" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00064" x="261" y="18" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00065" x="261" y="19" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00066" x="261" y="20" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00067" x="261" y="21" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00068" x="261" y="22" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00069" x="261" y="23" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00070" x="261" y="24" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00071" x="261" y="25" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00072" x="261" y="26" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00073" x="261" y="27" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00074" x="261" y="28" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00075" x="261" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00076" x="261" y="30" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00077" x="261" y="31" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00078" x="261" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00079" x="261" y="33" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00080" x="261" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00081" x="261" y="35" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00082" x="261" y="36" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00083" x="261" y="37" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00084" x="261" y="38" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00085" x="261" y="39" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00086" x="261" y="40" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00087" x="261" y="41" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00088" x="261" y="42" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00089" x="261" y="43" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00090" x="261" y="44" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00091" x="261" y="45" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00092" x="261" y="46" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00093" x="261" y="47" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00094" x="261" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00095" x="261" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00096" x="261" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00097" x="261" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00098" x="261" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00099" x="261" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00100" x="261" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00101" x="261" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00102" x="261" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00103" x="261" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00104" x="261" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00105" x="261" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00106" x="261" y="60" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00107" x="261" y="61" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00108" x="261" y="62" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00109" x="261" y="63" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00110" x="261" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00111" x="261" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hypnosis_00112" x="261" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

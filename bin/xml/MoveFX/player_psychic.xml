@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5a6c7583418b31ebaec401d4f4b72cf7:2aaf2fccefae072e2b7a2ef5817e7dcb:0f2879197b715d88526210e37cce320b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_psychic.png" width="375" height="375">
+    <sprite n="psychic_00000" x="146" y="176" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00001" x="195" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00002" x="244" y="44" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00003" x="243" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00004" x="353" y="158" w="8" h="16" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="psychic_00005" x="353" y="174" w="8" h="16" pX="0.5" pY="0.5" oX="54" oY="63" oW="160" oH="144"/>
+    <sprite n="psychic_00006" x="353" y="190" w="8" h="16" pX="0.5" pY="0.5" oX="58" oY="61" oW="160" oH="144"/>
+    <sprite n="psychic_00007" x="353" y="206" w="8" h="16" pX="0.5" pY="0.5" oX="60" oY="60" oW="160" oH="144"/>
+    <sprite n="psychic_00008" x="353" y="222" w="8" h="16" pX="0.5" pY="0.5" oX="60" oY="60" oW="160" oH="144"/>
+    <sprite n="psychic_00009" x="231" y="292" w="10" h="20" pX="0.5" pY="0.5" oX="63" oY="56" oW="160" oH="144"/>
+    <sprite n="psychic_00010" x="268" y="315" w="10" h="20" pX="0.5" pY="0.5" oX="65" oY="55" oW="160" oH="144"/>
+    <sprite n="psychic_00011" x="278" y="315" w="10" h="20" pX="0.5" pY="0.5" oX="65" oY="55" oW="160" oH="144"/>
+    <sprite n="psychic_00012" x="288" y="315" w="10" h="20" pX="0.5" pY="0.5" oX="69" oY="53" oW="160" oH="144"/>
+    <sprite n="psychic_00013" x="316" y="343" w="27" h="27" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="psychic_00014" x="343" y="346" w="27" h="27" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="psychic_00015" x="241" y="311" w="27" h="27" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="psychic_00016" x="301" y="314" w="28" h="29" pX="0.5" pY="0.5" oX="58" oY="48" oW="160" oH="144"/>
+    <sprite n="psychic_00017" x="329" y="314" w="28" h="29" pX="0.5" pY="0.5" oX="60" oY="47" oW="160" oH="144"/>
+    <sprite n="psychic_00018" x="240" y="346" w="28" h="29" pX="0.5" pY="0.5" oX="60" oY="47" oW="160" oH="144"/>
+    <sprite n="psychic_00019" x="142" y="311" w="29" h="31" pX="0.5" pY="0.5" oX="63" oY="45" oW="160" oH="144"/>
+    <sprite n="psychic_00020" x="90" y="342" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="42" oW="160" oH="144"/>
+    <sprite n="psychic_00021" x="120" y="342" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="42" oW="160" oH="144"/>
+    <sprite n="psychic_00022" x="241" y="278" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00023" x="271" y="281" w="30" h="34" pX="0.5" pY="0.5" oX="71" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00024" x="244" y="84" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00025" x="291" y="84" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00026" x="147" y="88" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00027" x="196" y="44" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00028" x="245" y="0" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00029" x="0" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00030" x="0" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00031" x="49" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00032" x="301" y="281" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00033" x="244" y="124" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00034" x="291" y="124" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00035" x="243" y="164" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00036" x="0" y="264" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00037" x="49" y="220" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00038" x="98" y="176" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00039" x="0" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00040" x="49" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00041" x="98" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00042" x="331" y="281" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00043" x="0" y="348" w="45" h="27" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="psychic_00044" x="290" y="164" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00045" x="243" y="204" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00046" x="147" y="130" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00047" x="293" y="0" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00048" x="0" y="306" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00049" x="0" y="132" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00050" x="49" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00051" x="98" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00052" x="150" y="342" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00053" x="242" y="244" w="32" h="34" pX="0.5" pY="0.5" oX="69" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00054" x="290" y="204" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00055" x="49" y="262" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00056" x="147" y="172" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00057" x="146" y="214" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00058" x="98" y="218" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00059" x="147" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00060" x="0" y="176" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00061" x="49" y="132" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00062" x="171" y="298" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00063" x="48" y="302" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00064" x="95" y="302" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00065" x="96" y="262" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00066" x="146" y="256" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00067" x="196" y="86" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00068" x="195" y="128" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00069" x="98" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00070" x="147" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00071" x="196" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00072" x="201" y="292" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00073" x="45" y="348" w="45" h="27" pX="0.5" pY="0.5" oX="54" oY="52" oW="160" oH="144"/>
+    <sprite n="psychic_00074" x="195" y="212" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00075" x="194" y="252" w="47" h="40" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00076" x="195" y="170" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00077" x="245" y="42" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00078" x="293" y="42" w="48" h="42" pX="0.5" pY="0.5" oX="60" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00079" x="0" y="220" w="49" h="44" pX="0.5" pY="0.5" oX="63" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00080" x="49" y="176" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00081" x="98" y="132" w="49" h="44" pX="0.5" pY="0.5" oX="65" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00082" x="180" y="331" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00083" x="210" y="325" w="30" h="33" pX="0.5" pY="0.5" oX="71" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00084" x="338" y="242" w="30" h="33" pX="0.5" pY="0.5" oX="71" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00085" x="338" y="84" w="32" h="37" pX="0.5" pY="0.5" oX="74" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00086" x="338" y="121" w="32" h="37" pX="0.5" pY="0.5" oX="76" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00087" x="274" y="244" w="32" h="37" pX="0.5" pY="0.5" oX="76" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00088" x="306" y="244" w="32" h="37" pX="0.5" pY="0.5" oX="80" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00089" x="341" y="0" w="33" h="39" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00090" x="341" y="39" w="33" h="39" pX="0.5" pY="0.5" oX="81" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00091" x="361" y="158" w="14" h="28" pX="0.5" pY="0.5" oX="85" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_00092" x="361" y="186" w="14" h="28" pX="0.5" pY="0.5" oX="87" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00093" x="361" y="214" w="14" h="28" pX="0.5" pY="0.5" oX="87" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_00094" x="337" y="164" w="16" h="32" pX="0.5" pY="0.5" oX="90" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_00095" x="337" y="196" w="16" h="32" pX="0.5" pY="0.5" oX="92" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00096" x="357" y="314" w="16" h="32" pX="0.5" pY="0.5" oX="92" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_00097" x="268" y="343" w="16" h="32" pX="0.5" pY="0.5" oX="96" oY="32" oW="160" oH="144"/>
+    <sprite n="psychic_00098" x="284" y="343" w="16" h="32" pX="0.5" pY="0.5" oX="98" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00099" x="300" y="343" w="16" h="32" pX="0.5" pY="0.5" oX="98" oY="31" oW="160" oH="144"/>
+    <sprite n="psychic_00100" x="48" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00101" x="97" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00102" x="194" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00103" x="242" y="212" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00104" x="241" y="252" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00105" x="374" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00106" x="146" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00107" x="195" y="89" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00108" x="244" y="45" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00109" x="243" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00110" x="48" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00111" x="97" y="221" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00112" x="194" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00113" x="242" y="213" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00114" x="241" y="253" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00115" x="374" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00116" x="146" y="178" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00117" x="195" y="90" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00118" x="244" y="46" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00119" x="243" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00120" x="48" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00121" x="97" y="222" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00122" x="194" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00123" x="242" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00124" x="241" y="254" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00125" x="374" y="2" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00126" x="146" y="179" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00127" x="195" y="91" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00128" x="244" y="47" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00129" x="243" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00130" x="48" y="267" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00131" x="97" y="223" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00132" x="194" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00133" x="242" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00134" x="241" y="255" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00135" x="374" y="3" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00136" x="146" y="180" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00137" x="195" y="92" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00138" x="244" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00139" x="243" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00140" x="48" y="268" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00141" x="97" y="224" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00142" x="194" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00143" x="242" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00144" x="241" y="256" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00145" x="374" y="4" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00146" x="146" y="181" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00147" x="195" y="93" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00148" x="244" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00149" x="243" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00150" x="48" y="269" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00151" x="97" y="225" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00152" x="194" y="219" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00153" x="242" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00154" x="241" y="257" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00155" x="374" y="5" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00156" x="146" y="182" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00157" x="195" y="94" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00158" x="244" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00159" x="243" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00160" x="48" y="270" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00161" x="97" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00162" x="194" y="220" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00163" x="242" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00164" x="241" y="258" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00165" x="374" y="6" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00166" x="146" y="183" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00167" x="195" y="95" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_00168" x="244" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

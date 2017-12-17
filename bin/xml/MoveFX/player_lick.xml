@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f9cdd837eafca79403e4ec5e7bbc4a52:389b01248be399e590ba5928768500a0:e53615ec30c17dd1eb4f0ccdd5a1af52$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_lick.png" width="96" height="96">
+    <sprite n="lick_00000" x="80" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00001" x="64" y="40" w="16" h="8" pX="0.5" pY="0.5" oX="120" oY="44" oW="160" oH="144"/>
+    <sprite n="lick_00002" x="80" y="40" w="16" h="8" pX="0.5" pY="0.5" oX="120" oY="44" oW="160" oH="144"/>
+    <sprite n="lick_00003" x="64" y="48" w="16" h="8" pX="0.5" pY="0.5" oX="120" oY="44" oW="160" oH="144"/>
+    <sprite n="lick_00004" x="48" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="36" oW="160" oH="144"/>
+    <sprite n="lick_00005" x="64" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="36" oW="160" oH="144"/>
+    <sprite n="lick_00006" x="80" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="36" oW="160" oH="144"/>
+    <sprite n="lick_00007" x="48" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="36" oW="160" oH="144"/>
+    <sprite n="lick_00008" x="0" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00009" x="0" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00010" x="0" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00011" x="0" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00012" x="16" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00013" x="16" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00014" x="16" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00015" x="16" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00016" x="81" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00017" x="82" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00018" x="83" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00019" x="32" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00020" x="48" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00021" x="64" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00022" x="84" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00023" x="85" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00024" x="86" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00025" x="80" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00026" x="32" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00027" x="32" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+    <sprite n="lick_00028" x="87" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00029" x="88" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00030" x="89" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_00031" x="32" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="120" oY="28" oW="160" oH="144"/>
+</TextureAtlas>
