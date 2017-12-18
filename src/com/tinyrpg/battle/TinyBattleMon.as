@@ -69,7 +69,7 @@ package com.tinyrpg.battle
 		private var m_battleEvent				: TinyBattleEventSequence;
 		private var m_battleIntroWhirl			: TinySpriteSheet;
 		private var m_battleEmptyDialogBox		: TinyTitleBox;
-		private var itemSelectorList			: TinyBattleItemList;
+		private var m_itemSelectorList			: TinyBattleItemList;
 		private var isForcedSwitch				: Boolean = false;
 		public var wasLastSwitchEnemy			: Boolean = false;
 		public var wasLastTurnEnemy				: Boolean = false;
@@ -130,10 +130,10 @@ package com.tinyrpg.battle
 			m_switchMonMenu.visible = false;
 			
 			// Item select menu
-			this.itemSelectorList = new TinyBattleItemList( this.m_testPlayerTrainer );
-			this.itemSelectorList.x = 28;
-			this.itemSelectorList.y = 49;
-			this.itemSelectorList.visible = false;
+			m_itemSelectorList = new TinyBattleItemList( m_testPlayerTrainer );
+			m_itemSelectorList.x = 22;
+			m_itemSelectorList.y = 49;
+			m_itemSelectorList.visible = false;
 			
 			// Player ball display
 			m_playerBallDisplay = new TinyBattleBallDisplay(m_testPlayerTrainer);
@@ -250,7 +250,7 @@ package com.tinyrpg.battle
 			this.addChild(m_battleCommandMenu);
 			this.addChild(m_moveSelectMenu);
 			this.addChild(m_switchMonMenu);
-			this.addChild( this.itemSelectorList );
+			this.addChild(m_itemSelectorList );
 			
 			// If this isn't a wild encounter, add the enemy trainer ball display
 			if (!m_isWildEncounter) 
@@ -397,11 +397,11 @@ package com.tinyrpg.battle
 				case TinyBattleMonEvent.ITEM_SELECTED:
 					
 					// Pass control to the item selector
-					this.itemSelectorList.show();
-					TinyInputManager.getInstance().setTarget( this.itemSelectorList );
+					m_itemSelectorList.show();
+					TinyInputManager.getInstance().setTarget( m_itemSelectorList );
 					
-					this.itemSelectorList.addEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
-					this.itemSelectorList.addEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
+					m_itemSelectorList.addEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
+					m_itemSelectorList.addEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 					break;
 					
 				case TinyBattleMonEvent.RUN_SELECTED:
@@ -490,18 +490,18 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('onItemUsed', this);
 			
+			// Hide the item list menu
+			m_itemSelectorList.hide();
+			
 			// Hide the battle command menu
-			m_battleCommandMenu.hide();
+//			m_battleCommandMenu.hide();
 			
 			// Clean up
-			m_moveSelectMenu.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
-			m_moveSelectMenu.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
+			m_itemSelectorList.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
+			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 			
 			// Set player's battle command	
 //			this.battleCommandRunner.commandSelected( new TinyBattleCommandSwitch( this, TinyBattleCommand.USER_PLAYER, event.mon, this.isForcedSwitch ) );
-			
-			// Clear forced switch flag
-			this.isForcedSwitch = false;
 		}
 		
 		private function onItemCancelled( event : TinyInputEvent ) : void
@@ -509,14 +509,14 @@ package com.tinyrpg.battle
 			TinyLogManager.log('onItemCancelled', this);
 			
 			// Hide the item menu
-			this.itemSelectorList.hide();
+			m_itemSelectorList.hide();
 			
 			// Return control to the command menu
 			TinyInputManager.getInstance().setTarget( m_battleCommandMenu );
 			
 			// Clean up
-			m_switchMonMenu.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onSwitchSelected );
-			m_switchMonMenu.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );  
+			m_itemSelectorList.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onSwitchSelected );
+			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );  
 		}
 		
 		public function getBattlePalette() : TinyBattlePalette

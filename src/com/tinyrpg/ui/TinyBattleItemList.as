@@ -6,6 +6,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinyContentBox;
+	import com.tinyrpg.display.IShowHideObject;	
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.display.TinySelectableItemItem;
 	import com.tinyrpg.events.TinyBattleMonEvent;
@@ -16,7 +17,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyBattleItemList extends TinySelectList 
+	public class TinyBattleItemList extends TinySelectList implements IShowHideObject 
 	{
 		private var trainer : TinyTrainer;
 		private var descriptionTextField : TextField;
@@ -43,16 +44,17 @@ package com.tinyrpg.ui
 			// Add CANCEL item
 			newItemArray.push( new TinySelectableItem( CANCEL_OPTION, newItemArray.length ) );
 			
-			super( '', newItemArray, 124, 48, 10, 1, 0 );
+			super( '', newItemArray, 130, 48, 10, 1, 0 );
 			
 			// Make description text field
-			this.descriptionTextField = TinyFontManager.returnTextField('none');
+			this.descriptionTextField = TinyFontManager.returnTextField('left', false, true, true);
 			this.descriptionTextField.width = 141;
 			this.descriptionTextField.height = 20;
+			this.descriptionTextField.y = -4;
 			
 			// Make description content box
 			this.descriptionBox = new TinyContentBox( this.descriptionTextField, 144, 33 );
-			this.descriptionBox.x = -20;
+			this.descriptionBox.x = -14;
 			this.descriptionBox.y = 55;
 			
 			// Add 'em up
@@ -80,18 +82,13 @@ package com.tinyrpg.ui
 				{
 					( selectableItem as TinySelectableItemItem ).updateQuantity();	
 				}
-			}
-			
-			// TODO: Show the description dialog
+			}	
 		}
 
 		public function hide() : void
 		{
 			TinyLogManager.log('hide', this);
-			
 			this.visible = false;
-			
-			// TODO: Hide the description dialog
 		}
 		
 		override protected function onControlAdded( e : TinyInputEvent ) : void
@@ -101,13 +98,14 @@ package com.tinyrpg.ui
 			if ( this.itemArray.length > 0 ) 
 			{
 				// TODO: Update helper box
-				if ( !this.selectedItem.textString == CANCEL_OPTION )
+				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
+					this.setDescriptionText( itemText );
 				}
 				else
 				{
-					
+					this.setDescriptionText( '' );
 				}
 			}
 		}
@@ -116,7 +114,8 @@ package com.tinyrpg.ui
 		{
 			super.onControlRemoved( e );
 			
-			// TODO: Empty the helper dialog box
+			// Empty the description dialog box
+			this.setDescriptionText( '' );
 		}
 
 		override protected function onArrowUp( e : TinyInputEvent ) : void
@@ -124,15 +123,16 @@ package com.tinyrpg.ui
 			if ( this.itemArray.length > 0 )
 			{
 				super.onArrowUp( e );
-				
-				// TODO: Update helper box
-				if ( !this.selectedItem.textString == CANCEL_OPTION )
+								
+				// TODO: Update description box
+				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
+					this.setDescriptionText( itemText );
 				}
 				else
 				{
-					
+					this.setDescriptionText( '' );	
 				}
 			}
 		}
@@ -142,15 +142,16 @@ package com.tinyrpg.ui
 			if ( this.itemArray.length > 0 ) 
 			{
 				super.onArrowDown( e );
-				
+								
 				// TODO: Update helper box			
-				if ( !this.selectedItem.textString == CANCEL_OPTION )
+				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
+					this.setDescriptionText( itemText );
 				}
 				else
 				{
-					
+					this.setDescriptionText( '' );
 				}
 			}
 		}
@@ -170,6 +171,11 @@ package com.tinyrpg.ui
 					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ) ) );
 				}
 			}
+		}
+		
+		private function setDescriptionText( description : String ) : void 
+		{
+			this.descriptionTextField.htmlText = TinyFontManager.returnHtmlText( description, 'dialogText' );
 		}
 		
 		private function getItemByID( targetID : int ) : TinySelectableItem

@@ -117,6 +117,11 @@ package com.tinyrpg.display
 				if ( this.palette.isFull() ) break;
 			}
 			
+			while ( !this.palette.isFull() ) {
+				var color : TinyColor = TinyColor.newFromHex32( 0 );
+				this.palette.addColor( color );
+			}
+						
 			// Sort palette by luminance
 			this.palette.sort();
 			

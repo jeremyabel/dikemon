@@ -1,93 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ITEMS>
-	<ITEM>
-		<NAME>OK Snack</NAME>
-		<DESCRIPTION>It's just OK...</DESCRIPTION>
-		<STATS>
-			<COST>50</COST>
-			<VALUE>35</VALUE>
-			<HEALING>TRUE</HEALING>
-			<REVIVES>FALSE</REVIVES>
-			<USEONENEMIES>FALSE</USEONENEMIES>
-			<EFFECT>45</EFFECT>
-			<ANIMATION>SPARKLES 1</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
-	<ITEM>
-		<NAME>Decent Burrito</NAME>
-		<DESCRIPTION>Not the best burrito</DESCRIPTION>
-		<STATS>
-			<COST>50</COST>
-			<VALUE>35</VALUE>
-			<HEALING>TRUE</HEALING>
-			<REVIVES>FALSE</REVIVES>
-			<USEONENEMIES>FALSE</USEONENEMIES>
-			<EFFECT>200</EFFECT>
-			<ANIMATION>POISON 1</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
-	<ITEM>
-		<NAME>OK Dumpling</NAME>
-		<DESCRIPTION>They're pretty greasy...</DESCRIPTION>
-		<STATS>
-			<COST>50</COST>
-			<VALUE>35</VALUE>
-			<HEALING>TRUE</HEALING>
-			<REVIVES>FALSE</REVIVES>
-			<USEONENEMIES>FALSE</USEONENEMIES>
-			<EFFECT>75</EFFECT>
-			<ANIMATION>SPARKLES 2</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
-	<ITEM>
-		<NAME>Good Dumpling</NAME>
-		<DESCRIPTION>These are great!</DESCRIPTION>
-		<STATS>
-			<COST>50</COST>
-			<VALUE>35</VALUE>
-			<HEALING>TRUE</HEALING>
-			<REVIVES>TRUE</REVIVES>
-			<USEONENEMIES>FALSE</USEONENEMIES>
-			<EFFECT>200</EFFECT>
-			<ANIMATION>SPARKLES 2</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
-	<ITEM>
-		<NAME>Stinky Meatball</NAME>
-		
-		<DESCRIPTION>Ew, gross!</DESCRIPTION>
-		<STATS>
-			<COST>50</COST>
-			<VALUE>35</VALUE>
-			<HEALING>FALSE</HEALING>
-			<REVIVES>FALSE</REVIVES>
-			<USEONENEMIES>TRUE</USEONENEMIES>
-			<EFFECT>100</EFFECT>
-			<ANIMATION>SPARKLES 2</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
-	<ITEM>
-		<NAME>Revive! Soda</NAME>
-		<DESCRIPTION>"The cold, crisp taste of HP™!"</DESCRIPTION>
-		<STATS>
-			<COST>100</COST>
-			<HEALING>TRUE</HEALING>
-			<REVIVES>TRUE</REVIVES>
-			<USEONENEMIES>FALSE</USEONENEMIES>
-			<EFFECT>100</EFFECT>
-			<ANIMATION>REVIVE</ANIMATION>
-			<IMPORTANT>FALSE</IMPORTANT>
-		</STATS>
-	</ITEM>
-	
+  <ITEM>
+    <NAME>Potion</NAME>
+    <RENAME>OKFeels™ Spray</RENAME>
+    <PRICE>200</PRICE>
+    <DESCRIPTION>Cheapo healing spray from Feels™ Inc. It works OK I guess.</DESCRIPTION>
+    <EFFECT>HP_20</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Super Potion</NAME>
+    <RENAME>GoodFeels™ Spray</RENAME>
+    <PRICE>700</PRICE>
+    <DESCRIPTION>Moderate price, moderate healing. Simple as that!</DESCRIPTION>
+    <EFFECT>HP_50</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Hyper Potion</NAME>
+    <RENAME>GreatFeels™ Spray</RENAME>
+    <PRICE>1500</PRICE>
+    <DESCRIPTION>Oh dang, this spray heals real good! Not the best but hey.</DESCRIPTION>
+    <EFFECT>HP_200</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Max Potion</NAME>
+    <RENAME>BestFeels™ Spray</RENAME>
+    <PRICE>2500</PRICE>
+    <DESCRIPTION>Throw all those other sprays away, this one's the best!</DESCRIPTION>
+    <EFFECT>HP_ALL</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Revive</NAME>
+    <RENAME>Life Cake</RENAME>
+    <PRICE>1500</PRICE>
+    <DESCRIPTION>You got dead Dikémon? Fix 'em up quick with this weird cake.</DESCRIPTION>
+    <EFFECT>REVIVE</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Repel</NAME>
+    <RENAME>GoAway™ Spray</RENAME>
+    <PRICE>400</PRICE>
+    <DESCRIPTION>Go away! Wild Dikémon won't go near you when you use this.</DESCRIPTION>
+    <EFFECT>REPEL_100</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Ether</NAME>
+    <RENAME>Fight Juice</RENAME>
+    <PRICE>600</PRICE>
+    <DESCRIPTION>You need Fight Juice! Drink it down! Use moves more!</DESCRIPTION>
+    <EFFECT>PP_10</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Max Ether</NAME>
+    <RENAME>Mega Fight Juice</RENAME>
+    <PRICE>1000</PRICE>
+    <DESCRIPTION>FIGHT JUCE MEGA SIZE! DRINK FIGHT JUICE! CHUG IT DOWN!</DESCRIPTION>
+    <EFFECT>PP_ALL</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Antidote</NAME>
+    <RENAME>Barf Fix</RENAME>
+    <PRICE>100</PRICE>
+    <DESCRIPTION>You got that barf problem? Eat this thing, it'll fix it.</DESCRIPTION>
+    <EFFECT>-POISON</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Paralyze Heal</NAME>
+    <RENAME>Unsticky Goop</RENAME>
+    <PRICE>200</PRICE>
+    <DESCRIPTION>You sticky? Clean that gunk right off with this goop.</DESCRIPTION>
+    <EFFECT>-PARALYZE</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Burn Heal</NAME>
+    <RENAME>Cool Jelly</RENAME>
+    <PRICE>250</PRICE>
+    <DESCRIPTION>Rub this stuff all around your tum-tum to cool off.</DESCRIPTION>
+    <EFFECT>-BURN</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Awakening</NAME>
+    <RENAME>Big Noise Box</RENAME>
+    <PRICE>250</PRICE>
+    <DESCRIPTION>Hey, wake up! There's no time to sleep! Use this thing to wake up.</DESCRIPTION>
+    <EFFECT>-SLEEP</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Pokeball</NAME>
+    <RENAME>Dikéball</RENAME>
+    <PRICE>200</PRICE>
+    <DESCRIPTION>Catch wild Dikémon with this weird ball. It smells kinda gross.</DESCRIPTION>
+    <EFFECT>CATCHRATE_1</EFFECT>
+  </ITEM>
+  <ITEM>
+    <NAME>Ultraball</NAME>
+    <RENAME>Dikéball 2.0</RENAME>
+    <PRICE>600</PRICE>
+    <DESCRIPTION>Catch wild Dikémon with this weird ball. Works real good.</DESCRIPTION>
+    <EFFECT>CATCHRATE_2</EFFECT>
+  </ITEM>
 </ITEMS>

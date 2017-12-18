@@ -21,7 +21,7 @@ package com.tinyrpg.display
 			
 			// Make quantity text field
 			this.quantityField = TinyFontManager.returnTextField( 'right' );
-			this.quantityField.x = 126;
+			this.quantityField.x = 124;
 			this.quantityField.y = 4;
 			
 			// Add 'em up
