@@ -10,12 +10,18 @@ package com.tinyrpg.display
 	public class TinyContentBox extends Sprite 
 	{
 		public var content : DisplayObject;
-		public var containerBox : Sprite; 
+		public var containerBox : Sprite;
+		
+		protected var boxWidth : uint;
+		protected var boxHeight : uint; 
 		
 		public function TinyContentBox(content : DisplayObject, width : uint = 0, height : uint = 0, opaque : Boolean = false)
 		{
 			this.content = content;
 			this.containerBox = new Sprite;
+			
+			this.boxWidth = width;
+			this.boxHeight = height;
 			
 			var cornerUpLeft 	: DisplayObject;
 			var cornerUpRight	: DisplayObject;

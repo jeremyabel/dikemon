@@ -17,7 +17,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyBattleItemList extends TinySelectList implements IShowHideObject 
+	public class TinyBattleItemList extends TinyScrollableSelectList implements IShowHideObject 
 	{
 		private var trainer : TinyTrainer;
 		private var descriptionTextField : TextField;
@@ -44,7 +44,7 @@ package com.tinyrpg.ui
 			// Add CANCEL item
 			newItemArray.push( new TinySelectableItem( CANCEL_OPTION, newItemArray.length ) );
 			
-			super( '', newItemArray, 130, 48, 10, 1, 0 );
+			super( '', newItemArray, 130, 49, 12, 2, 0, 4 );
 			
 			// Make description text field
 			this.descriptionTextField = TinyFontManager.returnTextField('left', false, true, true);
@@ -55,7 +55,7 @@ package com.tinyrpg.ui
 			// Make description content box
 			this.descriptionBox = new TinyContentBox( this.descriptionTextField, 144, 33 );
 			this.descriptionBox.x = -14;
-			this.descriptionBox.y = 55;
+			this.descriptionBox.y = 56;
 			
 			// Add 'em up
 			this.addChild( this.descriptionBox );
@@ -97,7 +97,7 @@ package com.tinyrpg.ui
 			
 			if ( this.itemArray.length > 0 ) 
 			{
-				// TODO: Update helper box
+				// Update or clera description box
 				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
@@ -124,7 +124,7 @@ package com.tinyrpg.ui
 			{
 				super.onArrowUp( e );
 								
-				// TODO: Update description box
+				// Update or clera description box
 				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
@@ -143,7 +143,7 @@ package com.tinyrpg.ui
 			{
 				super.onArrowDown( e );
 								
-				// TODO: Update helper box			
+				// Update or clera description box			
 				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
