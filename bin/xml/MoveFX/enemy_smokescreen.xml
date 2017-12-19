@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ff6f029dc7fedb861e3c1371c11e9033:2945d9b9a3c750ba3e4b901fead8c600:5201429c9aabec87c908bc4e5c9b959d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_smokescreen.png" width="380" height="380">
+    <sprite n="smokescreen_enemy_0" x="125" y="81" w="12" h="12" pX="0.5" pY="0.5" oX="100" oY="33" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_1" x="360" y="98" w="12" h="12" pX="0.5" pY="0.5" oX="98" oY="32" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_2" x="355" y="327" w="12" h="12" pX="0.5" pY="0.5" oX="96" oY="35" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_3" x="368" y="303" w="12" h="12" pX="0.5" pY="0.5" oX="94" oY="39" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_4" x="368" y="315" w="12" h="12" pX="0.5" pY="0.5" oX="92" oY="45" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_5" x="367" y="327" w="12" h="12" pX="0.5" pY="0.5" oX="90" oY="52" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_6" x="367" y="339" w="12" h="12" pX="0.5" pY="0.5" oX="88" oY="47" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_7" x="345" y="351" w="12" h="12" pX="0.5" pY="0.5" oX="86" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_8" x="357" y="351" w="12" h="12" pX="0.5" pY="0.5" oX="84" oY="41" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_9" x="345" y="363" w="12" h="12" pX="0.5" pY="0.5" oX="82" oY="40" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_10" x="360" y="163" w="12" h="12" pX="0.5" pY="0.5" oX="80" oY="43" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_11" x="344" y="303" w="12" h="12" pX="0.5" pY="0.5" oX="78" oY="47" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_12" x="297" y="359" w="12" h="12" pX="0.5" pY="0.5" oX="76" oY="53" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_13" x="360" y="175" w="12" h="12" pX="0.5" pY="0.5" oX="74" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_14" x="309" y="359" w="12" h="12" pX="0.5" pY="0.5" oX="72" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_15" x="344" y="315" w="12" h="12" pX="0.5" pY="0.5" oX="70" oY="51" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_16" x="343" y="327" w="12" h="12" pX="0.5" pY="0.5" oX="68" oY="49" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_17" x="343" y="339" w="12" h="12" pX="0.5" pY="0.5" oX="66" oY="48" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_18" x="356" y="303" w="12" h="12" pX="0.5" pY="0.5" oX="64" oY="51" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_19" x="356" y="315" w="12" h="12" pX="0.5" pY="0.5" oX="62" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_20" x="355" y="339" w="12" h="12" pX="0.5" pY="0.5" oX="60" oY="61" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_21" x="328" y="347" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_22" x="321" y="359" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_23" x="333" y="359" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_24" x="363" y="291" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_25" x="300" y="303" w="22" h="22" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_26" x="322" y="303" w="22" h="22" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_27" x="299" y="325" w="22" h="22" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_28" x="321" y="325" w="22" h="22" pX="0.5" pY="0.5" oX="53" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_29" x="141" y="309" w="30" h="30" pX="0.5" pY="0.5" oX="49" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_30" x="141" y="339" w="30" h="30" pX="0.5" pY="0.5" oX="49" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_31" x="267" y="348" w="30" h="30" pX="0.5" pY="0.5" oX="49" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_32" x="330" y="163" w="30" h="30" pX="0.5" pY="0.5" oX="49" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_33" x="75" y="245" w="32" h="32" pX="0.5" pY="0.5" oX="48" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_34" x="75" y="277" w="32" h="32" pX="0.5" pY="0.5" oX="48" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_35" x="235" y="348" w="32" h="32" pX="0.5" pY="0.5" oX="48" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_36" x="75" y="213" w="33" h="32" pX="0.5" pY="0.5" oX="47" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_37" x="340" y="111" w="40" h="40" pX="0.5" pY="0.5" oX="44" oY="54" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_38" x="74" y="161" w="43" h="40" pX="0.5" pY="0.5" oX="41" oY="54" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_39" x="75" y="121" w="46" h="40" pX="0.5" pY="0.5" oX="38" oY="54" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_40" x="75" y="81" w="50" h="40" pX="0.5" pY="0.5" oX="34" oY="54" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_41" x="322" y="213" w="31" h="8" pX="0.5" pY="0.5" oX="29" oY="76" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_42" x="197" y="364" w="31" h="8" pX="0.5" pY="0.5" oX="25" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_43" x="311" y="227" w="59" h="13" pX="0.5" pY="0.5" oX="21" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_44" x="171" y="296" w="63" h="12" pX="0.5" pY="0.5" oX="16" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_45" x="75" y="309" w="66" h="11" pX="0.5" pY="0.5" oX="12" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_46" x="75" y="320" w="66" h="11" pX="0.5" pY="0.5" oX="9" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_47" x="75" y="342" w="66" h="10" pX="0.5" pY="0.5" oX="6" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_48" x="234" y="301" w="66" h="9" pX="0.5" pY="0.5" oX="3" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_49" x="171" y="308" w="63" h="8" pX="0.5" pY="0.5" oX="2" oY="76" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_50" x="305" y="275" w="59" h="8" pX="0.5" pY="0.5" oX="1" oY="76" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_51" x="324" y="205" w="54" h="8" pX="0.5" pY="0.5" oX="2" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_52" x="152" y="34" w="77" h="13" pX="0.5" pY="0.5" oX="3" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_53" x="125" y="114" w="73" h="12" pX="0.5" pY="0.5" oX="6" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_54" x="184" y="212" w="69" h="11" pX="0.5" pY="0.5" oX="9" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_55" x="75" y="331" w="66" h="11" pX="0.5" pY="0.5" oX="9" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_56" x="75" y="352" w="66" h="10" pX="0.5" pY="0.5" oX="6" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_57" x="234" y="310" w="66" h="9" pX="0.5" pY="0.5" oX="3" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_58" x="171" y="316" w="63" h="8" pX="0.5" pY="0.5" oX="2" oY="76" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_59" x="305" y="283" w="59" h="8" pX="0.5" pY="0.5" oX="1" oY="76" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_60" x="302" y="267" w="61" h="8" pX="0.5" pY="0.5" oX="2" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_61" x="229" y="34" w="77" h="13" pX="0.5" pY="0.5" oX="3" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_62" x="214" y="88" w="73" h="12" pX="0.5" pY="0.5" oX="6" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_63" x="253" y="213" w="69" h="11" pX="0.5" pY="0.5" oX="9" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_64" x="171" y="324" w="64" h="11" pX="0.5" pY="0.5" oX="12" oY="75" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_65" x="107" y="282" w="67" h="11" pX="0.5" pY="0.5" oX="10" oY="74" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_66" x="140" y="87" w="74" h="11" pX="0.5" pY="0.5" oX="4" oY="73" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_67" x="225" y="76" w="75" h="12" pX="0.5" pY="0.5" oX="2" oY="72" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_68" x="75" y="51" w="77" h="14" pX="0.5" pY="0.5" oX="1" oY="70" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_69" x="287" y="98" w="73" h="13" pX="0.5" pY="0.5" oX="2" oY="70" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_70" x="0" y="0" w="77" h="19" pX="0.5" pY="0.5" oX="3" oY="69" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_71" x="0" y="157" w="73" h="19" pX="0.5" pY="0.5" oX="6" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_72" x="188" y="177" w="69" h="18" pX="0.5" pY="0.5" oX="9" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_73" x="238" y="257" w="64" h="18" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_74" x="257" y="178" w="67" h="18" pX="0.5" pY="0.5" oX="10" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_75" x="0" y="210" w="74" h="17" pX="0.5" pY="0.5" oX="4" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_76" x="0" y="227" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_77" x="0" y="19" w="77" h="17" pX="0.5" pY="0.5" oX="1" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_78" x="227" y="47" w="73" h="16" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_79" x="188" y="195" w="69" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_80" x="175" y="240" w="67" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_81" x="269" y="111" w="71" h="16" pX="0.5" pY="0.5" oX="2" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_82" x="152" y="47" w="75" h="16" pX="0.5" pY="0.5" oX="1" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_83" x="0" y="244" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_84" x="0" y="261" w="75" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_85" x="0" y="278" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_86" x="77" y="0" w="77" h="17" pX="0.5" pY="0.5" oX="1" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_87" x="125" y="98" w="73" h="16" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_88" x="261" y="143" w="69" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_89" x="242" y="240" w="67" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_90" x="269" y="127" w="71" h="16" pX="0.5" pY="0.5" oX="2" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_91" x="75" y="65" w="75" h="16" pX="0.5" pY="0.5" oX="1" oY="68" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_92" x="0" y="295" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_93" x="0" y="312" w="75" h="17" pX="0.5" pY="0.5" oX="3" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_94" x="198" y="100" w="71" h="17" pX="0.5" pY="0.5" oX="6" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_95" x="108" y="222" w="69" h="16" pX="0.5" pY="0.5" oX="9" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_96" x="107" y="293" w="64" h="16" pX="0.5" pY="0.5" oX="12" oY="67" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_97" x="107" y="255" w="67" h="17" pX="0.5" pY="0.5" oX="10" oY="66" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_98" x="306" y="34" w="74" h="17" pX="0.5" pY="0.5" oX="4" oY="65" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_99" x="0" y="329" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="64" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_100" x="0" y="36" w="75" h="18" pX="0.5" pY="0.5" oX="1" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_101" x="154" y="0" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="63" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_102" x="77" y="17" w="75" h="18" pX="0.5" pY="0.5" oX="3" oY="61" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_103" x="0" y="362" w="71" h="18" pX="0.5" pY="0.5" oX="6" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_104" x="71" y="362" w="69" h="18" pX="0.5" pY="0.5" oX="9" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_105" x="174" y="257" w="64" h="18" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_106" x="263" y="160" w="67" h="18" pX="0.5" pY="0.5" oX="10" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_107" x="0" y="176" w="74" h="17" pX="0.5" pY="0.5" oX="4" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_108" x="152" y="17" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_109" x="0" y="72" w="75" h="17" pX="0.5" pY="0.5" oX="1" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_110" x="121" y="126" w="71" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_111" x="192" y="128" w="69" h="18" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_112" x="257" y="196" w="67" h="17" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_113" x="121" y="160" w="71" h="16" pX="0.5" pY="0.5" oX="2" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_114" x="0" y="346" w="75" h="16" pX="0.5" pY="0.5" oX="1" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_115" x="229" y="0" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_116" x="227" y="17" w="75" h="17" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_117" x="0" y="89" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_118" x="304" y="0" w="75" h="17" pX="0.5" pY="0.5" oX="1" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_119" x="121" y="143" w="71" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_120" x="192" y="146" w="69" h="18" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_121" x="177" y="223" w="67" h="17" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_122" x="117" y="193" w="71" h="16" pX="0.5" pY="0.5" oX="2" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_123" x="77" y="35" w="75" h="16" pX="0.5" pY="0.5" oX="1" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_124" x="302" y="17" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_125" x="0" y="106" w="75" h="17" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_126" x="117" y="176" w="71" h="17" pX="0.5" pY="0.5" oX="6" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_127" x="244" y="224" w="67" h="16" pX="0.5" pY="0.5" oX="9" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_128" x="241" y="275" w="64" h="16" pX="0.5" pY="0.5" oX="12" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_129" x="108" y="238" w="67" h="17" pX="0.5" pY="0.5" oX="10" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_130" x="0" y="193" w="74" h="17" pX="0.5" pY="0.5" oX="4" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_131" x="0" y="123" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_132" x="0" y="54" w="75" h="18" pX="0.5" pY="0.5" oX="1" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_133" x="0" y="140" w="75" h="17" pX="0.5" pY="0.5" oX="2" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_134" x="300" y="51" w="75" h="12" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_135" x="198" y="117" w="71" h="11" pX="0.5" pY="0.5" oX="6" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_136" x="107" y="272" w="67" h="10" pX="0.5" pY="0.5" oX="9" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_137" x="241" y="291" w="64" h="10" pX="0.5" pY="0.5" oX="12" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_138" x="174" y="275" w="67" h="11" pX="0.5" pY="0.5" oX="10" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_139" x="300" y="76" w="74" h="11" pX="0.5" pY="0.5" oX="4" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_140" x="152" y="63" w="75" h="12" pX="0.5" pY="0.5" oX="2" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_141" x="227" y="63" w="75" h="13" pX="0.5" pY="0.5" oX="1" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_142" x="192" y="164" w="71" h="13" pX="0.5" pY="0.5" oX="2" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_143" x="235" y="319" w="64" h="10" pX="0.5" pY="0.5" oX="3" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_144" x="235" y="329" w="64" h="10" pX="0.5" pY="0.5" oX="6" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_145" x="171" y="335" w="64" h="10" pX="0.5" pY="0.5" oX="9" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_146" x="235" y="339" w="64" h="9" pX="0.5" pY="0.5" oX="12" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_147" x="174" y="286" w="67" h="10" pX="0.5" pY="0.5" oX="10" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_148" x="300" y="87" w="74" h="11" pX="0.5" pY="0.5" oX="4" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_149" x="150" y="75" w="75" h="12" pX="0.5" pY="0.5" oX="2" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_150" x="302" y="63" w="75" h="13" pX="0.5" pY="0.5" oX="1" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_151" x="113" y="209" w="71" h="13" pX="0.5" pY="0.5" oX="2" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_152" x="309" y="250" w="64" h="8" pX="0.5" pY="0.5" oX="3" oY="61" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_153" x="171" y="355" w="64" h="9" pX="0.5" pY="0.5" oX="6" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_154" x="171" y="345" w="64" h="10" pX="0.5" pY="0.5" oX="9" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_155" x="302" y="258" w="64" h="9" pX="0.5" pY="0.5" oX="12" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_156" x="309" y="240" w="61" h="10" pX="0.5" pY="0.5" oX="16" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_157" x="140" y="369" w="57" h="11" pX="0.5" pY="0.5" oX="21" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_158" x="324" y="193" w="52" h="12" pX="0.5" pY="0.5" oX="25" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_159" x="330" y="151" w="47" h="12" pX="0.5" pY="0.5" oX="29" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_160" x="74" y="201" w="39" h="12" pX="0.5" pY="0.5" oX="34" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_161" x="197" y="372" w="29" h="6" pX="0.5" pY="0.5" oX="38" oY="61" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_162" x="322" y="221" w="29" h="6" pX="0.5" pY="0.5" oX="41" oY="60" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_163" x="305" y="291" w="29" h="6" pX="0.5" pY="0.5" oX="44" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_164" x="334" y="291" w="29" h="6" pX="0.5" pY="0.5" oX="47" oY="59" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_165" x="351" y="221" w="29" h="6" pX="0.5" pY="0.5" oX="48" oY="58" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_166" x="305" y="297" w="29" h="6" pX="0.5" pY="0.5" oX="49" oY="57" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_167" x="334" y="297" w="29" h="6" pX="0.5" pY="0.5" oX="48" oY="56" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_168" x="299" y="347" w="29" h="6" pX="0.5" pY="0.5" oX="47" oY="55" oW="160" oH="144"/>
+    <sprite n="smokescreen_enemy_169" x="297" y="353" w="29" h="6" pX="0.5" pY="0.5" oX="44" oY="55" oW="160" oH="144"/>
+</TextureAtlas>

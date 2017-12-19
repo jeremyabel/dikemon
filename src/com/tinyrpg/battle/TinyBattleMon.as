@@ -187,8 +187,8 @@ package com.tinyrpg.battle
 			);
 			
 			// Load move FX animations for both mons
-			this.m_currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battlePalette );
-			this.m_currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battlePalette );
+			this.m_currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battlePalette, true );
+			this.m_currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battlePalette, false );
 
 			TinyLogManager.log('', this);
 			TinyLogManager.log('==================== START BATTLE MODE ====================', this);

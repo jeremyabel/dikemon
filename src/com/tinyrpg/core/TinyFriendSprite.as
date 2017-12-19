@@ -9,7 +9,7 @@ package com.tinyrpg.core
 	import com.greensock.plugins.TweenPlugin;
 	import com.tinyrpg.display.TinyBattleTurnArrow;
 	import com.tinyrpg.display.TinyDamageNumbers;
-	import com.tinyrpg.display.TinyFXAnim;
+//	import com.tinyrpg.display.TinyFXAnim;
 	import com.tinyrpg.display.TinyModalSelectArrow;
 	import com.tinyrpg.display.TinySpriteSheet;
 	import com.tinyrpg.events.TinyInputEvent;
@@ -61,7 +61,7 @@ package com.tinyrpg.core
 		private var spriteDead : TinySpriteSheet;
 
 		private var selectArrow : TinyModalSelectArrow;
-		private var damageAnim : TinyFXAnim;
+//		private var damageAnim : TinyFXAnim;
 		private var turnArrow : TinyBattleTurnArrow;
 		private var currentSprite : TinySpriteSheet;
 		private var loopTween : TweenMax;
@@ -636,15 +636,15 @@ package com.tinyrpg.core
 			TinyAudioManager.play(TinyAudioManager.HIT_A);
 
 			// Play battle effect animation
-			if (attackType || attackType != '') {
-				this.damageAnim = TinyFXAnim.getAnimFromType(attackType);
-				this.addChild(this.damageAnim);
-				this.damageAnim.playAndRemove();
-				this.damageTime = this.damageAnim.length;
-				TweenMax.delayedCall(this.damageTime, this.removeChild, [ this.damageAnim ], true);
-				delay += this.damageAnim.length;
-			}
-			
+//			if (attackType || attackType != '') {
+//				this.damageAnim = TinyFXAnim.getAnimFromType(attackType);
+//				this.addChild(this.damageAnim);
+//				this.damageAnim.playAndRemove();
+//				this.damageTime = this.damageAnim.length;
+//				TweenMax.delayedCall(this.damageTime, this.removeChild, [ this.damageAnim ], true);
+//				delay += this.damageAnim.length;
+//			}
+//			
 			// Shake it!
 			TweenMax.to(this.spriteHolder, 1, { delay:delay, x:1, repeat:7, yoyo:true, roundProps:[ "x", "y" ], useFrames:true, onComplete:this.idleBattle });
 			
@@ -665,20 +665,20 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log(this.charName + ': ' + 'playFX: ' + fxType, this);
 			
-			// Play fx animation
-			this.damageAnim = TinyFXAnim.getAnimFromType(fxType);
-			this.addChild(this.damageAnim);
-			if (loop) {
-				this.damageAnim.play();
-			} else {
-				this.damageAnim.playAndRemove();
-			}
-			this.damageTime = this.damageAnim.length;
-			
-			// Remove if we're not looping
-			if (!loop) {
-				TweenMax.delayedCall(this.damageTime, this.removeChild, [ this.damageAnim ], true);
-			}
+//			// Play fx animation
+//			this.damageAnim = TinyFXAnim.getAnimFromType(fxType);
+//			this.addChild(this.damageAnim);
+//			if (loop) {
+//				this.damageAnim.play();
+//			} else {
+//				this.damageAnim.playAndRemove();
+//			}
+//			this.damageTime = this.damageAnim.length;
+//			
+//			// Remove if we're not looping
+//			if (!loop) {
+//				TweenMax.delayedCall(this.damageTime, this.removeChild, [ this.damageAnim ], true);
+//			}
 		}
 
 		public function run() : void

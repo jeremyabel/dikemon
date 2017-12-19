@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:38422ab813a2552ed327e7b201e92018:d998a81dd3e4cb6654a39348b7339044:1a4be0ecdc75a00a7317366b8533a833$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_ancient_power.png" width="343" height="343">
+    <sprite n="ancient_power_enemy_00493" x="46" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00494" x="327" y="136" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00495" x="327" y="152" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="49" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00496" x="130" y="322" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="46" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00497" x="146" y="322" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="43" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00498" x="162" y="322" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="40" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00499" x="315" y="311" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00500" x="315" y="327" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="35" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00501" x="311" y="234" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00502" x="327" y="234" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="30" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00503" x="311" y="53" w="27" h="46" pX="0.5" pY="0.5" oX="89" oY="28" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00504" x="143" y="96" w="27" h="45" pX="0.5" pY="0.5" oX="89" oY="26" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00505" x="170" y="94" w="27" h="44" pX="0.5" pY="0.5" oX="89" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00506" x="170" y="138" w="27" h="42" pX="0.5" pY="0.5" oX="89" oY="23" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00507" x="143" y="141" w="27" h="40" pX="0.5" pY="0.5" oX="89" oY="22" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00508" x="170" y="180" w="27" h="38" pX="0.5" pY="0.5" oX="89" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00509" x="175" y="241" w="27" h="36" pX="0.5" pY="0.5" oX="89" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00510" x="308" y="177" w="27" h="34" pX="0.5" pY="0.5" oX="89" oY="20" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00511" x="178" y="312" w="27" h="31" pX="0.5" pY="0.5" oX="89" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00512" x="0" y="171" w="37" h="58" pX="0.5" pY="0.5" oX="79" oY="21" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00513" x="0" y="229" w="37" h="54" pX="0.5" pY="0.5" oX="79" oY="22" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00514" x="0" y="283" w="37" h="50" pX="0.5" pY="0.5" oX="79" oY="23" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00515" x="130" y="195" w="37" h="46" pX="0.5" pY="0.5" oX="79" oY="24" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00516" x="290" y="136" w="37" h="41" pX="0.5" pY="0.5" oX="79" oY="26" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00517" x="197" y="174" w="37" h="37" pX="0.5" pY="0.5" oX="79" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00518" x="234" y="174" w="37" h="35" pX="0.5" pY="0.5" oX="79" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00519" x="271" y="177" w="37" h="33" pX="0.5" pY="0.5" oX="79" oY="26" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00520" x="197" y="211" w="37" h="30" pX="0.5" pY="0.5" oX="79" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00521" x="0" y="0" w="48" h="57" pX="0.5" pY="0.5" oX="68" oY="27" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00522" x="47" y="57" w="48" h="53" pX="0.5" pY="0.5" oX="68" oY="28" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00523" x="95" y="96" w="48" h="49" pX="0.5" pY="0.5" oX="68" oY="29" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00524" x="47" y="110" w="48" h="45" pX="0.5" pY="0.5" oX="68" oY="30" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00525" x="46" y="155" w="48" h="40" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00526" x="290" y="99" w="48" h="37" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00527" x="178" y="277" w="37" h="35" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00528" x="234" y="209" w="37" h="33" pX="0.5" pY="0.5" oX="68" oY="31" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00529" x="205" y="312" w="37" h="30" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00530" x="0" y="57" w="47" h="57" pX="0.5" pY="0.5" oX="58" oY="32" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00531" x="203" y="0" w="47" h="53" pX="0.5" pY="0.5" oX="58" oY="33" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00532" x="37" y="195" w="47" h="49" pX="0.5" pY="0.5" oX="58" oY="34" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00533" x="37" y="293" w="47" h="45" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00534" x="94" y="155" w="47" h="40" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00535" x="131" y="285" w="47" h="37" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00536" x="271" y="210" w="37" h="35" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00537" x="274" y="245" w="37" h="33" pX="0.5" pY="0.5" oX="58" oY="36" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00538" x="242" y="312" w="37" h="30" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00539" x="48" y="0" w="47" h="57" pX="0.5" pY="0.5" oX="48" oY="37" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00540" x="250" y="0" w="47" h="53" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00541" x="37" y="244" w="47" h="49" pX="0.5" pY="0.5" oX="48" oY="39" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00542" x="84" y="244" w="47" h="45" pX="0.5" pY="0.5" oX="48" oY="40" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00543" x="197" y="97" w="47" h="40" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00544" x="197" y="137" w="47" h="37" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00545" x="202" y="242" w="36" h="35" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00546" x="251" y="278" w="36" h="33" pX="0.5" pY="0.5" oX="48" oY="41" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00547" x="238" y="245" w="36" h="30" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00548" x="0" y="114" w="46" h="57" pX="0.5" pY="0.5" oX="38" oY="42" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00549" x="297" y="0" w="46" h="53" pX="0.5" pY="0.5" oX="38" oY="43" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00550" x="84" y="195" w="46" h="49" pX="0.5" pY="0.5" oX="38" oY="44" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00551" x="84" y="289" w="46" h="45" pX="0.5" pY="0.5" oX="38" oY="45" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00552" x="244" y="97" w="46" h="40" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00553" x="244" y="137" w="46" h="37" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00554" x="215" y="277" w="36" h="35" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00555" x="287" y="278" w="36" h="33" pX="0.5" pY="0.5" oX="38" oY="46" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00556" x="279" y="311" w="36" h="30" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00557" x="95" y="0" w="54" h="49" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00558" x="149" y="0" w="54" h="48" pX="0.5" pY="0.5" oX="20" oY="48" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00559" x="95" y="49" w="54" h="47" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00560" x="149" y="48" w="54" h="46" pX="0.5" pY="0.5" oX="20" oY="50" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00561" x="203" y="53" w="54" h="44" pX="0.5" pY="0.5" oX="20" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00562" x="257" y="53" w="54" h="44" pX="0.5" pY="0.5" oX="20" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00563" x="131" y="241" w="44" h="44" pX="0.5" pY="0.5" oX="20" oY="52" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00564" x="167" y="218" w="26" h="23" pX="0.5" pY="0.5" oX="38" oY="51" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00565" x="308" y="211" w="26" h="23" pX="0.5" pY="0.5" oX="38" oY="51" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00566" x="130" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00567" x="202" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00568" x="251" y="311" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00569" x="130" y="289" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00570" x="205" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00571" x="46" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00572" x="130" y="242" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00573" x="130" y="243" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00574" x="203" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00575" x="252" y="311" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00576" x="130" y="290" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00577" x="206" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00578" x="46" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00579" x="204" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00580" x="253" y="311" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00581" x="130" y="291" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00582" x="207" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00583" x="46" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00584" x="205" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00585" x="254" y="311" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00586" x="130" y="292" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00587" x="208" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00588" x="46" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00589" x="206" y="241" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00590" x="255" y="311" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ancient_power_enemy_00591" x="130" y="293" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

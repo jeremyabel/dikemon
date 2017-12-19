@@ -147,10 +147,10 @@ package com.tinyrpg.data
 			);
 		}
 		
-		public function loadMoveFXAnimation( palette : TinyBattlePalette ) : void
+		public function loadMoveFXAnimation( palette : TinyBattlePalette, isEnemy : Boolean ) : void
 		{
-			TinyLogManager.log('loadMoveFXSprite: ' + this.name, this);
-			this.moveFXSAnimation = new TinyMoveFXAnimation( this, false, palette );
+			TinyLogManager.log('loadMoveFXSprite: ' + this.name + ', isEnemy: ' + isEnemy, this);
+			this.moveFXSAnimation = new TinyMoveFXAnimation( this, isEnemy, palette );
 		}
 		
 		public function isSuperEffectiveVs( types : Array ) : Boolean

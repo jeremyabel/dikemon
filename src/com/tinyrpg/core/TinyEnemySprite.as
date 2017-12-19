@@ -10,7 +10,7 @@ package com.tinyrpg.core
 	import com.greensock.plugins.TweenPlugin;
 	import com.tinyrpg.display.TinyBattleTurnArrow;
 	import com.tinyrpg.display.TinyDamageNumbers;
-	import com.tinyrpg.display.TinyFXAnim;
+//	import com.tinyrpg.display.TinyFXAnim;
 	import com.tinyrpg.display.TinyModalSelectArrow;
 	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.misc.TinySpriteConfig;
@@ -37,7 +37,7 @@ package com.tinyrpg.core
 		private var hitSprite		: Sprite;
 		private var selectArrow 	: TinyModalSelectArrow;
 		private var turnArrow		: TinyBattleTurnArrow;
-		private var damageAnim 		: TinyFXAnim;
+//		private var damageAnim 		: TinyFXAnim;
 		private var loopTween 		: TweenMax;
 		
 		private var shakeFollower : Sprite;
@@ -139,17 +139,17 @@ package com.tinyrpg.core
 			
 			var delay : int = 1;
 			
-			// Play battle effect animation
-			if (attackType && attackType != '') 
-			{
-				this.damageAnim = TinyFXAnim.getAnimFromType(attackType);
-				this.addChild(this.damageAnim);
-				this.damageAnim.playAndRemove();
-				this.damageTime = this.damageAnim.length;
-				TweenMax.delayedCall(this.damageTime, this.removeChild, [this.damageAnim], true);
-				delay += this.damageAnim.length;
-			}
-			
+//			// Play battle effect animation
+//			if (attackType && attackType != '') 
+//			{
+//				this.damageAnim = TinyFXAnim.getAnimFromType(attackType);
+//				this.addChild(this.damageAnim);
+//				this.damageAnim.playAndRemove();
+//				this.damageTime = this.damageAnim.length;
+//				TweenMax.delayedCall(this.damageTime, this.removeChild, [this.damageAnim], true);
+//				delay += this.damageAnim.length;
+//			}
+//			
 			// Shake it!
 			TweenMax.to(this.spriteHolder, 1, { delay:delay, x:1, repeat:7, yoyo:true, roundProps:["x", "y"], useFrames:true });
 			

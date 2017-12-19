@@ -164,14 +164,14 @@ package com.tinyrpg.data
 			return ppSum; 
 		}
 		
-		public function loadAllMoveFXSprites( palette : TinyBattlePalette ) : void
+		public function loadAllMoveFXSprites( palette : TinyBattlePalette, isEnemy : Boolean ) : void
 		{
 			TinyLogManager.log('loadAllMoveFXSprites', this);
 			
-			if ( this.move1 ) this.move1.loadMoveFXAnimation( palette );
-			if ( this.move2 ) this.move2.loadMoveFXAnimation( palette );
-			if ( this.move3 ) this.move3.loadMoveFXAnimation( palette );
-			if ( this.move4 ) this.move4.loadMoveFXAnimation( palette );
+			if ( this.move1 ) this.move1.loadMoveFXAnimation( palette, isEnemy );
+			if ( this.move2 ) this.move2.loadMoveFXAnimation( palette, isEnemy );
+			if ( this.move3 ) this.move3.loadMoveFXAnimation( palette, isEnemy );
+			if ( this.move4 ) this.move4.loadMoveFXAnimation( palette, isEnemy );
 		}
 		
 		public function unloadAllMoveFXSprites() : void

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f50fe2c392e8b4d088f3e0664556bc1f:1f3767c76ea2602334671588872f20ac:5b465d925c1febd5b3be8171077bc213$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_protect.png" width="465" height="465">
+    <sprite n="protect_enemy_0" x="425" y="339" w="36" h="50" pX="0.5" pY="0.5" oX="73" oY="27" oW="160" oH="144"/>
+    <sprite n="protect_enemy_1" x="72" y="173" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_2" x="221" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_3" x="322" y="284" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_4" x="286" y="171" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_5" x="392" y="226" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_6" x="0" y="174" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_7" x="141" y="344" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_8" x="176" y="344" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_9" x="184" y="0" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_10" x="250" y="171" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_11" x="214" y="285" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_12" x="108" y="115" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_13" x="144" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_14" x="181" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_15" x="0" y="290" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_16" x="396" y="171" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_17" x="286" y="284" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_18" x="36" y="289" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_19" x="72" y="230" w="35" h="58" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_20" x="108" y="172" w="35" h="58" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_21" x="0" y="0" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_22" x="36" y="0" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_23" x="73" y="0" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_24" x="180" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_25" x="0" y="58" w="36" h="58" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_26" x="36" y="57" w="36" h="58" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_27" x="0" y="347" w="35" h="58" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_28" x="217" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_29" x="107" y="230" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_30" x="106" y="403" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_31" x="257" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_32" x="216" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_33" x="143" y="230" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_34" x="253" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_35" x="293" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_36" x="250" y="227" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_37" x="252" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_38" x="289" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_39" x="329" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_40" x="0" y="116" w="36" h="58" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_41" x="36" y="115" w="36" h="58" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_42" x="250" y="283" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_43" x="322" y="171" w="37" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_44" x="359" y="171" w="37" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_45" x="143" y="287" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_46" x="286" y="227" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_47" x="321" y="227" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_48" x="318" y="395" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_49" x="356" y="226" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_50" x="358" y="282" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_51" x="72" y="288" w="35" h="58" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_52" x="107" y="287" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_53" x="288" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_54" x="325" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_55" x="394" y="282" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_56" x="428" y="226" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_57" x="72" y="57" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_58" x="430" y="282" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_59" x="35" y="347" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_60" x="365" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_61" x="70" y="346" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_62" x="70" y="402" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_63" x="324" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_64" x="35" y="404" w="35" h="57" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_65" x="106" y="346" w="35" h="57" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_66" x="361" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_67" x="353" y="339" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_68" x="389" y="338" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_69" x="110" y="0" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_70" x="36" y="173" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_71" x="72" y="115" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_72" x="108" y="57" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_73" x="147" y="0" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_74" x="144" y="57" w="37" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_75" x="354" y="394" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_76" x="401" y="0" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_77" x="360" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_78" x="142" y="401" w="35" h="57" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_79" x="397" y="57" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_80" x="396" y="114" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_81" x="281" y="339" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_82" x="178" y="171" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_83" x="178" y="228" w="36" h="57" pX="0.5" pY="0.5" oX="75" oY="21" oW="160" oH="144"/>
+    <sprite n="protect_enemy_84" x="177" y="401" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_85" x="0" y="232" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_86" x="36" y="231" w="36" h="58" pX="0.5" pY="0.5" oX="75" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_87" x="317" y="339" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="protect_enemy_88" x="214" y="171" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_89" x="178" y="285" w="36" h="57" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="protect_enemy_90" x="214" y="228" w="36" h="57" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_91" x="0" y="405" w="35" h="58" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_92" x="143" y="172" w="35" h="58" pX="0.5" pY="0.5" oX="74" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_93" x="282" y="395" w="36" h="56" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_94" x="390" y="393" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_95" x="426" y="389" w="36" h="55" pX="0.5" pY="0.5" oX="74" oY="23" oW="160" oH="144"/>
+    <sprite n="protect_enemy_96" x="211" y="342" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_97" x="212" y="399" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_98" x="246" y="341" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_99" x="247" y="398" w="35" h="57" pX="0.5" pY="0.5" oX="76" oY="20" oW="160" oH="144"/>
+    <sprite n="protect_enemy_100" x="246" y="398" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_101" x="353" y="394" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_102" x="389" y="393" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_103" x="144" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_104" x="322" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_105" x="36" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_106" x="141" y="401" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_107" x="141" y="402" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_108" x="211" y="399" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_109" x="211" y="400" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_110" x="214" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_111" x="281" y="395" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_112" x="358" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_113" x="425" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_114" x="425" y="389" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_115" x="145" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_116" x="323" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_117" x="37" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_118" x="215" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_119" x="281" y="396" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_120" x="281" y="397" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_121" x="359" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_122" x="426" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_123" x="425" y="390" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_124" x="146" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_125" x="324" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_126" x="38" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_127" x="216" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_128" x="360" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_129" x="427" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_130" x="425" y="391" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_131" x="425" y="392" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_132" x="147" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_133" x="325" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_134" x="39" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_135" x="217" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_136" x="361" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_137" x="428" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_138" x="429" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_139" x="148" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_140" x="326" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_141" x="40" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_142" x="218" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_143" x="362" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_144" x="149" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_145" x="327" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_146" x="41" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_147" x="219" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_148" x="363" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_149" x="150" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_150" x="328" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_151" x="42" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_152" x="220" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_153" x="364" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_154" x="151" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_155" x="329" y="226" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_156" x="43" y="346" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_157" x="221" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_158" x="365" y="338" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="protect_enemy_159" x="152" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

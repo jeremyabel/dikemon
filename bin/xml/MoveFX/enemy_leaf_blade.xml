@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2ea3fa5bb565ba16c3727501475c4dd4:37bb68f15cebe6615bf0c4c36156886b:d54ac18f53bffec02469550e2e2e67e9$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_razor_leaf.png" width="638" height="638">
+    <sprite n="razor_leaf_enemy_00493" x="324" y="523" w="12" h="7" pX="0.5" pY="0.5" oX="118" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00494" x="348" y="616" w="12" h="7" pX="0.5" pY="0.5" oX="118" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00495" x="427" y="101" w="16" h="9" pX="0.5" pY="0.5" oX="116" oY="18" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00496" x="577" y="627" w="20" h="11" pX="0.5" pY="0.5" oX="114" oY="14" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00497" x="282" y="159" w="24" h="14" pX="0.5" pY="0.5" oX="112" oY="10" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00498" x="430" y="578" w="28" h="16" pX="0.5" pY="0.5" oX="110" oY="6" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00499" x="430" y="560" w="32" h="18" pX="0.5" pY="0.5" oX="108" oY="3" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00500" x="312" y="616" w="36" h="20" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00501" x="478" y="597" w="40" h="28" pX="0.5" pY="0.5" oX="104" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00502" x="580" y="599" w="40" h="28" pX="0.5" pY="0.5" oX="104" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00503" x="366" y="220" w="44" h="25" pX="0.5" pY="0.5" oX="102" oY="2" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00504" x="367" y="195" w="48" h="25" pX="0.5" pY="0.5" oX="100" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00505" x="355" y="245" w="52" h="24" pX="0.5" pY="0.5" oX="98" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00506" x="581" y="378" w="56" h="22" pX="0.5" pY="0.5" oX="96" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00507" x="549" y="516" w="60" h="21" pX="0.5" pY="0.5" oX="94" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00508" x="574" y="327" w="64" h="20" pX="0.5" pY="0.5" oX="92" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00509" x="244" y="620" w="68" h="18" pX="0.5" pY="0.5" oX="90" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00510" x="435" y="364" w="72" h="17" pX="0.5" pY="0.5" oX="88" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00511" x="170" y="622" w="74" h="16" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00512" x="342" y="404" w="74" h="15" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00513" x="416" y="408" w="74" h="14" pX="0.5" pY="0.5" oX="86" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00514" x="261" y="509" w="75" h="14" pX="0.5" pY="0.5" oX="85" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00515" x="358" y="364" w="77" h="13" pX="0.5" pY="0.5" oX="83" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00516" x="482" y="253" w="78" h="13" pX="0.5" pY="0.5" oX="82" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00517" x="244" y="523" w="80" h="13" pX="0.5" pY="0.5" oX="80" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00518" x="497" y="212" w="81" h="14" pX="0.5" pY="0.5" oX="79" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00519" x="415" y="212" w="82" h="14" pX="0.5" pY="0.5" oX="78" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00520" x="282" y="212" w="84" h="15" pX="0.5" pY="0.5" oX="76" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00521" x="507" y="197" w="85" h="15" pX="0.5" pY="0.5" oX="75" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00522" x="0" y="622" w="85" h="16" pX="0.5" pY="0.5" oX="74" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00523" x="85" y="622" w="85" h="16" pX="0.5" pY="0.5" oX="73" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00524" x="282" y="195" w="85" h="17" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00525" x="540" y="153" w="87" h="17" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00526" x="137" y="603" w="89" h="19" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00527" x="418" y="193" w="89" h="19" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00528" x="137" y="583" w="89" h="20" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00529" x="140" y="511" w="90" h="20" pX="0.5" pY="0.5" oX="70" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00530" x="137" y="562" w="89" h="21" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00531" x="410" y="226" w="77" h="21" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00532" x="225" y="536" w="77" h="22" pX="0.5" pY="0.5" oX="71" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00533" x="407" y="247" w="75" h="22" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00534" x="560" y="304" w="75" h="23" pX="0.5" pY="0.5" oX="72" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00535" x="507" y="359" w="74" h="22" pX="0.5" pY="0.5" oX="73" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00536" x="336" y="507" w="72" h="23" pX="0.5" pY="0.5" oX="74" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00537" x="408" y="509" w="72" h="22" pX="0.5" pY="0.5" oX="75" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00538" x="490" y="408" w="71" h="23" pX="0.5" pY="0.5" oX="76" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00539" x="480" y="514" w="69" h="22" pX="0.5" pY="0.5" oX="78" oY="2" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00540" x="486" y="460" w="71" h="25" pX="0.5" pY="0.5" oX="79" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00541" x="324" y="530" w="69" h="25" pX="0.5" pY="0.5" oX="80" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00542" x="280" y="340" w="78" h="26" pX="0.5" pY="0.5" oX="82" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00543" x="561" y="92" w="77" h="26" pX="0.5" pY="0.5" oX="83" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00544" x="487" y="226" w="76" h="27" pX="0.5" pY="0.5" oX="84" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00545" x="344" y="377" w="75" h="27" pX="0.5" pY="0.5" oX="85" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00546" x="344" y="451" w="73" h="27" pX="0.5" pY="0.5" oX="87" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00547" x="419" y="381" w="72" h="27" pX="0.5" pY="0.5" oX="88" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00548" x="491" y="381" w="71" h="27" pX="0.5" pY="0.5" oX="89" oY="2" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00549" x="417" y="451" w="69" h="29" pX="0.5" pY="0.5" oX="91" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00550" x="462" y="536" w="68" h="29" pX="0.5" pY="0.5" oX="92" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00551" x="550" y="487" w="66" h="29" pX="0.5" pY="0.5" oX="94" oY="1" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00552" x="557" y="458" w="67" h="29" pX="0.5" pY="0.5" oX="93" oY="2" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00553" x="562" y="400" w="68" h="29" pX="0.5" pY="0.5" oX="92" oY="2" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00554" x="393" y="531" w="69" h="29" pX="0.5" pY="0.5" oX="91" oY="3" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00555" x="486" y="431" w="70" h="29" pX="0.5" pY="0.5" oX="90" oY="3" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00556" x="312" y="555" w="59" h="29" pX="0.5" pY="0.5" oX="89" oY="4" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00557" x="371" y="560" w="59" h="29" pX="0.5" pY="0.5" oX="89" oY="4" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00558" x="430" y="269" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="3" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00559" x="301" y="584" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="3" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00560" x="360" y="589" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="4" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00561" x="462" y="565" w="59" h="32" pX="0.5" pY="0.5" oX="87" oY="4" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00562" x="521" y="568" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="5" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00563" x="419" y="597" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="5" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00564" x="518" y="600" w="59" h="32" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00565" x="578" y="212" w="60" h="32" pX="0.5" pY="0.5" oX="88" oY="6" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00566" x="500" y="295" w="60" h="32" pX="0.5" pY="0.5" oX="88" oY="7" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00567" x="358" y="332" w="72" h="32" pX="0.5" pY="0.5" oX="88" oY="7" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00568" x="355" y="300" w="73" h="32" pX="0.5" pY="0.5" oX="87" oY="8" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00569" x="430" y="332" w="72" h="32" pX="0.5" pY="0.5" oX="88" oY="8" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00570" x="502" y="327" w="72" h="32" pX="0.5" pY="0.5" oX="88" oY="9" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00571" x="343" y="419" w="72" h="32" pX="0.5" pY="0.5" oX="88" oY="9" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00572" x="415" y="422" w="71" h="29" pX="0.5" pY="0.5" oX="89" oY="12" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00573" x="409" y="480" w="71" h="29" pX="0.5" pY="0.5" oX="89" oY="12" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00574" x="561" y="429" w="68" h="29" pX="0.5" pY="0.5" oX="90" oY="13" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00575" x="480" y="485" w="70" h="29" pX="0.5" pY="0.5" oX="89" oY="13" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00576" x="336" y="478" w="73" h="29" pX="0.5" pY="0.5" oX="87" oY="14" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00577" x="489" y="266" w="74" h="29" pX="0.5" pY="0.5" oX="86" oY="14" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00578" x="563" y="275" w="75" h="29" pX="0.5" pY="0.5" oX="85" oY="15" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00579" x="561" y="63" w="77" h="29" pX="0.5" pY="0.5" oX="83" oY="15" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00580" x="264" y="394" w="78" h="29" pX="0.5" pY="0.5" oX="82" oY="16" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00581" x="264" y="451" w="80" h="27" pX="0.5" pY="0.5" oX="80" oY="18" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00582" x="523" y="170" w="81" h="27" pX="0.5" pY="0.5" oX="79" oY="19" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00583" x="274" y="227" w="81" h="28" pX="0.5" pY="0.5" oX="79" oY="19" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00584" x="274" y="255" w="81" h="27" pX="0.5" pY="0.5" oX="79" oY="20" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00585" x="274" y="282" w="81" h="27" pX="0.5" pY="0.5" oX="79" oY="20" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00586" x="264" y="366" w="80" h="28" pX="0.5" pY="0.5" oX="79" oY="19" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00587" x="264" y="423" w="79" h="28" pX="0.5" pY="0.5" oX="79" oY="19" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00588" x="136" y="531" w="89" h="31" pX="0.5" pY="0.5" oX="71" oY="20" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00589" x="540" y="118" w="97" h="35" pX="0.5" pY="0.5" oX="63" oY="20" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00590" x="418" y="155" w="105" h="38" pX="0.5" pY="0.5" oX="55" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00591" x="427" y="113" w="113" h="42" pX="0.5" pY="0.5" oX="47" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00592" x="140" y="466" w="121" h="45" pX="0.5" pY="0.5" oX="39" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00593" x="145" y="268" w="129" h="49" pX="0.5" pY="0.5" oX="31" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00594" x="0" y="570" w="137" h="52" pX="0.5" pY="0.5" oX="23" oY="23" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00595" x="0" y="280" w="145" h="58" pX="0.5" pY="0.5" oX="15" oY="21" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00596" x="316" y="0" w="153" h="61" pX="0.5" pY="0.5" oX="7" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00597" x="157" y="0" w="159" h="65" pX="0.5" pY="0.5" oX="0" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00598" x="308" y="149" w="110" h="46" pX="0.5" pY="0.5" oX="49" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00599" x="444" y="63" w="117" h="50" pX="0.5" pY="0.5" oX="41" oY="22" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00600" x="140" y="364" w="124" h="52" pX="0.5" pY="0.5" oX="33" oY="24" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00601" x="150" y="159" w="132" h="55" pX="0.5" pY="0.5" oX="25" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00602" x="0" y="338" w="140" h="59" pX="0.5" pY="0.5" oX="17" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00603" x="469" y="0" w="148" h="63" pX="0.5" pY="0.5" oX="9" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00604" x="0" y="71" w="156" h="67" pX="0.5" pY="0.5" oX="1" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00605" x="0" y="0" w="157" h="71" pX="0.5" pY="0.5" oX="0" oY="25" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00606" x="0" y="209" w="142" h="71" pX="0.5" pY="0.5" oX="7" oY="29" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00607" x="0" y="138" w="150" h="71" pX="0.5" pY="0.5" oX="0" oY="33" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00608" x="145" y="317" w="135" h="47" pX="0.5" pY="0.5" oX="16" oY="37" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00609" x="156" y="112" w="152" h="47" pX="0.5" pY="0.5" oX="8" oY="41" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00610" x="157" y="65" w="154" h="47" pX="0.5" pY="0.5" oX="0" oY="45" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00611" x="311" y="101" w="116" h="48" pX="0.5" pY="0.5" oX="36" oY="48" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00612" x="140" y="416" w="124" h="50" pX="0.5" pY="0.5" oX="28" oY="50" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00613" x="142" y="214" w="132" h="54" pX="0.5" pY="0.5" oX="20" oY="50" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00614" x="0" y="397" w="140" h="58" pX="0.5" pY="0.5" oX="12" oY="50" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00615" x="0" y="455" w="140" h="58" pX="0.5" pY="0.5" oX="4" oY="54" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00616" x="0" y="513" w="136" h="57" pX="0.5" pY="0.5" oX="0" oY="58" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00617" x="316" y="61" w="128" h="40" pX="0.5" pY="0.5" oX="0" oY="62" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00618" x="280" y="309" w="75" h="31" pX="0.5" pY="0.5" oX="45" oY="66" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00619" x="261" y="478" w="75" h="31" pX="0.5" pY="0.5" oX="37" oY="70" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00620" x="226" y="558" w="75" h="31" pX="0.5" pY="0.5" oX="29" oY="74" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00621" x="226" y="589" w="75" h="31" pX="0.5" pY="0.5" oX="21" oY="78" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00622" x="563" y="244" w="75" h="31" pX="0.5" pY="0.5" oX="13" oY="82" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00623" x="355" y="269" w="75" h="31" pX="0.5" pY="0.5" oX="5" oY="86" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00624" x="428" y="301" w="72" h="31" pX="0.5" pY="0.5" oX="0" oY="90" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00625" x="530" y="537" w="60" h="31" pX="0.5" pY="0.5" oX="4" oY="94" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00626" x="581" y="347" w="56" h="31" pX="0.5" pY="0.5" oX="0" oY="98" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00627" x="590" y="537" w="38" h="31" pX="0.5" pY="0.5" oX="10" oY="102" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00628" x="580" y="568" w="38" h="31" pX="0.5" pY="0.5" oX="2" oY="106" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00629" x="604" y="170" w="32" h="29" pX="0.5" pY="0.5" oX="0" oY="110" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00630" x="274" y="214" w="8" h="7" pX="0.5" pY="0.5" oX="16" oY="114" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00631" x="630" y="400" w="8" h="7" pX="0.5" pY="0.5" oX="8" oY="118" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00632" x="630" y="407" w="8" h="7" pX="0.5" pY="0.5" oX="0" oY="122" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00633" x="156" y="71" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00634" x="136" y="562" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00635" x="225" y="558" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00636" x="637" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00637" x="366" y="212" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00638" x="428" y="300" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00639" x="429" y="300" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00640" x="342" y="419" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00641" x="415" y="419" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00642" x="408" y="507" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00643" x="408" y="508" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00644" x="393" y="530" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00645" x="561" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00646" x="549" y="514" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00647" x="549" y="515" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00648" x="530" y="536" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00649" x="443" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00650" x="637" y="347" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00651" x="156" y="72" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00652" x="136" y="563" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00653" x="225" y="559" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00654" x="637" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00655" x="366" y="213" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00656" x="342" y="420" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00657" x="415" y="420" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00658" x="415" y="421" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00659" x="394" y="530" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00660" x="561" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00661" x="531" y="536" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00662" x="443" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00663" x="637" y="348" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00664" x="156" y="73" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="razor_leaf_enemy_00665" x="136" y="564" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1d40688587b21dd2b53955161ea50515:3424932520cb18b56cc3bdfe700b773b:0a5aa03cae9310ba46989620eaed9d65$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_amnesia.png" width="66" height="66">
+    <sprite n="amnesia_enemy_00493" x="34" y="30" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00494" x="34" y="31" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00495" x="34" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00496" x="34" y="33" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00497" x="34" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00498" x="34" y="35" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00499" x="34" y="36" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00500" x="34" y="37" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00501" x="34" y="38" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00502" x="34" y="39" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00503" x="34" y="40" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00504" x="34" y="41" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00505" x="30" y="30" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00506" x="30" y="34" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00507" x="30" y="38" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00508" x="56" y="28" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00509" x="56" y="32" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00510" x="56" y="36" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00511" x="30" y="56" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00512" x="0" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00513" x="4" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00514" x="8" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00515" x="12" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00516" x="16" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00517" x="20" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00518" x="24" y="58" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00519" x="34" y="56" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00520" x="38" y="56" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00521" x="42" y="56" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="30" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00522" x="36" y="0" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00523" x="36" y="14" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00524" x="36" y="28" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00525" x="0" y="30" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00526" x="10" y="30" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00527" x="20" y="30" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00528" x="30" y="42" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00529" x="0" y="44" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00530" x="10" y="44" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00531" x="20" y="44" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00532" x="40" y="42" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00533" x="46" y="0" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00534" x="46" y="14" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00535" x="46" y="28" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00536" x="50" y="42" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00537" x="56" y="0" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00538" x="56" y="14" w="10" h="14" pX="0.5" pY="0.5" oX="100" oY="20" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00539" x="0" y="0" w="18" h="30" pX="0.5" pY="0.5" oX="92" oY="4" oW="160" oH="144"/>
+    <sprite n="amnesia_enemy_00540" x="18" y="0" w="18" h="30" pX="0.5" pY="0.5" oX="92" oY="4" oW="160" oH="144"/>
+</TextureAtlas>
