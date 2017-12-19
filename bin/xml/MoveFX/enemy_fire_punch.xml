@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:45f198b9dced5fd572ae00abac9fb429:8b9641c34da72ef73ca0620005e7b4c5:00c4a0221b450fd27ce1ac6948521bc4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_fire_punch.png" width="289" height="289">
+    <sprite n="fire_punch_enemy_0" x="124" y="105" w="38" h="16" pX="0.5" pY="0.5" oX="17" oY="64" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_1" x="232" y="180" w="36" h="16" pX="0.5" pY="0.5" oX="18" oY="64" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_2" x="196" y="186" w="36" h="16" pX="0.5" pY="0.5" oX="18" oY="64" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_3" x="160" y="196" w="36" h="16" pX="0.5" pY="0.5" oX="18" oY="64" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_4" x="158" y="212" w="34" h="19" pX="0.5" pY="0.5" oX="19" oY="63" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_5" x="126" y="81" w="38" h="24" pX="0.5" pY="0.5" oX="17" oY="60" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_6" x="196" y="162" w="36" h="24" pX="0.5" pY="0.5" oX="18" oY="60" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_7" x="234" y="152" w="36" h="28" pX="0.5" pY="0.5" oX="18" oY="58" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_8" x="234" y="122" w="36" h="30" pX="0.5" pY="0.5" oX="18" oY="57" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_9" x="124" y="251" w="34" h="32" pX="0.5" pY="0.5" oX="19" oY="56" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_10" x="170" y="76" w="38" h="36" pX="0.5" pY="0.5" oX="17" oY="57" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_11" x="160" y="158" w="36" h="38" pX="0.5" pY="0.5" oX="18" oY="56" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_12" x="124" y="167" w="36" h="38" pX="0.5" pY="0.5" oX="18" oY="56" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_13" x="198" y="122" w="36" h="40" pX="0.5" pY="0.5" oX="18" oY="55" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_14" x="196" y="202" w="34" h="40" pX="0.5" pY="0.5" oX="19" oY="55" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_15" x="208" y="76" w="37" h="46" pX="0.5" pY="0.5" oX="17" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_16" x="86" y="92" w="38" h="46" pX="0.5" pY="0.5" oX="17" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_17" x="0" y="144" w="36" h="48" pX="0.5" pY="0.5" oX="18" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_18" x="245" y="76" w="36" h="46" pX="0.5" pY="0.5" oX="18" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_19" x="162" y="112" w="36" h="46" pX="0.5" pY="0.5" oX="18" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_20" x="124" y="205" w="34" h="46" pX="0.5" pY="0.5" oX="19" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_21" x="192" y="242" w="33" h="46" pX="0.5" pY="0.5" oX="18" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_22" x="124" y="121" w="36" h="46" pX="0.5" pY="0.5" oX="18" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_23" x="0" y="192" w="36" h="48" pX="0.5" pY="0.5" oX="18" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_24" x="0" y="240" w="34" h="48" pX="0.5" pY="0.5" oX="19" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_25" x="225" y="242" w="32" h="46" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_26" x="257" y="242" w="32" h="46" pX="0.5" pY="0.5" oX="20" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_27" x="232" y="196" w="34" h="46" pX="0.5" pY="0.5" oX="19" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_28" x="158" y="242" w="34" h="46" pX="0.5" pY="0.5" oX="19" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_29" x="86" y="0" w="40" h="46" pX="0.5" pY="0.5" oX="16" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_30" x="86" y="46" w="40" h="46" pX="0.5" pY="0.5" oX="16" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_31" x="0" y="0" w="42" h="48" pX="0.5" pY="0.5" oX="15" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_32" x="0" y="48" w="42" h="48" pX="0.5" pY="0.5" oX="15" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_33" x="36" y="190" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_34" x="80" y="190" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_35" x="80" y="236" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_36" x="42" y="0" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_37" x="34" y="240" w="46" h="46" pX="0.5" pY="0.5" oX="13" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_38" x="82" y="138" w="42" h="46" pX="0.5" pY="0.5" oX="15" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_39" x="0" y="96" w="42" h="48" pX="0.5" pY="0.5" oX="15" oY="48" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_40" x="42" y="46" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_41" x="42" y="92" w="44" h="46" pX="0.5" pY="0.5" oX="14" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_42" x="36" y="144" w="46" h="46" pX="0.5" pY="0.5" oX="13" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_43" x="126" y="0" w="46" h="45" pX="0.5" pY="0.5" oX="13" oY="49" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_44" x="172" y="0" w="46" h="40" pX="0.5" pY="0.5" oX="13" oY="54" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_45" x="218" y="0" w="44" h="38" pX="0.5" pY="0.5" oX="14" oY="56" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_46" x="218" y="38" w="44" h="38" pX="0.5" pY="0.5" oX="14" oY="56" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_47" x="172" y="40" w="44" h="36" pX="0.5" pY="0.5" oX="14" oY="57" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_48" x="126" y="45" w="44" h="36" pX="0.5" pY="0.5" oX="14" oY="57" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_49" x="36" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_50" x="36" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_51" x="36" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_52" x="37" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_53" x="37" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_54" x="37" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_55" x="38" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_56" x="38" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_57" x="38" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_58" x="39" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_59" x="39" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_60" x="39" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_61" x="40" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_62" x="40" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_63" x="40" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_64" x="41" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_65" x="41" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_66" x="41" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_67" x="42" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_68" x="42" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_69" x="42" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_70" x="43" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_71" x="43" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_72" x="43" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_73" x="44" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_74" x="44" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_75" x="44" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_76" x="45" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_77" x="45" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_78" x="45" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_79" x="46" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_80" x="46" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_81" x="46" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_82" x="47" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_83" x="47" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_84" x="47" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_85" x="48" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_86" x="48" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_87" x="48" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_88" x="49" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_89" x="49" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_90" x="49" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_91" x="50" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_92" x="50" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_93" x="50" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_94" x="51" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_95" x="51" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_96" x="51" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_97" x="52" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_98" x="52" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_99" x="52" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_100" x="0" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_101" x="1" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_102" x="2" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_103" x="3" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_104" x="4" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_105" x="5" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_106" x="6" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_107" x="7" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_108" x="8" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_109" x="9" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_110" x="10" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_111" x="11" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_112" x="12" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_113" x="13" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_114" x="14" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_115" x="15" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_116" x="16" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_117" x="17" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_118" x="18" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_119" x="19" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_120" x="20" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_121" x="21" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_122" x="22" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_123" x="23" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_124" x="24" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_125" x="25" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_126" x="26" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_127" x="27" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_128" x="28" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_129" x="29" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_130" x="30" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_131" x="31" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_132" x="32" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_133" x="33" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_134" x="34" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_135" x="34" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_136" x="34" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_137" x="35" y="286" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_138" x="35" y="287" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="fire_punch_enemy_139" x="35" y="288" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

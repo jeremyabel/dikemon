@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f2baf65b8cc7bff56fa297f859af663a:76d50e79a42741763f9e70a44e4d0e10:839f165ed9296acc27d3c320e19758e5$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_dragon_breath.png" width="328" height="328">
+    <sprite n="dragon_breath_enemy_0" x="240" y="149" w="6" h="7" pX="0.5" pY="0.5" oX="101" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_1" x="240" y="156" w="6" h="7" pX="0.5" pY="0.5" oX="97" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_2" x="240" y="163" w="6" h="7" pX="0.5" pY="0.5" oX="93" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_3" x="240" y="170" w="6" h="7" pX="0.5" pY="0.5" oX="89" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_4" x="191" y="200" w="6" h="7" pX="0.5" pY="0.5" oX="85" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_5" x="295" y="111" w="27" h="17" pX="0.5" pY="0.5" oX="80" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_6" x="295" y="128" w="27" h="17" pX="0.5" pY="0.5" oX="76" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_7" x="295" y="145" w="27" h="17" pX="0.5" pY="0.5" oX="72" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_8" x="265" y="298" w="27" h="17" pX="0.5" pY="0.5" oX="68" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_9" x="292" y="298" w="27" h="17" pX="0.5" pY="0.5" oX="64" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_10" x="209" y="0" w="49" h="31" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_11" x="209" y="31" w="49" h="31" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_12" x="209" y="62" w="49" h="31" pX="0.5" pY="0.5" oX="50" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_13" x="258" y="0" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_14" x="258" y="31" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_15" x="0" y="0" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_16" x="0" y="41" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_17" x="71" y="246" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_18" x="258" y="62" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_19" x="142" y="149" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_20" x="0" y="82" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_21" x="0" y="123" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_22" x="138" y="246" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_23" x="191" y="149" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_24" x="205" y="180" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_25" x="0" y="164" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_26" x="0" y="205" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_27" x="71" y="285" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_28" x="142" y="180" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_29" x="246" y="113" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_30" x="0" y="246" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_31" x="0" y="287" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_32" x="138" y="285" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_33" x="246" y="144" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_34" x="205" y="211" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_35" x="71" y="0" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_36" x="71" y="41" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_37" x="142" y="0" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_38" x="142" y="211" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_39" x="205" y="242" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_40" x="71" y="82" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_41" x="71" y="123" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_42" x="142" y="39" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_43" x="205" y="273" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_44" x="254" y="175" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_45" x="71" y="164" w="71" h="41" pX="0.5" pY="0.5" oX="36" oY="35" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_46" x="71" y="205" w="71" h="41" pX="0.5" pY="0.5" oX="32" oY="37" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_47" x="142" y="78" w="67" h="39" pX="0.5" pY="0.5" oX="32" oY="39" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_48" x="254" y="206" w="49" h="31" pX="0.5" pY="0.5" oX="46" oY="41" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_49" x="254" y="237" w="49" h="31" pX="0.5" pY="0.5" oX="42" oY="43" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_50" x="142" y="117" w="52" h="32" pX="0.5" pY="0.5" oX="36" oY="44" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_51" x="194" y="117" w="52" h="32" pX="0.5" pY="0.5" oX="32" oY="46" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_52" x="254" y="268" w="48" h="30" pX="0.5" pY="0.5" oX="32" oY="48" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_53" x="205" y="304" w="30" h="22" pX="0.5" pY="0.5" oX="46" oY="50" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_54" x="235" y="304" w="30" h="22" pX="0.5" pY="0.5" oX="42" oY="52" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_55" x="209" y="93" w="34" h="20" pX="0.5" pY="0.5" oX="36" oY="56" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_56" x="243" y="93" w="34" h="20" pX="0.5" pY="0.5" oX="32" oY="58" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_57" x="277" y="93" w="30" h="18" pX="0.5" pY="0.5" oX="32" oY="60" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_58" x="191" y="180" w="12" h="10" pX="0.5" pY="0.5" oX="46" oY="62" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_59" x="191" y="190" w="12" h="10" pX="0.5" pY="0.5" oX="42" oY="64" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_60" x="302" y="268" w="16" h="16" pX="0.5" pY="0.5" oX="36" oY="60" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_61" x="303" y="162" w="16" h="16" pX="0.5" pY="0.5" oX="32" oY="62" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_62" x="303" y="178" w="16" h="16" pX="0.5" pY="0.5" oX="32" oY="62" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_64" x="213" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_65" x="214" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_66" x="215" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_67" x="216" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_68" x="217" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_69" x="218" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_70" x="219" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_71" x="220" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_72" x="221" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_73" x="222" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_74" x="223" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_75" x="224" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_76" x="225" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_77" x="226" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_78" x="227" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_79" x="228" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_80" x="229" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_81" x="230" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_82" x="231" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_83" x="232" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_84" x="233" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_85" x="234" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_86" x="235" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_87" x="236" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_88" x="237" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_89" x="238" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_90" x="239" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_91" x="240" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_92" x="241" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_93" x="242" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_94" x="243" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_95" x="244" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_96" x="245" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_97" x="209" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_98" x="210" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_99" x="211" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_100" x="209" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_101" x="210" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_102" x="211" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_103" x="212" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_104" x="213" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_105" x="214" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_106" x="215" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_107" x="216" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_108" x="217" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_109" x="218" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_110" x="219" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_111" x="220" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_112" x="221" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_113" x="222" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_114" x="223" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_115" x="224" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_116" x="225" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_117" x="226" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_118" x="227" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_119" x="228" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_120" x="229" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_121" x="230" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_122" x="231" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_123" x="232" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_124" x="233" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_125" x="234" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_126" x="235" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_127" x="236" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_128" x="237" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_129" x="238" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_130" x="239" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_131" x="240" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_132" x="241" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_133" x="242" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_134" x="243" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_135" x="244" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_136" x="245" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_137" x="209" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_138" x="210" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_139" x="211" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="dragon_breath_enemy_140" x="212" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

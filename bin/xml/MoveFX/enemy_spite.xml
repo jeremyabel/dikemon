@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:610a0fed609318ba10c0ae205769bc31:06dc94d4b64a57c915e4aba832c60b4d:78273cb90f2945364e5b79446f27c53d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_spite.png" width="300" height="300">
+    <sprite n="spite_enemy_0" x="0" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="17" oW="160" oH="144"/>
+    <sprite n="spite_enemy_1" x="0" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="18" oW="160" oH="144"/>
+    <sprite n="spite_enemy_2" x="87" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="18" oW="160" oH="144"/>
+    <sprite n="spite_enemy_3" x="29" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="19" oW="160" oH="144"/>
+    <sprite n="spite_enemy_4" x="232" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="19" oW="160" oH="144"/>
+    <sprite n="spite_enemy_5" x="116" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="20" oW="160" oH="144"/>
+    <sprite n="spite_enemy_6" x="87" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="20" oW="160" oH="144"/>
+    <sprite n="spite_enemy_7" x="116" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="21" oW="160" oH="144"/>
+    <sprite n="spite_enemy_8" x="145" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="21" oW="160" oH="144"/>
+    <sprite n="spite_enemy_9" x="232" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="22" oW="160" oH="144"/>
+    <sprite n="spite_enemy_10" x="0" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="22" oW="160" oH="144"/>
+    <sprite n="spite_enemy_11" x="0" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="23" oW="160" oH="144"/>
+    <sprite n="spite_enemy_12" x="0" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="23" oW="160" oH="144"/>
+    <sprite n="spite_enemy_13" x="0" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="24" oW="160" oH="144"/>
+    <sprite n="spite_enemy_14" x="0" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="24" oW="160" oH="144"/>
+    <sprite n="spite_enemy_15" x="0" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="25" oW="160" oH="144"/>
+    <sprite n="spite_enemy_16" x="0" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="25" oW="160" oH="144"/>
+    <sprite n="spite_enemy_17" x="0" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="26" oW="160" oH="144"/>
+    <sprite n="spite_enemy_18" x="29" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="26" oW="160" oH="144"/>
+    <sprite n="spite_enemy_19" x="58" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="27" oW="160" oH="144"/>
+    <sprite n="spite_enemy_20" x="116" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="27" oW="160" oH="144"/>
+    <sprite n="spite_enemy_21" x="145" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="28" oW="160" oH="144"/>
+    <sprite n="spite_enemy_22" x="174" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="28" oW="160" oH="144"/>
+    <sprite n="spite_enemy_23" x="203" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="29" oW="160" oH="144"/>
+    <sprite n="spite_enemy_24" x="232" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="29" oW="160" oH="144"/>
+    <sprite n="spite_enemy_25" x="261" y="0" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="30" oW="160" oH="144"/>
+    <sprite n="spite_enemy_26" x="29" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="30" oW="160" oH="144"/>
+    <sprite n="spite_enemy_27" x="29" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="31" oW="160" oH="144"/>
+    <sprite n="spite_enemy_28" x="29" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="31" oW="160" oH="144"/>
+    <sprite n="spite_enemy_29" x="29" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="32" oW="160" oH="144"/>
+    <sprite n="spite_enemy_30" x="29" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="32" oW="160" oH="144"/>
+    <sprite n="spite_enemy_31" x="29" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="33" oW="160" oH="144"/>
+    <sprite n="spite_enemy_32" x="29" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="33" oW="160" oH="144"/>
+    <sprite n="spite_enemy_33" x="29" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="34" oW="160" oH="144"/>
+    <sprite n="spite_enemy_34" x="58" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="34" oW="160" oH="144"/>
+    <sprite n="spite_enemy_35" x="87" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="35" oW="160" oH="144"/>
+    <sprite n="spite_enemy_36" x="116" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="35" oW="160" oH="144"/>
+    <sprite n="spite_enemy_37" x="145" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="36" oW="160" oH="144"/>
+    <sprite n="spite_enemy_38" x="174" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="36" oW="160" oH="144"/>
+    <sprite n="spite_enemy_39" x="203" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="37" oW="160" oH="144"/>
+    <sprite n="spite_enemy_40" x="261" y="30" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="37" oW="160" oH="144"/>
+    <sprite n="spite_enemy_41" x="58" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="38" oW="160" oH="144"/>
+    <sprite n="spite_enemy_42" x="58" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="38" oW="160" oH="144"/>
+    <sprite n="spite_enemy_43" x="58" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="39" oW="160" oH="144"/>
+    <sprite n="spite_enemy_44" x="58" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="39" oW="160" oH="144"/>
+    <sprite n="spite_enemy_45" x="58" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="40" oW="160" oH="144"/>
+    <sprite n="spite_enemy_46" x="58" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="40" oW="160" oH="144"/>
+    <sprite n="spite_enemy_47" x="58" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="41" oW="160" oH="144"/>
+    <sprite n="spite_enemy_48" x="58" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="41" oW="160" oH="144"/>
+    <sprite n="spite_enemy_49" x="87" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="42" oW="160" oH="144"/>
+    <sprite n="spite_enemy_50" x="145" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="42" oW="160" oH="144"/>
+    <sprite n="spite_enemy_51" x="174" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="43" oW="160" oH="144"/>
+    <sprite n="spite_enemy_52" x="203" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="43" oW="160" oH="144"/>
+    <sprite n="spite_enemy_53" x="232" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="44" oW="160" oH="144"/>
+    <sprite n="spite_enemy_54" x="261" y="60" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="44" oW="160" oH="144"/>
+    <sprite n="spite_enemy_55" x="87" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="45" oW="160" oH="144"/>
+    <sprite n="spite_enemy_56" x="87" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="45" oW="160" oH="144"/>
+    <sprite n="spite_enemy_57" x="87" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="46" oW="160" oH="144"/>
+    <sprite n="spite_enemy_58" x="87" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="46" oW="160" oH="144"/>
+    <sprite n="spite_enemy_59" x="87" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="47" oW="160" oH="144"/>
+    <sprite n="spite_enemy_60" x="87" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="47" oW="160" oH="144"/>
+    <sprite n="spite_enemy_61" x="116" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="48" oW="160" oH="144"/>
+    <sprite n="spite_enemy_62" x="145" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="48" oW="160" oH="144"/>
+    <sprite n="spite_enemy_63" x="174" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="49" oW="160" oH="144"/>
+    <sprite n="spite_enemy_64" x="203" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="49" oW="160" oH="144"/>
+    <sprite n="spite_enemy_65" x="232" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="50" oW="160" oH="144"/>
+    <sprite n="spite_enemy_66" x="261" y="90" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="50" oW="160" oH="144"/>
+    <sprite n="spite_enemy_67" x="116" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="51" oW="160" oH="144"/>
+    <sprite n="spite_enemy_68" x="116" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="51" oW="160" oH="144"/>
+    <sprite n="spite_enemy_69" x="116" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="52" oW="160" oH="144"/>
+    <sprite n="spite_enemy_70" x="116" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="52" oW="160" oH="144"/>
+    <sprite n="spite_enemy_71" x="116" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="53" oW="160" oH="144"/>
+    <sprite n="spite_enemy_72" x="145" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="53" oW="160" oH="144"/>
+    <sprite n="spite_enemy_73" x="174" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="spite_enemy_74" x="203" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="54" oW="160" oH="144"/>
+    <sprite n="spite_enemy_75" x="232" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="55" oW="160" oH="144"/>
+    <sprite n="spite_enemy_76" x="261" y="120" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="55" oW="160" oH="144"/>
+    <sprite n="spite_enemy_77" x="145" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="56" oW="160" oH="144"/>
+    <sprite n="spite_enemy_78" x="145" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="56" oW="160" oH="144"/>
+    <sprite n="spite_enemy_79" x="145" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="57" oW="160" oH="144"/>
+    <sprite n="spite_enemy_80" x="145" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="57" oW="160" oH="144"/>
+    <sprite n="spite_enemy_81" x="174" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="58" oW="160" oH="144"/>
+    <sprite n="spite_enemy_82" x="203" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="58" oW="160" oH="144"/>
+    <sprite n="spite_enemy_83" x="232" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="59" oW="160" oH="144"/>
+    <sprite n="spite_enemy_84" x="261" y="150" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="59" oW="160" oH="144"/>
+    <sprite n="spite_enemy_85" x="174" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="60" oW="160" oH="144"/>
+    <sprite n="spite_enemy_86" x="174" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="60" oW="160" oH="144"/>
+    <sprite n="spite_enemy_87" x="174" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="61" oW="160" oH="144"/>
+    <sprite n="spite_enemy_88" x="174" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="61" oW="160" oH="144"/>
+    <sprite n="spite_enemy_89" x="203" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="62" oW="160" oH="144"/>
+    <sprite n="spite_enemy_90" x="261" y="180" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="spite_enemy_91" x="203" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="63" oW="160" oH="144"/>
+    <sprite n="spite_enemy_92" x="203" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="63" oW="160" oH="144"/>
+    <sprite n="spite_enemy_93" x="203" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="64" oW="160" oH="144"/>
+    <sprite n="spite_enemy_94" x="232" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="64" oW="160" oH="144"/>
+    <sprite n="spite_enemy_95" x="261" y="210" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="65" oW="160" oH="144"/>
+    <sprite n="spite_enemy_96" x="232" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="9" oY="65" oW="160" oH="144"/>
+    <sprite n="spite_enemy_97" x="232" y="270" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="66" oW="160" oH="144"/>
+    <sprite n="spite_enemy_98" x="261" y="240" w="29" h="30" pX="0.5" pY="0.5" oX="25" oY="66" oW="160" oH="144"/>
+</TextureAtlas>

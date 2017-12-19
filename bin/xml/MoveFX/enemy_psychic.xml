@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4f4fe469cc056eaff274f4901bf2a680:2932e74ffeb698e2b85c80fc097c4a54:d13ebad6c4d417d886a0402221c0844b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_psychic.png" width="407" height="407">
+    <sprite n="psychic_enemy_0" x="387" y="106" w="8" h="16" pX="0.5" pY="0.5" oX="102" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_1" x="385" y="186" w="8" h="16" pX="0.5" pY="0.5" oX="102" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_2" x="393" y="186" w="8" h="16" pX="0.5" pY="0.5" oX="98" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_3" x="395" y="106" w="8" h="16" pX="0.5" pY="0.5" oX="96" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_4" x="0" y="390" w="8" h="16" pX="0.5" pY="0.5" oX="96" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_5" x="364" y="369" w="10" h="20" pX="0.5" pY="0.5" oX="91" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_6" x="374" y="362" w="10" h="20" pX="0.5" pY="0.5" oX="89" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_7" x="374" y="382" w="10" h="20" pX="0.5" pY="0.5" oX="89" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_8" x="380" y="320" w="10" h="20" pX="0.5" pY="0.5" oX="85" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_9" x="287" y="336" w="12" h="19" pX="0.5" pY="0.5" oX="83" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_10" x="96" y="380" w="27" h="27" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_11" x="123" y="380" w="27" h="27" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_12" x="379" y="202" w="28" h="29" pX="0.5" pY="0.5" oX="78" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_13" x="379" y="231" w="28" h="29" pX="0.5" pY="0.5" oX="76" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_14" x="379" y="260" w="28" h="29" pX="0.5" pY="0.5" oX="76" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_15" x="378" y="289" w="29" h="31" pX="0.5" pY="0.5" oX="72" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_16" x="276" y="358" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_17" x="193" y="248" w="30" h="33" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_18" x="289" y="204" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_19" x="212" y="372" w="32" h="34" pX="0.5" pY="0.5" oX="63" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_20" x="293" y="42" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_21" x="340" y="42" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_22" x="244" y="84" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_23" x="49" y="176" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_24" x="98" y="132" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_25" x="147" y="88" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_26" x="196" y="44" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_27" x="0" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_28" x="0" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_29" x="49" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_30" x="319" y="202" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_31" x="349" y="202" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_32" x="289" y="237" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_33" x="244" y="124" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_34" x="243" y="164" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_35" x="97" y="300" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_36" x="96" y="340" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_37" x="245" y="0" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_38" x="0" y="264" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_39" x="49" y="218" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_40" x="293" y="0" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_41" x="0" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_42" x="49" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_43" x="319" y="235" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_44" x="349" y="235" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_45" x="288" y="270" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_46" x="145" y="294" w="45" h="39" pX="0.5" pY="0.5" oX="65" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_47" x="293" y="82" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_48" x="195" y="170" w="47" h="39" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_49" x="194" y="209" w="47" h="39" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_50" x="0" y="306" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_51" x="341" y="0" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_52" x="0" y="348" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_53" x="98" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_54" x="0" y="132" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_55" x="49" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_56" x="287" y="303" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_57" x="223" y="321" w="32" h="34" pX="0.5" pY="0.5" oX="63" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_58" x="340" y="82" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_59" x="291" y="122" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_60" x="49" y="260" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_61" x="48" y="302" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_62" x="48" y="344" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_63" x="98" y="174" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_64" x="98" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_65" x="147" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_66" x="0" y="176" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_67" x="318" y="270" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_68" x="317" y="303" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_69" x="338" y="122" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_70" x="242" y="204" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_71" x="241" y="244" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_72" x="291" y="162" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_73" x="97" y="216" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_74" x="97" y="258" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_75" x="147" y="130" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_76" x="146" y="172" w="48" h="42" pX="0.5" pY="0.5" oX="54" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_77" x="49" y="132" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_78" x="98" y="88" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_79" x="348" y="268" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_80" x="348" y="301" w="30" h="33" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_81" x="306" y="336" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_82" x="144" y="333" w="45" h="39" pX="0.5" pY="0.5" oX="65" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_83" x="338" y="162" w="47" h="40" pX="0.5" pY="0.5" oX="63" oY="33" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_84" x="146" y="214" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_85" x="145" y="254" w="47" h="40" pX="0.5" pY="0.5" oX="61" oY="34" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_86" x="196" y="86" w="48" h="42" pX="0.5" pY="0.5" oX="58" oY="35" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_87" x="195" y="128" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_88" x="245" y="42" w="48" h="42" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_89" x="147" y="44" w="49" h="44" pX="0.5" pY="0.5" oX="52" oY="36" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_90" x="196" y="0" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_91" x="0" y="220" w="49" h="44" pX="0.5" pY="0.5" oX="50" oY="37" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_92" x="306" y="369" w="30" h="33" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_93" x="336" y="336" w="30" h="33" pX="0.5" pY="0.5" oX="63" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_94" x="150" y="372" w="31" h="35" pX="0.5" pY="0.5" oX="61" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_95" x="181" y="372" w="31" h="35" pX="0.5" pY="0.5" oX="61" oY="39" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_96" x="223" y="284" w="32" h="37" pX="0.5" pY="0.5" oX="58" oY="40" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_97" x="255" y="284" w="32" h="37" pX="0.5" pY="0.5" oX="56" oY="41" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_98" x="255" y="321" w="32" h="37" pX="0.5" pY="0.5" oX="56" oY="41" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_99" x="244" y="358" w="32" h="37" pX="0.5" pY="0.5" oX="52" oY="43" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_100" x="189" y="333" w="33" h="39" pX="0.5" pY="0.5" oX="50" oY="42" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_101" x="190" y="294" w="33" h="39" pX="0.5" pY="0.5" oX="50" oY="42" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_102" x="336" y="369" w="14" h="28" pX="0.5" pY="0.5" oX="65" oY="44" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_103" x="350" y="369" w="14" h="28" pX="0.5" pY="0.5" oX="63" oY="45" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_104" x="366" y="334" w="14" h="28" pX="0.5" pY="0.5" oX="63" oY="45" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_105" x="389" y="0" w="16" h="32" pX="0.5" pY="0.5" oX="58" oY="45" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_106" x="223" y="248" w="16" h="32" pX="0.5" pY="0.5" oX="56" oY="46" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_107" x="387" y="42" w="16" h="32" pX="0.5" pY="0.5" oX="56" oY="46" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_108" x="387" y="74" w="16" h="32" pX="0.5" pY="0.5" oX="52" oY="48" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_109" x="385" y="122" w="16" h="32" pX="0.5" pY="0.5" oX="50" oY="49" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_110" x="385" y="154" w="16" h="32" pX="0.5" pY="0.5" oX="50" oY="49" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_111" x="48" y="264" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_112" x="97" y="176" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_113" x="146" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_114" x="195" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_115" x="244" y="44" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_116" x="243" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_117" x="96" y="302" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_118" x="194" y="172" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_119" x="242" y="170" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_120" x="241" y="209" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_121" x="145" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_122" x="143" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_123" x="144" y="300" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_124" x="212" y="406" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_125" x="222" y="333" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_126" x="193" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_127" x="192" y="254" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_128" x="290" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_129" x="288" y="244" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_130" x="287" y="284" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_131" x="378" y="268" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_132" x="347" y="303" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_133" x="0" y="406" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_134" x="48" y="265" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_135" x="97" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_136" x="146" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_137" x="195" y="89" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_138" x="244" y="45" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_139" x="243" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_140" x="96" y="303" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_141" x="194" y="173" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_142" x="242" y="171" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_143" x="241" y="210" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_144" x="145" y="217" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_145" x="143" y="341" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_146" x="144" y="301" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_147" x="213" y="406" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_148" x="222" y="334" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_149" x="193" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_150" x="192" y="255" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_151" x="290" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_152" x="288" y="245" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_153" x="287" y="285" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_154" x="378" y="269" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_155" x="347" y="304" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_156" x="1" y="406" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_157" x="48" y="266" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_158" x="97" y="178" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_159" x="146" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_160" x="195" y="90" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_161" x="244" y="46" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_162" x="243" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_163" x="96" y="304" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_164" x="194" y="174" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_165" x="242" y="172" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_166" x="241" y="211" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_167" x="145" y="218" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psychic_enemy_168" x="143" y="342" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

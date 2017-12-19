@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5124bad3d4fe623f0434579492c4a827:8e42015c657c6402a4ea2054cff7390b:1ee15fcb01df375d02cf4873810889b6$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_rapid_spin.png" width="224" height="224">
+    <sprite n="rapid_spin_enemy_0" x="162" y="180" w="31" h="16" pX="0.5" pY="0.5" oX="101" oY="44" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_1" x="162" y="196" w="31" h="16" pX="0.5" pY="0.5" oX="101" oY="40" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_2" x="186" y="156" w="31" h="16" pX="0.5" pY="0.5" oX="124" oY="36" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_3" x="108" y="196" w="54" h="28" pX="0.5" pY="0.5" oX="101" oY="32" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_4" x="162" y="56" w="31" h="28" pX="0.5" pY="0.5" oX="101" oY="28" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_5" x="162" y="0" w="54" h="28" pX="0.5" pY="0.5" oX="101" oY="24" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_6" x="108" y="40" w="54" h="40" pX="0.5" pY="0.5" oX="101" oY="20" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_7" x="108" y="80" w="54" h="40" pX="0.5" pY="0.5" oX="101" oY="16" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_8" x="108" y="120" w="54" h="40" pX="0.5" pY="0.5" oX="101" oY="12" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_9" x="54" y="52" w="54" h="52" pX="0.5" pY="0.5" oX="101" oY="8" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_10" x="0" y="60" w="54" h="52" pX="0.5" pY="0.5" oX="101" oY="4" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_11" x="0" y="112" w="54" h="52" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_12" x="0" y="0" w="54" h="60" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_13" x="0" y="164" w="54" h="52" pX="0.5" pY="0.5" oX="101" oY="4" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_14" x="54" y="0" w="54" h="52" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_15" x="54" y="104" w="54" h="48" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_16" x="54" y="152" w="54" h="40" pX="0.5" pY="0.5" oX="101" oY="4" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_17" x="108" y="0" w="54" h="40" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_18" x="108" y="160" w="54" h="36" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_19" x="162" y="28" w="31" h="28" pX="0.5" pY="0.5" oX="124" oY="4" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_20" x="54" y="192" w="54" h="28" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_21" x="162" y="84" w="31" h="24" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_22" x="193" y="52" w="31" h="16" pX="0.5" pY="0.5" oX="124" oY="4" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_23" x="193" y="68" w="31" h="16" pX="0.5" pY="0.5" oX="124" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_24" x="193" y="84" w="31" h="16" pX="0.5" pY="0.5" oX="101" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_25" x="0" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_26" x="1" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_27" x="2" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_28" x="3" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_29" x="4" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_30" x="5" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_31" x="6" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_32" x="7" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_33" x="8" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_34" x="9" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_35" x="10" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_36" x="11" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_37" x="12" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_38" x="13" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_39" x="14" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_40" x="15" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_41" x="16" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_42" x="17" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_43" x="18" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_44" x="19" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_45" x="20" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_46" x="21" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_47" x="22" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_48" x="23" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_49" x="24" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_50" x="25" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_51" x="26" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_52" x="27" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_53" x="28" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_54" x="29" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_55" x="30" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_56" x="31" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_57" x="32" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_58" x="33" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_59" x="34" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_60" x="35" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_61" x="36" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_62" x="37" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_63" x="38" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_64" x="39" y="216" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_65" x="162" y="108" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_66" x="162" y="132" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_67" x="162" y="156" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_68" x="186" y="108" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_69" x="186" y="132" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_70" x="193" y="172" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_71" x="193" y="196" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+    <sprite n="rapid_spin_enemy_72" x="193" y="28" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="76" oW="160" oH="144"/>
+</TextureAtlas>

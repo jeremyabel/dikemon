@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1c3c802804e6ebd69b07277f95a6325f:a5b4b033024dd55af0406288370560fc:6137f6bc2cc0e3606b4fc8b0c1f0e9ef$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_lick.png" width="96" height="96">
+    <sprite n="lick_enemy_0" x="64" y="48" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="84" oW="160" oH="144"/>
+    <sprite n="lick_enemy_1" x="80" y="48" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="84" oW="160" oH="144"/>
+    <sprite n="lick_enemy_2" x="64" y="56" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="84" oW="160" oH="144"/>
+    <sprite n="lick_enemy_3" x="48" y="48" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="76" oW="160" oH="144"/>
+    <sprite n="lick_enemy_4" x="48" y="64" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="76" oW="160" oH="144"/>
+    <sprite n="lick_enemy_5" x="48" y="80" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="76" oW="160" oH="144"/>
+    <sprite n="lick_enemy_6" x="32" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_7" x="48" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_8" x="64" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_9" x="80" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_10" x="0" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_11" x="0" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_12" x="0" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_13" x="0" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_14" x="16" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_15" x="80" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_16" x="81" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_17" x="82" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_18" x="16" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_19" x="16" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_20" x="16" y="72" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_21" x="83" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_22" x="84" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_23" x="85" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_24" x="32" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_25" x="48" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_26" x="64" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_27" x="86" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_28" x="87" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_29" x="88" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="lick_enemy_30" x="80" y="0" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_31" x="32" y="24" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="lick_enemy_32" x="32" y="48" w="16" h="24" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:61905bf3a556166dfea5b213e3777fc8:9dc798a74d5fc292d585764c9a363745:08e592262f9895246b688d2dfbc01ae7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_metronome.png" width="202" height="202">
+    <sprite n="metronome_enemy_0" x="54" y="68" w="13" h="19" pX="0.5" pY="0.5" oX="85" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_1" x="67" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="86" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_2" x="147" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="86" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_3" x="160" y="69" w="13" h="19" pX="0.5" pY="0.5" oX="87" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_4" x="0" y="85" w="13" h="19" pX="0.5" pY="0.5" oX="88" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_5" x="0" y="49" w="13" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_6" x="58" y="50" w="13" h="18" pX="0.5" pY="0.5" oX="90" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_7" x="61" y="33" w="13" h="17" pX="0.5" pY="0.5" oX="92" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_8" x="0" y="67" w="13" h="18" pX="0.5" pY="0.5" oX="93" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_9" x="62" y="127" w="19" h="20" pX="0.5" pY="0.5" oX="88" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_10" x="0" y="105" w="20" h="20" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_11" x="20" y="105" w="21" h="20" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_12" x="80" y="69" w="21" h="19" pX="0.5" pY="0.5" oX="90" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_13" x="101" y="69" w="21" h="19" pX="0.5" pY="0.5" oX="91" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_14" x="25" y="16" w="20" h="17" pX="0.5" pY="0.5" oX="93" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_15" x="45" y="16" w="19" h="17" pX="0.5" pY="0.5" oX="94" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_16" x="0" y="0" w="18" h="16" pX="0.5" pY="0.5" oX="96" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_17" x="18" y="0" w="16" h="16" pX="0.5" pY="0.5" oX="97" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_18" x="122" y="69" w="25" h="19" pX="0.5" pY="0.5" oX="88" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_19" x="74" y="33" w="23" h="18" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_20" x="97" y="33" w="22" h="18" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_21" x="64" y="16" w="20" h="17" pX="0.5" pY="0.5" oX="90" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_22" x="84" y="16" w="18" h="17" pX="0.5" pY="0.5" oX="91" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_23" x="34" y="0" w="17" h="16" pX="0.5" pY="0.5" oX="93" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_24" x="51" y="0" w="16" h="16" pX="0.5" pY="0.5" oX="93" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_25" x="67" y="0" w="18" h="16" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_26" x="85" y="0" w="19" h="16" pX="0.5" pY="0.5" oX="90" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_27" x="119" y="33" w="21" h="18" pX="0.5" pY="0.5" oX="88" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_28" x="140" y="33" w="20" h="18" pX="0.5" pY="0.5" oX="88" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_29" x="160" y="33" w="21" h="18" pX="0.5" pY="0.5" oX="87" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_30" x="13" y="50" w="22" h="18" pX="0.5" pY="0.5" oX="86" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_31" x="35" y="50" w="23" h="18" pX="0.5" pY="0.5" oX="86" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_32" x="102" y="16" w="25" h="17" pX="0.5" pY="0.5" oX="85" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_33" x="127" y="16" w="23" h="17" pX="0.5" pY="0.5" oX="86" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_34" x="104" y="0" w="24" h="16" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_35" x="150" y="16" w="22" h="17" pX="0.5" pY="0.5" oX="87" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_36" x="41" y="107" w="21" h="20" pX="0.5" pY="0.5" oX="88" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_37" x="62" y="107" w="19" h="20" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_38" x="81" y="107" w="19" h="20" pX="0.5" pY="0.5" oX="89" oY="29" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_39" x="173" y="69" w="19" h="19" pX="0.5" pY="0.5" oX="89" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_40" x="100" y="107" w="20" h="20" pX="0.5" pY="0.5" oX="89" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_41" x="71" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="88" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_42" x="181" y="33" w="20" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_43" x="172" y="16" w="21" h="17" pX="0.5" pY="0.5" oX="89" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_44" x="0" y="32" w="20" h="17" pX="0.5" pY="0.5" oX="91" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_45" x="20" y="33" w="20" h="17" pX="0.5" pY="0.5" oX="92" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_46" x="40" y="33" w="21" h="17" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_47" x="128" y="0" w="22" h="16" pX="0.5" pY="0.5" oX="91" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_48" x="150" y="0" w="25" h="16" pX="0.5" pY="0.5" oX="89" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_49" x="175" y="0" w="24" h="16" pX="0.5" pY="0.5" oX="89" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_50" x="0" y="16" w="25" h="16" pX="0.5" pY="0.5" oX="88" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_51" x="93" y="51" w="23" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_52" x="116" y="51" w="22" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_53" x="138" y="51" w="19" h="18" pX="0.5" pY="0.5" oX="91" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_54" x="157" y="51" w="17" h="18" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_55" x="174" y="51" w="17" h="18" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_56" x="13" y="86" w="18" h="19" pX="0.5" pY="0.5" oX="91" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_57" x="13" y="68" w="21" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_58" x="34" y="68" w="20" h="18" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_59" x="31" y="86" w="22" h="19" pX="0.5" pY="0.5" oX="88" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_60" x="120" y="107" w="21" h="20" pX="0.5" pY="0.5" oX="88" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_61" x="141" y="107" w="21" h="20" pX="0.5" pY="0.5" oX="87" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_62" x="53" y="88" w="22" h="19" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_63" x="162" y="107" w="22" h="20" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_64" x="0" y="125" w="24" h="20" pX="0.5" pY="0.5" oX="85" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_65" x="75" y="88" w="23" h="19" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_66" x="98" y="88" w="24" h="19" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_67" x="122" y="88" w="22" h="19" pX="0.5" pY="0.5" oX="87" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_68" x="144" y="88" w="22" h="19" pX="0.5" pY="0.5" oX="88" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_69" x="166" y="88" w="20" h="19" pX="0.5" pY="0.5" oX="89" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_70" x="24" y="127" w="19" h="20" pX="0.5" pY="0.5" oX="89" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_71" x="81" y="127" w="19" h="21" pX="0.5" pY="0.5" oX="89" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_72" x="43" y="127" w="19" h="20" pX="0.5" pY="0.5" oX="89" oY="34" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_73" x="100" y="127" w="21" h="21" pX="0.5" pY="0.5" oX="88" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_74" x="121" y="127" w="19" h="21" pX="0.5" pY="0.5" oX="90" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_75" x="140" y="127" w="20" h="21" pX="0.5" pY="0.5" oX="90" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_76" x="160" y="127" w="20" h="21" pX="0.5" pY="0.5" oX="91" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_77" x="180" y="132" w="20" h="21" pX="0.5" pY="0.5" oX="92" oY="33" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_78" x="0" y="145" w="22" h="22" pX="0.5" pY="0.5" oX="91" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_79" x="22" y="147" w="23" h="23" pX="0.5" pY="0.5" oX="90" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_80" x="45" y="147" w="25" h="24" pX="0.5" pY="0.5" oX="89" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_81" x="70" y="148" w="24" h="24" pX="0.5" pY="0.5" oX="89" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_82" x="94" y="148" w="25" h="24" pX="0.5" pY="0.5" oX="88" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_83" x="138" y="148" w="22" h="26" pX="0.5" pY="0.5" oX="90" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_84" x="178" y="153" w="21" h="26" pX="0.5" pY="0.5" oX="90" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_85" x="119" y="148" w="19" h="25" pX="0.5" pY="0.5" oX="91" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_86" x="184" y="107" w="18" h="25" pX="0.5" pY="0.5" oX="92" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_87" x="160" y="148" w="18" h="26" pX="0.5" pY="0.5" oX="91" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_88" x="22" y="170" w="19" h="27" pX="0.5" pY="0.5" oX="90" oY="30" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_89" x="0" y="167" w="22" h="26" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_90" x="41" y="171" w="21" h="27" pX="0.5" pY="0.5" oX="89" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_91" x="104" y="173" w="22" h="28" pX="0.5" pY="0.5" oX="88" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_92" x="126" y="174" w="21" h="28" pX="0.5" pY="0.5" oX="88" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_93" x="147" y="174" w="21" h="28" pX="0.5" pY="0.5" oX="87" oY="31" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_94" x="62" y="172" w="21" h="27" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+    <sprite n="metronome_enemy_95" x="83" y="172" w="21" h="27" pX="0.5" pY="0.5" oX="86" oY="32" oW="160" oH="144"/>
+</TextureAtlas>

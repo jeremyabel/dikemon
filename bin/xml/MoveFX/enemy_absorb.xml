@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:83ceb9cb69f2f614760304e1f045119e:2b3c0e80fb0427cb18b9dec60f7c1693:927a1405d8600e25931f3d276aed752a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_absorb.png" width="640" height="640">
+    <sprite n="absorb_enemy_01" x="92" y="195" w="4" h="4" pX="0.5" pY="0.5" oX="46" oY="68" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_02" x="289" y="106" w="4" h="4" pX="0.5" pY="0.5" oX="48" oY="67" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_03" x="285" y="146" w="4" h="4" pX="0.5" pY="0.5" oX="50" oY="66" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_04" x="260" y="523" w="4" h="4" pX="0.5" pY="0.5" oX="52" oY="65" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_05" x="591" y="593" w="4" h="4" pX="0.5" pY="0.5" oX="54" oY="64" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_06" x="92" y="199" w="4" h="4" pX="0.5" pY="0.5" oX="56" oY="63" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_07" x="523" y="375" w="25" h="13" pX="0.5" pY="0.5" oX="37" oY="53" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_08" x="548" y="375" w="24" h="13" pX="0.5" pY="0.5" oX="40" oY="52" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_09" x="612" y="617" w="24" h="14" pX="0.5" pY="0.5" oX="43" oY="51" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_010" x="581" y="371" w="23" h="14" pX="0.5" pY="0.5" oX="46" oY="50" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_011" x="572" y="385" w="22" h="14" pX="0.5" pY="0.5" oX="49" oY="49" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_012" x="619" y="287" w="21" h="14" pX="0.5" pY="0.5" oX="52" oY="48" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_013" x="619" y="301" w="20" h="14" pX="0.5" pY="0.5" oX="55" oY="47" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_014" x="420" y="598" w="39" h="42" pX="0.5" pY="0.5" oX="38" oY="46" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_015" x="575" y="597" w="37" h="41" pX="0.5" pY="0.5" oX="42" oY="45" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_016" x="565" y="499" w="35" h="41" pX="0.5" pY="0.5" oX="46" oY="43" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_017" x="568" y="408" w="33" h="40" pX="0.5" pY="0.5" oX="50" oY="42" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_018" x="570" y="448" w="32" h="39" pX="0.5" pY="0.5" oX="54" oY="41" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_019" x="602" y="445" w="30" h="38" pX="0.5" pY="0.5" oX="58" oY="40" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_020" x="612" y="371" w="28" h="37" pX="0.5" pY="0.5" oX="62" oY="39" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_021" x="88" y="338" w="90" h="48" pX="0.5" pY="0.5" oX="44" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_022" x="84" y="569" w="88" h="46" pX="0.5" pY="0.5" oX="46" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_023" x="289" y="142" w="86" h="45" pX="0.5" pY="0.5" oX="48" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_024" x="280" y="270" w="84" h="44" pX="0.5" pY="0.5" oX="50" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_025" x="266" y="453" w="82" h="43" pX="0.5" pY="0.5" oX="52" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_026" x="260" y="587" w="80" h="42" pX="0.5" pY="0.5" oX="54" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_027" x="346" y="503" w="78" h="41" pX="0.5" pY="0.5" oX="56" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_028" x="192" y="106" w="97" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_029" x="98" y="129" w="94" h="39" pX="0.5" pY="0.5" oX="40" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_030" x="92" y="258" w="91" h="39" pX="0.5" pY="0.5" oX="43" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_031" x="176" y="485" w="88" h="38" pX="0.5" pY="0.5" oX="46" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_032" x="287" y="233" w="85" h="37" pX="0.5" pY="0.5" oX="49" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_033" x="264" y="496" w="82" h="37" pX="0.5" pY="0.5" oX="52" oY="25" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_034" x="479" y="62" w="79" h="37" pX="0.5" pY="0.5" oX="55" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_035" x="98" y="0" w="96" h="65" pX="0.5" pY="0.5" oX="38" oY="23" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_036" x="0" y="195" w="92" h="64" pX="0.5" pY="0.5" oX="42" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_037" x="0" y="321" w="88" h="62" pX="0.5" pY="0.5" oX="46" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_038" x="0" y="499" w="84" h="56" pX="0.5" pY="0.5" oX="50" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_039" x="344" y="397" w="80" h="54" pX="0.5" pY="0.5" oX="54" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_040" x="348" y="451" w="76" h="52" pX="0.5" pY="0.5" oX="58" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_041" x="498" y="449" w="72" h="50" pX="0.5" pY="0.5" oX="62" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_042" x="86" y="386" w="90" h="48" pX="0.5" pY="0.5" oX="44" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_043" x="172" y="570" w="88" h="46" pX="0.5" pY="0.5" oX="46" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_044" x="375" y="142" w="86" h="45" pX="0.5" pY="0.5" oX="48" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_045" x="364" y="270" w="84" h="44" pX="0.5" pY="0.5" oX="50" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_046" x="468" y="136" w="82" h="43" pX="0.5" pY="0.5" oX="52" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_047" x="340" y="598" w="80" h="42" pX="0.5" pY="0.5" oX="54" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_048" x="448" y="304" w="78" h="41" pX="0.5" pY="0.5" oX="56" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_049" x="96" y="168" w="97" h="40" pX="0.5" pY="0.5" oX="37" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_050" x="193" y="196" w="94" h="39" pX="0.5" pY="0.5" oX="40" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_051" x="178" y="358" w="91" h="39" pX="0.5" pY="0.5" oX="43" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_052" x="380" y="104" w="88" h="38" pX="0.5" pY="0.5" oX="46" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_053" x="372" y="233" w="85" h="37" pX="0.5" pY="0.5" oX="49" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_054" x="461" y="179" w="82" h="37" pX="0.5" pY="0.5" oX="52" oY="25" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_055" x="479" y="99" w="79" h="37" pX="0.5" pY="0.5" oX="55" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_056" x="0" y="130" w="96" h="65" pX="0.5" pY="0.5" oX="38" oY="23" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_057" x="288" y="0" w="92" h="64" pX="0.5" pY="0.5" oX="42" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_058" x="470" y="0" w="88" h="62" pX="0.5" pY="0.5" oX="46" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_059" x="0" y="555" w="84" h="56" pX="0.5" pY="0.5" oX="50" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_060" x="260" y="533" w="80" h="54" pX="0.5" pY="0.5" oX="54" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_061" x="447" y="345" w="76" h="52" pX="0.5" pY="0.5" oX="58" oY="26" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_062" x="424" y="451" w="74" h="52" pX="0.5" pY="0.5" oX="62" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_063" x="92" y="208" w="92" h="50" pX="0.5" pY="0.5" oX="44" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_064" x="86" y="434" w="90" h="48" pX="0.5" pY="0.5" oX="46" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_065" x="84" y="522" w="88" h="47" pX="0.5" pY="0.5" oX="48" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_066" x="287" y="187" w="86" h="46" pX="0.5" pY="0.5" oX="50" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_067" x="279" y="314" w="84" h="45" pX="0.5" pY="0.5" oX="52" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_068" x="459" y="216" w="82" h="44" pX="0.5" pY="0.5" oX="54" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_069" x="541" y="244" w="80" h="43" pX="0.5" pY="0.5" oX="56" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_070" x="380" y="62" w="99" h="42" pX="0.5" pY="0.5" oX="37" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_071" x="184" y="235" w="96" h="41" pX="0.5" pY="0.5" oX="40" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_072" x="90" y="297" w="93" h="41" pX="0.5" pY="0.5" oX="43" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_073" x="176" y="445" w="90" h="40" pX="0.5" pY="0.5" oX="46" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_074" x="293" y="64" w="87" h="39" pX="0.5" pY="0.5" oX="49" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_075" x="269" y="359" w="84" h="38" pX="0.5" pY="0.5" oX="52" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_076" x="550" y="170" w="81" h="37" pX="0.5" pY="0.5" oX="55" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_077" x="0" y="0" w="98" h="65" pX="0.5" pY="0.5" oX="38" oY="23" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_078" x="98" y="65" w="94" h="64" pX="0.5" pY="0.5" oX="42" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_079" x="380" y="0" w="90" h="62" pX="0.5" pY="0.5" oX="46" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_080" x="0" y="441" w="86" h="58" pX="0.5" pY="0.5" oX="50" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_081" x="558" y="114" w="82" h="56" pX="0.5" pY="0.5" oX="54" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_082" x="340" y="544" w="78" h="54" pX="0.5" pY="0.5" oX="58" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_083" x="424" y="503" w="74" h="52" pX="0.5" pY="0.5" oX="62" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_084" x="193" y="146" w="92" h="50" pX="0.5" pY="0.5" oX="44" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_085" x="176" y="397" w="90" h="48" pX="0.5" pY="0.5" oX="46" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_086" x="172" y="523" w="88" h="47" pX="0.5" pY="0.5" oX="48" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_087" x="373" y="187" w="86" h="46" pX="0.5" pY="0.5" oX="50" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_088" x="363" y="314" w="84" h="45" pX="0.5" pY="0.5" oX="52" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_089" x="457" y="260" w="82" h="44" pX="0.5" pY="0.5" oX="54" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_090" x="539" y="287" w="80" h="43" pX="0.5" pY="0.5" oX="56" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_091" x="194" y="64" w="99" h="42" pX="0.5" pY="0.5" oX="37" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_092" x="183" y="276" w="96" h="41" pX="0.5" pY="0.5" oX="40" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_093" x="183" y="317" w="93" h="41" pX="0.5" pY="0.5" oX="43" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_094" x="86" y="482" w="90" h="40" pX="0.5" pY="0.5" oX="46" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_095" x="293" y="103" w="87" h="39" pX="0.5" pY="0.5" oX="49" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_096" x="353" y="359" w="84" h="38" pX="0.5" pY="0.5" oX="52" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_097" x="543" y="207" w="81" h="37" pX="0.5" pY="0.5" oX="55" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_098" x="0" y="65" w="98" h="65" pX="0.5" pY="0.5" oX="38" oY="23" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_099" x="194" y="0" w="94" h="64" pX="0.5" pY="0.5" oX="42" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0100" x="0" y="259" w="90" h="62" pX="0.5" pY="0.5" oX="46" oY="22" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0101" x="0" y="383" w="86" h="58" pX="0.5" pY="0.5" oX="50" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0102" x="558" y="58" w="82" h="56" pX="0.5" pY="0.5" oX="54" oY="24" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0103" x="558" y="0" w="82" h="58" pX="0.5" pY="0.5" oX="58" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0104" x="266" y="397" w="78" h="56" pX="0.5" pY="0.5" oX="62" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0105" x="424" y="397" w="74" h="54" pX="0.5" pY="0.5" oX="66" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0106" x="498" y="397" w="70" h="52" pX="0.5" pY="0.5" oX="70" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0107" x="498" y="499" w="67" h="51" pX="0.5" pY="0.5" oX="73" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0108" x="469" y="555" w="63" h="49" pX="0.5" pY="0.5" oX="77" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0109" x="532" y="550" w="59" h="47" pX="0.5" pY="0.5" oX="81" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0110" x="526" y="330" w="55" h="45" pX="0.5" pY="0.5" oX="85" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0111" x="418" y="555" w="51" h="43" pX="0.5" pY="0.5" oX="89" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0112" x="581" y="330" w="47" h="41" pX="0.5" pY="0.5" oX="93" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0113" x="532" y="597" w="43" h="39" pX="0.5" pY="0.5" oX="97" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0114" x="601" y="408" w="39" h="37" pX="0.5" pY="0.5" oX="101" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0115" x="459" y="604" w="36" h="35" pX="0.5" pY="0.5" oX="104" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0116" x="495" y="604" w="34" h="34" pX="0.5" pY="0.5" oX="106" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0117" x="602" y="483" w="32" h="32" pX="0.5" pY="0.5" oX="108" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0118" x="600" y="515" w="30" h="30" pX="0.5" pY="0.5" oX="110" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0119" x="0" y="611" w="28" h="28" pX="0.5" pY="0.5" oX="112" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0120" x="28" y="611" w="26" h="26" pX="0.5" pY="0.5" oX="114" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0121" x="54" y="611" w="24" h="26" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0122" x="78" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0123" x="102" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0124" x="550" y="136" w="8" h="8" pX="0.5" pY="0.5" oX="122" oY="27" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0125" x="632" y="445" w="8" h="8" pX="0.5" pY="0.5" oX="122" oY="27" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0126" x="192" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0127" x="183" y="258" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0128" x="172" y="522" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0129" x="126" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0130" x="150" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0131" x="174" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0132" x="198" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0133" x="222" y="616" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0134" x="279" y="276" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0135" x="269" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0136" x="447" y="314" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0137" x="459" y="639" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0138" x="0" y="639" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0139" x="591" y="545" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0140" x="591" y="569" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0141" x="615" y="545" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0142" x="615" y="569" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="absorb_enemy_0143" x="612" y="593" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+</TextureAtlas>

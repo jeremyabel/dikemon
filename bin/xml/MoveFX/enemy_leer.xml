@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4b8c8ef1b267be2723ccc0fd5697a967:d0a87dc04e4065142fd1af20bf9a18bf:8995af848d5cc31818d7629b28f8a803$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_leer.png" width="408" height="408">
+    <sprite n="leer_enemy_0" x="0" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_1" x="82" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_2" x="0" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_3" x="246" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_4" x="246" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_5" x="164" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_6" x="164" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_7" x="164" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_8" x="246" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_9" x="246" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_10" x="164" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_11" x="246" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_12" x="0" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_13" x="82" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_14" x="164" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_15" x="246" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_16" x="0" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_17" x="0" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_18" x="0" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_19" x="0" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_20" x="0" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_21" x="82" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_22" x="164" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_23" x="246" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_24" x="82" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_25" x="82" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_26" x="82" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_27" x="82" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_28" x="82" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_29" x="164" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="leer_enemy_30" x="164" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+</TextureAtlas>

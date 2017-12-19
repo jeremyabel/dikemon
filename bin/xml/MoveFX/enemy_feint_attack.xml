@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3270df3dd750fb2793e675e308c46d60:56033c77fabe6a5df66874bd23617d88:5ebf9ee9ac660b1b89e2c00a4623062d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_faint_attack.png" width="168" height="168">
+    <sprite n="faint_attack_enemy_0" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_1" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_2" x="120" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_3" x="96" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_4" x="120" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_5" x="144" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_6" x="96" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="84" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_7" x="99" y="167" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_8" x="100" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_9" x="96" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_10" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_11" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_12" x="0" y="144" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_13" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_14" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_15" x="48" y="144" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="76" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_16" x="97" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_17" x="98" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_18" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_19" x="96" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_20" x="144" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_21" x="72" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_22" x="72" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_23" x="72" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_24" x="72" y="144" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_25" x="98" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_26" x="98" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_27" x="98" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_28" x="98" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_29" x="98" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_30" x="98" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_31" x="98" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_32" x="98" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_33" x="98" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_34" x="98" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_35" x="98" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_36" x="98" y="157" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_37" x="98" y="158" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_38" x="98" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_39" x="98" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_40" x="98" y="161" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_41" x="98" y="162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_42" x="98" y="163" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_43" x="98" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_44" x="98" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_45" x="98" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_46" x="98" y="167" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_47" x="99" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_48" x="99" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_49" x="99" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_50" x="99" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_51" x="99" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_52" x="99" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_53" x="99" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_54" x="99" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_55" x="99" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_56" x="99" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_57" x="99" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_58" x="99" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_59" x="99" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_60" x="99" y="157" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_61" x="99" y="158" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_62" x="99" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_63" x="99" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_64" x="99" y="161" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_65" x="99" y="162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_66" x="99" y="163" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_67" x="99" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_68" x="99" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_69" x="99" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_70" x="100" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_71" x="100" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_72" x="100" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_73" x="100" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_74" x="100" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_75" x="100" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_76" x="100" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_77" x="100" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_78" x="100" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_79" x="100" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_80" x="100" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_81" x="100" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_82" x="100" y="157" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_83" x="100" y="158" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_84" x="100" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_85" x="100" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_86" x="100" y="161" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_87" x="100" y="162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_88" x="100" y="163" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_89" x="100" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_90" x="100" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_91" x="100" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_92" x="100" y="167" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_93" x="101" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_94" x="101" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_95" x="101" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_96" x="101" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_97" x="101" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_98" x="101" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_99" x="101" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_100" x="96" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_101" x="96" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_102" x="96" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_103" x="96" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_104" x="96" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_105" x="96" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_106" x="96" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_107" x="96" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_108" x="96" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_109" x="96" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_110" x="96" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_111" x="96" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_112" x="96" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_113" x="96" y="157" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_114" x="96" y="158" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_115" x="96" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_116" x="96" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_117" x="96" y="161" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_118" x="0" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_119" x="0" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_120" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_121" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_122" x="72" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_123" x="96" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_124" x="120" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="100" oY="4" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_125" x="96" y="162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_126" x="96" y="163" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_127" x="144" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_128" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_129" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_130" x="24" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_131" x="24" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_132" x="24" y="144" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_133" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="132" oY="12" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_134" x="96" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_135" x="96" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_136" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_137" x="96" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_138" x="120" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_139" x="144" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_140" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_141" x="48" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_142" x="48" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="20" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_143" x="96" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_144" x="96" y="167" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_145" x="97" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_146" x="97" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_147" x="97" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_148" x="97" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_149" x="97" y="148" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_150" x="97" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_151" x="97" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_152" x="97" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_153" x="97" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_154" x="97" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_155" x="97" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_156" x="97" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_157" x="97" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_158" x="97" y="157" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_159" x="97" y="158" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_160" x="97" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_161" x="97" y="161" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_162" x="97" y="162" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_163" x="97" y="163" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_164" x="97" y="164" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_165" x="97" y="165" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_166" x="97" y="166" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_167" x="97" y="167" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="faint_attack_enemy_168" x="98" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

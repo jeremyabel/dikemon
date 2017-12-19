@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:639d8a5fd0a4b53aa9cb918d878475b9:670e667698ca91aa5487a51f02fd2950:43132ebb7ae005df10001e2400061aa3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_karate_chop.png" width="136" height="136">
+    <sprite n="karate_chop_enemy_0" x="0" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_1" x="16" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_2" x="72" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_3" x="96" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_4" x="104" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_5" x="112" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_6" x="120" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_7" x="96" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_8" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_9" x="48" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_10" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_11" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_12" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_13" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="52" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_14" x="32" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_15" x="120" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_16" x="120" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_17" x="120" y="56" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_18" x="48" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_19" x="64" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_20" x="72" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_21" x="0" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_22" x="32" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_23" x="56" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_24" x="80" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_25" x="104" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_26" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_27" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="56" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_28" x="72" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_29" x="80" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_30" x="112" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_31" x="88" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_32" x="88" y="104" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_33" x="96" y="120" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_34" x="112" y="88" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="64" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_35" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_36" x="24" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_37" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_38" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_39" x="96" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_40" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="karate_chop_enemy_41" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+</TextureAtlas>

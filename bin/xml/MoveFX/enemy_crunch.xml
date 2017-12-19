@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6bca3bcf830d1b3fefd78617a0995ca9:1ab3ba72761d2c1d38910c1e95018af4:5df9fbe65be654ae91cb89ea72914e6a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_crunch.png" width="244" height="244">
+    <sprite n="crunch_enemy_0" x="0" y="90" w="32" h="88" pX="0.5" pY="0.5" oX="20" oY="27" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_1" x="64" y="0" w="32" h="84" pX="0.5" pY="0.5" oX="20" oY="29" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_2" x="96" y="84" w="32" h="76" pX="0.5" pY="0.5" oX="20" oY="33" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_3" x="128" y="0" w="32" h="66" pX="0.5" pY="0.5" oX="20" oY="38" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_4" x="160" y="54" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_5" x="192" y="54" w="32" h="40" pX="0.5" pY="0.5" oX="20" oY="51" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_6" x="128" y="218" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_7" x="160" y="204" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_8" x="192" y="190" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_9" x="192" y="214" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_10" x="192" y="94" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_11" x="160" y="108" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_12" x="96" y="236" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_13" x="192" y="118" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_14" x="128" y="66" w="32" h="40" pX="0.5" pY="0.5" oX="20" oY="51" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_15" x="160" y="0" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_16" x="0" y="178" w="32" h="66" pX="0.5" pY="0.5" oX="20" oY="38" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_17" x="64" y="168" w="32" h="76" pX="0.5" pY="0.5" oX="20" oY="33" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_18" x="64" y="84" w="32" h="84" pX="0.5" pY="0.5" oX="20" oY="29" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_19" x="32" y="0" w="32" h="88" pX="0.5" pY="0.5" oX="20" oY="27" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_20" x="0" y="0" w="32" h="90" pX="0.5" pY="0.5" oX="20" oY="26" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_21" x="32" y="88" w="32" h="88" pX="0.5" pY="0.5" oX="20" oY="27" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_22" x="96" y="0" w="32" h="84" pX="0.5" pY="0.5" oX="20" oY="29" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_23" x="96" y="160" w="32" h="76" pX="0.5" pY="0.5" oX="20" oY="33" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_24" x="32" y="176" w="32" h="66" pX="0.5" pY="0.5" oX="20" oY="38" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_25" x="192" y="0" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_26" x="128" y="106" w="32" h="40" pX="0.5" pY="0.5" oX="20" oY="51" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_27" x="160" y="132" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_28" x="128" y="146" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_29" x="192" y="142" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_30" x="160" y="156" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_31" x="128" y="170" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_32" x="192" y="166" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_33" x="112" y="236" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_34" x="160" y="180" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+    <sprite n="crunch_enemy_35" x="128" y="194" w="32" h="24" pX="0.5" pY="0.5" oX="20" oY="59" oW="160" oH="144"/>
+</TextureAtlas>

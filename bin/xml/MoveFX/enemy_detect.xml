@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b7d833e3ddd848fb4be8f046357c1902:4b58da20b6c695963f45c1bfd4446990:31816975c68159c8e0d188ca4aa29589$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_detect.png" width="84" height="84">
+    <sprite n="detect_enemy_0" x="20" y="64" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_1" x="64" y="20" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_2" x="32" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_3" x="44" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_4" x="56" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_5" x="68" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="102" oY="18" oW="160" oH="144"/>
+    <sprite n="detect_enemy_6" x="0" y="64" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_7" x="52" y="32" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_8" x="64" y="0" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_9" x="52" y="52" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_10" x="32" y="32" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_11" x="32" y="52" w="20" h="20" pX="0.5" pY="0.5" oX="96" oY="12" oW="160" oH="144"/>
+    <sprite n="detect_enemy_12" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="detect_enemy_13" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="detect_enemy_14" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="92" oY="8" oW="160" oH="144"/>
+    <sprite n="detect_enemy_17" x="20" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_18" x="21" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_19" x="22" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_20" x="23" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_21" x="24" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_22" x="25" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_23" x="26" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_24" x="27" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_25" x="28" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_26" x="29" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_27" x="30" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_28" x="31" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_29" x="20" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_30" x="21" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_31" x="22" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_32" x="23" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_33" x="24" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_34" x="25" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_35" x="26" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_36" x="27" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_37" x="28" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_38" x="29" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_39" x="30" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_40" x="31" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_41" x="20" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="detect_enemy_42" x="21" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

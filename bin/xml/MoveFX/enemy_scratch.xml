@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1165a25bdf69403ee0a5b90ff50577ff:9e0b47b67cd2df3d1731d15b9155d9ff:5af40f9fceb9dabd0e3fc8f726cadc42$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_scratch.png" width="150" height="150">
+    <sprite n="scratch_enemy_0" x="36" y="126" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_1" x="122" y="84" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_2" x="122" y="108" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_3" x="36" y="36" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_4" x="36" y="66" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_5" x="36" y="96" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_6" x="0" y="36" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_7" x="0" y="72" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_8" x="0" y="108" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_9" x="36" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_10" x="0" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_11" x="66" y="36" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_12" x="72" y="0" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_13" x="66" y="64" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_14" x="60" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_15" x="60" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_16" x="60" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_17" x="66" y="92" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_18" x="66" y="120" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_19" x="94" y="28" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_20" x="60" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_21" x="60" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_22" x="60" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_23" x="100" y="0" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_24" x="94" y="56" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_25" x="94" y="84" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_26" x="60" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_27" x="60" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_28" x="60" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_29" x="94" y="112" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_30" x="122" y="28" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="scratch_enemy_31" x="122" y="56" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+</TextureAtlas>

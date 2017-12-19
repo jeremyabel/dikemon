@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0344d1b70f9535db4eecf2d75e2713e1:632559e4df9ecc567cd387f47d9923b1:2cbbf7e7faf473e14f4265cb00519109$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_psywave.png" width="382" height="382">
+    <sprite n="psywave_enemy_0" x="347" y="304" w="8" h="16" pX="0.5" pY="0.5" oX="102" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_1" x="364" y="143" w="8" h="16" pX="0.5" pY="0.5" oX="100" oY="42" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_2" x="331" y="363" w="8" h="16" pX="0.5" pY="0.5" oX="98" oY="43" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_3" x="339" y="363" w="8" h="16" pX="0.5" pY="0.5" oX="96" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_4" x="347" y="363" w="8" h="16" pX="0.5" pY="0.5" oX="94" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_5" x="309" y="156" w="10" h="20" pX="0.5" pY="0.5" oX="91" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_6" x="317" y="306" w="10" h="20" pX="0.5" pY="0.5" oX="89" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_7" x="327" y="306" w="10" h="20" pX="0.5" pY="0.5" oX="87" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_8" x="337" y="306" w="10" h="20" pX="0.5" pY="0.5" oX="85" oY="47" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_9" x="354" y="197" w="26" h="35" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_10" x="203" y="67" w="26" h="35" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_11" x="230" y="87" w="26" h="37" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_12" x="308" y="87" w="25" h="37" pX="0.5" pY="0.5" oX="78" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_13" x="319" y="124" w="24" h="37" pX="0.5" pY="0.5" oX="76" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_14" x="344" y="160" w="23" h="37" pX="0.5" pY="0.5" oX="74" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_15" x="295" y="191" w="23" h="39" pX="0.5" pY="0.5" oX="72" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_16" x="128" y="341" w="23" h="41" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_17" x="197" y="340" w="22" h="41" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_18" x="242" y="340" w="21" h="41" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_19" x="174" y="340" w="23" h="41" pX="0.5" pY="0.5" oX="63" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_20" x="0" y="183" w="45" h="55" pX="0.5" pY="0.5" oX="63" oY="26" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_21" x="87" y="179" w="43" h="54" pX="0.5" pY="0.5" oX="61" oY="28" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_22" x="45" y="183" w="42" h="55" pX="0.5" pY="0.5" oX="58" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_23" x="130" y="232" w="40" h="54" pX="0.5" pY="0.5" oX="56" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_24" x="244" y="286" w="38" h="53" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_25" x="170" y="232" w="37" h="54" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_26" x="282" y="286" w="35" h="53" pX="0.5" pY="0.5" oX="50" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_27" x="192" y="199" w="31" h="33" pX="0.5" pY="0.5" oX="50" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_28" x="333" y="87" w="30" h="32" pX="0.5" pY="0.5" oX="47" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_29" x="71" y="99" w="66" h="27" pX="0.5" pY="0.5" oX="44" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_30" x="71" y="67" w="66" h="32" pX="0.5" pY="0.5" oX="44" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_31" x="76" y="35" w="67" h="32" pX="0.5" pY="0.5" oX="41" oY="42" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_32" x="0" y="149" w="69" h="34" pX="0.5" pY="0.5" oX="37" oY="43" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_33" x="0" y="115" w="70" h="34" pX="0.5" pY="0.5" oX="34" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_34" x="0" y="47" w="71" h="34" pX="0.5" pY="0.5" oX="31" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_35" x="76" y="0" w="70" h="35" pX="0.5" pY="0.5" oX="31" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_36" x="136" y="133" w="62" h="33" pX="0.5" pY="0.5" oX="37" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_37" x="0" y="348" w="64" h="34" pX="0.5" pY="0.5" oX="33" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_38" x="70" y="146" w="62" h="33" pX="0.5" pY="0.5" oX="33" oY="47" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_39" x="0" y="0" w="76" h="47" pX="0.5" pY="0.5" oX="33" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_40" x="257" y="156" w="26" h="35" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_41" x="256" y="87" w="26" h="37" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_42" x="319" y="161" w="25" h="37" pX="0.5" pY="0.5" oX="78" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_43" x="330" y="230" w="24" h="37" pX="0.5" pY="0.5" oX="76" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_44" x="317" y="269" w="23" h="37" pX="0.5" pY="0.5" oX="74" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_45" x="284" y="232" w="23" h="39" pX="0.5" pY="0.5" oX="72" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_46" x="219" y="340" w="23" h="41" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_47" x="309" y="339" w="22" h="41" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_48" x="343" y="119" w="21" h="41" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_49" x="151" y="340" w="23" h="42" pX="0.5" pY="0.5" oX="63" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_50" x="0" y="238" w="45" h="55" pX="0.5" pY="0.5" oX="63" oY="26" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_51" x="87" y="233" w="43" h="54" pX="0.5" pY="0.5" oX="61" oY="28" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_52" x="45" y="238" w="42" h="55" pX="0.5" pY="0.5" oX="58" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_53" x="130" y="286" w="40" h="54" pX="0.5" pY="0.5" oX="56" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_54" x="229" y="34" w="38" h="53" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_55" x="170" y="286" w="37" h="54" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_56" x="305" y="34" w="35" h="53" pX="0.5" pY="0.5" oX="50" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_57" x="194" y="166" w="31" h="33" pX="0.5" pY="0.5" oX="50" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_58" x="230" y="124" w="30" h="32" pX="0.5" pY="0.5" oX="47" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_59" x="70" y="126" w="66" h="20" pX="0.5" pY="0.5" oX="44" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_60" x="137" y="67" w="66" h="32" pX="0.5" pY="0.5" oX="44" oY="41" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_61" x="143" y="35" w="67" h="32" pX="0.5" pY="0.5" oX="41" oY="42" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_62" x="286" y="0" w="69" h="34" pX="0.5" pY="0.5" oX="37" oY="43" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_63" x="216" y="0" w="70" h="34" pX="0.5" pY="0.5" oX="34" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_64" x="0" y="81" w="71" h="34" pX="0.5" pY="0.5" oX="31" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_65" x="146" y="0" w="70" h="35" pX="0.5" pY="0.5" oX="31" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_66" x="132" y="166" w="62" h="33" pX="0.5" pY="0.5" oX="37" oY="45" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_67" x="64" y="348" w="64" h="34" pX="0.5" pY="0.5" oX="33" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_68" x="137" y="99" w="64" h="34" pX="0.5" pY="0.5" oX="33" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_69" x="130" y="199" w="62" h="33" pX="0.5" pY="0.5" oX="33" oY="47" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_70" x="283" y="156" w="26" h="35" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_71" x="355" y="341" w="26" h="35" pX="0.5" pY="0.5" oX="83" oY="33" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_72" x="282" y="87" w="26" h="37" pX="0.5" pY="0.5" oX="80" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_73" x="340" y="267" w="25" h="37" pX="0.5" pY="0.5" oX="78" oY="35" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_74" x="331" y="326" w="24" h="37" pX="0.5" pY="0.5" oX="76" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_75" x="355" y="304" w="23" h="37" pX="0.5" pY="0.5" oX="74" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_76" x="307" y="230" w="23" h="39" pX="0.5" pY="0.5" oX="72" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_77" x="263" y="339" w="23" h="41" pX="0.5" pY="0.5" oX="69" oY="37" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_78" x="252" y="191" w="22" h="41" pX="0.5" pY="0.5" oX="67" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_79" x="274" y="191" w="21" h="41" pX="0.5" pY="0.5" oX="65" oY="39" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_80" x="286" y="339" w="23" h="41" pX="0.5" pY="0.5" oX="63" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_81" x="0" y="293" w="45" h="55" pX="0.5" pY="0.5" oX="63" oY="26" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_82" x="87" y="287" w="43" h="54" pX="0.5" pY="0.5" oX="61" oY="28" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_83" x="45" y="293" w="42" h="55" pX="0.5" pY="0.5" oX="58" oY="30" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_84" x="207" y="232" w="40" h="54" pX="0.5" pY="0.5" oX="56" oY="32" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_85" x="267" y="34" w="38" h="53" pX="0.5" pY="0.5" oX="54" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_86" x="207" y="286" w="37" h="54" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_87" x="247" y="232" w="37" h="54" pX="0.5" pY="0.5" oX="52" oY="34" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_88" x="340" y="34" w="35" h="53" pX="0.5" pY="0.5" oX="50" oY="36" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_89" x="198" y="133" w="31" h="33" pX="0.5" pY="0.5" oX="50" oY="38" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_90" x="260" y="124" w="30" h="32" pX="0.5" pY="0.5" oX="47" oY="40" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_91" x="201" y="102" w="29" h="31" pX="0.5" pY="0.5" oX="44" oY="42" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_92" x="290" y="124" w="29" h="32" pX="0.5" pY="0.5" oX="41" oY="42" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_93" x="223" y="199" w="29" h="33" pX="0.5" pY="0.5" oX="37" oY="44" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_94" x="229" y="156" w="28" h="32" pX="0.5" pY="0.5" oX="34" oY="46" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_95" x="355" y="0" w="27" h="32" pX="0.5" pY="0.5" oX="31" oY="47" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_96" x="318" y="198" w="23" h="32" pX="0.5" pY="0.5" oX="31" oY="47" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_97" x="363" y="87" w="14" h="28" pX="0.5" pY="0.5" oX="37" oY="50" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_98" x="364" y="115" w="14" h="28" pX="0.5" pY="0.5" oX="33" oY="52" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_99" x="210" y="35" w="14" h="28" pX="0.5" pY="0.5" oX="33" oY="52" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_100" x="343" y="160" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_101" x="70" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_102" x="136" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_103" x="69" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_104" x="130" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_105" x="174" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_106" x="244" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_107" x="229" y="87" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_108" x="229" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_109" x="363" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_110" x="216" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_111" x="364" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_112" x="70" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_113" x="136" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_114" x="69" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_115" x="131" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_116" x="175" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_117" x="245" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_118" x="229" y="88" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_119" x="229" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_120" x="363" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_121" x="217" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_122" x="365" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_123" x="70" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_124" x="136" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_125" x="69" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_126" x="132" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_127" x="176" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_128" x="246" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_129" x="229" y="89" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_130" x="229" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_131" x="363" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_132" x="363" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_133" x="218" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_134" x="366" y="159" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_135" x="70" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_136" x="136" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_137" x="69" y="152" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_138" x="133" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_139" x="177" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_140" x="247" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_141" x="229" y="90" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_142" x="229" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_143" x="219" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_144" x="70" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_145" x="136" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_146" x="69" y="153" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_147" x="134" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_148" x="178" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_149" x="248" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_150" x="229" y="91" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_151" x="229" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_152" x="220" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_153" x="70" y="120" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_154" x="136" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_155" x="136" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_156" x="69" y="154" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_157" x="135" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_158" x="179" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_159" x="249" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_160" x="229" y="92" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_161" x="229" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_162" x="221" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_163" x="70" y="121" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_164" x="69" y="155" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_165" x="136" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_166" x="180" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_167" x="250" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_168" x="229" y="93" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_169" x="229" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_170" x="222" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_171" x="70" y="122" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_172" x="69" y="156" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_173" x="137" y="340" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_174" x="181" y="381" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_175" x="251" y="339" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="psywave_enemy_176" x="229" y="94" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

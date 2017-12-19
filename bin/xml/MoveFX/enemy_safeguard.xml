@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8da143c8d0dfc4337b19a039c26f16ad:d8ee6d4eafbcafbfcb26130ee64ab4ab:6c0811e606635c63a8357c362b615ccd$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_safeguard.png" width="491" height="491">
+    <sprite n="safeguard_enemy_0" x="449" y="351" w="38" h="52" pX="0.5" pY="0.5" oX="72" oY="25" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_1" x="76" y="179" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_2" x="233" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_3" x="340" y="294" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_4" x="302" y="177" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_5" x="414" y="234" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_6" x="0" y="180" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_7" x="149" y="356" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_8" x="186" y="356" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_9" x="194" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_10" x="264" y="177" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_11" x="226" y="295" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_12" x="114" y="119" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_13" x="152" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_14" x="191" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_15" x="0" y="300" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_16" x="418" y="177" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_17" x="302" y="294" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_18" x="38" y="299" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_19" x="76" y="238" w="37" h="60" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_20" x="114" y="178" w="37" h="60" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_21" x="0" y="0" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_22" x="38" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_23" x="77" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_24" x="190" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_25" x="0" y="60" w="38" h="60" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_26" x="38" y="59" w="38" h="60" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_27" x="0" y="359" w="37" h="60" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_28" x="229" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_29" x="113" y="238" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_30" x="112" y="417" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_31" x="271" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_32" x="228" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_33" x="151" y="238" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_34" x="267" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_35" x="309" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_36" x="264" y="235" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_37" x="266" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_38" x="305" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_39" x="347" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_40" x="0" y="120" w="38" h="60" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_41" x="38" y="119" w="38" h="60" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_42" x="264" y="293" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_43" x="340" y="177" w="39" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_44" x="379" y="177" w="39" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_45" x="151" y="297" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_46" x="302" y="235" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_47" x="339" y="235" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_48" x="336" y="409" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_49" x="376" y="234" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_50" x="378" y="292" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_51" x="76" y="298" w="37" h="60" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_52" x="113" y="297" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_53" x="304" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_54" x="343" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_55" x="416" y="292" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_56" x="452" y="234" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_57" x="76" y="59" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_58" x="454" y="292" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_59" x="37" y="359" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_60" x="385" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_61" x="74" y="358" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_62" x="74" y="416" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_63" x="342" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_64" x="37" y="418" w="37" h="59" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_65" x="112" y="358" w="37" h="59" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_66" x="381" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_67" x="373" y="351" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_68" x="411" y="350" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_69" x="116" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_70" x="38" y="179" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_71" x="76" y="119" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_72" x="114" y="59" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_73" x="155" y="0" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_74" x="152" y="59" w="39" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_75" x="374" y="408" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_76" x="423" y="0" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_77" x="380" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_78" x="150" y="415" w="37" h="59" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_79" x="419" y="59" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_80" x="418" y="118" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_81" x="297" y="351" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_82" x="188" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_83" x="188" y="236" w="38" h="59" pX="0.5" pY="0.5" oX="74" oY="19" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_84" x="187" y="415" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_85" x="0" y="240" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_86" x="38" y="239" w="38" h="60" pX="0.5" pY="0.5" oX="74" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_87" x="335" y="351" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="16" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_88" x="226" y="177" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_89" x="188" y="295" w="38" h="59" pX="0.5" pY="0.5" oX="73" oY="17" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_90" x="226" y="236" w="38" h="59" pX="0.5" pY="0.5" oX="72" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_91" x="0" y="419" w="37" h="60" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_92" x="151" y="178" w="37" h="60" pX="0.5" pY="0.5" oX="73" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_93" x="298" y="409" w="38" h="58" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_94" x="412" y="407" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_95" x="450" y="403" w="38" h="57" pX="0.5" pY="0.5" oX="73" oY="21" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_96" x="223" y="354" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_97" x="224" y="413" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_98" x="260" y="353" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_99" x="261" y="412" w="37" h="59" pX="0.5" pY="0.5" oX="75" oY="18" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_100" x="260" y="412" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_101" x="373" y="408" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_102" x="411" y="407" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_103" x="152" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_104" x="340" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_105" x="38" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_106" x="149" y="415" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_107" x="149" y="416" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_108" x="223" y="413" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_109" x="223" y="414" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_110" x="226" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_111" x="297" y="409" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_112" x="378" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_113" x="449" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_114" x="449" y="403" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_115" x="153" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_116" x="341" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_117" x="39" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_118" x="227" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_119" x="297" y="410" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_120" x="297" y="411" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_121" x="379" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_122" x="450" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_123" x="449" y="404" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_124" x="154" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_125" x="342" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_126" x="40" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_127" x="228" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_128" x="380" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_129" x="451" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_130" x="449" y="405" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_131" x="449" y="406" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_132" x="155" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_133" x="343" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_134" x="41" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_135" x="229" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_136" x="381" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_137" x="452" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_138" x="453" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_139" x="156" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_140" x="344" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_141" x="42" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_142" x="230" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_143" x="382" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_144" x="157" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_145" x="345" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_146" x="43" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_147" x="231" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_148" x="383" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_149" x="158" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_150" x="346" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_151" x="44" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_152" x="232" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_153" x="384" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_154" x="159" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_155" x="347" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_156" x="45" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_157" x="233" y="353" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_158" x="385" y="350" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_159" x="160" y="177" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="safeguard_enemy_160" x="348" y="234" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

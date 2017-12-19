@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b600ae679045d6bba37464832ab04b3e:527c8a080e32b419ff8a122081805038:3a8c2e3314a8107877433b58a144fd7f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_bite.png" width="227" height="227">
+    <sprite n="bite_enemy_0" x="0" y="0" w="32" h="58" pX="0.5" pY="0.5" oX="20" oY="42" oW="160" oH="144"/>
+    <sprite n="bite_enemy_1" x="0" y="116" w="32" h="56" pX="0.5" pY="0.5" oX="20" oY="43" oW="160" oH="144"/>
+    <sprite n="bite_enemy_2" x="32" y="155" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="bite_enemy_3" x="64" y="137" w="32" h="48" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="144"/>
+    <sprite n="bite_enemy_4" x="132" y="134" w="32" h="42" pX="0.5" pY="0.5" oX="20" oY="50" oW="160" oH="144"/>
+    <sprite n="bite_enemy_5" x="96" y="184" w="32" h="36" pX="0.5" pY="0.5" oX="20" oY="53" oW="160" oH="144"/>
+    <sprite n="bite_enemy_6" x="128" y="176" w="32" h="28" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="bite_enemy_7" x="188" y="176" w="32" h="18" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_8" x="188" y="194" w="32" h="18" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_9" x="104" y="76" w="36" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_10" x="32" y="75" w="36" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_11" x="140" y="38" w="36" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_12" x="176" y="38" w="36" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_13" x="160" y="176" w="28" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_14" x="140" y="62" w="36" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="bite_enemy_15" x="32" y="47" w="36" h="28" pX="0.5" pY="0.5" oX="16" oY="57" oW="160" oH="144"/>
+    <sprite n="bite_enemy_16" x="96" y="148" w="32" h="36" pX="0.5" pY="0.5" oX="20" oY="53" oW="160" oH="144"/>
+    <sprite n="bite_enemy_17" x="64" y="185" w="32" h="42" pX="0.5" pY="0.5" oX="20" oY="50" oW="160" oH="144"/>
+    <sprite n="bite_enemy_18" x="140" y="86" w="32" h="48" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="144"/>
+    <sprite n="bite_enemy_19" x="0" y="172" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="bite_enemy_20" x="68" y="81" w="32" h="56" pX="0.5" pY="0.5" oX="20" oY="43" oW="160" oH="144"/>
+    <sprite n="bite_enemy_21" x="0" y="58" w="32" h="58" pX="0.5" pY="0.5" oX="20" oY="42" oW="160" oH="144"/>
+    <sprite n="bite_enemy_22" x="32" y="99" w="32" h="56" pX="0.5" pY="0.5" oX="20" oY="43" oW="160" oH="144"/>
+    <sprite n="bite_enemy_23" x="176" y="62" w="32" h="54" pX="0.5" pY="0.5" oX="20" oY="44" oW="160" oH="144"/>
+    <sprite n="bite_enemy_24" x="100" y="100" w="32" h="48" pX="0.5" pY="0.5" oX="20" oY="47" oW="160" oH="144"/>
+    <sprite n="bite_enemy_25" x="172" y="116" w="32" h="42" pX="0.5" pY="0.5" oX="20" oY="50" oW="160" oH="144"/>
+    <sprite n="bite_enemy_26" x="32" y="0" w="36" h="47" pX="0.5" pY="0.5" oX="20" oY="53" oW="160" oH="144"/>
+    <sprite n="bite_enemy_27" x="68" y="0" w="36" h="43" pX="0.5" pY="0.5" oX="20" oY="57" oW="160" oH="144"/>
+    <sprite n="bite_enemy_28" x="104" y="0" w="36" h="38" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_29" x="140" y="0" w="36" h="38" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_30" x="176" y="0" w="36" h="38" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_31" x="104" y="38" w="36" h="38" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_32" x="68" y="43" w="36" h="38" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_33" x="32" y="209" w="32" h="18" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_34" x="208" y="62" w="16" h="8" pX="0.5" pY="0.5" oX="28" oY="68" oW="160" oH="144"/>
+    <sprite n="bite_enemy_35" x="128" y="204" w="32" h="18" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+    <sprite n="bite_enemy_36" x="164" y="158" w="32" h="18" pX="0.5" pY="0.5" oX="20" oY="62" oW="160" oH="144"/>
+</TextureAtlas>

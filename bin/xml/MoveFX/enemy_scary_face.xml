@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c640c5c33d283aefedbc01a93dae449e:d6a18e5ff24d446b46b562d508d2e3be:9b61056e9b8bd1b52602f30286b5bebc$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_scary_face.png" width="656" height="656">
+    <sprite n="scary_face_enemy_0" x="0" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_1" x="82" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_2" x="328" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_3" x="0" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_4" x="82" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_5" x="410" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_6" x="164" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_7" x="328" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_8" x="492" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_9" x="574" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_10" x="164" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_11" x="246" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_12" x="328" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_13" x="410" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_14" x="492" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_15" x="574" y="0" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_16" x="0" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_17" x="82" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_18" x="164" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_19" x="246" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_20" x="410" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_21" x="492" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_22" x="574" y="51" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_23" x="0" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_24" x="0" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_25" x="0" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_26" x="0" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_27" x="0" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_28" x="0" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_29" x="0" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_30" x="0" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_31" x="0" y="561" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_32" x="82" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_33" x="164" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_34" x="246" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_35" x="328" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_36" x="410" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_37" x="492" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_38" x="574" y="102" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_39" x="82" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_40" x="82" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_41" x="82" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_42" x="82" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_43" x="82" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_44" x="82" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_45" x="82" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_46" x="82" y="561" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_47" x="164" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_48" x="246" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_49" x="328" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_50" x="492" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_51" x="574" y="153" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_52" x="164" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_53" x="246" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_54" x="328" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_55" x="410" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_56" x="492" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_57" x="574" y="204" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_58" x="164" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_59" x="164" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_60" x="164" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_61" x="164" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_62" x="164" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_63" x="164" y="561" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_64" x="246" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_65" x="328" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_66" x="410" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_67" x="492" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_68" x="574" y="255" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_69" x="246" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_70" x="410" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_71" x="492" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_72" x="574" y="306" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_73" x="246" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_74" x="246" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_75" x="246" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_76" x="246" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_77" x="246" y="561" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_78" x="328" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_79" x="410" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_80" x="574" y="357" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_81" x="328" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_82" x="328" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_83" x="328" y="510" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_84" x="328" y="561" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_85" x="410" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_86" x="492" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_87" x="574" y="408" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_88" x="410" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+    <sprite n="scary_face_enemy_89" x="492" y="459" w="82" h="51" pX="0.5" pY="0.5" oX="34" oY="31" oW="160" oH="144"/>
+</TextureAtlas>

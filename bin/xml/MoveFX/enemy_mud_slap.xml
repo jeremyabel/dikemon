@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0b6f78f5b9252eccf491324f10e2eed3:f7b28a109ffc9050ca1d984eda7c4279:4350fe1a128158d3f5fbcde6ddbd5e95$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_mud_slap.png" width="318" height="318">
+    <sprite n="mud_slap_enemy_0" x="128" y="141" w="14" h="11" pX="0.5" pY="0.5" oX="93" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_1" x="14" y="296" w="14" h="11" pX="0.5" pY="0.5" oX="89" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_2" x="14" y="307" w="14" h="11" pX="0.5" pY="0.5" oX="85" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_3" x="0" y="296" w="14" h="19" pX="0.5" pY="0.5" oX="81" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_4" x="216" y="293" w="34" h="25" pX="0.5" pY="0.5" oX="77" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_5" x="284" y="279" w="34" h="25" pX="0.5" pY="0.5" oX="73" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_6" x="54" y="288" w="34" h="25" pX="0.5" pY="0.5" oX="69" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_7" x="250" y="279" w="34" h="29" pX="0.5" pY="0.5" oX="65" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_8" x="284" y="246" w="34" h="33" pX="0.5" pY="0.5" oX="61" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_9" x="250" y="207" w="54" h="39" pX="0.5" pY="0.5" oX="57" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_10" x="148" y="94" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_11" x="256" y="0" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_12" x="0" y="253" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_13" x="148" y="0" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_14" x="0" y="0" w="74" h="53" pX="0.5" pY="0.5" oX="37" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_15" x="202" y="94" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_16" x="256" y="43" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_17" x="256" y="86" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_18" x="0" y="159" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_19" x="0" y="53" w="74" h="53" pX="0.5" pY="0.5" oX="37" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_20" x="256" y="129" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_21" x="54" y="159" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_22" x="54" y="202" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_23" x="74" y="106" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_24" x="74" y="0" w="74" h="53" pX="0.5" pY="0.5" oX="37" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_25" x="162" y="219" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_26" x="54" y="245" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_27" x="108" y="153" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_28" x="148" y="47" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_29" x="0" y="106" w="74" h="53" pX="0.5" pY="0.5" oX="37" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_30" x="162" y="258" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_31" x="108" y="196" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_32" x="108" y="239" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_33" x="202" y="0" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_34" x="74" y="53" w="74" h="53" pX="0.5" pY="0.5" oX="37" oY="34" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_35" x="250" y="168" w="54" h="39" pX="0.5" pY="0.5" oX="53" oY="36" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_36" x="162" y="133" w="54" h="43" pX="0.5" pY="0.5" oX="49" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_37" x="162" y="176" w="54" h="43" pX="0.5" pY="0.5" oX="45" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_38" x="0" y="206" w="54" h="47" pX="0.5" pY="0.5" oX="41" oY="38" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_39" x="202" y="47" w="54" h="47" pX="0.5" pY="0.5" oX="37" oY="40" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_40" x="250" y="246" w="34" h="33" pX="0.5" pY="0.5" oX="53" oY="42" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_41" x="216" y="256" w="34" h="37" pX="0.5" pY="0.5" oX="49" oY="44" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_42" x="216" y="133" w="34" h="41" pX="0.5" pY="0.5" oX="45" oY="42" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_43" x="216" y="174" w="34" h="41" pX="0.5" pY="0.5" oX="41" oY="44" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_44" x="216" y="215" w="34" h="41" pX="0.5" pY="0.5" oX="37" oY="46" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_45" x="88" y="288" w="14" h="27" pX="0.5" pY="0.5" oX="53" oY="48" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_46" x="304" y="168" w="14" h="35" pX="0.5" pY="0.5" oX="49" oY="46" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_47" x="304" y="203" w="14" h="35" pX="0.5" pY="0.5" oX="45" oY="48" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_48" x="128" y="106" w="14" h="35" pX="0.5" pY="0.5" oX="41" oY="50" oW="160" oH="144"/>
+    <sprite n="mud_slap_enemy_49" x="108" y="282" w="14" h="35" pX="0.5" pY="0.5" oX="37" oY="52" oW="160" oH="144"/>
+</TextureAtlas>

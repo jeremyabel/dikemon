@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c08c322215aa3a7a7ec81a076d99d96a:0fd330b1573c473a4c2f43b94602f495:c9b25830e93a47783bca65dd65ed51f7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_mega_punch.png" width="176" height="176">
+    <sprite n="mega_punch_enemy_0" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_1" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_2" x="128" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_3" x="32" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_4" x="64" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_5" x="96" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_6" x="128" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_7" x="128" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_8" x="144" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_9" x="160" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_10" x="0" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_11" x="16" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_12" x="160" y="0" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_13" x="160" y="16" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_14" x="0" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_15" x="0" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_16" x="0" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_17" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_18" x="64" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_19" x="96" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_20" x="32" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_21" x="32" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_22" x="48" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_23" x="160" y="32" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_24" x="160" y="48" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_25" x="64" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_26" x="80" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_27" x="160" y="64" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_28" x="32" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_29" x="32" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_30" x="64" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_31" x="96" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_32" x="128" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_33" x="64" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_34" x="64" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_35" x="160" y="80" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_36" x="96" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_37" x="96" y="112" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_38" x="96" y="128" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_39" x="96" y="144" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_40" x="96" y="160" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_41" x="112" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_42" x="112" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_43" x="112" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_44" x="112" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_45" x="112" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_46" x="112" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_47" x="112" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_48" x="112" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_49" x="112" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_50" x="112" y="120" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_51" x="112" y="121" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_52" x="112" y="122" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_53" x="112" y="123" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_54" x="112" y="124" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_55" x="112" y="125" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_56" x="112" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_57" x="112" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_58" x="112" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_59" x="112" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_60" x="112" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_61" x="112" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mega_punch_enemy_62" x="112" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

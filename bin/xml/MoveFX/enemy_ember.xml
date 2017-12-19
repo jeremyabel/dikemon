@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8195cb863b4976664b8f1e997e86f218:dc8644746eaf355630287b66098bcc89:ffb2b15d923641f812534a2802668d06$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_ember.png" width="169" height="169">
+    <sprite n="ember_enemy_0" x="160" y="13" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="54" oW="160" oH="144"/>
+    <sprite n="ember_enemy_1" x="160" y="21" w="8" h="8" pX="0.5" pY="0.5" oX="102" oY="55" oW="160" oH="144"/>
+    <sprite n="ember_enemy_2" x="160" y="29" w="8" h="8" pX="0.5" pY="0.5" oX="100" oY="56" oW="160" oH="144"/>
+    <sprite n="ember_enemy_3" x="160" y="37" w="8" h="8" pX="0.5" pY="0.5" oX="98" oY="57" oW="160" oH="144"/>
+    <sprite n="ember_enemy_4" x="160" y="45" w="8" h="8" pX="0.5" pY="0.5" oX="96" oY="58" oW="160" oH="144"/>
+    <sprite n="ember_enemy_5" x="151" y="96" w="17" h="17" pX="0.5" pY="0.5" oX="95" oY="50" oW="160" oH="144"/>
+    <sprite n="ember_enemy_6" x="154" y="80" w="15" h="16" pX="0.5" pY="0.5" oX="93" oY="52" oW="160" oH="144"/>
+    <sprite n="ember_enemy_7" x="143" y="113" w="13" h="15" pX="0.5" pY="0.5" oX="91" oY="54" oW="160" oH="144"/>
+    <sprite n="ember_enemy_8" x="156" y="113" w="11" h="14" pX="0.5" pY="0.5" oX="89" oY="56" oW="160" oH="144"/>
+    <sprite n="ember_enemy_9" x="160" y="0" w="9" h="13" pX="0.5" pY="0.5" oX="87" oY="58" oW="160" oH="144"/>
+    <sprite n="ember_enemy_10" x="0" y="108" w="28" h="13" pX="0.5" pY="0.5" oX="84" oY="61" oW="160" oH="144"/>
+    <sprite n="ember_enemy_11" x="0" y="121" w="28" h="12" pX="0.5" pY="0.5" oX="81" oY="63" oW="160" oH="144"/>
+    <sprite n="ember_enemy_12" x="136" y="128" w="29" h="11" pX="0.5" pY="0.5" oX="77" oY="65" oW="160" oH="144"/>
+    <sprite n="ember_enemy_13" x="106" y="158" w="30" h="10" pX="0.5" pY="0.5" oX="73" oY="67" oW="160" oH="144"/>
+    <sprite n="ember_enemy_14" x="136" y="139" w="31" h="10" pX="0.5" pY="0.5" oX="69" oY="68" oW="160" oH="144"/>
+    <sprite n="ember_enemy_15" x="108" y="149" w="32" h="9" pX="0.5" pY="0.5" oX="64" oY="70" oW="160" oH="144"/>
+    <sprite n="ember_enemy_16" x="36" y="160" w="33" h="9" pX="0.5" pY="0.5" oX="60" oY="71" oW="160" oH="144"/>
+    <sprite n="ember_enemy_17" x="72" y="158" w="34" h="10" pX="0.5" pY="0.5" oX="56" oY="72" oW="160" oH="144"/>
+    <sprite n="ember_enemy_18" x="0" y="97" w="35" h="11" pX="0.5" pY="0.5" oX="52" oY="73" oW="160" oH="144"/>
+    <sprite n="ember_enemy_19" x="79" y="95" w="36" h="12" pX="0.5" pY="0.5" oX="48" oY="74" oW="160" oH="144"/>
+    <sprite n="ember_enemy_20" x="117" y="80" w="37" h="14" pX="0.5" pY="0.5" oX="45" oY="74" oW="160" oH="144"/>
+    <sprite n="ember_enemy_21" x="79" y="80" w="38" h="15" pX="0.5" pY="0.5" oX="41" oY="75" oW="160" oH="144"/>
+    <sprite n="ember_enemy_22" x="40" y="80" w="39" h="16" pX="0.5" pY="0.5" oX="37" oY="76" oW="160" oH="144"/>
+    <sprite n="ember_enemy_23" x="0" y="0" w="40" h="17" pX="0.5" pY="0.5" oX="33" oY="77" oW="160" oH="144"/>
+    <sprite n="ember_enemy_24" x="0" y="81" w="37" h="16" pX="0.5" pY="0.5" oX="33" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_25" x="117" y="94" w="34" h="14" pX="0.5" pY="0.5" oX="32" oY="80" oW="160" oH="144"/>
+    <sprite n="ember_enemy_26" x="76" y="107" w="31" h="13" pX="0.5" pY="0.5" oX="32" oY="81" oW="160" oH="144"/>
+    <sprite n="ember_enemy_27" x="37" y="96" w="39" h="13" pX="0.5" pY="0.5" oX="24" oY="81" oW="160" oH="144"/>
+    <sprite n="ember_enemy_28" x="40" y="0" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_29" x="80" y="0" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_30" x="120" y="0" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_31" x="40" y="16" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_32" x="0" y="17" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_33" x="107" y="108" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_34" x="107" y="118" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_35" x="28" y="109" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_36" x="28" y="119" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_37" x="64" y="120" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_38" x="80" y="16" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_39" x="120" y="16" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_40" x="40" y="32" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_41" x="0" y="33" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_42" x="80" y="32" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_43" x="28" y="129" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_44" x="100" y="128" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_45" x="64" y="130" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_46" x="100" y="138" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_47" x="0" y="139" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_48" x="120" y="32" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_49" x="40" y="48" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_50" x="0" y="49" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_51" x="80" y="48" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_52" x="120" y="48" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_53" x="36" y="140" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_54" x="0" y="149" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_55" x="72" y="148" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_56" x="36" y="150" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_57" x="0" y="159" w="36" h="10" pX="0.5" pY="0.5" oX="22" oY="84" oW="160" oH="144"/>
+    <sprite n="ember_enemy_58" x="40" y="64" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_59" x="0" y="65" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_60" x="80" y="64" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_61" x="120" y="64" w="40" h="16" pX="0.5" pY="0.5" oX="20" oY="78" oW="160" oH="144"/>
+    <sprite n="ember_enemy_62" x="168" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_63" x="160" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_64" x="161" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_65" x="162" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_66" x="163" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_67" x="164" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_68" x="165" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_69" x="166" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_70" x="167" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_71" x="168" y="56" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_72" x="160" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_73" x="161" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_74" x="162" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_75" x="163" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_76" x="164" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_77" x="165" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_78" x="166" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_79" x="167" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_80" x="168" y="57" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_81" x="160" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_82" x="161" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_83" x="162" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_84" x="163" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_85" x="164" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_86" x="165" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_87" x="166" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_88" x="167" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_89" x="168" y="58" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_90" x="160" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_91" x="161" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_92" x="162" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_93" x="163" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_94" x="164" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_95" x="165" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_96" x="166" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_97" x="167" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_98" x="168" y="59" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_99" x="160" y="60" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_100" x="168" y="13" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_101" x="168" y="14" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_102" x="168" y="15" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_103" x="168" y="16" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_104" x="168" y="17" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_105" x="168" y="18" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_106" x="168" y="19" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_107" x="168" y="20" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_108" x="168" y="21" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_109" x="168" y="22" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_110" x="168" y="23" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_111" x="168" y="24" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_112" x="168" y="25" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_113" x="168" y="26" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_114" x="168" y="27" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_115" x="168" y="28" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_116" x="168" y="29" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_117" x="168" y="30" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_118" x="168" y="31" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_119" x="168" y="32" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_120" x="168" y="33" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_121" x="168" y="34" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_122" x="168" y="35" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_123" x="168" y="36" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_124" x="168" y="37" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_125" x="168" y="38" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_126" x="168" y="39" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_127" x="168" y="40" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_128" x="168" y="41" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_129" x="168" y="42" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_130" x="168" y="43" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_131" x="168" y="44" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_132" x="168" y="45" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_133" x="168" y="46" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_134" x="168" y="47" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_135" x="168" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_136" x="168" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_137" x="168" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_138" x="168" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_139" x="168" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_140" x="160" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_141" x="161" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_142" x="162" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_143" x="163" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_144" x="164" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_145" x="165" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_146" x="166" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_147" x="167" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_148" x="168" y="53" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_149" x="160" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_150" x="161" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_151" x="162" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_152" x="163" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_153" x="164" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_154" x="165" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_155" x="166" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_156" x="167" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_157" x="168" y="54" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_158" x="160" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_159" x="161" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_160" x="162" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_161" x="163" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_162" x="164" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_163" x="165" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_164" x="166" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="ember_enemy_165" x="167" y="55" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

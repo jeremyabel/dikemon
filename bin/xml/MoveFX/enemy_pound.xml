@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e92853513a5e39781d255d2ee287ca56:35e4bf29088266a3c1d738b1b4275720:06b16a49a38e55923c566e62ebeaf5dd$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_pound.png" width="88" height="88">
+    <sprite n="pound_enemy_0" x="0" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_1" x="16" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_2" x="32" y="72" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_3" x="48" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_4" x="64" y="24" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_5" x="48" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_6" x="64" y="40" w="16" h="16" pX="0.5" pY="0.5" oX="28" oY="72" oW="160" oH="144"/>
+    <sprite n="pound_enemy_7" x="56" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_8" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_9" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_10" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_11" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_12" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="pound_enemy_13" x="32" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+</TextureAtlas>

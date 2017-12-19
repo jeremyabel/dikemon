@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8c1a826055a1a08fb72b118b06aa177d:327180bfad004c3354c9191177a23bcd:fdc10158a021cc970366a9eaaa6bc863$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_swift.png" width="265" height="265">
+    <sprite n="swift_enemy_0" x="234" y="25" w="14" h="13" pX="0.5" pY="0.5" oX="97" oY="20" oW="160" oH="144"/>
+    <sprite n="swift_enemy_1" x="248" y="25" w="14" h="13" pX="0.5" pY="0.5" oX="93" oY="22" oW="160" oH="144"/>
+    <sprite n="swift_enemy_2" x="234" y="38" w="14" h="13" pX="0.5" pY="0.5" oX="89" oY="24" oW="160" oH="144"/>
+    <sprite n="swift_enemy_3" x="248" y="38" w="14" h="13" pX="0.5" pY="0.5" oX="85" oY="26" oW="160" oH="144"/>
+    <sprite n="swift_enemy_4" x="234" y="51" w="14" h="13" pX="0.5" pY="0.5" oX="81" oY="28" oW="160" oH="144"/>
+    <sprite n="swift_enemy_5" x="87" y="216" w="34" h="19" pX="0.5" pY="0.5" oX="77" oY="30" oW="160" oH="144"/>
+    <sprite n="swift_enemy_6" x="121" y="216" w="34" h="19" pX="0.5" pY="0.5" oX="73" oY="32" oW="160" oH="144"/>
+    <sprite n="swift_enemy_7" x="160" y="160" w="34" h="19" pX="0.5" pY="0.5" oX="69" oY="34" oW="160" oH="144"/>
+    <sprite n="swift_enemy_8" x="155" y="216" w="34" h="19" pX="0.5" pY="0.5" oX="65" oY="36" oW="160" oH="144"/>
+    <sprite n="swift_enemy_9" x="194" y="160" w="34" h="19" pX="0.5" pY="0.5" oX="61" oY="38" oW="160" oH="144"/>
+    <sprite n="swift_enemy_10" x="0" y="60" w="54" h="27" pX="0.5" pY="0.5" oX="57" oY="32" oW="160" oH="144"/>
+    <sprite n="swift_enemy_11" x="0" y="87" w="54" h="27" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="swift_enemy_12" x="173" y="60" w="54" h="27" pX="0.5" pY="0.5" oX="49" oY="36" oW="160" oH="144"/>
+    <sprite n="swift_enemy_13" x="112" y="68" w="54" h="27" pX="0.5" pY="0.5" oX="45" oY="38" oW="160" oH="144"/>
+    <sprite n="swift_enemy_14" x="54" y="92" w="54" h="27" pX="0.5" pY="0.5" oX="41" oY="40" oW="160" oH="144"/>
+    <sprite n="swift_enemy_15" x="0" y="114" w="54" h="27" pX="0.5" pY="0.5" oX="37" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_enemy_16" x="0" y="238" w="50" h="27" pX="0.5" pY="0.5" oX="37" oY="44" oW="160" oH="144"/>
+    <sprite n="swift_enemy_17" x="118" y="41" w="55" h="27" pX="0.5" pY="0.5" oX="28" oY="46" oW="160" oH="144"/>
+    <sprite n="swift_enemy_18" x="60" y="30" w="58" h="29" pX="0.5" pY="0.5" oX="21" oY="46" oW="160" oH="144"/>
+    <sprite n="swift_enemy_19" x="0" y="0" w="60" h="35" pX="0.5" pY="0.5" oX="15" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_enemy_20" x="119" y="0" w="58" h="41" pX="0.5" pY="0.5" oX="13" oY="38" oW="160" oH="144"/>
+    <sprite n="swift_enemy_21" x="162" y="114" w="52" h="46" pX="0.5" pY="0.5" oX="15" oY="33" oW="160" oH="144"/>
+    <sprite n="swift_enemy_22" x="220" y="112" w="42" h="48" pX="0.5" pY="0.5" oX="21" oY="30" oW="160" oH="144"/>
+    <sprite n="swift_enemy_23" x="227" y="64" w="38" h="48" pX="0.5" pY="0.5" oX="21" oY="27" oW="160" oH="144"/>
+    <sprite n="swift_enemy_24" x="47" y="190" w="40" h="47" pX="0.5" pY="0.5" oX="15" oY="26" oW="160" oH="144"/>
+    <sprite n="swift_enemy_25" x="0" y="190" w="47" h="48" pX="0.5" pY="0.5" oX="13" oY="27" oW="160" oH="144"/>
+    <sprite n="swift_enemy_26" x="108" y="122" w="52" h="45" pX="0.5" pY="0.5" oX="15" oY="30" oW="160" oH="144"/>
+    <sprite n="swift_enemy_27" x="54" y="139" w="52" h="41" pX="0.5" pY="0.5" oX="21" oY="33" oW="160" oH="144"/>
+    <sprite n="swift_enemy_28" x="58" y="59" w="54" h="33" pX="0.5" pY="0.5" oX="21" oY="38" oW="160" oH="144"/>
+    <sprite n="swift_enemy_29" x="0" y="35" w="58" h="25" pX="0.5" pY="0.5" oX="15" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_enemy_30" x="54" y="119" w="54" h="20" pX="0.5" pY="0.5" oX="13" oY="43" oW="160" oH="144"/>
+    <sprite n="swift_enemy_31" x="213" y="214" w="52" h="17" pX="0.5" pY="0.5" oX="15" oY="45" oW="160" oH="144"/>
+    <sprite n="swift_enemy_32" x="0" y="168" w="52" h="22" pX="0.5" pY="0.5" oX="21" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_enemy_33" x="50" y="237" w="47" h="28" pX="0.5" pY="0.5" oX="28" oY="39" oW="160" oH="144"/>
+    <sprite n="swift_enemy_34" x="213" y="231" w="39" h="33" pX="0.5" pY="0.5" oX="34" oY="38" oW="160" oH="144"/>
+    <sprite n="swift_enemy_35" x="128" y="180" w="37" h="36" pX="0.5" pY="0.5" oX="30" oY="39" oW="160" oH="144"/>
+    <sprite n="swift_enemy_36" x="87" y="180" w="41" h="36" pX="0.5" pY="0.5" oX="26" oY="42" oW="160" oH="144"/>
+    <sprite n="swift_enemy_37" x="165" y="179" w="51" h="35" pX="0.5" pY="0.5" oX="22" oY="45" oW="160" oH="144"/>
+    <sprite n="swift_enemy_38" x="177" y="0" w="57" h="32" pX="0.5" pY="0.5" oX="18" oY="50" oW="160" oH="144"/>
+    <sprite n="swift_enemy_39" x="60" y="0" w="59" h="30" pX="0.5" pY="0.5" oX="14" oY="54" oW="160" oH="144"/>
+    <sprite n="swift_enemy_40" x="177" y="32" w="57" h="28" pX="0.5" pY="0.5" oX="10" oY="58" oW="160" oH="144"/>
+    <sprite n="swift_enemy_41" x="166" y="87" w="54" h="27" pX="0.5" pY="0.5" oX="6" oY="61" oW="160" oH="144"/>
+    <sprite n="swift_enemy_42" x="108" y="95" w="54" h="27" pX="0.5" pY="0.5" oX="2" oY="63" oW="160" oH="144"/>
+    <sprite n="swift_enemy_43" x="0" y="141" w="52" h="27" pX="0.5" pY="0.5" oX="0" oY="65" oW="160" oH="144"/>
+    <sprite n="swift_enemy_44" x="97" y="235" w="48" h="27" pX="0.5" pY="0.5" oX="0" oY="67" oW="160" oH="144"/>
+    <sprite n="swift_enemy_45" x="145" y="235" w="34" h="27" pX="0.5" pY="0.5" oX="10" oY="69" oW="160" oH="144"/>
+    <sprite n="swift_enemy_46" x="179" y="235" w="34" h="27" pX="0.5" pY="0.5" oX="6" oY="71" oW="160" oH="144"/>
+    <sprite n="swift_enemy_47" x="228" y="160" w="34" h="27" pX="0.5" pY="0.5" oX="2" oY="73" oW="160" oH="144"/>
+    <sprite n="swift_enemy_48" x="216" y="187" w="32" h="27" pX="0.5" pY="0.5" oX="0" oY="75" oW="160" oH="144"/>
+    <sprite n="swift_enemy_49" x="234" y="0" w="28" h="25" pX="0.5" pY="0.5" oX="0" oY="77" oW="160" oH="144"/>
+    <sprite n="swift_enemy_50" x="248" y="51" w="14" h="13" pX="0.5" pY="0.5" oX="10" oY="79" oW="160" oH="144"/>
+    <sprite n="swift_enemy_51" x="106" y="167" w="14" h="13" pX="0.5" pY="0.5" oX="6" oY="81" oW="160" oH="144"/>
+    <sprite n="swift_enemy_52" x="120" y="167" w="14" h="13" pX="0.5" pY="0.5" oX="2" oY="83" oW="160" oH="144"/>
+    <sprite n="swift_enemy_53" x="134" y="167" w="12" h="13" pX="0.5" pY="0.5" oX="0" oY="85" oW="160" oH="144"/>
+    <sprite n="swift_enemy_54" x="146" y="167" w="12" h="13" pX="0.5" pY="0.5" oX="0" oY="85" oW="160" oH="144"/>
+</TextureAtlas>

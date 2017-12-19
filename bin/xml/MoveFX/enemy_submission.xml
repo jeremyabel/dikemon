@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a315efdc35774aa60d3097bb335edfe9:cd7627441ee02a37b9408e47514d319f:bb4ef6290100f054857ee29b1ff7e151$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_submission.png" width="144" height="144">
+    <sprite n="submission_73" x="120" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_74" x="121" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_75" x="122" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_76" x="123" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_77" x="124" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_78" x="125" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_79" x="126" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_80" x="127" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_81" x="128" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_82" x="129" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_83" x="130" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_84" x="131" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_85" x="132" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_86" x="133" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_87" x="134" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_88" x="135" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_89" x="136" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_90" x="137" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_91" x="138" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_92" x="139" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_93" x="140" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_94" x="141" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_95" x="142" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_96" x="143" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_97" x="120" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_98" x="121" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_99" x="0" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_100" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_101" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_102" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_103" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="116" oY="24" oW="160" oH="144"/>
+    <sprite n="submission_enemy_0" x="0" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_1" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_2" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_3" x="72" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_4" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_5" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_6" x="96" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="40" oY="60" oW="160" oH="144"/>
+    <sprite n="submission_enemy_7" x="123" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_8" x="124" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_9" x="125" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_10" x="122" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_11" x="123" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_12" x="124" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_13" x="125" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_14" x="126" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_15" x="127" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_16" x="128" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_17" x="129" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_18" x="130" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_19" x="131" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_20" x="132" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_21" x="133" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_22" x="134" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_23" x="135" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_24" x="136" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_25" x="137" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_26" x="138" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_27" x="139" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_28" x="140" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_29" x="141" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_30" x="142" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_31" x="143" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_32" x="120" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_33" x="96" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_34" x="120" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_35" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_36" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_37" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_38" x="24" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_39" x="24" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="8" oY="68" oW="160" oH="144"/>
+    <sprite n="submission_enemy_40" x="121" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_41" x="122" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_42" x="123" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_43" x="124" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_44" x="125" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_45" x="126" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_46" x="127" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_47" x="128" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_48" x="129" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_49" x="130" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_50" x="131" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_51" x="132" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_52" x="133" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_53" x="134" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_54" x="135" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_55" x="136" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_56" x="137" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_57" x="138" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_58" x="139" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_59" x="140" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_60" x="141" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_61" x="142" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_62" x="143" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_63" x="120" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_64" x="121" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_65" x="122" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="submission_enemy_66" x="120" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_67" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_68" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_69" x="48" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_70" x="48" y="120" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_71" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+    <sprite n="submission_enemy_72" x="96" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="64" oW="160" oH="144"/>
+</TextureAtlas>

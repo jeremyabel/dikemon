@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2452f4bf00b88bffa650d9ffc93eb905:b434670c5d3a1102557ed0ce97a28762:6bcb1874e168e5f8424e0bbf8d6b14f0$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_metal_claw.png" width="150" height="150">
+    <sprite n="metal_claw_enemy_0" x="60" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_1" x="60" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_2" x="61" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_3" x="61" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_4" x="62" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_5" x="62" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_6" x="63" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_7" x="63" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_8" x="64" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_9" x="64" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_10" x="60" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_11" x="60" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_12" x="60" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_13" x="60" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_14" x="61" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_15" x="61" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_16" x="61" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_17" x="61" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_18" x="61" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_19" x="61" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_20" x="61" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_21" x="61" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_22" x="61" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_23" x="61" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_24" x="61" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_25" x="61" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_26" x="61" y="142" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_27" x="61" y="143" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_28" x="61" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_29" x="61" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_30" x="61" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_31" x="62" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_32" x="62" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_33" x="62" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_34" x="62" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_35" x="62" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_36" x="62" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_37" x="62" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_38" x="62" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_39" x="62" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_40" x="62" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_41" x="62" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_42" x="62" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_43" x="62" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_44" x="62" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_45" x="62" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_46" x="62" y="142" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_47" x="62" y="143" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_48" x="62" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_49" x="62" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_50" x="62" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_51" x="63" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_52" x="63" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_53" x="63" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_54" x="63" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_55" x="63" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_56" x="63" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_57" x="63" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_58" x="63" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_59" x="63" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_60" x="63" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_61" x="63" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_62" x="63" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_63" x="63" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_64" x="63" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_65" x="63" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_66" x="63" y="142" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_67" x="63" y="143" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_68" x="63" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_69" x="63" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_70" x="63" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_71" x="64" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_72" x="64" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_73" x="64" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_74" x="64" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_75" x="64" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_76" x="64" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_77" x="64" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_78" x="64" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_79" x="64" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_80" x="64" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_81" x="64" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_82" x="64" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_83" x="64" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_84" x="64" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_85" x="64" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_86" x="64" y="142" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_87" x="64" y="143" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_88" x="64" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_89" x="64" y="145" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_90" x="64" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_91" x="65" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_92" x="65" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_93" x="65" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_94" x="65" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_95" x="65" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_96" x="65" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_97" x="65" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_98" x="65" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_99" x="65" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_100" x="60" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_101" x="60" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_102" x="60" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_103" x="60" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_104" x="60" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_105" x="60" y="134" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_106" x="60" y="135" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_107" x="60" y="136" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_108" x="60" y="137" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_109" x="60" y="138" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_110" x="36" y="126" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_111" x="122" y="84" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_112" x="36" y="36" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_113" x="36" y="66" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_114" x="36" y="96" w="30" h="30" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_115" x="0" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_116" x="0" y="36" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_117" x="0" y="72" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_118" x="0" y="108" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_119" x="36" y="0" w="36" h="36" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_120" x="66" y="36" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_121" x="72" y="0" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_122" x="66" y="64" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_123" x="60" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_124" x="60" y="142" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_125" x="60" y="143" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_126" x="66" y="92" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_127" x="66" y="120" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_128" x="94" y="28" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_129" x="60" y="144" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_130" x="60" y="146" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_131" x="60" y="147" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_132" x="100" y="0" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_133" x="94" y="56" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_134" x="94" y="84" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_135" x="61" y="126" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_136" x="61" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_137" x="61" y="128" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_138" x="94" y="112" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_139" x="122" y="28" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+    <sprite n="metal_claw_enemy_140" x="122" y="56" w="28" h="28" pX="0.5" pY="0.5" oX="24" oY="60" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9eafd8f99ed66d878e9715780c95ac19:1638d7061a62b8f6f70ba09550a12191:c8735bcfc3af988a1668a8280dddbdf1$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_rain_dance.png" width="1307" height="1307">
+    <sprite n="rain_dance_enemy_0" x="153" y="197" w="4" h="3" pX="0.5" pY="0.5" oX="35" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_1" x="618" y="681" w="6" h="6" pX="0.5" pY="0.5" oX="33" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_2" x="1038" y="1281" w="108" h="11" pX="0.5" pY="0.5" oX="31" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_3" x="1067" y="1208" w="110" h="14" pX="0.5" pY="0.5" oX="29" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_4" x="912" y="1281" w="126" h="19" pX="0.5" pY="0.5" oX="11" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_5" x="1067" y="1186" w="126" h="22" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_6" x="471" y="1199" w="153" h="27" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_7" x="769" y="752" w="155" h="30" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_8" x="946" y="513" w="157" h="35" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_9" x="788" y="514" w="158" h="39" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_10" x="471" y="393" w="157" h="43" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_11" x="155" y="1007" w="155" h="47" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_12" x="1101" y="597" w="153" h="50" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_13" x="902" y="880" w="142" h="55" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_14" x="1074" y="779" w="142" h="58" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_15" x="919" y="1218" w="146" h="63" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_16" x="1074" y="713" w="144" h="66" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_17" x="917" y="1080" w="142" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_18" x="475" y="94" w="159" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_19" x="621" y="1018" w="151" h="77" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_20" x="306" y="1228" w="159" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_21" x="760" y="857" w="142" h="78" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_22" x="309" y="599" w="159" h="83" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_23" x="612" y="771" w="146" h="86" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_24" x="634" y="0" w="158" h="91" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_25" x="924" y="748" w="150" h="66" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_26" x="473" y="322" w="159" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_27" x="777" y="1161" w="142" h="74" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_28" x="472" y="436" w="158" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_29" x="474" y="169" w="158" h="82" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_30" x="470" y="955" w="151" h="87" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_31" x="468" y="597" w="150" h="90" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_32" x="159" y="1054" w="146" h="95" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_33" x="157" y="0" w="158" h="98" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_34" x="1065" y="1222" w="109" h="59" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_35" x="1174" y="1222" w="107" h="62" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_36" x="1197" y="887" w="105" h="67" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_37" x="1194" y="954" w="102" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_38" x="310" y="1007" w="160" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_39" x="465" y="1228" w="159" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_40" x="632" y="295" w="155" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_41" x="154" y="684" w="156" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_42" x="0" y="965" w="155" h="90" pX="0.5" pY="0.5" oX="5" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_43" x="634" y="161" w="159" h="55" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_44" x="946" y="455" w="157" h="58" pX="0.5" pY="0.5" oX="3" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_45" x="947" y="392" w="158" h="63" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_46" x="790" y="377" w="157" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_47" x="1103" y="526" w="155" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_48" x="622" y="1095" w="153" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_49" x="771" y="935" w="142" h="78" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_50" x="1108" y="90" w="159" h="83" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_51" x="310" y="682" w="158" h="86" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_52" x="150" y="598" w="159" h="86" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_53" x="1057" y="837" w="142" h="50" pX="0.5" pY="0.5" oX="9" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_54" x="1105" y="392" w="158" h="63" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_55" x="907" y="814" w="150" h="66" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_56" x="468" y="687" w="159" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_57" x="618" y="857" w="142" h="82" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_58" x="150" y="511" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_59" x="792" y="0" w="158" h="90" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_60" x="315" y="0" w="160" h="95" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_61" x="470" y="766" w="142" h="98" pX="0.5" pY="0.5" oX="17" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_62" x="770" y="1245" w="142" h="62" pX="0.5" pY="0.5" oX="15" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_63" x="1059" y="1066" w="142" h="62" pX="0.5" pY="0.5" oX="13" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_64" x="758" y="782" w="149" h="75" pX="0.5" pY="0.5" oX="11" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_65" x="621" y="939" w="150" h="79" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_66" x="624" y="517" w="153" h="82" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_67" x="950" y="173" w="155" h="82" pX="0.5" pY="0.5" oX="5" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_68" x="467" y="515" w="157" h="82" pX="0.5" pY="0.5" oX="3" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_69" x="157" y="98" w="158" h="95" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_70" x="0" y="99" w="157" h="98" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_71" x="946" y="548" w="155" h="63" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_72" x="932" y="611" w="153" h="66" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_73" x="788" y="443" w="158" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_74" x="624" y="1170" w="153" h="75" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_75" x="632" y="216" w="159" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_76" x="155" y="924" w="157" h="83" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_77" x="312" y="768" w="158" h="86" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_78" x="950" y="0" w="157" h="91" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_79" x="0" y="780" w="154" h="94" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_80" x="0" y="296" w="153" h="99" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_81" x="1067" y="1128" w="134" h="58" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_82" x="950" y="255" w="159" h="63" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_83" x="1055" y="887" w="142" h="66" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_84" x="791" y="231" w="159" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_85" x="630" y="443" w="158" h="74" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_86" x="947" y="318" w="159" h="74" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_87" x="913" y="935" w="142" h="74" pX="0.5" pY="0.5" oX="9" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_88" x="315" y="95" w="158" h="95" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_89" x="0" y="493" w="150" h="98" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_90" x="768" y="616" w="155" h="65" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_91" x="624" y="1245" w="146" h="62" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_92" x="919" y="1151" w="148" h="67" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_93" x="924" y="677" w="150" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_94" x="787" y="302" w="160" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_95" x="155" y="1229" w="151" h="78" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_96" x="0" y="1229" w="155" h="78" pX="0.5" pY="0.5" oX="5" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_97" x="154" y="771" w="158" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_98" x="1107" y="0" w="157" h="90" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_99" x="1056" y="1003" w="138" h="63" pX="0.5" pY="0.5" oX="17" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_100" x="1085" y="647" w="144" h="66" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_101" x="157" y="193" w="158" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_102" x="470" y="1042" w="151" h="74" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_103" x="315" y="190" w="159" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_104" x="471" y="1116" w="151" h="83" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_105" x="309" y="513" w="158" h="86" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_106" x="470" y="864" w="148" h="91" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_107" x="0" y="686" w="154" h="94" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_108" x="0" y="197" w="153" h="99" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_109" x="1055" y="953" w="134" h="50" pX="0.5" pY="0.5" oX="1" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_110" x="1109" y="255" w="151" h="63" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_111" x="154" y="858" w="158" h="66" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_112" x="1103" y="455" w="155" h="71" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_113" x="772" y="1013" w="142" h="74" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_114" x="153" y="437" w="159" h="74" pX="0.5" pY="0.5" oX="1" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_115" x="312" y="854" w="158" h="74" pX="0.5" pY="0.5" oX="1" oY="9" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_116" x="0" y="1055" w="159" h="87" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_117" x="627" y="681" w="142" h="90" pX="0.5" pY="0.5" oX="9" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_118" x="305" y="1082" w="155" h="67" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_119" x="634" y="91" w="159" h="70" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_120" x="312" y="438" w="160" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_121" x="312" y="928" w="158" h="79" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_122" x="313" y="269" w="160" h="83" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_123" x="312" y="352" w="159" h="86" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_124" x="153" y="264" w="160" h="86" pX="0.5" pY="0.5" oX="0" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_125" x="0" y="591" w="150" h="95" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_126" x="0" y="395" w="153" h="98" pX="0.5" pY="0.5" oX="7" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_127" x="777" y="553" w="155" h="63" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_128" x="793" y="165" w="157" h="66" pX="0.5" pY="0.5" oX="3" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_129" x="474" y="251" w="158" h="71" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_130" x="793" y="90" w="157" h="75" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_131" x="159" y="1149" w="157" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_132" x="1105" y="173" w="153" h="82" pX="0.5" pY="0.5" oX="0" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_133" x="950" y="91" w="158" h="82" pX="0.5" pY="0.5" oX="1" oY="5" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_134" x="0" y="874" w="153" h="91" pX="0.5" pY="0.5" oX="7" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_135" x="475" y="0" w="159" h="94" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_136" x="0" y="0" w="157" h="99" pX="0.5" pY="0.5" oX="3" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_137" x="632" y="377" w="158" h="66" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_138" x="914" y="1009" w="142" h="71" pX="0.5" pY="0.5" oX="9" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_139" x="775" y="1087" w="142" h="74" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_140" x="769" y="681" w="155" h="71" pX="0.5" pY="0.5" oX="5" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_141" x="1106" y="318" w="158" h="74" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_142" x="316" y="1149" w="155" h="79" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_143" x="618" y="599" w="150" h="82" pX="0.5" pY="0.5" oX="1" oY="1" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_144" x="0" y="1142" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+    <sprite n="rain_dance_enemy_145" x="153" y="350" w="159" h="87" pX="0.5" pY="0.5" oX="1" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a1aaec6b25a1d88b1552387a81244cb9:3b0a9ffd9eba5b898acb15824d806b18:108e7b89e9c7ec0af926f5528a1efb88$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_take_down.png" width="97" height="97">
+    <sprite n="take_down_enemy_0" x="0" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_1" x="0" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_2" x="24" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_3" x="24" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_4" x="48" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_5" x="72" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_6" x="48" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_7" x="48" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="32" oY="68" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_8" x="72" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_9" x="72" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_10" x="0" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_11" x="0" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_12" x="24" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_13" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_14" x="72" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_15" x="24" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_16" x="0" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_17" x="1" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_18" x="2" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_19" x="3" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_20" x="4" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_21" x="5" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_22" x="6" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_23" x="7" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_24" x="8" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_25" x="9" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_26" x="10" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_27" x="11" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="take_down_enemy_28" x="12" y="96" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

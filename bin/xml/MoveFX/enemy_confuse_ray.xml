@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:13b592fda86c3d6589fe7195921981ce:a3d6cfd2b9ada66650fd861f88abe469:f637eb012d1fd4c0320c076d2b45e2cf$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_confuse_ray.png" width="555" height="555">
+    <sprite n="confuse_ray_enemy_0" x="483" y="539" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="32" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_1" x="0" y="0" w="39" h="39" pX="0.5" pY="0.5" oX="88" oY="21" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_2" x="39" y="0" w="39" h="39" pX="0.5" pY="0.5" oX="88" oY="21" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_3" x="335" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="88" oY="22" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_4" x="335" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="88" oY="22" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_5" x="372" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="88" oY="22" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_6" x="520" y="146" w="35" h="35" pX="0.5" pY="0.5" oX="88" oY="24" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_7" x="409" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="86" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_8" x="446" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="86" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_9" x="446" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="86" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_10" x="39" y="468" w="37" h="37" pX="0.5" pY="0.5" oX="86" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_11" x="115" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="85" oY="24" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_12" x="0" y="156" w="39" h="39" pX="0.5" pY="0.5" oX="84" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_13" x="0" y="195" w="39" h="39" pX="0.5" pY="0.5" oX="84" oY="23" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_14" x="150" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="84" oY="24" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_15" x="187" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="84" oY="24" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_16" x="187" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="83" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_17" x="224" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="83" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_18" x="224" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="82" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_19" x="261" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="82" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_20" x="300" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="81" oY="26" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_21" x="298" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="81" oY="26" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_22" x="39" y="156" w="39" h="39" pX="0.5" pY="0.5" oX="80" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_23" x="39" y="195" w="39" h="39" pX="0.5" pY="0.5" oX="80" oY="25" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_24" x="337" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="80" oY="26" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_25" x="337" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="80" oY="26" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_26" x="337" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="79" oY="27" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_27" x="483" y="469" w="35" h="35" pX="0.5" pY="0.5" oX="80" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_28" x="483" y="504" w="35" h="35" pX="0.5" pY="0.5" oX="80" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_29" x="335" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="78" oY="27" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_30" x="335" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="78" oY="27" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_31" x="335" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="78" oY="27" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_32" x="335" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="77" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_33" x="335" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="77" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_34" x="335" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="76" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_35" x="335" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="76" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_36" x="335" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="76" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_37" x="335" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="76" oY="28" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_38" x="518" y="259" w="35" h="35" pX="0.5" pY="0.5" oX="76" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_39" x="520" y="111" w="35" h="35" pX="0.5" pY="0.5" oX="76" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_40" x="372" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="74" oY="29" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_41" x="374" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="74" oY="29" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_42" x="374" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="74" oY="29" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_43" x="374" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="73" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_44" x="39" y="234" w="39" h="39" pX="0.5" pY="0.5" oX="72" oY="29" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_45" x="372" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="72" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_46" x="372" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="72" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_47" x="372" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="72" oY="30" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_48" x="372" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="71" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_49" x="372" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="71" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_50" x="372" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="71" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_51" x="372" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="70" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_52" x="372" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="70" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_53" x="372" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="70" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_54" x="39" y="273" w="39" h="39" pX="0.5" pY="0.5" oX="68" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_55" x="39" y="312" w="39" h="39" pX="0.5" pY="0.5" oX="68" oY="31" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_56" x="372" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_57" x="409" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="68" oY="32" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_58" x="411" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="67" oY="33" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_59" x="411" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="67" oY="33" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_60" x="520" y="181" w="35" h="35" pX="0.5" pY="0.5" oX="68" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_61" x="411" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="66" oY="33" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_62" x="409" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="66" oY="33" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_63" x="409" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="66" oY="33" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_64" x="409" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="65" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_65" x="409" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="65" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_66" x="409" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="64" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_67" x="409" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="64" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_68" x="409" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="64" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_69" x="409" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="64" oY="34" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_70" x="520" y="216" w="35" h="35" pX="0.5" pY="0.5" oX="64" oY="36" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_71" x="409" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="62" oY="35" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_72" x="409" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="62" oY="35" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_73" x="446" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="61" oY="36" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_74" x="448" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="61" oY="36" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_75" x="39" y="351" w="39" h="39" pX="0.5" pY="0.5" oX="60" oY="35" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_76" x="39" y="390" w="39" h="39" pX="0.5" pY="0.5" oX="60" oY="35" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_77" x="448" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="60" oY="36" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_78" x="448" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="60" oY="36" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_79" x="446" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="59" oY="37" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_80" x="518" y="294" w="35" h="35" pX="0.5" pY="0.5" oX="60" oY="38" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_81" x="518" y="329" w="35" h="35" pX="0.5" pY="0.5" oX="60" oY="38" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_82" x="446" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_83" x="446" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_84" x="446" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="58" oY="37" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_85" x="39" y="429" w="39" h="39" pX="0.5" pY="0.5" oX="56" oY="37" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_86" x="446" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="56" oY="38" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_87" x="446" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="56" oY="38" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_88" x="446" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="56" oY="38" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_89" x="446" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="55" oY="39" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_90" x="446" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="55" oY="39" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_91" x="518" y="364" w="35" h="35" pX="0.5" pY="0.5" oX="56" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_92" x="518" y="399" w="35" h="35" pX="0.5" pY="0.5" oX="56" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_93" x="483" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_94" x="485" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="54" oY="39" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_95" x="485" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_96" x="485" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="53" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_97" x="483" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="52" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_98" x="483" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="52" oY="40" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_99" x="483" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="51" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_100" x="76" y="468" w="37" h="37" pX="0.5" pY="0.5" oX="51" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_101" x="78" y="111" w="35" h="35" pX="0.5" pY="0.5" oX="52" oY="42" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_102" x="78" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="50" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_103" x="78" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="50" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_104" x="78" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="49" oY="42" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_105" x="0" y="39" w="39" h="39" pX="0.5" pY="0.5" oX="48" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_106" x="0" y="78" w="39" h="39" pX="0.5" pY="0.5" oX="48" oY="41" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_107" x="113" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_108" x="115" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_109" x="115" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="48" oY="42" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_110" x="113" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="47" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_111" x="78" y="146" w="35" h="35" pX="0.5" pY="0.5" oX="48" oY="44" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_112" x="78" y="181" w="35" h="35" pX="0.5" pY="0.5" oX="48" oY="44" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_113" x="113" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="46" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_114" x="113" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="46" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_115" x="113" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="46" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_116" x="113" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="46" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_117" x="0" y="117" w="39" h="39" pX="0.5" pY="0.5" oX="44" oY="43" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_118" x="113" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_119" x="113" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_120" x="113" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_121" x="113" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="43" oY="45" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_122" x="78" y="216" w="35" h="35" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_123" x="78" y="251" w="35" h="35" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_124" x="113" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="42" oY="45" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_125" x="39" y="505" w="37" h="37" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_126" x="76" y="505" w="37" h="37" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_127" x="113" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="41" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_128" x="150" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="40" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_129" x="152" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="40" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_130" x="152" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="40" oY="46" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_131" x="78" y="286" w="35" h="35" pX="0.5" pY="0.5" oX="40" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_132" x="78" y="321" w="35" h="35" pX="0.5" pY="0.5" oX="40" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_133" x="152" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_134" x="150" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_135" x="150" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="38" oY="47" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_136" x="150" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="37" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_137" x="0" y="234" w="39" h="39" pX="0.5" pY="0.5" oX="36" oY="47" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_138" x="150" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="36" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_139" x="150" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="36" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_140" x="150" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="36" oY="48" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_141" x="150" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="35" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_142" x="150" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="35" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_143" x="150" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="34" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_144" x="150" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="34" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_145" x="187" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="34" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_146" x="189" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="33" oY="50" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_147" x="189" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="33" oY="50" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_148" x="0" y="273" w="39" h="39" pX="0.5" pY="0.5" oX="32" oY="49" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_149" x="189" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="32" oY="50" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_150" x="187" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="32" oY="50" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_151" x="187" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="31" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_152" x="187" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="31" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_153" x="78" y="356" w="35" h="35" pX="0.5" pY="0.5" oX="32" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_154" x="78" y="391" w="35" h="35" pX="0.5" pY="0.5" oX="32" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_155" x="187" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="30" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_156" x="187" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="30" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_157" x="187" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="29" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_158" x="0" y="312" w="39" h="39" pX="0.5" pY="0.5" oX="28" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_159" x="0" y="351" w="39" h="39" pX="0.5" pY="0.5" oX="28" oY="51" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_160" x="187" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="28" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_161" x="187" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="28" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_162" x="187" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="28" oY="52" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_163" x="78" y="426" w="35" h="35" pX="0.5" pY="0.5" oX="28" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_164" x="224" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="26" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_165" x="226" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="26" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_166" x="226" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="26" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_167" x="226" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_168" x="0" y="390" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_169" x="0" y="429" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_170" x="224" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_171" x="224" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_172" x="224" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_173" x="224" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_174" x="224" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_175" x="224" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_176" x="224" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_177" x="224" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_178" x="224" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_179" x="0" y="468" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_180" x="261" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_181" x="263" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_182" x="263" y="37" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_183" x="483" y="259" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_184" x="483" y="294" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_185" x="263" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_186" x="261" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_187" x="261" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_188" x="261" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_189" x="261" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_190" x="261" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_191" x="261" y="370" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_192" x="261" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_193" x="261" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_194" x="483" y="329" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_195" x="261" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_196" x="261" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_197" x="298" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_198" x="300" y="0" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_199" x="0" y="507" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_200" x="39" y="39" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_201" x="300" y="74" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_202" x="298" y="148" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_203" x="298" y="185" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_204" x="298" y="222" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_205" x="298" y="259" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_206" x="298" y="296" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_207" x="39" y="78" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_208" x="39" y="117" w="39" h="39" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_209" x="298" y="333" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_210" x="298" y="407" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_211" x="298" y="444" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_212" x="483" y="364" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_213" x="483" y="399" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_214" x="483" y="434" w="35" h="35" pX="0.5" pY="0.5" oX="26" oY="55" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_215" x="298" y="481" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_216" x="298" y="518" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+    <sprite n="confuse_ray_enemy_217" x="335" y="111" w="37" h="37" pX="0.5" pY="0.5" oX="25" oY="54" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:db4c07a44500be83d5e9dc0821521547:4ca89bc81b551310fa22bba89c0979be:7342b60bf4f32d4b7f9765ddb399f156$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_thunder.png" width="365" height="365">
+    <sprite n="thunder_enemy_0" x="0" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_1" x="33" y="336" w="5" h="8" pX="0.5" pY="0.5" oX="50" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_2" x="33" y="344" w="5" h="8" pX="0.5" pY="0.5" oX="50" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_3" x="0" y="336" w="11" h="24" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_4" x="11" y="336" w="11" h="24" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_5" x="22" y="336" w="11" h="24" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_6" x="336" y="280" w="14" h="40" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_7" x="350" y="280" w="14" h="40" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_8" x="336" y="320" w="14" h="40" pX="0.5" pY="0.5" oX="46" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_9" x="256" y="224" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_10" x="336" y="0" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_11" x="203" y="280" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_12" x="224" y="280" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_13" x="235" y="168" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_14" x="235" y="224" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_15" x="245" y="280" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_16" x="256" y="168" w="21" h="56" pX="0.5" pY="0.5" oX="39" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_17" x="96" y="168" w="43" h="56" pX="0.5" pY="0.5" oX="17" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_18" x="96" y="224" w="43" h="56" pX="0.5" pY="0.5" oX="17" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_19" x="96" y="280" w="43" h="56" pX="0.5" pY="0.5" oX="17" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_20" x="240" y="56" w="45" h="56" pX="0.5" pY="0.5" oX="15" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_21" x="285" y="56" w="45" h="56" pX="0.5" pY="0.5" oX="15" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_22" x="96" y="112" w="45" h="56" pX="0.5" pY="0.5" oX="15" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_23" x="0" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_24" x="0" y="56" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_25" x="0" y="112" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_26" x="0" y="168" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_27" x="0" y="224" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_28" x="0" y="280" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_29" x="48" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_30" x="96" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_31" x="144" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_32" x="192" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_33" x="240" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_34" x="288" y="0" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_35" x="48" y="56" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_36" x="48" y="112" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_37" x="48" y="168" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_38" x="48" y="224" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_39" x="48" y="280" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_40" x="96" y="56" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_41" x="144" y="56" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_42" x="192" y="56" w="48" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_43" x="330" y="56" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_44" x="139" y="168" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_45" x="141" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_46" x="139" y="224" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_47" x="139" y="280" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_48" x="171" y="168" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_49" x="173" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_50" x="171" y="224" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_51" x="171" y="280" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_52" x="205" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_53" x="237" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_54" x="269" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_55" x="301" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_56" x="333" y="112" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_57" x="203" y="168" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_58" x="203" y="224" w="32" h="56" pX="0.5" pY="0.5" oX="12" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_59" x="266" y="280" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_60" x="277" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_61" x="277" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_62" x="280" y="280" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_63" x="291" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_64" x="291" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_65" x="294" y="280" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_66" x="308" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_67" x="305" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_68" x="308" y="280" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_69" x="319" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_70" x="322" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_71" x="336" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_72" x="350" y="168" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_73" x="333" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_74" x="347" y="224" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_75" x="322" y="280" w="14" h="56" pX="0.5" pY="0.5" oX="30" oY="40" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_76" x="2" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_77" x="2" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_78" x="2" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_79" x="2" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_80" x="2" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_81" x="3" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_82" x="3" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_83" x="3" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_84" x="3" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_85" x="3" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_86" x="4" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_87" x="4" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_88" x="4" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_89" x="4" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_90" x="4" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_91" x="5" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_92" x="5" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_93" x="5" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_94" x="5" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_95" x="5" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_96" x="6" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_97" x="6" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_98" x="6" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_99" x="6" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_100" x="0" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_101" x="0" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_102" x="0" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_103" x="0" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_104" x="1" y="360" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_105" x="1" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_106" x="1" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_107" x="1" y="363" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="thunder_enemy_108" x="1" y="364" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

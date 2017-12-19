@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1df6c5155ca91a7b98d99a7cc7b8982b:83648fa47f45442393da3d6c60216d8f:6ce62302860228eec99e2d07c4d38611$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_wing_attack.png" width="168" height="168">
+    <sprite n="wing_attack_enemy_0" x="0" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_1" x="56" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_2" x="112" y="0" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_3" x="0" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_4" x="56" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_5" x="112" y="24" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_6" x="0" y="48" w="56" h="24" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_7" x="0" y="120" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_8" x="0" y="144" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_9" x="48" y="72" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_10" x="56" y="48" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_11" x="104" y="48" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_12" x="0" y="72" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_13" x="0" y="96" w="48" h="24" pX="0.5" pY="0.5" oX="16" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_14" x="96" y="72" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_15" x="48" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_16" x="48" y="120" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_17" x="48" y="144" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_18" x="88" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_19" x="128" y="96" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_20" x="88" y="120" w="40" h="24" pX="0.5" pY="0.5" oX="20" oY="68" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_22" x="152" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_23" x="153" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_24" x="154" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_25" x="155" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_26" x="156" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_27" x="157" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_28" x="158" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_29" x="159" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_30" x="160" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_31" x="161" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_32" x="162" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_33" x="163" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_34" x="164" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_35" x="165" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_36" x="166" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_37" x="167" y="48" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_38" x="152" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_39" x="153" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_40" x="154" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_41" x="155" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_42" x="156" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_43" x="157" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_44" x="158" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_45" x="159" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_46" x="160" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_47" x="161" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_48" x="162" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_49" x="163" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_50" x="164" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_51" x="165" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_52" x="166" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_53" x="167" y="49" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_54" x="152" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_55" x="153" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_56" x="154" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_57" x="155" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_58" x="156" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_59" x="157" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_60" x="158" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_61" x="159" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_62" x="160" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_63" x="161" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_64" x="162" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_65" x="163" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_66" x="164" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_67" x="165" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_68" x="166" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_69" x="167" y="50" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_70" x="152" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_71" x="153" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_72" x="154" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_73" x="155" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_74" x="156" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_75" x="157" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_76" x="158" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_77" x="159" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_78" x="160" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_79" x="161" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_80" x="162" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_81" x="163" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_82" x="164" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_83" x="165" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_84" x="166" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_85" x="167" y="51" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_86" x="152" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_87" x="153" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_88" x="154" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_89" x="155" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_90" x="156" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_91" x="157" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_92" x="158" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_93" x="159" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_94" x="160" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_95" x="161" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_96" x="162" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="wing_attack_enemy_97" x="163" y="52" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

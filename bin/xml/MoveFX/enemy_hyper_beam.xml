@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:482d074271942f0b21d50c37c3d36c0a:7109988d245c8fdab9a970088cf2a0aa:995dd58503c2d48d190b7d40cd126d1f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_hyper_beam.png" width="420" height="420">
+    <sprite n="hyper_beam_enemy_0" x="0" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_1" x="0" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_2" x="0" y="404" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_3" x="16" y="404" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_4" x="32" y="404" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_5" x="188" y="394" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_6" x="220" y="394" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_7" x="252" y="394" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_8" x="284" y="392" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_9" x="316" y="392" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_10" x="156" y="394" w="32" h="24" pX="0.5" pY="0.5" oX="84" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_11" x="234" y="250" w="48" h="32" pX="0.5" pY="0.5" oX="68" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_12" x="234" y="282" w="48" h="32" pX="0.5" pY="0.5" oX="68" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_13" x="284" y="292" w="48" h="32" pX="0.5" pY="0.5" oX="68" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_14" x="348" y="294" w="48" h="32" pX="0.5" pY="0.5" oX="68" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_15" x="0" y="0" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_16" x="78" y="0" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_17" x="156" y="0" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_18" x="234" y="0" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_19" x="312" y="0" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_20" x="0" y="50" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_21" x="78" y="50" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_22" x="156" y="50" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_23" x="234" y="50" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_24" x="312" y="50" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_25" x="0" y="104" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_26" x="0" y="154" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_27" x="0" y="204" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_28" x="0" y="254" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_29" x="0" y="304" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_30" x="0" y="354" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_31" x="78" y="100" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_32" x="156" y="100" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_33" x="234" y="100" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_34" x="312" y="100" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_35" x="78" y="156" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_36" x="156" y="150" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_37" x="234" y="150" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_38" x="312" y="150" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_39" x="156" y="200" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_40" x="78" y="206" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_41" x="234" y="200" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_42" x="312" y="200" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_43" x="78" y="256" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_44" x="78" y="306" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_45" x="78" y="356" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_46" x="156" y="252" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_47" x="156" y="302" w="78" h="50" pX="0.5" pY="0.5" oX="38" oY="36" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_48" x="156" y="352" w="62" h="42" pX="0.5" pY="0.5" oX="38" oY="44" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_49" x="218" y="352" w="62" h="42" pX="0.5" pY="0.5" oX="38" oY="44" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_50" x="284" y="250" w="62" h="42" pX="0.5" pY="0.5" oX="38" oY="44" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_51" x="346" y="252" w="62" h="42" pX="0.5" pY="0.5" oX="38" oY="44" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_52" x="234" y="314" w="46" h="34" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_53" x="280" y="324" w="46" h="34" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_54" x="280" y="358" w="46" h="34" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_55" x="348" y="326" w="46" h="34" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_56" x="348" y="360" w="46" h="34" pX="0.5" pY="0.5" oX="38" oY="52" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_57" x="390" y="0" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_58" x="390" y="26" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_59" x="390" y="52" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_60" x="390" y="78" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_61" x="390" y="104" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_62" x="390" y="130" w="30" h="26" pX="0.5" pY="0.5" oX="38" oY="60" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_63" x="390" y="156" w="16" h="24" pX="0.5" pY="0.5" oX="38" oY="62" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_64" x="390" y="180" w="16" h="24" pX="0.5" pY="0.5" oX="38" oY="62" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_65" x="390" y="204" w="16" h="24" pX="0.5" pY="0.5" oX="38" oY="62" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_66" x="390" y="228" w="16" h="24" pX="0.5" pY="0.5" oX="38" oY="62" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_67" x="9" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_68" x="9" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_69" x="10" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_70" x="10" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_71" x="10" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_72" x="10" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_73" x="11" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_74" x="11" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_75" x="11" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_76" x="11" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_77" x="12" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_78" x="12" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_79" x="12" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_80" x="12" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_81" x="13" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_82" x="13" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_83" x="13" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_84" x="13" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_85" x="14" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_86" x="14" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_87" x="14" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_88" x="14" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_89" x="15" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_90" x="15" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_91" x="15" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_92" x="15" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_93" x="16" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_94" x="16" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_95" x="16" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_96" x="16" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_97" x="17" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_98" x="17" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_99" x="17" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_100" x="0" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_101" x="0" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_102" x="1" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_103" x="1" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_104" x="1" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_105" x="1" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_106" x="2" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_107" x="2" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_108" x="2" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_109" x="2" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_110" x="3" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_111" x="3" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_112" x="3" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_113" x="3" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_114" x="4" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_115" x="4" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_116" x="4" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_117" x="4" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_118" x="5" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_119" x="5" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_120" x="5" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_121" x="5" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_122" x="6" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_123" x="6" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_124" x="6" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_125" x="6" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_126" x="7" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_127" x="7" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_128" x="7" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_129" x="7" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_130" x="8" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_131" x="8" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_132" x="8" y="102" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_133" x="8" y="103" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_134" x="9" y="100" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hyper_beam_enemy_135" x="9" y="101" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

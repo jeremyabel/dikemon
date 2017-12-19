@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:67492b3c0d7f17a99be52c1c1394bf4b:bc38fc8b2ddc12f089b60d07c66caf7c:5ca7d79efb26a591c5fff9cbd6c4063b$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_growl.png" width="216" height="216">
+    <sprite n="growl_enemy_0" x="96" y="172" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_1" x="120" y="172" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_2" x="96" y="120" w="24" h="50" pX="0.5" pY="0.5" oX="93" oY="15" oW="160" oH="144"/>
+    <sprite n="growl_enemy_3" x="192" y="116" w="24" h="56" pX="0.5" pY="0.5" oX="90" oY="12" oW="160" oH="144"/>
+    <sprite n="growl_enemy_4" x="144" y="70" w="24" h="56" pX="0.5" pY="0.5" oX="90" oY="12" oW="160" oH="144"/>
+    <sprite n="growl_enemy_5" x="48" y="148" w="24" h="66" pX="0.5" pY="0.5" oX="85" oY="7" oW="160" oH="144"/>
+    <sprite n="growl_enemy_6" x="120" y="0" w="24" h="70" pX="0.5" pY="0.5" oX="83" oY="5" oW="160" oH="144"/>
+    <sprite n="growl_enemy_7" x="144" y="0" w="24" h="70" pX="0.5" pY="0.5" oX="83" oY="5" oW="160" oH="144"/>
+    <sprite n="growl_enemy_8" x="48" y="0" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+    <sprite n="growl_enemy_9" x="48" y="74" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+    <sprite n="growl_enemy_10" x="0" y="0" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+    <sprite n="growl_enemy_11" x="0" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_12" x="0" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_13" x="1" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_14" x="1" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_15" x="2" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_16" x="2" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_17" x="144" y="172" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_18" x="168" y="172" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_19" x="192" y="172" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_20" x="192" y="60" w="24" h="56" pX="0.5" pY="0.5" oX="90" oY="12" oW="160" oH="144"/>
+    <sprite n="growl_enemy_21" x="168" y="0" w="24" h="60" pX="0.5" pY="0.5" oX="88" oY="10" oW="160" oH="144"/>
+    <sprite n="growl_enemy_22" x="192" y="0" w="24" h="60" pX="0.5" pY="0.5" oX="88" oY="10" oW="160" oH="144"/>
+    <sprite n="growl_enemy_23" x="96" y="0" w="24" h="70" pX="0.5" pY="0.5" oX="83" oY="5" oW="160" oH="144"/>
+    <sprite n="growl_enemy_24" x="72" y="0" w="24" h="72" pX="0.5" pY="0.5" oX="82" oY="4" oW="160" oH="144"/>
+    <sprite n="growl_enemy_25" x="72" y="72" w="24" h="72" pX="0.5" pY="0.5" oX="82" oY="4" oW="160" oH="144"/>
+    <sprite n="growl_enemy_26" x="0" y="74" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+    <sprite n="growl_enemy_27" x="3" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_28" x="3" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_29" x="4" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_30" x="4" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_31" x="5" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_32" x="5" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_33" x="6" y="214" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_34" x="6" y="215" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="growl_enemy_35" x="120" y="70" w="24" h="44" pX="0.5" pY="0.5" oX="96" oY="18" oW="160" oH="144"/>
+    <sprite n="growl_enemy_36" x="96" y="70" w="24" h="50" pX="0.5" pY="0.5" oX="93" oY="15" oW="160" oH="144"/>
+    <sprite n="growl_enemy_37" x="120" y="120" w="24" h="50" pX="0.5" pY="0.5" oX="93" oY="15" oW="160" oH="144"/>
+    <sprite n="growl_enemy_38" x="168" y="60" w="24" h="60" pX="0.5" pY="0.5" oX="88" oY="10" oW="160" oH="144"/>
+    <sprite n="growl_enemy_39" x="0" y="148" w="24" h="66" pX="0.5" pY="0.5" oX="85" oY="7" oW="160" oH="144"/>
+    <sprite n="growl_enemy_40" x="24" y="148" w="24" h="66" pX="0.5" pY="0.5" oX="85" oY="7" oW="160" oH="144"/>
+    <sprite n="growl_enemy_41" x="72" y="144" w="24" h="72" pX="0.5" pY="0.5" oX="82" oY="4" oW="160" oH="144"/>
+    <sprite n="growl_enemy_42" x="24" y="0" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+    <sprite n="growl_enemy_43" x="24" y="74" w="24" h="74" pX="0.5" pY="0.5" oX="81" oY="3" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:624c5beec15ed8e9f612011790437657:82dc6c3f5a535b989dd0ea75feec19de:e3a0edcf7e7d8ba59ba71fad530e9e0f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_quick_attack.png" width="120" height="120">
+    <sprite n="quick_attack_enemy_0" x="40" y="56" w="26" h="56" pX="0.5" pY="0.5" oX="123" oY="4" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_1" x="0" y="0" w="42" h="56" pX="0.5" pY="0.5" oX="107" oY="4" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_2" x="0" y="56" w="40" h="56" pX="0.5" pY="0.5" oX="108" oY="4" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_3" x="42" y="0" w="22" h="40" pX="0.5" pY="0.5" oX="117" oY="12" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_4" x="64" y="0" w="20" h="40" pX="0.5" pY="0.5" oX="118" oY="12" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_5" x="108" y="24" w="6" h="24" pX="0.5" pY="0.5" oX="125" oY="20" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_6" x="108" y="0" w="8" h="24" pX="0.5" pY="0.5" oX="124" oY="20" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_7" x="3" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_8" x="3" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_9" x="3" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_10" x="0" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_11" x="0" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_12" x="0" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_13" x="0" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_14" x="84" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_15" x="84" y="24" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_16" x="66" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_17" x="90" y="48" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_18" x="66" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_19" x="66" y="96" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_20" x="90" y="72" w="24" h="24" pX="0.5" pY="0.5" oX="24" oY="68" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_21" x="0" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_22" x="0" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_23" x="0" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_24" x="0" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_25" x="1" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_26" x="1" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_27" x="1" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_28" x="1" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_29" x="1" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_30" x="1" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_31" x="1" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_32" x="1" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_33" x="2" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_34" x="2" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_35" x="2" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_36" x="2" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_37" x="2" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_38" x="2" y="117" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_39" x="2" y="118" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_40" x="2" y="119" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_41" x="3" y="112" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_42" x="3" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_43" x="3" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_44" x="3" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="quick_attack_enemy_45" x="3" y="116" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:d07a69a0f40ab03a9fbfaefdc51cee65:9546fea1dc4646c61cf953c09ac98d5c:4ae77819424428dc3a3589ba05097b00$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_tackle.png" width="96" height="96">
+    <sprite n="tackle_enemy_0" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_1" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_2" x="0" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_3" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_4" x="64" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_5" x="32" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_6" x="32" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_7" x="64" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="56" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_8" x="64" y="77" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_9" x="64" y="78" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_10" x="64" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_11" x="64" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_12" x="64" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_13" x="64" y="67" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_14" x="64" y="68" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_15" x="64" y="69" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_16" x="64" y="70" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_17" x="64" y="71" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_18" x="64" y="72" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_19" x="64" y="73" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_20" x="64" y="74" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_21" x="64" y="75" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="tackle_enemy_22" x="64" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

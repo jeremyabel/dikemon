@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b8e87794af1622f51cc8e7966c091bb6:7b365fe5ca53ca1710697bdcf66688f3:0d50ef1dabc5b480ca044074a5bca9fb$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_thrash.png" width="160" height="160">
+    <sprite n="thrash_enemy_0" x="0" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_1" x="0" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_2" x="32" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_3" x="96" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_4" x="128" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_5" x="64" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_6" x="64" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="36" oY="80" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_7" x="64" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_8" x="96" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_9" x="128" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_10" x="0" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_11" x="0" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_12" x="0" y="128" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_13" x="32" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="20" oY="64" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_14" x="64" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_15" x="96" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_16" x="128" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_17" x="32" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_18" x="32" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_19" x="32" y="96" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+    <sprite n="thrash_enemy_20" x="64" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="4" oY="48" oW="160" oH="144"/>
+</TextureAtlas>
