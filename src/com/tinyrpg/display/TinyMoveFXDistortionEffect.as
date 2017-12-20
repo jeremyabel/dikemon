@@ -120,12 +120,14 @@ package com.tinyrpg.display
 				}
 			}
 		}
-		
+			
+		// TODO: Implement hide
 		private function applyHide( bitmap : Bitmap, rects : Array ) : void
 		{
 			
 		}
 		
+		// TODO: Implement waggle
 		private function applyWaggle( bitmap : Bitmap, rects : Array, frame : int = 0 ) : void
 		{
 			

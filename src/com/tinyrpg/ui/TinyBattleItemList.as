@@ -116,6 +116,9 @@ package com.tinyrpg.ui
 			
 			// Empty the description dialog box
 			this.setDescriptionText( '' );
+			
+			// Clear the selected item
+			this.selectedItem = null;
 		}
 
 		override protected function onArrowUp( e : TinyInputEvent ) : void
