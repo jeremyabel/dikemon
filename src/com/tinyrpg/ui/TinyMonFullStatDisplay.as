@@ -11,6 +11,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyStatsDisplay;
+	import com.tinyrpg.display.TinyMoveStatDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.display.TinyModalPageArrow;
 	import com.tinyrpg.managers.TinyFontManager;
@@ -50,6 +51,8 @@ package com.tinyrpg.ui
 		
 		// Page 2 Elements
 		private var movesLabel : TextField;
+		private var ppLabel : TextField;
+		private var moveStatDisplay : TinyMoveStatDisplay;
 		private var page2Arrow : TinyModalPageArrow;
 		
 		public function TinyMonFullStatDisplay()
@@ -125,6 +128,15 @@ package com.tinyrpg.ui
 			this.movesLabel.y = this.fullStatsDisplay.y - 10;
 			this.movesLabel.htmlText = TinyFontManager.returnHtmlText( 'MOVES:', 'battleBoxTitle');
 			
+			this.ppLabel = TinyFontManager.returnTextField();
+			this.ppLabel.x = 102;
+			this.ppLabel.y = this.movesLabel.y;
+			this.ppLabel.htmlText = TinyFontManager.returnHtmlText( 'PP:', 'battleBoxTitle' );
+			
+			this.moveStatDisplay = new TinyMoveStatDisplay();
+			this.moveStatDisplay.x = 1;
+			this.moveStatDisplay.y = this.movesLabel.y + 7;
+			
 			this.page2Arrow = new TinyModalPageArrow();
 			this.page2Arrow.x = 2;
 			this.page2Arrow.y = this.weightValue.y + 11;
@@ -143,9 +155,11 @@ package com.tinyrpg.ui
 			this.statsPage1Container.addChild( this.weightLabel );
 			this.statsPage1Container.addChild( this.weightValue );
 			this.statsPage1Container.addChild( this.page1Arrow );
-			this.statsPage2Container.addChild( this.movesLabel );
 			
 			// Add 'em up - page 2
+			this.statsPage2Container.addChild( this.moveStatDisplay );
+			this.statsPage2Container.addChild( this.movesLabel );
+			this.statsPage2Container.addChild( this.ppLabel );
 			this.statsPage2Container.addChild( this.page2Arrow );
 			
 			// Add 'em up - static top
@@ -186,6 +200,9 @@ package com.tinyrpg.ui
 			this.type1Value.htmlText = TinyFontManager.returnHtmlText( this.mon.type1.name.toUpperCase(), 'dialogText' );
 			this.type2Value.htmlText = TinyFontManager.returnHtmlText( this.mon.type2.name.toUpperCase(), 'dialogText' );
 			this.weightValue.htmlText = TinyFontManager.returnHtmlText( this.mon.weight + 'kg', 'dialogText' );
+			
+			// Update moves list
+			this.moveStatDisplay.setMoveSet( this.mon.moveSet );
 		}
 
 		public function show() : void
