@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e77bbb355145ea9dcb9a03d7aa7de827:c6adb7762d58fd3e1b62666d18af7092:45e454c90a4b1958931d3d53c2ad7fa3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_sleep.png" width="140" height="140">
+    <sprite n="sleep_00493" x="0" y="134" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="29" oW="160" oH="144"/>
+    <sprite n="sleep_00494" x="4" y="134" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="29" oW="160" oH="144"/>
+    <sprite n="sleep_00495" x="8" y="134" w="4" h="4" pX="0.5" pY="0.5" oX="105" oY="28" oW="160" oH="144"/>
+    <sprite n="sleep_00496" x="12" y="134" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="sleep_00497" x="47" y="22" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="28" oW="160" oH="144"/>
+    <sprite n="sleep_00498" x="51" y="22" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="27" oW="160" oH="144"/>
+    <sprite n="sleep_00499" x="55" y="22" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="27" oW="160" oH="144"/>
+    <sprite n="sleep_00500" x="59" y="22" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="27" oW="160" oH="144"/>
+    <sprite n="sleep_00501" x="16" y="132" w="8" h="8" pX="0.5" pY="0.5" oX="100" oY="24" oW="160" oH="144"/>
+    <sprite n="sleep_00502" x="24" y="132" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="24" oW="160" oH="144"/>
+    <sprite n="sleep_00503" x="32" y="130" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="23" oW="160" oH="144"/>
+    <sprite n="sleep_00504" x="40" y="130" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="23" oW="160" oH="144"/>
+    <sprite n="sleep_00505" x="46" y="95" w="8" h="8" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="sleep_00506" x="54" y="93" w="8" h="8" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="sleep_00507" x="62" y="93" w="8" h="8" pX="0.5" pY="0.5" oX="103" oY="22" oW="160" oH="144"/>
+    <sprite n="sleep_00508" x="75" y="14" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="22" oW="160" oH="144"/>
+    <sprite n="sleep_00509" x="48" y="124" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00510" x="62" y="122" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00511" x="74" y="0" w="14" h="14" pX="0.5" pY="0.5" oX="102" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00512" x="70" y="72" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00513" x="70" y="86" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00514" x="71" y="51" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00515" x="72" y="100" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00516" x="76" y="122" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00517" x="72" y="114" w="8" h="8" pX="0.5" pY="0.5" oX="108" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00518" x="80" y="114" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00519" x="83" y="14" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00520" x="91" y="28" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00521" x="99" y="28" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00522" x="107" y="28" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00523" x="130" y="0" w="8" h="8" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00524" x="130" y="8" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00525" x="63" y="22" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00526" x="60" y="47" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00527" x="67" y="21" w="4" h="4" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00528" x="62" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00529" x="66" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00530" x="70" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00531" x="74" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00532" x="64" y="47" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00533" x="119" y="14" w="8" h="8" pX="0.5" pY="0.5" oX="100" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00534" x="47" y="103" w="9" h="21" pX="0.5" pY="0.5" oX="101" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00535" x="47" y="0" w="9" h="22" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00536" x="54" y="72" w="8" h="21" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00537" x="56" y="101" w="8" h="21" pX="0.5" pY="0.5" oX="102" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00538" x="46" y="51" w="8" h="22" pX="0.5" pY="0.5" oX="102" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00539" x="62" y="72" w="8" h="21" pX="0.5" pY="0.5" oX="103" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00540" x="54" y="51" w="9" h="21" pX="0.5" pY="0.5" oX="103" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00541" x="32" y="26" w="14" h="25" pX="0.5" pY="0.5" oX="101" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00542" x="31" y="52" w="15" h="26" pX="0.5" pY="0.5" oX="100" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00543" x="0" y="54" w="15" h="27" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00544" x="0" y="108" w="16" h="26" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00545" x="15" y="54" w="16" h="26" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00546" x="0" y="0" w="16" h="27" pX="0.5" pY="0.5" oX="102" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00547" x="15" y="80" w="16" h="26" pX="0.5" pY="0.5" oX="102" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00548" x="31" y="78" w="15" h="26" pX="0.5" pY="0.5" oX="103" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00549" x="127" y="16" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="22" oW="160" oH="144"/>
+    <sprite n="sleep_00550" x="77" y="22" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00551" x="88" y="0" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00552" x="80" y="36" w="14" h="14" pX="0.5" pY="0.5" oX="102" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00553" x="85" y="50" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00554" x="91" y="14" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00555" x="102" y="0" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00556" x="94" y="36" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00557" x="105" y="14" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00558" x="119" y="22" w="8" h="8" pX="0.5" pY="0.5" oX="108" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00559" x="127" y="24" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00560" x="119" y="30" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00561" x="108" y="36" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00562" x="127" y="32" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00563" x="116" y="38" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00564" x="108" y="44" w="8" h="8" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00565" x="99" y="50" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00566" x="68" y="47" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00567" x="71" y="21" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00568" x="72" y="46" w="4" h="4" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00569" x="76" y="46" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00570" x="71" y="65" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00571" x="75" y="65" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00572" x="79" y="65" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00573" x="83" y="65" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00574" x="116" y="46" w="8" h="8" pX="0.5" pY="0.5" oX="100" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00575" x="60" y="26" w="9" h="21" pX="0.5" pY="0.5" oX="101" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00576" x="56" y="0" w="9" h="22" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00577" x="63" y="51" w="8" h="21" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00578" x="64" y="101" w="8" h="21" pX="0.5" pY="0.5" oX="102" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00579" x="46" y="73" w="8" h="22" pX="0.5" pY="0.5" oX="102" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00580" x="69" y="25" w="8" h="21" pX="0.5" pY="0.5" oX="103" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00581" x="65" y="0" w="9" h="21" pX="0.5" pY="0.5" oX="103" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00582" x="46" y="26" w="14" h="25" pX="0.5" pY="0.5" oX="101" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00583" x="32" y="104" w="15" h="26" pX="0.5" pY="0.5" oX="100" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00584" x="0" y="81" w="15" h="27" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00585" x="16" y="106" w="16" h="26" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00586" x="16" y="0" w="16" h="26" pX="0.5" pY="0.5" oX="101" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00587" x="0" y="27" w="16" h="27" pX="0.5" pY="0.5" oX="102" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00588" x="16" y="26" w="16" h="26" pX="0.5" pY="0.5" oX="102" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00589" x="32" y="0" w="15" h="26" pX="0.5" pY="0.5" oX="103" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00590" x="107" y="52" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="22" oW="160" oH="144"/>
+    <sprite n="sleep_00591" x="116" y="0" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00592" x="124" y="40" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00593" x="115" y="54" w="14" h="14" pX="0.5" pY="0.5" oX="102" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00594" x="84" y="72" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00595" x="84" y="86" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00596" x="86" y="100" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00597" x="90" y="122" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00598" x="106" y="68" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00599" x="99" y="58" w="8" h="8" pX="0.5" pY="0.5" oX="108" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00600" x="90" y="64" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="18" oW="160" oH="144"/>
+    <sprite n="sleep_00601" x="107" y="60" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00602" x="98" y="66" w="8" h="8" pX="0.5" pY="0.5" oX="107" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00603" x="88" y="114" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00604" x="129" y="54" w="8" h="8" pX="0.5" pY="0.5" oX="106" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00605" x="129" y="62" w="8" h="8" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00606" x="96" y="114" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00607" x="78" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00608" x="82" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="106" oY="17" oW="160" oH="144"/>
+    <sprite n="sleep_00609" x="86" y="136" w="4" h="4" pX="0.5" pY="0.5" oX="105" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00610" x="115" y="28" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00611" x="135" y="16" w="4" h="4" pX="0.5" pY="0.5" oX="104" oY="16" oW="160" oH="144"/>
+    <sprite n="sleep_00612" x="135" y="20" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00613" x="115" y="32" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00614" x="135" y="24" w="4" h="4" pX="0.5" pY="0.5" oX="103" oY="15" oW="160" oH="144"/>
+    <sprite n="sleep_00615" x="98" y="74" w="8" h="8" pX="0.5" pY="0.5" oX="100" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00616" x="120" y="68" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="12" oW="160" oH="144"/>
+    <sprite n="sleep_00617" x="114" y="96" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00618" x="104" y="110" w="8" h="8" pX="0.5" pY="0.5" oX="101" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00619" x="128" y="104" w="8" h="8" pX="0.5" pY="0.5" oX="102" oY="11" oW="160" oH="144"/>
+    <sprite n="sleep_00620" x="128" y="112" w="8" h="8" pX="0.5" pY="0.5" oX="102" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00621" x="118" y="118" w="8" h="8" pX="0.5" pY="0.5" oX="103" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00622" x="118" y="126" w="8" h="8" pX="0.5" pY="0.5" oX="104" oY="10" oW="160" oH="144"/>
+    <sprite n="sleep_00623" x="98" y="82" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00624" x="100" y="96" w="14" h="14" pX="0.5" pY="0.5" oX="101" oY="6" oW="160" oH="144"/>
+    <sprite n="sleep_00625" x="112" y="82" w="14" h="14" pX="0.5" pY="0.5" oX="102" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00626" x="126" y="76" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00627" x="126" y="90" w="14" h="14" pX="0.5" pY="0.5" oX="103" oY="5" oW="160" oH="144"/>
+    <sprite n="sleep_00628" x="114" y="104" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00629" x="104" y="120" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="4" oW="160" oH="144"/>
+    <sprite n="sleep_00630" x="126" y="120" w="14" h="14" pX="0.5" pY="0.5" oX="104" oY="4" oW="160" oH="144"/>
+</TextureAtlas>

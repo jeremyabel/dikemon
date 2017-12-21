@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1b773a3a8a39938e3f996339c6bdad42:a7b3cc42b8ff180444dedb732ace387e:dd90c9b65210cab9a3145c3f1b398b5c$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_poison.png" width="70" height="70">
+    <sprite n="status_poison00" x="0" y="0" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison01" x="0" y="16" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison02" x="0" y="32" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison03" x="0" y="48" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison04" x="14" y="0" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison05" x="28" y="0" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison06" x="42" y="0" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison07" x="56" y="0" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison08" x="14" y="16" w="14" h="16" pX="0.5" pY="0.5" oX="49" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison09" x="14" y="32" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison10" x="14" y="48" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison11" x="28" y="16" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison12" x="42" y="16" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison13" x="56" y="16" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison14" x="28" y="32" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison15" x="28" y="48" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison16" x="42" y="32" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison17" x="56" y="32" w="14" h="16" pX="0.5" pY="0.5" oX="33" oY="32" oW="160" oH="144"/>
+    <sprite n="status_poison18" x="0" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison19" x="0" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison20" x="0" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison21" x="0" y="67" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison22" x="0" y="68" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison23" x="0" y="69" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison24" x="1" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison25" x="1" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison26" x="1" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison27" x="1" y="67" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison28" x="1" y="68" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison29" x="1" y="69" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison30" x="2" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison31" x="2" y="65" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison32" x="2" y="66" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison33" x="2" y="67" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison34" x="2" y="68" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison35" x="2" y="69" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_poison36" x="3" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -9,12 +9,13 @@ package com.tinyrpg.display
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyMoveFXSpriteFrameInfo;
 	import com.tinyrpg.misc.TinyMoveFXConfig;
+	import com.tinyrpg.misc.TinyStatusFXConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyMoveFXSprite extends Sprite 
+	public class TinyFXSprite extends Sprite 
 	{
 		private static const clearRect : Rectangle = new Rectangle( 0, 0, 160, 144 );
 		
@@ -32,7 +33,7 @@ package com.tinyrpg.display
 		
 		public function get currentFrame() : int { return this.currentBFrame; }
 				
-		public function TinyMoveFXSprite( sourceBitmap : BitmapData, xmlData : XML )
+		public function TinyFXSprite( sourceBitmap : BitmapData, xmlData : XML )
 		{
 			this.sourceData = sourceBitmap;
 			this.xmlData = xmlData;
@@ -46,12 +47,20 @@ package com.tinyrpg.display
 			this.length = this.frameData.length;
 		}
 
-		public static function newFromMoveData( move : TinyMoveData, isEnemy : Boolean ) : TinyMoveFXSprite
+		public static function newFromMoveData( move : TinyMoveData, isEnemy : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyMoveFXConfig.getMoveFXSprite( move.name, isEnemy );
 			var xmlData : XML = TinyMoveFXConfig.getMoveFXXML( move.name, isEnemy );
 			
-			return new TinyMoveFXSprite( sourceData, xmlData );	
+			return new TinyFXSprite( sourceData, xmlData );	
+		}
+		
+		public static function newFromStatusEffect( statusName : String, isEnemy : Boolean ) : TinyFXSprite
+		{
+			var sourceData : BitmapData = TinyStatusFXConfig.getStatusFXSprite( statusName, isEnemy );
+			var xmlData : XML = TinyStatusFXConfig.getStatusFXXML( statusName, isEnemy );
+			
+			return new TinyFXSprite( sourceData, xmlData );
 		}
 		
 		public function play() : void

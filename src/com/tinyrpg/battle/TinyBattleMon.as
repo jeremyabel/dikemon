@@ -458,7 +458,7 @@ package com.tinyrpg.battle
 			m_switchMonMenu.hide();
 			
 			// Hide the battle command menu
-			m_battleCommandMenu.hide();
+			m_battleCommandMenu.hide();			
 			
 			// Clean up
 			m_moveSelectMenu.removeEventListener(TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected);

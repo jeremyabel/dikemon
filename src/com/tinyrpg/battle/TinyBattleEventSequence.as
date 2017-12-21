@@ -16,6 +16,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.display.TinyMoveFXAnimation;
+	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.misc.TinyEventItem;
 	import com.tinyrpg.misc.TinyDealDamageCommand;
 	import com.tinyrpg.misc.TinyTweenCommand;
@@ -41,6 +42,7 @@ package com.tinyrpg.battle
 		private var currentLevelUpDisplay : TinyLevelUpStatsDisplay;
 		private var currentDeleteMoveDialog : TinyDeleteMoveDialog;
 		private var currentAttackAnimation : TinyMoveFXAnimation;
+		private var currentStatusAnimation : TinyStatusFXAnimation;
 		private var m_currentDialog : TinyDialogBox;
 		
 		public function get events() : Array { return this.m_eventSequence; }
@@ -149,6 +151,9 @@ package com.tinyrpg.battle
 					break;
 				case TinyEventItem.PLAY_ATTACK_ANIM:
 					this.doPlayAttackAnim( nextEvent.thingToDo as TinyMoveFXAnimation );
+					break;
+				case TinyEventItem.PLAY_STATUS_ANIM:
+					this.doPlayStatusAnim( nextEvent.thingToDo as TinyStatusFXAnimation );
 					break;
 				case TinyEventItem.PLAYER_ATTACK:
 					this.doPlayerAttack( nextEvent.thingToDo as TinyMonContainer );
@@ -296,10 +301,21 @@ package com.tinyrpg.battle
 
 		public function addPlayAttackAnim( attackAnimation : TinyMoveFXAnimation ) : void
 		{
-			TinyLogManager.log('addFaintMon', this);
+			TinyLogManager.log('addPlayAttackAnim', this);
 			
 			// Make new event item
 			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.PLAY_ATTACK_ANIM, attackAnimation );
+			
+			// Add to sequence
+			this.m_eventSequence.push( newEventItem );	
+		}
+		
+		public function addPlayStatusAnim( statusAnimation : TinyStatusFXAnimation ) : void
+		{
+			TinyLogManager.log('addPlayStatusAnim', this);
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.PLAY_STATUS_ANIM, statusAnimation );
 			
 			// Add to sequence
 			this.m_eventSequence.push( newEventItem );	
@@ -318,7 +334,7 @@ package com.tinyrpg.battle
 		
 		public function addEnemyAttack( targetMonContainer : TinyMonContainer ) : void
 		{
-			TinyLogManager.log('addPlayerAttack', this);	
+			TinyLogManager.log('addEnemyAttack', this);	
 			
 			// Make new event item
 			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.ENEMY_ATTACK, targetMonContainer );
@@ -653,6 +669,32 @@ package com.tinyrpg.battle
 			this.m_hostBattle.removeChild( this.currentAttackAnimation );
 			this.currentAttackAnimation.removeEventListener( Event.COMPLETE, this.onPlayAttackAnimComplete );
 			this.currentAttackAnimation = null;
+			
+			// Next!
+			this.doNextCommand();	
+		}
+		
+		private function doPlayStatusAnim( statusAnim : TinyStatusFXAnimation ) : void
+		{
+			TinyLogManager.log('doPlayStatusAnim', this);
+							
+			this.currentStatusAnimation = statusAnim;
+			this.currentStatusAnimation.addEventListener( Event.COMPLETE, this.onPlayStatusAnimComplete );
+			this.currentStatusAnimation.play();
+			this.currentStatusAnimation.x = 
+			this.currentStatusAnimation.y = 0;
+			
+			this.m_hostBattle.addChild( this.currentStatusAnimation );
+		}
+		
+		private function onPlayStatusAnimComplete( event : Event = null ) : void
+		{
+			TinyLogManager.log('onPlayStatusAnimComplete', this);
+			
+			// Clean up
+			this.m_hostBattle.removeChild( this.currentStatusAnimation );
+			this.currentStatusAnimation.removeEventListener( Event.COMPLETE, this.onPlayStatusAnimComplete );
+			this.currentStatusAnimation = null;
 			
 			// Next!
 			this.doNextCommand();	

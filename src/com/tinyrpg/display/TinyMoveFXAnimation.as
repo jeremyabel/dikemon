@@ -17,7 +17,7 @@ package com.tinyrpg.display
 	 */
 	public class TinyMoveFXAnimation extends Sprite 
 	{
-		private var moveFXSprite : TinyMoveFXSprite;
+		private var moveFXSprite : TinyFXSprite;
 		private var battleScreenBitmap : Bitmap;
 		private var battleScreenBitmapCopy : Bitmap;
 		private var battleScreenCapture : BitmapData;
@@ -85,7 +85,7 @@ package com.tinyrpg.display
 			this.battleScreenBitmap = new Bitmap( this.battleScreenCapture );
 			
 			// Make move FX sprite
-			this.moveFXSprite = TinyMoveFXSprite.newFromMoveData( move, this.isEnemy );
+			this.moveFXSprite = TinyFXSprite.newFromMoveData( move, this.isEnemy );
 			this.length = this.moveFXSprite.length;
 			
 			// Make BG fill sprite

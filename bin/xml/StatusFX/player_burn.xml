@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4526d672a6232b6220675d79c1dfea32:3d77168252f391c7a681a174ed4b0e91:32b257facddb1322882471beaa546dd5$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_burn.png" width="85" height="85">
+    <sprite n="status_burn00" x="78" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="61" oY="69" oW="160" oH="144"/>
+    <sprite n="status_burn01" x="78" y="7" w="6" h="7" pX="0.5" pY="0.5" oX="60" oY="70" oW="160" oH="144"/>
+    <sprite n="status_burn02" x="78" y="14" w="6" h="7" pX="0.5" pY="0.5" oX="60" oY="72" oW="160" oH="144"/>
+    <sprite n="status_burn03" x="77" y="21" w="6" h="7" pX="0.5" pY="0.5" oX="60" oY="73" oW="160" oH="144"/>
+    <sprite n="status_burn04" x="47" y="32" w="6" h="7" pX="0.5" pY="0.5" oX="59" oY="75" oW="160" oH="144"/>
+    <sprite n="status_burn05" x="71" y="49" w="9" h="14" pX="0.5" pY="0.5" oX="58" oY="69" oW="160" oH="144"/>
+    <sprite n="status_burn06" x="71" y="63" w="9" h="14" pX="0.5" pY="0.5" oX="57" oY="70" oW="160" oH="144"/>
+    <sprite n="status_burn07" x="37" y="29" w="10" h="14" pX="0.5" pY="0.5" oX="56" oY="72" oW="160" oH="144"/>
+    <sprite n="status_burn08" x="60" y="49" w="11" h="14" pX="0.5" pY="0.5" oX="55" oY="73" oW="160" oH="144"/>
+    <sprite n="status_burn09" x="37" y="16" w="11" h="13" pX="0.5" pY="0.5" oX="54" oY="75" oW="160" oH="144"/>
+    <sprite n="status_burn10" x="0" y="21" w="17" h="24" pX="0.5" pY="0.5" oX="50" oY="69" oW="160" oH="144"/>
+    <sprite n="status_burn11" x="0" y="45" w="17" h="24" pX="0.5" pY="0.5" oX="49" oY="70" oW="160" oH="144"/>
+    <sprite n="status_burn12" x="17" y="43" w="18" h="22" pX="0.5" pY="0.5" oX="48" oY="72" oW="160" oH="144"/>
+    <sprite n="status_burn13" x="17" y="21" w="20" h="22" pX="0.5" pY="0.5" oX="46" oY="73" oW="160" oH="144"/>
+    <sprite n="status_burn14" x="51" y="63" w="20" h="20" pX="0.5" pY="0.5" oX="45" oY="75" oW="160" oH="144"/>
+    <sprite n="status_burn15" x="26" y="65" w="25" h="20" pX="0.5" pY="0.5" oX="41" oY="75" oW="160" oH="144"/>
+    <sprite n="status_burn16" x="35" y="43" w="25" h="20" pX="0.5" pY="0.5" oX="40" oY="76" oW="160" oH="144"/>
+    <sprite n="status_burn17" x="60" y="32" w="25" h="17" pX="0.5" pY="0.5" oX="39" oY="78" oW="160" oH="144"/>
+    <sprite n="status_burn18" x="0" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="37" oY="79" oW="160" oH="144"/>
+    <sprite n="status_burn19" x="26" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="36" oY="79" oW="160" oH="144"/>
+    <sprite n="status_burn20" x="52" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="36" oY="79" oW="160" oH="144"/>
+    <sprite n="status_burn21" x="0" y="69" w="26" h="16" pX="0.5" pY="0.5" oX="35" oY="80" oW="160" oH="144"/>
+    <sprite n="status_burn22" x="51" y="16" w="26" h="16" pX="0.5" pY="0.5" oX="34" oY="79" oW="160" oH="144"/>
+    <sprite n="status_burn23" x="84" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn24" x="84" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn25" x="84" y="2" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn26" x="84" y="3" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn27" x="84" y="4" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn28" x="84" y="5" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn29" x="84" y="6" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="status_burn30" x="84" y="7" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

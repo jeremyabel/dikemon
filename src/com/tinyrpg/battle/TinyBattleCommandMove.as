@@ -1,13 +1,12 @@
 package com.tinyrpg.battle 
 {		
 	import com.tinyrpg.core.TinyMon;
-	import com.tinyrpg.data.TinyMoveData;
+	import com.tinyrpg.data.TinyMoveData;	
 	import com.tinyrpg.data.TinyMoveEffect;
+	import com.tinyrpg.data.TinyStatusEffect;
 	import com.tinyrpg.data.TinyMoveEffectStatMod;
-	
-	
-	
 	import com.tinyrpg.display.TinyMonContainer;
+	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -52,14 +51,14 @@ package com.tinyrpg.battle
 		public function determineResult() : void
 		{
 			// Get attacker and defender
-			var attackingMon : TinyMon = isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
-			var defendingMon : TinyMon = isEnemy ? this.battle.m_currentPlayerMon : this.battle.m_currentEnemyMon;
+			var attackingMon : TinyMon = this.isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
+			var defendingMon : TinyMon = this.isEnemy ? this.battle.m_currentPlayerMon : this.battle.m_currentEnemyMon;
 			
 			var attackerFainted : Boolean = false;
 			var defenderFainted : Boolean = false;
 			
-			var attackerContainer : TinyMonContainer = isEnemy ? this.battle.m_enemyMonContainer : this.battle.m_playerMonContainer;
-			var defenderContainer : TinyMonContainer = isEnemy ? this.battle.m_playerMonContainer : this.battle.m_enemyMonContainer;
+			var attackerContainer : TinyMonContainer = this.isEnemy ? this.battle.m_enemyMonContainer : this.battle.m_playerMonContainer;
+			var defenderContainer : TinyMonContainer = this.isEnemy ? this.battle.m_playerMonContainer : this.battle.m_enemyMonContainer;
 			
 			// If this is the enemy's turn, resolve any outstanding status effects here.
 			// The player does this at the beginning of their turn before gaining control of the command menu, 
@@ -91,10 +90,13 @@ package com.tinyrpg.battle
 			if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_FAILED || preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED )
 			{	
 				// Confusion damage: 33% hit rate, as if mon attacks itself with a power 40 physical attack, no chance to crit
-				if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED && Math.random() < TinyBattleMath.CONFUSION_HIT_PROB )
+				if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED ) // && Math.random() < TinyBattleMath.CONFUSION_HIT_PROB )
 				{
 					// Calculate confusion damage using the special confusion attack					
 					var confusionDamage : int = TinyBattleMath.calculateDamage( attackingMon, attackingMon, TinyMoveData.CONFUSION_ATTACK, false );
+					
+					// Play confusion effect animation
+					this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.CONFUSION, isEnemy ) );
 					
 					// Apply damage
 					this.applyDamageToTarget( attackingMon, confusionDamage, isEnemy );
@@ -313,7 +315,7 @@ package com.tinyrpg.battle
 						{
 							this.eventSequence.addDelay( 0.2 );
 							
-							if ( isEnemy )
+							if ( this.isEnemy )
 								this.eventSequence.addPlayerHitSecondary();
 							else
 								this.eventSequence.addEnemyHitSecondary( battle.m_enemyMonContainer );
@@ -321,14 +323,18 @@ package com.tinyrpg.battle
 							// TODO: Play the appropriate status effect animation, if applicable  	
 							if ( effect.type == 'STATUS_EFFECT' )
 							{
-								
+								if ( TinyStatusEffect.isAnimated( effect.property as String ) ) 
+								{
+									this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( effect.property as String, !isEnemy ) );
+								}
 							}
 								
 							this.eventSequence.addDelay( 0.2 );
 						}
 							
 						// Add "but it didn't work" message if the effect did not succeed, but only for attacks that are secondary-effect only
-						if ( !effectSucceeded && !wasHitAttack && isFirstEffect ) {
+						if ( !effectSucceeded && !wasHitAttack && isFirstEffect ) 
+						{
 							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.FAILED ) );							
 						}
 						
@@ -363,7 +369,8 @@ package com.tinyrpg.battle
 			{
 				TinyLogManager.log('applying POISON damage', this);	
 				
-				// TODO: Play poison effect animation
+				// Play poison effect animation
+				this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.POISON, isEnemy ) );
 				
 				var poisonDamage : int = Math.floor( Number(attackingMon.maxHP) / TinyBattleMath.POISON_DAMAGE_RATIO );
 				
@@ -386,7 +393,8 @@ package com.tinyrpg.battle
 			{
 				TinyLogManager.log('applying BURN damage', this);
 				
-				// TODO: Play burn effect animation
+				// Play burn effect animation
+				this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.BURN, isEnemy ) );
 				
 				var burnDamage : int = Math.floor( Number(attackingMon.maxHP) / TinyBattleMath.BURN_DAMAGE_RATIO );
 				

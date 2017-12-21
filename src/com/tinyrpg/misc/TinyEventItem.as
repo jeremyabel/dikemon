@@ -51,6 +51,7 @@ package com.tinyrpg.misc
 		public static const SHOW_DELETE_MOVE		: String = 'SHOW_DELETE_MOVE';
 		public static const DEAL_DAMAGE				: String = 'DEAL_DAMAGE';
 		public static const PLAY_ATTACK_ANIM		: String = 'PLAY_ATTACK_ANIM';
+		public static const PLAY_STATUS_ANIM		: String = 'PLAY_STATUS_ANIM';
 		public static const PLAYER_ATTACK			: String = 'PLAYER_ATTACK';
 		public static const ENEMY_ATTACK			: String = 'ENEMY_ATTACK'; 
 		public static const PLAYER_HIT_DAMAGE		: String = 'PLAYER_HIT_DAMAGE';

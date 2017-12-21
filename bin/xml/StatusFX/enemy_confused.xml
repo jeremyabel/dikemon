@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b2336f9436eb1ec202ada1fe195be35b:39c145d69e392d69a6d62555b4b294a4:0af839665e4e50931674513956cf1225$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_confused.png" width="275" height="275">
+    <sprite n="confused_00493" x="157" y="127" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00494" x="192" y="166" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00495" x="117" y="201" w="37" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00496" x="39" y="208" w="38" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00497" x="122" y="19" w="39" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00498" x="161" y="0" w="40" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00499" x="0" y="98" w="40" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00500" x="201" y="0" w="41" h="17" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00501" x="40" y="77" w="40" h="18" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00502" x="0" y="116" w="40" h="18" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00503" x="79" y="127" w="39" h="18" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00504" x="39" y="227" w="38" h="19" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00505" x="192" y="185" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00506" x="191" y="204" w="36" h="19" pX="0.5" pY="0.5" oX="113" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00507" x="39" y="246" w="38" h="19" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00508" x="40" y="95" w="39" h="19" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00509" x="0" y="134" w="39" h="19" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00510" x="40" y="20" w="40" h="19" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00511" x="0" y="20" w="40" h="20" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00512" x="40" y="114" w="39" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00513" x="0" y="153" w="39" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00514" x="78" y="163" w="38" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00515" x="154" y="223" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00516" x="190" y="223" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00517" x="155" y="242" w="36" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00518" x="78" y="182" w="38" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00519" x="118" y="127" w="39" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00520" x="40" y="133" w="39" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00521" x="80" y="36" w="40" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00522" x="80" y="54" w="40" h="18" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00523" x="79" y="145" w="39" h="18" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00524" x="118" y="145" w="39" h="18" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00525" x="116" y="163" w="38" h="19" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00526" x="191" y="242" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00527" x="199" y="92" w="37" h="19" pX="0.5" pY="0.5" oX="113" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00528" x="116" y="182" w="38" h="19" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00529" x="0" y="172" w="39" h="19" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00530" x="81" y="0" w="40" h="19" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00531" x="0" y="60" w="40" h="19" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00532" x="0" y="0" w="41" h="20" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00533" x="40" y="39" w="40" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00534" x="121" y="0" w="40" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00535" x="0" y="191" w="39" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00536" x="77" y="219" w="38" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00537" x="239" y="36" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00538" x="236" y="55" w="36" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00539" x="77" y="238" w="38" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00540" x="78" y="201" w="39" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00541" x="77" y="257" w="39" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00542" x="80" y="72" w="40" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00543" x="161" y="18" w="40" h="18" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00544" x="115" y="220" w="39" h="18" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00545" x="116" y="257" w="39" h="18" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00546" x="115" y="238" w="38" h="19" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00547" x="236" y="74" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00548" x="236" y="93" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00549" x="236" y="112" w="36" h="19" pX="0.5" pY="0.5" oX="113" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00550" x="160" y="54" w="38" h="19" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00551" x="0" y="210" w="39" h="19" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00552" x="0" y="229" w="39" h="19" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00553" x="41" y="0" w="40" h="20" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00554" x="0" y="79" w="40" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00555" x="0" y="248" w="39" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00556" x="201" y="17" w="39" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00557" x="160" y="73" w="38" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00558" x="234" y="131" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00559" x="154" y="204" w="37" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00560" x="198" y="54" w="38" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00561" x="161" y="36" w="39" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00562" x="120" y="37" w="40" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00563" x="120" y="55" w="40" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00564" x="81" y="19" w="41" h="17" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00565" x="120" y="73" w="40" h="18" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00566" x="80" y="90" w="40" h="18" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00567" x="200" y="36" w="39" h="18" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00568" x="198" y="73" w="38" h="19" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00569" x="232" y="150" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00570" x="228" y="169" w="36" h="19" pX="0.5" pY="0.5" oX="113" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00571" x="157" y="128" w="38" h="19" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00572" x="79" y="108" w="39" h="19" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00573" x="39" y="151" w="39" h="19" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00574" x="40" y="58" w="40" h="19" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00575" x="0" y="40" w="40" h="20" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00576" x="39" y="170" w="39" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00577" x="39" y="189" w="39" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00578" x="157" y="147" w="38" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00579" x="228" y="188" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00580" x="227" y="207" w="36" h="19" pX="0.5" pY="0.5" oX="106" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00581" x="227" y="226" w="36" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00582" x="154" y="166" w="38" h="19" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00583" x="160" y="92" w="39" h="18" pX="0.5" pY="0.5" oX="107" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00584" x="158" y="110" w="39" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00585" x="120" y="91" w="40" h="18" pX="0.5" pY="0.5" oX="108" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00586" x="118" y="109" w="40" h="18" pX="0.5" pY="0.5" oX="109" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00587" x="197" y="111" w="39" h="18" pX="0.5" pY="0.5" oX="110" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00588" x="195" y="129" w="39" h="18" pX="0.5" pY="0.5" oX="111" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00589" x="154" y="185" w="38" h="19" pX="0.5" pY="0.5" oX="112" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00590" x="227" y="245" w="36" h="19" pX="0.5" pY="0.5" oX="114" oY="0" oW="160" oH="144"/>
+    <sprite n="confused_00591" x="195" y="147" w="37" h="19" pX="0.5" pY="0.5" oX="113" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

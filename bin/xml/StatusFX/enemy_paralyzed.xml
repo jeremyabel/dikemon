@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:64596480c9e7b050ac0f77f0ebf4c3ab:86b078fe9b6c323f106657112aedab17:b0ec7c56997d7edf24b4f677d6290227$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_paralyzed.png" width="572" height="572">
+    <sprite n="paralyzed_00493" x="272" y="152" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00494" x="272" y="190" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00495" x="0" y="0" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00496" x="0" y="38" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00497" x="0" y="76" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00498" x="0" y="114" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00499" x="272" y="228" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00500" x="272" y="266" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00501" x="272" y="304" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00502" x="272" y="342" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00503" x="272" y="380" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00504" x="0" y="152" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00505" x="0" y="190" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00506" x="0" y="228" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00507" x="0" y="266" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00508" x="0" y="304" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00509" x="0" y="342" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00510" x="272" y="418" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00511" x="272" y="456" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00512" x="272" y="494" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00513" x="272" y="532" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00514" x="0" y="380" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00515" x="0" y="418" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00516" x="0" y="456" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00517" x="0" y="494" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00518" x="0" y="532" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00519" x="332" y="152" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00520" x="340" y="0" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00521" x="340" y="38" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00522" x="340" y="76" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00523" x="340" y="114" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00524" x="332" y="190" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00525" x="68" y="0" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00526" x="68" y="38" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00527" x="68" y="76" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00528" x="68" y="114" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00529" x="332" y="228" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00530" x="332" y="266" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00531" x="332" y="304" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00532" x="332" y="342" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00533" x="332" y="380" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00534" x="68" y="152" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00535" x="68" y="190" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00536" x="68" y="228" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00537" x="68" y="266" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00538" x="68" y="304" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00539" x="68" y="342" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00540" x="332" y="418" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00541" x="332" y="456" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00542" x="332" y="494" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00543" x="332" y="532" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00544" x="68" y="380" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00545" x="68" y="418" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00546" x="68" y="456" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00547" x="68" y="494" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00548" x="68" y="532" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00549" x="392" y="152" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00550" x="400" y="0" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00551" x="400" y="38" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00552" x="400" y="76" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00553" x="400" y="114" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00554" x="392" y="190" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00555" x="136" y="0" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00556" x="136" y="38" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00557" x="136" y="76" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00558" x="136" y="114" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00559" x="392" y="228" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00560" x="392" y="266" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00561" x="392" y="304" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00562" x="392" y="342" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00563" x="392" y="380" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00564" x="136" y="152" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00565" x="136" y="190" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00566" x="136" y="228" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00567" x="136" y="266" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00568" x="136" y="304" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00569" x="136" y="342" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00570" x="392" y="418" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00571" x="392" y="456" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00572" x="392" y="494" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00573" x="392" y="532" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00574" x="136" y="380" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00575" x="136" y="418" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00576" x="136" y="456" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00577" x="136" y="494" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00578" x="136" y="532" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00579" x="452" y="152" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00580" x="460" y="0" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00581" x="460" y="38" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00582" x="460" y="76" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00583" x="460" y="114" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00584" x="452" y="190" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00585" x="204" y="0" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00586" x="204" y="38" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00587" x="204" y="76" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00588" x="204" y="114" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00589" x="452" y="228" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00590" x="452" y="266" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00591" x="452" y="304" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00592" x="452" y="342" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00593" x="452" y="380" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00594" x="204" y="152" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00595" x="204" y="190" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00596" x="204" y="228" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00597" x="204" y="266" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00598" x="204" y="304" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00599" x="204" y="342" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00600" x="452" y="418" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00601" x="452" y="456" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00602" x="452" y="494" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00603" x="452" y="532" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00604" x="204" y="380" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00605" x="204" y="418" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00606" x="204" y="456" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00607" x="204" y="494" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00608" x="204" y="532" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00609" x="512" y="152" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00610" x="512" y="190" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00611" x="512" y="228" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00612" x="512" y="266" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00613" x="512" y="304" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00614" x="512" y="342" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00615" x="272" y="0" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00616" x="272" y="38" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00617" x="272" y="76" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00618" x="272" y="114" w="68" h="38" pX="0.5" pY="0.5" oX="90" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00619" x="512" y="380" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00620" x="512" y="418" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00621" x="512" y="456" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+    <sprite n="paralyzed_00622" x="512" y="494" w="60" h="38" pX="0.5" pY="0.5" oX="94" oY="21" oW="160" oH="144"/>
+</TextureAtlas>

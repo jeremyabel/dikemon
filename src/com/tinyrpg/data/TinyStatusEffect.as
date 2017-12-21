@@ -1,5 +1,6 @@
 package com.tinyrpg.data 
 {
+	import com.tinyrpg.display.TinyStatusFXAnimation;
 
 	/**
 	 * @author jeremyabel
@@ -24,6 +25,15 @@ package com.tinyrpg.data
 				statusEffect == SLEEP || 
 				statusEffect == MEAN_LOOK ||
 				statusEffect == LOCK_ON;
+		}
+		
+		public static function isAnimated( statusEffect : String ) : Boolean
+		{
+			return statusEffect == CONFUSION ||
+				statusEffect == POISON ||
+				statusEffect == PARALYSIS ||
+				statusEffect == BURN ||
+				statusEffect == SLEEP;
 		}
 	}
 }
