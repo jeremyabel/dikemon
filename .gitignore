@@ -2,8 +2,6 @@
 .settings/
 
 # Executables
-*.swf
-*.air
 *.ipa
 *.apk
 
