@@ -24,11 +24,14 @@ package com.tinyrpg.display
 		public var palette : TinyFourColorPalette;
 		
 		private var monMask : Sprite;
+		private var rightFacing : Boolean;
 		private var m_monCenterSprite : Sprite;
 		private var m_summonPoof : TinySpriteSheet; 
 		
-		public function TinyMonContainer( bitmap : Bitmap )
-		{
+		public function TinyMonContainer( bitmap : Bitmap, rightFacing : Boolean = false )
+		{			
+			this.rightFacing = rightFacing;
+			
 			// Make empty palette
 			this.palette = new TinyFourColorPalette();
 			
@@ -39,17 +42,18 @@ package com.tinyrpg.display
 			this.m_summonPoof.y = 28;
 			
 			this.m_monCenterSprite = new Sprite();
-			this.m_monCenterSprite.x = 
+			this.m_monCenterSprite.x = 28; 
 			this.m_monCenterSprite.y = 28;
 			this.m_monCenterSprite.cacheAsBitmap = true;
-				
+			
 			// Make mon bitmap
-			this.monBitmap = bitmap;
+			this.monBitmap = new Bitmap( bitmap.bitmapData.clone() );
 			this.monBitmap.cacheAsBitmap = true;
 			this.monBitmap.visible = false;
-			this.monBitmap.x = 
+			this.monBitmap.scaleX = this.rightFacing ? -1 : 1;
+			this.monBitmap.x = this.rightFacing ? 28 : -28;
 			this.monBitmap.y = -28; 
-		
+			
 			// Make mon mask
 			this.monMask = new Sprite();
 			this.monMask.graphics.beginFill( 0x0000FF );
@@ -91,10 +95,11 @@ package com.tinyrpg.display
 			
 			this.m_monCenterSprite.y = 28;
 			
-			this.monBitmap = bitmap;
+			this.monBitmap = new Bitmap( bitmap.bitmapData.clone() );
 			this.monBitmap.cacheAsBitmap = true;
 			this.monBitmap.visible = false;
-			this.monBitmap.x = 
+			this.monBitmap.scaleX = this.rightFacing ? -1 : 1;
+			this.monBitmap.x = this.rightFacing ? 28 : -28;
 			this.monBitmap.y = -28;
 			
 			// Get palette colors

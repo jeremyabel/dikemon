@@ -55,6 +55,7 @@
 .dialogText { 
 	font-family: "mono 07_55_8pt_st";
 	font-size: 8px;
+	background: #FF00FF;
 	color: #000000;
 	leading: -2px;
 }

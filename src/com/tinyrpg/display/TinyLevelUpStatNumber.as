@@ -24,7 +24,7 @@ package com.tinyrpg.display
 		public var countTime : int = 0;
 		public var difference : int = 0;
 			
-		public function TinyLevelUpStatNumber( currentStatNumber : int, additionalStatNumber : int )
+		public function TinyLevelUpStatNumber( currentStatNumber : int, additionalStatNumber : int = 0 )
 		{
 			var width : int = 50;
 			

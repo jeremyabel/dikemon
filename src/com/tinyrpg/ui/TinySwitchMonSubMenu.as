@@ -18,6 +18,8 @@ package com.tinyrpg.ui
 	{
 		private var mon : TinyMon;
 		private var warningDialogBox : TinyDialogBox;
+		private var fullStatDisplay : TinyMonFullStatDisplay;
+		private var isInStatsDisplay : Boolean = false;
 		
 		private const SWITCH_STRING : String = 'SWITCH';
 		private const STATS_STRING	: String = 'STATS';
@@ -32,11 +34,19 @@ package com.tinyrpg.ui
 			];
 			
 			super( '', newItemArray, 43, 33, 12, 1, 1 );
+			
+			this.fullStatDisplay = new TinyMonFullStatDisplay();
+			this.fullStatDisplay.x = -130 + 24 + 5;
+			this.fullStatDisplay.y = -144 + 33 + 14;
+			this.fullStatDisplay.hide();
+			
+			// Add 'em up
+			this.addChild( this.fullStatDisplay );
 		}
 		
 		public function set currentMon( mon : TinyMon ) : void
 		{
-			this.mon = mon;	
+			this.mon = mon;
 		}
 		
 		public function show() : void
@@ -82,9 +92,36 @@ package com.tinyrpg.ui
 				}
 				else 
 				{
+					// Transfer control to stat display
+					this.isInStatsDisplay = true;
+					this.fullStatDisplay.addEventListener( TinyInputEvent.CANCEL, this.onStatDisplayCancelled );	
+					TinyInputManager.getInstance().setTarget( this.fullStatDisplay );
+					
+					// Show selected item as inactive-selected	
+					this.selectedItem.autoSelected = true;
+					
 					// TODO: Show stats display	
+					this.fullStatDisplay.currentMon = this.mon;
+					this.fullStatDisplay.show();
 				}
 			}
+		}
+		
+		private function onStatDisplayCancelled( event : Event ) : void
+		{
+			TinyLogManager.log('onStatDisplayCancelled', this);
+			
+			// Hide the stats display
+			this.fullStatDisplay.hide();
+			
+			// Restore active-selected state
+			this.selectedItem.autoSelected = false;
+			this.selectedItem.selected = true;
+			
+			// Return control
+			this.fullStatDisplay.removeEventListener( TinyInputEvent.CANCEL, this.onStatDisplayCancelled );
+			TinyInputManager.getInstance().setTarget( this );	
+			this.isInStatsDisplay = false;
 		}
 		
 		private function showWarningDialogBox( text : String ) : void

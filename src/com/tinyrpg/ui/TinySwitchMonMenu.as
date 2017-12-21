@@ -55,8 +55,8 @@ package com.tinyrpg.ui
 			
 			// Make selected mon submenu
 			this.selectedMonSubmenu = new TinySwitchMonSubMenu();
-			this.selectedMonSubmenu.x = 130 - Math.floor(this.selectedMonSubmenu.width / 2) - 3;
-			this.selectedMonSubmenu.y = 141 - this.selectedMonSubmenu.height;
+			this.selectedMonSubmenu.x = 130 - Math.floor(47 / 2) - 6;
+			this.selectedMonSubmenu.y = 141 - 33 - 11;
 			this.selectedMonSubmenu.visible = false;
 			
 			// Add 'em up
