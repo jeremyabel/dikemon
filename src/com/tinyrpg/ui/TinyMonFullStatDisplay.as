@@ -49,6 +49,7 @@ package com.tinyrpg.ui
 		private var page1Arrow : TinyModalPageArrow;
 		
 		// Page 2 Elements
+		private var movesLabel : TextField;
 		private var page2Arrow : TinyModalPageArrow;
 		
 		public function TinyMonFullStatDisplay()
@@ -73,7 +74,6 @@ package com.tinyrpg.ui
 			this.nextLevelValue = TinyFontManager.returnTextField();
 			this.nextLevelValue.x = this.nextLevelLabel.x + 41;
 			this.nextLevelValue.y = this.nextLevelLabel.y + 1;
-			this.nextLevelValue.htmlText = TinyFontManager.returnHtmlText( '123456', 'battleItemText');
 			
 			this.styleLabel = TinyFontManager.returnTextField();
 			this.styleLabel.x = this.nextLevelLabel.x;
@@ -121,6 +121,10 @@ package com.tinyrpg.ui
 			this.page1Arrow.x = this.weightLabel.x + 53;
 			this.page1Arrow.y = this.weightValue.y + 11;
 			
+			this.movesLabel = TinyFontManager.returnTextField();
+			this.movesLabel.y = this.fullStatsDisplay.y - 10;
+			this.movesLabel.htmlText = TinyFontManager.returnHtmlText( 'MOVES:', 'battleBoxTitle');
+			
 			this.page2Arrow = new TinyModalPageArrow();
 			this.page2Arrow.x = 2;
 			this.page2Arrow.y = this.weightValue.y + 11;
@@ -130,7 +134,7 @@ package com.tinyrpg.ui
 			this.statsPage1Container = new Sprite();
 			this.statsPage2Container = new Sprite();
 			
-			// Add 'em up
+			// Add 'em up - page 1
 			this.statsPage1Container.addChild( this.fullStatsDisplay );
 			this.statsPage1Container.addChild( this.type1Label );
 			this.statsPage1Container.addChild( this.type1Value );
@@ -139,7 +143,12 @@ package com.tinyrpg.ui
 			this.statsPage1Container.addChild( this.weightLabel );
 			this.statsPage1Container.addChild( this.weightValue );
 			this.statsPage1Container.addChild( this.page1Arrow );
+			this.statsPage2Container.addChild( this.movesLabel );
+			
+			// Add 'em up - page 2
 			this.statsPage2Container.addChild( this.page2Arrow );
+			
+			// Add 'em up - static top
 			this.addChild( this.monContainer );
 			this.addChild( this.battleStatsDisplay );
 			this.addChild( this.statsPage1Container );
