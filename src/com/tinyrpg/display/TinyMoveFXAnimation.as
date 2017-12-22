@@ -21,7 +21,6 @@ package com.tinyrpg.display
 		private var battleScreenBitmap : Bitmap;
 		private var battleScreenBitmapCopy : Bitmap;
 		private var battleScreenCapture : BitmapData;
-		private var isEnemy : Boolean;
 		private var shakeEffect : TinyMoveFXScreenShake;
 		private var invertEffects : Array = [];
 		private var currentInvertIndex : int = 0;
@@ -32,15 +31,18 @@ package com.tinyrpg.display
 		private var bgColor : uint = 0xFFFFFFFF;
 		private var bgFillSprite : Sprite;
 		
+		public var isEnemy 			: Boolean;
 		public var length 			: int;
 		public var isPlaying		: Boolean;
 		public var trace			: Boolean = false;
+		public var moveName			: String;
 		
 		public function TinyMoveFXAnimation( move : TinyMoveData, isEnemy : Boolean, palette : TinyBattlePalette, trace : Boolean = false )
 		{
 			this.isEnemy = isEnemy;
 			this.palette = palette;
 			this.trace = trace;
+			this.moveName = move.name;
 			
 			if ( this.trace )
 			{

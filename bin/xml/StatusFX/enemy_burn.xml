@@ -33,4 +33,30 @@ triangles  => sprite triangulation, 3 vertex indices per triangle
     <sprite n="burn_00514" x="42" y="32" w="26" h="16" pX="0.5" pY="0.5" oX="103" oY="48" oW="160" oH="144"/>
     <sprite n="burn_00516" x="64" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
     <sprite n="burn_00529" x="65" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="burn_00494" x="52" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="98" oY="38" oW="160" oH="144"/>
+    <sprite n="burn_00496" x="58" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="98" oY="41" oW="160" oH="144"/>
+    <sprite n="burn_00497" x="52" y="7" w="6" h="7" pX="0.5" pY="0.5" oX="99" oY="43" oW="160" oH="144"/>
+    <sprite n="burn_00504" x="0" y="16" w="17" h="24" pX="0.5" pY="0.5" oX="98" oY="38" oW="160" oH="144"/>
+    <sprite n="burn_00506" x="0" y="40" w="20" h="22" pX="0.5" pY="0.5" oX="98" oY="41" oW="160" oH="144"/>
+    <sprite n="burn_00508" x="17" y="16" w="25" h="20" pX="0.5" pY="0.5" oX="98" oY="43" oW="160" oH="144"/>
+    <sprite n="burn_00510" x="20" y="48" w="25" h="17" pX="0.5" pY="0.5" oX="100" oY="46" oW="160" oH="144"/>
+    <sprite n="burn_00511" x="0" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="101" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00512" x="26" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="102" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00513" x="42" y="16" w="26" h="16" pX="0.5" pY="0.5" oX="102" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00514" x="42" y="32" w="26" h="16" pX="0.5" pY="0.5" oX="103" oY="48" oW="160" oH="144"/>
+    <sprite n="burn_00516" x="64" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="burn_00529" x="65" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="burn_00494" x="52" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="98" oY="38" oW="160" oH="144"/>
+    <sprite n="burn_00496" x="58" y="0" w="6" h="7" pX="0.5" pY="0.5" oX="98" oY="41" oW="160" oH="144"/>
+    <sprite n="burn_00497" x="52" y="7" w="6" h="7" pX="0.5" pY="0.5" oX="99" oY="43" oW="160" oH="144"/>
+    <sprite n="burn_00504" x="0" y="16" w="17" h="24" pX="0.5" pY="0.5" oX="98" oY="38" oW="160" oH="144"/>
+    <sprite n="burn_00506" x="0" y="40" w="20" h="22" pX="0.5" pY="0.5" oX="98" oY="41" oW="160" oH="144"/>
+    <sprite n="burn_00508" x="17" y="16" w="25" h="20" pX="0.5" pY="0.5" oX="98" oY="43" oW="160" oH="144"/>
+    <sprite n="burn_00510" x="20" y="48" w="25" h="17" pX="0.5" pY="0.5" oX="100" oY="46" oW="160" oH="144"/>
+    <sprite n="burn_00511" x="0" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="101" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00512" x="26" y="0" w="26" h="16" pX="0.5" pY="0.5" oX="102" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00513" x="42" y="16" w="26" h="16" pX="0.5" pY="0.5" oX="102" oY="47" oW="160" oH="144"/>
+    <sprite n="burn_00514" x="42" y="32" w="26" h="16" pX="0.5" pY="0.5" oX="103" oY="48" oW="160" oH="144"/>
+    <sprite n="burn_00516" x="64" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="burn_00529" x="65" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
 </TextureAtlas>

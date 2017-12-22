@@ -648,7 +648,7 @@ package com.tinyrpg.battle
 
 		private function doPlayAttackAnim( attackAnim : TinyMoveFXAnimation ) : void
 		{
-			TinyLogManager.log('doPlayAttackAnim', this);
+			TinyLogManager.log('doPlayAttackAnim: ' + attackAnim.moveName, this);
 							
 			this.currentAttackAnimation = attackAnim;
 			this.currentAttackAnimation.addEventListener( Event.COMPLETE, this.onPlayAttackAnimComplete );

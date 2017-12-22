@@ -15,6 +15,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyTitleBox;
 	import com.tinyrpg.display.TinySpriteSheet;
+	import com.tinyrpg.display.TinyMoveFXAnimation;
+	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleBallDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.events.TinyBattleMonEvent;
@@ -71,9 +73,12 @@ package com.tinyrpg.battle
 		private var m_battleEmptyDialogBox		: TinyTitleBox;
 		private var m_itemSelectorList			: TinyBattleItemList;
 		private var isForcedSwitch				: Boolean = false;
+		
 		public var wasLastSwitchEnemy			: Boolean = false;
 		public var wasLastTurnEnemy				: Boolean = false;
 		public var battlePalette				: TinyBattlePalette;
+		public var moveFXArray					: Array;
+		public var debugMoveFX					: Boolean = false;
 			
 		public function TinyBattleMon( playerTestTrainer : TinyTrainer, enemyMon : TinyMon, enemyTrainer : TinyTrainer = null )
 		{
@@ -312,6 +317,11 @@ package com.tinyrpg.battle
 				m_battleEvent.addSummonMon( m_currentPlayerMon, m_playerMonContainer );
 			}
 			
+			if ( this.debugMoveFX ) 
+			{
+				this.debugPlayMoveFX( this.moveFXArray );				
+			}
+			
 			// Play the intro sequence
 			m_battleEvent.addEnd();
 			m_battleEvent.addEventListener( Event.COMPLETE, onIntroSequenceComplete);
@@ -523,5 +533,36 @@ package com.tinyrpg.battle
 		{
 			return new TinyBattlePalette( this.m_playerMonContainer.palette, this.m_enemyMonContainer.palette, this.m_playerStatDisplay.palette, this.m_enemyStatDisplay.palette );
 		}
+		
+		public function debugPlayMoveFX( fxArray : Array ) : void 
+		{
+			TinyLogManager.log( 'debugPlayMoveFX', this );
+			
+			m_battleEvent.addDelay( 1.0 );
+			
+			for ( var i : int = 0; i < fxArray.length; i++ )
+			{
+				m_battleEvent.addPlayAttackAnim( fxArray[ i ] );
+				m_battleEvent.addDelay( 0.5 );
+			}
+			
+			m_battleEvent.startSequence();
+		}
+
+//		public function debugPlayStatusFX( fxArray : Array ) : void
+//		{
+//			TinyLogManager.log( 'debugPlayStatusFX', this );
+//			
+//			m_battleEvent.addDelay( 1.0 );
+//			
+//			for ( var fxAnim : TinyStatusFXAnimation in fxArray )
+//			{
+//				m_battleEvent.addPlayStatusAnim( fxAnim );
+//				m_battleEvent.addDelay( 0.5 );
+//			}
+//			
+//			m_battleEvent.addEnd();
+//			m_battleEvent.startSequence();
+//		}
 	}
 }
