@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DIKEMONS>
-  <DIKEMON>
+<MOVES>
+  <MOVE>
     <HUMAN>Gagnon</HUMAN>
     <NAME>FPO</NAME>
-    <ORIG_NAME>Box</ORIG_NAME>
+    <ORIG_NAME>Machamp</ORIG_NAME>
     <STYLE>Superpower</STYLE>
     <RIVAL>PS4?
 Fruity Drink</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Fighting</TYPE_1>
     <TYPE_2>Fighting</TYPE_2>
-    <MOVES> 1: TEST_HIT;
- 1: TEST_EXPLOSION;
- 1: TEST_BURN_HIT;
- 1: TEST_CONFUSE_HIT;
+    <MOVES> 1: LOW_KICK;
+ 1: LEER;
+ 1: FOCUS_ENERGY;
  7: FOCUS_ENERGY;
 13: KARATE_CHOP;
 26: SUBMISSION;
@@ -35,8 +34,8 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Maruska</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Houndoom</ORIG_NAME>
@@ -50,7 +49,7 @@ Fruity Drink</RIVAL>
  7: HOWL;
 13: SMOG;
 20: BITE;
-37: FAINT_ATTACK;
+37: FEINT_ATTACK;
 43: FLAMETHROWER;
 49: CRUNCH</MOVES>
     <HP>75</HP>
@@ -69,8 +68,8 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>2</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Alex</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Ludicolo</ORIG_NAME>
@@ -84,7 +83,6 @@ Fruity Drink</RIVAL>
  7: ABSORB;
 22: FURY_SWIPES;
 27: WATER_SPORT;
-40: UPROAR;
 49: HYDRO_PUMP</MOVES>
     <HP>80</HP>
     <ATK>70</ATK>
@@ -102,11 +100,11 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>3</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Bill</HUMAN>
     <NAME>FPO</NAME>
-    <ORIG_NAME>Tall Grass</ORIG_NAME>
+    <ORIG_NAME>Blaziken</ORIG_NAME>
     <STYLE>Blaze</STYLE>
     <RIVAL>Comet? 
 Tiny hand holds?
@@ -115,10 +113,10 @@ Black Lotus</RIVAL>
     <TYPE_1>Fire</TYPE_1>
     <TYPE_2>Fighting</TYPE_2>
     <MOVES> 1: FIRE_PUNCH;
- 1: GROWL;
+ 1: SCRATCH;
  1: GROWL;
  1: FOCUS_ENERGY;
- 1: FOCUS_ENERGY;
+ 1: EMBER;
  7: FOCUS_ENERGY;
 13: EMBER;
 16: DOUBLE_KICK;
@@ -143,8 +141,8 @@ Black Lotus</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Brenton</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Metagross</ORIG_NAME>
@@ -153,7 +151,7 @@ Black Lotus</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Steel</TYPE_1>
     <TYPE_2>Psychic</TYPE_2>
-    <MOVES> 1: TAKE_DOWN;
+    <MOVES> 1: TAKE-DOWN;
  1: CONFUSION;
  1: METAL_CLAW;
  1: SCARY_FACE;
@@ -180,8 +178,8 @@ Black Lotus</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Chris</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Jolteon</ORIG_NAME>
@@ -216,8 +214,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Dave</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Swampert</ORIG_NAME>
@@ -233,7 +231,7 @@ Prescription?</RIVAL>
  6: MUD_SLAP;
 10: WATER_GUN;
 22: MUD_SPORT;
-31: TAKE_DOWN;
+31: TAKE-DOWN;
 39: MUDDY_WATER;
 46: PROTECT</MOVES>
     <HP>100</HP>
@@ -252,8 +250,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Stark</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Forretress</ORIG_NAME>
@@ -264,9 +262,9 @@ Prescription?</RIVAL>
     <TYPE_2>Steel</TYPE_2>
     <MOVES> 1: TACKLE;
  1: PROTECT;
- 1: SELF_DESTRUCT;
- 8: SELF_DESTRUCT;
-15: TAKE_DOWN;
+ 1: SELF-DESTRUCT;
+ 8: SELF-DESTRUCT;
+15: TAKE-DOWN;
 22: RAPID_SPIN;
 30: EXPLOSION;
 49: DOUBLE_EDGE</MOVES>
@@ -286,8 +284,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Jason</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Flygon</ORIG_NAME>
@@ -298,9 +296,9 @@ Prescription?</RIVAL>
     <TYPE_2>Dragon</TYPE_2>
     <MOVES> 1: BITE;
  1: SAND_ATTACK;
- 1: FAINT_ATTACK;
+ 1: FEINT_ATTACK;
  9: SAND_ATTACK;
-17: FAINT_ATTACK;
+17: FEINT_ATTACK;
 33: CRUNCH;
 35: DRAGON_BREATH;
 41: SCREECH;
@@ -322,8 +320,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Kristi</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Gengar</ORIG_NAME>
@@ -356,8 +354,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>3</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Clegg</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Clamperl</ORIG_NAME>
@@ -389,8 +387,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Ziggy</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Milotic</ORIG_NAME>
@@ -425,8 +423,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>2</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Nash</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Jirachi</ORIG_NAME>
@@ -459,8 +457,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Ralph</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Sceptile</ORIG_NAME>
@@ -497,8 +495,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>3</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Ron</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Ursaring</ORIG_NAME>
@@ -514,7 +512,7 @@ Soccer Shorts</RIVAL>
  1: FURY_SWIPES;
  7: LICK;
 13: FURY_SWIPES;
-25: FAINT_ATTACK;
+25: FEINT_ATTACK;
 31: REST;
 37: SLASH;
 43: SNORE;
@@ -535,8 +533,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Quinn</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Aerodactyl</ORIG_NAME>
@@ -551,7 +549,7 @@ Soccer Shorts</RIVAL>
 22: SUPERSONIC;
 29: ANCIENT_POWER;
 36: SCARY_FACE;
-43: TAKE_DOWN;
+43: TAKE-DOWN;
 50: HYPER_BEAM</MOVES>
     <HP>80</HP>
     <ATK>105</ATK>
@@ -569,8 +567,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Yulia</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Kingdra</ORIG_NAME>
@@ -606,8 +604,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>1</YIELD_SP_ATK>
     <YIELD_SP_DEF>1</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Mercy</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Celebi</ORIG_NAME>
@@ -638,8 +636,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Evan A.</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Mew</ORIG_NAME>
@@ -670,8 +668,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-  <DIKEMON>
+  </MOVE>
+  <MOVE>
     <HUMAN>Abel</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Latios</ORIG_NAME>
@@ -688,7 +686,7 @@ Soccer Shorts</RIVAL>
 40: PSYCHIC;
 45: RECOVER;
 50: DRAGON_DANCE</MOVES>
-    <HP>80</HP>
+    <HP></HP>
     <ATK>90</ATK>
     <DEF>80</DEF>
     <SP_ATK>130</SP_ATK>
@@ -704,5 +702,221 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>3</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </DIKEMON>
-</DIKEMONS>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME></ORIG_NAME>
+    <STYLE></STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1></TYPE_1>
+    <TYPE_2></TYPE_2>
+    <MOVES></MOVES>
+    <HP></HP>
+    <ATK></ATK>
+    <DEF></DEF>
+    <SP_ATK></SP_ATK>
+    <SP_DEF></SP_DEF>
+    <SPD></SPD>
+    <EXP></EXP>
+    <LV_RATE></LV_RATE>
+    <CATCH_RATE></CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME></ORIG_NAME>
+    <STYLE></STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1></TYPE_1>
+    <TYPE_2></TYPE_2>
+    <MOVES></MOVES>
+    <HP></HP>
+    <ATK></ATK>
+    <DEF></DEF>
+    <SP_ATK></SP_ATK>
+    <SP_DEF></SP_DEF>
+    <SPD></SPD>
+    <EXP></EXP>
+    <LV_RATE></LV_RATE>
+    <CATCH_RATE></CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Dusclops</ORIG_NAME>
+    <STYLE>Beckon</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Ghost</TYPE_1>
+    <TYPE_2>Ghost</TYPE_2>
+    <MOVES></MOVES>
+    <HP>40</HP>
+    <ATK>70</ATK>
+    <DEF>130</DEF>
+    <SP_ATK>60</SP_ATK>
+    <SP_DEF>130</SP_DEF>
+    <SPD>25</SPD>
+    <EXP>179</EXP>
+    <LV_RATE>F</LV_RATE>
+    <CATCH_RATE>90</CATCH_RATE>
+    <WEIGHT>30.6</WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>1</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>1</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Swellow</ORIG_NAME>
+    <STYLE>Swallow</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Flying</TYPE_2>
+    <MOVES></MOVES>
+    <HP>60</HP>
+    <ATK>85</ATK>
+    <DEF>60</DEF>
+    <SP_ATK>50</SP_ATK>
+    <SP_DEF>50</SP_DEF>
+    <SPD>125</SPD>
+    <EXP>162</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
+    <WEIGHT>19.8</WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Salamence</ORIG_NAME>
+    <STYLE>Dragon</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Dragon</TYPE_1>
+    <TYPE_2>Flying</TYPE_2>
+    <MOVES></MOVES>
+    <HP>95</HP>
+    <ATK>135</ATK>
+    <DEF>80</DEF>
+    <SP_ATK>110</SP_ATK>
+    <SP_DEF>80</SP_DEF>
+    <SPD>100</SPD>
+    <EXP>218</EXP>
+    <LV_RATE>S</LV_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
+    <WEIGHT>102.6</WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Snorlax</ORIG_NAME>
+    <STYLE>Sleeping</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES></MOVES>
+    <HP>160</HP>
+    <ATK>110</ATK>
+    <DEF>65</DEF>
+    <SP_ATK>65</SP_ATK>
+    <SP_DEF>110</SP_DEF>
+    <SPD>30</SPD>
+    <EXP>154</EXP>
+    <LV_RATE>S</LV_RATE>
+    <CATCH_RATE>25</CATCH_RATE>
+    <WEIGHT>460</WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Vaporeon</ORIG_NAME>
+    <STYLE>Bubble Jet</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Water</TYPE_1>
+    <TYPE_2>Water</TYPE_2>
+    <MOVES></MOVES>
+    <HP>130</HP>
+    <ATK>65</ATK>
+    <DEF>60</DEF>
+    <SP_ATK>110</SP_ATK>
+    <SP_DEF>95</SP_DEF>
+    <SPD>65</SPD>
+    <EXP>196</EXP>
+    <LV_RATE>MF</LV_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
+    <WEIGHT>29</WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+  <MOVE>
+    <HUMAN></HUMAN>
+    <NAME></NAME>
+    <ORIG_NAME>Alakazam</ORIG_NAME>
+    <STYLE>Psi</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Psychic</TYPE_1>
+    <TYPE_2>Psychic</TYPE_2>
+    <MOVES></MOVES>
+    <HP>55</HP>
+    <ATK>50</ATK>
+    <DEF>45</DEF>
+    <SP_ATK>135</SP_ATK>
+    <SP_DEF>85</SP_DEF>
+    <SPD>120</SPD>
+    <EXP>186</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>50</CATCH_RATE>
+    <WEIGHT>48</WEIGHT>
+    <YIELD_HP></YIELD_HP>
+    <YIELD_ATK></YIELD_ATK>
+    <YIELD_DEF></YIELD_DEF>
+    <YIELD_SP_ATK></YIELD_SP_ATK>
+    <YIELD_SP_DEF></YIELD_SP_DEF>
+    <YIELD_SPD></YIELD_SPD>
+  </MOVE>
+</MOVES>
