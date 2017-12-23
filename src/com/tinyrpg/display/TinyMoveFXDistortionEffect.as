@@ -33,23 +33,25 @@ package com.tinyrpg.display
 		
 		private var bgSprite 	: Sprite;
 		private var alphaBitmap	: BitmapData;
+		private var isEnemy 	: Boolean;
 		
-		public function TinyMoveFXDistortionEffect( type : String, area : String )
+		public function TinyMoveFXDistortionEffect( type : String, area : String, isEnemy : Boolean = false )
 		{
 			this.type = type;
 			this.area = area;
+			this.isEnemy = isEnemy;
 			
 			this.bgSprite = new Sprite();	
 			this.alphaBitmap = new BitmapData( 160, 144, false, 0xFF000000 );
 		}
 
-		public static function newFromString( str : String ) : TinyMoveFXDistortionEffect
+		public static function newFromString( str : String, isEnemy : Boolean = false ) : TinyMoveFXDistortionEffect
 		{
 			var strings : Array = str.split( ',' );
 			var rex : RegExp = /[\s\r\n]+/gim;
 			var type : String = strings[ 0 ] as String;
 			var area : String = strings[ 1 ] as String;
-			return new TinyMoveFXDistortionEffect( type.replace( rex, '' ), area.replace( rex, '' ) );		
+			return new TinyMoveFXDistortionEffect( type.replace( rex, '' ), area.replace( rex, '' ), isEnemy );		
 		}
 		
 		public function execute( bitmap : Bitmap, bgColor : uint, frame : int = 0 ) : void
@@ -121,27 +123,48 @@ package com.tinyrpg.display
 			}
 		}
 			
-		// TODO: Implement hide
 		private function applyHide( bitmap : Bitmap, rects : Array ) : void
 		{
-			
+			for each ( var rect : Rectangle in rects ) 
+			{
+				bitmap.bitmapData.draw( this.bgSprite, null, null, null, rect );
+				bitmap.bitmapData.fillRect( rect, 0xFFFFFFFF );
+			}
 		}
 		
-		// TODO: Implement waggle
 		private function applyWaggle( bitmap : Bitmap, rects : Array, frame : int = 0 ) : void
 		{
-			
+			for each ( var rect : Rectangle in rects ) 
+			{
+				bitmap.bitmapData.draw( this.bgSprite, null, null, null, rect );
+				
+				var xOffset : int = Math.floor( Math.sin( frame * WAVE_SPEED * 3 ) * WAVE_AMP );
+				var destPoint : Point = new Point( rect.x + xOffset, rect.y );
+				
+				bitmap.bitmapData.copyPixels( this.origBitmapData, rect, destPoint );
+			}
 		}
 		
 		private function getAreaRectanglesArray( area : String ) : Array
 		{
 			var areaRects : Array = [];
 			
-			switch ( area )
+			var actualArea : String = area;
+			
+			if ( this.isEnemy && actualArea == AREA_PLAYER ) 
+			{
+				actualArea = AREA_ENEMY;
+			} 
+			else if ( this.isEnemy && actualArea == AREA_ENEMY ) 
+			{
+				actualArea = AREA_PLAYER;
+			}
+			
+			switch ( actualArea )
 			{
 				case AREA_PLAYER:
 				{
-					areaRects.push( new Rectangle( 0, 48, 160, 48 ) );
+					areaRects.push( new Rectangle( 0, 54, 160, 44 ) );
 					break;
 				}
 				
@@ -153,7 +176,7 @@ package com.tinyrpg.display
 				
 				case AREA_BOTH:
 				{
-					areaRects.push( new Rectangle( 0, 48, 160, 48 ) );
+					areaRects.push( new Rectangle( 0, 54, 160, 44 ) );
 					areaRects.push( new Rectangle( 0, 0, 160, 56 ) );						
 					break;
 				}

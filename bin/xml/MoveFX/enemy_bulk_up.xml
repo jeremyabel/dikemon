@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:dfac1f159eab586d30433300a5f14c2e:46ca29bd4314e43c5f4eae164baf767c:99fe52a3b75a09553dc3c5daebc5b0de$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_bulk_up.png" width="432" height="432">
+    <sprite n="bulk_up_enemy_00000" x="372" y="64" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00001" x="360" y="64" w="12" h="8" pX="0.5" pY="0.5" oX="102" oY="30" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00002" x="308" y="400" w="52" h="16" pX="0.5" pY="0.5" oX="102" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00003" x="206" y="395" w="52" h="16" pX="0.5" pY="0.5" oX="102" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00004" x="258" y="401" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00005" x="108" y="365" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00006" x="108" y="380" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00007" x="52" y="413" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00008" x="52" y="383" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00009" x="0" y="383" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00010" x="0" y="409" w="52" h="16" pX="0.5" pY="0.5" oX="102" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00011" x="102" y="395" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00012" x="152" y="409" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00013" x="252" y="416" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00014" x="300" y="416" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00015" x="348" y="416" w="48" h="15" pX="0.5" pY="0.5" oX="104" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00016" x="202" y="411" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00017" x="52" y="398" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00018" x="102" y="410" w="50" h="15" pX="0.5" pY="0.5" oX="103" oY="24" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00019" x="366" y="331" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00020" x="366" y="348" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00021" x="312" y="349" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00022" x="208" y="378" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00023" x="156" y="392" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00024" x="364" y="382" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00025" x="260" y="350" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00026" x="0" y="365" w="54" h="18" pX="0.5" pY="0.5" oX="101" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00027" x="54" y="365" w="54" h="18" pX="0.5" pY="0.5" oX="101" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00028" x="208" y="361" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00029" x="312" y="383" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00030" x="362" y="399" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00031" x="258" y="384" w="50" h="17" pX="0.5" pY="0.5" oX="103" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00032" x="156" y="375" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00033" x="364" y="365" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00034" x="312" y="331" w="54" h="18" pX="0.5" pY="0.5" oX="101" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00035" x="312" y="366" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00036" x="260" y="367" w="52" h="17" pX="0.5" pY="0.5" oX="102" oY="23" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00037" x="380" y="179" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00038" x="380" y="198" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00039" x="378" y="255" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00040" x="240" y="152" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00041" x="164" y="166" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00042" x="294" y="160" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00043" x="218" y="171" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00044" x="164" y="185" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00045" x="348" y="160" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00046" x="0" y="289" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00047" x="52" y="289" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00048" x="104" y="289" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00049" x="0" y="194" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00050" x="376" y="0" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00051" x="376" y="20" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00052" x="54" y="194" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00053" x="270" y="274" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00054" x="216" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00055" x="156" y="299" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00056" x="108" y="194" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00057" x="272" y="179" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00058" x="376" y="40" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00059" x="218" y="190" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00060" x="162" y="204" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00061" x="322" y="274" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00062" x="374" y="274" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00063" x="0" y="308" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00064" x="326" y="179" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00065" x="0" y="213" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00066" x="54" y="213" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00067" x="108" y="213" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00068" x="272" y="198" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00069" x="216" y="209" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00070" x="52" y="308" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00071" x="104" y="308" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00072" x="268" y="293" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00073" x="162" y="223" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00074" x="376" y="60" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00075" x="200" y="66" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00076" x="326" y="198" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00077" x="208" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00078" x="156" y="318" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00079" x="320" y="293" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00080" x="0" y="232" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00081" x="54" y="232" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00082" x="200" y="86" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00083" x="108" y="232" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00084" x="270" y="217" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00085" x="372" y="293" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00086" x="0" y="327" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00087" x="52" y="327" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00088" x="216" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00089" x="162" y="242" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00090" x="324" y="217" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00091" x="378" y="217" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00092" x="0" y="251" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00093" x="54" y="251" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00094" x="104" y="327" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00095" x="260" y="312" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00096" x="208" y="323" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00097" x="108" y="251" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00098" x="200" y="106" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00099" x="184" y="126" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00100" x="270" y="236" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00101" x="156" y="337" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00102" x="0" y="346" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00103" x="52" y="346" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00104" x="216" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00105" x="162" y="261" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00106" x="184" y="146" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00107" x="324" y="236" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00108" x="378" y="236" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00109" x="104" y="346" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00110" x="312" y="312" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00111" x="364" y="312" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00112" x="0" y="270" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00113" x="54" y="270" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00114" x="108" y="270" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00115" x="270" y="255" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00116" x="216" y="266" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00117" x="162" y="280" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00118" x="260" y="331" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00119" x="208" y="342" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00120" x="156" y="356" w="52" h="19" pX="0.5" pY="0.5" oX="102" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00121" x="324" y="255" w="54" h="19" pX="0.5" pY="0.5" oX="101" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00122" x="340" y="120" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00123" x="340" y="140" w="56" h="20" pX="0.5" pY="0.5" oX="100" oY="22" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00124" x="0" y="166" w="76" h="28" pX="0.5" pY="0.5" oX="84" oY="18" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00125" x="256" y="120" w="84" h="32" pX="0.5" pY="0.5" oX="76" oY="16" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00126" x="80" y="162" w="84" h="32" pX="0.5" pY="0.5" oX="76" oY="16" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00127" x="360" y="80" w="72" h="40" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00128" x="104" y="118" w="80" h="44" pX="0.5" pY="0.5" oX="52" oY="10" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00129" x="0" y="122" w="80" h="44" pX="0.5" pY="0.5" oX="52" oY="10" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00130" x="104" y="66" w="96" h="52" pX="0.5" pY="0.5" oX="36" oY="6" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00131" x="256" y="64" w="104" h="56" pX="0.5" pY="0.5" oX="28" oY="4" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00132" x="0" y="66" w="104" h="56" pX="0.5" pY="0.5" oX="28" oY="4" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00133" x="256" y="0" w="120" h="64" pX="0.5" pY="0.5" oX="12" oY="0" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00134" x="0" y="0" w="128" h="66" pX="0.5" pY="0.5" oX="4" oY="0" oW="160" oH="144"/>
+    <sprite n="bulk_up_enemy_00135" x="128" y="0" w="128" h="66" pX="0.5" pY="0.5" oX="4" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -36,7 +36,7 @@ package com.tinyrpg.data
 			
 			// Find function
 			var findFunction : Function = function(item : *, index : int, array : Array) : Boolean
-			{ index; array; return ((item as TinyMoveData).name.toUpperCase() == targetName.toUpperCase()	); };
+			{ index; array; return ((item as TinyMoveData).name.toUpperCase() == targetName.toUpperCase()); };
 				
 			return this.moveList.filter(findFunction)[0];
 		}

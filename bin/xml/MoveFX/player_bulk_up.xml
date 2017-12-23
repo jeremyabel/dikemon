@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:784ae5b446f701b5397654c646816610:01344ecd07cf4ab46867045bfc853fdb:35b41880dff30cae225c7b5ffd2a9ab7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_bulk_up.png" width="433" height="433">
+    <sprite n="hidden_power_00000" x="432" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hidden_power_00001" x="360" y="64" w="12" h="8" pX="0.5" pY="0.5" oX="50" oY="70" oW="160" oH="144"/>
+    <sprite n="hidden_power_00002" x="0" y="417" w="52" h="16" pX="0.5" pY="0.5" oX="10" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00003" x="262" y="391" w="52" h="16" pX="0.5" pY="0.5" oX="10" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00004" x="52" y="418" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00005" x="360" y="398" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00006" x="360" y="413" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00007" x="360" y="338" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00008" x="102" y="418" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00009" x="360" y="323" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00010" x="308" y="407" w="52" h="16" pX="0.5" pY="0.5" oX="10" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00011" x="310" y="323" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00012" x="310" y="338" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00013" x="360" y="353" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00014" x="360" y="368" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00015" x="364" y="383" w="48" h="15" pX="0.5" pY="0.5" oX="12" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00016" x="310" y="353" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00017" x="310" y="368" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00018" x="314" y="383" w="50" h="15" pX="0.5" pY="0.5" oX="11" oY="64" oW="160" oH="144"/>
+    <sprite n="hidden_power_00019" x="52" y="401" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00020" x="208" y="323" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00021" x="156" y="360" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00022" x="258" y="411" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00023" x="210" y="340" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00024" x="260" y="323" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00025" x="156" y="377" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00026" x="104" y="396" w="54" h="18" pX="0.5" pY="0.5" oX="9" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00027" x="152" y="414" w="54" h="18" pX="0.5" pY="0.5" oX="9" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00028" x="158" y="394" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00029" x="260" y="340" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00030" x="260" y="357" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00031" x="260" y="374" w="50" h="17" pX="0.5" pY="0.5" oX="11" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00032" x="206" y="411" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00033" x="208" y="360" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00034" x="156" y="342" w="54" h="18" pX="0.5" pY="0.5" oX="9" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00035" x="208" y="377" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00036" x="210" y="394" w="52" h="17" pX="0.5" pY="0.5" oX="10" oY="63" oW="160" oH="144"/>
+    <sprite n="hidden_power_00037" x="380" y="209" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00038" x="54" y="287" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00039" x="0" y="303" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00040" x="240" y="152" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00041" x="156" y="168" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00042" x="294" y="152" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00043" x="348" y="152" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00044" x="210" y="171" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00045" x="156" y="187" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00046" x="216" y="266" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00047" x="268" y="266" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00048" x="320" y="266" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00049" x="56" y="192" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00050" x="376" y="0" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00051" x="376" y="20" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00052" x="0" y="208" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00053" x="372" y="266" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00054" x="162" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00055" x="106" y="301" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00056" x="264" y="171" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00057" x="318" y="171" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00058" x="376" y="40" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00059" x="372" y="171" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00060" x="210" y="190" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00061" x="52" y="306" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00062" x="0" y="322" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00063" x="214" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00064" x="110" y="206" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00065" x="54" y="211" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00066" x="0" y="227" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00067" x="264" y="190" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00068" x="318" y="190" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00069" x="372" y="190" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00070" x="266" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00071" x="318" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00072" x="370" y="285" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00073" x="164" y="209" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00074" x="376" y="60" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00075" x="200" y="68" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00076" x="108" y="225" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00077" x="158" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00078" x="104" y="320" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00079" x="52" y="325" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00080" x="54" y="230" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00081" x="0" y="246" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00082" x="200" y="88" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00083" x="218" y="209" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00084" x="272" y="209" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00085" x="0" y="341" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00086" x="210" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00087" x="262" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00088" x="326" y="209" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00089" x="162" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00090" x="108" y="244" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00091" x="54" y="249" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00092" x="0" y="265" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00093" x="216" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00094" x="314" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00095" x="366" y="304" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00096" x="156" y="323" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00097" x="270" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00098" x="200" y="108" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00099" x="184" y="128" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00100" x="324" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00101" x="104" y="339" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00102" x="52" y="344" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00103" x="0" y="360" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00104" x="378" y="228" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00105" x="162" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00106" x="184" y="148" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00107" x="108" y="263" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00108" x="54" y="268" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00109" x="0" y="379" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00110" x="0" y="398" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00111" x="104" y="358" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00112" x="0" y="284" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00113" x="216" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00114" x="270" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00115" x="324" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00116" x="378" y="247" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00117" x="162" y="266" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00118" x="52" y="363" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00119" x="104" y="377" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00120" x="52" y="382" w="52" h="19" pX="0.5" pY="0.5" oX="10" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00121" x="108" y="282" w="54" h="19" pX="0.5" pY="0.5" oX="9" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00122" x="0" y="168" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00123" x="0" y="188" w="56" h="20" pX="0.5" pY="0.5" oX="8" oY="62" oW="160" oH="144"/>
+    <sprite n="hidden_power_00124" x="80" y="164" w="76" h="28" pX="0.5" pY="0.5" oX="4" oY="58" oW="160" oH="144"/>
+    <sprite n="hidden_power_00125" x="256" y="120" w="88" h="32" pX="0.5" pY="0.5" oX="0" oY="56" oW="160" oH="144"/>
+    <sprite n="hidden_power_00126" x="344" y="120" w="88" h="32" pX="0.5" pY="0.5" oX="0" oY="56" oW="160" oH="144"/>
+    <sprite n="hidden_power_00127" x="360" y="80" w="72" h="40" pX="0.5" pY="0.5" oX="32" oY="52" oW="160" oH="144"/>
+    <sprite n="hidden_power_00128" x="104" y="120" w="80" h="44" pX="0.5" pY="0.5" oX="32" oY="50" oW="160" oH="144"/>
+    <sprite n="hidden_power_00129" x="0" y="124" w="80" h="44" pX="0.5" pY="0.5" oX="32" oY="50" oW="160" oH="144"/>
+    <sprite n="hidden_power_00130" x="104" y="68" w="96" h="52" pX="0.5" pY="0.5" oX="32" oY="46" oW="160" oH="144"/>
+    <sprite n="hidden_power_00131" x="256" y="64" w="104" h="56" pX="0.5" pY="0.5" oX="32" oY="44" oW="160" oH="144"/>
+    <sprite n="hidden_power_00132" x="0" y="68" w="104" h="56" pX="0.5" pY="0.5" oX="32" oY="44" oW="160" oH="144"/>
+    <sprite n="hidden_power_00133" x="256" y="0" w="120" h="64" pX="0.5" pY="0.5" oX="32" oY="40" oW="160" oH="144"/>
+    <sprite n="hidden_power_00134" x="0" y="0" w="128" h="68" pX="0.5" pY="0.5" oX="32" oY="38" oW="160" oH="144"/>
+    <sprite n="hidden_power_00135" x="128" y="0" w="128" h="68" pX="0.5" pY="0.5" oX="32" oY="38" oW="160" oH="144"/>
+</TextureAtlas>

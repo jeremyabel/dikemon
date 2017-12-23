@@ -234,7 +234,7 @@ package com.tinyrpg.battle
 			
 			// Position player mon
 			m_playerMonContainer.x = 16;
-			m_playerMonContainer.y = 50;
+			m_playerMonContainer.y = 54;
 			
 			// Position enemy mon
 			m_enemyMonContainer.x = m_isWildEncounter ? -56 : 96;
@@ -543,7 +543,7 @@ package com.tinyrpg.battle
 			for ( var i : int = 0; i < fxArray.length; i++ )
 			{
 				m_battleEvent.addPlayAttackAnim( fxArray[ i ] );
-				m_battleEvent.addDelay( 0.5 );
+				m_battleEvent.addDelay( 1.5 );
 			}
 			
 			m_battleEvent.startSequence();

@@ -73,13 +73,13 @@ package com.tinyrpg.display
 			// Make palette effect, if there is one
 			if ( move.fxPaletteEffect )
 			{
-				this.paletteEffect = TinyMoveFXPaletteEffect.newFromString( move.fxPaletteEffect );
+				this.paletteEffect = TinyMoveFXPaletteEffect.newFromString( move.fxPaletteEffect, this.isEnemy );
 			}
 			
 			// Make distortion effect, if there is one
 			if ( move.fxAnimDistortion )
 			{
-				this.distortionEffect = TinyMoveFXDistortionEffect.newFromString( move.fxAnimDistortion );
+				this.distortionEffect = TinyMoveFXDistortionEffect.newFromString( move.fxAnimDistortion, this.isEnemy );
 			}
 			
 			// Make battle screen capture bitmap
@@ -127,6 +127,7 @@ package com.tinyrpg.display
 			if ( this.paletteEffect )
 			{
 				this.paletteEffect.generateCyclePalettes( palette );
+				this.paletteEffect.generateOffsetPalettes( palette );
 			}
 		}
 
@@ -174,18 +175,19 @@ package com.tinyrpg.display
 			if ( this.invertEffects.length )
 			{
 				var currentInvert : TinyMoveFXScreenInvert = this.invertEffects[ this.currentInvertIndex ];
+				currentInvert.execute( this.currentFrame, this.battleScreenBitmap );
+				
 				if ( this.currentFrame * 2 >= currentInvert.startFrame && this.currentFrame * 2 <= currentInvert.endFrame )
 				{
-					currentInvert.execute( this.currentFrame, this.battleScreenBitmap );
 					this.setBGColor( 0xFF000000 );
 				}
 				else 
 				{
-					this.setBGColor( 0xFFFFFFFF );
+					this.setBGColor( 0x00FFFFFF );
 				}
 				
 				// Advance to next invert in the sequence if we're at the end of the current one				
-				if ( currentFrame * 2 >= currentInvert.endFrame ) 
+				if ( this.currentFrame * 2 >= currentInvert.endFrame ) 
 				{
 					this.currentInvertIndex = Math.min( this.currentInvertIndex + 1, this.invertEffects.length - 1 );
 				}

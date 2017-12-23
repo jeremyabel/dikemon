@@ -51,8 +51,10 @@ package com.tinyrpg.display
 		{
 			var sourceData : BitmapData = TinyMoveFXConfig.getMoveFXSprite( move.name, isEnemy );
 			var xmlData : XML = TinyMoveFXConfig.getMoveFXXML( move.name, isEnemy );
+			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
+			sprite.y = TinyMoveFXConfig.getMoveAdjustY( move.name, isEnemy );
 			
-			return new TinyFXSprite( sourceData, xmlData );	
+			return sprite; 	
 		}
 		
 		public static function newFromStatusEffect( statusName : String, isEnemy : Boolean ) : TinyFXSprite

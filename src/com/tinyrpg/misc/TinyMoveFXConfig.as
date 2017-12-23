@@ -61,7 +61,7 @@ package com.tinyrpg.misc
 		private static const MOVE_METEOR_MASH			: String = 'METEOR MASH';
 		private static const MOVE_METRONOME 			: String = 'METRONOME';
 		private static const MOVE_MUD_SLAP 				: String = 'MUD SLAP';
-		private static const MOVE_MUD_SPORT				: String = 'MUD SPORT'; // Hydro Pump, but brown
+		private static const MOVE_MUD_SPORT				: String = 'MUD SPORT';
 		private static const MOVE_MUDDY_WATER			: String = 'MUDDY WATER';
 		private static const MOVE_NIGHT_SHADE			: String = 'NIGHT SHADE';
 		private static const MOVE_POUND 				: String = 'POUND';
@@ -110,6 +110,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/player_bite.xml', mimeType='application/octet-stream')] 				public static const XML_Bite_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_blaze_kick.xml', mimeType='application/octet-stream')] 		public static const XML_Blaze_Kick_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_bubble.xml', mimeType='application/octet-stream')] 			public static const XML_Bubble_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_bulk_up.xml', mimeType='application/octet-stream')] 			public static const XML_Bulk_Up_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_clamp.xml', mimeType='application/octet-stream')] 				public static const XML_Clamp_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_confuse_ray.xml', mimeType='application/octet-stream')] 		public static const XML_Confuse_Ray_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_confusion.xml', mimeType='application/octet-stream')] 			public static const XML_Confusion_Player : Class;
@@ -121,14 +122,15 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/player_dynamic_punch.xml', mimeType='application/octet-stream')] 		public static const XML_Dynamic_Punch_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_ember.xml', mimeType='application/octet-stream')] 				public static const XML_Ember_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_explosion.xml', mimeType='application/octet-stream')] 			public static const XML_Explosion_Player : Class;
-		[Embed(source='../../../../bin/xml/MoveFX/player_feint_attack.xml', mimeType='application/octet-stream')] 		public static const XML_False_Swipe_Player : Class;
-		[Embed(source='../../../../bin/xml/MoveFX/player_bubble.xml', mimeType='application/octet-stream')] 			public static const XML_Feint_Attack_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_false_swipe.xml', mimeType='application/octet-stream')] 		public static const XML_False_Swipe_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_feint_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Feint_Attack_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_fire_punch.xml', mimeType='application/octet-stream')] 		public static const XML_Fire_Punch_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_flamethrower.xml', mimeType='application/octet-stream')] 		public static const XML_Flamethrower_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_focus_energy.xml', mimeType='application/octet-stream')] 		public static const XML_Focus_Energy_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_fury_swipes.xml', mimeType='application/octet-stream')] 		public static const XML_Fury_Swipes_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_growl.xml', mimeType='application/octet-stream')] 				public static const XML_Growl_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_heal_bell.xml', mimeType='application/octet-stream')] 			public static const XML_Heal_Bell_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_howl.xml', mimeType='application/octet-stream')] 				public static const XML_Howl_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_hydro_pump.xml', mimeType='application/octet-stream')] 		public static const XML_Hydro_Pump_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_hyper_beam.xml', mimeType='application/octet-stream')] 		public static const XML_Hyper_Beam_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_hypnosis.xml', mimeType='application/octet-stream')] 			public static const XML_Hypnosis_Player : Class;
@@ -137,6 +139,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/player_leer.xml', mimeType='application/octet-stream')] 				public static const XML_Leer_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_lick.xml', mimeType='application/octet-stream')] 				public static const XML_Lick_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_low_kick.xml', mimeType='application/octet-stream')] 			public static const XML_Low_Kick_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_luster_purge.xml', mimeType='application/octet-stream')] 		public static const XML_Luster_Purge_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_mean_look.xml', mimeType='application/octet-stream')] 			public static const XML_Mean_Look_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_mega_punch.xml', mimeType='application/octet-stream')] 		public static const XML_Mega_Punch_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_metal_claw.xml', mimeType='application/octet-stream')] 		public static const XML_Metal_Claw_Player : Class;
@@ -178,6 +181,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/player_twister.xml', mimeType='application/octet-stream')] 			public static const XML_Twister_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_water_gun.xml', mimeType='application/octet-stream')] 			public static const XML_Water_Gun_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_wing_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Wing_Attack_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_wish.xml', mimeType='application/octet-stream')] 				public static const XML_Wish_Player : Class;
 			
 		// Spritesheet XML: Enemy
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_absorb.xml', mimeType='application/octet-stream')] 				public static const XML_Absorb_Enemy : Class;
@@ -186,6 +190,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_bite.xml', mimeType='application/octet-stream')] 				public static const XML_Bite_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_blaze_kick.xml', mimeType='application/octet-stream')] 			public static const XML_Blaze_Kick_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_bubble.xml', mimeType='application/octet-stream')] 				public static const XML_Bubble_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_bulk_up.xml', mimeType='application/octet-stream')] 			public static const XML_Bulk_Up_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_clamp.xml', mimeType='application/octet-stream')] 				public static const XML_Clamp_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_confuse_ray.xml', mimeType='application/octet-stream')] 		public static const XML_Confuse_Ray_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_confusion.xml', mimeType='application/octet-stream')] 			public static const XML_Confusion_Enemy : Class;
@@ -197,14 +202,15 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_dynamic_punch.xml', mimeType='application/octet-stream')] 		public static const XML_Dynamic_Punch_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_ember.xml', mimeType='application/octet-stream')] 				public static const XML_Ember_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_explosion.xml', mimeType='application/octet-stream')] 			public static const XML_Explosion_Enemy : Class;
-		[Embed(source='../../../../bin/xml/MoveFX/enemy_feint_attack.xml', mimeType='application/octet-stream')] 		public static const XML_False_Swipe_Enemy : Class;
-		[Embed(source='../../../../bin/xml/MoveFX/enemy_bubble.xml', mimeType='application/octet-stream')] 				public static const XML_Feint_Attack_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_false_swipe.xml', mimeType='application/octet-stream')] 		public static const XML_False_Swipe_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_feint_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Feint_Attack_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_fire_punch.xml', mimeType='application/octet-stream')] 			public static const XML_Fire_Punch_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_flamethrower.xml', mimeType='application/octet-stream')] 		public static const XML_Flamethrower_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_focus_energy.xml', mimeType='application/octet-stream')] 		public static const XML_Focus_Energy_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_fury_swipes.xml', mimeType='application/octet-stream')] 		public static const XML_Fury_Swipes_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_growl.xml', mimeType='application/octet-stream')] 				public static const XML_Growl_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_heal_bell.xml', mimeType='application/octet-stream')] 			public static const XML_Heal_Bell_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_howl.xml', mimeType='application/octet-stream')] 				public static const XML_Howl_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_hydro_pump.xml', mimeType='application/octet-stream')] 			public static const XML_Hydro_Pump_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_hyper_beam.xml', mimeType='application/octet-stream')] 			public static const XML_Hyper_Beam_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_hypnosis.xml', mimeType='application/octet-stream')] 			public static const XML_Hypnosis_Enemy : Class;
@@ -213,6 +219,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_leer.xml', mimeType='application/octet-stream')] 				public static const XML_Leer_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_lick.xml', mimeType='application/octet-stream')] 				public static const XML_Lick_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_low_kick.xml', mimeType='application/octet-stream')] 			public static const XML_Low_Kick_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_luster_purge.xml', mimeType='application/octet-stream')] 		public static const XML_Luster_Purge_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_mean_look.xml', mimeType='application/octet-stream')] 			public static const XML_Mean_Look_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_mega_punch.xml', mimeType='application/octet-stream')] 			public static const XML_Mega_Punch_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_metal_claw.xml', mimeType='application/octet-stream')] 			public static const XML_Metal_Claw_Enemy : Class;
@@ -254,6 +261,7 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_twister.xml', mimeType='application/octet-stream')] 			public static const XML_Twister_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_water_gun.xml', mimeType='application/octet-stream')] 			public static const XML_Water_Gun_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_wing_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Wing_Attack_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_wish.xml', mimeType='application/octet-stream')] 				public static const XML_Wish_Enemy : Class;
 		
 		public static function getMoveFXXML( name: String, isEnemy : Boolean ) : XML
 		{
@@ -267,16 +275,20 @@ package com.tinyrpg.misc
 				case MOVE_ABSORB 			: newXMLBytes = ( isEnemy ? new XML_Absorb_Enemy : new XML_Absorb_Player ) as ByteArray; break;
 				case MOVE_AGILITY 			: newXMLBytes = ( isEnemy ? new XML_Agility_Enemy : new XML_Agility_Player ) as ByteArray; break;
 				case MOVE_ANCIENT_POWER 	: newXMLBytes = ( isEnemy ? new XML_Ancient_Power_Enemy : new XML_Ancient_Power_Player ) as ByteArray; break;
+				case MOVE_ASTONISH			: newXMLBytes = ( isEnemy ? new XML_Focus_Energy_Enemy : new XML_Focus_Energy_Player ) as ByteArray; break;
 				case MOVE_BITE 				: newXMLBytes = ( isEnemy ? new XML_Bite_Enemy : new XML_Bite_Player ) as ByteArray; break;
 				case MOVE_BLAZE_KICK 		: newXMLBytes = ( isEnemy ? new XML_Blaze_Kick_Enemy : new XML_Blaze_Kick_Player ) as ByteArray; break;
 				case MOVE_BUBBLE 			: newXMLBytes = ( isEnemy ? new XML_Bubble_Enemy : new XML_Bubble_Player ) as ByteArray; break;
+				case MOVE_BULK_UP			: newXMLBytes = ( isEnemy ? new XML_Bulk_Up_Enemy : new XML_Bulk_Up_Player ) as ByteArray; break;
 				case MOVE_CLAMP 			: newXMLBytes = ( isEnemy ? new XML_Clamp_Enemy : new XML_Clamp_Player ) as ByteArray; break;
 				case MOVE_CONFUSE_RAY 		: newXMLBytes = ( isEnemy ? new XML_Confuse_Ray_Enemy : new XML_Confuse_Ray_Player ) as ByteArray; break;
 				case MOVE_CONFUSION 		: newXMLBytes = ( isEnemy ? new XML_Confusion_Enemy : new XML_Confusion_Player ) as ByteArray; break;
+				case MOVE_COSMIC_POWER		: newXMLBytes = ( isEnemy ? new XML_Rain_Dance_Enemy : new XML_Rain_Dance_Player ) as ByteArray; break;
 				case MOVE_DETECT 			: newXMLBytes = ( isEnemy ? new XML_Detect_Enemy : new XML_Detect_Player ) as ByteArray; break;
 				case MOVE_DOUBLE_EDGE 		: newXMLBytes = ( isEnemy ? new XML_Double_Edge_Enemy : new XML_Double_Edge_Player ) as ByteArray; break;
 				case MOVE_DOUBLE_KICK 		: newXMLBytes = ( isEnemy ? new XML_Double_Kick_Enemy : new XML_Double_Kick_Player ) as ByteArray; break;
 				case MOVE_DRAGON_BREATH 	: newXMLBytes = ( isEnemy ? new XML_Dragon_Breath_Enemy : new XML_Dragon_Breath_Player ) as ByteArray; break;
+				case MOVE_DRAGON_DANCE		: newXMLBytes = ( isEnemy ? new XML_Confusion_Enemy : new XML_Confusion_Player ) as ByteArray; break;
 				case MOVE_DREAM_EATER 		: newXMLBytes = ( isEnemy ? new XML_Dream_Eater_Enemy : new XML_Dream_Eater_Player ) as ByteArray; break;
 				case MOVE_DYNAMIC_PUNCH 	: newXMLBytes = ( isEnemy ? new XML_Dynamic_Punch_Enemy : new XML_Dynamic_Punch_Player ) as ByteArray; break;
 				case MOVE_EMBER 			: newXMLBytes = ( isEnemy ? new XML_Ember_Enemy : new XML_Ember_Player ) as ByteArray; break;
@@ -289,7 +301,7 @@ package com.tinyrpg.misc
 				case MOVE_FURY_SWIPES		: newXMLBytes = ( isEnemy ? new XML_Fury_Swipes_Enemy : new XML_Fury_Swipes_Player ) as ByteArray; break;
 				case MOVE_GROWL				: newXMLBytes = ( isEnemy ? new XML_Growl_Enemy : new XML_Growl_Player ) as ByteArray; break;
 				case MOVE_HEAL_BELL			: newXMLBytes = ( isEnemy ? new XML_Heal_Bell_Enemy : new XML_Heal_Bell_Player ) as ByteArray; break;
-				case MOVE_HOWL				: newXMLBytes = ( isEnemy ? new XML_Growl_Enemy : new XML_Growl_Player ) as ByteArray; break;
+				case MOVE_HOWL				: newXMLBytes = ( isEnemy ? new XML_Howl_Enemy : new XML_Howl_Player ) as ByteArray; break;
 				case MOVE_HYDRO_PUMP 		: newXMLBytes = ( isEnemy ? new XML_Hydro_Pump_Enemy : new XML_Hydro_Pump_Player ) as ByteArray; break;
 				case MOVE_HYPER_BEAM 		: newXMLBytes = ( isEnemy ? new XML_Hyper_Beam_Enemy : new XML_Hyper_Beam_Player ) as ByteArray; break;
 				case MOVE_HYPNOSIS			: newXMLBytes = ( isEnemy ? new XML_Hypnosis_Enemy : new XML_Hypnosis_Player ) as ByteArray; break;
@@ -298,11 +310,14 @@ package com.tinyrpg.misc
 				case MOVE_LEER 				: newXMLBytes = ( isEnemy ? new XML_Leer_Enemy : new XML_Leer_Player ) as ByteArray; break;
 				case MOVE_LICK 				: newXMLBytes = ( isEnemy ? new XML_Lick_Enemy : new XML_Lick_Player ) as ByteArray; break;
 				case MOVE_LOW_KICK 			: newXMLBytes = ( isEnemy ? new XML_Low_Kick_Enemy : new XML_Low_Kick_Player ) as ByteArray; break;
+				case MOVE_LUSTER_PURGE		: newXMLBytes = ( isEnemy ? new XML_Luster_Purge_Enemy : new XML_Luster_Purge_Player ) as ByteArray; break;
 				case MOVE_MEAN_LOOK 		: newXMLBytes = ( isEnemy ? new XML_Mean_Look_Enemy : new XML_Mean_Look_Player ) as ByteArray; break;
 				case MOVE_MEGA_PUNCH 		: newXMLBytes = ( isEnemy ? new XML_Mega_Punch_Enemy : new XML_Mega_Punch_Player ) as ByteArray; break;
 				case MOVE_METAL_CLAW 		: newXMLBytes = ( isEnemy ? new XML_Metal_Claw_Enemy : new XML_Metal_Claw_Player ) as ByteArray; break;
+				case MOVE_METEOR_MASH		: newXMLBytes = ( isEnemy ? new XML_Rain_Dance_Enemy : new XML_Rain_Dance_Player ) as ByteArray; break;
 				case MOVE_METRONOME 		: newXMLBytes = ( isEnemy ? new XML_Metronome_Enemy : new XML_Metronome_Player ) as ByteArray; break;
 				case MOVE_MUD_SLAP 			: newXMLBytes = ( isEnemy ? new XML_Mud_Slap_Enemy : new XML_Mud_Slap_Player ) as ByteArray; break;
+				case MOVE_MUD_SPORT 		: newXMLBytes = ( isEnemy ? new XML_Hydro_Pump_Player : new XML_Hydro_Pump_Enemy ) as ByteArray; break;
 				case MOVE_MUDDY_WATER 		: newXMLBytes = ( isEnemy ? new XML_Muddy_Water_Enemy : new XML_Muddy_Water_Player ) as ByteArray; break;
 				case MOVE_NIGHT_SHADE 		: newXMLBytes = ( isEnemy ? new XML_Night_Shade_Enemy : new XML_Night_Shade_Player ) as ByteArray; break;
 				case MOVE_POUND 			: newXMLBytes = ( isEnemy ? new XML_Pound_Enemy : new XML_Pound_Player ) as ByteArray; break;
@@ -338,8 +353,10 @@ package com.tinyrpg.misc
 				case MOVE_THUNDER_SHOCK	 	: newXMLBytes = ( isEnemy ? new XML_Thundershock_Enemy : new XML_Thundershock_Player ) as ByteArray; break;
 				case MOVE_TWISTER 			: newXMLBytes = ( isEnemy ? new XML_Twister_Enemy : new XML_Twister_Player ) as ByteArray; break;
 				case MOVE_WATER_GUN 		: newXMLBytes = ( isEnemy ? new XML_Water_Gun_Enemy : new XML_Water_Gun_Player ) as ByteArray; break;
-				case MOVE_WATER_SPORT 		: newXMLBytes = ( isEnemy ? new XML_Hydro_Pump_Enemy : new XML_Hydro_Pump_Player ) as ByteArray; break;
+				case MOVE_WATER_SPORT 		: newXMLBytes = ( isEnemy ? new XML_Hydro_Pump_Player : new XML_Hydro_Pump_Enemy ) as ByteArray; break;
+				case MOVE_WATER_PULSE		: newXMLBytes = ( isEnemy ? new XML_Supersonic_Enemy : new XML_Supersonic_Player ) as ByteArray; break;
 				case MOVE_WING_ATTACK 		: newXMLBytes = ( isEnemy ? new XML_Wing_Attack_Enemy : new XML_Wing_Attack_Player ) as ByteArray; break;
+				case MOVE_WISH				: newXMLBytes = ( isEnemy ? new XML_Wish_Enemy : new XML_Wish_Player ) as ByteArray; break;
 			}
 			
 			var string : String = newXMLBytes.readUTFBytes( newXMLBytes.length );			
@@ -359,16 +376,20 @@ package com.tinyrpg.misc
 				case MOVE_ABSORB: 				newSprite = isEnemy ? new AbsorbEnemy : new AbsorbPlayer; break;
 				case MOVE_AGILITY: 				newSprite = isEnemy ? new AgilityEnemy : new AgilityPlayer; break;
 				case MOVE_ANCIENT_POWER: 		newSprite = isEnemy ? new AncientPowerEnemy : new AncientPowerPlayer; break;
+				case MOVE_ASTONISH:				newSprite = isEnemy ? new FocusEnergyEnemy : new FocusEnergyPlayer; break;
 				case MOVE_BITE: 				newSprite = isEnemy ? new BiteEnemy : new BitePlayer; break;
 				case MOVE_BLAZE_KICK:			newSprite = isEnemy ? new BlazeKickEnemy : new BlazeKickPlayer; break;
 				case MOVE_BUBBLE:				newSprite = isEnemy ? new BubbleEnemy : new BubblePlayer; break;
+				case MOVE_BULK_UP:				newSprite = isEnemy ? new BulkUpEnemy: new BulkUpPlayer; break;
 				case MOVE_CLAMP:				newSprite = isEnemy ? new ClampEnemy : new ClampPlayer; break;
 				case MOVE_CONFUSION:			newSprite = isEnemy ? new ConfusionEnemy : new ConfusionPlayer; break;
 				case MOVE_CONFUSE_RAY:			newSprite = isEnemy ? new ConfuseRayEnemy : new ConfuseRayPlayer; break;
+				case MOVE_COSMIC_POWER:			newSprite = isEnemy ? new CosmicPowerEnemy : new CosmicPowerPlayer; break;
 				case MOVE_DETECT:				newSprite = isEnemy ? new DetectEnemy : new DetectPlayer; break;
 				case MOVE_DOUBLE_EDGE:			newSprite = isEnemy ? new DoubleEdgeEnemy : new DoubleEdgePlayer; break;
 				case MOVE_DOUBLE_KICK:			newSprite = isEnemy ? new DoubleKickEnemy : new DoubleKickPlayer; break;
 				case MOVE_DRAGON_BREATH:		newSprite = isEnemy ? new DragonBreathEnemy : new DragonBreathPlayer; break;
+				case MOVE_DRAGON_DANCE:			newSprite = isEnemy ? new ConfusionEnemy : new ConfusionPlayer; break;
 				case MOVE_DREAM_EATER:			newSprite = isEnemy ? new DreamEaterEnemy : new DreamEaterPlayer; break;
 				case MOVE_DYNAMIC_PUNCH:		newSprite = isEnemy ? new DynamicPunchEnemy : new DynamicPunchPlayer; break;
 				case MOVE_EMBER:				newSprite = isEnemy ? new EmberEnemy : new EmberPlayer; break;
@@ -381,7 +402,7 @@ package com.tinyrpg.misc
 				case MOVE_FURY_SWIPES:			newSprite = isEnemy ? new FurySwipesEnemy : new FurySwipesPlayer; break;
 				case MOVE_GROWL:				newSprite = isEnemy ? new GrowlEnemy : new GrowlPlayer; break;
 				case MOVE_HEAL_BELL:			newSprite = isEnemy ? new HealBellEnemy : new HealBellPlayer; break;
-				case MOVE_HOWL:					newSprite = isEnemy ? new GrowlEnemy : new GrowlPlayer; break;
+				case MOVE_HOWL:					newSprite = isEnemy ? new HowlEnemy : new HowlPlayer; break;
 				case MOVE_HYDRO_PUMP:			newSprite = isEnemy ? new HydroPumpEnemy : new HydroPumpPlayer; break;
 				case MOVE_HYPER_BEAM:			newSprite = isEnemy ? new HyperBeamEnemy : new HyperBeamPlayer; break;
 				case MOVE_HYPNOSIS:				newSprite = isEnemy ? new HypnosisEnemy : new HypnosisPlayer; break;
@@ -390,11 +411,14 @@ package com.tinyrpg.misc
 				case MOVE_LEER:					newSprite = isEnemy ? new LeerEnemy : new LeerPlayer; break;
 				case MOVE_LICK:					newSprite = isEnemy ? new LickEnemy : new LickPlayer; break;
 				case MOVE_LOW_KICK:				newSprite = isEnemy ? new LowKickEnemy : new LowKickPlayer; break;
+				case MOVE_LUSTER_PURGE:			newSprite = isEnemy ? new LusterPurgeEnemy : new LusterPurgePlayer; break;
 				case MOVE_MEAN_LOOK:			newSprite = isEnemy ? new MeanLookEnemy : new MeanLookPlayer; break;
 				case MOVE_MEGA_PUNCH:			newSprite = isEnemy ? new MegaPunchEnemy : new MegaPunchPlayer; break;
 				case MOVE_METAL_CLAW:			newSprite = isEnemy ? new MetalClawEnemy : new MetalClawPlayer; break;
+				case MOVE_METEOR_MASH:			newSprite = isEnemy ? new MeteorMashEnemy : new MeteorMashPlayer; break;
 				case MOVE_METRONOME:			newSprite = isEnemy ? new MetronomeEnemy : new MetronomePlayer; break;
 				case MOVE_MUD_SLAP:				newSprite = isEnemy ? new MudSlapEnemy : new MudSlapPlayer; break;
+				case MOVE_MUD_SPORT:			newSprite = isEnemy ? new MudSportEnemy : new MudSportPlayer; break;
 				case MOVE_MUDDY_WATER:			newSprite = isEnemy ? new MuddyWaterEnemy : new MuddyWaterPlayer; break;
 				case MOVE_NIGHT_SHADE:			newSprite = isEnemy ? new NightShadeEnemy : new NightShadePlayer; break;
 				case MOVE_PSYCHIC:				newSprite = isEnemy ? new PsychicEnemy : new PsychicPlayer; break;
@@ -430,11 +454,112 @@ package com.tinyrpg.misc
 				case MOVE_THUNDER_SHOCK:		newSprite = isEnemy ? new ThundershockEnemy : new ThundershockPlayer; break;
 				case MOVE_TWISTER:				newSprite = isEnemy ? new TwisterEnemy : new TwisterPlayer; break;
 				case MOVE_WATER_GUN: 			newSprite = isEnemy ? new WaterGunEnemy : new WaterGunPlayer; break;
-				case MOVE_WATER_SPORT: 			newSprite = isEnemy ? new HydroPumpEnemy: new HydroPumpPlayer; break;
+				case MOVE_WATER_PULSE: 			newSprite = isEnemy ? new WaterPulseEnemy : new WaterPulsePlayer; break;
+				case MOVE_WATER_SPORT: 			newSprite = isEnemy ? new HydroPumpPlayer : new HydroPumpEnemy; break;
 				case MOVE_WING_ATTACK:			newSprite = isEnemy ? new WingAttackEnemy : new WingAttackPlayer; break;
+				case MOVE_WISH:					newSprite = isEnemy ? new WishEnemy: new WishPlayer; break;
 			}
 			
 			return newSprite;
-		}		
+		}
+		
+		
+		public static function getMoveAdjustY( name : String, isEnemy : Boolean ) : int
+		{
+			TinyLogManager.log('getMoveAdjustY: ' + name, null);
+			
+			var yOffset : int = 0;
+			
+			switch ( name.toUpperCase() ) 
+			{
+				default:
+				case MOVE_ABSORB: 				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_AGILITY: 				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_ANCIENT_POWER: 		yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_ASTONISH:		 		yOffset = isEnemy ? 0 : 4; break;
+				case MOVE_BITE: 				yOffset = isEnemy ? 0 : -10; break;
+				case MOVE_BLAZE_KICK:			yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_BUBBLE:				yOffset = isEnemy ? 0 : -10; break;
+				case MOVE_BULK_UP:				yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_CLAMP:				yOffset = isEnemy ? 0 : -10; break;
+				case MOVE_CONFUSION:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_CONFUSE_RAY:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_COSMIC_POWER:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_DETECT:				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_DOUBLE_EDGE:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_DOUBLE_KICK:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_DRAGON_BREATH:		yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_DREAM_EATER:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_DYNAMIC_PUNCH:		yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_EMBER:				yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_EXPLOSION:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_FALSE_SWIPE:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_FEINT_ATTACK:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_FIRE_PUNCH:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_FLAMETHROWER:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_FOCUS_ENERGY:			yOffset = isEnemy ? 0 : 4; break;
+				case MOVE_FURY_SWIPES:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_GROWL:				yOffset = isEnemy ? -8 : -4; break;
+				case MOVE_HEAL_BELL:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_HOWL:					yOffset = isEnemy ? -8 : -4; break;
+				case MOVE_HYDRO_PUMP:			yOffset = isEnemy ? 2 : 0; break;
+				case MOVE_HYPER_BEAM:			yOffset = isEnemy ? -6 : -8; break;
+				case MOVE_HYPNOSIS:				yOffset = isEnemy ? -2 : -2; break;
+				case MOVE_KARATE_CHOP:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_LEAF_BLADE:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_LEER:					yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_LICK:					yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_LOW_KICK:				yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_LUSTER_PURGE:			yOffset = isEnemy ? -12 : 6; break;
+				case MOVE_MEAN_LOOK:			yOffset = isEnemy ? 0 : -2; break;
+				case MOVE_MEGA_PUNCH:			yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_METAL_CLAW:			yOffset = isEnemy ? 0 : 2; break;
+				case MOVE_METEOR_MASH:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_METRONOME:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_MUD_SLAP:				yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_MUD_SPORT:			yOffset = isEnemy ? -2 : 2; break;
+				case MOVE_MUDDY_WATER:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_NIGHT_SHADE:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_PSYCHIC:				yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_PSYWAVE:				yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_POUND:				yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_PROTECT:				yOffset = isEnemy ? -12 : 0; break;
+				case MOVE_QUICK_ATTACK:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_RAIN_DANCE:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_RAPID_SPIN:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_RECOVER:				yOffset = isEnemy ? -6 : 0; break;
+				case MOVE_REST:					yOffset = isEnemy ? 0 : -2; break;
+				case MOVE_SAFEGUARD:			yOffset = isEnemy ? -12 : 0; break;
+				case MOVE_SAND_ATTACK:			yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_SCARY_FACE:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_SCRATCH:				yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_SCREECH:				yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_SELF_DESTRUCT:		yOffset = isEnemy ? -6 : 0; break;
+				case MOVE_SLAM:					yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_SLASH:				yOffset = isEnemy ? 0 : -8; break;
+				case MOVE_SMOG:					yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_SMOKESCREEN:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_SNORE:				yOffset = isEnemy ? -6 : -4; break;
+				case MOVE_SPITE:				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_STRUGGLE: 			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_SUBMISSION: 			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_SUPERSONIC:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_SWIFT:				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_TACKLE:				yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_TAIL_WHIP:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_TAKE_DOWN:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_THRASH:				yOffset = isEnemy ? 0 : -10; break;
+				case MOVE_THUNDER:				yOffset = isEnemy ? 2 : 0; break;
+				case MOVE_THUNDER_SHOCK:		yOffset = isEnemy ? 0 : -10; break;
+				case MOVE_TWISTER:				yOffset = isEnemy ? 2 : 0; break;
+				case MOVE_WATER_GUN: 			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_WATER_PULSE: 			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_WATER_SPORT: 			yOffset = isEnemy ? -2 : 2; break;
+				case MOVE_WING_ATTACK:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_WISH:					yOffset = isEnemy ? 0 : 0; break;
+			}
+			
+			return yOffset;
+		}				
 	}
 }

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:5741f9595f70b4149b5fc22ff0d1b712:a58956a50dc27946b1655218f18b3dd9:46a78b8cd3e094b63fb10c9afcb5f05e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_luster_purge.png" width="582" height="582">
+    <sprite n="luster_purge_enemy_00000" x="468" y="76" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00001" x="237" y="319" w="28" h="50" pX="0.5" pY="0.5" oX="80" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00002" x="374" y="314" w="28" h="50" pX="0.5" pY="0.5" oX="80" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00003" x="489" y="417" w="20" h="54" pX="0.5" pY="0.5" oX="80" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00004" x="557" y="403" w="15" h="55" pX="0.5" pY="0.5" oX="80" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00005" x="399" y="479" w="15" h="55" pX="0.5" pY="0.5" oX="80" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00006" x="373" y="250" w="27" h="64" pX="0.5" pY="0.5" oX="76" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00007" x="536" y="0" w="39" h="66" pX="0.5" pY="0.5" oX="72" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00008" x="541" y="66" w="39" h="66" pX="0.5" pY="0.5" oX="72" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00009" x="135" y="469" w="55" h="70" pX="0.5" pY="0.5" oX="64" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00010" x="72" y="325" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00011" x="72" y="397" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00012" x="468" y="0" w="68" h="76" pX="0.5" pY="0.5" oX="52" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00013" x="0" y="298" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00014" x="0" y="375" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00015" x="0" y="225" w="80" h="73" pX="0.5" pY="0.5" oX="40" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00016" x="0" y="0" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00017" x="0" y="75" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00018" x="318" y="320" w="56" h="39" pX="0.5" pY="0.5" oX="64" oY="29" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00019" x="192" y="536" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00020" x="407" y="213" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00021" x="124" y="539" w="68" h="27" pX="0.5" pY="0.5" oX="52" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00022" x="319" y="221" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00023" x="52" y="533" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00024" x="168" y="148" w="80" h="26" pX="0.5" pY="0.5" oX="40" oY="52" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00025" x="248" y="143" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00026" x="332" y="143" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00027" x="391" y="221" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="58" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00028" x="252" y="524" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00029" x="402" y="344" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00030" x="338" y="442" w="48" h="45" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00031" x="352" y="487" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00032" x="352" y="531" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00033" x="0" y="529" w="52" h="50" pX="0.5" pY="0.5" oX="40" oY="36" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00034" x="266" y="247" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00035" x="266" y="297" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00036" x="541" y="132" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="42" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00037" x="190" y="486" w="48" h="50" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00038" x="237" y="424" w="48" h="50" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00039" x="534" y="152" w="48" h="54" pX="0.5" pY="0.5" oX="52" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00040" x="190" y="321" w="47" h="55" pX="0.5" pY="0.5" oX="48" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00041" x="190" y="376" w="47" h="55" pX="0.5" pY="0.5" oX="48" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00042" x="72" y="469" w="63" h="64" pX="0.5" pY="0.5" oX="40" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00043" x="248" y="77" w="75" h="66" pX="0.5" pY="0.5" oX="36" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00044" x="323" y="77" w="75" h="66" pX="0.5" pY="0.5" oX="36" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00045" x="416" y="143" w="55" h="70" pX="0.5" pY="0.5" oX="64" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00046" x="131" y="325" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00047" x="131" y="397" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00048" x="473" y="76" w="68" h="76" pX="0.5" pY="0.5" oX="52" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00049" x="0" y="452" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00050" x="252" y="0" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00051" x="84" y="150" w="80" h="73" pX="0.5" pY="0.5" oX="40" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00052" x="84" y="0" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00053" x="0" y="150" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00054" x="336" y="364" w="56" h="39" pX="0.5" pY="0.5" oX="64" oY="29" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00055" x="467" y="216" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00056" x="522" y="310" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00057" x="450" y="363" w="68" h="27" pX="0.5" pY="0.5" oX="52" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00058" x="452" y="247" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00059" x="452" y="276" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00060" x="84" y="223" w="80" h="26" pX="0.5" pY="0.5" oX="40" oY="52" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00061" x="248" y="169" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00062" x="332" y="169" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00063" x="52" y="562" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="58" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00064" x="393" y="389" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00065" x="441" y="417" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00066" x="393" y="434" w="48" h="45" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00067" x="399" y="534" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00068" x="446" y="507" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00069" x="238" y="474" w="52" h="50" pX="0.5" pY="0.5" oX="40" oY="36" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00070" x="400" y="244" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00071" x="524" y="260" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00072" x="414" y="479" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="42" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00073" x="402" y="294" w="48" h="50" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00074" x="290" y="459" w="48" h="50" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00075" x="534" y="206" w="48" h="54" pX="0.5" pY="0.5" oX="52" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00076" x="190" y="431" w="47" h="55" pX="0.5" pY="0.5" oX="48" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00077" x="237" y="369" w="47" h="55" pX="0.5" pY="0.5" oX="48" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00078" x="471" y="152" w="63" h="64" pX="0.5" pY="0.5" oX="40" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00079" x="398" y="77" w="75" h="66" pX="0.5" pY="0.5" oX="36" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00080" x="164" y="174" w="75" h="66" pX="0.5" pY="0.5" oX="36" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00081" x="318" y="250" w="55" h="70" pX="0.5" pY="0.5" oX="64" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00082" x="148" y="249" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00083" x="207" y="247" w="59" h="72" pX="0.5" pY="0.5" oX="60" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00084" x="80" y="249" w="68" h="76" pX="0.5" pY="0.5" oX="52" oY="12" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00085" x="324" y="0" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00086" x="396" y="0" w="72" h="77" pX="0.5" pY="0.5" oX="48" oY="13" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00087" x="168" y="75" w="80" h="73" pX="0.5" pY="0.5" oX="40" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00088" x="84" y="75" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00089" x="168" y="0" w="84" h="75" pX="0.5" pY="0.5" oX="36" oY="21" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00090" x="337" y="403" w="56" h="39" pX="0.5" pY="0.5" oX="64" oY="29" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00091" x="522" y="341" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00092" x="518" y="372" w="60" h="31" pX="0.5" pY="0.5" oX="60" oY="37" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00093" x="441" y="390" w="68" h="27" pX="0.5" pY="0.5" oX="52" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00094" x="450" y="305" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00095" x="450" y="334" w="72" h="29" pX="0.5" pY="0.5" oX="48" oY="45" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00096" x="239" y="221" w="80" h="26" pX="0.5" pY="0.5" oX="40" oY="52" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00097" x="239" y="195" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00098" x="323" y="195" w="84" h="26" pX="0.5" pY="0.5" oX="36" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00099" x="540" y="493" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="58" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00100" x="509" y="403" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00101" x="441" y="462" w="48" h="45" pX="0.5" pY="0.5" oX="60" oY="31" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00102" x="509" y="448" w="48" h="45" pX="0.5" pY="0.5" oX="52" oY="35" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00103" x="493" y="493" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00104" x="493" y="537" w="47" h="44" pX="0.5" pY="0.5" oX="48" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00105" x="284" y="359" w="52" h="50" pX="0.5" pY="0.5" oX="40" oY="36" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00106" x="285" y="409" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00107" x="300" y="509" w="52" h="50" pX="0.5" pY="0.5" oX="36" oY="38" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00108" x="489" y="471" w="16" h="16" pX="0.5" pY="0.5" oX="64" oY="42" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00109" x="446" y="551" w="16" h="16" pX="0.5" pY="0.5" oX="60" oY="44" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00110" x="557" y="132" w="16" h="16" pX="0.5" pY="0.5" oX="60" oY="44" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00111" x="68" y="562" w="16" h="16" pX="0.5" pY="0.5" oX="52" oY="48" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00112" x="414" y="495" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="50" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00113" x="540" y="509" w="16" h="16" pX="0.5" pY="0.5" oX="48" oY="50" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00114" x="462" y="551" w="16" h="16" pX="0.5" pY="0.5" oX="40" oY="54" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00115" x="84" y="562" w="16" h="16" pX="0.5" pY="0.5" oX="36" oY="56" oW="160" oH="144"/>
+    <sprite n="luster_purge_enemy_00116" x="414" y="511" w="16" h="16" pX="0.5" pY="0.5" oX="36" oY="56" oW="160" oH="144"/>
+</TextureAtlas>

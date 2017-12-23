@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:d9372f2c8de00aca53946bb45ed83141:079e6ee5334def031f8a23bb284a7765:cb6814d0da31d20029a27b6278a1e395$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_hydro_pump.png" width="390" height="390">
+    <sprite n="hydro_pump_enemy_0" x="200" y="369" w="16" h="21" pX="0.5" pY="0.5" oX="56" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_1" x="216" y="369" w="16" h="21" pX="0.5" pY="0.5" oX="56" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_2" x="112" y="368" w="16" h="21" pX="0.5" pY="0.5" oX="56" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_3" x="336" y="351" w="16" h="27" pX="0.5" pY="0.5" oX="56" oY="69" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_4" x="352" y="351" w="16" h="27" pX="0.5" pY="0.5" oX="56" oY="69" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_5" x="368" y="283" w="16" h="37" pX="0.5" pY="0.5" oX="56" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_6" x="368" y="320" w="16" h="37" pX="0.5" pY="0.5" oX="56" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_7" x="272" y="351" w="16" h="37" pX="0.5" pY="0.5" oX="56" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_8" x="288" y="351" w="16" h="37" pX="0.5" pY="0.5" oX="56" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_9" x="368" y="129" w="16" h="43" pX="0.5" pY="0.5" oX="56" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_10" x="144" y="53" w="16" h="43" pX="0.5" pY="0.5" oX="56" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_11" x="144" y="96" w="16" h="43" pX="0.5" pY="0.5" oX="56" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_12" x="144" y="0" w="16" h="53" pX="0.5" pY="0.5" oX="56" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_13" x="24" y="318" w="16" h="53" pX="0.5" pY="0.5" oX="56" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_14" x="96" y="159" w="16" h="53" pX="0.5" pY="0.5" oX="56" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_15" x="0" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_16" x="24" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_17" x="208" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_18" x="232" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_19" x="256" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_20" x="280" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_21" x="272" y="240" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_22" x="296" y="203" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_23" x="320" y="166" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_24" x="344" y="129" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_25" x="296" y="240" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_26" x="320" y="203" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_27" x="344" y="166" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_28" x="320" y="240" w="24" h="37" pX="0.5" pY="0.5" oX="48" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_29" x="304" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_30" x="328" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_31" x="352" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_32" x="160" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="48" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_33" x="48" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_34" x="72" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="48" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_35" x="0" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="40" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_36" x="24" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="40" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_37" x="184" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_38" x="208" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_39" x="232" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_40" x="256" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_41" x="344" y="203" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_42" x="344" y="240" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_43" x="224" y="283" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_44" x="248" y="277" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_45" x="272" y="277" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_46" x="296" y="277" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_47" x="320" y="277" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_48" x="344" y="277" w="24" h="37" pX="0.5" pY="0.5" oX="40" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_49" x="280" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_50" x="304" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_51" x="328" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_52" x="352" y="86" w="24" h="43" pX="0.5" pY="0.5" oX="40" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_53" x="48" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="40" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_54" x="72" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="40" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_55" x="96" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="32" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_56" x="0" y="265" w="24" h="53" pX="0.5" pY="0.5" oX="32" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_57" x="128" y="149" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_58" x="128" y="192" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_59" x="128" y="235" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_60" x="128" y="278" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_61" x="200" y="295" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_62" x="176" y="301" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_63" x="152" y="311" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_64" x="128" y="321" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_65" x="88" y="341" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_66" x="64" y="351" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_67" x="224" y="320" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_68" x="248" y="314" w="24" h="37" pX="0.5" pY="0.5" oX="32" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_69" x="152" y="139" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_70" x="152" y="182" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_71" x="152" y="225" w="24" h="43" pX="0.5" pY="0.5" oX="32" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_72" x="24" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="32" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_73" x="48" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="32" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_74" x="72" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="32" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_75" x="96" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_76" x="120" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_77" x="0" y="318" w="24" h="53" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_78" x="152" y="268" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_79" x="176" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_80" x="176" y="172" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_81" x="200" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_82" x="272" y="314" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_83" x="296" y="314" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_84" x="320" y="314" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_85" x="344" y="314" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_86" x="200" y="332" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_87" x="176" y="338" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_88" x="152" y="348" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_89" x="248" y="351" w="24" h="37" pX="0.5" pY="0.5" oX="24" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_90" x="176" y="215" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_91" x="200" y="172" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_92" x="224" y="129" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_93" x="176" y="258" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_94" x="200" y="215" w="24" h="43" pX="0.5" pY="0.5" oX="24" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_95" x="24" y="265" w="24" h="53" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_96" x="48" y="212" w="24" h="53" pX="0.5" pY="0.5" oX="24" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_97" x="72" y="159" w="24" h="53" pX="0.5" pY="0.5" oX="16" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_98" x="96" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="16" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_99" x="120" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="16" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_100" x="120" y="106" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_101" x="160" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_102" x="40" y="318" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_103" x="64" y="265" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_104" x="224" y="172" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_105" x="248" y="129" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_106" x="200" y="258" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_107" x="224" y="209" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_108" x="248" y="166" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_109" x="272" y="129" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_110" x="224" y="246" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_111" x="248" y="203" w="24" h="37" pX="0.5" pY="0.5" oX="16" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_112" x="88" y="212" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_113" x="184" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_114" x="64" y="308" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_115" x="88" y="255" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_116" x="208" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="16" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_117" x="0" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="16" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_118" x="0" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="16" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_119" x="24" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_120" x="0" y="106" w="24" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_121" x="88" y="298" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_122" x="232" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_123" x="256" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_124" x="280" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_125" x="272" y="166" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_126" x="296" y="129" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_127" x="248" y="240" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_128" x="272" y="203" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_129" x="296" y="166" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_130" x="320" y="129" w="24" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_131" x="304" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_132" x="328" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_133" x="352" y="0" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_134" x="160" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_135" x="184" y="43" w="24" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_136" x="24" y="53" w="24" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_137" x="48" y="0" w="24" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_138" x="48" y="265" w="16" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_139" x="72" y="212" w="16" h="53" pX="0.5" pY="0.5" oX="8" oY="43" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_140" x="112" y="159" w="16" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_141" x="112" y="202" w="16" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_142" x="112" y="245" w="16" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_143" x="112" y="288" w="16" h="43" pX="0.5" pY="0.5" oX="8" oY="53" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_144" x="368" y="172" w="16" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_145" x="368" y="209" w="16" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_146" x="368" y="246" w="16" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_147" x="112" y="331" w="16" h="37" pX="0.5" pY="0.5" oX="8" oY="59" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_148" x="232" y="357" w="16" h="27" pX="0.5" pY="0.5" oX="8" oY="69" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_149" x="304" y="351" w="16" h="27" pX="0.5" pY="0.5" oX="8" oY="69" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_150" x="320" y="351" w="16" h="27" pX="0.5" pY="0.5" oX="8" oY="69" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_151" x="368" y="357" w="16" h="21" pX="0.5" pY="0.5" oX="8" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_152" x="40" y="361" w="16" h="21" pX="0.5" pY="0.5" oX="8" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_153" x="128" y="358" w="16" h="21" pX="0.5" pY="0.5" oX="8" oY="75" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_154" x="120" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_155" x="144" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_156" x="160" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_157" x="376" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_158" x="176" y="375" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_159" x="224" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_160" x="232" y="384" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_161" x="304" y="378" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_162" x="0" y="371" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_163" x="56" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_164" x="144" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_165" x="0" y="389" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_166" x="128" y="379" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_167" x="88" y="378" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_168" x="120" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_169" x="121" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_170" x="144" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_171" x="145" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_172" x="160" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_173" x="161" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_174" x="376" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_175" x="377" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_176" x="176" y="376" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_177" x="177" y="375" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_178" x="224" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_179" x="225" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_180" x="232" y="385" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_181" x="233" y="384" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_182" x="304" y="379" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_183" x="305" y="378" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_184" x="1" y="371" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_185" x="56" y="362" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_186" x="57" y="361" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_187" x="144" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_188" x="145" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_189" x="1" y="389" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_190" x="0" y="388" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_191" x="128" y="380" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_192" x="129" y="379" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_193" x="88" y="379" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_194" x="89" y="378" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_195" x="120" y="151" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_196" x="121" y="150" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_197" x="122" y="149" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_198" x="144" y="141" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_199" x="145" y="140" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_200" x="146" y="139" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_201" x="160" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_202" x="161" y="130" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_203" x="162" y="129" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_204" x="376" y="2" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_205" x="377" y="1" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_206" x="378" y="0" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_207" x="176" y="377" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_208" x="177" y="376" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_209" x="178" y="375" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_210" x="224" y="359" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_211" x="225" y="358" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_212" x="226" y="357" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="hydro_pump_enemy_213" x="232" y="386" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

@@ -41,6 +41,36 @@ package com.tinyrpg.utils
 			}
 		}
 		
+		public function getLightenOffset( offsetAmount : int ) : Array 
+		{	
+			var white : TinyColor = TinyColor.newFromHex( 0xFFFFFF );
+			
+			switch ( offsetAmount ) 
+			{
+				default:
+				case 0: return [ this.color1.clone(), this.color2.clone(), this.color3.clone(), this.color4.clone() ];
+				case 1: return [ this.color2.clone(), this.color3.clone(), this.color4.clone(), white.clone() ];
+				case 2: return [ this.color3.clone(), this.color4.clone(), white.clone(), white.clone() ];
+				case 3: return [ this.color4.clone(), white.clone(), white.clone(), white.clone() ];
+				case 4: return [ white.clone(), white.clone(), white.clone(), white.clone() ];
+			}
+		}
+		
+		public function getDarkenOffset( offsetAmount : int ) : Array
+		{
+			var black : TinyColor = TinyColor.newFromHex( 0x000000 );
+			
+			switch ( offsetAmount )
+			{
+				default:
+				case 0: return [ this.color1.clone(), this.color2.clone(), this.color3.clone(), this.color4.clone() ];
+				case 1: return [ black.clone(), this.color1.clone(), this.color2.clone(), this.color3.clone() ];
+				case 2: return [ black.clone(), black.clone(), this.color1.clone(), this.color2.clone() ];
+				case 3: return [ black.clone(), black.clone(), black.clone(), this.color1.clone() ];
+				case 4: return [ black.clone(), black.clone(), black.clone(), black.clone() ];
+			}
+		}
+		
 		public function getInverted() : TinyFourColorPalette 
 		{
 			return new TinyFourColorPalette( 

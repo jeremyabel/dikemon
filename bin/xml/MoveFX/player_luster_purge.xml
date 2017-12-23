@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ea59b9504257c1627a15f8d83bb25ee0:704a0d1bf5394f2136ce6ce8c59f173e:a4512fc9a2a82d63f3422b1430973aad$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="player_luster_purge.png" width="576" height="576">
+    <sprite n="mirror_coat_00000" x="487" y="233" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00001" x="448" y="184" w="28" h="22" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00002" x="548" y="233" w="28" h="22" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00003" x="548" y="278" w="20" h="18" pX="0.5" pY="0.5" oX="64" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00004" x="555" y="188" w="15" h="15" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00005" x="152" y="551" w="15" h="15" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00006" x="548" y="255" w="27" h="23" pX="0.5" pY="0.5" oX="61" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00007" x="448" y="210" w="39" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00008" x="327" y="289" w="39" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00009" x="263" y="335" w="55" h="45" pX="0.5" pY="0.5" oX="45" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00010" x="144" y="375" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00011" x="144" y="422" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00012" x="84" y="505" w="68" h="59" pX="0.5" pY="0.5" oX="44" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00013" x="504" y="0" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00014" x="0" y="302" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00015" x="0" y="228" w="80" h="74" pX="0.5" pY="0.5" oX="44" oY="18" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00016" x="0" y="0" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00017" x="0" y="76" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00018" x="204" y="472" w="56" h="46" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00019" x="368" y="243" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00020" x="428" y="243" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00021" x="164" y="204" w="68" h="52" pX="0.5" pY="0.5" oX="44" oY="40" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00022" x="500" y="69" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00023" x="80" y="259" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00024" x="420" y="60" w="80" h="58" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00025" x="252" y="0" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00026" x="336" y="0" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00027" x="364" y="514" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00028" x="260" y="530" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00029" x="308" y="530" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00030" x="356" y="530" w="48" h="46" pX="0.5" pY="0.5" oX="64" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00031" x="518" y="329" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00032" x="518" y="374" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00033" x="152" y="501" w="52" h="50" pX="0.5" pY="0.5" oX="72" oY="26" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00034" x="262" y="380" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00035" x="262" y="430" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00036" x="380" y="514" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="54" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00037" x="144" y="469" w="48" h="32" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00038" x="362" y="436" w="48" h="32" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00039" x="418" y="432" w="48" h="28" pX="0.5" pY="0.5" oX="64" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00040" x="466" y="455" w="47" h="26" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00041" x="513" y="464" w="47" h="26" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00042" x="487" y="210" w="63" h="23" pX="0.5" pY="0.5" oX="61" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00043" x="84" y="226" w="75" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00044" x="420" y="118" w="75" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00045" x="366" y="291" w="55" h="45" pX="0.5" pY="0.5" oX="45" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00046" x="212" y="284" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00047" x="204" y="331" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00048" x="312" y="178" w="68" h="59" pX="0.5" pY="0.5" oX="44" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00049" x="0" y="371" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00050" x="0" y="440" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00051" x="84" y="152" w="80" h="74" pX="0.5" pY="0.5" oX="44" oY="18" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00052" x="84" y="0" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00053" x="0" y="152" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00054" x="204" y="518" w="56" h="46" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00055" x="488" y="233" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00056" x="488" y="281" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00057" x="232" y="232" w="68" h="52" pX="0.5" pY="0.5" oX="44" oY="40" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00058" x="72" y="451" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00059" x="483" y="156" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00060" x="248" y="120" w="80" h="58" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00061" x="420" y="0" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00062" x="0" y="509" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00063" x="396" y="514" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00064" x="318" y="335" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00065" x="314" y="431" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00066" x="418" y="386" w="48" h="46" pX="0.5" pY="0.5" oX="64" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00067" x="466" y="410" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00068" x="513" y="419" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00069" x="260" y="480" w="52" h="50" pX="0.5" pY="0.5" oX="72" oY="26" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00070" x="312" y="480" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00071" x="314" y="381" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00072" x="560" y="419" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="54" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00073" x="412" y="506" w="48" h="32" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00074" x="404" y="538" w="48" h="32" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00075" x="470" y="382" w="48" h="28" pX="0.5" pY="0.5" oX="64" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00076" x="460" y="526" w="47" h="26" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00077" x="507" y="535" w="47" h="26" pX="0.5" pY="0.5" oX="69" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00078" x="159" y="256" w="63" h="23" pX="0.5" pY="0.5" oX="61" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00079" x="495" y="123" w="75" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00080" x="408" y="151" w="75" h="33" pX="0.5" pY="0.5" oX="53" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00081" x="421" y="291" w="55" h="45" pX="0.5" pY="0.5" oX="45" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00082" x="203" y="378" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00083" x="203" y="425" w="59" h="47" pX="0.5" pY="0.5" oX="45" oY="28" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00084" x="380" y="184" w="68" h="59" pX="0.5" pY="0.5" oX="44" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00085" x="72" y="313" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00086" x="72" y="382" w="72" h="69" pX="0.5" pY="0.5" oX="44" oY="22" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00087" x="168" y="76" w="80" h="74" pX="0.5" pY="0.5" oX="44" oY="18" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00088" x="84" y="76" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00089" x="168" y="0" w="84" h="76" pX="0.5" pY="0.5" oX="44" oY="16" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00090" x="271" y="289" w="56" h="46" pX="0.5" pY="0.5" oX="44" oY="46" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00091" x="152" y="279" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00092" x="144" y="327" w="60" h="48" pX="0.5" pY="0.5" oX="44" oY="44" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00093" x="300" y="237" w="68" h="52" pX="0.5" pY="0.5" oX="44" oY="40" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00094" x="168" y="150" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00095" x="240" y="178" w="72" h="54" pX="0.5" pY="0.5" oX="44" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00096" x="328" y="120" w="80" h="58" pX="0.5" pY="0.5" oX="44" oY="34" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00097" x="252" y="60" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00098" x="336" y="60" w="84" h="60" pX="0.5" pY="0.5" oX="44" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00099" x="560" y="435" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="38" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00100" x="364" y="468" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00101" x="412" y="460" w="48" h="46" pX="0.5" pY="0.5" oX="56" oY="36" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00102" x="470" y="336" w="48" h="46" pX="0.5" pY="0.5" oX="64" oY="32" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00103" x="460" y="481" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00104" x="507" y="490" w="47" h="45" pX="0.5" pY="0.5" oX="69" oY="30" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00105" x="366" y="336" w="52" h="50" pX="0.5" pY="0.5" oX="72" oY="26" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00106" x="418" y="336" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00107" x="366" y="386" w="52" h="50" pX="0.5" pY="0.5" oX="76" oY="24" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00108" x="560" y="451" w="16" h="16" pX="0.5" pY="0.5" oX="84" oY="54" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00109" x="560" y="467" w="16" h="16" pX="0.5" pY="0.5" oX="88" oY="52" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00110" x="560" y="483" w="16" h="16" pX="0.5" pY="0.5" oX="88" oY="52" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00111" x="548" y="296" w="16" h="16" pX="0.5" pY="0.5" oX="96" oY="48" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00112" x="548" y="312" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="46" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00113" x="555" y="156" w="16" h="16" pX="0.5" pY="0.5" oX="100" oY="46" oW="160" oH="144"/>
+    <sprite n="mirror_coat_00114" x="555" y="172" w="16" h="16" pX="0.5" pY="0.5" oX="108" oY="42" oW="160" oH="144"/>
+</TextureAtlas>

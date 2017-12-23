@@ -62,7 +62,7 @@ triangles  => sprite triangulation, 3 vertex indices per triangle
     <sprite n="mega_punch_00039" x="112" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
     <sprite n="mega_punch_00040" x="128" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
     <sprite n="mega_punch_00041" x="144" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
-    <sprite n="mega_punch_00042" x="160" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/>
+    <sprite n="mega_punch_00042" x="160" y="96" w="16" h="16" pX="0.5" pY="0.5" oX="120" oY="32" oW="160" oH="144"/><!--
     <sprite n="mega_punch_00043" x="112" y="113" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
     <sprite n="mega_punch_00044" x="112" y="114" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
     <sprite n="mega_punch_00045" x="112" y="115" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
@@ -84,4 +84,4 @@ triangles  => sprite triangulation, 3 vertex indices per triangle
     <sprite n="mega_punch_00061" x="112" y="131" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
     <sprite n="mega_punch_00062" x="112" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
     <sprite n="mega_punch_00063" x="112" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
-</TextureAtlas>
+--></TextureAtlas>

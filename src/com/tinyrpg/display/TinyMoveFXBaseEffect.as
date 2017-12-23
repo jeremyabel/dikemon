@@ -17,14 +17,25 @@ package com.tinyrpg.display
 		protected var type : String;
 		protected var area : String;
 			
-		protected function getAreaRectangles( area : String ) : Object
+		protected function getAreaRectangles( area : String, isEnemy : Boolean = false ) : Object
 		{
 			var areaRects : Object = new Object();
 			
 			areaRects[ 'mon' ] = new Object();
 			areaRects[ 'stat' ] = new Object();
 			
-			switch ( area )
+			var actualArea : String = area;
+			
+			if ( isEnemy && actualArea == AREA_PLAYER ) 
+			{
+				actualArea = AREA_ENEMY;
+			} 
+			else if ( isEnemy && actualArea == AREA_ENEMY ) 
+			{
+				actualArea = AREA_PLAYER;
+			}
+			
+			switch ( actualArea )
 			{
 				case AREA_PLAYER:
 				{
