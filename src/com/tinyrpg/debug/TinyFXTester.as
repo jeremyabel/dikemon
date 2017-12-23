@@ -89,7 +89,7 @@ package com.tinyrpg.debug
 		private function whirlInComplete() : void
 		{
  			var palette : TinyBattlePalette = testBattle.getBattlePalette();
-			var isEnemy : Boolean = true;
+			var isEnemy : Boolean = false;
 						
 			var fxArray : Array = new Array(
 

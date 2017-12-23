@@ -1,11 +1,12 @@
 package com.tinyrpg.misc 
 {
 	import flash.display.BitmapData;
+	import flash.media.Sound;
 	import flash.utils.ByteArray;
 	
+	import com.tinyrpg.media.sfx.movefx.*;
 	import com.tinyrpg.display.attacks.player.*;
 	import com.tinyrpg.display.attacks.enemy.*;
-	
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
@@ -34,8 +35,6 @@ package com.tinyrpg.misc
 		private static const MOVE_DYNAMIC_PUNCH 		: String = 'DYNAMIC PUNCH';
 		private static const MOVE_EMBER 				: String = 'EMBER';
 		private static const MOVE_EXPLOSION 			: String = 'EXPLOSION';
-		private static const MOVE_FAKE_OUT 				: String = 'FAKE OUT';
-		private static const MOVE_FAKE_TEARS			: String = 'FAKE TEARS';
 		private static const MOVE_FALSE_SWIPE 			: String = 'FALSE SWIPE';
 		private static const MOVE_FEINT_ATTACK 			: String = 'FEINT ATTACK';
 		private static const MOVE_FIRE_PUNCH 			: String = 'FIRE PUNCH';
@@ -48,7 +47,6 @@ package com.tinyrpg.misc
 		private static const MOVE_HYDRO_PUMP 			: String = 'HYDRO PUMP';
 		private static const MOVE_HYPER_BEAM 			: String = 'HYPER BEAM';
 		private static const MOVE_HYPNOSIS				: String = 'HYPNOSIS';
-		private static const MOVE_IRON_DEFENSE			: String = 'IRON DEFENSE'; // Use first half of METAL CLAW, 2x
 		private static const MOVE_KARATE_CHOP 			: String = 'KARATE CHOP';
 		private static const MOVE_LEAF_BLADE			: String = 'LEAF BLADE';
 		private static const MOVE_LEER 					: String = 'LEER';
@@ -71,8 +69,8 @@ package com.tinyrpg.misc
 		private static const MOVE_QUICK_ATTACK 			: String = 'QUICK ATTACK';
 		private static const MOVE_RAIN_DANCE 			: String = 'RAIN DANCE';
 		private static const MOVE_RAPID_SPIN 			: String = 'RAPID SPIN';
+		private static const MOVE_RAZOR_LEAF			: String = 'RAZOR_LEAF';
 		private static const MOVE_RECOVER 				: String = 'RECOVER';
-		private static const MOVE_REFRESH				: String = 'REFRESH';
 		private static const MOVE_REST					: String = 'REST';
 		private static const MOVE_SAFEGUARD 			: String = 'SAFEGUARD';
 		private static const MOVE_SAND_ATTACK 			: String = 'SAND ATTACK';
@@ -102,6 +100,93 @@ package com.tinyrpg.misc
 		private static const MOVE_WATER_SPORT			: String = 'WATER SPORT'; 
 		private static const MOVE_WING_ATTACK 			: String = 'WING ATTACK';
 		private static const MOVE_WISH					: String = 'WISH';
+		
+		private static const SFX_MOVE_ABSORB 				: Sound = new SFXAbsorb;
+		private static const SFX_MOVE_AGILITY 				: Sound = new SFXAgility;
+		private static const SFX_MOVE_ANCIENT_POWER 		: Sound = new SFXAncientPower;
+		private static const SFX_MOVE_ASTONISH				: Sound = new SFXFocusEnergy;
+		private static const SFX_MOVE_BITE 					: Sound = new SFXBite;
+		private static const SFX_MOVE_BLAZE_KICK 			: Sound = new SFXBlazeKick;
+		private static const SFX_MOVE_BUBBLE 				: Sound = new SFXBubble;
+		private static const SFX_MOVE_BULK_UP		 		: Sound = new SFXFocusEnergy;
+		private static const SFX_MOVE_CLAMP 				: Sound = new SFXClamp;
+		private static const SFX_MOVE_CONFUSE_RAY			: Sound = new SFXConfuseRay;
+		private static const SFX_MOVE_CONFUSION 			: Sound = new SFXConfusion;
+		private static const SFX_MOVE_COSMIC_POWER 			: Sound = new SFXRainDance;
+		private static const SFX_MOVE_DETECT 				: Sound = new SFXDetect;
+		private static const SFX_MOVE_DOUBLE_EDGE 			: Sound = new SFXDoubleEdge;
+		private static const SFX_MOVE_DOUBLE_KICK 			: Sound = new SFXDoubleKick;
+		private static const SFX_MOVE_DRAGON_BREATH 		: Sound = new SFXDragonBreath;
+		private static const SFX_MOVE_DRAGON_DANCE 			: Sound = new SFXConfusion;
+		private static const SFX_MOVE_DREAM_EATER 			: Sound = new SFXDreamEater;
+		private static const SFX_MOVE_DYNAMIC_PUNCH 		: Sound = new SFXDynamicPunch;
+		private static const SFX_MOVE_EMBER 				: Sound = new SFXEmber;
+		private static const SFX_MOVE_EXPLOSION 			: Sound = new SFXExplosion;
+		private static const SFX_MOVE_FALSE_SWIPE 			: Sound = new SFXFalseSwipe;
+		private static const SFX_MOVE_FEINT_ATTACK 			: Sound = new SFXFeintAtack;
+		private static const SFX_MOVE_FIRE_PUNCH 			: Sound = new SFXFirePunch;
+		private static const SFX_MOVE_FLAMETHROWER 			: Sound = new SFXFlamethrower;
+		private static const SFX_MOVE_FOCUS_ENERGY 			: Sound = new SFXFocusEnergy;
+		private static const SFX_MOVE_FURY_SWIPES 			: Sound = new SFXFurySwipes;
+		private static const SFX_MOVE_GROWL 				: Sound = new SFXGrowl;
+		private static const SFX_MOVE_HEAL_BELL 			: Sound = new SFXHealBell;
+		private static const SFX_MOVE_HOWL					: Sound = new SFXGrowl;
+		private static const SFX_MOVE_HYDRO_PUMP 			: Sound = new SFXHydroPump;
+		private static const SFX_MOVE_HYPER_BEAM 			: Sound = new SFXHyperBeam;
+		private static const SFX_MOVE_HYPNOSIS				: Sound = new SFXHypnosis;
+		private static const SFX_MOVE_KARATE_CHOP 			: Sound = new SFXKarateChop;
+		private static const SFX_MOVE_LEAF_BLADE			: Sound = new SFXRazorLeaf;
+		private static const SFX_MOVE_LEER 					: Sound = new SFXLeer;
+		private static const SFX_MOVE_LICK 					: Sound = new SFXLick;
+		private static const SFX_MOVE_LOW_KICK 				: Sound = new SFXLowKick;
+		private static const SFX_MOVE_LUSTER_PURGE			: Sound = new SFXLusterPurge;
+		private static const SFX_MOVE_MEAN_LOOK 			: Sound = new SFXMeanLook;
+		private static const SFX_MOVE_MEGA_PUNCH 			: Sound = new SFXMegaPunch;
+		private static const SFX_MOVE_METAL_CLAW 			: Sound = new SFXMetalClaw;
+		private static const SFX_MOVE_METEOR_MASH			: Sound = new SFXRainDance;
+		private static const SFX_MOVE_METRONOME 			: Sound = new SFXMetronome;
+		private static const SFX_MOVE_MUD_SLAP 				: Sound = new SFXMudSlap;
+		private static const SFX_MOVE_MUD_SPORT				: Sound = new SFXMudSport;
+		private static const SFX_MOVE_MUDDY_WATER			: Sound = new SFXSurf;
+		private static const SFX_MOVE_NIGHT_SHADE			: Sound = new SFXNightShade;
+		private static const SFX_MOVE_POUND 				: Sound = new SFXPound;
+		private static const SFX_MOVE_PROTECT 				: Sound = new SFXProtect;
+		private static const SFX_MOVE_PSYCHIC				: Sound = new SFXPsychic;
+		private static const SFX_MOVE_PSYWAVE				: Sound = new SFXPsywave;
+		private static const SFX_MOVE_QUICK_ATTACK 			: Sound = new SFXQuickAttack;
+		private static const SFX_MOVE_RAIN_DANCE 			: Sound = new SFXRainDance;
+		private static const SFX_MOVE_RAPID_SPIN 			: Sound = new SFXRapidSpin;
+		private static const SFX_MOVE_RAZOR_LEAF 			: Sound = new SFXRazorLeaf;
+		private static const SFX_MOVE_RECOVER 				: Sound = new SFXRecover;
+		private static const SFX_MOVE_REST					: Sound = new SFXRest;
+		private static const SFX_MOVE_SAFEGUARD 			: Sound = new SFXSafeguard;
+		private static const SFX_MOVE_SAND_ATTACK 			: Sound = new SFXSandAttack;
+		private static const SFX_MOVE_SCARY_FACE 			: Sound = new SFXScaryFace;
+		private static const SFX_MOVE_SCRATCH 				: Sound = new SFXScratch;
+		private static const SFX_MOVE_SCREECH 				: Sound = new SFXScreech;
+		private static const SFX_MOVE_SELF_DESTRUCT 		: Sound = new SFXSelfDestruct;
+		private static const SFX_MOVE_SLAM 					: Sound = new SFXSlam;
+		private static const SFX_MOVE_SLASH 				: Sound = new SFXSlash;
+		private static const SFX_MOVE_SMOG 					: Sound = new SFXSmog;
+		private static const SFX_MOVE_SMOKESCREEN 			: Sound = new SFXSmokescreen;
+		private static const SFX_MOVE_SNORE 				: Sound = new SFXSnore;
+		private static const SFX_MOVE_SPITE 				: Sound = new SFXSpite;
+		private static const SFX_MOVE_STRUGGLE 				: Sound = new SFXStruggle;
+		private static const SFX_MOVE_SUBMISSION			: Sound = new SFXSubmission;
+		private static const SFX_MOVE_SUPERSONIC 			: Sound = new SFXSupersonic;
+		private static const SFX_MOVE_SWIFT 				: Sound = new SFXSwift;
+		private static const SFX_MOVE_TACKLE 				: Sound = new SFXTackle;
+		private static const SFX_MOVE_TAIL_WHIP				: Sound = new SFXTailWhip;
+		private static const SFX_MOVE_TAKE_DOWN 			: Sound = new SFXTakeDown;
+		private static const SFX_MOVE_THRASH 				: Sound = new SFXThrash;
+		private static const SFX_MOVE_THUNDER 				: Sound = new SFXThunder;
+		private static const SFX_MOVE_THUNDER_SHOCK 		: Sound = new SFXThundershock;
+		private static const SFX_MOVE_TWISTER 				: Sound = new SFXTwister;
+		private static const SFX_MOVE_WATER_GUN 			: Sound = new SFXWaterGun;
+		private static const SFX_MOVE_WATER_PULSE			: Sound = new SFXSupersonic;
+		private static const SFX_MOVE_WATER_SPORT			: Sound = new SFXWaterSport;
+		private static const SFX_MOVE_WING_ATTACK 			: Sound = new SFXWingAttack;
+		private static const SFX_MOVE_WISH					: Sound = new SFXProtect;
 		
 		// Spritesheet XML: Player
 		[Embed(source='../../../../bin/xml/MoveFX/player_absorb.xml', mimeType='application/octet-stream')] 			public static const XML_Absorb_Player : Class;
@@ -327,6 +412,7 @@ package com.tinyrpg.misc
 				case MOVE_QUICK_ATTACK 		: newXMLBytes = ( isEnemy ? new XML_Quick_Attack_Enemy : new XML_Quick_Attack_Player ) as ByteArray; break;
 				case MOVE_RAIN_DANCE 		: newXMLBytes = ( isEnemy ? new XML_Rain_Dance_Enemy : new XML_Rain_Dance_Player ) as ByteArray; break;
 				case MOVE_RAPID_SPIN 		: newXMLBytes = ( isEnemy ? new XML_Rapid_Spin_Enemy : new XML_Rapid_Spin_Player ) as ByteArray; break;
+				case MOVE_RAZOR_LEAF 		: newXMLBytes = ( isEnemy ? new XML_Leaf_Blade_Enemy : new XML_Leaf_Blade_Player ) as ByteArray; break;
 				case MOVE_RECOVER 			: newXMLBytes = ( isEnemy ? new XML_Recover_Enemy : new XML_Recover_Player ) as ByteArray; break;
 				case MOVE_REST 				: newXMLBytes = ( isEnemy ? new XML_Rest_Enemy : new XML_Rest_Player ) as ByteArray; break;
 				case MOVE_SAFEGUARD 		: newXMLBytes = ( isEnemy ? new XML_Safeguard_Enemy : new XML_Safeguard_Player ) as ByteArray; break;
@@ -428,6 +514,7 @@ package com.tinyrpg.misc
 				case MOVE_QUICK_ATTACK:			newSprite = isEnemy ? new QuickAttackEnemy : new QuickAttackPlayer; break;
 				case MOVE_RAIN_DANCE:			newSprite = isEnemy ? new RainDanceEnemy : new RainDancePlayer; break;
 				case MOVE_RAPID_SPIN:			newSprite = isEnemy ? new RapidSpinEnemy : new RapidSpinPlayer; break;
+				case MOVE_RAZOR_LEAF:			newSprite = isEnemy ? new LeafBladeEnemy : new LeafBladePlayer; break;
 				case MOVE_RECOVER:				newSprite = isEnemy ? new RecoverEnemy : new RecoverPlayer; break;
 				case MOVE_REST:					newSprite = isEnemy ? new RestEnemy : new RestPlayer; break;
 				case MOVE_SAFEGUARD:			newSprite = isEnemy ? new SafeguardEnemy : new SafeguardPlayer; break;
@@ -465,9 +552,7 @@ package com.tinyrpg.misc
 		
 		
 		public static function getMoveAdjustY( name : String, isEnemy : Boolean ) : int
-		{
-			TinyLogManager.log('getMoveAdjustY: ' + name, null);
-			
+		{			
 			var yOffset : int = 0;
 			
 			switch ( name.toUpperCase() ) 
@@ -489,6 +574,7 @@ package com.tinyrpg.misc
 				case MOVE_DOUBLE_EDGE:			yOffset = isEnemy ? 0 : -4; break;
 				case MOVE_DOUBLE_KICK:			yOffset = isEnemy ? 0 : -4; break;
 				case MOVE_DRAGON_BREATH:		yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_DRAGON_DANCE:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_DREAM_EATER:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_DYNAMIC_PUNCH:		yOffset = isEnemy ? 0 : -4; break;
 				case MOVE_EMBER:				yOffset = isEnemy ? 0 : -6; break;
@@ -527,6 +613,7 @@ package com.tinyrpg.misc
 				case MOVE_QUICK_ATTACK:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_RAIN_DANCE:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_RAPID_SPIN:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_RAZOR_LEAF:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_RECOVER:				yOffset = isEnemy ? -6 : 0; break;
 				case MOVE_REST:					yOffset = isEnemy ? 0 : -2; break;
 				case MOVE_SAFEGUARD:			yOffset = isEnemy ? -12 : 0; break;
@@ -559,7 +646,105 @@ package com.tinyrpg.misc
 				case MOVE_WISH:					yOffset = isEnemy ? 0 : 0; break;
 			}
 			
+			TinyLogManager.log('getMoveAdjustY: ' + name + ' = ' + yOffset, null);
+			
 			return yOffset;
 		}				
+
+		public static function getMoveSFX( name : String ) : Sound
+		{			
+			TinyLogManager.log('getMoveSFX: ' + name, null);
+			
+			switch ( name.toUpperCase() ) 
+			{
+				default:						return SFX_MOVE_BITE;
+				case MOVE_ABSORB: 				return SFX_MOVE_ABSORB; 
+				case MOVE_AGILITY: 				return SFX_MOVE_AGILITY; 
+				case MOVE_ANCIENT_POWER: 		return SFX_MOVE_ANCIENT_POWER; 
+				case MOVE_ASTONISH:		 		return SFX_MOVE_ASTONISH; 
+				case MOVE_BITE: 				return SFX_MOVE_BITE; 
+				case MOVE_BLAZE_KICK:			return SFX_MOVE_BLAZE_KICK; 
+				case MOVE_BUBBLE:				return SFX_MOVE_BUBBLE; 
+				case MOVE_BULK_UP:				return SFX_MOVE_BULK_UP; 
+				case MOVE_CLAMP:				return SFX_MOVE_CLAMP; 
+				case MOVE_CONFUSION:			return SFX_MOVE_CONFUSION; 
+				case MOVE_CONFUSE_RAY:			return SFX_MOVE_CONFUSE_RAY; 
+				case MOVE_COSMIC_POWER:			return SFX_MOVE_COSMIC_POWER; 
+				case MOVE_DETECT:				return SFX_MOVE_DETECT; 
+				case MOVE_DOUBLE_EDGE:			return SFX_MOVE_DOUBLE_EDGE; 
+				case MOVE_DOUBLE_KICK:			return SFX_MOVE_DOUBLE_KICK; 
+				case MOVE_DRAGON_BREATH:		return SFX_MOVE_DRAGON_BREATH; 
+				case MOVE_DRAGON_DANCE:			return SFX_MOVE_DRAGON_DANCE; 
+				case MOVE_DREAM_EATER:			return SFX_MOVE_DREAM_EATER; 
+				case MOVE_DYNAMIC_PUNCH:		return SFX_MOVE_DYNAMIC_PUNCH; 
+				case MOVE_EMBER:				return SFX_MOVE_EMBER; 
+				case MOVE_EXPLOSION:			return SFX_MOVE_EXPLOSION; 
+				case MOVE_FALSE_SWIPE:			return SFX_MOVE_FALSE_SWIPE; 
+				case MOVE_FEINT_ATTACK:			return SFX_MOVE_FEINT_ATTACK; 
+				case MOVE_FIRE_PUNCH:			return SFX_MOVE_FIRE_PUNCH; 
+				case MOVE_FLAMETHROWER:			return SFX_MOVE_FLAMETHROWER; 
+				case MOVE_FOCUS_ENERGY:			return SFX_MOVE_FOCUS_ENERGY; 
+				case MOVE_FURY_SWIPES:			return SFX_MOVE_FURY_SWIPES; 
+				case MOVE_GROWL:				return SFX_MOVE_GROWL; 
+				case MOVE_HEAL_BELL:			return SFX_MOVE_HEAL_BELL; 
+				case MOVE_HOWL:					return SFX_MOVE_HOWL; 
+				case MOVE_HYDRO_PUMP:			return SFX_MOVE_HYDRO_PUMP; 
+				case MOVE_HYPER_BEAM:			return SFX_MOVE_HYPER_BEAM; 
+				case MOVE_HYPNOSIS:				return SFX_MOVE_HYPNOSIS; 
+				case MOVE_KARATE_CHOP:			return SFX_MOVE_KARATE_CHOP; 
+				case MOVE_LEAF_BLADE:			return SFX_MOVE_LEAF_BLADE; 
+				case MOVE_LEER:					return SFX_MOVE_LEER; 
+				case MOVE_LICK:					return SFX_MOVE_LICK; 
+				case MOVE_LOW_KICK:				return SFX_MOVE_LOW_KICK; 
+				case MOVE_LUSTER_PURGE:			return SFX_MOVE_LUSTER_PURGE; 
+				case MOVE_MEAN_LOOK:			return SFX_MOVE_MEAN_LOOK; 
+				case MOVE_MEGA_PUNCH:			return SFX_MOVE_MEGA_PUNCH; 
+				case MOVE_METAL_CLAW:			return SFX_MOVE_METAL_CLAW; 
+				case MOVE_METEOR_MASH:			return SFX_MOVE_METEOR_MASH; 
+				case MOVE_METRONOME:			return SFX_MOVE_METRONOME; 
+				case MOVE_MUD_SLAP:				return SFX_MOVE_MUD_SLAP; 
+				case MOVE_MUD_SPORT:			return SFX_MOVE_MUD_SPORT; 
+				case MOVE_MUDDY_WATER:			return SFX_MOVE_MUDDY_WATER; 
+				case MOVE_NIGHT_SHADE:			return SFX_MOVE_NIGHT_SHADE; 
+				case MOVE_POUND:				return SFX_MOVE_POUND; 
+				case MOVE_PROTECT:				return SFX_MOVE_PROTECT; 
+				case MOVE_PSYCHIC:				return SFX_MOVE_PSYCHIC; 
+				case MOVE_PSYWAVE:				return SFX_MOVE_PSYWAVE; 
+				case MOVE_QUICK_ATTACK:			return SFX_MOVE_QUICK_ATTACK; 
+				case MOVE_RAIN_DANCE:			return SFX_MOVE_RAIN_DANCE; 
+				case MOVE_RAPID_SPIN:			return SFX_MOVE_RAPID_SPIN; 
+				case MOVE_RAZOR_LEAF:			return SFX_MOVE_RAZOR_LEAF; 
+				case MOVE_RECOVER:				return SFX_MOVE_RECOVER; 
+				case MOVE_REST:					return SFX_MOVE_REST; 
+				case MOVE_SAFEGUARD:			return SFX_MOVE_SAFEGUARD; 
+				case MOVE_SAND_ATTACK:			return SFX_MOVE_SAND_ATTACK; 
+				case MOVE_SCARY_FACE:			return SFX_MOVE_SCARY_FACE; 
+				case MOVE_SCRATCH:				return SFX_MOVE_SCRATCH; 
+				case MOVE_SCREECH:				return SFX_MOVE_SCREECH; 
+				case MOVE_SELF_DESTRUCT:		return SFX_MOVE_SELF_DESTRUCT; 
+				case MOVE_SLAM:					return SFX_MOVE_SLAM; 
+				case MOVE_SLASH:				return SFX_MOVE_SLASH; 
+				case MOVE_SMOG:					return SFX_MOVE_SMOG; 
+				case MOVE_SMOKESCREEN:			return SFX_MOVE_SMOKESCREEN; 
+				case MOVE_SNORE:				return SFX_MOVE_SNORE; 
+				case MOVE_SPITE:				return SFX_MOVE_SPITE; 
+				case MOVE_STRUGGLE: 			return SFX_MOVE_STRUGGLE; 
+				case MOVE_SUBMISSION: 			return SFX_MOVE_SUBMISSION; 
+				case MOVE_SUPERSONIC:			return SFX_MOVE_SUPERSONIC; 
+				case MOVE_SWIFT:				return SFX_MOVE_SWIFT; 
+				case MOVE_TACKLE:				return SFX_MOVE_TACKLE; 
+				case MOVE_TAIL_WHIP:			return SFX_MOVE_TAIL_WHIP; 
+				case MOVE_TAKE_DOWN:			return SFX_MOVE_TAKE_DOWN; 
+				case MOVE_THRASH:				return SFX_MOVE_THRASH; 
+				case MOVE_THUNDER:				return SFX_MOVE_THUNDER; 
+				case MOVE_THUNDER_SHOCK:		return SFX_MOVE_THUNDER_SHOCK; 
+				case MOVE_TWISTER:				return SFX_MOVE_TWISTER; 
+				case MOVE_WATER_GUN: 			return SFX_MOVE_WATER_GUN; 
+				case MOVE_WATER_PULSE: 			return SFX_MOVE_WATER_PULSE; 
+				case MOVE_WATER_SPORT: 			return SFX_MOVE_WATER_SPORT; 
+				case MOVE_WING_ATTACK:			return SFX_MOVE_WING_ATTACK; 
+				case MOVE_WISH:					return SFX_MOVE_WISH;
+			}
+		}
 	}
 }

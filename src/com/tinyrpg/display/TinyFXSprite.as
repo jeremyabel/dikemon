@@ -5,6 +5,7 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.geom.Rectangle;
+	import flash.media.Sound;
 
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyMoveFXSpriteFrameInfo;
@@ -26,6 +27,7 @@ package com.tinyrpg.display
 		private var currentBFrame	: uint;
 		private var frameData		: Array = [];
 		private var skipFrames		: int = 2;
+		private var sound	 		: Sound;
 		
 		public var length 			: int;
 		public var isPlaying		: Boolean;
@@ -53,6 +55,7 @@ package com.tinyrpg.display
 			var xmlData : XML = TinyMoveFXConfig.getMoveFXXML( move.name, isEnemy );
 			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
 			sprite.y = TinyMoveFXConfig.getMoveAdjustY( move.name, isEnemy );
+			sprite.sound = TinyMoveFXConfig.getMoveSFX( move.name );
 			
 			return sprite; 	
 		}
@@ -73,6 +76,9 @@ package com.tinyrpg.display
 			this.currentAFrame = 0;
 			this.currentBFrame = 0;
 			
+			// Play sound
+			this.sound.play();
+					
 			// Get the current frame's info
 			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentBFrame ] as TinyMoveFXSpriteFrameInfo;
 			
