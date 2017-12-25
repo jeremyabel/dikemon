@@ -10,6 +10,7 @@ package com.tinyrpg.battle
 	import flash.display.Sprite;
 	import flash.events.EventDispatcher;
 	import flash.events.Event;
+	import flash.media.Sound;
 
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.display.IShowHideObject;
@@ -178,6 +179,9 @@ package com.tinyrpg.battle
 					break;
 				case TinyEventItem.HIDE_OBJECT:
 					this.doHideObject( nextEvent.thingToDo as IShowHideObject );
+					break;
+				case TinyEventItem.PLAY_SOUND:
+					this.doPlaySound( nextEvent.thingToDo as Sound );
 					break;
 				case TinyEventItem.SET_VISIBLITY:
 					this.doSetVisibility( nextEvent.thingToDo );
@@ -496,6 +500,17 @@ package com.tinyrpg.battle
 			
 			// Add to sequence
 			m_eventSequence.push( newEventItem );	
+		}
+		
+		public function addPlaySound( sound : Sound ) : void
+		{
+			TinyLogManager.log('addPlaySound', this);
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.PLAY_SOUND, sound );
+			
+			// Add to sequence
+			m_eventSequence.push(newEventItem);
 		}
 
 		public function addDelay( delaySeconds : Number ) : void
@@ -1002,6 +1017,17 @@ package com.tinyrpg.battle
 			
 			// Hide given element
 			element.hide();
+			
+			// Next!
+			this.doNextCommand();
+		}
+		
+		private function doPlaySound( sound : Sound ) : void 
+		{
+			TinyLogManager.log('doPlaySound', this);
+			
+			// Play the sound
+			sound.play();
 			
 			// Next!
 			this.doNextCommand();

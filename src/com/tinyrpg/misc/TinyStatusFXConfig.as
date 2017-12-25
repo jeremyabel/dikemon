@@ -1,10 +1,12 @@
 package com.tinyrpg.misc 
 {
 	import flash.display.BitmapData;
+	import flash.media.Sound;
 	import flash.utils.ByteArray;
 	
+	import com.tinyrpg.media.sfx.statusfx.*;
 	import com.tinyrpg.display.status.player.*;
-	import com.tinyrpg.display.status.enemy.*;
+	import com.tinyrpg.display.status.enemy.*;	
 	
 	import com.tinyrpg.data.TinyStatusEffect;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -14,6 +16,14 @@ package com.tinyrpg.misc
 	 */
 	public class TinyStatusFXConfig 
 	{	
+		private static const SFX_BURN 		: Sound = new SFXBurn;
+		private static const SFX_CONFUSION	: Sound = new SFXConfusion;
+		private static const SFX_PARALYSIS	: Sound = new SFXParalysis;
+		private static const SFX_POISON		: Sound = new SFXPoison;
+		private static const SFX_SLEEP		: Sound = new SFXSleep;
+		
+		public static const SFX_HIT_SELF	: Sound = new SFXSelfHit;
+		
 		[Embed(source='../../../../bin/xml/StatusFX/player_burn.xml', mimeType='application/octet-stream')] 			public static const XML_Burn_Player: Class;
 		[Embed(source='../../../../bin/xml/StatusFX/player_confused.xml', mimeType='application/octet-stream')] 		public static const XML_Confuse_Player: Class;
 		[Embed(source='../../../../bin/xml/StatusFX/player_paralyzed.xml', mimeType='application/octet-stream')] 		public static const XML_Paralyze_Player: Class;
@@ -64,6 +74,21 @@ package com.tinyrpg.misc
 			}
 			
 			return newSprite;
-		}		
+		}
+		
+		public static function getStatusSFX( name : String ) : Sound
+		{			
+			TinyLogManager.log('getMoveSFX: ' + name, null);
+			
+			switch ( name.toUpperCase() ) 
+			{
+				default:						
+				case TinyStatusEffect.BURN 		: return SFX_BURN; 
+				case TinyStatusEffect.CONFUSION	: return SFX_CONFUSION;
+				case TinyStatusEffect.PARALYSIS : return SFX_PARALYSIS;
+				case TinyStatusEffect.POISON	: return SFX_POISON;
+				case TinyStatusEffect.SLEEP		: return SFX_SLEEP;
+			}
+		}
 	}
 }

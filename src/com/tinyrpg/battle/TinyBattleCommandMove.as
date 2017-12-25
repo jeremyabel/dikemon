@@ -8,6 +8,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
+	import com.tinyrpg.misc.TinyStatusFXConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -97,6 +98,9 @@ package com.tinyrpg.battle
 					
 					// Play confusion effect animation
 					this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.CONFUSION, isEnemy ) );
+					
+					// Play hit sfx
+					this.eventSequence.addPlaySound( TinyStatusFXConfig.SFX_HIT_SELF );
 					
 					// Apply damage
 					this.applyDamageToTarget( attackingMon, confusionDamage, isEnemy );
@@ -230,6 +234,9 @@ package com.tinyrpg.battle
 				
 				var recoilDamage : int = Math.ceil( damage / 4 );
 				
+				// Play hit sfx
+				this.eventSequence.addPlaySound( TinyStatusFXConfig.SFX_HIT_SELF );
+					
 				// Apply damage
 				this.applyDamageToTarget( attackingMon, recoilDamage, isEnemy );
 				
@@ -320,7 +327,7 @@ package com.tinyrpg.battle
 							else
 								this.eventSequence.addEnemyHitSecondary( battle.m_enemyMonContainer );
 							
-							// TODO: Play the appropriate status effect animation, if applicable  	
+							// Play the appropriate status effect animation, if applicable  	
 							if ( effect.type == 'STATUS_EFFECT' )
 							{
 								if ( TinyStatusEffect.isAnimated( effect.property as String ) ) 

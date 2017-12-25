@@ -64,8 +64,10 @@ package com.tinyrpg.display
 		{
 			var sourceData : BitmapData = TinyStatusFXConfig.getStatusFXSprite( statusName, isEnemy );
 			var xmlData : XML = TinyStatusFXConfig.getStatusFXXML( statusName, isEnemy );
+			var sprite : TinyFXSprite =new TinyFXSprite( sourceData, xmlData );
+			sprite.sound = TinyStatusFXConfig.getStatusSFX( statusName );
 			
-			return new TinyFXSprite( sourceData, xmlData );
+			return sprite;
 		}
 		
 		public function play() : void
