@@ -64,8 +64,18 @@ package com.tinyrpg.display
 		{
 			var sourceData : BitmapData = TinyStatusFXConfig.getStatusFXSprite( statusName, isEnemy );
 			var xmlData : XML = TinyStatusFXConfig.getStatusFXXML( statusName, isEnemy );
-			var sprite : TinyFXSprite =new TinyFXSprite( sourceData, xmlData );
+			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
 			sprite.sound = TinyStatusFXConfig.getStatusSFX( statusName );
+			
+			return sprite;
+		}
+		
+		public static function newFromBallThrow( rejected : Boolean, isUltra : Boolean = false, numShakes : int = 0 ) : TinyFXSprite
+		{
+			var sourceData : BitmapData = TinyBallFXAnimation.getBallFXSprite( rejected, isUltra, numShakes );
+			var xmlData : XML = TinyBallFXAnimation.getBallFXXML( rejected, numShakes );
+			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
+			// TODO: sound
 			
 			return sprite;
 		}
@@ -79,7 +89,10 @@ package com.tinyrpg.display
 			this.currentBFrame = 0;
 			
 			// Play sound
-			this.sound.play();
+			if ( this.sound ) 
+			{
+				this.sound.play();
+			}
 					
 			// Get the current frame's info
 			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentBFrame ] as TinyMoveFXSpriteFrameInfo;

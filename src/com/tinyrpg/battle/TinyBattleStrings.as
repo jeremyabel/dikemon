@@ -170,6 +170,9 @@ package com.tinyrpg.battle
 	 	public static const CANT_USE_BURN		: String = 'This guy is already cool as a cucumber!';
 	 	public static const CANT_USE_SLEEP		: String = 'Pretty sure this guy\'s already awake...';
 	 	public static const CANT_USE_PARALYSIS	: String = 'This guy\'s not very sticky!';
+	 	
+	 	// Ball throw strings
+	 	public static const BALL_THROW_REJECT	: String = 'Jeez, don\'t go stealing other trainer\'s guys! Not cool!';
 		
 		// Misc other battle strings
 		public static const EXPLOSION_FAINT		: String = 'MON fainted from the explosion!';

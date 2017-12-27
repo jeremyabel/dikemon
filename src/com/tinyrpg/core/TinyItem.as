@@ -19,7 +19,7 @@ package com.tinyrpg.core
 		private static var CATCH_RATE				: String = 'CATCHRATE';
 		
 		public static var ITEM_CONTEXT_BATTLE		: String = 'ITEM_CONTEXT_BATTLE';
-		public static var ITEM_CONTEXT_FIELD 		: String = 'ITEM_CONTEXT_BATTLE';
+		public static var ITEM_CONTEXT_FIELD 		: String = 'ITEM_CONTEXT_FIELD';
 		
 		public var name 			: String;
 		public var description  	: String;
@@ -113,8 +113,10 @@ package com.tinyrpg.core
 		// TODO: PP Heal check
 		public function checkCanUse( useContext : String, targetMon : TinyMon ) : TinyItemUseResult
 		{
+			TinyLogManager.log("checkCanUse: " + useContext, this);
+			
 			// Battle-specific checks
-			if ( useContext == ITEM_CONTEXT_BATTLE )
+			if ( useContext == TinyItem.ITEM_CONTEXT_BATTLE )
 			{	
 				// Can't use a revive or repel in battle
 				if ( this.revive || this.isRepel )
@@ -124,7 +126,7 @@ package com.tinyrpg.core
 			}
 			
 			// Field-specific checks
-			if ( useContext == ITEM_CONTEXT_FIELD )
+			if ( useContext == TinyItem.ITEM_CONTEXT_FIELD )
 			{
 				// Can't use balls out of battle
 				if ( this.isBall ) 

@@ -16,6 +16,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.IShowHideObject;
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
+	import com.tinyrpg.display.TinyBallFXAnimation;
 	import com.tinyrpg.display.TinyMoveFXAnimation;
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.misc.TinyEventItem;
@@ -42,6 +43,7 @@ package com.tinyrpg.battle
 		private var currentStatDisplay : TinyBattleMonStatDisplay;
 		private var currentLevelUpDisplay : TinyLevelUpStatsDisplay;
 		private var currentDeleteMoveDialog : TinyDeleteMoveDialog;
+		private var currentBallAnimation : TinyBallFXAnimation;
 		private var currentAttackAnimation : TinyMoveFXAnimation;
 		private var currentStatusAnimation : TinyStatusFXAnimation;
 		private var m_currentDialog : TinyDialogBox;
@@ -155,6 +157,9 @@ package com.tinyrpg.battle
 					break;
 				case TinyEventItem.PLAY_STATUS_ANIM:
 					this.doPlayStatusAnim( nextEvent.thingToDo as TinyStatusFXAnimation );
+					break;
+				case TinyEventItem.PLAY_BALL_ANIM:
+					this.doPlayBallAnim( nextEvent.thingToDo as TinyBallFXAnimation );
 					break;
 				case TinyEventItem.PLAYER_HEAL:
 					this.doPlayerHeal( nextEvent.thingToDo as TinyMonContainer );
@@ -326,6 +331,17 @@ package com.tinyrpg.battle
 			
 			// Add to sequence
 			this.m_eventSequence.push( newEventItem );	
+		}
+		
+		public function addPlayBallAnim( ballAnimation : TinyBallFXAnimation ) : void
+		{
+			TinyLogManager.log('addPlayBallAnim', this);
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.PLAY_BALL_ANIM, ballAnimation );
+			
+			// Add to sequence
+			this.m_eventSequence.push( newEventItem );
 		}
 		
 		public function addPlayerHeal( targetMonContainer : TinyMonContainer ) : void
@@ -727,6 +743,32 @@ package com.tinyrpg.battle
 			
 			// Next!
 			this.doNextCommand();	
+		}
+		
+		private function doPlayBallAnim( ballAnim : TinyBallFXAnimation ) : void
+		{
+			TinyLogManager.log('doPlayBallAnim', this);
+							
+			this.currentBallAnimation = ballAnim;
+			this.currentBallAnimation.addEventListener( Event.COMPLETE, this.onPlayBallAnimComplete );
+			this.currentBallAnimation.play();
+			this.currentBallAnimation.x = 
+			this.currentBallAnimation.y = 0;
+			
+			this.m_hostBattle.addChild( this.currentBallAnimation );
+		}
+		
+		private function onPlayBallAnimComplete( event : Event = null ) : void
+		{
+			TinyLogManager.log('onPlayBallAnimComplete', this);
+			
+			// Clean up
+			this.m_hostBattle.removeChild( this.currentBallAnimation );
+			this.currentBallAnimation.removeEventListener( Event.COMPLETE, this.onPlayBallAnimComplete );
+			this.currentBallAnimation = null;
+			
+			// Next!
+			this.doNextCommand();
 		}
 		
 		private function doPlayerHeal( targetMonContainer : TinyMonContainer ) : void

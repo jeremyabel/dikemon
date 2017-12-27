@@ -4,6 +4,7 @@ package com.tinyrpg.battle
 	
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.display.TinyBallFXAnimation;
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -39,7 +40,28 @@ package com.tinyrpg.battle
 		
 		private function useBall() : void
 		{
-//			TinyLogManager.log('useBall: ', this);
+			TinyLogManager.log('useBall: ' + this.item.effectAmount, this);
+
+			var resultString : String = '';
+			var isUltra : Boolean = this.item.effectAmount > 1;			
+			
+			// Add delay for nice feels
+			this.eventSequence.addDelay( 0.2 );
+			
+			// Get the correct ball fx animation 
+			if ( this.battle.m_isWildEncounter )
+			{
+				
+			}
+			else
+			{
+				// Can't capture trainer mons, so play the reject animation 
+				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( true, isUltra ) );
+				resultString = TinyBattleStrings.BALL_THROW_REJECT;
+			}
+			
+			// Show dialog box
+			this.eventSequence.addDialogBoxFromString( resultString );
 		}
 		
 		
