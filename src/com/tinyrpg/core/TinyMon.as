@@ -192,6 +192,21 @@ package com.tinyrpg.core
 		{
 			return this.currentHP > 0;
 		}
+		
+		public function get isRegularStatus() : Boolean
+		{
+			if ( this.isConfused ) return false;
+			if ( this.isPoisoned ) return false;
+			if ( this.isParaylzed ) return false;
+			if ( this.isSleeping ) return false;
+			if ( this.isBurned ) return false;
+			return true;
+		}
+		
+		public function get isMaxHP() : Boolean
+		{
+			return this.currentHP == this.getMaxHP( this.level );
+		}
 
 		public function decrementStatusCounters() : Object
 		{
@@ -222,7 +237,7 @@ package com.tinyrpg.core
 				value = TinyMath.randomInt(1, 5);
 			
 			this.sleepCounter = value;
-			TinyLogManager.log('setConfusionCounter: ' + this.name + ' - ' + value, this);
+			TinyLogManager.log('setSleepCounter: ' + this.name + ' - ' + value, this);
 		}
 
 		public function setConfusionCounter( value : int = -1 ) : void

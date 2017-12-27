@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4541169df1fc2412cad16b2aada897ea:4d22e6f4e3d125212bec68cd0edaba5f:cdabce6de1936a41ad51ad4430e78544$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pokeball_reject.png" width="104" height="104">
+    <sprite n="pokeball_reject_00000" x="0" y="92" w="12" h="12" pX="0.5" pY="0.5" oX="50" oY="72" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00001" x="48" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="52" oY="71" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00002" x="72" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="54" oY="67" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00003" x="24" y="76" w="12" h="12" pX="0.5" pY="0.5" oX="56" oY="63" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00004" x="12" y="92" w="12" h="12" pX="0.5" pY="0.5" oX="58" oY="59" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00005" x="48" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="60" oY="55" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00006" x="60" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="62" oY="51" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00007" x="72" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="64" oY="48" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00008" x="84" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="65" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00009" x="24" y="88" w="12" h="12" pX="0.5" pY="0.5" oX="67" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00010" x="36" y="76" w="12" h="12" pX="0.5" pY="0.5" oX="69" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00011" x="48" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="71" oY="35" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00012" x="60" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="73" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00013" x="72" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="75" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00014" x="84" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="77" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00015" x="36" y="88" w="12" h="12" pX="0.5" pY="0.5" oX="79" oY="26" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00016" x="48" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="82" oY="25" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00017" x="60" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="84" oY="23" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00018" x="72" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="86" oY="23" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00019" x="84" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="88" oY="22" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00020" x="48" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="90" oY="22" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00021" x="0" y="68" w="24" h="24" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00022" x="24" y="28" w="24" h="24" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00023" x="48" y="0" w="24" h="24" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00024" x="24" y="52" w="24" h="24" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00025" x="24" y="0" w="24" h="28" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00026" x="0" y="36" w="24" h="32" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00027" x="0" y="0" w="24" h="36" pX="0.5" pY="0.5" oX="92" oY="12" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00028" x="60" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="91" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00029" x="72" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="89" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00030" x="84" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="87" oY="48" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00031" x="48" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="85" oY="52" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00032" x="60" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="82" oY="56" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00033" x="72" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="80" oY="60" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00034" x="84" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="78" oY="64" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00035" x="60" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="76" oY="68" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00036" x="72" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="74" oY="72" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00037" x="84" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="72" oY="76" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00038" x="72" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="70" oY="80" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00039" x="84" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="68" oY="84" oW="160" oH="144"/>
+    <sprite n="pokeball_reject_00040" x="84" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="67" oY="84" oW="160" oH="144"/>
+</TextureAtlas>

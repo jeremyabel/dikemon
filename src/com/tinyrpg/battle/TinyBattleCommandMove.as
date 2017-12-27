@@ -8,6 +8,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
+	import com.tinyrpg.media.sfx.battlefx.SFXKnockout;
 	import com.tinyrpg.misc.TinyStatusFXConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -618,6 +619,7 @@ package com.tinyrpg.battle
 			TinyLogManager.log('playMonFaint', this);
 			 
 			this.eventSequence.addDelay( 0.2 );
+			this.eventSequence.addPlaySound( new SFXKnockout() );
 			this.eventSequence.addFaintMon( targetMonContainer );
 			this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.FAINTED, faintedMon ) );
 			this.eventSequence.addDelay( 0.2 );

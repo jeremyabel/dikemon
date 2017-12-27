@@ -10,6 +10,7 @@ package com.tinyrpg.display
 	import com.greensock.easing.Linear;
 	
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.display.status.icons.*;
 	import com.tinyrpg.display.PlayerStatsContainer;
 	import com.tinyrpg.display.EnemyStatsContainer;
 	import com.tinyrpg.managers.TinyFontManager;
@@ -32,6 +33,8 @@ package com.tinyrpg.display
 		private var hpBarDisplay : TinyHPBarDisplay;
 		private var expBarSprite : Sprite;
 		private var initialMonLevel : int;
+		private var statusIconContainer : Sprite;
+		private var statusIconBitmap : Bitmap = null;
 		
 		public var displayedCurrentHP : Number = 0;
 		
@@ -81,6 +84,10 @@ package com.tinyrpg.display
 			this.expBarSprite.y = this.statsContainer.y + 16;
 			this.expBarSprite.visible = !this.isEnemy;
 			
+			this.statusIconContainer = new Sprite();
+			this.statusIconContainer.x = this.isEnemy ? this.hpBarDisplay.x + this.hpBarDisplay.width + 6 : 1;
+			this.statusIconContainer.y = this.hpBarDisplay.y - 2;
+			
 			// Add 'em up
 			this.addChild( this.statsContainer );
 			this.addChild( this.nameField );
@@ -88,6 +95,7 @@ package com.tinyrpg.display
 			this.addChild( this.hpField );
 			this.addChild( this.hpBarDisplay );
 			this.addChild( this.expBarSprite );
+			this.addChild( this.statusIconContainer );
 		}
 		
 		public function get palette() : TinyFourColorPalette
@@ -119,6 +127,9 @@ package com.tinyrpg.display
 			
 			// Set hp and exp bar lengths
 			this.hpBarDisplay.setRatio( this.mon.currentHP / this.mon.maxHP );
+			
+			// Update the status icon
+			this.updateStatusIcon();
 		}
 
 		public function show() : void
@@ -145,6 +156,8 @@ package com.tinyrpg.display
 		{
 			TinyLogManager.log("update HP: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
 			
+			this.updateStatusIcon();
+			
 			if ( this.displayedCurrentHP != this.mon.currentHP )
 			{
 				var tweenTime : Number = highSpeed ? 0.5 : 1.0;
@@ -153,6 +166,30 @@ package com.tinyrpg.display
 			else
 			{
 				this.onUpdateHPComplete();
+			}
+		}
+		
+		public function updateStatusIcon() : void
+		{
+			TinyLogManager.log("update Status: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
+			
+			// Remove previous icon bitmap, if there is one
+			if ( this.statusIconBitmap )
+			{
+				this.statusIconContainer.removeChild( this.statusIconBitmap );
+				this.statusIconBitmap = null;
+			}
+			
+			// Add new icon, if required
+			if ( !this.mon.isRegularStatus )
+			{
+				if ( this.mon.isBurned ) 	this.statusIconBitmap = new Bitmap( new IconBurn() );
+				if ( this.mon.isConfused ) 	this.statusIconBitmap = new Bitmap( new IconConfusion() );
+				if ( this.mon.isSleeping ) 	this.statusIconBitmap = new Bitmap( new IconSleep() );
+				if ( this.mon.isParaylzed ) this.statusIconBitmap = new Bitmap( new IconParalysis() );
+				if ( this.mon.isPoisoned ) 	this.statusIconBitmap = new Bitmap( new IconPoison() ); 
+				
+				this.statusIconContainer.addChild( this.statusIconBitmap );
 			}
 		}
 		

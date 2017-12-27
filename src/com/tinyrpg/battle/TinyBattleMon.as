@@ -408,6 +408,7 @@ package com.tinyrpg.battle
 					
 					// Pass control to the item selector
 					m_itemSelectorList.show();
+					m_itemSelectorList.setCurrentMon( m_currentPlayerMon );
 					TinyInputManager.getInstance().setTarget( m_itemSelectorList );
 					
 					m_itemSelectorList.addEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
@@ -504,14 +505,14 @@ package com.tinyrpg.battle
 			m_itemSelectorList.hide();
 			
 			// Hide the battle command menu
-//			m_battleCommandMenu.hide();
+			m_battleCommandMenu.hide();
 			
 			// Clean up
 			m_itemSelectorList.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
 			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 			
 			// Set player's battle command	
-//			this.battleCommandRunner.commandSelected( new TinyBattleCommandSwitch( this, TinyBattleCommand.USER_PLAYER, event.mon, this.isForcedSwitch ) );
+			this.battleCommandRunner.commandSelected( new TinyBattleCommandItem( this, event.item ) );
 		}
 		
 		private function onItemCancelled( event : TinyInputEvent ) : void

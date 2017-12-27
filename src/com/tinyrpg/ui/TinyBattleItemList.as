@@ -1,8 +1,10 @@
 package com.tinyrpg.ui 
 {
+	import flash.media.Sound;
 	import flash.text.TextField;
 	
 	import com.tinyrpg.core.TinyItem;
+	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinyContentBox;
@@ -11,7 +13,11 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinySelectableItemItem;
 	import com.tinyrpg.events.TinyBattleMonEvent;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.managers.TinyFontManager;
+	import com.tinyrpg.media.sfx.SFXNope;
+	import com.tinyrpg.media.sfx.SoundErrorBuzz;
+	import com.tinyrpg.misc.TinyItemUseResult;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -22,6 +28,7 @@ package com.tinyrpg.ui
 		private var trainer : TinyTrainer;
 		private var descriptionTextField : TextField;
 		private var descriptionBox : TinyContentBox;
+		private var m_currentMon : TinyMon;
 		
 		private static const CANCEL_OPTION : String = 'CANCEL';
 		
@@ -59,6 +66,12 @@ package com.tinyrpg.ui
 			
 			// Add 'em up
 			this.addChild( this.descriptionBox );
+		}
+		
+		public function setCurrentMon( mon : TinyMon ) : void
+		{
+			TinyLogManager.log('setCurrentMon: ' + mon.name, this );
+			this.m_currentMon = mon;
 		}
 
 		public function removeItem( targetItem : TinyItem ) : void
@@ -171,7 +184,20 @@ package com.tinyrpg.ui
 				}
 				else
 				{
-					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ) ) );
+					var item : TinyItem = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString );
+					
+					// Check if the item can be used in the current battle on the current mon
+					var canUseResult : TinyItemUseResult = item.checkCanUse( TinyItem.ITEM_CONTEXT_BATTLE, m_currentMon );
+					
+					// If the item cannot be used, show the error string and exit
+					if ( !canUseResult.canUse ) 
+					{
+						TinyAudioManager.play( new SoundErrorBuzz() as Sound );
+						this.setDescriptionText( canUseResult.errorString );
+						return;
+					}
+						
+					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, item ) );
 				}
 			}
 		}

@@ -156,6 +156,9 @@ package com.tinyrpg.battle
 				case TinyEventItem.PLAY_STATUS_ANIM:
 					this.doPlayStatusAnim( nextEvent.thingToDo as TinyStatusFXAnimation );
 					break;
+				case TinyEventItem.PLAYER_HEAL:
+					this.doPlayerHeal( nextEvent.thingToDo as TinyMonContainer );
+					break;
 				case TinyEventItem.PLAYER_ATTACK:
 					this.doPlayerAttack( nextEvent.thingToDo as TinyMonContainer );
 					break;
@@ -323,6 +326,17 @@ package com.tinyrpg.battle
 			
 			// Add to sequence
 			this.m_eventSequence.push( newEventItem );	
+		}
+		
+		public function addPlayerHeal( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('addPlayerHeal', this);	
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.PLAYER_HEAL, targetMonContainer );
+			
+			// Add to sequence
+			m_eventSequence.push( newEventItem );
 		}
 
 		public function addPlayerAttack( targetMonContainer : TinyMonContainer ) : void
@@ -713,6 +727,27 @@ package com.tinyrpg.battle
 			
 			// Next!
 			this.doNextCommand();	
+		}
+		
+		private function doPlayerHeal( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('doPlayerHeal', this);
+			
+			this.currentMonContainer = targetMonContainer;
+			this.currentMonContainer.addEventListener( Event.COMPLETE, this.onPlayerHealComplete );
+			this.currentMonContainer.playPlayerHeal();
+		}
+		
+		private function onPlayerHealComplete( event : Event = null ) : void
+		{
+			TinyLogManager.log('onPlayerHealComplete', this);
+			
+			// Clean up
+			this.currentMonContainer.removeEventListener( Event.COMPLETE, this.onPlayerHealComplete );
+			this.currentMonContainer = null;
+			
+			// Next!
+			this.doNextCommand();
 		}
 		
 		private function doPlayerAttack( targetMonContainer : TinyMonContainer ) : void

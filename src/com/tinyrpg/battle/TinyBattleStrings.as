@@ -38,6 +38,7 @@ package com.tinyrpg.battle
 		public static const POISONED			: String = 'MON got real sick from that one!';
 		public static const ALREDY_POISONED		: String = 'MON is already pretty sick!';
 		public static const POISON_HURT			: String = 'MON just barfed all over the place![delay 4] Gross!';
+		public static const POISON_HEAL			: String = 'MON feels better! Barf Fix: it works every time!';
 		
 		// Sleep status strings
 		public static const FELL_ASLEEP 		: String = 'MON fell asleep!';
@@ -45,6 +46,7 @@ package com.tinyrpg.battle
 		public static const ALREADY_ASLEEP 		: String = 'MON is already asleep!';
 		public static const FAST_ASLEEP			: String = 'MON is fast asleep.';
 		public static const WOKE_UP				: String = 'MON woke up!';
+		public static const WOKE_UP_ITEM		: String = 'The Big Noise Box woke MON up!';
 		
 		// Drunk status strings
 		public static const IS_DRUNK			: String = 'MON is drunk!';
@@ -58,6 +60,7 @@ package com.tinyrpg.battle
 		public static const WAS_BURNED			: String = 'MON is on fire![delay 4] Ouch!';
 		public static const BURN_HURT			: String = 'MON is hurt by the fire![delay 4] It burns!';
 		public static const ALREADY_BURNED		: String = 'MON is already on fire![delay 4] Quit it!';
+		public static const BURN_HEAL			: String = 'MON cooled off by rubbing the Cool Jelly all over!';
 		
 		// Paralyized status strings
 		public static const IS_PARALYZED_1		: String = 'MON is all sticky![delay 4] It may be unable to move!';
@@ -117,9 +120,9 @@ package com.tinyrpg.battle
 		
 		// Wild mon strings
 		public static const WILD_MON_APPEARD_1 	: String = 'A wild MON appeared! Neat!';
-		public static const WILD_MON_APPEARD_2 	: String = 'Dang, wild MON appeared!';
-		public static const WILD_MON_APPEARD_3 	: String = 'Whoa, a wild MON appeared!';
-		public static const WILD_MON_APPEARD_4 	: String = 'Aw jeez, a wild MON appeared!';
+		public static const WILD_MON_APPEARD_2 	: String = 'Aw peas, wild MON appeared!';
+		public static const WILD_MON_APPEARD_3 	: String = 'Aw beans, a wild MON appeared!';
+		public static const WILD_MON_APPEARD_4 	: String = 'Shit! A wild MON appeared!';
 		
 		// Summon mon strings
 		public static const TRAINER_SENT_OUT_1 	: String = 'TRAINER sent out MON!';
@@ -156,6 +159,17 @@ package com.tinyrpg.battle
 		public static const DELETED_MOVE		: String = 'MON forgot MOVE.';
 		public static const STOP_LEARNING	 	: String = 'Stop learning MOVE?';
 		public static const DID_NOT_LEARN		: String = 'MON did not learn MOVE.';
+		
+		// Item usage strings
+		public static const CANT_USE_ITEM		: String = 'Hey, you can\'t use this during battle!';
+	 	public static const CANT_USE_BALL		: String = 'Hey, you can only touch your balls during a battle!';
+	 	public static const CANT_USE_DEAD		: String = 'This guy is way too dead for that to work...';
+	 	public static const CANT_USE_MAX_HP		: String = 'Buddy, this guy is pretty healthy already...';
+	 	public static const CANT_USE_MAX_PP		: String = 'Does that move look like it needs more PP?!';
+	 	public static const CANT_USE_POISON		: String = 'It\'s been at least a few hours since this guy barfed...';
+	 	public static const CANT_USE_BURN		: String = 'This guy is already cool as a cucumber!';
+	 	public static const CANT_USE_SLEEP		: String = 'Pretty sure this guy\'s already awake...';
+	 	public static const CANT_USE_PARALYSIS	: String = 'This guy\'s not very sticky!';
 		
 		// Misc other battle strings
 		public static const EXPLOSION_FAINT		: String = 'MON fainted from the explosion!';

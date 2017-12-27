@@ -1,8 +1,10 @@
 package com.tinyrpg.display 
 {
 	import flash.display.Bitmap;
+	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.geom.Rectangle;
 
 	import com.greensock.TweenLite;
 	import com.greensock.TweenMax;
@@ -21,6 +23,7 @@ package com.tinyrpg.display
 	public class TinyMonContainer extends Sprite implements IShowHideObject
 	{
 		public var monBitmap : Bitmap;
+		public var monScaleBitmap : Bitmap;
 		public var palette : TinyFourColorPalette;
 		
 		private var monMask : Sprite;
@@ -54,6 +57,13 @@ package com.tinyrpg.display
 			this.monBitmap.x = this.rightFacing ? 28 : -28;
 			this.monBitmap.y = -28; 
 			
+			this.monScaleBitmap = new Bitmap( new BitmapData( 56, 56, false ) );
+			this.monScaleBitmap.cacheAsBitmap = true;
+			this.monScaleBitmap.visible = false;
+			this.monScaleBitmap.scaleX = this.rightFacing ? -1 : 1;
+			this.monScaleBitmap.x = this.rightFacing ? 28 : -28;
+			this.monScaleBitmap.y = -28;
+			
 			// Make mon mask
 			this.monMask = new Sprite();
 			this.monMask.graphics.beginFill( 0x0000FF );
@@ -66,6 +76,7 @@ package com.tinyrpg.display
 			
 			// Add 'em up
 			this.m_monCenterSprite.addChild( this.monBitmap );
+			this.m_monCenterSprite.addChild( this.monScaleBitmap );
 			this.addChild( this.monMask );
 			this.addChild( this.m_monCenterSprite );
 			this.addChild( this.m_summonPoof );
@@ -146,14 +157,31 @@ package com.tinyrpg.display
 			TweenLite.delayedCall( m_summonPoof.length, this.onSummonPoofComplete, null, true );
 		}
 		
+		private function drawGridSegment( indexIn : int, indexOut : int, from : BitmapData, to : BitmapData ) : void 
+		{
+
+		}
+		
 		private function scaleInMon() : void
 		{
 			this.monBitmap.visible = true;
+//			this.monScaleBitmap.visible = true;
+			
+			// Clear the scale bitmap
+//			this.monScaleBitmap.bitmapData.fillRect( new Rectangle( 0, 0, 56, 56 ), 0xFFFFFFFF );
 			
 			this.m_monCenterSprite.scaleX = 
 			this.m_monCenterSprite.scaleY = 0.5;
 			
 			TweenLite.to( this.m_monCenterSprite, 0.3, { scaleX: 1.0, scaleY: 1.0 });
+		}
+		
+		private function onScaleInComplete() : void
+		{
+			TinyLogManager.log('onScaleInComplete', this);
+			
+			this.monBitmap.visible = true;
+			this.monScaleBitmap.visible = false;
 		}
 		
 		public function scaleOutMon() : void
@@ -199,6 +227,18 @@ package com.tinyrpg.display
 		private function onEnemyAttackComplete( event : Event = null ) : void
 		{
 			TinyLogManager.log('onEnemyAttackComplete', this);
+			this.dispatchEvent( new Event(Event.COMPLETE) );
+		}
+		
+		public function playPlayerHeal() : void
+		{
+			TinyLogManager.log( 'playPlayerHeal', this );
+			TweenMax.to( this, 0.12, { y: "-5", ease: Cubic.easeIn, roundProps:['y'], yoyo: true, repeat: 5, onComplete: this.onPlayerHealComplete } );
+		}
+		
+		private function onPlayerHealComplete() : void
+		{
+			TinyLogManager.log( 'onPlayerHealComplete', this );
 			this.dispatchEvent( new Event(Event.COMPLETE) );
 		}
 		

@@ -69,6 +69,20 @@ package com.tinyrpg.battle
 					break;
 				}
 				
+				case TinyBattleCommand.COMMAND_ITEM:
+				{
+					TinyLogManager.log('commandSelected: ITEM', this);
+					
+					// Clear the commands array
+					this.commands = [];
+					this.firstMoveCommand = null;
+					this.secondMoveCommand = null;
+					
+					var itemCommand : TinyBattleCommandItem = command as TinyBattleCommandItem;
+					this.playerCommand = itemCommand;
+					break;
+				}
+				
 				case TinyBattleCommand.COMMAND_RUN:
 				{
 					TinyLogManager.log('commandSelected: RUN', this);
@@ -177,6 +191,16 @@ package com.tinyrpg.battle
 						}
 					}
 					
+					break;
+				}
+				
+				// Player Command = ITEM	
+				case TinyBattleCommand.COMMAND_ITEM:
+				{
+					// Player Command = ITEM: Player item use goes first, then enemy goes
+					TinyLogManager.log('commandSelected: Player = ITEM. Player goes first.', this);
+					this.commands.push( this.playerCommand );
+					this.commands.push( this.enemyCommand );
 					break;
 				}
 				
