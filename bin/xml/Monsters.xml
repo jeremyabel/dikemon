@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MOVES>
-  <MOVE>
+<MONS>
+  <MON>
     <HUMAN>Gagnon</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Machamp</ORIG_NAME>
@@ -34,8 +34,8 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Maruska</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Houndoom</ORIG_NAME>
@@ -68,8 +68,8 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>2</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Alex</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Ludicolo</ORIG_NAME>
@@ -100,8 +100,8 @@ Fruity Drink</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>3</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Bill</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Blaziken</ORIG_NAME>
@@ -141,8 +141,8 @@ Black Lotus</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Brenton</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Metagross</ORIG_NAME>
@@ -178,8 +178,8 @@ Black Lotus</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Chris</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Jolteon</ORIG_NAME>
@@ -214,8 +214,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Dave</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Swampert</ORIG_NAME>
@@ -250,8 +250,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Stark</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Forretress</ORIG_NAME>
@@ -284,8 +284,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Jason</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Flygon</ORIG_NAME>
@@ -320,8 +320,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Kristi</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Gengar</ORIG_NAME>
@@ -354,8 +354,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>3</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Clegg</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Clamperl</ORIG_NAME>
@@ -387,8 +387,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Ziggy</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Milotic</ORIG_NAME>
@@ -423,8 +423,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>2</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Nash</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Jirachi</ORIG_NAME>
@@ -457,8 +457,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Ralph</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Sceptile</ORIG_NAME>
@@ -495,8 +495,8 @@ Prescription?</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>3</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Ron</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Ursaring</ORIG_NAME>
@@ -533,8 +533,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Quinn</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Aerodactyl</ORIG_NAME>
@@ -567,8 +567,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>2</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Yulia</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Kingdra</ORIG_NAME>
@@ -604,8 +604,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>1</YIELD_SP_ATK>
     <YIELD_SP_DEF>1</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Mercy</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Celebi</ORIG_NAME>
@@ -636,8 +636,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Evan A.</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Mew</ORIG_NAME>
@@ -668,8 +668,8 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>0</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
+  </MON>
+  <MON>
     <HUMAN>Abel</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Latios</ORIG_NAME>
@@ -702,221 +702,248 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_ATK>3</YIELD_SP_ATK>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME></ORIG_NAME>
-    <STYLE></STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1></TYPE_1>
-    <TYPE_2></TYPE_2>
-    <MOVES></MOVES>
-    <HP></HP>
-    <ATK></ATK>
-    <DEF></DEF>
-    <SP_ATK></SP_ATK>
-    <SP_DEF></SP_DEF>
-    <SPD></SPD>
-    <EXP></EXP>
-    <LV_RATE></LV_RATE>
-    <CATCH_RATE></CATCH_RATE>
-    <WEIGHT></WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME></ORIG_NAME>
-    <STYLE></STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1></TYPE_1>
-    <TYPE_2></TYPE_2>
-    <MOVES></MOVES>
-    <HP></HP>
-    <ATK></ATK>
-    <DEF></DEF>
-    <SP_ATK></SP_ATK>
-    <SP_DEF></SP_DEF>
-    <SPD></SPD>
-    <EXP></EXP>
-    <LV_RATE></LV_RATE>
-    <CATCH_RATE></CATCH_RATE>
-    <WEIGHT></WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Dusclops</ORIG_NAME>
-    <STYLE>Beckon</STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1>Ghost</TYPE_1>
-    <TYPE_2>Ghost</TYPE_2>
-    <MOVES></MOVES>
-    <HP>40</HP>
-    <ATK>70</ATK>
-    <DEF>130</DEF>
-    <SP_ATK>60</SP_ATK>
-    <SP_DEF>130</SP_DEF>
-    <SPD>25</SPD>
-    <EXP>179</EXP>
-    <LV_RATE>F</LV_RATE>
-    <CATCH_RATE>90</CATCH_RATE>
-    <WEIGHT>30.6</WEIGHT>
-    <YIELD_HP>0</YIELD_HP>
-    <YIELD_ATK>0</YIELD_ATK>
-    <YIELD_DEF>1</YIELD_DEF>
-    <YIELD_SP_ATK>0</YIELD_SP_ATK>
-    <YIELD_SP_DEF>1</YIELD_SP_DEF>
-    <YIELD_SPD>0</YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Swellow</ORIG_NAME>
-    <STYLE>Swallow</STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1>Normal</TYPE_1>
-    <TYPE_2>Flying</TYPE_2>
-    <MOVES></MOVES>
-    <HP>60</HP>
-    <ATK>85</ATK>
-    <DEF>60</DEF>
-    <SP_ATK>50</SP_ATK>
-    <SP_DEF>50</SP_DEF>
-    <SPD>125</SPD>
-    <EXP>162</EXP>
-    <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>45</CATCH_RATE>
-    <WEIGHT>19.8</WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Salamence</ORIG_NAME>
-    <STYLE>Dragon</STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1>Dragon</TYPE_1>
-    <TYPE_2>Flying</TYPE_2>
-    <MOVES></MOVES>
-    <HP>95</HP>
-    <ATK>135</ATK>
-    <DEF>80</DEF>
-    <SP_ATK>110</SP_ATK>
-    <SP_DEF>80</SP_DEF>
-    <SPD>100</SPD>
-    <EXP>218</EXP>
-    <LV_RATE>S</LV_RATE>
-    <CATCH_RATE>45</CATCH_RATE>
-    <WEIGHT>102.6</WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Snorlax</ORIG_NAME>
-    <STYLE>Sleeping</STYLE>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Box</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Cardboard</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES></MOVES>
-    <HP>160</HP>
-    <ATK>110</ATK>
-    <DEF>65</DEF>
-    <SP_ATK>65</SP_ATK>
-    <SP_DEF>110</SP_DEF>
-    <SPD>30</SPD>
-    <EXP>154</EXP>
-    <LV_RATE>S</LV_RATE>
-    <CATCH_RATE>25</CATCH_RATE>
-    <WEIGHT>460</WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Vaporeon</ORIG_NAME>
-    <STYLE>Bubble Jet</STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1>Water</TYPE_1>
-    <TYPE_2>Water</TYPE_2>
-    <MOVES></MOVES>
-    <HP>130</HP>
-    <ATK>65</ATK>
-    <DEF>60</DEF>
-    <SP_ATK>110</SP_ATK>
-    <SP_DEF>95</SP_DEF>
-    <SPD>65</SPD>
-    <EXP>196</EXP>
-    <LV_RATE>MF</LV_RATE>
-    <CATCH_RATE>45</CATCH_RATE>
-    <WEIGHT>29</WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-  <MOVE>
-    <HUMAN></HUMAN>
-    <NAME></NAME>
-    <ORIG_NAME>Alakazam</ORIG_NAME>
-    <STYLE>Psi</STYLE>
-    <RIVAL></RIVAL>
-    <DEX_ENTRY></DEX_ENTRY>
-    <TYPE_1>Psychic</TYPE_1>
-    <TYPE_2>Psychic</TYPE_2>
-    <MOVES></MOVES>
-    <HP>55</HP>
-    <ATK>50</ATK>
-    <DEF>45</DEF>
-    <SP_ATK>135</SP_ATK>
-    <SP_DEF>85</SP_DEF>
-    <SPD>120</SPD>
-    <EXP>186</EXP>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>50</CATCH_RATE>
-    <WEIGHT>48</WEIGHT>
-    <YIELD_HP></YIELD_HP>
-    <YIELD_ATK></YIELD_ATK>
-    <YIELD_DEF></YIELD_DEF>
-    <YIELD_SP_ATK></YIELD_SP_ATK>
-    <YIELD_SP_DEF></YIELD_SP_DEF>
-    <YIELD_SPD></YIELD_SPD>
-  </MOVE>
-</MOVES>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Bucket</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Leaky</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Shorts Kid</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Comfy</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Egg</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Scrambled?</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Shoe</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Left</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Tall Grass</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Mowable</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Computer</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>Broken?</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Ace Of Spades</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>???</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+  <MON>
+    <HUMAN>N/A</HUMAN>
+    <NAME>Four Of Clubs</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>???</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>60</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
+</MONS>

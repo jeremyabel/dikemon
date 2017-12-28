@@ -88,7 +88,7 @@ package com.tinyrpg.core
 		
 		public function initFromXML(xmlData : XML) : void
 		{
-			m_name 		 = xmlData.child('ORIG_NAME');
+			m_name 		 = xmlData.child('NAME');
 			m_style 	 = xmlData.child('STYLE');
 			m_dexEntry	 = xmlData.child('DEX_ENTRY');
 			m_type1 	 = TinyType.getTypeFromString(xmlData.child('TYPE_1'));

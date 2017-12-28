@@ -170,13 +170,13 @@ package com.tinyrpg.battle
 			m_playerTrainerContainer = new Sprite();
 			
 			// Player mon container
-			m_playerMonContainer = new TinyMonContainer( m_currentPlayerMon.bitmap );
+			m_playerMonContainer = new TinyMonContainer( m_currentPlayerMon.bitmap, true );
 			
 			// Enemy trainer container
 			m_enemyTrainerContainer = new Sprite();
 			
 			// Enemy mon container
-			m_enemyMonContainer = new TinyMonContainer( m_currentEnemyMon.bitmap );
+			m_enemyMonContainer = new TinyMonContainer( m_currentEnemyMon.bitmap, false );
 			
 			// Fill enemy container
 			this.enemyContainer = new Sprite;
