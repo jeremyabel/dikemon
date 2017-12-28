@@ -109,6 +109,7 @@ package com.tinyrpg.battle
 			 * 	- player faint: force player switch -> player turn
 			 *  - both faint: enemy switch -> force player switch -> player turn
 			 */
+			 
 			
 			// Get enemy command
 			// TODO: Trainer AI

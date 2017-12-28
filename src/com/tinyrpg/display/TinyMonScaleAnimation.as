@@ -8,12 +8,16 @@ package com.tinyrpg.display
 	import flash.geom.Rectangle;
 	
 	import com.tinyrpg.utils.TinyLogManager;
-
+	
+		
 	/**
 	 * @author jeremyabel
 	 */
 	public class TinyMonScaleAnimation
 	{
+		private static const MON_SIZE : int = 56;
+		private static const BORDER_SIZE : int = 4;
+		
 		public static function drawScale1( srcBitmap : Bitmap, destBitmap : Bitmap ) : void 
 		{
 			clearBitmap( destBitmap );
@@ -60,37 +64,37 @@ package com.tinyrpg.display
 			var destY : int = 8 * Math.floor( ( destIndex - 1 ) / 6 );
 			
 			// Compensate for border
-			srcX += 4;
-			srcY += 4;
-			destX += 4;
-			destY += 4;
+			srcX += BORDER_SIZE;
+			srcY += BORDER_SIZE;
+			destX += BORDER_SIZE;
+			destY += BORDER_SIZE;
 	
 			// Adjust top border
 			if ( isTopBorder( srcIndex ) )
 			{
-				srcY -= 4;
-				srcH += 4;
-				destY -= 4;
+				srcY -= BORDER_SIZE;
+				srcH += BORDER_SIZE;
+				destY -= BORDER_SIZE;
 			}
 			
 			// Adjust bottom border
 			if ( isBottomBorder( srcIndex ) )
 			{	
-				srcH +=4;
+				srcH += BORDER_SIZE;
 			}
 			
 			// Adjust left border
 			if ( isLeftBorder( srcIndex ) )
 			{
-				srcX -= 4;
-				srcW += 4;
-				destX -= 4;
+				srcX -= BORDER_SIZE;
+				srcW += BORDER_SIZE;
+				destX -= BORDER_SIZE;
 			}
 			
 			// Adjust right border
 			if ( isRightBorder( srcIndex ) )
 			{
-				srcW += 4;
+				srcW += BORDER_SIZE;
 			}
 	
 			// Copy grid segment to destination the bitmap				
@@ -125,7 +129,7 @@ package com.tinyrpg.display
 		
 		private static function clearBitmap( bitmap : Bitmap ) : void
 		{
-			var clearRect = new Rectangle( 0, 0, 56, 56 );
+			var clearRect = new Rectangle( 0, 0, MON_SIZE, MON_SIZE );
 			bitmap.bitmapData.fillRect( clearRect, 0xFFFFFFFF );
 		}
 	}

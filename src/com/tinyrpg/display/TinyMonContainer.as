@@ -32,6 +32,9 @@ package com.tinyrpg.display
 		private var m_monCenterSprite : Sprite;
 		private var m_summonPoof : TinySpriteSheet; 
 		
+		private const MON_SIZE : int = 56;
+		private const HALF_MON_SIZE : int = 28;
+		
 		public function TinyMonContainer( bitmap : Bitmap, rightFacing : Boolean = false )
 		{			
 			this.rightFacing = rightFacing;
@@ -43,11 +46,11 @@ package com.tinyrpg.display
 			this.m_summonPoof = new TinySpriteSheet( new SummonPoofSheet(), 48, false, 3 );
 			this.m_summonPoof.visible = false;
 			this.m_summonPoof.x = 
-			this.m_summonPoof.y = 28;
+			this.m_summonPoof.y = HALF_MON_SIZE;
 			
 			this.m_monCenterSprite = new Sprite();
-			this.m_monCenterSprite.x = 28; 
-			this.m_monCenterSprite.y = 28;
+			this.m_monCenterSprite.x = HALF_MON_SIZE; 
+			this.m_monCenterSprite.y = HALF_MON_SIZE;
 			this.m_monCenterSprite.cacheAsBitmap = true;
 			
 			// Make mon bitmap
@@ -55,20 +58,20 @@ package com.tinyrpg.display
 			this.monBitmap.cacheAsBitmap = true;
 			this.monBitmap.visible = false;
 			this.monBitmap.scaleX = this.rightFacing ? -1 : 1;
-			this.monBitmap.x = this.rightFacing ? 28 : -28;
-			this.monBitmap.y = -28; 
+			this.monBitmap.x = this.rightFacing ? HALF_MON_SIZE : -HALF_MON_SIZE;
+			this.monBitmap.y = -HALF_MON_SIZE; 
 			
-			this.monScaleBitmap = new Bitmap( new BitmapData( 56, 56, false ) );
+			this.monScaleBitmap = new Bitmap( new BitmapData( MON_SIZE, MON_SIZE, false ) );
 			this.monScaleBitmap.cacheAsBitmap = true;
 			this.monScaleBitmap.visible = false;
 			this.monScaleBitmap.scaleX = this.rightFacing ? -1 : 1;
-			this.monScaleBitmap.x = this.rightFacing ? 28 : -28;
-			this.monScaleBitmap.y = -28;
+			this.monScaleBitmap.x = this.rightFacing ? HALF_MON_SIZE : -HALF_MON_SIZE;
+			this.monScaleBitmap.y = -HALF_MON_SIZE;
 			
 			// Make mon mask
 			this.monMask = new Sprite();
 			this.monMask.graphics.beginFill( 0x0000FF );
-			this.monMask.graphics.drawRect( 0, 0, 56, 56 );
+			this.monMask.graphics.drawRect( 0, 0, MON_SIZE, MON_SIZE );
 			this.monMask.graphics.endFill();
 			this.monMask.cacheAsBitmap = true;
 			
@@ -105,14 +108,14 @@ package com.tinyrpg.display
 				this.m_monCenterSprite.removeChild( this.monBitmap );
 			}
 			
-			this.m_monCenterSprite.y = 28;
+			this.m_monCenterSprite.y = HALF_MON_SIZE;
 			
 			this.monBitmap = new Bitmap( bitmap.bitmapData.clone() );
 			this.monBitmap.cacheAsBitmap = true;
 			this.monBitmap.visible = false;
 			this.monBitmap.scaleX = this.rightFacing ? -1 : 1;
-			this.monBitmap.x = this.rightFacing ? 28 : -28;
-			this.monBitmap.y = -28;
+			this.monBitmap.x = this.rightFacing ? HALF_MON_SIZE : -HALF_MON_SIZE;
+			this.monBitmap.y = -HALF_MON_SIZE;
 			
 			// Get palette colors
 			for ( var y : int = 0; y < this.monBitmap.height; y++ )
@@ -166,13 +169,8 @@ package com.tinyrpg.display
 			
 			TinyMonScaleAnimation.drawScale1( this.monBitmap, this.monScaleBitmap );
 				
-			TweenLite.delayedCall( 0.1, TinyMonScaleAnimation.drawScale2, [ this.monBitmap, this.monScaleBitmap ] );
-			TweenLite.delayedCall( 0.2, this.onScaleInComplete );
-			
-//			this.m_monCenterSprite.scaleX = 
-//			this.m_monCenterSprite.scaleY = 0.5;
-			
-//			TweenLite.to( this.m_monCenterSprite, 0.3, { scaleX: 1.0, scaleY: 1.0 });
+			TweenLite.delayedCall( 0.10, TinyMonScaleAnimation.drawScale2, [ this.monBitmap, this.monScaleBitmap ] );
+			TweenLite.delayedCall( 0.15, this.onScaleInComplete );
 		}
 		
 		private function onScaleInComplete() : void
@@ -185,7 +183,13 @@ package com.tinyrpg.display
 		
 		public function scaleOutMon() : void
 		{
-			TweenLite.to( m_monCenterSprite, 0.3, { scaleX: 0.5, scaleY: 0.5, onComplete: this.onScaleOutComplete });
+			this.monBitmap.visible = false;
+			this.monScaleBitmap.visible = true;
+			
+			TinyMonScaleAnimation.drawScale2( this.monBitmap, this.monScaleBitmap );
+				
+			TweenLite.delayedCall( 0.10, TinyMonScaleAnimation.drawScale1, [ this.monBitmap, this.monScaleBitmap ] );
+			TweenLite.delayedCall( 0.20, this.onScaleOutComplete );
 		}
 		
 		private function onScaleOutComplete( event : Event = null ) : void
@@ -193,6 +197,7 @@ package com.tinyrpg.display
 			TinyLogManager.log('onScaleOutComplete', this);
 			
 			this.monBitmap.visible = false;
+			this.monScaleBitmap.visible = false;
 			
 			this.dispatchEvent( new Event( Event.COMPLETE ) );
 		}
@@ -208,7 +213,7 @@ package com.tinyrpg.display
 		public function playPlayerAttack() : void
 		{
 			TinyLogManager.log('playPlayerAttack', this);	
-			TweenMax.to( this.monBitmap, 0.12, { x: -28 + 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onPlayerAttackComplete } );
+			TweenMax.to( this.monBitmap, 0.12, { x: -HALF_MON_SIZE + 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onPlayerAttackComplete } );
 		}
 		
 		public function onPlayerAttackComplete( event : Event = null ) : void
@@ -220,7 +225,7 @@ package com.tinyrpg.display
 		public function playEnemyAttack() : void
 		{
 			TinyLogManager.log('playEnemyAttack', this);
-			TweenMax.to( this.monBitmap, 0.12, { x: -28 - 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onEnemyAttackComplete } );
+			TweenMax.to( this.monBitmap, 0.12, { x: -HALF_MON_SIZE - 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onEnemyAttackComplete } );
 		}
 		
 		private function onEnemyAttackComplete( event : Event = null ) : void
@@ -258,7 +263,7 @@ package com.tinyrpg.display
 		public function playFaint() : void
 		{
 			TinyLogManager.log('playFaint', this);
-			TweenLite.to( this.m_monCenterSprite, 0.3, { y: 28 + 56, ease: Cubic.easeIn, roundProps:['y'], onComplete: this.onPlayFaintComplete } );	
+			TweenLite.to( this.m_monCenterSprite, 0.3, { y: HALF_MON_SIZE + MON_SIZE, ease: Cubic.easeIn, roundProps:['y'], onComplete: this.onPlayFaintComplete } );	
 		}
 
 		public function onPlayFaintComplete() : void

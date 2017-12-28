@@ -83,6 +83,8 @@ package com.tinyrpg.battle
 					
 					// Show caught message
 					resultString = TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.m_currentEnemyMon );
+					
+					// TODO: end battle
 				}
 				else
 				{

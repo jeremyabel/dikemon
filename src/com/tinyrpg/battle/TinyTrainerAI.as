@@ -20,9 +20,10 @@ package com.tinyrpg.battle
 			}
 			
 			// Get move from weighted random choice using weirdo gen 1 chart
-			var randomChoice : int = TinyMath.weightedRandomChoice( [ 63 / 256, 64 / 256, 63 / 256, 66 / 256 ] );
 			while ( chosenMove == null )
 			{
+				var randomChoice : int = TinyMath.weightedRandomChoice( [ 63 / 256, 64 / 256, 63 / 256, 66 / 256 ] );
+				
 				switch ( randomChoice )
 				{
 					case 0: chosenMove = mon.moveSet.move1; break;
