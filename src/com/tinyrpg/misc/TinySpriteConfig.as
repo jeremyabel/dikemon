@@ -164,6 +164,9 @@ package com.tinyrpg.misc
 			
 			var newSprite : BitmapData;
 			
+//			newSprite = new ScaleTester;
+//			return newSprite;
+			
 			switch (name) 
 			{
 				case 'Box'				: newSprite = new Box; break;

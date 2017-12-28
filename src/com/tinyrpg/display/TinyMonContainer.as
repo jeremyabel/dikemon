@@ -13,6 +13,7 @@ package com.tinyrpg.display
 	
 	import com.tinyrpg.display.SummonPoofSheet;
 	import com.tinyrpg.display.TinySpriteSheet;
+	import com.tinyrpg.display.TinyMonScaleAnimation;
 	import com.tinyrpg.utils.TinyColor;
 	import com.tinyrpg.utils.TinyFourColorPalette;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -158,23 +159,20 @@ package com.tinyrpg.display
 			TweenLite.delayedCall( m_summonPoof.length, this.onSummonPoofComplete, null, true );
 		}
 		
-		private function drawGridSegment( indexIn : int, indexOut : int, from : BitmapData, to : BitmapData ) : void 
-		{
-
-		}
-		
 		private function scaleInMon() : void
 		{
-			this.monBitmap.visible = true;
-//			this.monScaleBitmap.visible = true;
+			this.monBitmap.visible = false;
+			this.monScaleBitmap.visible = true;
 			
-			// Clear the scale bitmap
-//			this.monScaleBitmap.bitmapData.fillRect( new Rectangle( 0, 0, 56, 56 ), 0xFFFFFFFF );
+			TinyMonScaleAnimation.drawScale1( this.monBitmap, this.monScaleBitmap );
+				
+			TweenLite.delayedCall( 0.1, TinyMonScaleAnimation.drawScale2, [ this.monBitmap, this.monScaleBitmap ] );
+			TweenLite.delayedCall( 0.2, this.onScaleInComplete );
 			
-			this.m_monCenterSprite.scaleX = 
-			this.m_monCenterSprite.scaleY = 0.5;
+//			this.m_monCenterSprite.scaleX = 
+//			this.m_monCenterSprite.scaleY = 0.5;
 			
-			TweenLite.to( this.m_monCenterSprite, 0.3, { scaleX: 1.0, scaleY: 1.0 });
+//			TweenLite.to( this.m_monCenterSprite, 0.3, { scaleX: 1.0, scaleY: 1.0 });
 		}
 		
 		private function onScaleInComplete() : void

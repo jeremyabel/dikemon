@@ -296,6 +296,8 @@ package com.tinyrpg.battle
 		
 		public static function getNumCaptureWobbles( targetMon : TinyMon, ballBonus : Number = 1.0 ) : int
 		{
+			TinyLogManager.log('getNumCaptureWobbles', TinyBattleMath);
+			
 			var M : int = targetMon.maxHP;
 			var H : int = targetMon.currentHP;
 			var C : int = targetMon.catchRate;
