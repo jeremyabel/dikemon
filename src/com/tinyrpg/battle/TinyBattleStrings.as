@@ -215,11 +215,11 @@ package com.tinyrpg.battle
 		];
 		
 		private static var PLAYER_SENT_OUT_STRINGS : Array = [
-			PLAYER_SENT_OUT_1//,
-//			PLAYER_SENT_OUT_2,
-//			PLAYER_SENT_OUT_3,
-//			PLAYER_SENT_OUT_4,
-//			PLAYER_SENT_OUT_5
+			PLAYER_SENT_OUT_1,
+			PLAYER_SENT_OUT_2,
+			PLAYER_SENT_OUT_3,
+			PLAYER_SENT_OUT_4,
+			PLAYER_SENT_OUT_5
 		];
 		
 		private static var TRAINER_SENT_OUT_STRINGS : Array = [
