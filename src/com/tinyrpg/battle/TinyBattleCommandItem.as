@@ -55,7 +55,7 @@ package com.tinyrpg.battle
 			{
 				// Calculate catch result and number of wobbles
 				var canCatch : Boolean = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
-				var numWobbles : int = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				var numWobbles : int = 3; //TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
 				
 				TinyLogManager.log('canCatch: ' + canCatch, this );
 				TinyLogManager.log('numWobbles: ' + numWobbles, this );

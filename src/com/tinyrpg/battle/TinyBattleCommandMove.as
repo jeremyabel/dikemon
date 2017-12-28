@@ -512,7 +512,13 @@ package com.tinyrpg.battle
 		{
 			var startTurnCommand : TinyBattleCommand;
 			var forcePlayerSwitchCommand : TinyBattleCommand;
-			var nextEnemyMon : TinyMon = this.battle.m_enemyTrainer.getFirstHealthyMon();
+			var nextEnemyMon : TinyMon = null; 
+			
+			// Get the next enemy mon from the trainer's squad if this isn't a wild encounter
+			if ( !this.battle.m_isWildEncounter ) 
+			{
+				this.battle.m_enemyTrainer.getFirstHealthyMon();
+			}
 			
 			switch ( this.result )
 			{

@@ -24,19 +24,16 @@ package com.tinyrpg.display
 		private var playerBitmap	: Bitmap;
 		private var sourceData		: BitmapData;
 		private var xmlData			: XML;
-		private var currentAFrame	: uint;
-		private var currentBFrame	: uint;
 		private var frameData		: Array = [];
 		private var skipFrames		: int = 2;
 		private var sound	 		: Sound;
 		
+		public var currentFrame		: int;
 		public var length 			: int;
 		public var isPlaying		: Boolean;
 		public var trace			: Boolean = false;
+
 		
-		public function get currentFrame() : int { return this.currentBFrame; }
-				
-				
 		public function TinyFXSprite( sourceBitmap : BitmapData, xmlData : XML )
 		{
 			this.sourceData = sourceBitmap;
@@ -90,9 +87,8 @@ package com.tinyrpg.display
 		{
 			this.isPlaying = true;
 			
-			// Reset frame counters			
-			this.currentAFrame = 0;
-			this.currentBFrame = 0;
+			// Reset frame counter		
+			this.currentFrame  = 0;
 			
 			// Play sound
 			if ( this.sound ) 
@@ -101,13 +97,13 @@ package com.tinyrpg.display
 			}
 					
 			// Get the current frame's info
-			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentBFrame ] as TinyMoveFXSpriteFrameInfo;
+			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentFrame ] as TinyMoveFXSpriteFrameInfo;
 			
 			// Initialize the player bitmap if this is the first time that play() has been called
 			if ( !this.playerBitmap ) 
 			{
 				// Prep bitmap
-				this.playerBitmap = new Bitmap( new BitmapData( 160, 144 ) );
+				this.playerBitmap = new Bitmap( new BitmapData( 160, 144, true, 0x00000000 ) );
 				this.playerBitmap.x =
 				this.playerBitmap.y = 0;
 				
@@ -134,21 +130,20 @@ package com.tinyrpg.display
 		protected function onEnterFrame( event : Event ) : void
 		{	
 			// Clear the previous frame
-			this.playerBitmap.bitmapData.fillRect( clearRect, 0x00000000 );
+			if ( this.currentFrame > 0 ) this.playerBitmap.bitmapData.fillRect( clearRect, 0x00000000 );
 			
 			// Get current frame's info
-			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentBFrame ] as TinyMoveFXSpriteFrameInfo;
+			var currentFrameInfo : TinyMoveFXSpriteFrameInfo = this.frameData[ this.currentFrame  ] as TinyMoveFXSpriteFrameInfo;
+			
+			// Log frame info, if requested
+			if ( this.trace ) TinyLogManager.log( this.currentFrame .toString() + ': ' + currentFrameInfo.toString(), this );
 			
 			// Copy pixels from source to player bitmap
 			this.playerBitmap.bitmapData.copyPixels( this.sourceData, currentFrameInfo.copyRect, currentFrameInfo.destPoint );
-			this.currentBFrame = Math.min( this.currentBFrame + this.skipFrames, this.length - 1 );
-			this.currentAFrame = Math.min( this.currentBFrame + this.skipFrames, this.length - 1 );
-			
-			// Log frame info, if requested
-			if ( this.trace ) TinyLogManager.log( this.currentBFrame.toString() + ': ' + currentFrameInfo.toString(), this );
+			this.currentFrame = Math.min( this.currentFrame + this.skipFrames, this.length - 1 );
 			
 			// Check if animation is over. If so, clean up
-			if ( this.currentBFrame == this.length - 1 ) 
+			if ( this.currentFrame  == this.length - 1 ) 
 			{ 
 				this.removeEventListener( Event.ENTER_FRAME, onEnterFrame );
 				this.dispatchEvent( new Event( Event.COMPLETE ) );

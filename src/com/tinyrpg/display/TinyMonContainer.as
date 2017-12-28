@@ -212,8 +212,8 @@ package com.tinyrpg.display
 		
 		public function playPlayerAttack() : void
 		{
-			TinyLogManager.log('playPlayerAttack', this);	
-			TweenMax.to( this.monBitmap, 0.12, { x: -HALF_MON_SIZE + 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onPlayerAttackComplete } );
+			TinyLogManager.log('playPlayerAttack', this);
+			TweenMax.to( this.monBitmap, 0.12, { x: HALF_MON_SIZE + 7, ease: Cubic.easeIn, roundProps:['x'], yoyo: true, repeat: 1, onComplete: this.onPlayerAttackComplete } );
 		}
 		
 		public function onPlayerAttackComplete( event : Event = null ) : void
