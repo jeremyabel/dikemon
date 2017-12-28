@@ -9,6 +9,7 @@ package com.tinyrpg.display
 
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyMoveFXSpriteFrameInfo;
+	import com.tinyrpg.misc.TinyBallThrowResult;
 	import com.tinyrpg.misc.TinyMoveFXConfig;
 	import com.tinyrpg.misc.TinyStatusFXConfig;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -35,6 +36,7 @@ package com.tinyrpg.display
 		
 		public function get currentFrame() : int { return this.currentBFrame; }
 				
+				
 		public function TinyFXSprite( sourceBitmap : BitmapData, xmlData : XML )
 		{
 			this.sourceData = sourceBitmap;
@@ -49,6 +51,7 @@ package com.tinyrpg.display
 			this.length = this.frameData.length;
 		}
 
+
 		public static function newFromMoveData( move : TinyMoveData, isEnemy : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyMoveFXConfig.getMoveFXSprite( move.name, isEnemy );
@@ -60,6 +63,7 @@ package com.tinyrpg.display
 			return sprite; 	
 		}
 		
+		
 		public static function newFromStatusEffect( statusName : String, isEnemy : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyStatusFXConfig.getStatusFXSprite( statusName, isEnemy );
@@ -70,15 +74,17 @@ package com.tinyrpg.display
 			return sprite;
 		}
 		
-		public static function newFromBallThrow( rejected : Boolean, isUltra : Boolean = false, numShakes : int = 0 ) : TinyFXSprite
+		
+		public static function newFromBallThrowPhase( ballPhase : String, isUltra : Boolean ) : TinyFXSprite
 		{
-			var sourceData : BitmapData = TinyBallFXAnimation.getBallFXSprite( rejected, isUltra, numShakes );
-			var xmlData : XML = TinyBallFXAnimation.getBallFXXML( rejected, numShakes );
+			var sourceData : BitmapData = TinyBallFXAnimation.getBallFXSprite( ballPhase, isUltra );
+			var xmlData : XML = TinyBallFXAnimation.getBallFXXML( ballPhase );
 			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
-			// TODO: sound
+			sprite.sound = TinyBallFXAnimation.getBallSFX( ballPhase );
 			
 			return sprite;
 		}
+		
 		
 		public function play() : void
 		{
@@ -123,6 +129,7 @@ package com.tinyrpg.display
 				this.addEventListener( Event.ENTER_FRAME, onEnterFrame );
 			}
 		}
+		
 		
 		protected function onEnterFrame( event : Event ) : void
 		{	

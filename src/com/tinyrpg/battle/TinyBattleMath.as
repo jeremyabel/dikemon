@@ -263,6 +263,37 @@ package com.tinyrpg.battle
 		}
 		
 		
+		public static function canCatch( targetMon : TinyMon, ballBonus : Number = 1.0 ) : Boolean
+		{
+			var A : int = targetMon.currentHP * 2;
+			var B : int = targetMon.maxHP * 3;
+			var C : int = targetMon.catchRate * ballBonus;
+			var D : int = 0;
+			
+			// Keep in 8-bit range
+			if ( B > 255 ) 
+			{
+				A = Math.floor( Math.floor( A / 2 ) / 2 );
+				B = Math.floor( Math.floor( B / 2 ) / 2 );
+				A = Math.max( 1, A );
+			}
+			
+			// Get status modifier
+			// Fixes a bug in the original where poison, paralysis, and burn do not affect catch rate
+			if ( targetMon.isSleeping ) D = 10;
+			if ( targetMon.isPoisoned ) D = 5;
+			if ( targetMon.isParaylzed ) D = 5;
+			if ( targetMon.isBurned ) D = 5;
+			
+			// Main calculation
+			var X : int = Math.max( 255, Math.floor( ( B - A ) * C / B + D ) );
+			
+			if ( Math.random() * 255 <= X ) return true;
+			
+			return false;
+		}
+		
+		
 		public static function getNumCaptureWobbles( targetMon : TinyMon, ballBonus : Number = 1.0 ) : int
 		{
 			var M : int = targetMon.maxHP;
@@ -272,6 +303,7 @@ package com.tinyrpg.battle
 			var S : Number = 1.0;
 			
 			// Get status modifier
+			// Fixes a bug in the original where poison, paralysis, and burn do not affect wobble count
 			if ( targetMon.isSleeping ) S = 2.0;
 			if ( targetMon.isPoisoned ) S = 1.5;
 			if ( targetMon.isParaylzed ) S = 1.5;

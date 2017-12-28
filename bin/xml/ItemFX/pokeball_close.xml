@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6e8c75f5f528eb69b0b47d0660117e98:88e8fd7ef3c29eeb2093c687b1ee093e:8ef4843da53bff34849d90991d87fed4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pokeball_close.png" width="188" height="188">
+    <sprite n="pokeball_close_00000" x="0" y="0" w="12" h="44" pX="0.5" pY="0.5" oX="122" oY="14" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00001" x="12" y="0" w="12" h="43" pX="0.5" pY="0.5" oX="122" oY="15" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00002" x="24" y="0" w="12" h="42" pX="0.5" pY="0.5" oX="122" oY="16" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00003" x="36" y="0" w="12" h="41" pX="0.5" pY="0.5" oX="122" oY="17" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00004" x="36" y="41" w="12" h="39" pX="0.5" pY="0.5" oX="122" oY="19" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00005" x="0" y="44" w="12" h="37" pX="0.5" pY="0.5" oX="122" oY="21" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00006" x="12" y="43" w="12" h="35" pX="0.5" pY="0.5" oX="122" oY="23" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00007" x="12" y="78" w="12" h="33" pX="0.5" pY="0.5" oX="122" oY="25" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00008" x="0" y="81" w="12" h="30" pX="0.5" pY="0.5" oX="122" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00009" x="24" y="42" w="12" h="28" pX="0.5" pY="0.5" oX="122" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00010" x="24" y="70" w="12" h="25" pX="0.5" pY="0.5" oX="122" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00011" x="36" y="80" w="12" h="22" pX="0.5" pY="0.5" oX="122" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00012" x="24" y="95" w="12" h="19" pX="0.5" pY="0.5" oX="122" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00013" x="0" y="111" w="12" h="16" pX="0.5" pY="0.5" oX="122" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00014" x="48" y="180" w="12" h="8" pX="0.5" pY="0.5" oX="122" oY="50" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00015" x="12" y="111" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00016" x="36" y="102" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00017" x="24" y="114" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00018" x="12" y="123" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00019" x="0" y="127" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00020" x="36" y="114" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00021" x="24" y="126" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00022" x="12" y="135" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="34" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00023" x="0" y="139" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00024" x="36" y="126" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00025" x="24" y="138" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="31" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00026" x="12" y="147" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00027" x="0" y="151" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00028" x="36" y="138" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00029" x="24" y="150" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00030" x="12" y="159" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00031" x="0" y="163" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00032" x="36" y="150" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00033" x="24" y="162" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00034" x="12" y="171" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="29" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00035" x="0" y="175" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00036" x="36" y="162" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="30" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00037" x="24" y="174" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="31" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00038" x="36" y="174" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00039" x="48" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00040" x="48" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="34" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00041" x="48" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00042" x="48" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00043" x="48" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00044" x="48" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00045" x="48" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00046" x="48" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00047" x="48" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00048" x="48" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00049" x="48" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00050" x="48" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00051" x="48" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00052" x="48" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00053" x="48" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00054" x="60" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00055" x="60" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00056" x="60" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="35" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00057" x="60" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="35" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00058" x="60" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="34" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00059" x="60" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00060" x="60" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00061" x="60" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00062" x="60" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00063" x="60" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00064" x="60" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00065" x="60" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00066" x="60" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00067" x="60" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00068" x="60" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="34" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00069" x="72" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="35" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00070" x="72" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="35" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00071" x="72" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00072" x="72" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00073" x="72" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00074" x="72" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00075" x="72" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00076" x="72" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00077" x="72" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00078" x="72" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00079" x="72" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00080" x="72" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00081" x="72" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00082" x="72" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00083" x="72" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00084" x="84" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00085" x="84" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00086" x="84" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00087" x="84" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00088" x="84" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00089" x="84" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00090" x="84" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00091" x="84" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00092" x="84" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00093" x="84" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00094" x="84" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00095" x="84" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="36" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00096" x="84" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00097" x="84" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00098" x="84" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00099" x="96" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00100" x="96" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00101" x="96" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00102" x="96" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="38" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00103" x="96" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00104" x="96" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="39" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00105" x="96" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00106" x="96" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00107" x="96" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00108" x="96" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00109" x="96" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00110" x="96" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00111" x="96" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00112" x="96" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00113" x="96" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00114" x="108" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00115" x="108" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00116" x="108" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00117" x="108" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00118" x="108" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00119" x="108" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00120" x="108" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00121" x="108" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00122" x="108" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00123" x="108" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00124" x="108" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00125" x="108" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00126" x="108" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00127" x="108" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="40" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00128" x="108" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00129" x="120" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00130" x="120" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00131" x="120" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00132" x="120" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00133" x="120" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00134" x="120" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="41" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00135" x="120" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00136" x="120" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00137" x="120" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="42" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00138" x="120" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00139" x="120" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00140" x="120" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="43" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00141" x="120" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00142" x="120" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00143" x="120" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00144" x="132" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00145" x="132" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00146" x="132" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00147" x="132" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00148" x="132" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00149" x="132" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00150" x="132" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00151" x="132" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00152" x="132" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00153" x="132" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00154" x="132" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00155" x="132" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00156" x="132" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00157" x="132" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00158" x="132" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00159" x="144" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00160" x="144" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00161" x="144" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00162" x="144" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00163" x="144" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00164" x="144" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00165" x="144" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00166" x="144" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00167" x="144" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00168" x="144" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00169" x="144" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00170" x="144" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00171" x="144" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00172" x="144" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00173" x="144" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00174" x="156" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00175" x="156" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00176" x="156" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00177" x="156" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00178" x="156" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00179" x="156" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00180" x="156" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00181" x="156" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00182" x="156" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00183" x="156" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00184" x="156" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00185" x="156" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00186" x="156" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00187" x="156" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00188" x="156" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00189" x="168" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00190" x="168" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00191" x="168" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00192" x="168" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00193" x="168" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00194" x="168" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00195" x="168" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00196" x="168" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00197" x="168" y="96" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00198" x="168" y="108" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00199" x="168" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00200" x="168" y="132" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00201" x="168" y="144" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00202" x="168" y="156" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_close_00203" x="168" y="168" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+</TextureAtlas>

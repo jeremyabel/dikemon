@@ -2,10 +2,12 @@ package com.tinyrpg.battle
 {
 	import flash.media.Sound;
 	
+	import com.tinyrpg.battle.TinyBattleMath;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.display.TinyBallFXAnimation;
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
+	import com.tinyrpg.misc.TinyBallThrowResult;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -43,20 +45,61 @@ package com.tinyrpg.battle
 			TinyLogManager.log('useBall: ' + this.item.effectAmount, this);
 
 			var resultString : String = '';
-			var isUltra : Boolean = this.item.effectAmount > 1;			
+			var isUltra : Boolean = this.item.effectAmount > 1;
 			
 			// Add delay for nice feels
 			this.eventSequence.addDelay( 0.2 );
 			
-			// Get the correct ball fx animation 
+			// Calculate and animate the ball throw result 
 			if ( this.battle.m_isWildEncounter )
 			{
+				// Calculate catch result and number of wobbles
+				var canCatch : Boolean = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				var numWobbles : int = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
 				
+				TinyLogManager.log('canCatch: ' + canCatch, this );
+				TinyLogManager.log('numWobbles: ' + numWobbles, this );
+				
+				// Throw and open the ball
+				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_OPEN, isUltra ) );
+				
+				// Get in the ball
+				this.eventSequence.addGetInBall( this.battle.m_enemyMonContainer );
+				
+				// Close the ball
+				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_CLOSE, isUltra ) );
+				
+				// Wobble the ball some number of times
+				for ( var i : int = 0; i < numWobbles; i++ ) 
+				{
+					this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_WOBBLE, isUltra ) );
+				}
+				
+				// The rest of the sequence depends on if the mon is caught or not
+				if ( canCatch )
+				{
+					// TODO: play some sound
+					// TODO: add to dex and stuff
+					
+					// Show caught message
+					resultString = TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.m_currentEnemyMon );
+				}
+				else
+				{
+					// Escape from the ball
+					this.eventSequence.addEscapeFromBall( this.battle.m_enemyMonContainer );
+					
+					// Burst open the ball
+					this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_BURST, isUltra ) );
+					
+					// Show "almost" message
+					resultString = TinyBattleStrings.getBallWobbleString( numWobbles );
+				}
 			}
 			else
 			{
-				// Can't capture trainer mons, so play the reject animation 
-				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( true, isUltra ) );
+				// Can't capture trainer mons, so reject the ball throw
+				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_REJECT, isUltra ) );
 				resultString = TinyBattleStrings.BALL_THROW_REJECT;
 			}
 			

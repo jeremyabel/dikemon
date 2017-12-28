@@ -3,245 +3,251 @@
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1        1539066        1539066    Scene 1 (AS 3.0 Classes Export Frame)
+      1        1575110        1575110    Scene 1 (AS 3.0 Classes Export Frame)
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1              0             0                 35084
+Scene 1              0             0                 35233
 
 Symbol    Shape Bytes    Text Bytes    ActionScript Bytes
 ------    -----------    ----------    ------------------
 
 ActionScript Bytes    Location
 ------------------    --------
-               293    Scene 1:Frame 1:com.tinyrpg.media.sfx.SFXNope
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBattleStart
-               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBossDie
-               296    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBuy
-               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCancel
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundComputerAttack
-               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCursor
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyAttack
-               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyDie
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundErrorBuzz
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundExplosion
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFishAttack
-               300    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFlash
-               300    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHealA
-               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHitA
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundImpossibleHit
-               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundMiss
-               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundPickup
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRachelAttack
-               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRecruit
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRonAttack
-               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundSelect
-               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundText
-               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundUseItem
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.battlefx.SFXKnockout
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallExplode
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallReject
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXUseItem
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAbsorb
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAgility
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAncientPower
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBite
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBlazeKick
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBubble
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXClamp
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXConfuseRay
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXConfusion
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDetect
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDoubleEdge
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDoubleKick
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDragonBreath
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDreamEater
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDynamicPunch
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXEmber
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXExplosion
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFalseSwipe
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFeintAtack
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFirePunch
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFlamethrower
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFocusEnergy
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFurySwipes
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXGrowl
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHealBell
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHydroPump
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHyperBeam
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHypnosis
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXKarateChop
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLeer
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLick
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLowKick
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLusterPurge
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMeanLook
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMegaPunch
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMetalClaw
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMetronome
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMudSlap
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMudSport
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXNightShade
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPound
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXProtect
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPsychic
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPsywave
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXQuickAttack
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRainDance
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRapidSpin
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRazorLeaf
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRecover
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRest
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSafeguard
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSandAttack
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScaryFace
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScratch
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScreech
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSelfDestruct
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSlam
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSlash
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSmog
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSmokescreen
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSnore
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSpite
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXStruggle
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSubmission
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSupersonic
-               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSurf
-               312    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSwift
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTackle
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTailWhip
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTakeDown
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThrash
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThunder
-               328    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThundershock
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTwister
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWaterGun
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWaterSport
-               323    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWingAttack
-               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXBurn
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXConfusion
-               325    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXParalysis
-               319    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXPoison
-               321    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXSelfHit
-               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXSleep
+               287    Scene 1:Frame 1:com.tinyrpg.media.sfx.SFXNope
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBattleStart
+               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBossDie
+               289    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundBuy
+               296    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCancel
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundComputerAttack
+               296    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundCursor
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyAttack
+               300    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundEnemyDie
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundErrorBuzz
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundExplosion
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFishAttack
+               293    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundFlash
+               293    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHealA
+               291    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundHitA
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundImpossibleHit
+               291    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundMiss
+               296    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundPickup
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRachelAttack
+               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRecruit
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundRonAttack
+               296    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundSelect
+               291    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundText
+               298    Scene 1:Frame 1:com.tinyrpg.media.sfx.SoundUseItem
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.battlefx.SFXKnockout
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallBurst
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallClose
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallOpen
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallReject
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXBallWobble
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.itemfx.SFXUseItem
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAbsorb
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAgility
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXAncientPower
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBite
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBlazeKick
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXBubble
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXClamp
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXConfuseRay
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXConfusion
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDetect
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDoubleEdge
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDoubleKick
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDragonBreath
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDreamEater
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXDynamicPunch
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXEmber
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXExplosion
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFalseSwipe
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFeintAtack
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFirePunch
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFlamethrower
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFocusEnergy
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXFurySwipes
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXGrowl
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHealBell
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHydroPump
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHyperBeam
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXHypnosis
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXKarateChop
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLeer
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLick
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLowKick
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXLusterPurge
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMeanLook
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMegaPunch
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMetalClaw
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMetronome
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMudSlap
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXMudSport
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXNightShade
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPound
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXProtect
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPsychic
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXPsywave
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXQuickAttack
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRainDance
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRapidSpin
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRazorLeaf
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRecover
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXRest
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSafeguard
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSandAttack
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScaryFace
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScratch
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXScreech
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSelfDestruct
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSlam
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSlash
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSmog
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSmokescreen
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSnore
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSpite
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXStruggle
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSubmission
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSupersonic
+               302    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSurf
+               305    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXSwift
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTackle
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTailWhip
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTakeDown
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThrash
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThunder
+               320    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXThundershock
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXTwister
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWaterGun
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWaterSport
+               316    Scene 1:Frame 1:com.tinyrpg.media.sfx.movefx.SFXWingAttack
+               307    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXBurn
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXConfusion
+               318    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXParalysis
+               311    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXPoison
+               314    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXSelfHit
+               309    Scene 1:Frame 1:com.tinyrpg.media.sfx.statusfx.SFXSleep
 
 Event Sounds: 44KHz Stereo 16 kbps MP3
 
 
 Sound name             Bytes         Format
 -------------------    ----------    ------
-wing_attack.mp3             13589    44KHz Stereo 80 kbps MP3
-water_sport.mp3             42058    11KHz Mono 16 kbps MP3
-water_gun.mp3               16584    44KHz Stereo 80 kbps MP3
-use_item.mp3                 3137    11KHz Mono 16 kbps MP3
-twister.mp3                 40344    44KHz Stereo 80 kbps MP3
-thundershock.mp3            14387    44KHz Stereo 80 kbps MP3
-thunder.mp3                 15186    44KHz Stereo 80 kbps MP3
-thrash.mp3                   4603    44KHz Stereo 80 kbps MP3
-text.wav                      810    44KHz Mono 80 kbps MP3
-take_down.mp3                5003    44KHz Stereo 80 kbps MP3
-tail_whip.mp3                5602    44KHz Stereo 80 kbps MP3
-tackle.mp3                   4004    44KHz Stereo 80 kbps MP3
-swift.mp3                    9395    44KHz Stereo 80 kbps MP3
-surf.mp3                    43140    44KHz Stereo 80 kbps MP3
-supersonic.mp3              31049    11KHz Mono 16 kbps MP3
-submission.mp3              14708    11KHz Mono 16 kbps MP3
-struggle.mp3                 2008    44KHz Stereo 80 kbps MP3
-spite.mp3                   14986    44KHz Stereo 80 kbps MP3
-snore.mp3                    8597    44KHz Stereo 80 kbps MP3
-smokescreen.mp3             22773    44KHz Stereo 80 kbps MP3
-smog.mp3                    25768    44KHz Stereo 80 kbps MP3
-sleep.mp3                    3275    11KHz Mono 16 kbps MP3
-slash.mp3                    5402    44KHz Stereo 80 kbps MP3
-slam.mp3                    11991    44KHz Stereo 80 kbps MP3
-selfhit.mp3                   967    11KHz Mono 16 kbps MP3
-self_destruct.mp3           10793    44KHz Stereo 80 kbps MP3
-select.wav                    409    11KHz Mono 16 kbps MP3
-screech.mp3                 11392    44KHz Stereo 80 kbps MP3
-scratch.mp3                  4404    44KHz Stereo 80 kbps MP3
-scary_face.mp3              10394    44KHz Stereo 80 kbps MP3
-sand_attack.mp3              7598    44KHz Stereo 80 kbps MP3
-safeguard.mp3               21775    44KHz Stereo 80 kbps MP3
-Ron_Shoot.wav               31199    22KHz Stereo 64 kbps MP3
-rest.mp3                    18580    44KHz Stereo 80 kbps MP3
-Recruit.wav                  9678    22KHz Stereo 48 kbps MP3
-recover.mp3                 10993    44KHz Stereo 80 kbps MP3
-razor_leaf.mp3              18980    44KHz Stereo 80 kbps MP3
-rapid_spin.mp3              12590    44KHz Stereo 80 kbps MP3
-rain_dance.mp3              22574    44KHz Stereo 80 kbps MP3
-Rachel_Attack.wav            2207    44KHz Stereo 80 kbps MP3
-quick_attack.mp3             7199    44KHz Stereo 80 kbps MP3
-psywave.mp3                 23971    44KHz Stereo 80 kbps MP3
-psychic.mp3                 22773    44KHz Stereo 80 kbps MP3
-protect.mp3                 21775    44KHz Stereo 80 kbps MP3
-present.wav                   488    11KHz Mono 16 kbps MP3
-pound.mp3                    2523    11KHz Mono 16 kbps MP3
-poison.mp3                   4036    11KHz Mono 16 kbps MP3
-pickup.wav                    807    11KHz Mono 16 kbps MP3
-paralysis.mp3               10597    11KHz Mono 16 kbps MP3
-nope.mp3                     3024    11KHz Mono 16 kbps MP3
-night_shade.mp3             21376    44KHz Stereo 80 kbps MP3
-mud_sport.mp3               42058    11KHz Mono 16 kbps MP3
-mud_slap.mp3                 7399    44KHz Stereo 80 kbps MP3
-Miss.wav                     2207    44KHz Stereo 80 kbps MP3
-metronome.mp3               13189    44KHz Stereo 80 kbps MP3
-metal_claw.mp3              22174    44KHz Stereo 80 kbps MP3
-mega_punch.mp3              14653    11KHz Mono 16 kbps MP3
-mean_look.mp3               20777    44KHz Stereo 80 kbps MP3
-luster_purge.mp3            17442    11KHz Mono 16 kbps MP3
-low_kick.mp3                 4603    44KHz Stereo 80 kbps MP3
-lick.mp3                     5202    44KHz Stereo 80 kbps MP3
-leer.mp3                     4404    44KHz Stereo 80 kbps MP3
-knockout.mp3                 4111    11KHz Mono 16 kbps MP3
-karate_chop.mp3              7798    44KHz Stereo 80 kbps MP3
-ImpossibleHit.wav            4204    44KHz Mono 80 kbps MP3
-hypnosis.mp3                15585    44KHz Stereo 80 kbps MP3
-hyper_beam.mp3              28253    11KHz Mono 16 kbps MP3
-hydro_pump.mp3              28564    44KHz Stereo 80 kbps MP3
-Hit_Default.wav              2008    44KHz Stereo 80 kbps MP3
-heal_bell.mp3               36750    44KHz Stereo 80 kbps MP3
-Heal_001.wav                 8197    44KHz Stereo 80 kbps MP3
-growl.mp3                    8796    44KHz Stereo 80 kbps MP3
-fury_swipes.mp3              5003    44KHz Stereo 80 kbps MP3
-focus_energy.mp3            14188    44KHz Stereo 80 kbps MP3
-flash.wav                    9196    44KHz Mono 80 kbps MP3
-flamethrower.mp3            35353    44KHz Stereo 80 kbps MP3
-Fish_Attack.wav              5202    44KHz Stereo 80 kbps MP3
-fire_punch.mp3              20976    44KHz Stereo 80 kbps MP3
-false_swipe.mp3              5602    44KHz Stereo 80 kbps MP3
-faint_attack.mp3            22574    44KHz Stereo 80 kbps MP3
-Explosion.wav               24570    44KHz Stereo 80 kbps MP3
-explosion.mp3               10593    44KHz Stereo 80 kbps MP3
-error.wav                    4199    44KHz Mono 112 kbps MP3
-EnemyDie.wav                 6001    44KHz Stereo 80 kbps MP3
-EnemyDefault.mp3            18381    44KHz Mono 80 kbps MP3
-ember.mp3                   22574    44KHz Stereo 80 kbps MP3
-dynamic_punch.mp3           13189    44KHz Stereo 80 kbps MP3
-dream_eater.mp3             22973    44KHz Stereo 80 kbps MP3
-dragon_breath.mp3           19179    44KHz Stereo 80 kbps MP3
-double_kick.mp3              2806    44KHz Stereo 80 kbps MP3
-double_edge.mp3              5402    44KHz Stereo 80 kbps MP3
-detect.mp3                   6600    44KHz Stereo 80 kbps MP3
-cursverti.wav                 409    11KHz Mono 16 kbps MP3
-curshoriz.wav                 329    22KHz Mono 32 kbps MP3
-confusion.mp3               13589    44KHz Stereo 80 kbps MP3
-confusion.mp3                2182    11KHz Mono 16 kbps MP3
-confuse_ray.mp3             23173    44KHz Stereo 80 kbps MP3
-Computer_Attack.wav          2080    11KHz Mono 16 kbps MP3
-clamp.mp3                    9795    44KHz Stereo 80 kbps MP3
-buy.wav                      1901    22KHz Mono 48 kbps MP3
-burn.mp3                     3276    11KHz Mono 16 kbps MP3
-bubble.mp3                  23772    44KHz Stereo 80 kbps MP3
-Boss_Die.wav                25169    44KHz Stereo 80 kbps MP3
-blaze_kick.mp3              81509    11KHz Mono 16 kbps MP3
-bite.mp3                     6201    44KHz Stereo 80 kbps MP3
-Battle - Start.wav           5602    44KHz Stereo 80 kbps MP3
-ball_reject.mp3              9360    11KHz Mono 16 kbps MP3
-ball_explode.mp3             1922    11KHz Mono 16 kbps MP3
-ancient_power.mp3           11991    44KHz Stereo 80 kbps MP3
-agility.mp3                 15386    44KHz Stereo 80 kbps MP3
-absorb.mp3                  18181    44KHz Stereo 80 kbps MP3
+wing_attack.mp3             13281    44KHz Stereo 80 kbps MP3
+water_sport.mp3             41106    11KHz Mono 16 kbps MP3
+water_gun.mp3               16208    44KHz Stereo 80 kbps MP3
+use_item.mp3                 3066    11KHz Mono 16 kbps MP3
+twister.mp3                 39431    44KHz Stereo 80 kbps MP3
+thundershock.mp3            14062    44KHz Stereo 80 kbps MP3
+thunder.mp3                 14842    44KHz Stereo 80 kbps MP3
+thrash.mp3                   4499    44KHz Stereo 80 kbps MP3
+text.wav                      791    44KHz Mono 80 kbps MP3
+take_down.mp3                4889    44KHz Stereo 80 kbps MP3
+tail_whip.mp3                5475    44KHz Stereo 80 kbps MP3
+tackle.mp3                   3914    44KHz Stereo 80 kbps MP3
+swift.mp3                    9183    44KHz Stereo 80 kbps MP3
+surf.mp3                    42163    44KHz Stereo 80 kbps MP3
+supersonic.mp3              30346    11KHz Mono 16 kbps MP3
+submission.mp3              14375    11KHz Mono 16 kbps MP3
+struggle.mp3                 1962    44KHz Stereo 80 kbps MP3
+spite.mp3                   14647    44KHz Stereo 80 kbps MP3
+snore.mp3                    8402    44KHz Stereo 80 kbps MP3
+smokescreen.mp3             22258    44KHz Stereo 80 kbps MP3
+smog.mp3                    25185    44KHz Stereo 80 kbps MP3
+sleep.mp3                    3201    11KHz Mono 16 kbps MP3
+slash.mp3                    5280    44KHz Stereo 80 kbps MP3
+slam.mp3                    11720    44KHz Stereo 80 kbps MP3
+selfhit.mp3                   945    11KHz Mono 16 kbps MP3
+self_destruct.mp3           10549    44KHz Stereo 80 kbps MP3
+select.wav                    400    11KHz Mono 16 kbps MP3
+screech.mp3                 11134    44KHz Stereo 80 kbps MP3
+scratch.mp3                  4304    44KHz Stereo 80 kbps MP3
+scary_face.mp3              10159    44KHz Stereo 80 kbps MP3
+sand_attack.mp3              7426    44KHz Stereo 80 kbps MP3
+safeguard.mp3               21282    44KHz Stereo 80 kbps MP3
+Ron_Shoot.wav               30493    22KHz Stereo 64 kbps MP3
+rest.mp3                    18160    44KHz Stereo 80 kbps MP3
+Recruit.wav                  9459    22KHz Stereo 48 kbps MP3
+recover.mp3                 10744    44KHz Stereo 80 kbps MP3
+razor_leaf.mp3              18550    44KHz Stereo 80 kbps MP3
+rapid_spin.mp3              12305    44KHz Stereo 80 kbps MP3
+rain_dance.mp3              22063    44KHz Stereo 80 kbps MP3
+Rachel_Attack.wav            2157    44KHz Stereo 80 kbps MP3
+quick_attack.mp3             7036    44KHz Stereo 80 kbps MP3
+psywave.mp3                 23429    44KHz Stereo 80 kbps MP3
+psychic.mp3                 22258    44KHz Stereo 80 kbps MP3
+protect.mp3                 21282    44KHz Stereo 80 kbps MP3
+present.wav                   477    11KHz Mono 16 kbps MP3
+pound.mp3                    2466    11KHz Mono 16 kbps MP3
+poison.mp3                   3944    11KHz Mono 16 kbps MP3
+pickup.wav                    788    11KHz Mono 16 kbps MP3
+paralysis.mp3               10357    11KHz Mono 16 kbps MP3
+nope.mp3                     2955    11KHz Mono 16 kbps MP3
+night_shade.mp3             20892    44KHz Stereo 80 kbps MP3
+mud_sport.mp3               41106    11KHz Mono 16 kbps MP3
+mud_slap.mp3                 7231    44KHz Stereo 80 kbps MP3
+Miss.wav                     2157    44KHz Stereo 80 kbps MP3
+metronome.mp3               12891    44KHz Stereo 80 kbps MP3
+metal_claw.mp3              21672    44KHz Stereo 80 kbps MP3
+mega_punch.mp3              14322    11KHz Mono 16 kbps MP3
+mean_look.mp3               20306    44KHz Stereo 80 kbps MP3
+luster_purge.mp3            17047    11KHz Mono 16 kbps MP3
+low_kick.mp3                 4499    44KHz Stereo 80 kbps MP3
+lick.mp3                     5085    44KHz Stereo 80 kbps MP3
+leer.mp3                     4304    44KHz Stereo 80 kbps MP3
+knockout.mp3                 4018    11KHz Mono 16 kbps MP3
+karate_chop.mp3              7622    44KHz Stereo 80 kbps MP3
+ImpossibleHit.wav            4109    44KHz Mono 80 kbps MP3
+hypnosis.mp3                15232    44KHz Stereo 80 kbps MP3
+hyper_beam.mp3              27614    11KHz Mono 16 kbps MP3
+hydro_pump.mp3              27917    44KHz Stereo 80 kbps MP3
+Hit_Default.wav              1962    44KHz Stereo 80 kbps MP3
+heal_bell.mp3               35918    44KHz Stereo 80 kbps MP3
+Heal_001.wav                 8012    44KHz Stereo 80 kbps MP3
+growl.mp3                    8597    44KHz Stereo 80 kbps MP3
+fury_swipes.mp3              4889    44KHz Stereo 80 kbps MP3
+focus_energy.mp3            13866    44KHz Stereo 80 kbps MP3
+flash.wav                    8988    44KHz Mono 80 kbps MP3
+flamethrower.mp3            34552    44KHz Stereo 80 kbps MP3
+Fish_Attack.wav              5085    44KHz Stereo 80 kbps MP3
+fire_punch.mp3              20501    44KHz Stereo 80 kbps MP3
+false_swipe.mp3              5475    44KHz Stereo 80 kbps MP3
+faint_attack.mp3            22063    44KHz Stereo 80 kbps MP3
+Explosion.wav               24014    44KHz Stereo 80 kbps MP3
+explosion.mp3               10354    44KHz Stereo 80 kbps MP3
+error.wav                    4104    44KHz Mono 112 kbps MP3
+EnemyDie.wav                 5865    44KHz Stereo 80 kbps MP3
+EnemyDefault.mp3            17965    44KHz Mono 80 kbps MP3
+ember.mp3                   22063    44KHz Stereo 80 kbps MP3
+dynamic_punch.mp3           12891    44KHz Stereo 80 kbps MP3
+dream_eater.mp3             22453    44KHz Stereo 80 kbps MP3
+dragon_breath.mp3           18745    44KHz Stereo 80 kbps MP3
+double_kick.mp3              2743    44KHz Stereo 80 kbps MP3
+double_edge.mp3              5280    44KHz Stereo 80 kbps MP3
+detect.mp3                   6451    44KHz Stereo 80 kbps MP3
+cursverti.wav                 400    11KHz Mono 16 kbps MP3
+curshoriz.wav                 322    22KHz Mono 32 kbps MP3
+confusion.mp3               13281    44KHz Stereo 80 kbps MP3
+confusion.mp3                2133    11KHz Mono 16 kbps MP3
+confuse_ray.mp3             22648    44KHz Stereo 80 kbps MP3
+Computer_Attack.wav          2032    11KHz Mono 16 kbps MP3
+clamp.mp3                    9573    44KHz Stereo 80 kbps MP3
+buy.wav                      1858    22KHz Mono 48 kbps MP3
+burn.mp3                     3202    11KHz Mono 16 kbps MP3
+bubble.mp3                  23234    44KHz Stereo 80 kbps MP3
+Boss_Die.wav                24600    44KHz Stereo 80 kbps MP3
+blaze_kick.mp3              79664    11KHz Mono 16 kbps MP3
+bite.mp3                     6060    44KHz Stereo 80 kbps MP3
+Battle - Start.wav           5475    44KHz Stereo 80 kbps MP3
+ball_wobble.mp3             11019    11KHz Mono 16 kbps MP3
+ball_reject.mp3              9148    11KHz Mono 16 kbps MP3
+ball_open.mp3               17255    11KHz Mono 16 kbps MP3
+ball_explode.mp3             1878    11KHz Mono 16 kbps MP3
+ball_close.mp3              41575    11KHz Mono 16 kbps MP3
+ancient_power.mp3           11720    44KHz Stereo 80 kbps MP3
+agility.mp3                 15037    44KHz Stereo 80 kbps MP3
+absorb.mp3                  17769    44KHz Stereo 80 kbps MP3
 
 
 

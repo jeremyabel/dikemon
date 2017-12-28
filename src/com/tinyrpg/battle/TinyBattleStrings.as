@@ -172,7 +172,13 @@ package com.tinyrpg.battle
 	 	public static const CANT_USE_PARALYSIS	: String = 'This guy\'s not very sticky!';
 	 	
 	 	// Ball throw strings
-	 	public static const BALL_THROW_REJECT	: String = 'Jeez, don\'t go stealing other trainer\'s guys! Not cool!';
+	 	public static const BALL_THROW_REJECT	: String = 'Jeez,[delay 2] don\'t go stealing other trainer\'s guys![halt] Not cool!';
+	 	public static const BALL_ALMOST_0 		: String = 'Dang,[delay 2] that guy really did not want to be in that ball.';
+	 	public static const BALL_ALMOST_1		: String = 'Dang,[delay 2] that guy really did not want to be in that ball.';
+	 	public static const BALL_ALMOST_2		: String = 'Wobble wobble, you\'re in trobble!';
+	 	public static const BALL_ALMOST_3		: String = 'Hey you caught it![halt] Oh wait,[delay 2] no,[delay 2] you didn\'t.';
+	 	public static const BALL_ALMOST_4		: String = 'JUST GET IN THE DAMN BALL!';
+	 	public static const BALL_CAUGHT			: String = 'Nice, you caught a MON!';
 		
 		// Misc other battle strings
 		public static const EXPLOSION_FAINT		: String = 'MON fainted from the explosion!';
@@ -234,6 +240,14 @@ package com.tinyrpg.battle
 			TRAINER_RECALLED_3
 		];
 		
+		private static var BALL_ALMOST_CAUGHT_STRINGS : Array = [
+			BALL_ALMOST_0,
+			BALL_ALMOST_1,
+			BALL_ALMOST_2,
+			BALL_ALMOST_3,
+			BALL_ALMOST_4
+		];
+		
 		public static function getBattleString( string : String, mon : TinyMon = null, trainer : TinyTrainer = null, move : TinyMoveData = null, stat : String = null, number : int = undefined ) : String
 		{
 			var regexMon 		: RegExp = /MON/;
@@ -273,6 +287,11 @@ package com.tinyrpg.battle
 		{
 			var selectionArray : Array = isEnemy ? TRAINER_RECALLED_STRINGS : PLAYER_RECALLED_STRINGS;
 			return getBattleString( selectionArray[ TinyMath.randomInt( 0, selectionArray.length ) ], mon, trainer );	 
+		}
+		
+		public static function getBallWobbleString( numWobbles : int ) : String
+		{
+			return getBattleString ( BALL_ALMOST_CAUGHT_STRINGS[ numWobbles ] );
 		}
 		
 		public static function getStatChangeString( mon : TinyMon, effectedStat : String, modValue : int ) : String

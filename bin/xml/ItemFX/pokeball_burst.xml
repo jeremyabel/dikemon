@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:88873d9d591df08f42030cc0a174b265:ae2864cc5f3e46d7c0bc302f7f4525fc:b46ba57313c6e4306476c484342506d2$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pokeball_burst.png" width="134" height="134">
+    <sprite n="pokeball_burst_00000" x="0" y="120" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00001" x="112" y="0" w="22" h="22" pX="0.5" pY="0.5" oX="117" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00002" x="112" y="22" w="22" h="22" pX="0.5" pY="0.5" oX="117" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00003" x="112" y="44" w="22" h="22" pX="0.5" pY="0.5" oX="117" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00004" x="100" y="96" w="22" h="22" pX="0.5" pY="0.5" oX="117" oY="37" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00005" x="104" y="66" w="30" h="30" pX="0.5" pY="0.5" oX="113" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00006" x="40" y="72" w="30" h="30" pX="0.5" pY="0.5" oX="113" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00007" x="40" y="102" w="30" h="30" pX="0.5" pY="0.5" oX="113" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00008" x="70" y="96" w="30" h="30" pX="0.5" pY="0.5" oX="113" oY="33" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00009" x="80" y="0" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00010" x="80" y="32" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00011" x="40" y="40" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00012" x="72" y="64" w="32" h="32" pX="0.5" pY="0.5" oX="112" oY="32" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00013" x="0" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00014" x="0" y="40" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00015" x="0" y="80" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00016" x="40" y="0" w="40" h="40" pX="0.5" pY="0.5" oX="108" oY="28" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00017" x="0" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00018" x="0" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00019" x="1" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00020" x="1" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00021" x="2" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00022" x="2" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00023" x="3" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00024" x="3" y="133" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="pokeball_burst_00025" x="4" y="132" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+</TextureAtlas>

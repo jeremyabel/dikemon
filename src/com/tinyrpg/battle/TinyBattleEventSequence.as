@@ -161,6 +161,12 @@ package com.tinyrpg.battle
 				case TinyEventItem.PLAY_BALL_ANIM:
 					this.doPlayBallAnim( nextEvent.thingToDo as TinyBallFXAnimation );
 					break;
+				case TinyEventItem.GET_IN_BALL:
+					this.doGetInBall( nextEvent.thingToDo as TinyMonContainer );
+					break;
+				case TinyEventItem.ESCAPE_FROM_BALL:
+					this.doEscapeFromBall( nextEvent.thingToDo as TinyMonContainer );
+					break;
 				case TinyEventItem.PLAYER_HEAL:
 					this.doPlayerHeal( nextEvent.thingToDo as TinyMonContainer );
 					break;
@@ -342,6 +348,28 @@ package com.tinyrpg.battle
 			
 			// Add to sequence
 			this.m_eventSequence.push( newEventItem );
+		}
+		
+		public function addGetInBall( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('addGetInBall', this);	
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.GET_IN_BALL, targetMonContainer );
+			
+			// Add to sequence
+			m_eventSequence.push( newEventItem );
+		}
+		
+		public function addEscapeFromBall( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('addEscapeFromBall', this);
+			
+			// Make new event item
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.ESCAPE_FROM_BALL, targetMonContainer );
+			
+			// Add to sequence
+			m_eventSequence.push( newEventItem );
 		}
 		
 		public function addPlayerHeal( targetMonContainer : TinyMonContainer ) : void
@@ -756,6 +784,48 @@ package com.tinyrpg.battle
 			this.currentBallAnimation.y = 0;
 			
 			this.m_hostBattle.addChild( this.currentBallAnimation );
+		}
+		
+		private function doGetInBall( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('doGetInBall', this);
+			
+			this.currentMonContainer = targetMonContainer;
+			this.currentMonContainer.addEventListener( Event.COMPLETE, this.onGetInBallComplete );
+			this.currentMonContainer.scaleOutMon();
+			
+			// Next!
+			this.doNextCommand();
+		}
+		
+		private function onGetInBallComplete( event : Event ) : void
+		{
+			TinyLogManager.log('onGetInBallComplete', this);
+			
+			// Clean up
+			this.currentMonContainer.removeEventListener( Event.COMPLETE, this.onGetInBallComplete );
+			this.currentMonContainer = null;
+		}
+		
+		private function doEscapeFromBall( targetMonContainer : TinyMonContainer ) : void
+		{
+			TinyLogManager.log('doEscapeFromBall', this);
+			
+			this.currentMonContainer = targetMonContainer;
+			this.currentMonContainer.addEventListener( Event.COMPLETE, this.onEscapeFromBallComplete );
+			this.currentMonContainer.playSummonPoof();
+			
+			// Next!
+			this.doNextCommand();
+		}
+		
+		private function onEscapeFromBallComplete( event : Event = null ) : void
+		{
+			TinyLogManager.log('onSummonMonComplete', this);
+			
+			// Clean up
+			this.currentMonContainer.removeEventListener( Event.COMPLETE, this.onEscapeFromBallComplete );
+			this.currentMonContainer = null;
 		}
 		
 		private function onPlayBallAnimComplete( event : Event = null ) : void

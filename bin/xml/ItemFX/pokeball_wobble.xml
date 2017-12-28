@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6e0d91f39d7f9b13375ad2dfb0904e3c:d7964ead181f001b156ce0eef7c100d2:ddc569dddbc3896520f250189db2c26f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="pokeball_wobble.png" width="96" height="96">
+    <sprite n="pokeball_wobble_00000" x="0" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00001" x="0" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00002" x="0" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00003" x="0" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00004" x="0" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00005" x="0" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00006" x="0" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00007" x="0" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00008" x="12" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00009" x="24" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00010" x="36" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00011" x="48" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00012" x="60" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00013" x="72" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00014" x="84" y="0" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00015" x="12" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00016" x="12" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00017" x="12" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="121" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00018" x="12" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00019" x="12" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00020" x="12" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00021" x="12" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00022" x="24" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00023" x="36" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00024" x="48" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00025" x="60" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00026" x="72" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00027" x="84" y="12" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00028" x="24" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00029" x="24" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00030" x="24" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00031" x="24" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00032" x="24" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00033" x="24" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="123" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00034" x="36" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00035" x="48" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00036" x="60" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00037" x="72" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00038" x="84" y="24" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00039" x="36" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00040" x="36" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00041" x="36" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00042" x="36" y="72" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00043" x="36" y="84" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00044" x="48" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00045" x="60" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00046" x="72" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00047" x="84" y="36" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00048" x="48" y="48" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+    <sprite n="pokeball_wobble_00049" x="48" y="60" w="12" h="12" pX="0.5" pY="0.5" oX="122" oY="44" oW="160" oH="144"/>
+</TextureAtlas>

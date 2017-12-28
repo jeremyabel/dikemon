@@ -53,6 +53,8 @@ package com.tinyrpg.misc
 		public static const PLAY_ATTACK_ANIM		: String = 'PLAY_ATTACK_ANIM';
 		public static const PLAY_STATUS_ANIM		: String = 'PLAY_STATUS_ANIM';
 		public static const PLAY_BALL_ANIM			: String = 'PLAY_BALL_ANIM';
+		public static const GET_IN_BALL				: String = 'GET_IN_BALL';
+		public static const ESCAPE_FROM_BALL		: String = 'ESCAPE_FROM_BALL';
 		public static const PLAYER_HEAL				: String = 'PLAYER_HEAL';
 		public static const PLAYER_ATTACK			: String = 'PLAYER_ATTACK';
 		public static const ENEMY_ATTACK			: String = 'ENEMY_ATTACK'; 
