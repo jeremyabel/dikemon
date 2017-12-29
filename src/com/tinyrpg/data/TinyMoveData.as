@@ -199,6 +199,11 @@ package com.tinyrpg.data
 			this.m_currentPP = this.maxPP;
 		}
 		
+		public function get isMaxPP() : Boolean
+		{
+			return this.m_currentPP == this.maxPP;
+		}
+		
 		public function hasEffect( effect : TinyMoveEffect ) : Boolean
 		{
 			return this.m_effects.indexOf( effect ) > -1;

@@ -12,6 +12,7 @@ package com.tinyrpg.events
 		public static var ACCEPT		: String = 'ACCEPT';
 		public static var CANCEL		: String = 'CANCEL';
 		public static var MENU			: String = 'MENU';
+		public static var SELECTED 		: String = 'SELECTED';
 		
 		public static var OPTION_ONE	: String = 'OPTION_ONE';		public static var OPTION_TWO	: String = 'OPTION_TWO';
 		

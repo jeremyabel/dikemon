@@ -512,7 +512,7 @@ package com.tinyrpg.battle
 			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 			
 			// Set player's battle command	
-			this.battleCommandRunner.commandSelected( new TinyBattleCommandItem( this, event.item ) );
+			this.battleCommandRunner.commandSelected( new TinyBattleCommandItem( this, event.item, event.move ) );
 		}
 		
 		private function onItemCancelled( event : TinyInputEvent ) : void

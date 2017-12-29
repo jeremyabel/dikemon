@@ -3,19 +3,22 @@ package com.tinyrpg.ui
 	import flash.media.Sound;
 	import flash.text.TextField;
 	
+	import com.tinyrpg.battle.TinyBattleStrings;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
+	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.display.IShowHideObject;	
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.display.TinySelectableItemItem;
+	import com.tinyrpg.display.TinyOneLineBox;
 	import com.tinyrpg.events.TinyBattleMonEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyAudioManager;
+	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyFontManager;
-	import com.tinyrpg.media.sfx.SFXNope;
 	import com.tinyrpg.media.sfx.SoundErrorBuzz;
 	import com.tinyrpg.misc.TinyItemUseResult;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -26,11 +29,15 @@ package com.tinyrpg.ui
 	public class TinyBattleItemList extends TinyScrollableSelectList implements IShowHideObject 
 	{
 		private var trainer : TinyTrainer;
+		private var moveInfoBox : TinyOneLineBox;
+		private var moveSelectMenu : TinyMoveSelectMenu;
 		private var descriptionTextField : TextField;
 		private var descriptionBox : TinyContentBox;
 		private var m_currentMon : TinyMon;
+		private var item : TinyItem;
 		
 		private static const CANCEL_OPTION : String = 'CANCEL';
+		
 		
 		public function TinyBattleItemList( trainer : TinyTrainer )
 		{
@@ -64,15 +71,32 @@ package com.tinyrpg.ui
 			this.descriptionBox.x = -14;
 			this.descriptionBox.y = 56;
 			
+			// Make move selection menu (for PP restoring)
+			this.moveSelectMenu = new TinyMoveSelectMenu( null, true );
+			this.moveSelectMenu.visible = false;
+			this.moveSelectMenu.x = 46;
+			this.moveSelectMenu.y = this.descriptionBox.y;
+			
+			this.moveInfoBox = new TinyOneLineBox( TinyBattleStrings.ASK_MOVE_RESTORE_PP, 144 );
+			this.moveInfoBox.visible = false;
+			this.moveInfoBox.x = this.descriptionBox.x;
+			this.moveInfoBox.y = this.moveSelectMenu.y - 18;
+			
 			// Add 'em up
 			this.addChild( this.descriptionBox );
+			this.addChild( this.moveInfoBox );
+			this.addChild( this.moveSelectMenu );
 		}
+		
 		
 		public function setCurrentMon( mon : TinyMon ) : void
 		{
 			TinyLogManager.log('setCurrentMon: ' + mon.name, this );
+			
 			this.m_currentMon = mon;
+			this.moveSelectMenu.setCurrentMon( this.m_currentMon );
 		}
+
 
 		public function removeItem( targetItem : TinyItem ) : void
 		{
@@ -81,6 +105,7 @@ package com.tinyrpg.ui
 			var targetLabel : TinySelectableItem = this.getItemByID( targetItem.itemID );
 			this.removeListItem( targetLabel );
 		}
+
 
 		public function show() : void
 		{
@@ -98,11 +123,13 @@ package com.tinyrpg.ui
 			}	
 		}
 
+
 		public function hide() : void
 		{
 			TinyLogManager.log('hide', this);
 			this.visible = false;
 		}
+		
 		
 		override protected function onControlAdded( e : TinyInputEvent ) : void
 		{
@@ -123,6 +150,7 @@ package com.tinyrpg.ui
 			}
 		}
 
+
 		override protected function onControlRemoved( e : TinyInputEvent ) : void
 		{
 			super.onControlRemoved( e );
@@ -133,6 +161,7 @@ package com.tinyrpg.ui
 			// Clear the selected item
 			this.selectedItem = null;
 		}
+
 
 		override protected function onArrowUp( e : TinyInputEvent ) : void
 		{
@@ -153,6 +182,7 @@ package com.tinyrpg.ui
 			}
 		}
 		
+		
 		override protected function onArrowDown( e : TinyInputEvent ) : void
 		{
 			if ( this.itemArray.length > 0 ) 
@@ -172,6 +202,7 @@ package com.tinyrpg.ui
 			}
 		}
 		
+		
 		override protected function onAccept( e : TinyInputEvent ) : void
 		{
 			if ( this.itemArray.length > 0 ) 
@@ -184,28 +215,102 @@ package com.tinyrpg.ui
 				}
 				else
 				{
-					var item : TinyItem = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString );
+					// Get the item to be used
+					this.item = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString );
 					
 					// Check if the item can be used in the current battle on the current mon
-					var canUseResult : TinyItemUseResult = item.checkCanUse( TinyItem.ITEM_CONTEXT_BATTLE, m_currentMon );
+					var canUseResult : TinyItemUseResult = this.item.checkCanUse( TinyItem.ITEM_CONTEXT_BATTLE, m_currentMon );
 					
 					// If the item cannot be used, show the error string and exit
 					if ( !canUseResult.canUse ) 
 					{
 						TinyAudioManager.play( new SoundErrorBuzz() as Sound );
 						this.setDescriptionText( canUseResult.errorString );
+						
+						return;
+					}
+					
+					// If thie item restores PP, show the move selection box and one-line info box and exit
+					if ( item.healPP )
+					{
+						// Pass control to the move selection menu
+						this.moveSelectMenu.setCurrentMon( this.m_currentMon );
+						this.moveSelectMenu.show();
+						this.moveInfoBox.show();
+						TinyInputManager.getInstance().setTarget( this.moveSelectMenu );
+						
+						// Wait for move to be selected or cancelled
+						this.moveSelectMenu.addEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+						this.moveSelectMenu.addEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
+						this.moveSelectMenu.addEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
+						
 						return;
 					}
 						
-					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, item ) );
+					// Dispatch item used event
+					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, this.item ) );
 				}
 			}
 		}
+		
+		
+		private function onMoveSelected( event : TinyBattleMonEvent ) : void
+		{
+			var selectedMove : TinyMoveData = event.move;
+			
+			TinyLogManager.log('onMoveSelected: ' + selectedMove.name, this);
+			
+			// If the move's PP is maxed, this item cannot be used. Show the error message and exit.
+			if ( selectedMove.currentPP == selectedMove.maxPP )
+			{
+				TinyAudioManager.play( new SoundErrorBuzz() as Sound );
+				this.moveInfoBox.text = TinyBattleStrings.CANT_USE_MAX_PP;
+				return;
+			}
+			
+			// Hide the move selection menu
+			this.moveSelectMenu.hide();
+			this.moveInfoBox.hide();
+			
+			// Remove event listeners
+			this.moveSelectMenu.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+			this.moveSelectMenu.removeEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
+			this.moveSelectMenu.removeEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
+			
+			// Dispatch item used event
+			this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, selectedMove, null, this.item ) );
+		}
+		
+		
+		private function onMoveSelectCancelled( event : TinyInputEvent ) : void
+		{
+			TinyLogManager.log("onMoveSelectCancelled", this);
+			
+			// Hide the move selection menu
+			this.moveSelectMenu.hide();
+			this.moveInfoBox.hide();
+			
+			// Remove event listeners
+			this.moveSelectMenu.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+			this.moveSelectMenu.removeEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
+			this.moveSelectMenu.removeEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
+			
+			// Restore control to the item selector
+			TinyInputManager.getInstance().setTarget( this );
+		}
+		
+		
+		private function onMoveSelectionChanged( event : TinyInputEvent ) : void
+		{
+			this.moveInfoBox.text = TinyBattleStrings.ASK_MOVE_RESTORE_PP;
+		}
+		
 		
 		private function setDescriptionText( description : String ) : void 
 		{
 			this.descriptionTextField.htmlText = TinyFontManager.returnHtmlText( description, 'dialogText' );
 		}
+		
 		
 		private function getItemByID( targetID : int ) : TinySelectableItem
 		{

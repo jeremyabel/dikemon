@@ -110,7 +110,6 @@ package com.tinyrpg.core
 			TinyLogManager.log('item effect amount: ' + this.effectAmount, this);
 		}
 		
-		// TODO: PP Heal check
 		public function checkCanUse( useContext : String, targetMon : TinyMon ) : TinyItemUseResult
 		{
 			TinyLogManager.log("checkCanUse: " + useContext, this);
@@ -148,8 +147,6 @@ package com.tinyrpg.core
 			{
 				return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_MAX_HP );
 			}
-			
-			// TODO: Check PP
 			
 			// Can't usea paralysis heal on a non-paralyzed mon
 			if ( this.healParalysis && !targetMon.isParaylzed )

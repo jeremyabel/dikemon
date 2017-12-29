@@ -97,7 +97,9 @@ package com.tinyrpg.battle
 		
 		// Recovery strings
 		public static const REGAINED_HEALTH		: String = 'MON regained health!';
+		public static const REGAINED_PP			: String = 'MON\'s move MOVE regained PP!';
 		public static const HP_FULL				: String = 'MON\'s HP is full!'; 
+		public static const PP_FULL				: String = 'MON\'s move MOVE is at max PP!';
 		
 		// Attack result strings
 		public static const USED_MOVE			: String = 'MON used MOVE!';
@@ -165,11 +167,12 @@ package com.tinyrpg.battle
 	 	public static const CANT_USE_BALL		: String = 'Hey, you can only touch your balls during a battle!';
 	 	public static const CANT_USE_DEAD		: String = 'This guy is way too dead for that to work...';
 	 	public static const CANT_USE_MAX_HP		: String = 'Buddy, this guy is pretty healthy already...';
-	 	public static const CANT_USE_MAX_PP		: String = 'Does that move look like it needs more PP?!';
 	 	public static const CANT_USE_POISON		: String = 'It\'s been at least a few hours since this guy barfed...';
 	 	public static const CANT_USE_BURN		: String = 'This guy is already cool as a cucumber!';
 	 	public static const CANT_USE_SLEEP		: String = 'Pretty sure this guy\'s already awake...';
 	 	public static const CANT_USE_PARALYSIS	: String = 'This guy\'s not very sticky!';
+	 	public static const CANT_USE_MAX_PP		: String = 'That move is maxed!';
+	 	public static const ASK_MOVE_RESTORE_PP	: String = 'Restore PP to what?';
 	 	
 	 	// Ball throw strings
 	 	public static const BALL_THROW_REJECT	: String = 'Jeez,[delay 2] don\'t go stealing other trainer\'s guys![halt] Not cool!';

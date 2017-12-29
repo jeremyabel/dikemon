@@ -5,6 +5,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.battle.TinyBattleMath;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.TinyBallFXAnimation;
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
 	import com.tinyrpg.misc.TinyBallThrowResult;
@@ -17,12 +18,14 @@ package com.tinyrpg.battle
 	{
 		private var mon : TinyMon;
 		private var item : TinyItem;
+		private var move : TinyMoveData;
 		
-		public function TinyBattleCommandItem( battle : TinyBattleMon, item : TinyItem )
+		public function TinyBattleCommandItem( battle : TinyBattleMon, item : TinyItem, move : TinyMoveData )
 		{
 			super( battle, TinyBattleCommand.COMMAND_ITEM, TinyBattleCommand.USER_PLAYER );
 			
 			this.item = item;
+			this.move = move;
 			this.mon = this.battle.m_currentPlayerMon;
 			
 			this.item.printLog();
@@ -32,6 +35,7 @@ package com.tinyrpg.battle
 		override public function execute() : void
 		{
 			if ( this.item.healHP ) this.healHP(); 
+			if ( this.item.healPP ) this.healPP();
 			if ( this.item.healStatus ) this.healStatus();
 			if ( this.item.isBall ) this.useBall();
 			
@@ -55,7 +59,7 @@ package com.tinyrpg.battle
 			{
 				// Calculate catch result and number of wobbles
 				var canCatch : Boolean = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
-				var numWobbles : int = 3; //TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				var numWobbles : int = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
 				
 				TinyLogManager.log('canCatch: ' + canCatch, this );
 				TinyLogManager.log('numWobbles: ' + numWobbles, this );
@@ -117,6 +121,7 @@ package com.tinyrpg.battle
 			// Add delay for nice feels
 			this.eventSequence.addDelay( 0.2 );
 			
+			// Play mon bounce animation
 			this.playHealAnimation();
 			
 			// Recover HP
@@ -133,6 +138,31 @@ package com.tinyrpg.battle
 				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.HP_FULL, this.mon ) );
 			} else {
 				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.REGAINED_HEALTH, this.mon ) );
+			}
+		}
+		
+		
+		private function healPP() : void
+		{
+			TinyLogManager.log('healPP: ' + this.item.effectAmount, this );
+			
+			// Add delay for nice feels
+			this.eventSequence.addDelay( 0.2 );
+			
+			// Play mon bounce animation
+			this.playHealAnimation();
+			
+			// Recover PP
+			this.move.recoverPP( this.item.effectAmount );
+			
+			// Add delay for nice feels
+			this.eventSequence.addDelay( 0.2 ); 
+			
+			// Show dialog box
+			if ( this.move.isMaxPP ) {
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.PP_FULL, this.mon, null, this.move ) );
+			} else {
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.REGAINED_PP, this.mon, null, this.move ) );
 			}
 		}
 		
