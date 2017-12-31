@@ -112,11 +112,9 @@ package com.tinyrpg.misc
 		private static const MOVE_DRIPPY_YOLK			: String = 'DRIPPY YOLK';
 		private static const MOVE_CHICKEN_TIME			: String = 'CHICKEN TIME';
 		private static const MOVE_WIGGLE				: String = 'WIGGLE';
-		private static const MOVE_EXPLODE				: String = 'EXPLODE';
-		private static const MOVE_LACE_WRAP				: String = 'LACE WRAP';
+		private static const MOVE_LACE_WHIP				: String = 'LACE WHIP';
 		private static const MOVE_HEEL					: String = 'HEEL';
 		private static const MOVE_TIE_UP				: String = 'TIE UP';
-		private static const MOVE_BIG_STANK				: String = 'BIG STANK';
 		private static const MOVE_OVERGROWN				: String = 'OVERGROWN';
 		private static const MOVE_DAD_MEMORIES			: String = 'DAD MEMORIES';
 		private static const MOVE_COOL_BREEZE			: String = 'COOL BREEZE';
@@ -207,6 +205,8 @@ package com.tinyrpg.misc
 		private static const SFX_MOVE_WATER_SPORT			: Sound = new SFXWaterSport;
 		private static const SFX_MOVE_WING_ATTACK 			: Sound = new SFXWingAttack;
 		private static const SFX_MOVE_WISH					: Sound = new SFXProtect;
+		private static const SFX_MOVE_LACE_WHIP				: Sound = new SFXLaceWhip;
+		private static const SFX_MOVE_OVERGROWN				: Sound = new SFXOvergrown;
 		
 		// Spritesheet XML: Player
 		[Embed(source='../../../../bin/xml/MoveFX/player_absorb.xml', mimeType='application/octet-stream')] 			public static const XML_Absorb_Player : Class;
@@ -287,6 +287,8 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/player_water_gun.xml', mimeType='application/octet-stream')] 			public static const XML_Water_Gun_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_wing_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Wing_Attack_Player : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/player_wish.xml', mimeType='application/octet-stream')] 				public static const XML_Wish_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_lace_whip.xml', mimeType='application/octet-stream')] 			public static const XML_Lace_Whip_Player : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/player_overgrown.xml', mimeType='application/octet-stream')] 			public static const XML_Overgrown_Player : Class;
 			
 		// Spritesheet XML: Enemy
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_absorb.xml', mimeType='application/octet-stream')] 				public static const XML_Absorb_Enemy : Class;
@@ -367,6 +369,8 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_water_gun.xml', mimeType='application/octet-stream')] 			public static const XML_Water_Gun_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_wing_attack.xml', mimeType='application/octet-stream')] 		public static const XML_Wing_Attack_Enemy : Class;
 		[Embed(source='../../../../bin/xml/MoveFX/enemy_wish.xml', mimeType='application/octet-stream')] 				public static const XML_Wish_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_lace_whip.xml', mimeType='application/octet-stream')] 			public static const XML_Lace_Whip_Enemy : Class;
+		[Embed(source='../../../../bin/xml/MoveFX/enemy_overgrown.xml', mimeType='application/octet-stream')] 			public static const XML_Overgrown_Enemy : Class;
 		
 		public static function getMoveFXXML( name: String, isEnemy : Boolean ) : XML
 		{
@@ -463,7 +467,6 @@ package com.tinyrpg.misc
 				case MOVE_WATER_PULSE		: newXMLBytes = ( isEnemy ? new XML_Supersonic_Enemy : new XML_Supersonic_Player ) as ByteArray; break;
 				case MOVE_WING_ATTACK 		: newXMLBytes = ( isEnemy ? new XML_Wing_Attack_Enemy : new XML_Wing_Attack_Player ) as ByteArray; break;
 				case MOVE_WISH				: newXMLBytes = ( isEnemy ? new XML_Wish_Enemy : new XML_Wish_Player ) as ByteArray; break;
-				
 				case MOVE_PAPER_CUT			: newXMLBytes = ( isEnemy ? new XML_Scratch_Enemy : new XML_Scratch_Player ) as ByteArray; break;
 				case MOVE_MENACE			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
 				case MOVE_MOVE				: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
@@ -476,12 +479,10 @@ package com.tinyrpg.misc
 				case MOVE_DRIPPY_YOLK		: newXMLBytes = ( isEnemy ? new XML_Water_Gun_Enemy : new XML_Water_Gun_Player ) as ByteArray; break;
 				case MOVE_CHICKEN_TIME		: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
 				case MOVE_WIGGLE			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
-				
-				
+				case MOVE_LACE_WHIP			: newXMLBytes = ( isEnemy ? new XML_Lace_Whip_Enemy : new XML_Lace_Whip_Player ) as ByteArray; break;
 				case MOVE_HEEL				: newXMLBytes = ( isEnemy ? new XML_Recover_Enemy : new XML_Recover_Player ) as ByteArray; break;
 				case MOVE_TIE_UP			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
-				
-				
+				case MOVE_OVERGROWN			: newXMLBytes = ( isEnemy ? new XML_Overgrown_Enemy : new XML_Overgrown_Player ) as ByteArray; break;
 				case MOVE_DAD_MEMORIES		: newXMLBytes = ( isEnemy ? new XML_Wish_Enemy : new XML_Wish_Player ) as ByteArray; break;
 				case MOVE_COOL_BREEZE		: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
 			}
@@ -586,7 +587,6 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			newSprite = isEnemy ? new HydroPumpPlayer : new HydroPumpEnemy; break;
 				case MOVE_WING_ATTACK:			newSprite = isEnemy ? new WingAttackEnemy : new WingAttackPlayer; break;
 				case MOVE_WISH:					newSprite = isEnemy ? new WishEnemy: new WishPlayer; break;
-				
 				case MOVE_PAPER_CUT:			newSprite = isEnemy ? new ScratchEnemy : new ScratchPlayer; break;
 				case MOVE_MENACE:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 				case MOVE_MOVE:					newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
@@ -599,12 +599,10 @@ package com.tinyrpg.misc
 				case MOVE_DRIPPY_YOLK: 			newSprite = isEnemy ? new DrippyYolkEnemy : new DrippyYolkPlayer; break;
 				case MOVE_CHICKEN_TIME:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 				case MOVE_WIGGLE:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
-				
-				
+				case MOVE_LACE_WHIP:			newSprite = isEnemy ? new LaceWhipEnemy : new LaceWhipPlayer; break;
 				case MOVE_HEEL:					newSprite = isEnemy ? new RecoverEnemy : new RecoverPlayer; break;
 				case MOVE_TIE_UP:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
-				
-				
+				case MOVE_OVERGROWN:			newSprite = isEnemy ? new OvergrownEnemy : new OvergrownPlayer; break;						
 				case MOVE_DAD_MEMORIES:			newSprite = isEnemy ? new WishEnemy: new WishPlayer; break;
 				case MOVE_COOL_BREEZE:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 			}
@@ -706,7 +704,6 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			yOffset = isEnemy ? -2 : 2; break;
 				case MOVE_WING_ATTACK:			yOffset = isEnemy ? 0 : -6; break;
 				case MOVE_WISH:					yOffset = isEnemy ? 0 : 0; break;
-				
 				case MOVE_PAPER_CUT:			yOffset = isEnemy ? 0 : -4; break;
 				case MOVE_MENACE:				yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_MOVE:					yOffset = isEnemy ? 0 : 0; break;
@@ -719,12 +716,10 @@ package com.tinyrpg.misc
 				case MOVE_DRIPPY_YOLK: 			yOffset = isEnemy ? 0 : -6; break;
 				case MOVE_CHICKEN_TIME:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_WIGGLE:				yOffset = isEnemy ? 0 : 0; break;
-				
-				
+				case MOVE_LACE_WHIP:			yOffset = isEnemy ? 0 : 0; break;				
 				case MOVE_HEEL:					yOffset = isEnemy ? -6 : 0; break;
 				case MOVE_TIE_UP:				yOffset = isEnemy ? 0 : 0; break;
-				
-				
+				case MOVE_OVERGROWN:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_DAD_MEMORIES:			yOffset = isEnemy ? 0 : 0; break;
 				case MOVE_COOL_BREEZE:			yOffset = isEnemy ? 0 : 0; break;
 			}
@@ -827,7 +822,6 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			return SFX_MOVE_WATER_SPORT; 
 				case MOVE_WING_ATTACK:			return SFX_MOVE_WING_ATTACK; 
 				case MOVE_WISH:					return SFX_MOVE_WISH;
-				
 				case MOVE_PAPER_CUT:			return SFX_MOVE_SCRATCH;
 				case MOVE_MENACE:				return SFX_MOVE_TAIL_WHIP;
 				case MOVE_MOVE:					return SFX_MOVE_TAIL_WHIP;
@@ -840,12 +834,10 @@ package com.tinyrpg.misc
 				case MOVE_DRIPPY_YOLK: 			return SFX_MOVE_WATER_GUN;
 				case MOVE_CHICKEN_TIME:			return SFX_MOVE_TAIL_WHIP;
 				case MOVE_WIGGLE:				return SFX_MOVE_TAIL_WHIP;
-				
-				
+				case MOVE_LACE_WHIP:			return SFX_MOVE_LACE_WHIP;
 				case MOVE_HEEL:					return SFX_MOVE_RECOVER;
 				case MOVE_TIE_UP:				return SFX_MOVE_TAIL_WHIP;
-				
-				
+				case MOVE_OVERGROWN:			return SFX_MOVE_OVERGROWN;				
 				case MOVE_DAD_MEMORIES:			return SFX_MOVE_WISH;
 				case MOVE_COOL_BREEZE:			return SFX_MOVE_TAIL_WHIP;
 			}

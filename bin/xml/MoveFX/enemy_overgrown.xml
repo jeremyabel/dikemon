@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:37bb6321fe593b1a3877b098d85a64c1:f094f60599a32230b648bc4c7ca02307:6156daaeba582b558d25f54bdb1f62a7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="enemy_overgrown.png" width="315" height="315">
+    <sprite n="overgrown_00000" x="216" y="30" w="1" h="1" pX="0.5" pY="0.5" oX="0" oY="0" oW="160" oH="144"/>
+    <sprite n="overgrown_00001" x="200" y="147" w="16" h="7" pX="0.5" pY="0.5" oX="52" oY="84" oW="160" oH="144"/>
+    <sprite n="overgrown_00002" x="112" y="302" w="16" h="7" pX="0.5" pY="0.5" oX="52" oY="84" oW="160" oH="144"/>
+    <sprite n="overgrown_00003" x="216" y="23" w="40" h="7" pX="0.5" pY="0.5" oX="28" oY="84" oW="160" oH="144"/>
+    <sprite n="overgrown_00004" x="160" y="147" w="40" h="7" pX="0.5" pY="0.5" oX="28" oY="84" oW="160" oH="144"/>
+    <sprite n="overgrown_00005" x="160" y="300" w="56" h="15" pX="0.5" pY="0.5" oX="12" oY="76" oW="160" oH="144"/>
+    <sprite n="overgrown_00006" x="224" y="84" w="56" h="15" pX="0.5" pY="0.5" oX="12" oY="76" oW="160" oH="144"/>
+    <sprite n="overgrown_00007" x="224" y="99" w="56" h="15" pX="0.5" pY="0.5" oX="12" oY="76" oW="160" oH="144"/>
+    <sprite n="overgrown_00008" x="216" y="278" w="56" h="15" pX="0.5" pY="0.5" oX="12" oY="76" oW="160" oH="144"/>
+    <sprite n="overgrown_00009" x="216" y="293" w="56" h="15" pX="0.5" pY="0.5" oX="12" oY="76" oW="160" oH="144"/>
+    <sprite n="overgrown_00010" x="112" y="155" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00011" x="160" y="124" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00012" x="168" y="31" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00013" x="216" y="0" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00014" x="168" y="54" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00015" x="168" y="77" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00016" x="168" y="100" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00017" x="160" y="185" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00018" x="160" y="208" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00019" x="160" y="231" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00020" x="160" y="254" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00021" x="160" y="277" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00022" x="224" y="61" w="56" h="23" pX="0.5" pY="0.5" oX="12" oY="68" oW="160" oH="144"/>
+    <sprite n="overgrown_00023" x="0" y="0" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00024" x="0" y="31" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00025" x="0" y="62" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00026" x="0" y="93" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00027" x="0" y="124" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00028" x="0" y="155" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00029" x="0" y="186" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00030" x="0" y="217" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00031" x="112" y="124" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00032" x="168" y="0" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00033" x="168" y="154" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00034" x="112" y="178" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00035" x="112" y="209" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00036" x="112" y="240" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00037" x="112" y="271" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00038" x="216" y="123" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00039" x="0" y="248" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00040" x="0" y="279" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00041" x="56" y="0" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00042" x="56" y="31" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00043" x="56" y="62" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00044" x="56" y="93" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00045" x="56" y="124" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00046" x="56" y="155" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00047" x="224" y="30" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00048" x="216" y="154" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00049" x="216" y="185" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00050" x="216" y="216" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00051" x="216" y="247" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00052" x="264" y="114" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00053" x="264" y="145" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00054" x="264" y="176" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00055" x="56" y="186" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00056" x="56" y="217" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00057" x="56" y="248" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00058" x="56" y="279" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00059" x="112" y="0" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00060" x="112" y="31" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00061" x="112" y="62" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00062" x="112" y="93" w="56" h="31" pX="0.5" pY="0.5" oX="12" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00063" x="264" y="207" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+    <sprite n="overgrown_00064" x="264" y="238" w="48" h="31" pX="0.5" pY="0.5" oX="16" oY="60" oW="160" oH="144"/>
+</TextureAtlas>
