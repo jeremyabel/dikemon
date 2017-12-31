@@ -802,8 +802,7 @@ Soccer Shorts</RIVAL>
     <TYPE_2>Normal</TYPE_2>
     <MOVES> 1: DRIPPY_YOLK;
  1: CHICKEN_TIME;
- 1: WIGGLE;
-11: EXPLODE</MOVES>
+ 1: WIGGLE</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -832,8 +831,7 @@ Soccer Shorts</RIVAL>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: LACE_WRAP;
 1: HEEL;
-1: TIE_UP;
-7: BIG_STANK</MOVES>
+1: TIE_UP</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
