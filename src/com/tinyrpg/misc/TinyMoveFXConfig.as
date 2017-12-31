@@ -596,7 +596,7 @@ package com.tinyrpg.misc
 				case MOVE_KICK:					newSprite = isEnemy ? new PoundEnemy : new PoundPlayer; break;
 				case MOVE_YELL:					newSprite = isEnemy ? new GrowlEnemy : new GrowlPlayer; break;
 				case MOVE_COMFY_SHORTS:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
-				case MOVE_DRIPPY_YOLK: 			newSprite = isEnemy ? new WaterGunEnemy : new WaterGunPlayer; break;
+				case MOVE_DRIPPY_YOLK: 			newSprite = isEnemy ? new DrippyYolkEnemy : new DrippyYolkPlayer; break;
 				case MOVE_CHICKEN_TIME:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 				case MOVE_WIGGLE:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 				
