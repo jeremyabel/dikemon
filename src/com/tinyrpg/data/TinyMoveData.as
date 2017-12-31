@@ -27,6 +27,7 @@ package com.tinyrpg.data
 		private var m_fxScreenShake		: String;
 		private var m_fxAnimDistortion	: String;
 		private var m_fxPaletteEffect	: String;
+		private var m_uselessText		: String;
 		
 		public var moveFXSAnimation		: TinyMoveFXAnimation;
 		
@@ -46,6 +47,7 @@ package com.tinyrpg.data
 		public function get fxScreenShake()		: String { return m_fxScreenShake; }
 		public function get fxAnimDistortion()	: String { return m_fxAnimDistortion; }
 		public function get fxPaletteEffect()	: String { return m_fxPaletteEffect; }
+		public function get uselessText()		: String { return m_uselessText; }
 		
 		// Special attack for use when a mon hurts itself in confusion
 		public static var CONFUSION_ATTACK : TinyMoveData = new TinyMoveData('CONFUSION HIT', '', 40, 0, 0, 10, TinyType.NORMAL, 0, 'SELF', [ TinyMoveEffect.HIT ] );
@@ -67,7 +69,8 @@ package com.tinyrpg.data
 			fxScreenInverts : String = '',
 			fxScreenShake : String = '',
 			fxAnimDistortion : String = '',
-			fxPaletteEffect : String = '')  
+			fxPaletteEffect : String = '',
+			uselessText : String = '')  
 		{
 			m_name = name.toUpperCase();
 			m_description = description;
@@ -84,6 +87,7 @@ package com.tinyrpg.data
 			m_fxScreenShake = fxScreenShake;
 			m_fxAnimDistortion = fxAnimDistortion;
 			m_fxPaletteEffect = fxPaletteEffect;
+			m_uselessText = uselessText;
 		}
 
 		public static function newFromXML(xmlData : XML) : TinyMoveData
@@ -96,7 +100,8 @@ package com.tinyrpg.data
 			for each (var moveEffectString : String in moveEffectsList )
 			{
 				var moveEffect : TinyMoveEffect = TinyMoveEffect.getEffectByName( moveEffectString );
-				
+					
+				// Print missing move effects
 				if (moveEffect)
 					moveEffectsArray.push(moveEffect);	
 				else 
@@ -118,7 +123,8 @@ package com.tinyrpg.data
 				xmlData.child('SCREEN_INVERT'),
 				xmlData.child('SCREEN_SHAKE'),
 				xmlData.child('ANIM_DISTORTION_EFFECT'),
-				xmlData.child('ANIM_PALETTE_EFFECT')
+				xmlData.child('ANIM_PALETTE_EFFECT'),
+				xmlData.child('USELESS_TEXT')
 			);	
 		}
 		
@@ -143,7 +149,8 @@ package com.tinyrpg.data
 				TinyMath.deepCopyString( target.fxScreenInverts ),
 				TinyMath.deepCopyString( target.fxScreenShake ),
 				TinyMath.deepCopyString( target.fxAnimDistortion ),
-				TinyMath.deepCopyString( target.fxPaletteEffect )
+				TinyMath.deepCopyString( target.fxPaletteEffect ),
+				TinyMath.deepCopyString( target.uselessText )
 			);
 		}
 		
@@ -155,6 +162,12 @@ package com.tinyrpg.data
 		
 		public function isSuperEffectiveVs( types : Array ) : Boolean
 		{	
+			// Moves with the USELESS_TEXT effect are never effective
+			if ( this.hasEffect( TinyMoveEffect.USELESS_TEXT ) ) 
+			{
+				return false;
+			}
+			
 			var effectiveness : Number = 1;
 			for each ( var targetType : TinyType in types )
 			{	
@@ -169,6 +182,12 @@ package com.tinyrpg.data
 		
 		public function isNotEffectiveVs( types : Array ) : Boolean
 		{
+			// Moves with the USELESS_TEXT effect are always not effective
+			if ( this.hasEffect( TinyMoveEffect.USELESS_TEXT ) ) 
+			{
+				return true;
+			}
+			
 			var effectiveness : Number = 1;
 			for each ( var targetType : TinyType in types )
 			{
@@ -218,6 +237,11 @@ package com.tinyrpg.data
 		{
 			return this.m_effects.filter( TinyMoveEffect.isStatusEffect );	
 		}
+		
+		public function getMiscEffects() : Array
+		{
+			return this.m_effects.filter( TinyMoveEffect.isMiscEffect );
+		}
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//  Move Effect Functions
@@ -232,11 +256,11 @@ package com.tinyrpg.data
 			{
 				TinyLogManager.log('applyPowerModEffect: LOW_KICK', this);
 				
-				if ( defender.weight < 9.9 ) 	return 20;
-				if ( defender.weight < 24.9 )	return 40;
-				if ( defender.weight < 49.9 )	return 60;
-				if ( defender.weight < 99.9 )	return 80;
-				if ( defender.weight < 199.9 )	return 100;
+				if ( defender.weight <    9.9 ) return 20;
+				if ( defender.weight <   24.9 )	return 40;
+				if ( defender.weight <   49.9 )	return 60;
+				if ( defender.weight <   99.9 )	return 80;
+				if ( defender.weight <  199.9 )	return 100;
 				if ( defender.weight >= 200.0 ) return 120;
 			}
 			

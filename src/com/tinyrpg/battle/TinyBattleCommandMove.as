@@ -257,10 +257,11 @@ package com.tinyrpg.battle
 			{
 				TinyLogManager.log('defender hasn\'t fainted, do secondary effects.', this);
 				
-				// Get any stat or status changing effects
+				// Get any stat or status changing or other misc effects
+				var miscEffects : Array = move.getMiscEffects(); 
 				var statModEffects : Array = move.getStatModEffects();
 				var statusChangeEffects : Array = move.getStatusEffects();
-				var allSecondaryEffects : Array = statModEffects.concat( statusChangeEffects ); 
+				var allSecondaryEffects : Array = miscEffects.concat( statModEffects ).concat( statusChangeEffects ); 
 				var wasHitAttack : Boolean = move.hasEffect( TinyMoveEffect.HIT );
 				var affectedMon : TinyMon = move.targetsSelf ? attackingMon : defendingMon;
 				var isFirstEffect : Boolean = true;
@@ -318,8 +319,17 @@ package com.tinyrpg.battle
 							effectDialogString = TinyBattleStrings.getStatusChangeString( affectedMon, effect.property as String, effectSucceeded ); 
 						}
 						
-						// Play hit reaction if the effect succeeded (only once)
-						if ( !move.targetsSelf && isFirstEffect && effectSucceeded )
+						// Show any useless text dialog boxes
+						if ( effect.type == 'USELESS_TEXT' )
+						{	
+							this.eventSequence.addDialogBoxFromString( move.uselessText );
+							
+							// Show "not very effective" text, for the lulz
+							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.NOT_EFFECTIVE ) );
+						}
+						
+						// Play hit reaction if the effect succeeded (only once), for non-USELESS_TEXT effects
+						if ( !move.targetsSelf && isFirstEffect && effectSucceeded && effect.type != 'USELESS_TEXT' )
 						{
 							this.eventSequence.addDelay( 0.2 );
 							
@@ -340,8 +350,8 @@ package com.tinyrpg.battle
 							this.eventSequence.addDelay( 0.2 );
 						}
 							
-						// Add "but it didn't work" message if the effect did not succeed, but only for attacks that are secondary-effect only
-						if ( !effectSucceeded && !wasHitAttack && isFirstEffect ) 
+						// Add "but it didn't work" message if the effect did not succeed, but only for attacks that are secondary-effect only and are not USELESS_TEXT
+						if ( !effectSucceeded && !wasHitAttack && isFirstEffect && effect.type != 'USELESS_TEXT' ) 
 						{
 							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.FAILED ) );							
 						}

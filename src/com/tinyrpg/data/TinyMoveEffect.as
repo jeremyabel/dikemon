@@ -16,7 +16,7 @@ package com.tinyrpg.data
 		public static const PSYWAVE				: TinyMoveEffect = new TinyMoveEffect( 'PSYWAVE' );
 		public static const LOW_KICK			: TinyMoveEffect = new TinyMoveEffect( 'LOW_KICK' );
 		public static const HIGH_CRITICAL		: TinyMoveEffect = new TinyMoveEffect( 'HIGH_CRITICAL' );
-		
+		public static const USELESS_TEXT		: TinyMoveEffect = new TinyMoveEffect( 'USELESS_TEXT' );
 		public static const ABSORB				: TinyMoveEffect = new TinyMoveEffect( 'ABSORB' );
 		public static const FAKE_OUT			: TinyMoveEffect = new TinyMoveEffect( 'FAKE_OUT' );
 		public static const DREAM_EATER			: TinyMoveEffect = new TinyMoveEffect( 'DREAM_EATER' );
@@ -79,7 +79,7 @@ package com.tinyrpg.data
 		public static const BURN				: TinyMoveEffect = new TinyMoveEffect( 'STATUS_EFFECT',	TinyStatusEffect.BURN );	
 		public static const FLINCH 				: TinyMoveEffect = new TinyMoveEffect( 'STATUS_EFFECT',	TinyStatusEffect.FLINCH );
 		public static const MEAN_LOOK			: TinyMoveEffect = new TinyMoveEffect( 'STATUS_EFFECT', TinyStatusEffect.MEAN_LOOK );
-		public static const LOCK_ON				: TinyMoveEffect = new TinyMoveEffect( 'STATUS_EFFECT',	TinyStatusEffect.LOCK_ON );
+		public static const LOCK_ON				: TinyMoveEffect = new TinyMoveEffect( 'STATUS_EFFECT',	TinyStatusEffect.LOCK_ON ); 
 		
 		public var type : String;
 		public var property : *;
@@ -104,6 +104,13 @@ package com.tinyrpg.data
 			return moveEffect.type == 'STATUS_EFFECT';
 		}
 		
+		public static function isMiscEffect( element : *, index : int, arr : Array ) : Boolean
+		{
+			index; arr;
+			var moveEffect : TinyMoveEffect = element as TinyMoveEffect;
+			return moveEffect.type == 'USELESS_TEXT';
+		}
+		
 		public static function getEffectByName( name : String ) : TinyMoveEffect
 		{
 			switch (name)
@@ -118,6 +125,7 @@ package com.tinyrpg.data
 				case 'PSYWAVE':				return PSYWAVE;
 				case 'LOW_KICK':			return LOW_KICK;
 				case 'HIGH_CRITICAL':		return HIGH_CRITICAL;
+				case 'USELESS_TEXT':		return USELESS_TEXT;
 				case 'ABSORB':				return ABSORB;
 				case 'DREAM_EATER':			return DREAM_EATER;
 				case 'FAKE_OUT':			return FAKE_OUT;

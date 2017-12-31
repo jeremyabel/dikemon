@@ -712,7 +712,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: PAPER_CUT;
+1: MENACE;
+1: MOVE;
+5: BOX_POWER</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -739,7 +742,8 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: MOIST_DROPS;
+5: TURBO_BUCKET</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -766,7 +770,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: KICK;
+1: YELL;
+1: COMFY_SHORTS;
+5: BITE</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -793,7 +800,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES> 1: DRIPPY_YOLK;
+ 1: CHICKEN_TIME;
+ 1: WIGGLE;
+11: EXPLODE</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -820,7 +830,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: LACE_WRAP;
+1: HEEL;
+1: TIE_UP;
+7: BIG_STANK</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -847,7 +860,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES> 1: OVERGROWN;
+ 1: DAD_MEMORIES;
+ 1: COOL_BREEZE;
+11: LEAF_BLADE</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -874,7 +890,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: SCRATCH;
+1: SCRATCH;
+1: SCRATCH;
+5: SCRATCH</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -901,7 +920,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: SCRATCH;
+1: SCRATCH;
+1: SCRATCH;
+5: SCRATCH</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -928,7 +950,10 @@ Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES>1: SCRATCH</MOVES>
+    <MOVES>1: SCRATCH;
+1: SCRATCH;
+1: SCRATCH;
+5: SCRATCH</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>

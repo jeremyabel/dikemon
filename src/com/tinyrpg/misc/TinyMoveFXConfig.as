@@ -100,6 +100,26 @@ package com.tinyrpg.misc
 		private static const MOVE_WATER_SPORT			: String = 'WATER SPORT'; 
 		private static const MOVE_WING_ATTACK 			: String = 'WING ATTACK';
 		private static const MOVE_WISH					: String = 'WISH';
+		private static const MOVE_PAPER_CUT 			: String = 'PAPER CUT';
+		private static const MOVE_MENACE				: String = 'MENACE';
+		private static const MOVE_MOVE					: String = 'MOVE';
+		private static const MOVE_BOX_POWER				: String = 'BOX POWER';
+		private static const MOVE_MOIST_DROPS			: String = 'MOIST DROPS';
+		private static const MOVE_TURBO_BUCKET			: String = 'TURBO BUCKET';
+		private static const MOVE_KICK					: String = 'KICK';
+		private static const MOVE_YELL					: String = 'YELL';
+		private static const MOVE_COMFY_SHORTS			: String = 'COMFY SHORTS';
+		private static const MOVE_DRIPPY_YOLK			: String = 'DRIPPY YOLK';
+		private static const MOVE_CHICKEN_TIME			: String = 'CHICKEN TIME';
+		private static const MOVE_WIGGLE				: String = 'WIGGLE';
+		private static const MOVE_EXPLODE				: String = 'EXPLODE';
+		private static const MOVE_LACE_WRAP				: String = 'LACE WRAP';
+		private static const MOVE_HEEL					: String = 'HEEL';
+		private static const MOVE_TIE_UP				: String = 'TIE UP';
+		private static const MOVE_BIG_STANK				: String = 'BIG STANK';
+		private static const MOVE_OVERGROWN				: String = 'OVERGROWN';
+		private static const MOVE_DAD_MEMORIES			: String = 'DAD MEMORIES';
+		private static const MOVE_COOL_BREEZE			: String = 'COOL BREEZE';
 		
 		private static const SFX_MOVE_ABSORB 				: Sound = new SFXAbsorb;
 		private static const SFX_MOVE_AGILITY 				: Sound = new SFXAgility;
@@ -443,6 +463,27 @@ package com.tinyrpg.misc
 				case MOVE_WATER_PULSE		: newXMLBytes = ( isEnemy ? new XML_Supersonic_Enemy : new XML_Supersonic_Player ) as ByteArray; break;
 				case MOVE_WING_ATTACK 		: newXMLBytes = ( isEnemy ? new XML_Wing_Attack_Enemy : new XML_Wing_Attack_Player ) as ByteArray; break;
 				case MOVE_WISH				: newXMLBytes = ( isEnemy ? new XML_Wish_Enemy : new XML_Wish_Player ) as ByteArray; break;
+				
+				case MOVE_PAPER_CUT			: newXMLBytes = ( isEnemy ? new XML_Scratch_Enemy : new XML_Scratch_Player ) as ByteArray; break;
+				case MOVE_MENACE			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				case MOVE_MOVE				: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				case MOVE_BOX_POWER			: newXMLBytes = ( isEnemy ? new XML_Focus_Energy_Enemy : new XML_Focus_Energy_Player ) as ByteArray; break;
+				case MOVE_MOIST_DROPS		: newXMLBytes = ( isEnemy ? new XML_Water_Gun_Enemy : new XML_Water_Gun_Player ) as ByteArray; break;
+				case MOVE_TURBO_BUCKET		: newXMLBytes = ( isEnemy ? new XML_Quick_Attack_Enemy : new XML_Quick_Attack_Player ) as ByteArray; break;
+				case MOVE_KICK				: newXMLBytes = ( isEnemy ? new XML_Pound_Enemy : new XML_Pound_Player ) as ByteArray; break;
+				case MOVE_YELL				: newXMLBytes = ( isEnemy ? new XML_Growl_Enemy : new XML_Growl_Player ) as ByteArray; break;
+				case MOVE_COMFY_SHORTS		: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				case MOVE_DRIPPY_YOLK		: newXMLBytes = ( isEnemy ? new XML_Water_Gun_Enemy : new XML_Water_Gun_Player ) as ByteArray; break;
+				case MOVE_CHICKEN_TIME		: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				case MOVE_WIGGLE			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				
+				
+				case MOVE_HEEL				: newXMLBytes = ( isEnemy ? new XML_Recover_Enemy : new XML_Recover_Player ) as ByteArray; break;
+				case MOVE_TIE_UP			: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
+				
+				
+				case MOVE_DAD_MEMORIES		: newXMLBytes = ( isEnemy ? new XML_Wish_Enemy : new XML_Wish_Player ) as ByteArray; break;
+				case MOVE_COOL_BREEZE		: newXMLBytes = ( isEnemy ? new XML_Tail_Whip_Enemy : new XML_Tail_Whip_Player ) as ByteArray; break;
 			}
 			
 			var string : String = newXMLBytes.readUTFBytes( newXMLBytes.length );			
@@ -545,6 +586,27 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			newSprite = isEnemy ? new HydroPumpPlayer : new HydroPumpEnemy; break;
 				case MOVE_WING_ATTACK:			newSprite = isEnemy ? new WingAttackEnemy : new WingAttackPlayer; break;
 				case MOVE_WISH:					newSprite = isEnemy ? new WishEnemy: new WishPlayer; break;
+				
+				case MOVE_PAPER_CUT:			newSprite = isEnemy ? new ScratchEnemy : new ScratchPlayer; break;
+				case MOVE_MENACE:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				case MOVE_MOVE:					newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				case MOVE_BOX_POWER:			newSprite = isEnemy ? new FocusEnergyEnemy : new FocusEnergyPlayer; break;
+				case MOVE_MOIST_DROPS: 			newSprite = isEnemy ? new WaterGunEnemy : new WaterGunPlayer; break;
+				case MOVE_TURBO_BUCKET:			newSprite = isEnemy ? new QuickAttackEnemy : new QuickAttackPlayer; break;
+				case MOVE_KICK:					newSprite = isEnemy ? new PoundEnemy : new PoundPlayer; break;
+				case MOVE_YELL:					newSprite = isEnemy ? new GrowlEnemy : new GrowlPlayer; break;
+				case MOVE_COMFY_SHORTS:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				case MOVE_DRIPPY_YOLK: 			newSprite = isEnemy ? new WaterGunEnemy : new WaterGunPlayer; break;
+				case MOVE_CHICKEN_TIME:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				case MOVE_WIGGLE:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				
+				
+				case MOVE_HEEL:					newSprite = isEnemy ? new RecoverEnemy : new RecoverPlayer; break;
+				case MOVE_TIE_UP:				newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
+				
+				
+				case MOVE_DAD_MEMORIES:			newSprite = isEnemy ? new WishEnemy: new WishPlayer; break;
+				case MOVE_COOL_BREEZE:			newSprite = isEnemy ? new TailWhipEnemy : new TailWhipPlayer; break;
 			}
 			
 			return newSprite;
@@ -644,6 +706,27 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			yOffset = isEnemy ? -2 : 2; break;
 				case MOVE_WING_ATTACK:			yOffset = isEnemy ? 0 : -6; break;
 				case MOVE_WISH:					yOffset = isEnemy ? 0 : 0; break;
+				
+				case MOVE_PAPER_CUT:			yOffset = isEnemy ? 0 : -4; break;
+				case MOVE_MENACE:				yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_MOVE:					yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_BOX_POWER:			yOffset = isEnemy ? 0 : 4; break;
+				case MOVE_MOIST_DROPS:			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_TURBO_BUCKET:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_KICK:					yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_YELL:					yOffset = isEnemy ? -8 : -4; break;
+				case MOVE_COMFY_SHORTS:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_DRIPPY_YOLK: 			yOffset = isEnemy ? 0 : -6; break;
+				case MOVE_CHICKEN_TIME:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_WIGGLE:				yOffset = isEnemy ? 0 : 0; break;
+				
+				
+				case MOVE_HEEL:					yOffset = isEnemy ? -6 : 0; break;
+				case MOVE_TIE_UP:				yOffset = isEnemy ? 0 : 0; break;
+				
+				
+				case MOVE_DAD_MEMORIES:			yOffset = isEnemy ? 0 : 0; break;
+				case MOVE_COOL_BREEZE:			yOffset = isEnemy ? 0 : 0; break;
 			}
 			
 			TinyLogManager.log('getMoveAdjustY: ' + name + ' = ' + yOffset, null);
@@ -744,6 +827,27 @@ package com.tinyrpg.misc
 				case MOVE_WATER_SPORT: 			return SFX_MOVE_WATER_SPORT; 
 				case MOVE_WING_ATTACK:			return SFX_MOVE_WING_ATTACK; 
 				case MOVE_WISH:					return SFX_MOVE_WISH;
+				
+				case MOVE_PAPER_CUT:			return SFX_MOVE_SCRATCH;
+				case MOVE_MENACE:				return SFX_MOVE_TAIL_WHIP;
+				case MOVE_MOVE:					return SFX_MOVE_TAIL_WHIP;
+				case MOVE_BOX_POWER:			return SFX_MOVE_FOCUS_ENERGY;
+				case MOVE_MOIST_DROPS:			return SFX_MOVE_WATER_GUN;
+				case MOVE_TURBO_BUCKET:			return SFX_MOVE_QUICK_ATTACK;
+				case MOVE_KICK:					return SFX_MOVE_POUND;
+				case MOVE_YELL:					return SFX_MOVE_GROWL;
+				case MOVE_COMFY_SHORTS:			return SFX_MOVE_TAIL_WHIP;
+				case MOVE_DRIPPY_YOLK: 			return SFX_MOVE_WATER_GUN;
+				case MOVE_CHICKEN_TIME:			return SFX_MOVE_TAIL_WHIP;
+				case MOVE_WIGGLE:				return SFX_MOVE_TAIL_WHIP;
+				
+				
+				case MOVE_HEEL:					return SFX_MOVE_RECOVER;
+				case MOVE_TIE_UP:				return SFX_MOVE_TAIL_WHIP;
+				
+				
+				case MOVE_DAD_MEMORIES:			return SFX_MOVE_WISH;
+				case MOVE_COOL_BREEZE:			return SFX_MOVE_TAIL_WHIP;
 			}
 		}
 	}
