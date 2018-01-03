@@ -106,6 +106,9 @@ package com.tinyrpg.display
 		{
 			TinyLogManager.log('captureBattleBitmap', this);
 			
+			// Clear to white
+			this.battleScreenCapture.fillRect( new Rectangle( 0, 0, 160, 144 ), 0xFFFFFFFF );
+			
 			// Draw the battle sprite to the bitmap
 			this.battleScreenCapture.draw( battle, null, null, null, new Rectangle(0, 0, 160, 144 ) );
 			
