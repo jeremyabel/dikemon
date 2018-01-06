@@ -39,6 +39,7 @@ package com.tinyrpg.display
 		public static var HORIZ_SPEED : uint = 2;
 
 		private var directions : Array = [ 'LEFT', 'UP', 'RIGHT', 'DOWN' ];
+		private var debugDirectionIndex : int = -1;
 
 		private var spritesheet : TinyWalkSpriteSheet;
 
@@ -52,8 +53,8 @@ package com.tinyrpg.display
 		{
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 			
-			this.spritesheet = new TinyWalkSpriteSheet( id );
-
+			this.spritesheet = new TinyWalkSpriteSheet( id, TinyWalkSprite.DOWN );
+			
 			this.hitBox = new Sprite;
 			this.hitBox.name = 'hitBox_' + name;
 			this.hitBox.graphics.beginFill(0xFF00FF, 0.25);
@@ -67,6 +68,19 @@ package com.tinyrpg.display
 
 			// Wait for control
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
+		}
+		
+		public function debugWalkCycles() : void
+		{
+			this.spritesheet.startWalking( 5 );
+			TweenMax.delayedCall( 40, this.updateDebugWalkCycles, null, true );
+		}
+		
+		private function updateDebugWalkCycles() : void
+		{	
+			this.debugDirectionIndex = ( this.debugDirectionIndex + 1 ) % 4;
+			this.spritesheet.setFacing( this.directions[ this.debugDirectionIndex ] );
+			TweenMax.delayedCall( 40, this.updateDebugWalkCycles, null, true );
 		}
 
 		// For making NPCs

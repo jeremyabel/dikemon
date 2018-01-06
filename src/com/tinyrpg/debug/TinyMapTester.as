@@ -109,17 +109,18 @@ package com.tinyrpg.debug
 			
 			for ( var i : uint = 0; i < sprites.length; i++ ) 
 			{
-				if ( i > 0 && i % 16 == 0 ) 
+				if ( i > 0 && i % 8 == 0 ) 
 				{ 
-					xOffset += 122;
+					xOffset += 17;
 					yOffset = 12;
 				}
 				
 				sprites[ i ].x = xOffset;
 				sprites[ i ].y = yOffset;
+				sprites[ i ].debugWalkCycles();
 				map.addChild( sprites[ i ] );
 				
-				yOffset += 16;	
+				yOffset += 17;	
 			}
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
