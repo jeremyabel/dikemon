@@ -70,93 +70,91 @@ package com.tinyrpg.misc
 	 */
 	public class TinySpriteConfig 
 	{
-		// PARTY MEMBERS
-		public static var ANDY			: String = 'ANDY';
-		public static var ASA			: String = 'ASA';
-		public static var DICK_EVAN		: String = 'EVAN';
-		public static var DRUNK_EVAN	: String = 'EVAN?';
-		public static var HYBRID		: String = 'HYBRID';
-		public static var JASON 		: String = 'JASON';
-		public static var FISH			: String = 'FISH';		public static var FISHABEL		: String = 'FISHABEL';		public static var MEGAN			: String = 'MEGAN';
-		public static var RACHEL		: String = 'RACHEL';
-		public static var RALPH			: String = 'RALPH';
-		public static var RON			: String = 'RON';
+		public static var PLAYER_1				: int = 0;
+		public static var PLAYER_1_BIKE 		: int = 6;
+		public static var PLAYER_2				: int = 457;
+		public static var PLAYER_2_BIKE			: int = 463;		
+		public static var PLAYER_3				: int = 27;
+		public static var PLAYER_4				: int = 387;
+		public static var NPC_PROF_OAK			: int = 21;
+		public static var NPC_GARY_RIVAL		: int = 33;
+		public static var NPC_OLD_MAN_1 		: int = 45;
+		public static var NPC_OLD_MAN_2			: int = 132;
+		public static var NPC_OLD_MAN_3			: int = 171;
+		public static var NPC_OLD_MAN_4			: int = 183;
+		public static var NPC_OLD_MAN_5			: int = 256;
+		public static var NPC_OLD_MAN_6			: int = 268;
+		public static var NPC_OLD_MAN_7			: int = 351;
+		public static var NPC_OLD_LADY			: int = 274;
+		public static var NPC_HEADBAND_GIRL_1	: int = 51;
+		public static var NPC_HEADBAND_GIRL_2	: int = 177;
+		public static var NPC_MOHAWK_GUY		: int = 57;
+		public static var NPC_MOM_1				: int = 63;
+		public static var NPC_MOM_2 			: int = 75; 
+		public static var NPC_SCIENTIST_1		: int = 69;
+		public static var NPC_SCIENTIST_2		: int = 87;
+		public static var NPC_SCIENTIST_3		: int = 339;
+		public static var NPC_LONG_HAIR_GIRL_1	: int = 81;
+		public static var NPC_LONG_HAIR_GIRL_2 	: int = 138;
+		public static var NPC_LONG_HAIR_GIRL_3	: int = 189;
+		public static var NPC_LONG_HAIR_GIRL_5	: int = 231;
+		public static var NPC_LONG_HAIR_GIRL_6	: int = 237;
+		public static var NPC_PONY_TAIL_GIRL_1	: int = 102;
+		public static var NPC_PONY_TAIL_GIRL_2	: int = 126;
+		public static var NPC_PONY_TAIL_GIRL_3	: int = 201;
+		public static var NPC_PONY_TAIL_GIRL_4	: int = 225;		 		 
+		public static var NPC_EMO_GUY			: int = 96;
+		public static var NPC_SCRUFFY_GUY		: int = 39;
+		public static var NPC_SCRUFFY_GIRL		: int = 108;
+		public static var NPC_HEADBAND_GUY_1	: int = 114;
+		public static var NPC_HEADBAND_GUY_2	: int = 369;
+		public static var NPC_BANDANA_GUY		: int = 408;
+		public static var NPC_MOTORCYCLE_GUY	: int = 414;
+		public static var NPC_SUNGLASSES_GUY	: int = 420;
+		public static var NPC_ANGRY_GUY			: int = 120;
+		public static var NPC_KARATE_GUY		: int = 153;
+		public static var NPC_EVIL_CAPE_GUY		: int = 165;
+		public static var NPC_BROCK				: int = 144;
+		public static var NPC_MISTY				: int = 159;
+		public static var NPC_CASUAL_GUY_1		: int = 195;
+		public static var NPC_CASUAL_GUY_2		: int = 219;
+		public static var NPC_CASUAL_GUY_3		: int = 243;
+		public static var NPC_CASUAL_GUY_4		: int = 321;
+		public static var NPC_CASUAL_GUY_5		: int = 327;
+		public static var NPC_NERD_GUY			: int = 402;
+		public static var NPC_LITTLE_BOY		: int = 207;
+		public static var NPC_LITTLE_GIRL		: int = 213;
+		public static var NPC_GERMAN_GUY		: int = 249;
+		public static var NPC_GERMAN_GIRL		: int = 262;
+		public static var NPC_SWIMMER_GUY		: int = 280;
+		public static var NPC_SWIMMER_GIRL		: int = 286;
+		public static var NPC_PIKA_SURFER		: int = 294;
+		public static var NPC_ROCKET_GUY		: int = 300;
+		public static var NPC_ROCKET_GIRL		: int = 306;
+		public static var NPC_SAFARI_GUY		: int = 333;
+		public static var NPC_KIMONO_GIRL		: int = 345;
+		public static var NPC_TOPHAT_MAN		: int = 363;
+		public static var NPC_CONDUCTOR_GUY		: int = 381;
+		public static var NPC_SUNHAT_GIRL		: int = 375;
+		public static var NPC_NURSE				: int = 315;
+		public static var NPC_GROUND_MON		: int = 426;
+		public static var NPC_FAIRY_MON			: int = 432;
+		public static var NPC_BIRD_MON			: int = 438;
+		public static var NPC_DRAGON_MON		: int = 444;
 		
-		public static function getSpriteSheet(name : String) : BitmapData
-		{
+//		public static function getCharacterSprite( id : int ) : BitmapData
+//		{
 //			TinyLogManager.log('getSpriteSheet: ' + name, null);
 //			
-			var newSheet : BitmapData;
-//			
-//			switch (name.toUpperCase())
+//			switch ( id )
 //			{
-//				// PARTY MEMBERS
-//				case TinySpriteConfig.ANDY:
-//					newSheet = new AndySheet;
-//					break;//				case TinySpriteConfig.ASA:
-//					newSheet =  new AsaSheet;
-//					break;//				case TinySpriteConfig.DICK_EVAN:
-//					newSheet =  new DickEvanSheet;
-//					break;//				case TinySpriteConfig.DRUNK_EVAN:
-//					newSheet =  new DrunkEvanSheet;
-//					break;//				case TinySpriteConfig.HYBRID:
-//					newSheet =  new HybridSheet;
-//					break;//				case TinySpriteConfig.JASON:
-//					newSheet =  new JasonSheet;
-//					break;
-//				case TinySpriteConfig.FISH:
-//					newSheet =  new FishAbelSheet;//					break;
-//				case TinySpriteConfig.MEGAN:
-//					newSheet =  new MeganSheet;//					break;
-//				case TinySpriteConfig.RACHEL:
-//					newSheet =  new RachelSheet;//					break;//				case TinySpriteConfig.RALPH:
-//					newSheet =  new RalphSheet;
-//					break;
-//				case TinySpriteConfig.RON:
-//					newSheet =  new RonSheet;
-//					break;
-//				
-//				// NPCS
-//				case 'AKIKO':
-//					newSheet = new AkikoSheet;		break;
-//				case 'ANDREW':
-//					newSheet = new AndrewSheet;		break;
-//				case 'ELLEN':
-//					newSheet = new EllenSheet;		break;
-//				case 'JR':
-//					newSheet = new JRSheet;			break;
-//				case 'NICOLE':
-//					newSheet = new NicoleSheet;		break;
-//				case 'GREEN':
-//					newSheet = new Green;			break;
-//				case 'BUNNY':
-//					newSheet = new BunnySheet;		break;
-//				case 'SPACE MARINE':
-//					newSheet = new RobotSheet;		break;
-//				case 'COMPUTER NPC':
-//					newSheet = new ComputerSheet;	break;
-//				case 'JEREMY':
-//					newSheet = new Jeremy;			break;
-//				case 'PUKE_LEFT'://				case 'PUKE_RIGHT':
-//					newSheet = new EnemyBarf;		break;
-//				
-//				// Special Enemies
-//				case 'BRAIN SLUG':
-//					newSheet = new BrainSlug;	break;
-//				case 'COMPUTER':
-//					newSheet = new Computer; break;
-//				case 'DRUNK EVAN':
-//					newSheet = new DrunkEvanSheet; break;
-//				case 'DARK EVAN':
-//					newSheet = new DarkEvanSheet; break;
+//				case PLAYER
 //				
 //				default:
-//					TinyLogManager.log('CHARACTER DOES NOT EXIST!', null);
+//					TinyLogManager.log( 'CHARACTER DOES NOT EXIST!', null );
 //					break;
 //			}
-//			
-			return newSheet;
-		}
+//		}
 		
 		public static function getMonsterSprite(name : String) : BitmapData
 		{

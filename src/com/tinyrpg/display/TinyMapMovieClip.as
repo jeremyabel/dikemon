@@ -7,9 +7,9 @@ package com.tinyrpg.display
 	 */
 	public class TinyMapMovieClip extends MovieClip 
 	{
-		public var OVERLAY  : MovieClip;
-		public var OBJECTS	: MovieClip;		public var PROPS	: MovieClip;
-		public var HIT		: MovieClip;		public var MAP		: MovieClip;
+//		public var OVERLAY  : MovieClip;
+//		public var OBJECTS	: MovieClip;//		public var grass 	: MovieClip;
+		public var hit		: MovieClip;		public var map		: MovieClip;
 		
 		public function TinyMapMovieClip() : void
 		{
