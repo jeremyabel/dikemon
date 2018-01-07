@@ -139,8 +139,10 @@ package com.tinyrpg.display
 			else
 			{
 				// No arrows are being held down. Reset the walk cycle index.
+				TinyLogManager.log( 'stop walking', this );
 				this.walkCycleIndex = 1;
 				this.isWalking = false;
+				this.dispatchEvent( new TinyInputEvent( TinyInputEvent.STOP_MOVEMENT ) );
 			}
 			
 			// Update the sprite with the current facing direction and walk cycle index

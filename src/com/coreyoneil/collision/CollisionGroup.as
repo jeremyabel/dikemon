@@ -74,5 +74,34 @@ package com.coreyoneil.collision
 			
 			return objectCollisionArray;
 		}
+		
+		public function checkCollision( item1 : DisplayObject ) : Boolean
+		{
+			var result : Boolean = false;
+			
+			for( var i : uint = 0; i < objectArray.length; i++ )
+			{
+				var item2 : DisplayObject = DisplayObject( objectArray[ i ] );
+				
+				if ( item1 !== item2 && item1.hitTestObject( item2 ) )
+				{
+					if( ( item2.width * item2.height ) > ( item1.width * item1.height ) )
+					{
+						objectCheckArray.push( [ item1, item2 ] )
+					}
+					else
+					{
+						objectCheckArray.push( [ item2, item1 ] );
+					}
+				}
+			}
+			
+			for ( i = 0; i < objectCheckArray.length; i ++ ) 
+			{
+				findCollisions( DisplayObject(objectCheckArray[ i ][ 0 ] ), DisplayObject( objectCheckArray[ i ][ 1 ] ) );
+			}
+			
+			return objectCollisionArray.length > 0;
+		}
 	}
 }

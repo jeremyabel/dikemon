@@ -104,15 +104,15 @@ package com.tinyrpg.debug
 //				new TinyWalkSprite( TinySpriteConfig.NPC_DRAGON_MON )
 			];
 				
-			var yOffset : uint = 12;
-			var xOffset : uint = 12; 
+			var yOffset : uint = 8;
+			var xOffset : uint = 8; 
 			
 			for ( var i : uint = 0; i < sprites.length; i++ ) 
 			{
 				if ( i > 0 && i % 8 == 0 ) 
 				{ 
-					xOffset += 17;
-					yOffset = 12;
+					xOffset += 16;
+					yOffset = 16;
 				}
 				
 				sprites[ i ].x = xOffset;
@@ -122,7 +122,7 @@ package com.tinyrpg.debug
 				
 				TinyInputManager.getInstance().setTarget( sprites[ i ] );
 				
-				yOffset += 17;	
+				yOffset += 16;	
 			}
 			
 			var scaleFactor : Number = stage.stageHeight / 144;

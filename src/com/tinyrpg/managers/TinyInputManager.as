@@ -32,7 +32,6 @@ package com.tinyrpg.managers
 		private var previousTarget	: EventDispatcher = null;
 		private var arrowQueue 		: Array = [];
 		
-		public var holdingArrow : Boolean = false;
 		public var holdingAccept : Boolean = false;
 		
 		public function TinyInputManager() : void
@@ -114,19 +113,19 @@ package com.tinyrpg.managers
 			switch(e.keyCode) 
 			{
 				case keyUp:
-					this.removeFromArrowQueue( TinyInputManager.ARROW_UP );
+					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_UP );
 					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_UP));
 					break;
 				case keyDown:
-					this.removeFromArrowQueue( TinyInputManager.ARROW_DOWN );
+					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_DOWN );
 					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_DOWN));
 					break;
 				case keyLeft:
-					this.removeFromArrowQueue( TinyInputManager.ARROW_LEFT );
+					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_LEFT );
 					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_LEFT));
 					break;
 				case keyRight:
-					this.removeFromArrowQueue( TinyInputManager.ARROW_RIGHT );
+					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_RIGHT );
 					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_RIGHT));
 					break;
 				case keyAccept:
@@ -136,7 +135,7 @@ package com.tinyrpg.managers
 			}
 		}
 		
-		public function removeFromArrowQueue( direction : String ) : void
+		public function tryRemoveFromArrowQueue( direction : String ) : void
 		{
 			var index : int = this.arrowQueue.indexOf( direction );
 			

@@ -1,6 +1,7 @@
 package com.tinyrpg.display 
 {
 	import com.greensock.TweenMax;
+	import com.greensock.TimelineLite;
 	import com.greensock.easing.Linear;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
@@ -21,11 +22,13 @@ package com.tinyrpg.display
 		public static var RIGHT : String = 'RIGHT';
 		public static var UP : String = 'UP';
 		public static var DOWN : String = 'DOWN';
-		public static var MOVEMENT_SPEED : uint = 9;
+		public static var MOVEMENT_SPEED : uint = 7;
 
 		private var spritesheet : TinyWalkSpriteSheet;
+		private var movementTimeline : TimelineLite;
 
 		public var hitBox : Sprite;
+		public var movementBox : Sprite;
 		public var lockToCamera : Boolean;
 
 		public function TinyWalkSprite( id : uint, lockToCamera : Boolean = false ) : void
@@ -40,11 +43,19 @@ package com.tinyrpg.display
 			this.hitBox.graphics.beginFill(0xFF00FF, 0.25);
 			this.hitBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.hitBox.graphics.endFill();
-			this.hitBox.visible = false;
+//			this.hitBox.visible = false;
+			
+			this.movementBox = new Sprite;
+			this.movementBox.name = 'movementBox_' + name;
+			this.movementBox.graphics.beginFill(0x00FF00, 0.25);
+			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
+			this.movementBox.graphics.endFill();
+//			this.movementBox.visible = false;
 			
 			// Add 'em up
 			this.addChild( this.spritesheet );
 			this.addChild( this.hitBox );
+			this.addChild( this.movementBox );
 
 			// Wait for control
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
@@ -96,7 +107,7 @@ package com.tinyrpg.display
 				onStart: this.spritesheet.setFacing,
 				onStartParams: [ event.param ],
 				onUpdate: this.onMovementUpdate,
-				useFrames: true
+				onComplete: this.onIndividualMovementComplete
 			};
 			
 			// Get the correct movement direction and amount depending on what direction key is active
@@ -108,8 +119,32 @@ package com.tinyrpg.display
 				case TinyWalkSprite.RIGHT:	movementEaseOptions.x = "+16"; break;
 			}
 			
+			if ( this.movementTimeline == null ) 
+			{
+				this.movementTimeline = new TimelineLite({
+					useFrames: true,
+					onComplete: this.onMovementComplete
+				});
+			}
+			
 			// Tween the sprite
-			TweenMax.to( this, TinyWalkSprite.MOVEMENT_SPEED, movementEaseOptions );
+			this.movementTimeline.add( TweenMax.to( this, TinyWalkSprite.MOVEMENT_SPEED, movementEaseOptions ) );
+		}
+		
+		protected function onIndividualMovementComplete( event : Event = null ) : void
+		{
+			// Force an early timeline completion if a movement tween finishes and the sprite has stopped walking
+			if ( !this.spritesheet.isWalking && this.movementTimeline )
+			{
+				this.onMovementComplete();
+			}
+		}
+		
+		protected function onMovementComplete( event : Event = null ) : void
+		{
+			this.movementTimeline.kill();
+			this.movementTimeline.clear();
+			this.movementTimeline = null;
 		}
 
 		protected function onMovementUpdate( event : Event = null ) : void

@@ -171,7 +171,7 @@ package com.coreyoneil.collision
 			objectCollisionArray = [];
 		}
 		
-		protected function findCollisions(item1, item2):void
+		protected function findCollisions(item1, item2):Boolean
 		{
 			var item1_isText:Boolean = false, item2_isText:Boolean = false;
 			var item1xDiff:Number, item1yDiff:Number;
@@ -349,6 +349,9 @@ package com.coreyoneil.collision
 			if(item2_isText) item2.antiAliasType = "advanced";
 			
 			item1_isText = item2_isText = false;
+			
+			if ( overlap ) return true;
+			return false;
 		}
 		
 		private function findAngle(item1:DisplayObject, item2:DisplayObject):Number
