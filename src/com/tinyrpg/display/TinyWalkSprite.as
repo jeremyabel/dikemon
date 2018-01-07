@@ -45,14 +45,14 @@ package com.tinyrpg.display
 			this.hitBox.graphics.beginFill( 0xFF00FF, 0.25 );
 			this.hitBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.hitBox.graphics.endFill();
-//			this.hitBox.visible = false;
+			this.hitBox.visible = false;
 			
 			this.movementBox = new Sprite;
 			this.movementBox.name = 'movementBox_' + name;
 			this.movementBox.graphics.beginFill( 0x00FFFF, 0.25 );
 			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.movementBox.graphics.endFill();
-//			this.movementBox.visible = false;
+			this.movementBox.visible = false;
 			
 			// Add 'em up
 			this.addChild( this.spritesheet );
@@ -191,10 +191,10 @@ package com.tinyrpg.display
 
 		protected function onMovementUpdate( event : Event = null ) : void
 		{
-			// Dispatch an event which updates the camera if it needs to track this sprite's movements	
+			// Update the camera if it needs to track this sprite's movements	
 			if ( this.lockToCamera )
 			{
-				
+				TinyMapManager.getInstance().updateCamera( this.x, this.y );				
 			}
 		}
 		
@@ -211,6 +211,17 @@ package com.tinyrpg.display
 				case TinyWalkSprite.DOWN:	this.movementBox.y += 16; break;
 				case TinyWalkSprite.LEFT:	this.movementBox.x -= 16; break;
 				case TinyWalkSprite.RIGHT:	this.movementBox.x += 16; break;
+			}
+		}
+		
+		public function setPositionOnGrid( x : int, y : int ) : void
+		{
+			this.x = 8 + 16 * x;
+			this.y = 8 + 16 * y;
+			
+			if ( this.lockToCamera )
+			{
+				TinyMapManager.getInstance().updateCamera( this.x, this.y );
 			}
 		}
 	}

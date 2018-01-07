@@ -7,6 +7,7 @@ package com.tinyrpg.debug
 	import com.tinyrpg.misc.TinyCSS;
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.display.TinyMapCameraContainer;
 	import com.tinyrpg.misc.TinySpriteConfig;
 
 	import flash.display.MovieClip;
@@ -108,15 +109,10 @@ package com.tinyrpg.debug
 			var yOffset : uint = 8;
 			var xOffset : uint = 8; 
 			
-			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1 );
+			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, true );
 			TinyInputManager.getInstance().setTarget( playerSprite );
 			map.addChild( playerSprite );
 			
-			playerSprite.x = 8 + 16 * 20;
-			playerSprite.y = 8 + 16 * 20;
-			
-			map.x = 16 * -50;
-			map.y = 16 * -50;
 			
 //			for ( var i : uint = 0; i < sprites.length; i++ ) 
 //			{
@@ -136,14 +132,15 @@ package com.tinyrpg.debug
 //				yOffset += 16;	
 //			}
 			
-			
 			TinyMapManager.getInstance().currentMap = map;
+			
+			playerSprite.setPositionOnGrid( 20, 20 );
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;
-			map.scaleX *= scaleFactor;
-			map.scaleY *= scaleFactor;
-			this.addChild( map );
+			TinyMapManager.getInstance().mapContainer.scaleX *= scaleFactor;
+			TinyMapManager.getInstance().mapContainer.scaleY *= scaleFactor;
+			this.addChild( TinyMapManager.getInstance().mapContainer );
 		}
 	}
 }
