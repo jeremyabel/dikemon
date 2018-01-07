@@ -7,7 +7,6 @@ package com.tinyrpg.debug
 	import com.tinyrpg.misc.TinyCSS;
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.display.TinyWalkSprite;
-	import com.tinyrpg.display.TinyMapCameraContainer;
 	import com.tinyrpg.misc.TinySpriteConfig;
 
 	import flash.display.MovieClip;

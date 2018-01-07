@@ -2,7 +2,6 @@ package com.tinyrpg.managers
 {
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.data.TinyAppSettings;
-	import com.tinyrpg.display.TinyMapCameraContainer;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.display.Sprite;
