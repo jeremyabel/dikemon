@@ -18,12 +18,16 @@ package com.tinyrpg.events
 		
 		public static var KEY_UP_UP		: String = 'KEY_UP_UP'; 		public static var KEY_UP_DOWN	: String = 'KEY_UP_DOWN'; 		public static var KEY_UP_LEFT	: String = 'KEY_UP_LEFT'; 		public static var KEY_UP_RIGHT	: String = 'KEY_UP_RIGHT'; 		public static var KEY_UP_ACCEPT	: String = 'KEY_UP_ACCEPT'; 
 		
-		public static var CONTROL_REMOVED : String = 'CONTROL_REMOVED';
-		public static var CONTROL_ADDED   : String = 'CONTROL_ADDED';
+		public static var ADVANCE_MOVEMENT : String = 'ADVANCE_MOVEMENT'; 
+		public static var CONTROL_REMOVED  : String = 'CONTROL_REMOVED';
+		public static var CONTROL_ADDED    : String = 'CONTROL_ADDED';
 		
-		public function TinyInputEvent(type : String)
+		public var param : * = null;
+		
+		public function TinyInputEvent( type : String, param : * = null )
 		{
-			super(type, false, false);
+			this.param = param;
+			super( type, false, false );
 		}
 	}
 }

@@ -9,6 +9,8 @@ package com.tinyrpg.display
 
 	import com.greensock.TweenMax;
 	import com.tinyrpg.display.OverworldChars;
+	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -29,10 +31,9 @@ package com.tinyrpg.display
 		public var speed			: uint = 4;
 		public var facing			: String;
 		public var isWalking		: Boolean = false;
+		public var keepDirection	: Boolean = false;
 		public var walkCycleIndex 	: uint = 0;
 		
-		public static const WALK_CYCLE_FRAMES : uint = 4;
-
 		public function TinyWalkSpriteSheet( id : uint, initialFacing : String )
 		{	
 			this.spriteId = id;
@@ -88,48 +89,62 @@ package com.tinyrpg.display
 			this.sideStep  = bitmapArray[ 5 ];
 			
 			this.facing = initialFacing;
-			this.walkCycleIndex = this.getIdleWalkCycleIndexForFacing();
+			this.walkCycleIndex = 1;
 			this.update();
 		}
 		
-		public function startWalking( speed : uint = 4 ) : void
+		public function startWalking( speed : uint = 5 ) : void
 		{
+			if ( this.isWalking ) return;
+			
 			TinyLogManager.log( 'startWalking', this );
 			
 			this.speed = speed;
-			this.walkCycleIndex = 0;
-			this.isWalking = true;
-			this.update();
+	
+			// Update facing direction
+			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
+			this.setFacing( arrowKey );
 			
-			// Trigger the next step in 4 frames
-			TweenMax.delayedCall( this.speed, this.onWalkCycleUpdate, null, true );
+			// Reset the walk cycle index to the first step frame
+			this.walkCycleIndex = 1;
+			
+			// Check for arrow inputs to advance the walk cycle
+			this.checkArrowInputs();
 		}
 		
-		public function stopWalking() : void
+		private function checkArrowInputs() : void
 		{
-			TinyLogManager.log( 'stopWalking', this );
-			this.isWalking = false;
-		}
-
-		private function onWalkCycleUpdate() : void
-		{
-			// Increment the walk cycle index
-			this.walkCycleIndex = ( this.walkCycleIndex + 1 ) % 4;
+			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
 			
-			// Update the sprite with the current facing direction and updated walk cycle index
-			this.update();
+			TinyLogManager.log( 'checkArrowInputs: ' + arrowKey, this );
 			
-			// Trigger the next step if we're still walking, otherwise return to the idle sprite
-			if ( this.isWalking ) 
-			{	
-				// The next step in the cycle happens every 4 frames
-				TweenMax.delayedCall( this.speed, this.onWalkCycleUpdate, null, true );
-			}
-			else 
+			if ( arrowKey ) 
 			{
-				this.walkCycleIndex = this.getIdleWalkCycleIndexForFacing();
-				TweenMax.delayedCall( this.speed, this.update, null, true );
+				this.isWalking = true;
+				
+				// Increment the walk cycle index
+				this.walkCycleIndex = ( this.walkCycleIndex + 1 ) % 4;
+				
+				// Trigger a movement every time a step is taken
+				if ( !this.getIsSteppingForWalkCycleIndex() || this.keepDirection ) 
+				{
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ADVANCE_MOVEMENT, arrowKey ) );
+				}
+				
+				this.keepDirection = false;
+				
+				// Check again after a delay
+				TweenMax.delayedCall( this.speed, this.checkArrowInputs, null, true );
 			}
+			else
+			{
+				// No arrows are being held down. Reset the walk cycle index.
+				this.walkCycleIndex = 1;
+				this.isWalking = false;
+			}
+			
+			// Update the sprite with the current facing direction and walk cycle index
+			this.update();
 		}
 		
 		public function update() : void
@@ -139,10 +154,15 @@ package com.tinyrpg.display
 		
 		public function setFacing( facing : String ) : void
 		{
-			if ( this.facing == facing ) return;
+			if ( this.facing == facing ) 
+			{
+				this.keepDirection = true;
+				return;
+			}
 			
+			TinyLogManager.log( 'setFacing: ' + facing, this );
 			this.facing = facing;
-//			TinyLogManager.log( 'setFacing: ' + this.facing, this );
+			this.keepDirection = false;
 			
 			// Update the sprite with the new facing direction, but maintain same the walk cycle index
 			this.update();
@@ -152,8 +172,10 @@ package com.tinyrpg.display
 		{	
 			this.facing = facing;
 			 
+			// Hide all sprites
 			this.setAllHidden();
-			
+				
+			// Show only the updated walk cycle sprite
 			this.currentSprite = this.getSpriteForFacing( facing, step );
 			this.currentSprite.visible = true;
 			
@@ -175,10 +197,10 @@ package com.tinyrpg.display
 		{	
 			switch ( facing )
 			{
-				case TinyWalkSprite.UP: 	return step ? this.backStep : this.backIdle;
+				case TinyWalkSprite.UP: 	return step ? this.backStep  : this.backIdle;
 				case TinyWalkSprite.DOWN:	return step ? this.frontStep : this.frontIdle;
-				case TinyWalkSprite.LEFT:	return step ? this.sideStep : this.sideIdle;
-				case TinyWalkSprite.RIGHT:	return step ? this.sideStep : this.sideIdle;
+				case TinyWalkSprite.LEFT:	return step ? this.sideStep  : this.sideIdle;
+				case TinyWalkSprite.RIGHT:	return step ? this.sideStep  : this.sideIdle;
 			}
 			
 			return this.frontIdle;
@@ -200,53 +222,8 @@ package com.tinyrpg.display
 		
 		private function getIsSteppingForWalkCycleIndex() : Boolean
 		{
-			if ( this.facing == TinyWalkSprite.UP )
-			{
-				if ( this.walkCycleIndex == 0 || this.walkCycleIndex == 2 ) return true;
-				if ( this.walkCycleIndex == 1 || this.walkCycleIndex == 3 ) return false;
-			}
-			
-			if ( this.facing == TinyWalkSprite.DOWN )
-			{
-				if ( this.walkCycleIndex == 0 || this.walkCycleIndex == 2 ) return false;
-				if ( this.walkCycleIndex == 1 || this.walkCycleIndex == 3 ) return true;
-			}
-			
-			if ( this.facing == TinyWalkSprite.LEFT || this.facing == TinyWalkSprite.RIGHT ) 
-			{
-				if ( this.walkCycleIndex == 0 || this.walkCycleIndex == 2 ) return true;
-				if ( this.walkCycleIndex == 1 || this.walkCycleIndex == 3 ) return false;
-			}
-			
+			if ( this.walkCycleIndex == 0 || this.walkCycleIndex == 2 ) return true;
 			return false;
-		}
-		
-		private function getIdleWalkCycleIndexForFacing() : uint
-		{
-			switch ( this.facing ) 
-			{
-				case TinyWalkSprite.UP:		return 1;
-				case TinyWalkSprite.DOWN:	return 0;
-				case TinyWalkSprite.LEFT:	return 1;
-				case TinyWalkSprite.RIGHT:	return 1;
-			}
-			
-			return 1;
-		}
-		
-		private function getBitmapForInitIndex( index : uint ) : Bitmap
-		{
-			switch ( index ) 
-			{
-				case 0: return this.frontIdle;
-				case 1: return this.backIdle;
-				case 2: return this.sideIdle; 
-				case 3: return this.frontStep;
-				case 4: return this.backStep;
-				case 5: return this.sideStep;
-			}
-			
-			return this.frontIdle;
 		}
 	}
 }
