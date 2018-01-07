@@ -1,12 +1,13 @@
 package com.tinyrpg.display 
 {
 	import com.greensock.TweenMax;
-	import com.greensock.TimelineLite;
+	import com.greensock.TimelineMax;
 	import com.greensock.easing.Linear;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.misc.TinySpriteConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -25,10 +26,11 @@ package com.tinyrpg.display
 		public static var MOVEMENT_SPEED : uint = 7;
 
 		private var spritesheet : TinyWalkSpriteSheet;
-		private var movementTimeline : TimelineLite;
+		private var movementTimeline : TimelineMax;
 
 		public var hitBox : Sprite;
 		public var movementBox : Sprite;
+		public var hasCollided : Boolean;
 		public var lockToCamera : Boolean;
 
 		public function TinyWalkSprite( id : uint, lockToCamera : Boolean = false ) : void
@@ -40,14 +42,14 @@ package com.tinyrpg.display
 			
 			this.hitBox = new Sprite;
 			this.hitBox.name = 'hitBox_' + name;
-			this.hitBox.graphics.beginFill(0xFF00FF, 0.25);
+			this.hitBox.graphics.beginFill( 0xFF00FF, 0.25 );
 			this.hitBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.hitBox.graphics.endFill();
 //			this.hitBox.visible = false;
 			
 			this.movementBox = new Sprite;
 			this.movementBox.name = 'movementBox_' + name;
-			this.movementBox.graphics.beginFill(0x00FF00, 0.25);
+			this.movementBox.graphics.beginFill( 0x00FFFF, 0.25 );
 			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.movementBox.graphics.endFill();
 //			this.movementBox.visible = false;
@@ -97,6 +99,10 @@ package com.tinyrpg.display
 		public function startWalking( event : TinyInputEvent = null ) : void
 		{
 			this.spritesheet.startWalking();
+			this.updateMovementHitbox();
+			
+			// Check collision and clear flag if nothing is found
+			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox ); 
 		}
 		
 		protected function onMovementAdvanced( event : TinyInputEvent ) : void
@@ -104,7 +110,7 @@ package com.tinyrpg.display
 			// Create a linear tween for moving this sprite around
 			var movementEaseOptions : Object = { 
 				ease: Linear.easeNone,
-				onStart: this.spritesheet.setFacing,
+				onStart: this.onIndividualMovementStart,
 				onStartParams: [ event.param ],
 				onUpdate: this.onMovementUpdate,
 				onComplete: this.onIndividualMovementComplete
@@ -121,20 +127,51 @@ package com.tinyrpg.display
 			
 			if ( this.movementTimeline == null ) 
 			{
-				this.movementTimeline = new TimelineLite({
+				this.movementTimeline = new TimelineMax({
 					useFrames: true,
 					onComplete: this.onMovementComplete
 				});
+				
+				this.movementTimeline.autoRemoveChildren = true;
 			}
 			
 			// Tween the sprite
 			this.movementTimeline.add( TweenMax.to( this, TinyWalkSprite.MOVEMENT_SPEED, movementEaseOptions ) );
 		}
 		
+		protected function onIndividualMovementStart( facing : String ) : void
+		{
+			this.spritesheet.setFacing( facing );
+			this.updateMovementHitbox();
+			
+			// Check collision before every movement
+			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox );
+				
+			// Force an early timeline completion if this sprite has collided with something
+			if ( this.hasCollided ) 
+			{
+				// Reset the latest tween so no movement happens
+				this.movementTimeline.getActive()[ 0 ].time( 0 );
+				this.onMovementComplete();
+			}
+		}
+		
 		protected function onIndividualMovementComplete( event : Event = null ) : void
 		{
-			// Force an early timeline completion if a movement tween finishes and the sprite has stopped walking
-			if ( !this.spritesheet.isWalking && this.movementTimeline )
+			// Ensure there's only one extra tween in the queue at all times, otherwise they could stack and act weird. 
+			var tweens : Array = this.movementTimeline.getTweensOf( this );
+			while ( tweens.length > 1 )
+			{
+				this.movementTimeline.remove( tweens[ 0 ] );
+				tweens = this.movementTimeline.getTweensOf( this );
+			}
+			
+			// Check collision after every movement
+			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox );
+			
+			// Force an early timeline completion if a movement tween finishes and the sprite has stopped walking,
+			// or if this sprite has collided with something.
+			if ( ( !this.spritesheet.isWalking && this.movementTimeline ) || this.hasCollided )
 			{
 				this.onMovementComplete();
 			}
@@ -142,6 +179,11 @@ package com.tinyrpg.display
 		
 		protected function onMovementComplete( event : Event = null ) : void
 		{
+			// Reset the movement hitbox position
+			this.movementBox.x = 0;
+			this.movementBox.y = 0;
+			
+			// Clean up the movement timeline
 			this.movementTimeline.kill();
 			this.movementTimeline.clear();
 			this.movementTimeline = null;
@@ -153,6 +195,22 @@ package com.tinyrpg.display
 			if ( this.lockToCamera )
 			{
 				
+			}
+		}
+		
+		protected function updateMovementHitbox() : void
+		{
+			// Reset the movement hitbox position
+			this.movementBox.x = 0;
+			this.movementBox.y = 0;
+			
+			// Position the movement hitbox according to the facing direction
+			switch ( this.spritesheet.facing )
+			{
+				case TinyWalkSprite.UP:		this.movementBox.y -= 16; break;
+				case TinyWalkSprite.DOWN:	this.movementBox.y += 16; break;
+				case TinyWalkSprite.LEFT:	this.movementBox.x -= 16; break;
+				case TinyWalkSprite.RIGHT:	this.movementBox.x += 16; break;
 			}
 		}
 	}

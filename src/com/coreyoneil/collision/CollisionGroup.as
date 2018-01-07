@@ -77,6 +77,8 @@ package com.coreyoneil.collision
 		
 		public function checkCollision( item1 : DisplayObject ) : Boolean
 		{
+			clearArrays();
+			
 			var result : Boolean = false;
 			
 			for( var i : uint = 0; i < objectArray.length; i++ )

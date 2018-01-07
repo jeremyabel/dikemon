@@ -3,6 +3,7 @@ package com.tinyrpg.debug
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.misc.TinyCSS;
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.display.TinyWalkSprite;
@@ -107,30 +108,42 @@ package com.tinyrpg.debug
 			var yOffset : uint = 8;
 			var xOffset : uint = 8; 
 			
-			for ( var i : uint = 0; i < sprites.length; i++ ) 
-			{
-				if ( i > 0 && i % 8 == 0 ) 
-				{ 
-					xOffset += 16;
-					yOffset = 16;
-				}
-				
-				sprites[ i ].x = xOffset;
-				sprites[ i ].y = yOffset;
-//				sprites[ i ].debugWalkCycles();
-				map.addChild( sprites[ i ] );
-				
-				TinyInputManager.getInstance().setTarget( sprites[ i ] );
-				
-				yOffset += 16;	
-			}
+			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1 );
+			TinyInputManager.getInstance().setTarget( playerSprite );
+			map.addChild( playerSprite );
+			
+			playerSprite.x = 8 + 16 * 20;
+			playerSprite.y = 8 + 16 * 20;
+			
+			map.x = 16 * -50;
+			map.y = 16 * -50;
+			
+//			for ( var i : uint = 0; i < sprites.length; i++ ) 
+//			{
+//				if ( i > 0 && i % 8 == 0 ) 
+//				{ 
+//					xOffset += 16;
+//					yOffset = 16;
+//				}
+//				
+//				sprites[ i ].x = xOffset;
+//				sprites[ i ].y = yOffset;
+////				sprites[ i ].debugWalkCycles();
+//				map.addChild( sprites[ i ] );
+//				
+//				TinyInputManager.getInstance().setTarget( sprites[ i ] );
+//				
+//				yOffset += 16;	
+//			}
+			
+			
+			TinyMapManager.getInstance().currentMap = map;
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;
 			map.scaleX *= scaleFactor;
 			map.scaleY *= scaleFactor;
 			this.addChild( map );
-			
 		}
 	}
 }
