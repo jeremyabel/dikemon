@@ -32,12 +32,14 @@ package com.tinyrpg.display
 		public var movementBox : Sprite;
 		public var hasCollided : Boolean;
 		public var lockToCamera : Boolean;
+		public var currentDirection : String;
 
 		public function TinyWalkSprite( id : uint, lockToCamera : Boolean = false ) : void
 		{
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 			
-			this.spritesheet = new TinyWalkSpriteSheet( id, TinyWalkSprite.DOWN );
+			this.currentDirection = TinyWalkSprite.DOWN;
+			this.spritesheet = new TinyWalkSpriteSheet( id, this.currentDirection );
 			this.lockToCamera = lockToCamera;
 			
 			this.hitBox = new Sprite;
@@ -61,9 +63,6 @@ package com.tinyrpg.display
 
 			// Wait for control
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
-			
-			// Listen for movement updates
-			this.spritesheet.addEventListener( TinyInputEvent.ADVANCE_MOVEMENT, this.onMovementAdvanced );
 		}
 
 		protected function onControlAdded(e : TinyInputEvent) : void
@@ -98,26 +97,63 @@ package com.tinyrpg.display
 		
 		public function startWalking( event : TinyInputEvent = null ) : void
 		{
-			this.spritesheet.startWalking();
+			if ( this.spritesheet.isWalking ) return;
+			
+			// Start walking in the desired direction 			
+			this.spritesheet.startWalking( TinyInputManager.getInstance().getCurrentArrowKey() );
 			this.updateMovementHitbox();
 			
 			// Check collision and clear flag if nothing is found
 			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox ); 
+				
+			// If the player is already facing the direction they want to walk in, start walking immediately. 
+			// Otherwise, wait a few frames to enable the player to change the character's facing with a short
+			// tap of a directional arrow.			
+			if ( this.spritesheet.keepDirection ) 
+			{
+				this.checkArrowInputs();				
+			}
+			else 
+			{
+				TweenMax.delayedCall( TinyWalkSprite.MOVEMENT_SPEED, this.checkArrowInputs, null, true );
+			}
+			
 		}
 		
-		protected function onMovementAdvanced( event : TinyInputEvent ) : void
+		protected function checkArrowInputs() : void
+		{
+			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
+			
+			// If an arrow key is being held down, move the sprite by one tile in that direction, 
+			// otherwise stop walking.
+			if ( arrowKey ) 
+			{
+				this.onMovementAdvanced( arrowKey );
+	
+				// Check the input state again in a few frames
+				TweenMax.delayedCall( TinyWalkSprite.MOVEMENT_SPEED, this.checkArrowInputs, null, true );				
+			}
+			else 
+			{
+				this.spritesheet.isWalking = false;
+				this.spritesheet.reset();
+			}
+			
+		}
+		
+		protected function onMovementAdvanced( facing : String ) : void
 		{
 			// Create a linear tween for moving this sprite around
 			var movementEaseOptions : Object = { 
 				ease: Linear.easeNone,
-				onStart: this.onIndividualMovementStart,
-				onStartParams: [ event.param ],
+				onStart: this.onMovementStart,
+				onStartParams: [ facing ],
 				onUpdate: this.onMovementUpdate,
-				onComplete: this.onIndividualMovementComplete
+				roundProps: [ 'x', 'y' ]
 			};
 			
 			// Get the correct movement direction and amount depending on what direction key is active
-			switch ( event.param )
+			switch ( facing )
 			{
 				case TinyWalkSprite.UP: 	movementEaseOptions.y = "-16"; break;		
 				case TinyWalkSprite.DOWN:	movementEaseOptions.y = "+16"; break;
@@ -138,10 +174,11 @@ package com.tinyrpg.display
 			// Tween the sprite
 			this.movementTimeline.add( TweenMax.to( this, TinyWalkSprite.MOVEMENT_SPEED, movementEaseOptions ) );
 		}
-		
-		protected function onIndividualMovementStart( facing : String ) : void
-		{
-			this.spritesheet.setFacing( facing );
+
+		protected function onMovementStart( facing : String ) : void
+		{	
+			this.currentDirection = facing;
+			this.spritesheet.setFacing( this.currentDirection );
 			this.updateMovementHitbox();
 			
 			// Check collision before every movement
@@ -152,27 +189,6 @@ package com.tinyrpg.display
 			{
 				// Reset the latest tween so no movement happens
 				this.movementTimeline.getActive()[ 0 ].time( 0 );
-				this.onMovementComplete();
-			}
-		}
-		
-		protected function onIndividualMovementComplete( event : Event = null ) : void
-		{
-			// Ensure there's only one extra tween in the queue at all times, otherwise they could stack and act weird. 
-			var tweens : Array = this.movementTimeline.getTweensOf( this );
-			while ( tweens.length > 1 )
-			{
-				this.movementTimeline.remove( tweens[ 0 ] );
-				tweens = this.movementTimeline.getTweensOf( this );
-			}
-			
-			// Check collision after every movement
-			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox );
-			
-			// Force an early timeline completion if a movement tween finishes and the sprite has stopped walking,
-			// or if this sprite has collided with something.
-			if ( ( !this.spritesheet.isWalking && this.movementTimeline ) || this.hasCollided )
-			{
 				this.onMovementComplete();
 			}
 		}

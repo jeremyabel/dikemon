@@ -26,9 +26,10 @@ package com.tinyrpg.display
 		private var sideStep 	 	: Bitmap;
 		private var spriteHolder 	: Sprite;
 		private var currentSprite	: Bitmap;
+		private var walkCycleTween	: TweenMax;
 		
 		public var spriteId			: uint;
-		public var speed			: uint = 4;
+		public var speed			: uint = 5;
 		public var facing			: String;
 		public var isWalking		: Boolean = false;
 		public var keepDirection	: Boolean = false;
@@ -93,65 +94,51 @@ package com.tinyrpg.display
 			this.update();
 		}
 		
-		public function startWalking( speed : uint = 5 ) : void
+		public function startWalking( facing : String, speed : uint = 5 ) : void
 		{
 			if ( this.isWalking ) return;
+				
+			this.isWalking = true;
 			
-			TinyLogManager.log( 'startWalking', this );
-			
+			// Update speed and facing direction
 			this.speed = speed;
-	
-			// Update facing direction
-			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
-			this.setFacing( arrowKey );
+			this.setFacing( facing );
+			
+			TinyLogManager.log( 'startWalking: ' + this.speed + ', ' + this.facing, this );
 			
 			// Reset the walk cycle index to the first step frame
 			this.walkCycleIndex = 1;
 			
-			// Check for arrow inputs to advance the walk cycle
-			this.checkArrowInputs();
+			// Animate the walk cycle index if it hasn't started already 
+			if ( !this.walkCycleTween ) 
+			{
+				this.incrementWalkCycle();
+			}
 		}
 		
-		private function checkArrowInputs() : void
+		public function incrementWalkCycle() : void
 		{
-			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
-			
-			TinyLogManager.log( 'checkArrowInputs: ' + arrowKey, this );
-			
-			if ( arrowKey ) 
-			{
-				this.isWalking = true;
-				
-				// Increment the walk cycle index
-				this.walkCycleIndex = ( this.walkCycleIndex + 1 ) % 4;
-				
-				// Trigger a movement every time a step is taken
-				if ( !this.getIsSteppingForWalkCycleIndex() || this.keepDirection ) 
-				{
-					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ADVANCE_MOVEMENT, arrowKey ) );
-				}
-				
-				this.keepDirection = false;
-				
-				// Check again after a delay
-				TweenMax.delayedCall( this.speed, this.checkArrowInputs, null, true );
-			}
-			else
-			{
-				// No arrows are being held down. Reset the walk cycle index.
-				TinyLogManager.log( 'stop walking', this );
-				this.walkCycleIndex = 1;
-				this.isWalking = false;
-				this.dispatchEvent( new TinyInputEvent( TinyInputEvent.STOP_MOVEMENT ) );
-			}
-			
-			// Update the sprite with the current facing direction and walk cycle index
+			if ( !this.isWalking ) return;
+			 
+			// Increment the walk cycle index and update the sprite
+			this.walkCycleIndex = ( this.walkCycleIndex + 1 ) % 4;
 			this.update();
+			
+			// Update the cycle in a few frames
+			this.walkCycleTween = TweenMax.delayedCall( 4, this.incrementWalkCycle, null, true );
 		}
 		
 		public function update() : void
 		{
 			this.setSprite( this.facing, this.getIsSteppingForWalkCycleIndex() );			
+		}
+		
+		public function reset() : void
+		{
+			this.walkCycleTween.kill();
+			this.walkCycleTween = null;
+			this.walkCycleIndex = 1;
+			this.update();
 		}
 		
 		public function setFacing( facing : String ) : void
