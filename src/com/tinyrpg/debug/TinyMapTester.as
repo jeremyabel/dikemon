@@ -105,32 +105,10 @@ package com.tinyrpg.debug
 //				new TinyWalkSprite( TinySpriteConfig.NPC_DRAGON_MON )
 			];
 				
-			var yOffset : uint = 8;
-			var xOffset : uint = 8; 
-			
 			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, true );
 			TinyInputManager.getInstance().setTarget( playerSprite );
 			map.addChild( playerSprite );
-			
-			
-//			for ( var i : uint = 0; i < sprites.length; i++ ) 
-//			{
-//				if ( i > 0 && i % 8 == 0 ) 
-//				{ 
-//					xOffset += 16;
-//					yOffset = 16;
-//				}
-//				
-//				sprites[ i ].x = xOffset;
-//				sprites[ i ].y = yOffset;
-////				sprites[ i ].debugWalkCycles();
-//				map.addChild( sprites[ i ] );
-//				
-//				TinyInputManager.getInstance().setTarget( sprites[ i ] );
-//				
-//				yOffset += 16;	
-//			}
-			
+
 			TinyMapManager.getInstance().currentMap = map;
 			
 			playerSprite.setPositionOnGrid( 20, 20 );
