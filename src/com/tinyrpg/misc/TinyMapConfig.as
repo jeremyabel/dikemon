@@ -36,6 +36,8 @@ package com.tinyrpg.misc
 				case 'TOWNHOUSEPLAYERFLOOR1':	return new MapTownHousePlayerFloor1;
 				case 'TOWNHOUSEPLAYERFLOOR2':	return new MapTownHousePlayerFloor2;
 				case 'TOWNHOUSEPROFESSOR':		return new MapTownHouseProfessor;
+				case 'ISLANDLAKEENTRANCE':		return new MapIslandLakeEntrance;
+				case 'ISLANDLAKECAVE':			return new MapIslandLakeCave;
 				case 'ISLANDCAVEENTRANCE':		return new MapIslandCaveEntrance;
 				case 'ISLANDCAVESIDE':			return new MapIslandCaveSide;
 				case 'ISLANDCAVE':				return new MapIslandCave;
