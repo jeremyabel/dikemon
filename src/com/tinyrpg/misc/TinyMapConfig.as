@@ -19,6 +19,7 @@ package com.tinyrpg.misc
 			
 			switch ( mapName.toUpperCase() ) 
 			{
+				// City: Center
 				case 'CITY': 					return new MapCity;
 				case 'CITYBOAT':				return new MapCityBoat;
 				case 'CITYDIKECENTER':			return new MapCityDikecenter;
@@ -26,21 +27,33 @@ package com.tinyrpg.misc
 				case 'CITYHOUSE1':				return new MapCityHouse1;
 				case 'CITYHOUSE2':				return new MapCityHouse2;
 				case 'CITYHOUSE3':				return new MapCityHouse3;
+				
+				// City: Office
 				case 'OFFICERECEPTION':			return new MapOfficeReception;
 				case 'OFFICEFLOOR2':			return new MapOfficeFloor2;
 				case 'OFFICEFLOOR3':			return new MapOfficeFloor3;
-				case 'ROUTE29':					return new MapRoute29;
+				
+				// Town
 				case 'TOWN':					return new MapTown;
 				case 'TOWNHOUSE1':				return new MapTownHouse1;
 				case 'TOWNHOUSE2':				return new MapTownHouse2;
 				case 'TOWNHOUSEPLAYERFLOOR1':	return new MapTownHousePlayerFloor1;
 				case 'TOWNHOUSEPLAYERFLOOR2':	return new MapTownHousePlayerFloor2;
 				case 'TOWNHOUSEPROFESSOR':		return new MapTownHouseProfessor;
+				
+				// Island: Lake				
 				case 'ISLANDLAKEENTRANCE':		return new MapIslandLakeEntrance;
 				case 'ISLANDLAKECAVE':			return new MapIslandLakeCave;
+				case 'ISLANDLAKE':				return new MapIslandLake;
+				
+				// Island: Cave
 				case 'ISLANDCAVEENTRANCE':		return new MapIslandCaveEntrance;
 				case 'ISLANDCAVESIDE':			return new MapIslandCaveSide;
 				case 'ISLANDCAVE':				return new MapIslandCave;
+				
+				// Misc
+				case 'ROUTE29':					return new MapRoute29;
+				
 				default:						return new MapTownHousePlayerFloor2;
 			}
 		}
