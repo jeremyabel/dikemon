@@ -17,9 +17,6 @@ package com.tinyrpg.display
 		public var jumpL	: MovieClip;		public var jumpR	: MovieClip;
 		public var disableU	: MovieClip;
 		
-		public function TinyMapMovieClip() : void
-		{
-			
-		}
+		public function TinyMapMovieClip() : void { }
 	}
 }

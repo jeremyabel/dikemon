@@ -11,7 +11,7 @@ package com.tinyrpg.misc
 	 */
 	public class TinyMapConfig 
 	{
-		public function TinyMapConfig() : void {}
+		public function TinyMapConfig() : void { }
 		
 		public static function getMapFromName( mapName : String ) : TinyMapMovieClip 
 		{
@@ -19,7 +19,7 @@ package com.tinyrpg.misc
 			
 			switch ( mapName.toUpperCase() ) 
 			{
-				// City: Center
+				// City
 				case 'CITY': 					return new MapCity;
 				case 'CITYBOAT':				return new MapCityBoat;
 				case 'CITYDIKECENTER':			return new MapCityDikecenter;
@@ -50,6 +50,9 @@ package com.tinyrpg.misc
 				case 'ISLANDCAVEENTRANCE':		return new MapIslandCaveEntrance;
 				case 'ISLANDCAVESIDE':			return new MapIslandCaveSide;
 				case 'ISLANDCAVE':				return new MapIslandCave;
+				
+				// Island: Forest
+				case 'ISLANDFOREST':			return new MapIslandForest;
 				
 				// Misc
 				case 'ROUTE29':					return new MapRoute29;

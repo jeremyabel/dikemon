@@ -7,14 +7,14 @@ package com.tinyrpg.data
 	 */
 	public class TinyFieldMapObject extends MovieClip
 	{
-		public var customName : String;
+		public var sprite : String;
+		public var facing : String;
+		public var event : String;
+		public var warp : String;
 		
-		public function TinyFieldMapObject()
-		{
-			
-		}
+		public function TinyFieldMapObject() : void { } 
 		
-		public function dataReady() 
+		public function dataReady() : void
 		{
 			
 		}
