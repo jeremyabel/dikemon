@@ -52,6 +52,7 @@ package com.tinyrpg.misc
 				case 'ISLANDCAVE':				return new MapIslandCave;
 				
 				// Island: Forest
+				case 'ISLANDFORESTENTRANCE':	return new MapIslandForestEntrance;
 				case 'ISLANDFOREST':			return new MapIslandForest;
 				
 				// Misc
