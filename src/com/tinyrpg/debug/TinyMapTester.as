@@ -1,6 +1,8 @@
 package com.tinyrpg.debug 
 {
 	import com.tinyrpg.data.TinyAppSettings;
+	import com.tinyrpg.data.TinyPlayerSpriteState;
+	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyMapManager;
@@ -29,10 +31,10 @@ package com.tinyrpg.debug
 			var tinyCSS : TinyCSS = new TinyCSS();
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
-			var map : TinyFieldMap = new TinyFieldMap( 'City' );
+//			var map : TinyFieldMap = new TinyFieldMap( 'City' );
 			
-			var sprites : Array = [
-				new TinyWalkSprite( TinySpriteConfig.PLAYER_1 )//,
+//			var sprites : Array = [
+//				new TinyWalkSprite( TinySpriteConfig.PLAYER_1 )//,
 //				new TinyWalkSprite( TinySpriteConfig.PLAYER_1_BIKE ),
 //				new TinyWalkSprite( TinySpriteConfig.PLAYER_2 ),
 //				new TinyWalkSprite( TinySpriteConfig.PLAYER_2_BIKE ),
@@ -103,15 +105,19 @@ package com.tinyrpg.debug
 //				new TinyWalkSprite( TinySpriteConfig.NPC_FAIRY_MON ),
 //				new TinyWalkSprite( TinySpriteConfig.NPC_BIRD_MON ),
 //				new TinyWalkSprite( TinySpriteConfig.NPC_DRAGON_MON )
-			];
+//			];
 				
-			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, true );
-			TinyInputManager.getInstance().setTarget( playerSprite );
-			map.addChild( playerSprite );
+//			var playerSprite : TinyWalkSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, true, true );
+//			TinyInputManager.getInstance().setTarget( playerSprite );
+//			map.addChild( playerSprite );
 
-			TinyMapManager.getInstance().currentMap = map;
+			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
+			testWarpObject.targetMapName = 'City';
+			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.destinationFacing = 'DOWN';
+			testWarpObject.stepForwardAfterWarp = true;
 			
-			playerSprite.setPositionOnGrid( 20, 20 );
+			TinyMapManager.getInstance().warp( testWarpObject );
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;

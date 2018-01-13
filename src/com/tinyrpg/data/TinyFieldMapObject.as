@@ -1,5 +1,8 @@
 package com.tinyrpg.data 
 {
+	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.display.TinyWalkSprite;
+	
 	import flash.display.MovieClip;
 	
 	/**
@@ -7,16 +10,19 @@ package com.tinyrpg.data
 	 */
 	public class TinyFieldMapObject extends MovieClip
 	{
-		public var sprite : String;
-		public var facing : String;
-		public var event : String;
-		public var warp : String;
-		
-		public function TinyFieldMapObject() : void { } 
+		public function TinyFieldMapObject() : void 
+		{
+			 
+		}
 		
 		public function dataReady() : void
 		{
-			
+			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.DATA_READY ) );
+		}
+	
+		public function isBlocking( walkSprite : TinyWalkSprite ) : Boolean
+		{
+			return true;
 		}
 	}
 }

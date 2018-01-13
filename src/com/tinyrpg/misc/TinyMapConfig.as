@@ -55,6 +55,9 @@ package com.tinyrpg.misc
 				case 'ISLANDFORESTENTRANCE':	return new MapIslandForestEntrance;
 				case 'ISLANDFOREST':			return new MapIslandForest;
 				
+				// Island: Boat
+				case 'ISLANDBOATEXIT':			return new MapIslandBoatExit; 
+				
 				// Misc
 				case 'ROUTE29':					return new MapRoute29;
 				

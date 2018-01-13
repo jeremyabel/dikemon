@@ -28,6 +28,8 @@ THE SOFTWARE.
 package com.coreyoneil.collision
 {	
 	import flash.display.DisplayObject;
+	
+	import com.tinyrpg.data.TinyCollisionData;
 
 	public class CollisionGroup extends CDK
 	{
@@ -75,7 +77,7 @@ package com.coreyoneil.collision
 			return objectCollisionArray;
 		}
 		
-		public function checkCollision( item1 : DisplayObject ) : Boolean
+		public function checkCollision( item1 : DisplayObject ) : TinyCollisionData
 		{
 			clearArrays();
 			
@@ -103,7 +105,17 @@ package com.coreyoneil.collision
 				findCollisions( DisplayObject(objectCheckArray[ i ][ 0 ] ), DisplayObject( objectCheckArray[ i ][ 1 ] ) );
 			}
 			
-			return objectCollisionArray.length > 0;
+			if ( objectCollisionArray.length > 0 )
+			{
+				var hitObject : * = objectCollisionArray[ 0 ].object1;
+				if ( hitObject == item1 ) hitObject = objectCollisionArray[ 0 ].object2;
+				
+				return new TinyCollisionData( true, hitObject );
+			}
+			else
+			{
+				return new TinyCollisionData( false );
+			}
 		}
 	}
 }

@@ -5,6 +5,9 @@ package com.tinyrpg.display
 	import com.greensock.easing.Linear;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
+	import com.tinyrpg.core.TinyFieldMap;
+	import com.tinyrpg.data.TinyFieldMapObject;
+	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyMapManager;
@@ -30,17 +33,21 @@ package com.tinyrpg.display
 
 		public var hitBox : Sprite;
 		public var movementBox : Sprite;
-		public var hasCollided : Boolean;
+		public var hasCollidedWithWall : Boolean;
+		public var hasCollidedWithObject : Boolean;
 		public var lockToCamera : Boolean;
+		public var isPlayer : Boolean;
 		public var currentDirection : String;
+		public var hasControl : Boolean = false;
 
-		public function TinyWalkSprite( id : uint, lockToCamera : Boolean = false ) : void
+		public function TinyWalkSprite( id : uint, initialFacing : String = 'DOWN', lockToCamera : Boolean = false, isPlayer : Boolean = false ) : void
 		{
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 			
-			this.currentDirection = TinyWalkSprite.DOWN;
+			this.currentDirection = initialFacing;
 			this.spritesheet = new TinyWalkSpriteSheet( id, this.currentDirection );
 			this.lockToCamera = lockToCamera;
+			this.isPlayer = isPlayer;
 			
 			this.hitBox = new Sprite;
 			this.hitBox.name = 'hitBox_' + name;
@@ -69,6 +76,8 @@ package com.tinyrpg.display
 		{
 			TinyLogManager.log( 'onControlAdded', this );
 			
+			this.hasControl = true;
+			
 			// Add arrow events
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ARROW_UP, 		this.startWalking );
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ARROW_DOWN, 	this.startWalking );
@@ -83,6 +92,8 @@ package com.tinyrpg.display
 		protected function onControlRemoved( event : TinyInputEvent ) : void
 		{
 			TinyLogManager.log( 'onControlRemoved', this );
+			
+			this.hasControl = false;
 			
 			// Remove arrow events
 			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.ARROW_UP, 	this.startWalking );
@@ -104,7 +115,8 @@ package com.tinyrpg.display
 			this.updateMovementHitbox();
 			
 			// Check collision and clear flag if nothing is found
-			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox ); 
+			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
+			this.hasCollidedWithObject = this.checkObjectCollision();
 				
 			// If the player is already facing the direction they want to walk in, start walking immediately. 
 			// Otherwise, wait a few frames to enable the player to change the character's facing with a short
@@ -117,11 +129,12 @@ package com.tinyrpg.display
 			{
 				TweenMax.delayedCall( TinyWalkSprite.MOVEMENT_SPEED, this.checkArrowInputs, null, true );
 			}
-			
 		}
 		
 		protected function checkArrowInputs() : void
 		{
+			if ( this.isPlayer && !this.hasControl ) return;
+			
 			var arrowKey : String = TinyInputManager.getInstance().getCurrentArrowKey();
 			
 			// If an arrow key is being held down, move the sprite by one tile in that direction, 
@@ -138,7 +151,6 @@ package com.tinyrpg.display
 				this.spritesheet.isWalking = false;
 				this.spritesheet.reset();
 			}
-			
 		}
 		
 		protected function onMovementAdvanced( facing : String ) : void
@@ -177,19 +189,29 @@ package com.tinyrpg.display
 
 		protected function onMovementStart( facing : String ) : void
 		{	
+			if ( this.isPlayer && !this.hasControl ) return;
+			
 			this.currentDirection = facing;
 			this.spritesheet.setFacing( this.currentDirection );
 			this.updateMovementHitbox();
 			
 			// Check collision before every movement
-			this.hasCollided = TinyMapManager.getInstance().currentMap.checkCollision( this.movementBox );
+			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
+			this.hasCollidedWithObject = this.checkObjectCollision();
 				
 			// Force an early timeline completion if this sprite has collided with something
-			if ( this.hasCollided ) 
+			if ( this.hasCollidedWithWall || this.hasCollidedWithObject ) 
 			{
 				// Reset the latest tween so no movement happens
-				this.movementTimeline.getActive()[ 0 ].time( 0 );
-				this.onMovementComplete();
+				if ( this.movementTimeline )
+				{
+					this.movementTimeline.getActive()[ 0 ].time( 0 );
+					this.onMovementComplete();
+				}
+			}
+			else
+			{
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_START ) );
 			}
 		}
 		
@@ -200,9 +222,18 @@ package com.tinyrpg.display
 			this.movementBox.y = 0;
 			
 			// Clean up the movement timeline
-			this.movementTimeline.kill();
-			this.movementTimeline.clear();
-			this.movementTimeline = null;
+			if ( this.movementTimeline )
+			{
+				this.movementTimeline.kill();
+				this.movementTimeline.clear();
+				this.movementTimeline = null;
+			}
+			
+			// Check for map object collisions
+			this.checkObjectCollision();
+				
+			// Emit move complete event
+			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_COMPLETE ) );
 		}
 
 		protected function onMovementUpdate( event : Event = null ) : void
@@ -230,6 +261,31 @@ package com.tinyrpg.display
 			}
 		}
 		
+		public function checkObjectCollision() : Boolean
+		{
+			// Emit collision events depending on if an object has been hit by the player
+			if ( this.isPlayer && this.hasControl )
+			{
+				// Check for map object collisions
+				var objectCollision = TinyMapManager.getInstance().currentMap.checkObjectCollision( this.hitBox );
+				
+				if ( objectCollision.hit ) 
+				{
+					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, objectCollision.object ) );
+					
+					var hitObject : TinyFieldMapObject = objectCollision.object as TinyFieldMapObject;
+					return hitObject.isBlocking( this );					
+				} 
+				else 
+				{
+					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.NOTHING_HIT ) );
+					return false;
+				}
+			}
+			
+			return false;
+		}
+		
 		public function setPositionOnGrid( x : int, y : int ) : void
 		{
 			this.x = 8 + 16 * x;
@@ -238,6 +294,54 @@ package com.tinyrpg.display
 			if ( this.lockToCamera )
 			{
 				TinyMapManager.getInstance().updateCamera( this.x, this.y );
+			}
+		}
+		
+		public function setPosition( x : int, y : int ) : void
+		{
+			this.x = 8 + x;
+			this.y = 8 + y;
+			
+			if ( this.lockToCamera )
+			{
+				TinyMapManager.getInstance().updateCamera( this.x, this.y );
+			}
+		}
+		
+		public function takeStep() : void
+		{
+			this.spritesheet.startWalking( this.currentDirection );
+			this.onMovementAdvanced( this.currentDirection );
+			this.addEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
+		}
+		
+		protected function onStepComplete( event : TinyFieldMapEvent ) : void
+		{
+			this.removeEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
+			this.spritesheet.isWalking = false;
+			this.spritesheet.reset();
+			
+			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
+		}
+		
+		public function stopMovement() : void
+		{
+			TinyLogManager.log( 'stopMovement', this );
+			
+			this.spritesheet.isWalking = false;
+			this.spritesheet.reset();
+			
+			// Reset the movement hitbox position
+			this.movementBox.x = 0;
+			this.movementBox.y = 0;
+			
+			// Clean up the movement timeline
+			if ( this.movementTimeline )
+			{
+				this.movementTimeline.getActive()[ 0 ].time( 0 );
+				this.movementTimeline.kill();
+				this.movementTimeline.clear();
+				this.movementTimeline = null;
 			}
 		}
 	}

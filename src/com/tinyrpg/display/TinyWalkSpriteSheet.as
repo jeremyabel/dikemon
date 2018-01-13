@@ -135,9 +135,13 @@ package com.tinyrpg.display
 		
 		public function reset() : void
 		{
-			this.walkCycleTween.kill();
-			this.walkCycleTween = null;
-			this.walkCycleIndex = 1;
+			if ( this.walkCycleTween )
+			{
+				this.walkCycleTween.kill();
+				this.walkCycleTween = null;
+				this.walkCycleIndex = 1;
+			}
+			
 			this.update();
 		}
 		
