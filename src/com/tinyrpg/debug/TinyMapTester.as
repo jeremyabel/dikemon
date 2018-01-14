@@ -121,9 +121,9 @@ package com.tinyrpg.debug
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;
-			TinyMapManager.getInstance().mapContainer.scaleX *= scaleFactor;
-			TinyMapManager.getInstance().mapContainer.scaleY *= scaleFactor;
-			this.addChild( TinyMapManager.getInstance().mapContainer );
+			TinyMapManager.getInstance().scaleX *= scaleFactor;
+			TinyMapManager.getInstance().scaleY *= scaleFactor;
+			this.addChild( TinyMapManager.getInstance() );
 		}
 	}
 }

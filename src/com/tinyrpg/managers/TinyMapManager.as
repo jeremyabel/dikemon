@@ -4,8 +4,10 @@ package com.tinyrpg.managers
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.data.TinyPlayerSpriteState;
+	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.display.TinyWalkSprite;
-	import com.tinyrpg.events.TinyFieldMapEvent;	
+	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.events.TinyGameEvent;	
 	import com.tinyrpg.misc.TinySpriteConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -16,11 +18,12 @@ package com.tinyrpg.managers
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyMapManager extends EventDispatcher
+	public class TinyMapManager extends Sprite
 	{
 		private static var instance : TinyMapManager = new TinyMapManager();
 		
 		private var m_currentMap : TinyFieldMap;
+		private var fadeTransition : TinyFadeTransitionOverlay;
 		private var warpObjectInProgress : TinyFieldMapObjectWarp;
 		
 		public var playerSprite : TinyWalkSprite;
@@ -30,6 +33,11 @@ package com.tinyrpg.managers
 		public function TinyMapManager() : void
 		{
 			this.mapContainer = new Sprite();
+			this.fadeTransition = new TinyFadeTransitionOverlay();
+			
+			// Add 'em up
+			this.addChild( this.mapContainer );
+			this.addChild( this.fadeTransition );
 		}
 
 		// Singleton
@@ -47,10 +55,11 @@ package com.tinyrpg.managers
 			// Remove player control
 			TinyInputManager.getInstance().setTarget( null );
 			
+			// Fade out the current map, if there is one
 			if ( this.m_currentMap ) 
 			{
-				this.m_currentMap.addEventListener( TinyFieldMapEvent.HIDE_COMPLETE, this.onWarpHideComplete );
-				this.m_currentMap.hide();
+				this.fadeTransition.addEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onWarpHideComplete );
+				this.fadeTransition.fadeOut();
 			}
 			else
 			{
@@ -58,15 +67,17 @@ package com.tinyrpg.managers
 			}
 		}
 		
-		private function onWarpHideComplete( event : TinyFieldMapEvent = null ) : void
+		private function onWarpHideComplete( event : TinyGameEvent = null ) : void
 		{
 			if ( event ) TinyLogManager.log( 'onWarpHideComplete', this );
 			else TinyLogManager.log( 'onWarpHideComplete: skipped, no previous map', this );
 			
-			// Clean up and remove the previous map if there is one
+			// Clean up
+			this.fadeTransition.removeEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onWarpHideComplete );
+			
+			// Remove the previous map if there is one
 			if ( this.m_currentMap )
 			{
-				this.m_currentMap.removeEventListener( TinyFieldMapEvent.HIDE_COMPLETE, this.onWarpHideComplete );
 				this.mapContainer.removeChild( this.currentMap );
 				this.m_currentMap = null;
 			} 
@@ -84,17 +95,17 @@ package com.tinyrpg.managers
 			// Move the player sprite to the destination warp
 			this.playerSprite.setPosition( destinationWarpObject.x, destinationWarpObject.y );
 			
-			// Show the current map
-			this.m_currentMap.addEventListener( TinyFieldMapEvent.SHOW_COMPLETE, this.onWarpShowComplete );
-			this.m_currentMap.show();
+			// Fade in the new current map
+			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
+			this.fadeTransition.fadeIn();
 		}
 		
-		private function onWarpShowComplete( event : TinyFieldMapEvent ) : void
+		private function onWarpShowComplete( event : TinyGameEvent = null ) : void
 		{
 			TinyLogManager.log( 'onWarpShowComplete', this );
 			
 			// Clean up
-			this.m_currentMap.removeEventListener( TinyFieldMapEvent.SHOW_COMPLETE, this.onWarpShowComplete );
+			this.fadeTransition.removeEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
 			
 			// Move the player forward one step if required by the warp object
 			if ( this.warpObjectInProgress.stepForwardAfterWarp )
