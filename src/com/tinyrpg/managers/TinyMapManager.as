@@ -47,12 +47,6 @@ package com.tinyrpg.managers
 			// Remove player control
 			TinyInputManager.getInstance().setTarget( null );
 			
-			// Stop all player sprite movement
-			if ( this.playerSprite ) 
-			{
-				this.playerSprite.stopMovement();
-			}
-			
 			if ( this.m_currentMap ) 
 			{
 				this.m_currentMap.addEventListener( TinyFieldMapEvent.HIDE_COMPLETE, this.onWarpHideComplete );

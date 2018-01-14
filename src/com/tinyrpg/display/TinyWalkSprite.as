@@ -322,27 +322,6 @@ package com.tinyrpg.display
 			
 			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
 		}
-		
-		public function stopMovement() : void
-		{
-			TinyLogManager.log( 'stopMovement', this );
-			
-			this.spritesheet.isWalking = false;
-			this.spritesheet.reset();
-			
-			// Reset the movement hitbox position
-			this.movementBox.x = 0;
-			this.movementBox.y = 0;
-			
-			// Clean up the movement timeline
-			if ( this.movementTimeline )
-			{
-				this.movementTimeline.getActive()[ 0 ].time( 0 );
-				this.movementTimeline.kill();
-				this.movementTimeline.clear();
-				this.movementTimeline = null;
-			}
-		}
 	}
 }
 		
