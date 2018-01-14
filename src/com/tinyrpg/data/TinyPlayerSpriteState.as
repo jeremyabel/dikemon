@@ -22,6 +22,12 @@ package com.tinyrpg.data
 			this.walkSprite.addEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
 		}
 		
+		public function destroy() : void
+		{
+			this.walkSprite.removeEventListener( TinyFieldMapEvent.OBJECT_HIT, this.onHitObject );
+			this.walkSprite.removeEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
+		}
+		
 		private function onHitObject( event : TinyFieldMapEvent ) : void
 		{
 			if ( !this.objectCollisionEnabled ) return;
@@ -81,9 +87,6 @@ package com.tinyrpg.data
 				
 				// Didn't trigger an instant warp, so save this warp object so it can be triggered if it is hit twice.
 				this.lastWarpHit = warpObject;
-				
-				// Wait for the next move to start before triggering the warp
-//				this.walkSprite.addEventListener( TinyFieldMapEvent.MOVE_START, this.onWarpMoveStart );
 			}
 		}
 		
@@ -92,19 +95,9 @@ package com.tinyrpg.data
 			
 		}
 		
-		private function onWarpMoveStart( event : TinyFieldMapEvent ) : void
+		public function clearLastWarp() : void
 		{
-			TinyLogManager.log( 'onWarpMoveStart', this );
-			
-			this.walkSprite.removeEventListener( TinyFieldMapEvent.MOVE_START, this.onWarpMoveStart ); 
-			
-			// If this warp has been hit twice and the sprite's facing matches the required warp facing, trigger the warp
-			if ( this.lastWarpHit && this.walkSprite.currentDirection == this.lastWarpHit.requiredFacing )
-			{
-				TinyLogManager.log( 'current facing matches warp facing', this );
-				TinyMapManager.getInstance().warp( this.lastWarpHit );
-				this.lastWarpHit = null;
-			}
+			this.lastWarpHit = null;
 		}
 	}
 }

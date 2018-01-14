@@ -85,6 +85,7 @@ package com.tinyrpg.managers
 			
 			// Find the destination warp object
 			var destinationWarpObject : DisplayObject = this.currentMap.getMapObjectByName( this.warpObjectInProgress.targetWarpName );
+			TinyLogManager.log( 'warp destination: ' + this.warpObjectInProgress.targetWarpName, this );
 			
 			// Move the player sprite to the destination warp
 			this.playerSprite.setPosition( destinationWarpObject.x, destinationWarpObject.y );
@@ -131,10 +132,16 @@ package com.tinyrpg.managers
 			
 			// Re-enable map object collision
 			this.playerSpriteState.objectCollisionEnabled = true;
+			this.playerSpriteState.clearLastWarp();
 		}
 
 		public function addPlayerSprite( initialFacing : String = 'DOWN' ) : void
 		{
+			if ( this.playerSpriteState ) this.playerSpriteState.destroy();
+			
+			this.playerSpriteState = null;
+			this.playerSprite = null;
+			
 			this.playerSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, initialFacing, true, true );
 			this.playerSpriteState = new TinyPlayerSpriteState( playerSprite );
 			

@@ -11,6 +11,31 @@ package com.tinyrpg.misc
 	 */
 	public class TinyMapConfig 
 	{
+		// Town
+		[Embed(source='../../../../bin/xml/Events/Town/Town.xml', mimeType='application/octet-stream')] 					public static const Town_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Town/TownHouse1.xml', mimeType='application/octet-stream')] 				public static const TownHouse1_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Town/TownHouse2.xml', mimeType='application/octet-stream')] 				public static const TownHouse2_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Town/TownHousePlayerFloor1.xml', mimeType='application/octet-stream')] 	public static const TownHousePlayerFloor1_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Town/TownHousePlayerFloor2.xml', mimeType='application/octet-stream')] 	public static const TownHousePlayerFloor2_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Town/TownHouseProf.xml', mimeType='application/octet-stream')] 			public static const TownHouseProf_Events_XML : Class;
+		
+		// City
+		[Embed(source='../../../../bin/xml/Events/City/City.xml', mimeType='application/octet-stream')] 					public static const City_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityBoat.xml', mimeType='application/octet-stream')] 				public static const CityBoat_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityCenter.xml', mimeType='application/octet-stream')] 				public static const CityCenter_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityHouse1.xml', mimeType='application/octet-stream')] 				public static const CityHouse1_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityHouse2.xml', mimeType='application/octet-stream')] 				public static const CityHouse2_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityHouse3.xml', mimeType='application/octet-stream')] 				public static const CityHouse3_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/City/CityMart.xml', mimeType='application/octet-stream')] 				public static const CityMart_Events_XML : Class;
+		
+		// Office
+		[Embed(source='../../../../bin/xml/Events/Office/OfficeReception.xml', mimeType='application/octet-stream')] 		public static const OfficeReception_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Office/OfficeFloor2.xml', mimeType='application/octet-stream')] 			public static const OfficeFloor2_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Office/OfficeFloor3.xml', mimeType='application/octet-stream')] 			public static const OfficeFloor3_Events_XML : Class;
+		
+		// Misc
+		[Embed(source='../../../../bin/xml/Events/Misc/Route29.xml', mimeType='application/octet-stream')] 					public static const Route29_Events_XML : Class;
+		
 		public function TinyMapConfig() : void { }
 		
 		public static function getMapFromName( mapName : String ) : TinyMapMovieClip 

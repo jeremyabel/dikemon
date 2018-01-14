@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVENTS>
+	<EVENT_sign_town_center>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>NEW BARK TOWN:[halt] The Town Where the Winds of a New Beginning Blow   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_town_center>
+
+	<EVENT_sign_players_house>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>Your House   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_players_house>
+
+	<EVENT_sign_profs_lab>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>Oak Dikémon Lab   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_profs_lab>
+
+	<EVENT_sign_profs_house>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER> </SPEAKER>
+				<TEXT>Oak's House   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_profs_house>
+</EVENTS>

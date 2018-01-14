@@ -112,9 +112,9 @@ package com.tinyrpg.debug
 //			map.addChild( playerSprite );
 
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'City';
-			testWarpObject.targetWarpName = 'warpHouse1';
-			testWarpObject.destinationFacing = 'DOWN';
+			testWarpObject.targetMapName = 'IslandForestEntrance';
+			testWarpObject.targetWarpName = 'warpForest';
+			testWarpObject.destinationFacing = 'UP';
 			testWarpObject.stepForwardAfterWarp = true;
 			
 			TinyMapManager.getInstance().warp( testWarpObject );
