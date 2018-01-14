@@ -62,7 +62,7 @@ package com.tinyrpg.display
 			this.movementBox.graphics.beginFill( 0x00FFFF, 0.25 );
 			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.movementBox.graphics.endFill();
-//			this.movementBox.visible = false;
+			this.movementBox.visible = false;
 			
 			// Add 'em up
 			this.addChild( this.spritesheet );
