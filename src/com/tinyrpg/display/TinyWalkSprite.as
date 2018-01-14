@@ -116,7 +116,6 @@ package com.tinyrpg.display
 			
 			// Check collision and clear flag if nothing is found
 			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
-			this.hasCollidedWithObject = this.checkObjectCollision();
 				
 			// If the player is already facing the direction they want to walk in, start walking immediately. 
 			// Otherwise, wait a few frames to enable the player to change the character's facing with a short
