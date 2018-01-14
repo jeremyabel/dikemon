@@ -1,5 +1,7 @@
 package com.tinyrpg.data 
 {
+	import com.tinyrpg.display.TinyWalkSprite;
+	
 	/**
 	 * @author jeremyabel
 	 */
@@ -7,11 +9,17 @@ package com.tinyrpg.data
 	{
 		public var eventName : String;
 		public var requiredFacing : String;
-		public var requiresActivation : Boolean = true;
+		public var requireAcceptKeypress : Boolean = true;
+		public var blocking : Boolean = false;
 		
 		public function TinyFieldMapObjectTrigger() : void 
 		{
 			
-		} 
+		}
+		
+		override public function isBlocking( walkSprite : TinyWalkSprite ) : Boolean
+		{
+			return this.blocking;
+		}
 	}
 }

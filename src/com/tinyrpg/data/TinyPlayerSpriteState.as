@@ -2,6 +2,7 @@ package com.tinyrpg.data
 {	
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 	
@@ -32,13 +33,13 @@ package com.tinyrpg.data
 		{
 			if ( !this.objectCollisionEnabled ) return;
 			
-			var hitObject : * = event.param;
+			var hitObject : * = event.param.object;
 			
 			if ( hitObject is TinyFieldMapObject )
 			{
 				if ( hitObject is TinyFieldMapObjectTrigger )
 				{
-					this.onHitTrigger( hitObject as TinyFieldMapObjectTrigger ); 
+					this.onHitTrigger( hitObject as TinyFieldMapObjectTrigger, event.param.fromAcceptKeypress ); 
 					return;
 				}
 				
@@ -51,6 +52,11 @@ package com.tinyrpg.data
 		}
 		
 		private function onHitNothing( event : TinyFieldMapEvent ) : void
+		{
+			this.clearLastWarp();
+		}
+				
+		public function clearLastWarp() : void
 		{
 			this.lastWarpHit = null;
 		}
@@ -90,14 +96,21 @@ package com.tinyrpg.data
 			}
 		}
 		
-		private function onHitTrigger( triggerObject : TinyFieldMapObjectTrigger ) : void
+		private function onHitTrigger( triggerObject : TinyFieldMapObjectTrigger, fromAcceptKeypress : Boolean ) : void
 		{
+			TinyLogManager.log( 'onHitTrigger: ' + triggerObject.eventName, this );
 			
-		}
-		
-		public function clearLastWarp() : void
-		{
-			this.lastWarpHit = null;
+			// If there is a required facing, check it before executing the event
+			if ( triggerObject.requiredFacing )
+			{
+				// If the facing doesn't match, exit
+				if ( this.walkSprite.currentDirection != triggerObject.requiredFacing ) return;
+				
+				TinyLogManager.log( 'current facing matches trigger facing', this );
+			}
+			
+			// Exit if an accept keypress is required and none was found
+			if ( triggerObject.requireAcceptKeypress && !fromAcceptKeypress ) return;
 		}
 	}
 }

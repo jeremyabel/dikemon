@@ -110,7 +110,7 @@ package com.tinyrpg.managers
 			// Move the player forward one step if required by the warp object
 			if ( this.warpObjectInProgress.stepForwardAfterWarp )
 			{
-				// Disable map object collision while taking the first step 
+				// Disable map object collision while taking the first step
 				this.playerSpriteState.objectCollisionEnabled = false;
 				
 				// Move forward one step
@@ -119,7 +119,7 @@ package com.tinyrpg.managers
 			}
 			else 
 			{
-				// Otherwise give control to the player
+				// Otherwise give control to the player immediately
 				TinyInputManager.getInstance().setTarget( this.playerSprite );				
 			}
 			
@@ -130,6 +130,7 @@ package com.tinyrpg.managers
 		{
 			TinyLogManager.log( 'onWarpStepForwardComplete', this );
 			
+			// Clean up
 			this.playerSprite.removeEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWarpStepForwardComplete );
 			
 			// Give control to the player

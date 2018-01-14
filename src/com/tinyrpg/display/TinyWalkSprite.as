@@ -14,6 +14,7 @@ package com.tinyrpg.display
 	import com.tinyrpg.misc.TinySpriteConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
+	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
 
@@ -61,7 +62,7 @@ package com.tinyrpg.display
 			this.movementBox.graphics.beginFill( 0x00FFFF, 0.25 );
 			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
 			this.movementBox.graphics.endFill();
-			this.movementBox.visible = false;
+//			this.movementBox.visible = false;
 			
 			// Add 'em up
 			this.addChild( this.spritesheet );
@@ -78,7 +79,8 @@ package com.tinyrpg.display
 			
 			this.hasControl = true;
 			
-			// Add arrow events
+			// Add input events
+			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ACCEPT, 		this.onAcceptPressed );
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ARROW_UP, 		this.startWalking );
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ARROW_DOWN, 	this.startWalking );
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.ARROW_LEFT, 	this.startWalking );
@@ -95,7 +97,8 @@ package com.tinyrpg.display
 			
 			this.hasControl = false;
 			
-			// Remove arrow events
+			// Remove input events
+			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.ACCEPT, 		this.onAcceptPressed );
 			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.ARROW_UP, 	this.startWalking );
 			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.ARROW_DOWN, 	this.startWalking );
 			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.ARROW_LEFT, 	this.startWalking );
@@ -106,12 +109,23 @@ package com.tinyrpg.display
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, this.onControlAdded );
 		}
 		
+		protected function onAcceptPressed( event : TinyInputEvent = null ) : void
+		{
+			if ( !this.isPlayer || !this.hasControl ) return;
+			
+			TinyLogManager.log( 'onAcceptPressed', this );
+			
+			// Check for collisions on the tile directly in front 
+			this.checkObjectCollision( true, true );
+		}
+		
 		public function startWalking( event : TinyInputEvent = null ) : void
 		{
 			if ( this.spritesheet.isWalking ) return;
 			
 			// Start walking in the desired direction 			
 			this.spritesheet.startWalking( TinyInputManager.getInstance().getCurrentArrowKey() );
+			this.currentDirection = this.spritesheet.facing;
 			this.updateMovementHitbox();
 			
 			// Check collision and clear flag if nothing is found
@@ -163,7 +177,8 @@ package com.tinyrpg.display
 				roundProps: [ 'x', 'y' ]
 			};
 			
-			// Get the correct movement direction and amount depending on what direction key is active
+			// Get the correct movement direction and amount depending on what direction key is active.
+			// The parameter is set with a string to enable the tween to use relative distances.
 			switch ( facing )
 			{
 				case TinyWalkSprite.UP: 	movementEaseOptions.y = "-16"; break;		
@@ -216,10 +231,6 @@ package com.tinyrpg.display
 		
 		protected function onMovementComplete( event : Event = null ) : void
 		{
-			// Reset the movement hitbox position
-			this.movementBox.x = 0;
-			this.movementBox.y = 0;
-			
 			// Clean up the movement timeline
 			if ( this.movementTimeline )
 			{
@@ -260,17 +271,24 @@ package com.tinyrpg.display
 			}
 		}
 		
-		public function checkObjectCollision() : Boolean
+		public function checkObjectCollision( useMovementHitbox : Boolean = false, fromAcceptKeypress : Boolean = false ) : Boolean
 		{
 			// Emit collision events depending on if an object has been hit by the player
 			if ( this.isPlayer && this.hasControl )
 			{
-				// Check for map object collisions
-				var objectCollision = TinyMapManager.getInstance().currentMap.checkObjectCollision( this.hitBox );
+				// Get the desired hitbox to test with
+				var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
 				
+				// Check for map object collisions
+				var objectCollision = TinyMapManager.getInstance().currentMap.checkObjectCollision( hitboxToUse );
+				
+				// Dispatch relevant collision events and return a boolean value indicating if anything has been hit
 				if ( objectCollision.hit ) 
 				{
-					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, objectCollision.object ) );
+					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, { 
+						object: objectCollision.object,
+						fromAcceptKeypress: fromAcceptKeypress
+					}));
 					
 					var hitObject : TinyFieldMapObject = objectCollision.object as TinyFieldMapObject;
 					return hitObject.isBlocking( this );					
@@ -309,6 +327,7 @@ package com.tinyrpg.display
 		
 		public function takeStep() : void
 		{
+			this.updateMovementHitbox();
 			this.spritesheet.startWalking( this.currentDirection );
 			this.onMovementAdvanced( this.currentDirection );
 			this.addEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
