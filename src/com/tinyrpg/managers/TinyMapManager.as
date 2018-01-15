@@ -29,14 +29,17 @@ package com.tinyrpg.managers
 		public var playerSprite : TinyWalkSprite;
 		public var playerSpriteState : TinyPlayerSpriteState;
 		public var mapContainer : Sprite;
+		public var mapEventContainer : Sprite;
 		
 		public function TinyMapManager() : void
 		{
 			this.mapContainer = new Sprite();
+			this.mapEventContainer = new Sprite();
 			this.fadeTransition = new TinyFadeTransitionOverlay();
 			
 			// Add 'em up
 			this.addChild( this.mapContainer );
+			this.addChild( this.mapEventContainer );
 			this.addChild( this.fadeTransition );
 		}
 
@@ -158,6 +161,31 @@ package com.tinyrpg.managers
 		{
 			this.m_currentMap.x = -x + ( 160 / 2 ) - 8;
 			this.m_currentMap.y = -y + ( 144 / 2 ) - 8;
+		}
+		
+		public function startEventByName( eventName : String ) : void
+		{
+			TinyLogManager.log( 'startEventByName: ' + eventName, this );
+			
+			this.playerSprite.stopWalking();
+			
+			// Remove player control
+			TinyInputManager.getInstance().setTarget( null );
+			
+			// Start the event
+			this.m_currentMap.addEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
+			this.m_currentMap.startEventByName( eventName );
+		}
+		
+		private function onEventComplete( event : TinyFieldMapEvent ) : void
+		{
+			TinyLogManager.log( 'onEventComplete', this );
+			
+			// Clean up
+			this.m_currentMap.removeEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
+			
+			// Return control to the player
+			TinyInputManager.getInstance().setTarget( this.playerSprite );
 		}
 		
 		public function set currentMap( value : TinyFieldMap ) : void

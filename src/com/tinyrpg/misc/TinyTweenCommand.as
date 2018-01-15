@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+﻿package com.tinyrpg.misc 
 {
 	import com.greensock.TweenLite;
 	
@@ -25,14 +25,14 @@ package com.tinyrpg.misc
 		{
 			this.tween.play();	
 				
-			if (this.waitForCompletion) 
-			{
-				TweenLite.delayedCall(this.tween.totalDuration, this.dispatchEvent, [new Event(Event.COMPLETE)]);
-			} 
-			else 
-			{
-				this.dispatchEvent(new Event(Event.COMPLETE));
-			}
+			//if (this.waitForCompletion) 
+			//{
+			//	TweenLite.delayedCall(this.tween.totalDuration, this.dispatchEvent, [new Event(Event.COMPLETE)]);
+			//} 
+			//else 
+			//{
+			//	this.dispatchEvent(new Event(Event.COMPLETE));
+			//}
 		}
 	}
 }

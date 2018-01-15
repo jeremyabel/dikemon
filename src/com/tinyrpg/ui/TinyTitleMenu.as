@@ -1,6 +1,6 @@
 package com.tinyrpg.ui 
 {
-	import com.tinyrpg.data.TinySaveData;
+//	import com.tinyrpg.data.TinySaveData;
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.events.TinyMenuEvent;
@@ -20,11 +20,11 @@ package com.tinyrpg.ui
 		{
 			var newItemArray : Array = [];
 			
-			// Don't put "Continue" in the list unless we have something to continue
-			if (TinySaveData.doesSaveExist(1) || TinySaveData.doesSaveExist(2) || TinySaveData.doesSaveExist(3)) {
-				newItemArray[0] = new TinySelectableItem(this.loadString, 0);				newItemArray[1] = new TinySelectableItem(this.newString, 1);			} else {
-				newItemArray.push(new TinySelectableItem(this.newString, 0));
-			}
+//			// Don't put "Continue" in the list unless we have something to continue
+//			if (TinySaveData.doesSaveExist(1) || TinySaveData.doesSaveExist(2) || TinySaveData.doesSaveExist(3)) {
+//				newItemArray[0] = new TinySelectableItem(this.loadString, 0);//				newItemArray[1] = new TinySelectableItem(this.newString, 1);//			} else {
+//				newItemArray.push(new TinySelectableItem(this.newString, 0));
+//			}
 						newItemArray.push(new TinySelectableItem(this.quitString, newItemArray.length));
 			
 			super('', newItemArray, 100, 100, 10);

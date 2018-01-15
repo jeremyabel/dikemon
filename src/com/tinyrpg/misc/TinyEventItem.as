@@ -6,14 +6,12 @@ package com.tinyrpg.misc
 	 */
 	public class TinyEventItem 
 	{
+		// Generic Events
 		public static const DIALOG	 	  : String = 'DIALOG';
-		public static const DIALOG_CHOICE : String = 'DIALOG_CHOICE';
-		public static const DIALOG_CUSTOM : String = 'DIALOG_CUSTOM';
 		public static const CONDITIONAL	  : String = 'CONDITIONAL';
 		public static const BATTLE		  : String = 'BATTLE';
 		public static const ADD_NPC		  : String = 'ADD_NPC';
 		public static const REMOVE_NPC	  : String = 'REMOVE_NPC';
-		public static const ATTACK		  : String = 'ATTACK';
 		public static const SUB_SEQUENCE  : String = 'SUB_SEQUENCE';
 		public static const GIVE_ITEM	  : String = 'GIVE_ITEM';
 		public static const TAKE_ITEM	  : String = 'TAKE_ITEM';
@@ -25,17 +23,15 @@ package com.tinyrpg.misc
 		public static const SHOW_OBJECT	  : String = 'SHOW_OBJECT';
 		public static const HIDE_OBJECT	  : String = 'HIDE_OBJECT';
 		public static const PLAY_ANIM	  : String = 'PLAY_ANIM';
-		public static const PLAY_FX		  : String = 'PLAY_FX';
 		public static const PLAY_SOUND	  : String = 'PLAY_SOUND';
 		public static const PLAY_MUSIC	  : String = 'PLAY_MUSIC';
 		public static const DELAY		  : String = 'DELAY';
 		public static const SET_FLAG	  : String = 'SET_FLAG';
 		public static const HEAL_ALL	  : String = 'HEAL_ALL';
-		public static const RECRUIT		  : String = 'RECRUIT';
 		public static const END			  : String = 'END';
 		public static const FINAL_END	  : String = 'FINAL_END';
 		
-		// BATTLE EVENTS
+		// Battle Events
 		public static const SHOW_TRAINER 			: String = 'SHOW_TRAINER';
 		public static const HIDE_TRAINER 			: String = 'HIDE_TRAINER';
 		public static const SET_STAT_MON  			: String = 'SHOW_STAT_MON';
@@ -63,24 +59,13 @@ package com.tinyrpg.misc
 		public static const PLAYER_HIT_SECONDARY 	: String = 'PLAYER_HIT_SECONDARY';
 		public static const ENEMY_HIT_SECONDARY 	: String = 'ENEMY_HIT_SECONDARY';
 		
-		// SPECIAL END STUFF
-		public static const FADE_FLASH_OUT : String = 'FADE_FLASH_OUT';
-		public static const FLASH_SCREEN   : String = 'FLASH_SCREEN';
-		public static const OPEN_DOOR	   : String = 'OPEN_DOOR';
-		public static const PLAY_NUKE	   : String = 'PLAY_NUKE';
-		public static const EVERYBODY_OUT  : String = 'EVERYBODY_OUT';
-		public static const SUCK_TO_CENTER : String = 'SUCK_TO_CENTER';
-		public static const SHOW_HYBRID	   : String = 'SHOW_HYBRID';
-		
 		public var type   : String;
 		public var thingToDo : *;
-		public var battle : Boolean = false;
 		
-		public function TinyEventItem(eventType : String, thingToDo : *, battle : Boolean = false)
+		public function TinyEventItem( eventType : String, thingToDo : * )
 		{
 			this.type = eventType;
 			this.thingToDo = thingToDo;
-			this.battle = battle;
 		}
 	}
 }

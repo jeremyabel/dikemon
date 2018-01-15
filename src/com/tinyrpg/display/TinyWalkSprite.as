@@ -144,6 +144,22 @@ package com.tinyrpg.display
 			}
 		}
 		
+		public function stopWalking() : void
+		{
+			TinyLogManager.log( 'stopWalking', this );
+			
+			// Reset the latest tween so no movement happens
+			if ( this.movementTimeline )
+			{
+				this.movementTimeline.getActive()[ 0 ].time( 0 );
+				this.onMovementComplete();
+			}
+			
+			// Reset the spritesheet
+			this.spritesheet.isWalking = false;
+			this.spritesheet.reset();
+		}
+		
 		protected function checkArrowInputs() : void
 		{
 			if ( this.isPlayer && !this.hasControl ) return;

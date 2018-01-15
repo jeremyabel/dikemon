@@ -1,4 +1,4 @@
-package com.tinyrpg.data 
+﻿package com.tinyrpg.data 
 {
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.core.TinyFriendSprite;
@@ -90,11 +90,11 @@ package com.tinyrpg.data
 			
 			
 			// Convert map location to XML
-			var mapXMLString : String = '<MAP>\n';
-			mapXMLString += '<NAME>' + TinyFieldMap.mapName + '</NAME>';			mapXMLString += '<PLAYER_POS>';
-			mapXMLString += TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics).x + ',';
-			mapXMLString += TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics).y + '</PLAYER_POS>'; 			mapXMLString += '</MAP>\n';
-			this.xmlData.appendChild(XML(mapXMLString));
+			//var mapXMLString : String = '<MAP>\n';
+			//mapXMLString += '<NAME>' + TinyFieldMap.mapName + '</NAME>';			//mapXMLString += '<PLAYER_POS>';
+			//mapXMLString += TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics).x + ',';
+			//mapXMLString += TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics).y + '</PLAYER_POS>'; 			//mapXMLString += '</MAP>\n';
+			//this.xmlData.appendChild(XML(mapXMLString));
 		}
 		
 		public function saveAndCompressData(fileSlot : int) : void

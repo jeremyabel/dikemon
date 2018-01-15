@@ -70,7 +70,7 @@ package com.tinyrpg.data
 				// If this warp has been hit twice and the sprite's facing matches the required warp facing, trigger the warp
 				if ( this.lastWarpHit.targetMapName == warpObject.targetMapName && this.walkSprite.currentDirection == this.lastWarpHit.requiredFacing )
 				{
-					TinyLogManager.log( 'current facing matches warp facing', this );
+					TinyLogManager.log( 'onHitWarp: current facing matches warp facing', this );
 					TinyMapManager.getInstance().warp( this.lastWarpHit );
 					this.lastWarpHit = null;
 					return;
@@ -84,12 +84,12 @@ package com.tinyrpg.data
 				// Triggered an instant warp, go there immediately
 				if ( warpObject.instant ) 
 				{
-					TinyLogManager.log( 'triggered instant warp', this );
+					TinyLogManager.log( 'onHitWarp: triggered instant warp', this );
 					TinyMapManager.getInstance().warp( warpObject );
 					return;
 				}
 				
-				TinyLogManager.log( 'waiting for warp', this );
+				TinyLogManager.log( 'onHitWarp: waiting for warp', this );
 				
 				// Didn't trigger an instant warp, so save this warp object so it can be triggered if it is hit twice.
 				this.lastWarpHit = warpObject;
@@ -106,11 +106,14 @@ package com.tinyrpg.data
 				// If the facing doesn't match, exit
 				if ( this.walkSprite.currentDirection != triggerObject.requiredFacing ) return;
 				
-				TinyLogManager.log( 'current facing matches trigger facing', this );
+				TinyLogManager.log( 'onHitTrigger: current facing matches trigger facing', this );
 			}
 			
 			// Exit if an accept keypress is required and none was found
 			if ( triggerObject.requireAcceptKeypress && !fromAcceptKeypress ) return;
+			
+			// Good to go: play the event
+			TinyMapManager.getInstance().startEventByName( triggerObject.eventName );
 		}
 	}
 }

@@ -139,57 +139,57 @@ package com.tinyrpg.misc
 		{
 			TinyLogManager.log( 'getMapEventXMLFromName: ' + mapName, TinyMapConfig );
 				
-				var newXMLBytes : ByteArray;
+			var newXMLBytes : ByteArray;
+			
+			switch ( mapName.toUpperCase() )
+			{
+				// City
+				case MAP_CITY: 					newXMLBytes = new City_Events_XML as ByteArray; break;
+				case MAP_CITYBOAT:				newXMLBytes = new CityBoat_Events_XML as ByteArray; break;
+				case MAP_CITYDIKECENTER: 		newXMLBytes = new CityDikecenter_Events_XML as ByteArray; break;
+				case MAP_CITYDIKEMART: 			newXMLBytes = new CityDikemart_Events_XML as ByteArray; break;
+				case MAP_CITYHOUSE1: 			newXMLBytes = new CityHouse1_Events_XML as ByteArray; break;
+				case MAP_CITYHOUSE2: 			newXMLBytes = new CityHouse2_Events_XML as ByteArray; break;
+				case MAP_CITYHOUSE3: 			newXMLBytes = new CityHouse3_Events_XML as ByteArray; break;
 				
-				switch ( mapName.toUpperCase() )
-				{
-					// City
-					case MAP_CITY: 					newXMLBytes = City_Events_XML as ByteArray; break;
-					case MAP_CITYBOAT:				newXMLBytes = CityBoat_Events_XML as ByteArray; break;
-					case MAP_CITYDIKECENTER: 		newXMLBytes = CityDikecenter_Events_XML as ByteArray; break;
-					case MAP_CITYDIKEMART: 			newXMLBytes = CityDikemart_Events_XML as ByteArray; break;
-					case MAP_CITYHOUSE1: 			newXMLBytes = CityHouse1_Events_XML as ByteArray; break;
-					case MAP_CITYHOUSE2: 			newXMLBytes = CityHouse2_Events_XML as ByteArray; break;
-					case MAP_CITYHOUSE3: 			newXMLBytes = CityHouse3_Events_XML as ByteArray; break;
-					
-					// Office
-					case MAP_OFFICERECEPTION:		newXMLBytes = OfficeReception_Events_XML as ByteArray; break;
-					case MAP_OFFICEFLOOR2:			newXMLBytes = OfficeFloor2_Events_XML as ByteArray; break;
-					case MAP_OFFICEFLOOR3:			newXMLBytes = OfficeFloor3_Events_XML as ByteArray; break;
-					
-					// Town
-					case MAP_TOWN:					newXMLBytes = Town_Events_XML as ByteArray; break;
-					case MAP_TOWNHOUSE1:			newXMLBytes = TownHouse1_Events_XML as ByteArray; break;
-					case MAP_TOWNHOUSE2:			newXMLBytes = TownHouse2_Events_XML as ByteArray; break;
-					case MAP_TOWNHOUSEPLAYERFLOOR1:	newXMLBytes = TownHousePlayerFloor1_Events_XML as ByteArray; break;
-					case MAP_TOWNHOUSEPLAYERFLOOR2:	newXMLBytes = TownHousePlayerFloor2_Events_XML as ByteArray; break;
-					case MAP_TOWNHOUSEPROFESSOR:	newXMLBytes = TownHouseProf_Events_XML as ByteArray; break;
-					
-					// Island: Lake	
-					case MAP_ISLANDLAKEENTRANCE:	newXMLBytes = IslandLakeEntrance_Events_XML as ByteArray; break;
-					case MAP_ISLANDLAKECAVE:		newXMLBytes = IslandLakeCave_Events_XML as ByteArray; break;
-					case MAP_ISLANDLAKE:			newXMLBytes = IslandLake_Events_XML as ByteArray; break;
-					
-					// Island: Cave
-					case MAP_ISLANDCAVEENTRANCE:	newXMLBytes = IslandCaveEntrance_Events_XML as ByteArray; break;
-					case MAP_ISLANDCAVESIDE:		newXMLBytes = IslandCaveSide_Events_XML as ByteArray; break;
-					case MAP_ISLANDCAVE:			newXMLBytes = IslandCave_Events_XML as ByteArray; break;
-					
-					// Island: Forest
-					case MAP_ISLANDFORESTENTRANCE:	newXMLBytes = IslandForestEntrance_Events_XML as ByteArray; break;
-					case MAP_ISLANDFOREST:			newXMLBytes = IslandForest_Events_XML as ByteArray; break;
-					
-					// Island: Boat
-					case MAP_ISLANDBOATEXIT:		newXMLBytes = IslandBoatExit_Events_XML as ByteArray; break;
-					
-					// Misc
-					case MAP_ROUTE29:				newXMLBytes = Route29_Events_XML as ByteArray; break;
-					
-					default: 						newXMLBytes = TownHousePlayerFloor2_Events_XML as ByteArray; break;
-				}
+				// Office
+				case MAP_OFFICERECEPTION:		newXMLBytes = new OfficeReception_Events_XML as ByteArray; break;
+				case MAP_OFFICEFLOOR2:			newXMLBytes = new OfficeFloor2_Events_XML as ByteArray; break;
+				case MAP_OFFICEFLOOR3:			newXMLBytes = new OfficeFloor3_Events_XML as ByteArray; break;
 				
-				var string : String = newXMLBytes.readUTFBytes( newXMLBytes.length );			
-				return new XML( string );
+				// Town
+				case MAP_TOWN:					newXMLBytes = new Town_Events_XML as ByteArray; break;
+				case MAP_TOWNHOUSE1:			newXMLBytes = new TownHouse1_Events_XML as ByteArray; break;
+				case MAP_TOWNHOUSE2:			newXMLBytes = new TownHouse2_Events_XML as ByteArray; break;
+				case MAP_TOWNHOUSEPLAYERFLOOR1:	newXMLBytes = new TownHousePlayerFloor1_Events_XML as ByteArray; break;
+				case MAP_TOWNHOUSEPLAYERFLOOR2:	newXMLBytes = new TownHousePlayerFloor2_Events_XML as ByteArray; break;
+				case MAP_TOWNHOUSEPROFESSOR:	newXMLBytes = new TownHouseProf_Events_XML as ByteArray; break;
+				
+				// Island: Lake	
+				case MAP_ISLANDLAKEENTRANCE:	newXMLBytes = new IslandLakeEntrance_Events_XML as ByteArray; break;
+				case MAP_ISLANDLAKECAVE:		newXMLBytes = new IslandLakeCave_Events_XML as ByteArray; break;
+				case MAP_ISLANDLAKE:			newXMLBytes = new IslandLake_Events_XML as ByteArray; break;
+				
+				// Island: Cave
+				case MAP_ISLANDCAVEENTRANCE:	newXMLBytes = new IslandCaveEntrance_Events_XML as ByteArray; break;
+				case MAP_ISLANDCAVESIDE:		newXMLBytes = new IslandCaveSide_Events_XML as ByteArray; break;
+				case MAP_ISLANDCAVE:			newXMLBytes = new IslandCave_Events_XML as ByteArray; break;
+				
+				// Island: Forest
+				case MAP_ISLANDFORESTENTRANCE:	newXMLBytes = new IslandForestEntrance_Events_XML as ByteArray; break;
+				case MAP_ISLANDFOREST:			newXMLBytes = new IslandForest_Events_XML as ByteArray; break;
+				
+				// Island: Boat
+				case MAP_ISLANDBOATEXIT:		newXMLBytes = new IslandBoatExit_Events_XML as ByteArray; break;
+				
+				// Misc
+				case MAP_ROUTE29:				newXMLBytes = new Route29_Events_XML as ByteArray; break;
+				
+				default: 						newXMLBytes = new TownHousePlayerFloor2_Events_XML as ByteArray; break;
+			}
+				
+			var string : String = newXMLBytes.readUTFBytes( newXMLBytes.length );			
+			return new XML( string );
 		}
 	}
 }

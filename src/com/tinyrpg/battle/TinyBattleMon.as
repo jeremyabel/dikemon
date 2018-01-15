@@ -66,8 +66,6 @@ package com.tinyrpg.battle
 		private var m_moveSelectMenu			: TinyMoveSelectMenu;
 		private var m_switchMonMenu				: TinySwitchMonMenu;
 		public var m_isWildEncounter			: Boolean;
-		private var m_savedPlayerPos			: Point;
-//		private var m_savedPlayerFacing			: String;
 		private var m_battleEvent				: TinyBattleEventSequence;
 		private var m_battleIntroWhirl			: TinySpriteSheet;
 		private var m_battleEmptyDialogBox		: TinyTitleBox;
@@ -94,21 +92,13 @@ package com.tinyrpg.battle
 			m_enemyTrainer = enemyTrainer;
 			m_currentPlayerMon = m_testPlayerTrainer.getFirstHealthyMon();
 			m_currentEnemyMon = m_isWildEncounter ? enemyMon : m_enemyTrainer.getFirstHealthyMon();
-			
-			// Save player position for later
-			m_savedPlayerPos = new Point();
-//			m_savedPlayerPos.x = TinyMath.deepCopyInt(TinyPlayer.getInstance().party.getCharByID(0).graphics.x);
-//			m_savedPlayerPos.y = TinyMath.deepCopyInt(TinyPlayer.getInstance().party.getCharByID(0).graphics.y);
-			
-			// Save player facing
-//			m_savedPlayerFacing = TinyMath.deepCopyString(TinyFriendSprite(TinyPlayer.getInstance().party.getCharByID(0).graphics).facing);
 		}
 		
 		public function startBattle() : void
 		{
 			// Empty dialog box that sits behind the battle menu
-			m_battleEmptyDialogBox = new TinyTitleBox(null, '', 144, 33);
-			m_battleEmptyDialogBox.x = int((160 / 2) - (m_battleEmptyDialogBox.width / 2)) + 5;
+			m_battleEmptyDialogBox = new TinyTitleBox( null, '', 144, 33 );
+			m_battleEmptyDialogBox.x = int( ( 160 / 2 ) - ( m_battleEmptyDialogBox.width / 2 ) ) + 5;
 			m_battleEmptyDialogBox.y = 104;
 			
 			// Container for the rest of the dialog boxes
@@ -198,8 +188,6 @@ package com.tinyrpg.battle
 			TinyLogManager.log('', this);
 			TinyLogManager.log('==================== START BATTLE MODE ====================', this);
 			TinyLogManager.log('', this);
-			
-			TinyFieldMap.inBattle = true;
 			
 			// Whirl mask
 			m_battleIntroWhirl = new TinySpriteSheet(new BattleWhirl, 160, false, 1);
