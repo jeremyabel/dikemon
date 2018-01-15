@@ -32,8 +32,8 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'IslandCaveEntrance';
-			testWarpObject.targetWarpName = 'warpCenter';
+			testWarpObject.targetMapName = 'IslandBoatExit';
+			testWarpObject.targetWarpName = 'warpMart';
 			testWarpObject.destinationFacing = 'DOWN';
 			testWarpObject.stepForwardAfterWarp = true;
 			

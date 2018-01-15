@@ -137,7 +137,7 @@ package com.tinyrpg.misc
 				case MAP_ISLANDFOREST:			return new MapIslandForest;
 				
 				// Island: Boat
-//				case MAP_ISLANDBOATDOCK:		return new MapIslandBoatDock;
+				case MAP_ISLANDBOATDOCK:		return new MapIslandBoatDock;
 				case MAP_ISLANDBOATEXIT:		return new MapIslandBoatExit;
 				case MAP_ISLANDBOATEXITMART:	return new MapIslandBoatExitMart;
 				
