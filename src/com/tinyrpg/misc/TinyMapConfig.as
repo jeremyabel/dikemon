@@ -32,11 +32,15 @@ package com.tinyrpg.misc
 		private static const MAP_ISLANDLAKECAVE			: String = 'ISLANDLAKECAVE';
 		private static const MAP_ISLANDLAKE				: String = 'ISLANDLAKE';
 		private static const MAP_ISLANDCAVEENTRANCE		: String = 'ISLANDCAVEENTRANCE';
+		private static const MAP_ISLANDCAVECENTER		: String = 'ISLANDCAVECENTER';
 		private static const MAP_ISLANDCAVESIDE			: String = 'ISLANDCAVESIDE';
 		private static const MAP_ISLANDCAVE				: String = 'ISLANDCAVE';
 		private static const MAP_ISLANDFORESTENTRANCE	: String = 'ISLANDFORESTENTRANCE';
 		private static const MAP_ISLANDFOREST			: String = 'ISLANDFOREST';
+		private static const MAP_ISLANDBOATDOCK			: String = 'ISLANDBOATDOCK';
 		private static const MAP_ISLANDBOATEXIT			: String = 'ISLANDBOATEXIT';
+		private static const MAP_ISLANDBOATEXITMART		: String = 'ISLANDBOATEXITMART';
+		private static const MAP_ISLANDENTRANCE			: String = 'ISLANDENTRANCE';
 		private static const MAP_ROUTE29				: String = 'ROUTE29';
 		
 		// City
@@ -68,6 +72,7 @@ package com.tinyrpg.misc
 		
 		// Island: Cave
 		[Embed(source='../../../../bin/xml/Events/Island/IslandCaveEntrance.xml', mimeType='application/octet-stream')] 	public static const IslandCaveEntrance_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Island/IslandCaveCenter.xml', mimeType='application/octet-stream')] 		public static const IslandCaveCenter_Events_XML : Class;
 		[Embed(source='../../../../bin/xml/Events/Island/IslandCaveSide.xml', mimeType='application/octet-stream')] 		public static const IslandCaveSide_Events_XML : Class;
 		[Embed(source='../../../../bin/xml/Events/Island/IslandCave.xml', mimeType='application/octet-stream')] 			public static const IslandCave_Events_XML : Class;
 		
@@ -76,7 +81,12 @@ package com.tinyrpg.misc
 		[Embed(source='../../../../bin/xml/Events/Island/IslandForest.xml', mimeType='application/octet-stream')] 			public static const IslandForest_Events_XML : Class;
 		
 		// Island: Boat
+		[Embed(source='../../../../bin/xml/Events/Island/IslandBoatDock.xml', mimeType='application/octet-stream')] 		public static const IslandBoatDock_Events_XML : Class;
 		[Embed(source='../../../../bin/xml/Events/Island/IslandBoatExit.xml', mimeType='application/octet-stream')] 		public static const IslandBoatExit_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Island/IslandBoatExitMart.xml', mimeType='application/octet-stream')] 	public static const IslandBoatExitMart_Events_XML : Class;
+		
+		// Island: Center
+		[Embed(source='../../../../bin/xml/Events/Island/IslandEntrance.xml', mimeType='application/octet-stream')] 		public static const IslandEntrance_Events_XML : Class;
 		
 		// Misc
 		[Embed(source='../../../../bin/xml/Events/Misc/Route29.xml', mimeType='application/octet-stream')] 					public static const Route29_Events_XML : Class;
@@ -118,6 +128,7 @@ package com.tinyrpg.misc
 				
 				// Island: Cave
 				case MAP_ISLANDCAVEENTRANCE:	return new MapIslandCaveEntrance;
+				case MAP_ISLANDCAVECENTER:		return new MapIslandCaveCenter;
 				case MAP_ISLANDCAVESIDE:		return new MapIslandCaveSide;
 				case MAP_ISLANDCAVE:			return new MapIslandCave;
 				
@@ -126,7 +137,11 @@ package com.tinyrpg.misc
 				case MAP_ISLANDFOREST:			return new MapIslandForest;
 				
 				// Island: Boat
-				case MAP_ISLANDBOATEXIT:		return new MapIslandBoatExit; 
+//				case MAP_ISLANDBOATDOCK:		return new MapIslandBoatDock;
+				case MAP_ISLANDBOATEXIT:		return new MapIslandBoatExit;
+				case MAP_ISLANDBOATEXITMART:	return new MapIslandBoatExitMart;
+				
+				// Island: Center
 				
 				// Misc
 				case MAP_ROUTE29:				return new MapRoute29;
@@ -172,6 +187,7 @@ package com.tinyrpg.misc
 				
 				// Island: Cave
 				case MAP_ISLANDCAVEENTRANCE:	newXMLBytes = new IslandCaveEntrance_Events_XML as ByteArray; break;
+				case MAP_ISLANDCAVECENTER:		newXMLBytes = new IslandCaveCenter_Events_XML as ByteArray; break;
 				case MAP_ISLANDCAVESIDE:		newXMLBytes = new IslandCaveSide_Events_XML as ByteArray; break;
 				case MAP_ISLANDCAVE:			newXMLBytes = new IslandCave_Events_XML as ByteArray; break;
 				
@@ -180,7 +196,12 @@ package com.tinyrpg.misc
 				case MAP_ISLANDFOREST:			newXMLBytes = new IslandForest_Events_XML as ByteArray; break;
 				
 				// Island: Boat
+				case MAP_ISLANDBOATDOCK:		newXMLBytes = new IslandBoatDock_Events_XML as ByteArray; break;
 				case MAP_ISLANDBOATEXIT:		newXMLBytes = new IslandBoatExit_Events_XML as ByteArray; break;
+				case MAP_ISLANDBOATEXITMART:	newXMLBytes = new IslandBoatExitMart_Events_XML as ByteArray; break;
+				
+				// Island: Center
+				case MAP_ISLANDENTRANCE:		newXMLBytes = new IslandEntrance_Events_XML as ByteArray; break;
 				
 				// Misc
 				case MAP_ROUTE29:				newXMLBytes = new Route29_Events_XML as ByteArray; break;
