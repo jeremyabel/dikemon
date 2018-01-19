@@ -11,7 +11,6 @@ package com.tinyrpg.display
 	{
 		public var map			: MovieClip;		public var hit			: MovieClip;
 		public var objects 		: MovieClip;
-		public var overlay		: MovieClip;
 		public var grass 		: MovieClip;
 		public var jumpU 		: MovieClip;
 		public var jumpD		: MovieClip;
@@ -23,7 +22,6 @@ package com.tinyrpg.display
 		public var hasJumpD 	: Boolean = false;
 		public var hasJumpL 	: Boolean = false;
 		public var hasJumpR 	: Boolean = false;
-		public var hasOverlay	: Boolean = false;
 		public var hasDisableU 	: Boolean = false;
 		
 		public function TinyMapMovieClip() : void 
@@ -33,7 +31,6 @@ package com.tinyrpg.display
 			 if ( this.jumpD ) this.hasJumpD = true;
 			 if ( this.jumpL ) this.hasJumpL = true;
 			 if ( this.jumpR ) this.hasJumpR = true;
-			 if ( this.overlay ) this.hasOverlay = true;
 			 if ( this.disableU ) this.hasDisableU = true;
 		}
 	}
