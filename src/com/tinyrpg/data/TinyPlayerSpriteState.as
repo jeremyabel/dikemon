@@ -19,12 +19,16 @@ package com.tinyrpg.data
 		public function TinyPlayerSpriteState( walkSprite : TinyWalkSprite ) : void 
 		{
 			this.walkSprite = walkSprite;
+			this.walkSprite.addEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
+			this.walkSprite.addEventListener( TinyFieldMapEvent.GRASS_HIT, this.onHitGrass );
 			this.walkSprite.addEventListener( TinyFieldMapEvent.OBJECT_HIT, this.onHitObject );
 			this.walkSprite.addEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
 		}
 		
 		public function destroy() : void
 		{
+			this.walkSprite.removeEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
+			this.walkSprite.removeEventListener( TinyFieldMapEvent.GRASS_HIT, this.onHitGrass );
 			this.walkSprite.removeEventListener( TinyFieldMapEvent.OBJECT_HIT, this.onHitObject );
 			this.walkSprite.removeEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
 		}
@@ -51,16 +55,33 @@ package com.tinyrpg.data
 			}
 		}
 		
+		private function onHitJump( event : TinyFieldMapEvent ) : void
+		{
+			TinyLogManager.log( 'onHitJump: ' + event.param.object.name, this );
+			
+			var jumpTileIncrement : uint = 2; 
+			var jumpTargetX : int = this.walkSprite.x;
+			var jumpTargetY : int = this.walkSprite.y;
+			
+			switch ( event.param.object.name )
+			{
+				case 'jumpU': jumpTargetY -= 16 * jumpTileIncrement; break;
+				case 'jumpD': jumpTargetY += 16 * jumpTileIncrement; break;
+				case 'jumpL': jumpTargetX -= 16 * jumpTileIncrement; break;
+				case 'jumpR': jumpTargetX += 16 * jumpTileIncrement; break;
+			}
+		}
+		
+		private function onHitGrass( event : TinyFieldMapEvent ) : void 
+		{
+			TinyLogManager.log( 'onHitGrass', this );
+		}
+		
 		private function onHitNothing( event : TinyFieldMapEvent ) : void
 		{
 			this.clearLastWarp();
 		}
 				
-		public function clearLastWarp() : void
-		{
-			this.lastWarpHit = null;
-		}
-		
 		private function onHitWarp( warpObject : TinyFieldMapObjectWarp ) : void
 		{
 			TinyLogManager.log( 'onHitWarp: ' + warpObject.targetMapName, this );
@@ -115,5 +136,11 @@ package com.tinyrpg.data
 			// Good to go: play the event
 			TinyMapManager.getInstance().startEventByName( triggerObject.eventName );
 		}
+		
+		public function clearLastWarp() : void
+		{
+			this.lastWarpHit = null;
+		}
+		
 	}
 }

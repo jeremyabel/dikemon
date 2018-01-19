@@ -8,6 +8,8 @@ package com.tinyrpg.events
 	public class TinyFieldMapEvent extends Event 
 	{
 		public static var DATA_READY		: String = 'DATA_READY';
+		public static var GRASS_HIT			: String = 'GRASS_HIT';
+		public static var JUMP_HIT			: String = 'JUMP_HIT';
 		public static var OBJECT_HIT		: String = 'OBJECT_HIT';
 		public static var NOTHING_HIT		: String = 'NOTHING_HIT';
 		public static var SHOW_COMPLETE		: String = 'SHOW_COMPLETE';

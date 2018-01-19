@@ -7,6 +7,7 @@ package com.tinyrpg.display
 	import com.greensock.plugins.TweenPlugin;
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.data.TinyFieldMapObject;
+	import com.tinyrpg.display.misc.GrassOverlay;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
@@ -14,6 +15,7 @@ package com.tinyrpg.display
 	import com.tinyrpg.misc.TinySpriteConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
+	import flash.display.Bitmap;
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -31,11 +33,17 @@ package com.tinyrpg.display
 
 		private var spritesheet : TinyWalkSpriteSheet;
 		private var movementTimeline : TimelineMax;
+		private var grassOverlay : Bitmap;
+		private var prevX : int;
+		private var prevY : int;
 
 		public var hitBox : Sprite;
 		public var movementBox : Sprite;
 		public var hasCollidedWithWall : Boolean;
+		public var hasCollidedWithGrass : Boolean;
 		public var hasCollidedWithObject : Boolean;
+		public var hasCollidedWithJump : Boolean;
+		public var hasCollidedWithDisable : Boolean;
 		public var lockToCamera : Boolean;
 		public var isPlayer : Boolean;
 		public var currentDirection : String;
@@ -49,6 +57,11 @@ package com.tinyrpg.display
 			this.spritesheet = new TinyWalkSpriteSheet( id, this.currentDirection );
 			this.lockToCamera = lockToCamera;
 			this.isPlayer = isPlayer;
+			
+			this.grassOverlay = new Bitmap( new GrassOverlay() );
+			this.grassOverlay.x = -8;
+			this.grassOverlay.y = -12;
+			this.grassOverlay.visible = false;
 			
 			this.hitBox = new Sprite;
 			this.hitBox.name = 'hitBox_' + name;
@@ -66,6 +79,7 @@ package com.tinyrpg.display
 			
 			// Add 'em up
 			this.addChild( this.spritesheet );
+			this.addChild( this.grassOverlay );
 			this.addChild( this.hitBox );
 			this.addChild( this.movementBox );
 
@@ -128,9 +142,12 @@ package com.tinyrpg.display
 			this.currentDirection = this.spritesheet.facing;
 			this.updateMovementHitbox();
 			
-			// Check collision and clear flag if nothing is found
+			// Check wall collisions and clear flag if nothing is found
 			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
-				
+			
+			// Check for grass collisions against the regular hitbox but do not show the grass overlay yet
+			this.hasCollidedWithGrass = this.checkGrassCollision( false );
+			
 			// If the player is already facing the direction they want to walk in, start walking immediately. 
 			// Otherwise, wait a few frames to enable the player to change the character's facing with a short
 			// tap of a directional arrow.			
@@ -220,6 +237,9 @@ package com.tinyrpg.display
 		protected function onMovementStart( facing : String ) : void
 		{	
 			if ( this.isPlayer && !this.hasControl ) return;
+	
+			this.prevX = this.x;
+			this.prevY = this.y;
 			
 			this.currentDirection = facing;
 			this.spritesheet.setFacing( this.currentDirection );
@@ -227,10 +247,24 @@ package com.tinyrpg.display
 			
 			// Check collision before every movement
 			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
+			this.hasCollidedWithJump = this.checkJumpCollision();
+			this.hasCollidedWithGrass = this.checkGrassCollision();
 			this.hasCollidedWithObject = this.checkObjectCollision();
+			
+			// Show the grass overlay for a few frames if a grass collision is detected
+			if ( this.hasCollidedWithGrass )
+			{
+				this.grassOverlay.visible = true;
+				this.spritesheet.setGrassVisible( true );
+				TweenMax.delayedCall( 11, this.hideGrassOverlay, null, true );
+			}
+			else
+			{
+				this.spritesheet.setGrassVisible( false );
+			}
 				
 			// Force an early timeline completion if this sprite has collided with something
-			if ( this.hasCollidedWithWall || this.hasCollidedWithObject ) 
+			if ( this.hasCollidedWithWall || this.hasCollidedWithObject || this.hasCollidedWithJump ) 
 			{
 				// Reset the latest tween so no movement happens
 				if ( this.movementTimeline )
@@ -254,6 +288,9 @@ package com.tinyrpg.display
 				this.movementTimeline.clear();
 				this.movementTimeline = null;
 			}
+	
+			// Update grass overlay visibility			
+			this.grassOverlay.visible = false;
 			
 			// Check for map object collisions
 			this.checkObjectCollision();
@@ -268,6 +305,12 @@ package com.tinyrpg.display
 			if ( this.lockToCamera )
 			{
 				TinyMapManager.getInstance().updateCamera( this.x, this.y );				
+			}
+		
+			// Update the grass tile offsets if required		
+			if ( this.hasCollidedWithGrass )
+			{
+				this.spritesheet.updateGrassOffset( this.x - this.prevX, this.y - this.prevY );
 			}
 		}
 		
@@ -319,6 +362,68 @@ package com.tinyrpg.display
 			return false;
 		}
 		
+		public function checkJumpCollision() : Boolean 
+		{
+			// Emit collision events depending on if a jump has been hit by the player
+			if ( this.isPlayer && this.hasControl )
+			{
+				var jumpCollision = TinyMapManager.getInstance().currentMap.checkJumpCollision( this.movementBox );
+				
+				if ( jumpCollision.hit )
+				{
+					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.JUMP_HIT, { 
+						object: jumpCollision.object
+					}));
+					
+					return true;
+				}
+			}
+			
+			return false;
+		}
+		
+		public function checkGrassCollision( useMovementHitbox : Boolean = true ) : Boolean
+		{
+			// Get the desired hitbox to test with
+			var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
+				
+			// Emit collision events depending on if some grass has been hit by the any NPC
+			var grassCollision = TinyMapManager.getInstance().currentMap.checkGrassCollision( hitboxToUse );
+			
+			if ( grassCollision.hit )
+			{
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.GRASS_HIT, { 
+					object: grassCollision.object
+				}));
+				
+				return true;
+			}
+			
+			return false;
+		}
+		
+		public function checkDisableCollision() : Boolean
+		{
+			// Prevent player movement in a specific direction if this tile has been hit
+			if ( this.isPlayer && this.hasControl )
+			{
+				var disableCollision = TinyMapManager.getInstance().currentMap.checkDisableCollision( this.movementBox );
+				
+				if ( disableCollision.hit )
+				{
+					switch ( disableCollision.object.name )
+					{
+						case 'disableU': return this.currentDirection == UP;
+						case 'disableD': return this.currentDirection == DOWN;
+						case 'disableL': return this.currentDirection == LEFT;
+						case 'disableR': return this.currentDirection == RIGHT;
+					}
+				}
+			}
+			
+			return false;
+		}
+		
 		public function setPositionOnGrid( x : int, y : int ) : void
 		{
 			this.x = 8 + 16 * x;
@@ -356,6 +461,11 @@ package com.tinyrpg.display
 			this.spritesheet.reset();
 			
 			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
+		}
+		
+		protected function hideGrassOverlay() : void
+		{
+			this.grassOverlay.visible = false;
 		}
 	}
 }

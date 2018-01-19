@@ -9,6 +9,7 @@ package com.tinyrpg.display
 
 	import com.greensock.TweenMax;
 	import com.tinyrpg.display.OverworldChars;
+	import com.tinyrpg.display.misc.GrassTile;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -24,6 +25,8 @@ package com.tinyrpg.display
 		private var frontStep	 	: Bitmap;
 		private var backStep	 	: Bitmap;
 		private var sideStep 	 	: Bitmap;
+		private var grassTile		: Bitmap;
+		private var grassTileMask	: Sprite;
 		private var spriteHolder 	: Sprite;
 		private var currentSprite	: Bitmap;
 		private var walkCycleTween	: TweenMax;
@@ -39,9 +42,24 @@ package com.tinyrpg.display
 		{	
 			this.spriteId = id;
 			this.spriteHolder = new Sprite();
-			this.addChild( this.spriteHolder );
+			this.spriteHolder.y -= 4;
 			
-			var overworldCharData = new OverworldChars(); 
+			this.grassTileMask = new Sprite();
+			this.grassTileMask.graphics.beginFill( 0xFF00FF );
+			this.grassTileMask.graphics.drawRect( -8, -4, 16, 8 );
+			this.grassTileMask.graphics.endFill();
+			this.grassTileMask.cacheAsBitmap = true;
+			
+			this.grassTile = new Bitmap( new GrassTile() );
+			this.grassTile.x += 8 - 32;
+			this.grassTile.y += 8 - 32;
+			this.grassTile.mask = this.grassTileMask;
+			this.grassTile.visible = false;
+			
+			// Add 'em up			
+			this.addChild( this.spriteHolder );
+			this.addChild( this.grassTile );
+			this.addChild( this.grassTileMask );
 			
 			// Create new BitmapData objects for the various sprites
 			var frontIdleBitmapData : BitmapData = new BitmapData( 16, 16 );
@@ -63,11 +81,12 @@ package com.tinyrpg.display
 			var bitmapArray : Array = [];
 			
 			// Calculate the initial sprite position in the master overworld character spritesheet
+			var overworldCharData = new OverworldChars();
 			var currentX : uint = ( this.spriteId % 8 ) * 16;
 			var currentY : uint = Math.floor( this.spriteId / 8 ) * 16;
 			var copyRect : Rectangle = new Rectangle( currentX, currentY, 16, 16 );
 			var destPoint : Point = new Point( 0, 0 );
-			
+			 
 			// Copy each portion of the walk cycle spritesheet into the correct bitmaps
 			for ( var i : uint = 0; i < bitmapDataArray.length; i++ ) 
 			{
@@ -174,6 +193,17 @@ package com.tinyrpg.display
 			
 			// Flip the sprite container if necessary
 			this.spriteHolder.scaleX = this.getXScaleForWalkCycleIndex();
+		}
+		
+		public function setGrassVisible( visible : Boolean ) : void
+		{
+			this.grassTile.visible = visible;
+		}
+		
+		public function updateGrassOffset( x : int, y : int ) : void
+		{	
+			this.grassTile.x = 8 - 32 - x;
+			this.grassTile.y = 8 - 32 - y;
 		}
 		
 		private function setAllHidden() : void
