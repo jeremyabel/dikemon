@@ -1,15 +1,10 @@
 package com.tinyrpg.battle 
 {
-
 	import com.greensock.TweenLite;
-	import com.greensock.plugins.ColorMatrixFilterPlugin;
-	import com.greensock.plugins.EndArrayPlugin;
-	import com.greensock.plugins.TweenPlugin;
 	
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
-	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.BattleWhirl;
 	import com.tinyrpg.display.TinyMonContainer;
@@ -19,7 +14,6 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleBallDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
-	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 //	import com.tinyrpg.managers.TinyAudioManager;
@@ -86,9 +80,6 @@ package com.tinyrpg.battle
 			
 			// Command runner
 			this.battleCommandRunner = new TinyBattleCommandSequencer( this );
-			
-			// Greensock plugins
-			TweenPlugin.activate([EndArrayPlugin, ColorMatrixFilterPlugin]);
 			
 			// Set parameters
 			m_isWildEncounter = enemyTrainer == null;
