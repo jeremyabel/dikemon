@@ -16,7 +16,7 @@ package com.tinyrpg.battle
 		
 		public var result : String = RESULT_IMPOSSIBLE;
 		
-		public function TinyBattleCommandRun( battle : TinyBattleMon, user : String )
+		public function TinyBattleCommandRun( battle : TinyBattle, user : String )
 		{
 			super( battle, TinyBattleCommand.COMMAND_RUN, user );
 			

@@ -30,10 +30,10 @@ package com.tinyrpg.battle
 		public var user : String;
 		public var eventSequence : TinyBattleEventSequence;
 		
-		protected var battle : TinyBattleMon;
+		protected var battle : TinyBattle;
 		
 		
-		public function TinyBattleCommand( battle : TinyBattleMon, type : String, user : String )
+		public function TinyBattleCommand( battle : TinyBattle, type : String, user : String )
 		{
 			this.type = type;
 			this.user = user;
@@ -55,31 +55,31 @@ package com.tinyrpg.battle
 		}
 		
 		
-		public static function getStartTurnCommand( battle : TinyBattleMon ) : TinyBattleCommand
+		public static function getStartTurnCommand( battle : TinyBattle ) : TinyBattleCommand
 		{
 			return new TinyBattleCommand( battle, TinyBattleCommand.COMMAND_START_TURN, TinyBattleCommand.USER_PLAYER );
 		}
 		
 		
-		public static function getPlayerVictoryCommand( battle : TinyBattleMon ) : TinyBattleCommand
+		public static function getPlayerVictoryCommand( battle : TinyBattle ) : TinyBattleCommand
 		{
 			return new TinyBattleCommand( battle, TinyBattleCommand.COMMAND_PLAYER_VICTORY, TinyBattleCommand.USER_PLAYER );
 		}
 		
 		
-		public static function getPlayerLossCommand( battle : TinyBattleMon ) : TinyBattleCommand
+		public static function getPlayerLossCommand( battle : TinyBattle ) : TinyBattleCommand
 		{
 			return new TinyBattleCommand( battle, TinyBattleCommand.COMMAND_PLAYER_LOSS, TinyBattleCommand.USER_PLAYER );	
 		}
 		
 		
-		public static function getForcePlayerSwitchCommand( battle : TinyBattleMon ) : TinyBattleCommand
+		public static function getForcePlayerSwitchCommand( battle : TinyBattle ) : TinyBattleCommand
 		{
 			return new TinyBattleCommand( battle, TinyBattleCommand.COMMAND_FORCE_PLAYER_SWITCH, TinyBattleCommand.USER_PLAYER );	
 		}
 		
 		
-		public static function getEndBattleCommand( battle : TinyBattleMon, user : String ) : TinyBattleCommand
+		public static function getEndBattleCommand( battle : TinyBattle, user : String ) : TinyBattleCommand
 		{
 			return new TinyBattleCommand( battle, TinyBattleCommand.COMMAND_END_BATTLE, user );
 		}

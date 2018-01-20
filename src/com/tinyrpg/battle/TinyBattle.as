@@ -37,7 +37,7 @@ package com.tinyrpg.battle
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyBattleMon extends Sprite 
+	public class TinyBattle extends Sprite 
 	{
 		public static var staticCurrentItem : TinyItem;
 				
@@ -80,7 +80,7 @@ package com.tinyrpg.battle
 		public var moveFXArray					: Array;
 		public var debugMoveFX					: Boolean = false;
 			
-		public function TinyBattleMon( playerTrainer : TinyTrainer, enemyMon : TinyMon, enemyTrainer : TinyTrainer = null )
+		public function TinyBattle( playerTrainer : TinyTrainer, enemyMon : TinyMon, enemyTrainer : TinyTrainer = null )
 		{
 			TinyLogManager.log( 'new battle with ' + playerTrainer.name, this );
 			

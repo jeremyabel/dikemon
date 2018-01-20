@@ -38,7 +38,7 @@ package com.tinyrpg.battle
 	public class TinyBattleEventSequence extends EventDispatcher 
 	{
 		private var m_eventSequence : Array = [];
-		private var m_hostBattle : TinyBattleMon;
+		private var m_hostBattle : TinyBattle;
 		private var currentMonContainer : TinyMonContainer;
 		private var currentStatDisplay : TinyBattleMonStatDisplay;
 		private var currentLevelUpDisplay : TinyLevelUpStatsDisplay;
@@ -50,7 +50,7 @@ package com.tinyrpg.battle
 		
 		public function get events() : Array { return this.m_eventSequence; }
 		
-		public function TinyBattleEventSequence(hostBattle : TinyBattleMon)
+		public function TinyBattleEventSequence(hostBattle : TinyBattle)
 		{
 			m_hostBattle = hostBattle;
 			

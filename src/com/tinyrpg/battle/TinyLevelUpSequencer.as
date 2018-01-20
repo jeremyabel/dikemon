@@ -9,7 +9,7 @@ package com.tinyrpg.battle
 	 */
 	public class TinyLevelUpSequencer 
 	{
-		public static function generateLevelUpSequence( battle : TinyBattleMon, eventSequence : TinyBattleEventSequence, levelUpInfo : TinyLevelUpInfo ) : void
+		public static function generateLevelUpSequence( battle : TinyBattle, eventSequence : TinyBattleEventSequence, levelUpInfo : TinyLevelUpInfo ) : void
 		{
 			// Add each new level to the sequence one by one
  			for ( var i : int = 1; i <= levelUpInfo.numLevelsGained; i++ ) 

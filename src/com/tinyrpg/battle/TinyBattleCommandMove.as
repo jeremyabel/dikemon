@@ -41,7 +41,7 @@ package com.tinyrpg.battle
 		}
 
 
-		public function TinyBattleCommandMove( battle : TinyBattleMon, user : String, move : TinyMoveData )
+		public function TinyBattleCommandMove( battle : TinyBattle, user : String, move : TinyMoveData )
 		{
 			super( battle, TinyBattleCommand.COMMAND_MOVE, user );
 			

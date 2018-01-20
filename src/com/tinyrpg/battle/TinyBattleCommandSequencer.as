@@ -18,9 +18,9 @@ package com.tinyrpg.battle
 		private var firstMoveCommand : TinyBattleCommandMove;
 		private var secondMoveCommand : TinyBattleCommandMove;
 		private var currentCommand : TinyBattleCommand;
-		private var battle : TinyBattleMon;
+		private var battle : TinyBattle;
 		
-		public function TinyBattleCommandSequencer( battle : TinyBattleMon )
+		public function TinyBattleCommandSequencer( battle : TinyBattle )
 		{
 			this.battle = battle; 
 		}

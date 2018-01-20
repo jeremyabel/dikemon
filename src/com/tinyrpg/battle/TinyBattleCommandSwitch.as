@@ -21,7 +21,7 @@ package com.tinyrpg.battle
 			return 'SWITCH: ' + this.user + ' switched to ' + switchMon.name;
 		}
 		
-		public function TinyBattleCommandSwitch( battle : TinyBattleMon, user : String, switchMon : TinyMon, isForced : Boolean = false )
+		public function TinyBattleCommandSwitch( battle : TinyBattle, user : String, switchMon : TinyMon, isForced : Boolean = false )
 		{
 			super( battle, TinyBattleCommand.COMMAND_SWITCH, user );
 			

@@ -4,7 +4,7 @@ package com.tinyrpg.debug
 	
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyBattle;
-	import com.tinyrpg.battle.TinyBattleMon;
+	import com.tinyrpg.battle.TinyBattle;
 	import com.tinyrpg.battle.TinyBattlePalette;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyPlayer;
@@ -48,7 +48,7 @@ package com.tinyrpg.debug
 		[Embed(source='../../../../bin/xml/Monsters.xml', mimeType='application/octet-stream')]
 		public static const Monsters : Class;
 		
-		public var testBattle : TinyBattleMon;
+		public var testBattle : TinyBattle;
 
 		public function TinyFXTester() : void
 		{
@@ -73,7 +73,7 @@ package com.tinyrpg.debug
 			enemyTrainer.squad.push(new TinyMon(monsterXMLData.children()[1]));
 			
 			// Create test battle
-			testBattle = new TinyBattleMon( playerTrainer, null, enemyTrainer );
+			testBattle = new TinyBattle( playerTrainer, null, enemyTrainer );
 			
 			// Resize to fit the screen
 			var scaleFactor : Number = stage.stageHeight / 144;

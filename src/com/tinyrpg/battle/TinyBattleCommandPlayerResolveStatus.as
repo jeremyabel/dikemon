@@ -7,7 +7,7 @@ package com.tinyrpg.battle
 	 */
 	public class TinyBattleCommandPlayerResolveStatus extends TinyBattleCommand 
 	{
-		public function TinyBattleCommandPlayerResolveStatus( battle : TinyBattleMon )
+		public function TinyBattleCommandPlayerResolveStatus( battle : TinyBattle )
 		{
 			super( battle, TinyBattleCommand.COMMAND_RESOLVE_STATUSES, TinyBattleCommand.USER_PLAYER );
 			

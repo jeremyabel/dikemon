@@ -16,7 +16,7 @@ package com.tinyrpg.battle
 		public var initialStatSet : TinyStatSet;
 		public var updatedStatSets : Array = [];
 		public var newMoves : Array = [];
-		
+	
 		public function TinyLevelUpInfo( mon : TinyMon, nextLevel : int )
 		{
 			this.mon = mon;

@@ -20,7 +20,7 @@ package com.tinyrpg.battle
 		private var item : TinyItem;
 		private var move : TinyMoveData;
 		
-		public function TinyBattleCommandItem( battle : TinyBattleMon, item : TinyItem, move : TinyMoveData )
+		public function TinyBattleCommandItem( battle : TinyBattle, item : TinyItem, move : TinyMoveData )
 		{
 			super( battle, TinyBattleCommand.COMMAND_ITEM, TinyBattleCommand.USER_PLAYER );
 			

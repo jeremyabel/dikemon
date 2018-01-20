@@ -7,7 +7,7 @@ package com.tinyrpg.display
 	import flash.geom.Rectangle;
 	import flash.geom.Point;
 	
-	import com.tinyrpg.battle.TinyBattleMon;	
+	import com.tinyrpg.battle.TinyBattle;	
 	import com.tinyrpg.battle.TinyBattlePalette;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.utils.TinyLogManager; 
@@ -102,7 +102,7 @@ package com.tinyrpg.display
 			this.addChild( this.moveFXSprite );
 		}
 		
-		public function captureBattleBitmap( battle : TinyBattleMon ) : void
+		public function captureBattleBitmap( battle : TinyBattle ) : void
 		{
 			TinyLogManager.log('captureBattleBitmap', this);
 			

@@ -1,6 +1,6 @@
 package com.tinyrpg.managers
 {	
-	import com.tinyrpg.battle.TinyBattleMon;
+	import com.tinyrpg.battle.TinyBattle;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
@@ -23,7 +23,7 @@ package com.tinyrpg.managers
 		public var gameContainer 	: Sprite;
 		public var playerTrainer 	: TinyTrainer;
 		 
-		private var currentBattle 	: TinyBattleMon;
+		private var currentBattle 	: TinyBattle;
 		private var fadeTransition 	: TinyFadeTransitionOverlay;
 		
 		public function TinyGameManager() : void
@@ -60,14 +60,14 @@ package com.tinyrpg.managers
 		public function doWildBattle( enemyMon : TinyMon ) : void
 		{
 			TinyLogManager.log( 'doWildBattle: ' + enemyMon.name, this );
-			this.currentBattle = new TinyBattleMon( this.playerTrainer, enemyMon );
+			this.currentBattle = new TinyBattle( this.playerTrainer, enemyMon );
 			this.startBattle();
 		}
 		
 		public function doTrainerBattle( enemyTrainer : TinyTrainer ) : void
 		{
 			TinyLogManager.log( 'doTrainerBattle: ' + enemyTrainer.name, this );
-			this.currentBattle = new TinyBattleMon( this.playerTrainer, null, enemyTrainer );
+			this.currentBattle = new TinyBattle( this.playerTrainer, null, enemyTrainer );
 			this.startBattle();
 		}
 		

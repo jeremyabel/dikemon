@@ -14,7 +14,7 @@ package com.tinyrpg.battle
 		private var earnedExp : int = 0;
 		
 		
-		public function TinyBattleCommandDistributeExp( battle : TinyBattleMon, participatingMons : Array, earnedExp : int )
+		public function TinyBattleCommandDistributeExp( battle : TinyBattle, participatingMons : Array, earnedExp : int )
 		{
 			super( battle, TinyBattleCommand.COMMAND_DISTRIBUTE_EXP, TinyBattleCommand.USER_PLAYER );
 			
