@@ -70,8 +70,6 @@ package com.tinyrpg.ui
 			this.addChild( this.scrollArrowUp );
 			this.addChild( this.scrollArrowDown );
 			this.addChild( this.scrollMask );
-			
-			// TODO: Make mask for item holder
 		}
 		
 		override public function removeListItem(targetItem : TinySelectableItem) : void

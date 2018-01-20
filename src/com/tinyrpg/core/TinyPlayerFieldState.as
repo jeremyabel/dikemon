@@ -179,6 +179,7 @@ package com.tinyrpg.core
 		
 		public function resetStepsSinceEncounter() : void
 		{
+			TinyLogManager.log( 'resetStepsSinceEncounter', this );
 			this.stepsSinceEncounter = 0;
 		}
 		

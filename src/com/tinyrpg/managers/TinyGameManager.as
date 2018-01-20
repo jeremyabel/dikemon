@@ -130,6 +130,7 @@ package com.tinyrpg.managers
 		{
 			TinyLogManager.log( 'onMapInComplete', this );
 			
+			// Return control to the player
 			TinyMapManager.getInstance().onBattleComplete();
 		}
 	}

@@ -554,6 +554,7 @@ package com.tinyrpg.battle
 				m_battleEvent.addDelay( 1.5 );
 			}
 			
+			m_battleEvent.addEnd();
 			m_battleEvent.startSequence();
 		}
 
