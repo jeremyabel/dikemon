@@ -5,7 +5,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.IShowHideObject;	
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.display.TinyMoveDetailBox;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -113,7 +113,7 @@ package com.tinyrpg.ui
 
 				var selectedMove : TinyMoveData = this.getSelectedMove();
 				TinyLogManager.log('onAccept: ' + selectedMove.name, this);				
-				this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.MOVE_SELECTED, selectedMove ) );
+				this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.MOVE_SELECTED, selectedMove ) );
 			}
 		}
 		

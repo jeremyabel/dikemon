@@ -5,7 +5,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.display.IShowHideObject;
 	import com.tinyrpg.display.TinySelectableItem;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.ui.TinyDialogBox;
@@ -87,7 +87,7 @@ package com.tinyrpg.ui
 					else 
 					{
 						// Dispatch selected mon event if the SWITCH option is picked
-						this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.MON_SELECTED, null, this.mon ) );
+						this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.MON_SELECTED, null, this.mon ) );
 					}	
 				}
 				else 

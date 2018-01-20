@@ -20,7 +20,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyBattleBallDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.events.TinyBattleEvent;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 //	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.managers.TinyInputManager;
@@ -361,10 +361,10 @@ package com.tinyrpg.battle
 			
 			// Give input command to the battle menu
 			TinyInputManager.getInstance().setTarget( m_battleCommandMenu );
-			m_battleCommandMenu.addEventListener(TinyBattleMonEvent.FIGHT_SELECTED,  onPlayerCommandSelected);
-			m_battleCommandMenu.addEventListener(TinyBattleMonEvent.SWITCH_SELECTED, onPlayerCommandSelected);
-			m_battleCommandMenu.addEventListener(TinyBattleMonEvent.ITEM_SELECTED,   onPlayerCommandSelected);
-			m_battleCommandMenu.addEventListener(TinyBattleMonEvent.RUN_SELECTED,    onPlayerCommandSelected);	
+			m_battleCommandMenu.addEventListener(TinyBattleEvent.FIGHT_SELECTED,  onPlayerCommandSelected);
+			m_battleCommandMenu.addEventListener(TinyBattleEvent.SWITCH_SELECTED, onPlayerCommandSelected);
+			m_battleCommandMenu.addEventListener(TinyBattleEvent.ITEM_SELECTED,   onPlayerCommandSelected);
+			m_battleCommandMenu.addEventListener(TinyBattleEvent.RUN_SELECTED,    onPlayerCommandSelected);	
 		}
 		
 		public function endBattle() : void
@@ -380,49 +380,49 @@ package com.tinyrpg.battle
 			this.isForcedSwitch = true;
 			
 			m_switchMonMenu.showForced();
-			m_switchMonMenu.addEventListener( TinyBattleMonEvent.MON_SELECTED, onSwitchSelected );
+			m_switchMonMenu.addEventListener( TinyBattleEvent.MON_SELECTED, onSwitchSelected );
 			TinyInputManager.getInstance().setTarget( m_switchMonMenu );
 		}
 		
-		private function onPlayerCommandSelected( event : TinyBattleMonEvent ) : void 
+		private function onPlayerCommandSelected( event : TinyBattleEvent ) : void 
 		{
 			TinyLogManager.log('onCommandSelect: ' + event.type, this);
 			
 			switch (event.type)
 			{
-				case TinyBattleMonEvent.FIGHT_SELECTED:
+				case TinyBattleEvent.FIGHT_SELECTED:
 					
 					// Pass control to the move selector
 					m_moveSelectMenu.setCurrentMon( m_currentPlayerMon );
 					m_moveSelectMenu.show();
 					TinyInputManager.getInstance().setTarget( m_moveSelectMenu );
 					
-					m_moveSelectMenu.addEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+					m_moveSelectMenu.addEventListener( TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected );
 					m_moveSelectMenu.addEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
 					break;
 					
-				case TinyBattleMonEvent.SWITCH_SELECTED:
+				case TinyBattleEvent.SWITCH_SELECTED:
 					
 					// Pass control to the squad selector
 					m_switchMonMenu.show();
 					TinyInputManager.getInstance().setTarget( m_switchMonMenu );
 					
-					m_switchMonMenu.addEventListener( TinyBattleMonEvent.MON_SELECTED, onSwitchSelected );
+					m_switchMonMenu.addEventListener( TinyBattleEvent.MON_SELECTED, onSwitchSelected );
 					m_switchMonMenu.addEventListener( TinyInputEvent.CANCEL, this.onSwitchCancelled );
 					break;
 					
-				case TinyBattleMonEvent.ITEM_SELECTED:
+				case TinyBattleEvent.ITEM_SELECTED:
 					
 					// Pass control to the item selector
 					m_itemSelectorList.show();
 					m_itemSelectorList.setCurrentMon( m_currentPlayerMon );
 					TinyInputManager.getInstance().setTarget( m_itemSelectorList );
 					
-					m_itemSelectorList.addEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
+					m_itemSelectorList.addEventListener( TinyBattleEvent.ITEM_USED, this.onItemUsed );
 					m_itemSelectorList.addEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 					break;
 					
-				case TinyBattleMonEvent.RUN_SELECTED:
+				case TinyBattleEvent.RUN_SELECTED:
 				
 					// Hide the battle command menu
 					m_battleCommandMenu.hide();
@@ -433,7 +433,7 @@ package com.tinyrpg.battle
 			}
 		}
 		
-		private function onMoveSelected( event : TinyBattleMonEvent ) : void
+		private function onMoveSelected( event : TinyBattleEvent ) : void
 		{
 			var selectedMove : TinyMoveData = event.move;
 			
@@ -446,7 +446,7 @@ package com.tinyrpg.battle
 			m_battleCommandMenu.hide();
 			
 			// Clean up
-			m_moveSelectMenu.removeEventListener(TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected);
+			m_moveSelectMenu.removeEventListener(TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected);
 			m_moveSelectMenu.removeEventListener(TinyInputEvent.CANCEL, this.onMoveSelectCancelled);
 			
 			// Set player's battle command
@@ -464,11 +464,11 @@ package com.tinyrpg.battle
 			TinyInputManager.getInstance().setTarget(m_battleCommandMenu);
 			
 			// Clean up
-			m_moveSelectMenu.removeEventListener(TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected);
+			m_moveSelectMenu.removeEventListener(TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected);
 			m_moveSelectMenu.removeEventListener(TinyInputEvent.CANCEL, this.onMoveSelectCancelled);
 		}
 		
-		private function onSwitchSelected( event : TinyBattleMonEvent ) : void
+		private function onSwitchSelected( event : TinyBattleEvent ) : void
 		{
 			TinyLogManager.log('onSwitchSelected: ' + event.mon.name, this);
 			
@@ -479,7 +479,7 @@ package com.tinyrpg.battle
 			m_battleCommandMenu.hide();			
 			
 			// Clean up
-			m_moveSelectMenu.removeEventListener(TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected);
+			m_moveSelectMenu.removeEventListener(TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected);
 			m_moveSelectMenu.removeEventListener(TinyInputEvent.CANCEL, this.onMoveSelectCancelled);
 			
 			// Set player's battle command	
@@ -500,11 +500,11 @@ package com.tinyrpg.battle
 			TinyInputManager.getInstance().setTarget(m_battleCommandMenu);
 			
 			// Clean up
-			m_switchMonMenu.removeEventListener(TinyBattleMonEvent.MON_SELECTED, this.onSwitchSelected);
+			m_switchMonMenu.removeEventListener(TinyBattleEvent.MON_SELECTED, this.onSwitchSelected);
 			m_switchMonMenu.removeEventListener(TinyInputEvent.CANCEL, this.onSwitchCancelled);
 		}
 		
-		private function onItemUsed( event : TinyBattleMonEvent ) : void
+		private function onItemUsed( event : TinyBattleEvent ) : void
 		{
 			TinyLogManager.log('onItemUsed', this);
 			
@@ -515,7 +515,7 @@ package com.tinyrpg.battle
 			m_battleCommandMenu.hide();
 			
 			// Clean up
-			m_itemSelectorList.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onItemUsed );
+			m_itemSelectorList.removeEventListener( TinyBattleEvent.ITEM_USED, this.onItemUsed );
 			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );
 			
 			// Set player's battle command	
@@ -533,7 +533,7 @@ package com.tinyrpg.battle
 			TinyInputManager.getInstance().setTarget( m_battleCommandMenu );
 			
 			// Clean up
-			m_itemSelectorList.removeEventListener( TinyBattleMonEvent.ITEM_USED, this.onSwitchSelected );
+			m_itemSelectorList.removeEventListener( TinyBattleEvent.ITEM_USED, this.onSwitchSelected );
 			m_itemSelectorList.removeEventListener( TinyInputEvent.CANCEL, this.onItemCancelled );  
 		}
 		

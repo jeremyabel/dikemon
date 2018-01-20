@@ -5,7 +5,6 @@ package com.tinyrpg.managers
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.display.TinyWalkSprite;
-	import com.tinyrpg.events.TinyBattleEvent;	
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;	
 	import com.tinyrpg.misc.TinySpriteConfig;

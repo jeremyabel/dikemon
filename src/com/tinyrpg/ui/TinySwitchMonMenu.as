@@ -7,7 +7,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinySelectableMonItem;
 	import com.tinyrpg.display.TinyOneLineBox;
 	import com.tinyrpg.events.TinyInputEvent;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.ui.TinySwitchMonSubMenu;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -136,7 +136,7 @@ package com.tinyrpg.ui
 					
 					// Transfer control to submenu
 					this.isInSubmenu = true;
-					this.selectedMonSubmenu.addEventListener( TinyBattleMonEvent.MON_SELECTED, this.onSubmenuAccepted );
+					this.selectedMonSubmenu.addEventListener( TinyBattleEvent.MON_SELECTED, this.onSubmenuAccepted );
 					this.selectedMonSubmenu.addEventListener( TinyInputEvent.CANCEL, this.onSubmenuCancelled );	
 					TinyInputManager.getInstance().setTarget( this.selectedMonSubmenu );
 					
@@ -146,7 +146,7 @@ package com.tinyrpg.ui
 			}
 		}
 		
-		private function onSubmenuAccepted( event : TinyBattleMonEvent ) : void
+		private function onSubmenuAccepted( event : TinyBattleEvent ) : void
 		{	
 			TinyLogManager.log('onSubmenuAccepted: ' + event.mon.name, this);
 			this.isInSubmenu = false;
@@ -158,7 +158,7 @@ package com.tinyrpg.ui
 			this.selectedItem.autoSelected = false;
 			
 			// Dispatch selected mon event
-			this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.MON_SELECTED, null, event.mon) );
+			this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.MON_SELECTED, null, event.mon) );
 		}
 
 		private function onSubmenuCancelled( event : TinyInputEvent ) : void
@@ -173,7 +173,7 @@ package com.tinyrpg.ui
 			this.selectedItem.selected = true;
 			
 			// Return control
-			this.selectedMonSubmenu.removeEventListener( TinyBattleMonEvent.MON_SELECTED, this.onSubmenuAccepted );
+			this.selectedMonSubmenu.removeEventListener( TinyBattleEvent.MON_SELECTED, this.onSubmenuAccepted );
 			this.selectedMonSubmenu.removeEventListener( TinyInputEvent.CANCEL, this.onSubmenuCancelled );
 			TinyInputManager.getInstance().setTarget( this );	
 			this.isInSubmenu = false;

@@ -14,7 +14,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.display.TinySelectableItemItem;
 	import com.tinyrpg.display.TinyOneLineBox;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.managers.TinyInputManager;
@@ -240,7 +240,7 @@ package com.tinyrpg.ui
 						TinyInputManager.getInstance().setTarget( this.moveSelectMenu );
 						
 						// Wait for move to be selected or cancelled
-						this.moveSelectMenu.addEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+						this.moveSelectMenu.addEventListener( TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected );
 						this.moveSelectMenu.addEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
 						this.moveSelectMenu.addEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
 						
@@ -248,13 +248,13 @@ package com.tinyrpg.ui
 					}
 						
 					// Dispatch item used event
-					this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, null, null, this.item ) );
+					this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.ITEM_USED, null, null, this.item ) );
 				}
 			}
 		}
 		
 		
-		private function onMoveSelected( event : TinyBattleMonEvent ) : void
+		private function onMoveSelected( event : TinyBattleEvent ) : void
 		{
 			var selectedMove : TinyMoveData = event.move;
 			
@@ -273,12 +273,12 @@ package com.tinyrpg.ui
 			this.moveInfoBox.hide();
 			
 			// Remove event listeners
-			this.moveSelectMenu.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+			this.moveSelectMenu.removeEventListener( TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected );
 			this.moveSelectMenu.removeEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
 			this.moveSelectMenu.removeEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
 			
 			// Dispatch item used event
-			this.dispatchEvent( new TinyBattleMonEvent( TinyBattleMonEvent.ITEM_USED, selectedMove, null, this.item ) );
+			this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.ITEM_USED, selectedMove, null, this.item ) );
 		}
 		
 		
@@ -291,7 +291,7 @@ package com.tinyrpg.ui
 			this.moveInfoBox.hide();
 			
 			// Remove event listeners
-			this.moveSelectMenu.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onMoveSelected );
+			this.moveSelectMenu.removeEventListener( TinyBattleEvent.MOVE_SELECTED, this.onMoveSelected );
 			this.moveSelectMenu.removeEventListener( TinyInputEvent.CANCEL, this.onMoveSelectCancelled );
 			this.moveSelectMenu.removeEventListener( TinyInputEvent.SELECTED, this.onMoveSelectionChanged );
 			

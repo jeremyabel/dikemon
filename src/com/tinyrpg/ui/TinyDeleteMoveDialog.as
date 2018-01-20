@@ -7,7 +7,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.battle.TinyBattleStrings;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.IShowHideObject;
-	import com.tinyrpg.events.TinyBattleMonEvent;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -210,12 +210,12 @@ package com.tinyrpg.ui
 			this.moveSelector.show();
 					
 			// Pass control to the move selector
-			this.moveSelector.addEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
+			this.moveSelector.addEventListener( TinyBattleEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
 			this.moveSelector.addEventListener( TinyInputEvent.CANCEL, this.onChooseMoveCancelled );
 			TinyInputManager.getInstance().setTarget( this.moveSelector );
 		}
 		
-		private function onChooseMoveMoveChosen( event : TinyBattleMonEvent ) : void
+		private function onChooseMoveMoveChosen( event : TinyBattleEvent ) : void
 		{
 			TinyLogManager.log('onChooseMoveMoveChosen: ' + event.move, this );
 			
@@ -223,7 +223,7 @@ package com.tinyrpg.ui
 			this.moveToDelete = event.move;
 			
 			// Clean up
-			this.moveSelector.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
+			this.moveSelector.removeEventListener( TinyBattleEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
 			this.moveSelector.removeEventListener( TinyInputEvent.CANCEL, this.onChooseMoveCancelled );
 			this.moveSelector.hide();
 			this.chooseMoveAskDialog.hide();
@@ -254,7 +254,7 @@ package com.tinyrpg.ui
 			TinyLogManager.log('onChooseMoveCancelled', this);
 			
 			// Clean up
-			this.moveSelector.removeEventListener( TinyBattleMonEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
+			this.moveSelector.removeEventListener( TinyBattleEvent.MOVE_SELECTED, this.onChooseMoveMoveChosen );
 			this.moveSelector.removeEventListener( TinyInputEvent.CANCEL, this.onChooseMoveCancelled );
 			this.moveSelector.hide();
 			this.chooseMoveAskDialog.hide();
