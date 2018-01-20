@@ -5,6 +5,7 @@ package com.tinyrpg.managers
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;
 	import com.tinyrpg.misc.TinySpriteConfig;
@@ -92,6 +93,44 @@ package com.tinyrpg.managers
 			// Add the current battle and start it
 			this.gameContainer.addChild( this.currentBattle );			
 			this.currentBattle.startBattle();
+			
+			// Listen for the battle to be complete
+			this.currentBattle.addEventListener( TinyBattleEvent.BATTLE_COMPLETE, this.onBattleComplete );
+		}
+		
+		private function onBattleComplete( event : TinyBattleEvent ) : void
+		{
+			TinyLogManager.log( 'onBattleComplete', this );
+			
+			// Cleanup
+			this.currentBattle.removeEventListener( TinyBattleEvent.BATTLE_COMPLETE, this.onBattleComplete );
+			
+			// Play fade-out white transition
+			this.fadeTransition.addEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onBattleOutComplete );
+			this.fadeTransition.fadeOutToWhite( 20 );
+		}
+		
+		private function onBattleOutComplete( event : TinyGameEvent ) : void
+		{
+			TinyLogManager.log( 'onBattleOutComplete', this );
+			
+			// Cleanup
+			this.fadeTransition.removeEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onBattleOutComplete );
+			
+			// Remove the battle from the display list
+			this.gameContainer.removeChild( this.currentBattle );
+			this.currentBattle = null;
+			
+			// Fade in the map
+			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onMapInComplete );
+			this.fadeTransition.fadeInFromWhite( 5 );
+		}
+		
+		private function onMapInComplete( event : TinyGameEvent ) : void
+		{
+			TinyLogManager.log( 'onMapInComplete', this );
+			
+			TinyMapManager.getInstance().onBattleComplete();
 		}
 	}
 }

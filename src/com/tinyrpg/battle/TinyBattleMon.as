@@ -19,6 +19,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleBallDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
+	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyBattleMonEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 //	import com.tinyrpg.managers.TinyAudioManager;
@@ -366,6 +367,12 @@ package com.tinyrpg.battle
 			m_battleCommandMenu.addEventListener(TinyBattleMonEvent.RUN_SELECTED,    onPlayerCommandSelected);	
 		}
 		
+		public function endBattle() : void
+		{
+			TinyLogManager.log( 'endBattle', this );
+			this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.BATTLE_COMPLETE ) );	
+		}
+		
 		public function forcePlayerSwitch() : void
 		{
 			TinyLogManager.log('forcePlayerSwitch', this);
@@ -550,20 +557,20 @@ package com.tinyrpg.battle
 			m_battleEvent.startSequence();
 		}
 
-//		public function debugPlayStatusFX( fxArray : Array ) : void
-//		{
-//			TinyLogManager.log( 'debugPlayStatusFX', this );
-//			
-//			m_battleEvent.addDelay( 1.0 );
-//			
-//			for ( var fxAnim : TinyStatusFXAnimation in fxArray )
-//			{
-//				m_battleEvent.addPlayStatusAnim( fxAnim );
-//				m_battleEvent.addDelay( 0.5 );
-//			}
-//			
-//			m_battleEvent.addEnd();
-//			m_battleEvent.startSequence();
-//		}
+		public function debugPlayStatusFX( fxArray : Array ) : void
+		{
+			TinyLogManager.log( 'debugPlayStatusFX', this );
+			
+			m_battleEvent.addDelay( 1.0 );
+			
+			for ( var i : int = 0; i < fxArray.length; i++ )
+			{
+				m_battleEvent.addPlayStatusAnim( fxArray[ i ] );
+				m_battleEvent.addDelay( 1.5 );
+			}
+			
+			m_battleEvent.addEnd();
+			m_battleEvent.startSequence();
+		}
 	}
 }

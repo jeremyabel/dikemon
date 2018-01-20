@@ -40,34 +40,35 @@ package com.tinyrpg.display
 			this.addChild( this.blackBacking );
 		}
 		
-		public function fadeOutToWhite() : void
+		public function fadeOutToWhite( delay : uint = 0 ) : void
 		{
 			TinyLogManager.log( 'fadeOutToWhite', this );
-			this.tween( this.whiteBacking, 1 );
+			this.tween( this.whiteBacking, 1, delay );
 		}
 		
-		public function fadeInFromWhite() : void
+		public function fadeInFromWhite( delay : uint = 0 ) : void
 		{
 			TinyLogManager.log( 'fadeInFromWhite', this );
-			this.tween( this.whiteBacking, 0 );
+			this.tween( this.whiteBacking, 0, delay );
 		}
 		
-		public function fadeOutToBlack() : void
+		public function fadeOutToBlack( delay : uint = 0 ) : void
 		{
 			TinyLogManager.log( 'fadeOutToBlack', this );
-			this.tween( this.blackBacking, 1 );
+			this.tween( this.blackBacking, 1, delay );
 		}
 		
-		public function fadeInFromBlack() : void
+		public function fadeInFromBlack( delay : uint = 0 ) : void
 		{
 			TinyLogManager.log( 'fadeInFromBlack', this );
-			this.tween( this.blackBacking, 0 );
+			this.tween( this.blackBacking, 0, delay );
 		}
 		
-		private function tween( object : Sprite, alpha : int ) : void
+		private function tween( object : Sprite, alpha : int, delay : int = 0 ) : void
 		{
 			TweenMax.to( object, this.speed, { 
 				alpha: alpha, 
+				delay: delay,
 				ease: SteppedEase.create( this.speed / 2 ), 
 				useFrames: true,
 				onComplete: alpha == 0 ? this.onFadeInComplete : this.onFadeOutComplete  

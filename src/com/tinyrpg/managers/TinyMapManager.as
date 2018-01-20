@@ -5,6 +5,7 @@ package com.tinyrpg.managers
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.events.TinyBattleEvent;	
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;	
 	import com.tinyrpg.misc.TinySpriteConfig;
@@ -109,6 +110,9 @@ package com.tinyrpg.managers
 			// Clean up
 			this.fadeTransition.removeEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
 			
+			// Reset player step counter
+			this.playerFieldState.resetStepsSinceEncounter();
+			
 			// Move the player forward one step if required by the warp object
 			if ( this.warpObjectInProgress.stepForwardAfterWarp )
 			{
@@ -182,6 +186,17 @@ package com.tinyrpg.managers
 			
 			// Clean up
 			this.m_currentMap.removeEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
+			
+			// Return control to the player
+			TinyInputManager.getInstance().setTarget( this.playerSprite );
+		}
+		
+		public function onBattleComplete() : void
+		{
+			TinyLogManager.log( 'onBattleComplete', this );
+			
+			// Reset player step counter
+			this.playerFieldState.resetStepsSinceEncounter();
 			
 			// Return control to the player
 			TinyInputManager.getInstance().setTarget( this.playerSprite );

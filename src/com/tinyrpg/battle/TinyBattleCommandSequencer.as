@@ -263,8 +263,16 @@ package com.tinyrpg.battle
 		private function executeNextCommand() : void
 		{
 			this.currentCommand = this.commands.shift();
+				
+			// If there is no next command, end the battle
+			if ( !this.currentCommand )
+			{
+				TinyLogManager.log( 'executeNextCommand: no commands left, ending battle', this );
+				this.battle.endBattle();
+				return;
+			}
 			
-			TinyLogManager.log('executeNextCommand: ' + this.currentCommand.logString, this);
+			TinyLogManager.log( 'executeNextCommand: ' + this.currentCommand.logString, this );
 			
 			// Execute next command
 			this.currentCommand.addEventListener( Event.COMPLETE, this.onCommandCompleted );

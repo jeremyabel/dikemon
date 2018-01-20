@@ -114,6 +114,7 @@ package com.tinyrpg.battle
 				
 				case COMMAND_END_BATTLE:
 				{
+					this.battle.endBattle();
 					break;
 				}
 			}	

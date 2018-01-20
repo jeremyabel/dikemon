@@ -22,11 +22,8 @@ package com.tinyrpg.data
 		public function getEncounterMon() : TinyMon
 		{
 			var encounterIndex : uint = TinyMath.weightedRandomChoice( ENCOUNTER_CHANCE_TABLE ); 
-			
-			trace( encounterIndex );
-			
 			var encounterData : Array = this.encounterMons[ encounterIndex ];
-
+			
 			return TinyMonConfig.getInstance().getMonByName( encounterData[ 0 ], encounterData[ 1 ] ); 
 		}
 		

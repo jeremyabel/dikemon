@@ -87,7 +87,6 @@ package com.tinyrpg.core
 		
 		private function onHitGrass( event : TinyFieldMapEvent ) : void 
 		{
-			
 			this.stepsSinceEncounter++;
 			
 			// Wait until the step counter is at least 5 before trying to spawn an encounter.
