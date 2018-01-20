@@ -22,9 +22,6 @@ package com.tinyrpg.ui
 	 */
 	public class TinyDialogBox extends TinyTitleBox
 	{
-		[Embed(source='../../../../bin/xml/Dialog.xml', mimeType='application/octet-stream')]
-		public const Dialog_Data : Class;
-
 		private var dialogSequence : Array = [];
 		private var textField : TinyAutotypeTextField;
 		private var textSpeed : int;
