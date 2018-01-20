@@ -12,13 +12,16 @@ package com.tinyrpg.events
 		public static const QUIT_GAME			: String = 'QUIT_GAME';
 		public static const FADE_IN_COMPLETE 	: String = 'FADE_IN_COMPLETE';
 		public static const FADE_OUT_COMPLETE 	: String = 'FADE_OUT_COMPLETE';
+		public static const BATTLE_IN_COMPLETE	: String = 'BATTLE_IN_COMPLETE';
+		public static const BATTLE_START		: String = 'BATTLE_START';
+		public static const BATTLE_COMPLETE		: String = 'BATTLE_COMPLETE';
 		
-		public var loadSlot : int = 0;
+		public var param : *;
 		
-		public function TinyGameEvent(type : String, loadSlot : int = 0)
+		public function TinyGameEvent(type : String, param : * = null )
 		{
-			this.loadSlot = loadSlot;
-			super(type, false, false);
+			this.param = param;
+			super( type, false, false );
 		}
 	}
 }

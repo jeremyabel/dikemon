@@ -10,10 +10,10 @@
 	 */
 	public class TinyTweenCommand extends EventDispatcher 
 	{
-		public var waitForCompletion : Boolean = true;
+		public var waitForCompletion : Boolean;
 		public var tween : TweenLite;
 		
-		public function TinyTweenCommand( tween : TweenLite, waitForCompletion : Boolean )
+		public function TinyTweenCommand( tween : TweenLite, waitForCompletion : Boolean = true )
 		{
 			this.tween = tween;
 			this.waitForCompletion = waitForCompletion;
@@ -25,14 +25,14 @@
 		{
 			this.tween.play();	
 				
-			//if (this.waitForCompletion) 
-			//{
-			//	TweenLite.delayedCall(this.tween.totalDuration, this.dispatchEvent, [new Event(Event.COMPLETE)]);
-			//} 
-			//else 
-			//{
-			//	this.dispatchEvent(new Event(Event.COMPLETE));
-			//}
+			if ( this.waitForCompletion ) 
+			{
+				TweenLite.delayedCall( this.tween.totalDuration(), this.dispatchEvent, [ new Event( Event.COMPLETE ) ] );
+			} 
+			else 
+			{
+				this.dispatchEvent( new Event( Event.COMPLETE ) );
+			}
 		}
 	}
 }

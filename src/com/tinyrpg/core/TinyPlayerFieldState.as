@@ -1,22 +1,30 @@
-package com.tinyrpg.data 
+package com.tinyrpg.core 
 {	
+	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.data.TinyFieldMapObject;
+	import com.tinyrpg.data.TinyFieldMapObjectTrigger;
+	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 	
+	import flash.events.EventDispatcher;
+	
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyPlayerSpriteState 
+	public class TinyPlayerFieldState extends EventDispatcher
 	{
 		public var objectCollisionEnabled : Boolean = true;
 		
 		private var walkSprite : TinyWalkSprite;
 		private var lastWarpHit : TinyFieldMapObjectWarp = null;
+		private var stepsSinceEncounter : int = 0;
 		
-		public function TinyPlayerSpriteState( walkSprite : TinyWalkSprite ) : void 
+		public function TinyPlayerFieldState( walkSprite : TinyWalkSprite ) : void 
 		{
 			this.walkSprite = walkSprite;
 			this.walkSprite.addEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
@@ -36,6 +44,8 @@ package com.tinyrpg.data
 		private function onHitObject( event : TinyFieldMapEvent ) : void
 		{
 			if ( !this.objectCollisionEnabled ) return;
+			
+			this.stepsSinceEncounter++;
 			
 			var hitObject : * = event.param.object;
 			
@@ -59,10 +69,13 @@ package com.tinyrpg.data
 		{
 			TinyLogManager.log( 'onHitJump: ' + event.param.object.name, this );
 			
+			this.stepsSinceEncounter++;
+			
 			var jumpTileIncrement : uint = 2; 
 			var jumpTargetX : int = this.walkSprite.x;
 			var jumpTargetY : int = this.walkSprite.y;
 			
+			// Get the player's post-jump location according to what sort of tile they're trying to jump from
 			switch ( event.param.object.name )
 			{
 				case 'jumpU': jumpTargetY -= 16 * jumpTileIncrement; break;
@@ -74,11 +87,32 @@ package com.tinyrpg.data
 		
 		private function onHitGrass( event : TinyFieldMapEvent ) : void 
 		{
-			TinyLogManager.log( 'onHitGrass', this );
+			
+			this.stepsSinceEncounter++;
+			
+			// Wait until the step counter is at least 5 before trying to spawn an encounter.
+			// This prevents encounter-locking after battles and when entering a map. 
+			if ( this.stepsSinceEncounter <= 5 ) return;
+			
+			// See if an encounter happens
+			var encounterMon : TinyMon = TinyMapManager.getInstance().currentMap.tryWildEncounter();
+			
+			// Begin encounter if there is one
+			if ( encounterMon )
+			{
+				TinyLogManager.log( 'onHitGrass: encountered ' + encounterMon.name + '!', this );
+				TinyGameManager.getInstance().doWildBattle( encounterMon );
+				this.walkSprite.stop();
+			}
+			else
+			{
+				TinyLogManager.log( 'onHitGrass: no encounter', this );
+			}
 		}
 		
 		private function onHitNothing( event : TinyFieldMapEvent ) : void
 		{
+			this.stepsSinceEncounter++;
 			this.clearLastWarp();
 		}
 				
@@ -121,6 +155,8 @@ package com.tinyrpg.data
 		{
 			TinyLogManager.log( 'onHitTrigger: ' + triggerObject.eventName, this );
 			
+			this.stepsSinceEncounter++;
+			
 			// If there is a required facing, check it before executing the event
 			if ( triggerObject.requiredFacing )
 			{
@@ -140,6 +176,11 @@ package com.tinyrpg.data
 		public function clearLastWarp() : void
 		{
 			this.lastWarpHit = null;
+		}
+		
+		public function resetStepsSinceEncounter() : void
+		{
+			this.stepsSinceEncounter = 0;
 		}
 		
 	}

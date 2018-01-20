@@ -446,6 +446,12 @@ package com.tinyrpg.display
 			}
 		}
 		
+		public function stop() : void
+		{
+			this.spritesheet.isWalking = false;
+			this.spritesheet.reset();
+		}
+		
 		public function takeStep() : void
 		{
 			this.updateMovementHitbox();
@@ -457,8 +463,7 @@ package com.tinyrpg.display
 		protected function onStepComplete( event : TinyFieldMapEvent ) : void
 		{
 			this.removeEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
-			this.spritesheet.isWalking = false;
-			this.spritesheet.reset();
+			this.stop();
 			
 			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
 		}

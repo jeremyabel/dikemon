@@ -81,12 +81,12 @@ package com.tinyrpg.core
 		public function get currentHP()	: int { return m_currentHP; }
 		public function get currentEXP(): int { return m_currentExp; }
 		
-		public function TinyMon(xmlData : XML)
+		public function TinyMon( xmlData : XML, level : uint = 5 )
 		{
 			this.initFromXML(xmlData);
 		}
 		
-		public function initFromXML(xmlData : XML) : void
+		public function initFromXML( xmlData : XML, level : uint = 5 ) : void
 		{
 			m_name 		 = xmlData.child('NAME');
 			m_style 	 = xmlData.child('STYLE');
@@ -121,7 +121,7 @@ package com.tinyrpg.core
 			this.evStatSet = new TinyStatSet(0, 0, 0, 0, 0, 0, true);
 			this.battleModStatSet = new TinyStatSet(0, 0, 0, 0, 0, 0, true);
 			
-			m_level = 5;
+			m_level = level;
 			m_currentExp = 1;
 			m_currentHP = TinyMath.deepCopyInt(this.maxHP);
 			

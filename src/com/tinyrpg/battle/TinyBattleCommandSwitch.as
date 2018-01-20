@@ -35,7 +35,7 @@ package com.tinyrpg.battle
 			var ballDisplay : TinyBattleBallDisplay = this.isEnemy ? this.battle.m_enemyBallDisplay : this.battle.m_playerBallDisplay;
 			var statDisplay : TinyBattleMonStatDisplay = this.isEnemy ? this.battle.m_enemyStatDisplay : this.battle.m_playerStatDisplay; 
 			var previousMon : TinyMon = this.isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
-			var trainer : TinyTrainer = this.isEnemy ? this.battle.m_enemyTrainer : this.battle.m_testPlayerTrainer;
+			var trainer : TinyTrainer = this.isEnemy ? this.battle.m_enemyTrainer : this.battle.m_playerTrainer;
 			
 			// If this switch isn't due to the previous mon fainting, the current mon needs to be recalled
 			if ( previousMon.isHealthy ) 

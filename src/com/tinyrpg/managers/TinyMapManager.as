@@ -1,9 +1,8 @@
 package com.tinyrpg.managers 
 {
 	import com.tinyrpg.core.TinyFieldMap;
-	import com.tinyrpg.data.TinyAppSettings;
+	import com.tinyrpg.core.TinyPlayerFieldState;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
-	import com.tinyrpg.data.TinyPlayerSpriteState;
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
@@ -27,7 +26,7 @@ package com.tinyrpg.managers
 		private var warpObjectInProgress : TinyFieldMapObjectWarp;
 		
 		public var playerSprite : TinyWalkSprite;
-		public var playerSpriteState : TinyPlayerSpriteState;
+		public var playerFieldState : TinyPlayerFieldState;
 		public var mapContainer : Sprite;
 		public var mapEventContainer : Sprite;
 		
@@ -62,7 +61,7 @@ package com.tinyrpg.managers
 			if ( this.m_currentMap ) 
 			{
 				this.fadeTransition.addEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onWarpHideComplete );
-				this.fadeTransition.fadeOut();
+				this.fadeTransition.fadeOutToWhite();
 			}
 			else
 			{
@@ -100,7 +99,7 @@ package com.tinyrpg.managers
 			
 			// Fade in the new current map
 			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
-			this.fadeTransition.fadeIn();
+			this.fadeTransition.fadeInFromWhite();
 		}
 		
 		private function onWarpShowComplete( event : TinyGameEvent = null ) : void
@@ -114,7 +113,7 @@ package com.tinyrpg.managers
 			if ( this.warpObjectInProgress.stepForwardAfterWarp )
 			{
 				// Disable map object collision while taking the first step
-				this.playerSpriteState.objectCollisionEnabled = false;
+				this.playerFieldState.objectCollisionEnabled = false;
 				
 				// Move forward one step
 				this.playerSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWarpStepForwardComplete );
@@ -123,7 +122,7 @@ package com.tinyrpg.managers
 			else 
 			{
 				// Otherwise give control to the player immediately
-				TinyInputManager.getInstance().setTarget( this.playerSprite );				
+				TinyInputManager.getInstance().setTarget( this.playerSprite );
 			}
 			
 			this.warpObjectInProgress = null;
@@ -140,19 +139,19 @@ package com.tinyrpg.managers
 			TinyInputManager.getInstance().setTarget( this.playerSprite );
 			
 			// Re-enable map object collision
-			this.playerSpriteState.objectCollisionEnabled = true;
-			this.playerSpriteState.clearLastWarp();
+			this.playerFieldState.objectCollisionEnabled = true;
+			this.playerFieldState.clearLastWarp();
 		}
 
 		public function addPlayerSprite( initialFacing : String = 'DOWN' ) : void
 		{
-			if ( this.playerSpriteState ) this.playerSpriteState.destroy();
+			if ( this.playerFieldState ) this.playerFieldState.destroy();
 			
-			this.playerSpriteState = null;
+			this.playerFieldState = null;
 			this.playerSprite = null;
 			
 			this.playerSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, initialFacing, true, true );
-			this.playerSpriteState = new TinyPlayerSpriteState( playerSprite );
+			this.playerFieldState = new TinyPlayerFieldState( playerSprite );
 			
 			this.m_currentMap.mapUserObjects.addChild( this.playerSprite );			
 		}

@@ -1,5 +1,6 @@
 package com.tinyrpg.misc 
 {
+	import com.tinyrpg.data.TinyWildEncounterData;
 	import com.tinyrpg.display.TinyMapMovieClip;
 	import com.tinyrpg.utils.TinyLogManager;
 	import com.tinyrpg.display.maps.*;
@@ -211,6 +212,59 @@ package com.tinyrpg.misc
 				
 			var string : String = newXMLBytes.readUTFBytes( newXMLBytes.length );			
 			return new XML( string );
+		}
+		
+		public static function getEncounterRateForName( mapName : String ) : int
+		{
+			TinyLogManager.log( 'getEncounterRateForName: ' + mapName, TinyMapConfig );
+			
+			switch ( mapName.toUpperCase() ) 
+			{
+				// Island: Lake	
+				case MAP_ISLANDLAKE:			return 25;
+				
+				// Island: Cave
+				case MAP_ISLANDCAVEENTRANCE:	return 25;
+				case MAP_ISLANDCAVESIDE:		return 25;
+				case MAP_ISLANDCAVE:			return 15;
+				
+				// Island: Forest
+				case MAP_ISLANDFORESTENTRANCE:	return 25;
+				case MAP_ISLANDFOREST:			return 10;
+				
+				// Misc
+				case MAP_ROUTE29:				return 25;
+				
+				default:						return 0;
+			}
+		}
+		
+		public static function getEncounterDataForName( mapName : String ) : TinyWildEncounterData
+		{
+			TinyLogManager.log( 'getEncounterDataForName: ' + mapName, TinyMapConfig );
+			
+			switch ( mapName.toUpperCase() ) 
+			{
+//				case MAP_ISLANDLAKE:			return [];
+//				case MAP_ISLANDCAVEENTRANCE:	return [];
+//				case MAP_ISLANDCAVESIDE:		return [];
+//				case MAP_ISLANDCAVE:			return [];
+//				case MAP_ISLANDFORESTENTRANCE:	return [];
+//				case MAP_ISLANDFOREST:			return [];
+				
+				case MAP_ROUTE29: return new TinyWildEncounterData([ 
+					[ TinyMonConfig.MON_BOX, 2 ],
+					[ TinyMonConfig.MON_BUCKET, 2 ],
+					[ TinyMonConfig.MON_TALL_GRASS, 3 ],
+					[ TinyMonConfig.MON_SHORTS_KID, 3 ],
+					[ TinyMonConfig.MON_EGG, 2 ],
+					[ TinyMonConfig.MON_SHOE, 3 ],
+					[ TinyMonConfig.MON_SHOE, 4 ] 
+				]);
+				
+				default: return new TinyWildEncounterData( null );
+			}
+			
 		}
 	}
 }

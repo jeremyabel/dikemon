@@ -461,7 +461,7 @@ package com.tinyrpg.battle
 				
 				// Tally up the number of mons used in the battle, then clear the "used in battle" flag, 
 				// since that only matters when calculating exp against the current defeated mon 
-				for each ( mon in this.battle.m_testPlayerTrainer.squad ) 
+				for each ( mon in this.battle.m_playerTrainer.squad ) 
 				{
 					if ( mon.usedInBattle ) 
 					{
@@ -540,7 +540,7 @@ package com.tinyrpg.battle
 					
 				case RESULT_PLAYER_FAINTED:
 				{
-					if ( this.battle.m_testPlayerTrainer.hasAnyHealthyMons() )
+					if ( this.battle.m_playerTrainer.hasAnyHealthyMons() )
 					{
 						TinyLogManager.log('getNextCommands: RESULT_PLAYER_FAINTED, force player switch, then start the next turn', this);
 						
@@ -574,7 +574,7 @@ package com.tinyrpg.battle
 				case RESULT_BOTH_FAINTED:
 				{
 					// If player has any remaining mons, force them to switch. If not, player loses
-					if ( this.battle.m_testPlayerTrainer.hasAnyHealthyMons() )
+					if ( this.battle.m_playerTrainer.hasAnyHealthyMons() )
 					{	
 						// If enemy has no remaining mons, player wins
 						if ( !nextEnemyMon )
