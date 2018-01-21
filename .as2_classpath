@@ -12,7 +12,6 @@
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/display</AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/events</AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/managers</AS2Classpath>
-    <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/maps</AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/misc</AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/ui</AS2Classpath>
     <AS2Classpath generateProblems="true" type="source" useAsSharedCode="false">src/com/tinyrpg/utils</AS2Classpath>

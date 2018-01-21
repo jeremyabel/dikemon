@@ -83,6 +83,87 @@ package com.tinyrpg.lookup
 		public static var NPC_FAIRY_MON			: int = 432;
 		public static var NPC_BIRD_MON			: int = 438;
 		public static var NPC_DRAGON_MON		: int = 444;
+		
+		public static function getFieldSpriteId( name : String ) : int
+		{
+			TinyLogManager.log( 'getFieldSpriteId: ' + name, null );
+			
+			switch ( name )
+			{
+				default:
+				case "PLAYER 1":			return PLAYER_1;
+				case "PLAER 1 BIKE":		return PLAYER_1_BIKE;
+				case "PLAYER 2":			return PLAYER_2;
+				case "PLAYER 2 BIKE":		return PLAYER_2_BIKE;
+				case "PLAYER 3":			return PLAYER_3;
+				case "PLAYER 4":			return PLAYER_4;
+				case "PROF OAK":			return NPC_PROF_OAK;
+				case "GARY RIVAL":			return NPC_GARY_RIVAL;
+				case "OLD MAN 1":			return NPC_OLD_MAN_1;
+				case "OLD MAN 2":			return NPC_OLD_MAN_2;
+				case "OLD MAN 3":			return NPC_OLD_MAN_3;
+				case "OLD MAN 4":			return NPC_OLD_MAN_4;
+				case "OLD MAN 5":			return NPC_OLD_MAN_5;
+				case "OLD MAN 6":			return NPC_OLD_MAN_6;
+				case "OLD MAN 7":			return NPC_OLD_MAN_7;
+				case "OLD LADY":			return NPC_OLD_LADY;
+				case "HEADBAND GIRL 1":		return NPC_HEADBAND_GIRL_1;
+				case "HEADBAND GIRL 2":		return NPC_HEADBAND_GIRL_2;
+				case "MOHAWK GUY":			return NPC_MOHAWK_GUY;
+				case "MOM 1":				return NPC_MOM_1;
+				case "MOM 2":				return NPC_MOM_2;
+				case "SCIENTIST 1":			return NPC_SCIENTIST_1;
+				case "SCIENTIST 2":			return NPC_SCIENTIST_2;
+				case "SCIENTIST 3":			return NPC_SCIENTIST_3;
+				case "LONG HAIR GIRL 1":	return NPC_LONG_HAIR_GIRL_1;
+				case "LONG HAIR GIRL 2":	return NPC_LONG_HAIR_GIRL_2;
+				case "LONG HAIR GIRL 3":	return NPC_LONG_HAIR_GIRL_3;
+				case "LONG HAIR GIRL 5":	return NPC_LONG_HAIR_GIRL_5;
+				case "LONG HAIR GIRL 6":	return NPC_LONG_HAIR_GIRL_6;
+				case "PONY TAIL GIRL 1":	return NPC_PONY_TAIL_GIRL_1;
+				case "PONY TAIL GIRL 2":	return NPC_PONY_TAIL_GIRL_2;
+				case "PONY TAIL GIRL 3":	return NPC_PONY_TAIL_GIRL_3;
+				case "PONY TAIL GIRL 4":	return NPC_PONY_TAIL_GIRL_4;
+				case "EMO GUY":				return NPC_EMO_GUY;
+				case "SCRUFFY GUY":			return NPC_SCRUFFY_GUY;
+				case "SCRUFFY GIRL":		return NPC_SCRUFFY_GIRL;
+				case "HEADBAND GUY 1":		return NPC_HEADBAND_GUY_1;
+				case "HEADBAND GUY 2":		return NPC_HEADBAND_GUY_2;
+				case "BANDANA GUY":			return NPC_BANDANA_GUY;
+				case "MOTORCYCLE GUY":		return NPC_MOTORCYCLE_GUY;
+				case "SUNGLASSES GUY":		return NPC_SUNGLASSES_GUY;
+				case "ANGRY GUY":			return NPC_ANGRY_GUY;
+				case "KARATE GUY":			return NPC_KARATE_GUY;
+				case "EVIL CAPE GUY":		return NPC_EVIL_CAPE_GUY;
+				case "BROCK":				return NPC_BROCK;
+				case "MISTY":				return NPC_MISTY;
+				case "CASUAL GUY 1":		return NPC_CASUAL_GUY_1;
+				case "CASUAL GUY 2":		return NPC_CASUAL_GUY_2;
+				case "CASUAL GUY 3":		return NPC_CASUAL_GUY_3;
+				case "CASUAL GUY 4":		return NPC_CASUAL_GUY_4;
+				case "CASUAL GUY 5":		return NPC_CASUAL_GUY_5;
+				case "NERD GUY":			return NPC_NERD_GUY;
+				case "LITTLE BOY":			return NPC_LITTLE_BOY;
+				case "LITTLE GIRL":			return NPC_LITTLE_GIRL;
+				case "GERMAN GUY":			return NPC_GERMAN_GUY;
+				case "GERMAN GIRL":			return NPC_GERMAN_GIRL;
+				case "SWIMMER GUY":			return NPC_SWIMMER_GUY;
+				case "SWIMMER GIRL":		return NPC_SWIMMER_GIRL;
+				case "PIKA SURFER":			return NPC_PIKA_SURFER;
+				case "ROCKET GUY":			return NPC_ROCKET_GUY;
+				case "ROCKET GIRL":			return NPC_ROCKET_GIRL;
+				case "SAFARI GUY":			return NPC_SAFARI_GUY;
+				case "KIMONO GIRL":			return NPC_KIMONO_GIRL;
+				case "TOPHAT MAN":			return NPC_TOPHAT_MAN;
+				case "CONDUCTOR GUY":		return NPC_CONDUCTOR_GUY;
+				case "SUNHAT GIRL":			return NPC_SUNHAT_GIRL;
+				case "NURSE":				return NPC_NURSE;
+				case "GROUND MON":			return NPC_GROUND_MON;
+				case "FAIRY MON":			return NPC_FAIRY_MON;
+				case "BIRD MON":			return NPC_BIRD_MON;
+				case "DRAGON MON":			return NPC_DRAGON_MON;
+			}
+		}
 
 		public static function getMonsterSprite(name : String) : BitmapData
 		{

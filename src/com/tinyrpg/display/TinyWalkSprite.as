@@ -302,7 +302,10 @@ package com.tinyrpg.display
 			this.checkObjectCollision();
 				
 			// Emit move complete event
-			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_COMPLETE ) );
+			if ( this.isPlayer )
+			{
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_COMPLETE ) );
+			}
 		}
 
 		protected function onMovementUpdate( event : Event = null ) : void
@@ -356,7 +359,7 @@ package com.tinyrpg.display
 					}));
 					
 					var hitObject : TinyFieldMapObject = objectCollision.object as TinyFieldMapObject;
-					return hitObject.isBlocking( this );					
+					return hitObject.isBlocking( this );
 				} 
 				else 
 				{
@@ -390,19 +393,22 @@ package com.tinyrpg.display
 		
 		public function checkGrassCollision( useMovementHitbox : Boolean = true ) : Boolean
 		{
-			// Get the desired hitbox to test with
-			var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
-				
-			// Emit collision events depending on if some grass has been hit by the any NPC
-			var grassCollision = TinyMapManager.getInstance().currentMap.checkGrassCollision( hitboxToUse );
-			
-			if ( grassCollision.hit )
+			if ( this.isPlayer && this.hasControl ) 
 			{
-				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.GRASS_HIT, { 
-					object: grassCollision.object
-				}));
+				// Get the desired hitbox to test with
+				var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
+					
+				// Emit collision events depending on if some grass has been hit by the any NPC
+				var grassCollision = TinyMapManager.getInstance().currentMap.checkGrassCollision( hitboxToUse );
 				
-				return true;
+				if ( grassCollision.hit )
+				{
+					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.GRASS_HIT, { 
+						object: grassCollision.object
+					}));
+					
+					return true;
+				}
 			}
 			
 			return false;
@@ -450,6 +456,13 @@ package com.tinyrpg.display
 			{
 				TinyMapManager.getInstance().updateCamera( this.x, this.y );
 			}
+		}
+		
+		public function setFacing( facing : String ) : void
+		{
+			this.currentDirection = facing;
+			this.spritesheet.setFacing( this.currentDirection );
+			this.updateMovementHitbox();
 		}
 		
 		public function stop() : void

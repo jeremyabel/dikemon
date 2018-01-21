@@ -10,9 +10,14 @@ package com.tinyrpg.data
 	 */
 	public class TinyFieldMapObject extends MovieClip
 	{
+		public var icon : MovieClip;
+		
 		public function TinyFieldMapObject() : void 
 		{
-			 
+			if ( this.icon )
+			{
+				this.icon.visible = false;
+			}	 
 		}
 		
 		public function dataReady() : void

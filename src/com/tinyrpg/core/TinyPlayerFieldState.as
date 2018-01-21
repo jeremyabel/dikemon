@@ -4,6 +4,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.data.TinyFieldMapObject;
 	import com.tinyrpg.data.TinyFieldMapObjectTrigger;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
+	import com.tinyrpg.data.TinyFieldMapObjectNPC;
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.managers.TinyGameManager;
@@ -60,6 +61,12 @@ package com.tinyrpg.core
 				if ( hitObject is TinyFieldMapObjectWarp )
 				{
 					this.onHitWarp( hitObject as TinyFieldMapObjectWarp );
+					return;
+				}
+			
+				if ( hitObject is TinyFieldMapObjectNPC ) 
+				{
+					this.onHitNPC( hitObject as TinyFieldMapObjectNPC, event.param.fromAcceptKeypress );
 					return;
 				}
 			}
@@ -148,6 +155,19 @@ package com.tinyrpg.core
 				// Didn't trigger an instant warp, so save this warp object so it can be triggered if it is hit twice.
 				this.lastWarpHit = warpObject;
 			}
+		}
+		
+		private function onHitNPC( npcObject : TinyFieldMapObjectNPC, fromAcceptKeypress : Boolean ) : void
+		{
+			TinyLogManager.log( 'onHitNPC: ' + npcObject.npcName, this );
+			
+			this.stepsSinceEncounter++;
+			
+			// Exit if an accept keypress is required and none was found
+			if ( !fromAcceptKeypress ) return;
+			
+			// Set the NPC to face the player
+			npcObject.setFacingFromPlayerFacing( this.walkSprite.currentDirection );
 		}
 		
 		private function onHitTrigger( triggerObject : TinyFieldMapObjectTrigger, fromAcceptKeypress : Boolean ) : void

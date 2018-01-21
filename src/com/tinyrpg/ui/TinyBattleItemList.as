@@ -169,7 +169,7 @@ package com.tinyrpg.ui
 			{
 				super.onArrowUp( e );
 								
-				// Update or clera description box
+				// Update or clear description box
 				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
@@ -189,7 +189,7 @@ package com.tinyrpg.ui
 			{
 				super.onArrowDown( e );
 								
-				// Update or clera description box			
+				// Update or clear description box			
 				if ( this.selectedItem.textString != CANCEL_OPTION )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
