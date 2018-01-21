@@ -1,4 +1,4 @@
-package com.tinyrpg.misc
+package com.tinyrpg.lookup
 {
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -8,7 +8,7 @@ package com.tinyrpg.misc
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyMonConfig 
+	public class TinyMonLookup
 	{
 		[Embed(source='../../../../bin/xml/Monsters.xml', mimeType='application/octet-stream')]
 		private static const XML_Monsters : Class;
@@ -23,11 +23,11 @@ package com.tinyrpg.misc
 		public static const MON_ACE_OF_SPADES 	: String = 'ACE OF SPADES';
 		public static const MON_FOUR_OF_CLUBS	: String = 'FOUR OF CLUBS';
 		
-		private static var instance : TinyMonConfig = new TinyMonConfig;
+		private static var instance : TinyMonLookup = new TinyMonLookup;
 		
 		private var monData : XML;
 		
-		public function TinyMonConfig() : void { }
+		public function TinyMonLookup() : void { }
 		
 		public function initMonsterData() : void
 		{
@@ -42,14 +42,14 @@ package com.tinyrpg.misc
 			}
 		}
 
-		public static function getInstance() : TinyMonConfig
+		public static function getInstance() : TinyMonLookup
 		{
 			return instance;
 		}		
 		
 		public function getMonByName( monName : String, level : uint = 5 ) : TinyMon
 		{
-			TinyLogManager.log( 'getMonByName: ' + monName, TinyMonConfig );
+			TinyLogManager.log( 'getMonByName: ' + monName, this );
 			
 			var monXML : XML = this.monData.MON.( NAME.toUpperCase() == monName.toUpperCase() )[ 0 ];
 			

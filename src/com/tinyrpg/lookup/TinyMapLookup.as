@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.lookup 
 {
 	import com.tinyrpg.data.TinyWildEncounterData;
 	import com.tinyrpg.display.TinyMapMovieClip;
@@ -11,7 +11,7 @@ package com.tinyrpg.misc
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyMapConfig 
+	public class TinyMapLookup 
 	{
 		private static const MAP_CITY					: String = 'CITY';
 		private static const MAP_CITYBOAT				: String = 'CITYBOAT';
@@ -92,11 +92,11 @@ package com.tinyrpg.misc
 		// Misc
 		[Embed(source='../../../../bin/xml/Events/Misc/Route29.xml', mimeType='application/octet-stream')] 					public static const Route29_Events_XML : Class;
 		
-		public function TinyMapConfig() : void { }
+		public function TinyMapLookup() : void { }
 		
 		public static function getMapFromName( mapName : String ) : TinyMapMovieClip 
 		{
-			TinyLogManager.log( 'getMapFromName: ' + mapName, TinyMapConfig );
+			TinyLogManager.log( 'getMapFromName: ' + mapName, TinyMapLookup );
 			
 			switch ( mapName.toUpperCase() ) 
 			{
@@ -153,7 +153,7 @@ package com.tinyrpg.misc
 	
 		public static function getMapEventXMLFromName( mapName : String ) : XML
 		{
-			TinyLogManager.log( 'getMapEventXMLFromName: ' + mapName, TinyMapConfig );
+			TinyLogManager.log( 'getMapEventXMLFromName: ' + mapName, TinyMapLookup );
 				
 			var newXMLBytes : ByteArray;
 			
@@ -216,7 +216,7 @@ package com.tinyrpg.misc
 		
 		public static function getEncounterRateForName( mapName : String ) : int
 		{
-			TinyLogManager.log( 'getEncounterRateForName: ' + mapName, TinyMapConfig );
+			TinyLogManager.log( 'getEncounterRateForName: ' + mapName, TinyMapLookup );
 			
 			switch ( mapName.toUpperCase() ) 
 			{
@@ -241,7 +241,7 @@ package com.tinyrpg.misc
 		
 		public static function getEncounterDataForName( mapName : String ) : TinyWildEncounterData
 		{
-			TinyLogManager.log( 'getEncounterDataForName: ' + mapName, TinyMapConfig );
+			TinyLogManager.log( 'getEncounterDataForName: ' + mapName, TinyMapLookup );
 			
 			switch ( mapName.toUpperCase() ) 
 			{
@@ -253,13 +253,13 @@ package com.tinyrpg.misc
 //				case MAP_ISLANDFOREST:			return [];
 				
 				case MAP_ROUTE29: return new TinyWildEncounterData([ 
-					[ TinyMonConfig.MON_BOX, 2 ],
-					[ TinyMonConfig.MON_BUCKET, 2 ],
-					[ TinyMonConfig.MON_TALL_GRASS, 3 ],
-					[ TinyMonConfig.MON_SHORTS_KID, 3 ],
-					[ TinyMonConfig.MON_EGG, 2 ],
-					[ TinyMonConfig.MON_SHOE, 3 ],
-					[ TinyMonConfig.MON_SHOE, 4 ] 
+					[ TinyMonLookup.MON_BOX, 2 ],
+					[ TinyMonLookup.MON_BUCKET, 2 ],
+					[ TinyMonLookup.MON_TALL_GRASS, 3 ],
+					[ TinyMonLookup.MON_SHORTS_KID, 3 ],
+					[ TinyMonLookup.MON_EGG, 2 ],
+					[ TinyMonLookup.MON_SHOE, 3 ],
+					[ TinyMonLookup.MON_SHOE, 4 ] 
 				]);
 				
 				default: return new TinyWildEncounterData( null );

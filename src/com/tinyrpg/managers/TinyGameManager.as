@@ -8,7 +8,7 @@ package com.tinyrpg.managers
 	import com.tinyrpg.events.TinyBattleEvent;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;
-	import com.tinyrpg.misc.TinySpriteConfig;
+	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	import flash.display.Sprite;

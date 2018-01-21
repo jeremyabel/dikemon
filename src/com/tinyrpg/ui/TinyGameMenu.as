@@ -114,7 +114,7 @@ package com.tinyrpg.ui
 			
 			// Add event listeners
 			this.menuMenu.addEventListener(TinyMenuEvent.ITEM_SELECTED,   onItemSelected);			this.menuMenu.addEventListener(TinyMenuEvent.STATS_SELECTED,  onStatsSelected);			this.menuMenu.addEventListener(TinyMenuEvent.PARTY_SELECTED,  onPartySelected);
-			this.menuMenu.addEventListener(TinyMenuEvent.SAVE_SELECTED,  onSaveSelected);			this.menuMenu.addEventListener(TinyMenuEvent.QUIT_SELECTED,   onQuitSelected);			this.menuMenu.addEventListener(TinyInputEvent.CANCEL, 		  onCancel);
+			this.menuMenu.addEventListener(TinyMenuEvent.SAVE_SELECTED,   onSaveSelected);			this.menuMenu.addEventListener(TinyMenuEvent.QUIT_SELECTED,   onQuitSelected);			this.menuMenu.addEventListener(TinyInputEvent.CANCEL, 		  onCancel);
 		}
 		public function hide() : void
 		{
@@ -128,7 +128,6 @@ package com.tinyrpg.ui
 			TinyGameMenu.menuOneLiner.visible = false;
 			
 			// Clean up
-			// Listen for menu events
 			this.menuMenu.removeEventListener(TinyMenuEvent.ITEM_SELECTED,   onItemSelected);
 			this.menuMenu.removeEventListener(TinyMenuEvent.STATS_SELECTED,  onStatsSelected);
 			this.menuMenu.removeEventListener(TinyMenuEvent.PARTY_SELECTED,  onPartySelected);			this.menuMenu.removeEventListener(TinyMenuEvent.SAVE_SELECTED, 	 onSaveSelected);

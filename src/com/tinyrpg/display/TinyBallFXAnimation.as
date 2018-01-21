@@ -8,7 +8,8 @@ package com.tinyrpg.display
 	
 	import com.tinyrpg.display.itemfx.*;
 	import com.tinyrpg.media.sfx.itemfx.*;
-	import com.tinyrpg.misc.TinyBallThrowResult;
+	
+	import com.tinyrpg.data.TinyBallThrowResult;
 	import com.tinyrpg.utils.TinyLogManager; 
 
 	/**

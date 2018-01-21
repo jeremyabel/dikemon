@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
 
 	/**
@@ -6,30 +6,32 @@ package com.tinyrpg.misc
 	 */
 	public class TinyEventItem 
 	{
-		// Generic Events
-		public static const DIALOG	 	  : String = 'DIALOG';
-		public static const CONDITIONAL	  : String = 'CONDITIONAL';
-		public static const BATTLE		  : String = 'BATTLE';
-		public static const ADD_NPC		  : String = 'ADD_NPC';
-		public static const REMOVE_NPC	  : String = 'REMOVE_NPC';
-		public static const SUB_SEQUENCE  : String = 'SUB_SEQUENCE';
-		public static const GIVE_ITEM	  : String = 'GIVE_ITEM';
-		public static const TAKE_ITEM	  : String = 'TAKE_ITEM';
-		public static const GIVE_GOLD	  : String = 'GIVE_GOLD';
-		public static const TAKE_GOLD	  : String = 'TAKE_GOLD';
-		public static const WALK		  : String = 'WALK';
-		public static const SET_POSITION  : String = 'SET_POSITION';
-		public static const SET_VISIBLITY : String = 'SET_VISIBILITY';
-		public static const SHOW_OBJECT	  : String = 'SHOW_OBJECT';
-		public static const HIDE_OBJECT	  : String = 'HIDE_OBJECT';
-		public static const PLAY_ANIM	  : String = 'PLAY_ANIM';
-		public static const PLAY_SOUND	  : String = 'PLAY_SOUND';
-		public static const PLAY_MUSIC	  : String = 'PLAY_MUSIC';
-		public static const DELAY		  : String = 'DELAY';
-		public static const SET_FLAG	  : String = 'SET_FLAG';
-		public static const HEAL_ALL	  : String = 'HEAL_ALL';
-		public static const END			  : String = 'END';
-		public static const FINAL_END	  : String = 'FINAL_END';
+		// Field Events
+		public static const DIALOG	 	  			: String = 'DIALOG';
+		public static const CONDITIONAL	 			: String = 'CONDITIONAL';
+		public static const BATTLE		 			: String = 'BATTLE';
+		public static const ADD_NPC		 			: String = 'ADD_NPC';
+		public static const REMOVE_NPC	  			: String = 'REMOVE_NPC';
+		public static const SHOW_EMOTE				: String = 'SHOW_EMOTE';
+		public static const HIDE_EMOTE				: String = 'HIDE_EMOTE';
+		public static const SUB_SEQUENCE  			: String = 'SUB_SEQUENCE';
+		public static const GIVE_ITEM	  			: String = 'GIVE_ITEM';
+		public static const TAKE_ITEM	  			: String = 'TAKE_ITEM';
+		public static const GIVE_GOLD	  			: String = 'GIVE_GOLD';
+		public static const TAKE_GOLD	  			: String = 'TAKE_GOLD';
+		public static const WALK		  			: String = 'WALK';
+		public static const SET_POSITION  			: String = 'SET_POSITION';
+		public static const SET_VISIBLITY 			: String = 'SET_VISIBILITY';
+		public static const SHOW_OBJECT	  			: String = 'SHOW_OBJECT';
+		public static const HIDE_OBJECT	  			: String = 'HIDE_OBJECT';
+		public static const PLAY_ANIM	  			: String = 'PLAY_ANIM';
+		public static const PLAY_SOUND	  			: String = 'PLAY_SOUND';
+		public static const PLAY_MUSIC	  			: String = 'PLAY_MUSIC';
+		public static const DELAY		  			: String = 'DELAY';
+		public static const SET_FLAG	  			: String = 'SET_FLAG';
+		public static const HEAL_ALL	  			: String = 'HEAL_ALL';
+		public static const END			  			: String = 'END';
+		public static const FINAL_END	  			: String = 'FINAL_END';
 		
 		// Battle Events
 		public static const SHOW_TRAINER 			: String = 'SHOW_TRAINER';

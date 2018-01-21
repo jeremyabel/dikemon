@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.lookup 
 {
 	import flash.display.BitmapData;
 	import flash.media.Sound;
@@ -14,7 +14,7 @@ package com.tinyrpg.misc
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyStatusFXConfig 
+	public class TinyStatusFXLookup 
 	{	
 		private static const SFX_BURN 		: Sound = new SFXBurn;
 		private static const SFX_CONFUSION	: Sound = new SFXConfusion;

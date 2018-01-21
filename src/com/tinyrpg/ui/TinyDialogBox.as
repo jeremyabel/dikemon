@@ -6,12 +6,12 @@ package com.tinyrpg.ui
 	
 	import com.tinyrpg.core.TinyConfig;
 	import com.tinyrpg.core.TinyPlayer;
+	import com.tinyrpg.data.TinyDialogItem;
 	import com.tinyrpg.display.TinyAutotypeTextField;
 	import com.tinyrpg.display.TinyBattleTurnArrow;
 	import com.tinyrpg.display.TinyTitleBox;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
-	import com.tinyrpg.misc.TinyDialogItem;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.Event;

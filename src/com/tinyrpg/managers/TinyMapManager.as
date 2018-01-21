@@ -7,7 +7,7 @@ package com.tinyrpg.managers
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;	
-	import com.tinyrpg.misc.TinySpriteConfig;
+	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.display.DisplayObject;
@@ -153,7 +153,7 @@ package com.tinyrpg.managers
 			this.playerFieldState = null;
 			this.playerSprite = null;
 			
-			this.playerSprite = new TinyWalkSprite( TinySpriteConfig.PLAYER_1, initialFacing, true, true );
+			this.playerSprite = new TinyWalkSprite( TinySpriteLookup.PLAYER_1, initialFacing, true, true );
 			this.playerFieldState = new TinyPlayerFieldState( playerSprite );
 			
 			this.m_currentMap.mapUserObjects.addChild( this.playerSprite );			

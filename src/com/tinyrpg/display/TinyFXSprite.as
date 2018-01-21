@@ -7,11 +7,11 @@ package com.tinyrpg.display
 	import flash.geom.Rectangle;
 	import flash.media.Sound;
 
+	import com.tinyrpg.data.TinyBallThrowResult;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyMoveFXSpriteFrameInfo;
-	import com.tinyrpg.misc.TinyBallThrowResult;
-	import com.tinyrpg.misc.TinyMoveFXConfig;
-	import com.tinyrpg.misc.TinyStatusFXConfig;
+	import com.tinyrpg.lookup.TinyMoveFXLookup;
+	import com.tinyrpg.lookup.TinyStatusFXLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -51,11 +51,11 @@ package com.tinyrpg.display
 
 		public static function newFromMoveData( move : TinyMoveData, isEnemy : Boolean ) : TinyFXSprite
 		{
-			var sourceData : BitmapData = TinyMoveFXConfig.getMoveFXSprite( move.name, isEnemy );
-			var xmlData : XML = TinyMoveFXConfig.getMoveFXXML( move.name, isEnemy );
+			var sourceData : BitmapData = TinyMoveFXLookup.getMoveFXSprite( move.name, isEnemy );
+			var xmlData : XML = TinyMoveFXLookup.getMoveFXXML( move.name, isEnemy );
 			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
-			sprite.y = TinyMoveFXConfig.getMoveAdjustY( move.name, isEnemy );
-			sprite.sound = TinyMoveFXConfig.getMoveSFX( move.name );
+			sprite.y = TinyMoveFXLookup.getMoveAdjustY( move.name, isEnemy );
+			sprite.sound = TinyMoveFXLookup.getMoveSFX( move.name );
 			
 			return sprite; 	
 		}
@@ -63,10 +63,10 @@ package com.tinyrpg.display
 		
 		public static function newFromStatusEffect( statusName : String, isEnemy : Boolean ) : TinyFXSprite
 		{
-			var sourceData : BitmapData = TinyStatusFXConfig.getStatusFXSprite( statusName, isEnemy );
-			var xmlData : XML = TinyStatusFXConfig.getStatusFXXML( statusName, isEnemy );
+			var sourceData : BitmapData = TinyStatusFXLookup.getStatusFXSprite( statusName, isEnemy );
+			var xmlData : XML = TinyStatusFXLookup.getStatusFXXML( statusName, isEnemy );
 			var sprite : TinyFXSprite = new TinyFXSprite( sourceData, xmlData );
-			sprite.sound = TinyStatusFXConfig.getStatusSFX( statusName );
+			sprite.sound = TinyStatusFXLookup.getStatusSFX( statusName );
 			
 			return sprite;
 		}

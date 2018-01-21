@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.lookup 
 {
 	import com.tinyrpg.display.monsters.*;
 	import com.tinyrpg.display.trainers.*;
@@ -10,7 +10,7 @@ package com.tinyrpg.misc
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinySpriteConfig 
+	public class TinySpriteLookup 
 	{
 		public static var PLAYER_1				: int = 0;
 		public static var PLAYER_1_BIKE 		: int = 6;

@@ -1,9 +1,6 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
 	import com.tinyrpg.core.TinyFieldMap;
-//	import com.tinyrpg.core.TinyFriendSprite;
-//	import com.tinyrpg.core.TinyPlayer;
-//	import com.tinyrpg.core.TinyStatsEntity;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.geom.Point;

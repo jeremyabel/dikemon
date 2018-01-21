@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.lookup 
 {
 	import flash.display.BitmapData;
 	import flash.media.Sound;
@@ -12,7 +12,7 @@ package com.tinyrpg.misc
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyMoveFXConfig 
+	public class TinyMoveFXLookup 
 	{
 		private static const MOVE_ABSORB 				: String = 'ABSORB';
 		private static const MOVE_AGILITY 				: String = 'AGILITY';

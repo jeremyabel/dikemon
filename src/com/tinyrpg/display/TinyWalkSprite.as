@@ -10,9 +10,9 @@ package com.tinyrpg.display
 	import com.tinyrpg.display.misc.GrassOverlay;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyMapManager;
-	import com.tinyrpg.misc.TinySpriteConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.display.Bitmap;
@@ -36,14 +36,15 @@ package com.tinyrpg.display
 		private var grassOverlay : Bitmap;
 		private var prevX : int;
 		private var prevY : int;
-
-		public var hitBox : Sprite;
-		public var movementBox : Sprite;
-		public var hasCollidedWithWall : Boolean;
-		public var hasCollidedWithGrass : Boolean;
-		public var hasCollidedWithObject : Boolean;
-		public var hasCollidedWithJump : Boolean;
-		public var hasCollidedWithDisable : Boolean;
+		private var hitBox : Sprite;
+		private var movementBox : Sprite;
+		private var hasCollidedWithWall : Boolean;
+		private var hasCollidedWithGrass : Boolean;
+		private var hasCollidedWithObject : Boolean;
+		private var hasCollidedWithJump : Boolean;
+		private var hasCollidedWithDisable : Boolean;
+		
+		public var emoteIcon : TinyEmoteIcon; 
 		public var lockToCamera : Boolean;
 		public var isPlayer : Boolean;
 		public var currentDirection : String;
@@ -77,11 +78,16 @@ package com.tinyrpg.display
 			this.movementBox.graphics.endFill();
 			this.movementBox.visible = false;
 			
+			this.emoteIcon = new TinyEmoteIcon();
+			this.emoteIcon.x -= 8;
+			this.emoteIcon.y -= 4 + 8 + 16;
+			
 			// Add 'em up
 			this.addChild( this.spritesheet );
 			this.addChild( this.grassOverlay );
 			this.addChild( this.hitBox );
 			this.addChild( this.movementBox );
+			this.addChild( this.emoteIcon );
 
 			// Wait for control
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );

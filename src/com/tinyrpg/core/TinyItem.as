@@ -1,7 +1,7 @@
 package com.tinyrpg.core 
 {
 	import com.tinyrpg.battle.TinyBattleStrings;
-	import com.tinyrpg.misc.TinyItemUseResult;
+	import com.tinyrpg.data.TinyItemUseResult;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.EventDispatcher;

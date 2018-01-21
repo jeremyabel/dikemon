@@ -4,8 +4,8 @@ package com.tinyrpg.core
 	import flash.display.BitmapData;
 
 	import com.tinyrpg.display.TinySpriteSheet;
-	import com.tinyrpg.misc.TinyMonConfig;
-	import com.tinyrpg.misc.TinySpriteConfig;
+	import com.tinyrpg.lookup.TinyMonLookup;
+	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -36,11 +36,11 @@ package com.tinyrpg.core
 		
 		public static function newFromTestData( name : String = 'Player' ) : TinyTrainer 
 		{
-			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteConfig.getTrainerSprite( name ), name );
+			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
 			
-			newTrainer.squad.push( TinyMonConfig.getInstance().getMonByName( TinyMonConfig.MON_BUCKET ) );
-			newTrainer.squad.push( TinyMonConfig.getInstance().getMonByName( TinyMonConfig.MON_TALL_GRASS ) );
-			newTrainer.squad.push( TinyMonConfig.getInstance().getMonByName( TinyMonConfig.MON_BOX ) );
+			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_BUCKET ) );
+			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_TALL_GRASS ) );
+			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_BOX ) );
 			
 			return newTrainer;
 		}

@@ -1,4 +1,4 @@
-﻿package com.tinyrpg.misc 
+﻿package com.tinyrpg.sequence 
 {
 	import com.greensock.TweenLite;
 	

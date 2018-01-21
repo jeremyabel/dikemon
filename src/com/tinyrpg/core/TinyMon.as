@@ -8,7 +8,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.data.TinyMoveSet;
 	import com.tinyrpg.data.TinyStatSet;
 	
-	import com.tinyrpg.misc.TinySpriteConfig;
+	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyMath;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -129,7 +129,7 @@ package com.tinyrpg.core
 			this.moveSet.setMovesToLevel( this.m_level );
 			this.moveSet.logMoves();
 			
-			m_bitmap = new Bitmap(TinySpriteConfig.getMonsterSprite(m_name));
+			m_bitmap = new Bitmap(TinySpriteLookup.getMonsterSprite(m_name));
 		}
 				
 				

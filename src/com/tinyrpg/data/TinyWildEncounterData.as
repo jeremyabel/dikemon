@@ -1,7 +1,7 @@
 package com.tinyrpg.data
 {
 	import com.tinyrpg.core.TinyMon;
-	import com.tinyrpg.misc.TinyMonConfig;
+	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 	import com.tinyrpg.utils.TinyMath;
 	
@@ -24,7 +24,7 @@ package com.tinyrpg.data
 			var encounterIndex : uint = TinyMath.weightedRandomChoice( ENCOUNTER_CHANCE_TABLE ); 
 			var encounterData : Array = this.encounterMons[ encounterIndex ];
 			
-			return TinyMonConfig.getInstance().getMonByName( encounterData[ 0 ], encounterData[ 1 ] ); 
+			return TinyMonLookup.getInstance().getMonByName( encounterData[ 0 ], encounterData[ 1 ] ); 
 		}
 		
 		public function printLog() : void

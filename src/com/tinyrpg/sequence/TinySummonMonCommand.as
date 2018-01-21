@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.core.TinyMon;

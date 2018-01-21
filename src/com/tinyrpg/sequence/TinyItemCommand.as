@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
 	import com.tinyrpg.core.TinyItem;
 
@@ -11,7 +11,7 @@ package com.tinyrpg.misc
 		public var item : TinyItem;
 		public var take : Boolean;
 		
-		public function TinyItemCommand(take : Boolean, item : TinyItem = null, gold : int = 0) : void
+		public function TinyItemCommand( take : Boolean, item : TinyItem = null, gold : int = 0 ) : void
 		{
 			this.take = take;
 			this.item = item;

@@ -1,4 +1,4 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.data 
 {
 	import com.tinyrpg.utils.TinyLogManager;
 	

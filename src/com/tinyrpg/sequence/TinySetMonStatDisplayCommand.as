@@ -1,14 +1,12 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
-	import flash.events.EventDispatcher;
-	
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinySetMonStatDisplayCommand extends EventDispatcher 
+	public class TinySetMonStatDisplayCommand 
 	{
 		public var statDisplay : TinyBattleMonStatDisplay;
 		public var mon : TinyMon;

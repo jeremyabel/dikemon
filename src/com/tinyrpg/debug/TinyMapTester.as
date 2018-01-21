@@ -2,11 +2,11 @@ package com.tinyrpg.debug
 {
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
+	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.misc.TinyCSS;
-	import com.tinyrpg.misc.TinyMonConfig;
 
 	import flash.display.MovieClip;
 	import flash.display.StageAlign;
@@ -28,12 +28,12 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'Route29';
-			testWarpObject.targetWarpName = 'warpTown1';
-			testWarpObject.destinationFacing = 'LEFT';
+			testWarpObject.targetMapName = 'Town';
+			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.destinationFacing = 'DOWN';
 			testWarpObject.stepForwardAfterWarp = true;
 			
-			TinyMonConfig.getInstance().initMonsterData();
+			TinyMonLookup.getInstance().initMonsterData();
 			TinyGameManager.getInstance().initWithTestData();
 			TinyGameManager.getInstance().gotoMap( testWarpObject );
 			

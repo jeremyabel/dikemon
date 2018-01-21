@@ -1,12 +1,11 @@
-package com.tinyrpg.misc 
+package com.tinyrpg.sequence 
 {
-	import flash.events.EventDispatcher;
 	import flash.display.DisplayObject;
 
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinySetVisibilityCommand extends EventDispatcher 
+	public class TinySetVisibilityCommand 
 	{
 		public var element : DisplayObject;
 		public var visibility : Boolean;

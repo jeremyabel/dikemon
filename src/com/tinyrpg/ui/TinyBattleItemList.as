@@ -7,8 +7,9 @@ package com.tinyrpg.ui
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
-	import com.tinyrpg.data.TinyMoveData;
+	import com.tinyrpg.data.TinyItemUseResult;
 	import com.tinyrpg.data.TinyItemDataList;
+	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.display.IShowHideObject;	
 	import com.tinyrpg.display.TinySelectableItem;
@@ -20,7 +21,6 @@ package com.tinyrpg.ui
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.media.sfx.SoundErrorBuzz;
-	import com.tinyrpg.misc.TinyItemUseResult;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**

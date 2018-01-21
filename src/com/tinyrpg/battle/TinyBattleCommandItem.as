@@ -8,7 +8,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.TinyBallFXAnimation;
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
-	import com.tinyrpg.misc.TinyBallThrowResult;
+	import com.tinyrpg.data.TinyBallThrowResult;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**

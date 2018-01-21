@@ -8,8 +8,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyMonContainer;
 	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
+	import com.tinyrpg.lookup.TinyStatusFXLookup;
 	import com.tinyrpg.media.sfx.battlefx.SFXKnockout;
-	import com.tinyrpg.misc.TinyStatusFXConfig;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
@@ -101,7 +101,7 @@ package com.tinyrpg.battle
 					this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.CONFUSION, isEnemy ) );
 					
 					// Play hit sfx
-					this.eventSequence.addPlaySound( TinyStatusFXConfig.SFX_HIT_SELF );
+					this.eventSequence.addPlaySound( TinyStatusFXLookup.SFX_HIT_SELF );
 					
 					// Apply damage
 					this.applyDamageToTarget( attackingMon, confusionDamage, isEnemy );
@@ -236,7 +236,7 @@ package com.tinyrpg.battle
 				var recoilDamage : int = Math.ceil( damage / 4 );
 				
 				// Play hit sfx
-				this.eventSequence.addPlaySound( TinyStatusFXConfig.SFX_HIT_SELF );
+				this.eventSequence.addPlaySound( TinyStatusFXLookup.SFX_HIT_SELF );
 					
 				// Apply damage
 				this.applyDamageToTarget( attackingMon, recoilDamage, isEnemy );
