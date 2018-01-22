@@ -28,8 +28,8 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'Town';
-			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.targetMapName = 'EventTestZone';
+			testWarpObject.targetWarpName = 'warpTestZone';
 			testWarpObject.destinationFacing = 'DOWN';
 			testWarpObject.stepForwardAfterWarp = true;
 			

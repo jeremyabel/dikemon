@@ -33,11 +33,11 @@ package com.tinyrpg.data
 		
 		public function getItemByName( targetName : String ) : TinyItem
 		{
-			TinyLogManager.log('getItemByName: ' + targetName, this);
+			TinyLogManager.log( 'getItemByName: ' + targetName, this );
 			
 			// Find function
 			var findFunction : Function = function( item : *, index : int, array : Array ) : Boolean
-				{ index; array; return ( TinyItem( item ).name == targetName ); };
+				{ index; array; return ( TinyItem( item ).originalName.toUpperCase() == targetName.toUpperCase() ); };
 				
 			return this.itemList.filter( findFunction )[ 0 ];
 		}

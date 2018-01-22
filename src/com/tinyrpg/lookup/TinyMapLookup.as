@@ -43,6 +43,7 @@ package com.tinyrpg.lookup
 		private static const MAP_ISLANDBOATEXITMART		: String = 'ISLANDBOATEXITMART';
 		private static const MAP_ISLANDENTRANCE			: String = 'ISLANDENTRANCE';
 		private static const MAP_ROUTE29				: String = 'ROUTE29';
+		private static const MAP_EVENTTESTZONE			: String = 'EVENTTESTZONE';
 		
 		// City
 		[Embed(source='../../../../bin/xml/Events/City/City.xml', mimeType='application/octet-stream')] 					public static const City_Events_XML : Class;
@@ -91,6 +92,7 @@ package com.tinyrpg.lookup
 		
 		// Misc
 		[Embed(source='../../../../bin/xml/Events/Misc/Route29.xml', mimeType='application/octet-stream')] 					public static const Route29_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Test/Test.xml', mimeType='application/octet-stream')] 					public static const EventTestZone_Events_XML : Class;
 		
 		public function TinyMapLookup() : void { }
 		
@@ -146,6 +148,7 @@ package com.tinyrpg.lookup
 				
 				// Misc
 				case MAP_ROUTE29:				return new MapRoute29;
+				case MAP_EVENTTESTZONE:			return new MapEventTestZone;
 				
 				default:						return new MapTownHousePlayerFloor2;
 			}
@@ -206,6 +209,7 @@ package com.tinyrpg.lookup
 				
 				// Misc
 				case MAP_ROUTE29:				newXMLBytes = new Route29_Events_XML as ByteArray; break;
+				case MAP_EVENTTESTZONE:			newXMLBytes = new EventTestZone_Events_XML as ByteArray; break;
 				
 				default: 						newXMLBytes = new TownHousePlayerFloor2_Events_XML as ByteArray; break;
 			}

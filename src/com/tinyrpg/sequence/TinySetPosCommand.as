@@ -1,8 +1,11 @@
 package com.tinyrpg.sequence 
 {
-	import com.tinyrpg.core.TinyFieldMap;
+	import com.tinyrpg.data.TinyPositionXMLData;
+	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
+	import flash.display.DisplayObject;
 	import flash.geom.Point;
 
 	/**
@@ -10,55 +13,47 @@ package com.tinyrpg.sequence
 	 */
 	public class TinySetPosCommand 
 	{
-//		public var _target : TinyFriendSprite;
+		public var target : DisplayObject;
 		public var targetName : String;
-		public var position : Point;
-		public var facing : String;
+		public var position : TinyPositionXMLData;
 		
-		public function TinySetPosCommand() : void
-		{
-			
-		}
+		public function TinySetPosCommand() : void { }
 		
-		public function execute() : void
-		{
-//			TinyLogManager.log('execute: ' + this.target.charName, this);
-//			
-//			// Set stuff
-//			this.target.x = this.position.x;//			this.target.y = this.position.y;
-//			this.target.idleDirection(this.facing);
-		}
-
-		public static function newFromXML(xmlData : XML) : TinySetPosCommand
+		public static function newFromXML( xmlData : XML ) : TinySetPosCommand
 		{
 			var newCommand : TinySetPosCommand = new TinySetPosCommand;
 			
-//			newCommand.targetName = xmlData.child('TARGET');
-//			newCommand.facing = xmlData.child('FACING');
+			// Get target name
+			newCommand.targetName = xmlData.child( 'TARGET' ).toString().toUpperCase();
 			
-//			// Get target
-//			if (xmlData.child('TARGET') == 'PLAYER') {
-//				newCommand._target = TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics);
-//			} else {
-//				newCommand._target = TinyFieldMap.getNPCSpriteByName(xmlData.child('TARGET').toString());
-//			}
-//		
-//			// Get location
-//			newCommand.position = new Point;
-//			var posArray : Array = xmlData.child('POSITION').toString().split(',');
-//			newCommand.position.x = int(posArray[0]);
-//			newCommand.position.y = int(posArray[1]);
+			// Get location
+			newCommand.position = TinyPositionXMLData.newFromXML( xmlData.child( 'POSITION' ) );
 			
 			return newCommand;
 		}
 		
-//		public function get target() : TinyFriendSprite 
-//		{
-//			if (this._target) {
-//				return this._target;
-//			} else {
-//				return TinyFieldMap.getNPCSpriteByName(targetName);
-//			}
-//		}
+		public function execute() : void
+		{	
+			// Get target sprite from either the player or the current map
+			if ( this.targetName == 'PLAYER' ) 
+			{
+				TinyLogManager.log( 'execute: Player', this );
+				
+				this.target = TinyMapManager.getInstance().playerSprite;
+				
+				// Use the setPositionOnGrid function so that the camera tracks correctly
+				( this.target as TinyWalkSprite ).setPositionOnGrid( this.position.gridX, this.position.gridY );
+			} 
+			else 
+			{	
+				TinyLogManager.log( 'execute: ' + this.targetName, this );
+				
+				this.target = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName );
+					
+				// Set position
+				this.target.x = this.position.x;
+				this.target.y = this.position.y
+			}
+		}
 	}
 }

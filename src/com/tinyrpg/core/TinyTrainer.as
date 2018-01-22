@@ -23,10 +23,12 @@ package com.tinyrpg.core
 		protected var m_battleBitmap : Bitmap;
 		protected var m_overworldSprite : TinySpriteSheet; 
 		protected var m_isEnemy : Boolean;
+		protected var m_money : uint = 100;
 		
 		public function get name() : String { return m_name; }
 		public function get battleBitmap() : Bitmap { return m_battleBitmap; }
 		public function get isEnemy() : Boolean { return m_isEnemy; }
+		public function get money() : uint { return m_money; }
 		
 		public function TinyTrainer(battleSpriteData : BitmapData, name : String)
 		{
@@ -86,56 +88,68 @@ package com.tinyrpg.core
 		
 		public function addItem( item : TinyItem ) : void
 		{
-			TinyLogManager.log('addItem: ' + item.name, this);
-			
-			var itemInInventory : Boolean = false;
-			
+			// Check if the item exists in the inventory already 
 			for ( var i : int = 0; i < this.inventory.length; i++ )
 			{
 				var currentItem : TinyItem = this.inventory[ i ];
+				
+				// If the item has been found, increment the quantity
 				if ( currentItem.name == item.name ) 
 				{	
-					itemInInventory = true;
 					currentItem.quantity++;
 					
-					TinyLogManager.log('removeItem: ' + item.name + ' quantity = ' + currentItem.quantity, this);
-					
-					break;
+					TinyLogManager.log( 'addItem: ' + item.name + ' quantity = ' + currentItem.quantity, this );
+					return;
 				}
 			}
 			
-			if ( !itemInInventory )
-			{
-				this.inventory.push( item );
-				item.quantity = 1;
-			}
+			// If the item has not been found, add it with a quantity of 1
+			TinyLogManager.log( 'addItem: ' + item.name, this );
+			this.inventory.push( item );
+			item.quantity = 1;
 		}
 
 		public function removeItem( item : TinyItem ) : void
 		{
-			TinyLogManager.log('removeItem: ' + item.name, this);
-			
 			var itemInInventory : Boolean = false;
-						
+		
+			// Find the matching item to remove from the inventory
 			for ( var i : int = 0; i < this.inventory.length; i++ )
 			{
 				var currentItem : TinyItem = this.inventory[ i ];
+				
 				if ( currentItem.name == item.name ) 
 				{	
-					itemInInventory = true;
 					currentItem.quantity--;
 					
-					TinyLogManager.log('removeItem: ' + item.name + ' quantity = ' + currentItem.quantity, this);
-						
+					TinyLogManager.log( 'removeItem: ' + item.name + ' quantity = ' + currentItem.quantity, this );
+							
+					// If the item quantity is 0, remove the item entry from the inventory
 					if ( currentItem.quantity <= 0 )
 					{
-						var index : int = this.inventory.indexOf( currentItem );
-						this.inventory.splice( index, 1 );	
+						this.inventory.splice( this.inventory.indexOf( currentItem ), 1 );	
 					}
 					
-					break;
-				}		
+					// Item removed, exit early
+					return;
+				}
 			}
+		}
+		
+		public function addMoney( amount : int ) : void
+		{
+			TinyLogManager.log( 'addMoney: ' + amount, this );
+			
+			this.m_money += amount;
+			TinyLogManager.log( 'current money: ' + this.money, this );
+		}
+		
+		public function removeMoney( amount : int ) : void
+		{
+			TinyLogManager.log( 'removeMoney: ' + amount, this );
+			
+			this.m_money = Math.max( 0, this.m_money - amount );
+			TinyLogManager.log( 'current money: ' + this.money, this );
 		}
 	}
 }

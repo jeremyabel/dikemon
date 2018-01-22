@@ -1,10 +1,10 @@
 package com.tinyrpg.sequence 
 {
 	import com.greensock.TweenLite;
-//	import com.tinyrpg.core.TinyFieldMap;
-//	import com.tinyrpg.core.TinyFriendSprite;
-//	import com.tinyrpg.core.TinyPlayer;
-//	import com.tinyrpg.core.TinyStatsEntity;
+	
+	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.Event;
@@ -15,80 +15,73 @@ package com.tinyrpg.sequence
 	 */
 	public class TinyWalkCommand extends EventDispatcher
 	{
-//		private var _target  : TinyFriendSprite;
-		public var direction : String;
-		public var time		 : int;
-		public var sync		 : Boolean;
-		public var name		 : String;
+		public var tiles 	 	: int;
+		public var sync		 	: Boolean;
+		public var targetName	: String;
+		public var direction 	: String;
+		public var targetSprite : TinyWalkSprite;
 		
-		public function TinyWalkCommand() : void
-		{
-			
-		}
-		
-		public function execute() : void
-		{
-//			TinyLogManager.log('execute', this);
-//			
-//			this.target.facing = this.direction;
-//			
-//			switch (this.direction) 
-//			{
-//				case TinyFriendSprite.UP:
-//					this.target.walkBack();
-//					break;
-//				case TinyFriendSprite.DOWN:
-//					this.target.walkForward();
-//					break;
-//				case TinyFriendSprite.LEFT:
-//					this.target.walkLeft();
-//					break;
-//				case TinyFriendSprite.RIGHT:
-//					this.target.walkRight();
-//					break;
-//			}
-//			 
-//			// Trigger idle state after time is up
-//			TweenLite.delayedCall(this.time, this.target.idleWalk, null, true);
-//			
-//			// Immediately proceed to the next step if we're syncing with other animations
-//			if (this.sync) {
-//				this.dispatchEvent(new Event(Event.COMPLETE));
-//			} else {
-//				TweenLite.delayedCall(this.time, this.dispatchEvent, [new Event(Event.COMPLETE)], true);
-//			}
-		}
+		public function TinyWalkCommand() : void { }
 		
 		public static function newFromXML(xmlData : XML) : TinyWalkCommand
 		{
-			TinyLogManager.log('newFromXML', TinyWalkCommand);
+			var newCommand : TinyWalkCommand = new TinyWalkCommand();
 			
-			var newWalkCommand : TinyWalkCommand = new TinyWalkCommand;
-//			newWalkCommand.name = xmlData.child('TARGET');
+			// Get target name
+			newCommand.targetName = xmlData.child( 'TARGET' ).toString().toUpperCase();
 			
-//			// Get target
-//			if (xmlData.child('TARGET') == 'PLAYER') {
-//				newWalkCommand._target = TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics);
-//			} else {
-//				newWalkCommand._target = TinyFieldMap.getNPCSpriteByName(xmlData.child('TARGET'));
-//			}
-//			
-//			// Set parameters
-//			newWalkCommand.direction = xmlData.child('DIRECTION').toString().toUpperCase();
-//			newWalkCommand.time = int(xmlData.child('TIME').text());
-//			newWalkCommand.sync = (xmlData.child('SYNC').toString().toUpperCase() == 'TRUE');
+			// Get direction
+			newCommand.direction = xmlData.child( 'DIRECTION' ).toString().toUpperCase();
 			
-			return newWalkCommand;
+			// Get number of tiles to move
+			newCommand.tiles = int( xmlData.child( 'TILES' ).text() );
+			
+			// Get sync status
+			newCommand.sync = xmlData.attribute( 'sync' ) == 'TRUE';
+
+			trace( xmlData.attribute( 'sync' ) );
+			
+			return newCommand;
 		}
 		
-		public function get target() : * //TinyFriendSprite
+		public function execute() : void
+		{	
+			// Get target sprite from either the player or the current map
+			if ( this.targetName == 'PLAYER' ) 
+			{
+				TinyLogManager.log( 'execute: Player, sync: ' + this.sync, this );
+				this.targetSprite = TinyMapManager.getInstance().playerSprite;
+			} 
+			else 
+			{	
+				TinyLogManager.log( 'execute: ' + this.targetName + ', sync: ' + this.sync, this );
+				this.targetSprite = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName ).walkSprite;
+			}
+			
+			this.targetSprite.setFacing( this.direction );
+			this.targetSprite.takeSteps( this.tiles );
+			
+			// Immediately proceed to the next step if we're syncing with other animations.
+			// Otherwise, wait for the steps to be completed before proceeding.
+			if ( this.sync )
+			{
+				this.dispatchEvent( new Event( Event.COMPLETE ) );
+			}
+			else
+			{
+				this.targetSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWalkComplete );	
+			}
+		}
+		
+		private function onWalkComplete( event : Event ) : void
 		{
-			return null;
-//			if (this._target) {
-//				return this._target;
-//			} else {
-//				return TinyFieldMap.getNPCSpriteByName(this.name);
-//			}
+			TinyLogManager.log( 'onWalkComplete', this );
+				
+			// Cleanup
+			TinyMapManager.getInstance().playerSprite.removeEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWalkComplete );
+			
+			// Emit complete event after a 1-frame delay so that the sprite can come to a stop
+			TweenLite.delayedCall( 1, this.dispatchEvent, [ new Event( Event.COMPLETE ) ], true );
 		}
 	}
 }

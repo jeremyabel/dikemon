@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVENTS>
+
+	<!-- DIALOG -->
+	<EVENT_test_basic_dialog>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>This is a basic dialog event!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_basic_dialog>
+
+	<!-- DELAY -->
+	<EVENT_test_delay>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>There will be a 30 frame delay!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>30</DELAY>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Ok bye!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_delay>	
+
+	<!-- ADD_NPC -->
+	<EVENT_test_add_npc>
+		<SEQUENCE>
+			<ADD_NPC>
+				<NPC_NAME>Mr. Test NPC</NPC_NAME>
+				<SPRITE_NAME>EMO_GUY</SPRITE_NAME>
+				<FACING>LEFT</FACING>
+				<POSITION tile="true"><X>1</X><Y>13</Y></POSITION>
+			</ADD_NPC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_add_npc>
+
+	<!-- REMOVE_NPC -->
+	<EVENT_test_remove_npc>
+		<SEQUENCE>
+			<REMOVE_NPC>Remove Girl</REMOVE_NPC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_remove_npc>
+
+	<!-- SET_POS: NPC -->
+	<EVENT_test_set_pos_npc>
+		<SEQUENCE>
+			<SET_POSITION>
+				<TARGET>Set Pos Girl</TARGET>
+				<POSITION tile="true"><X>11</X><Y>13</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>Set Pos Girl</TARGET>
+				<POSITION tile="true"><X>11</X><Y>14</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>Set Pos Girl</TARGET>
+				<POSITION tile="true"><X>11</X><Y>13</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>Set Pos Girl</TARGET>
+				<POSITION tile="true"><X>12</X><Y>14</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>Set Pos Girl</TARGET>
+				<POSITION tile="true"><X>11</X><Y>13</Y></POSITION>
+			</SET_POSITION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_set_pos_npc>
+
+	<!-- SET_POS: Player -->
+	<EVENT_test_set_pos_player>
+		<SEQUENCE>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION tile="true"><X>11</X><Y>10</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION tile="true"><X>11</X><Y>9</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION tile="true"><X>12</X><Y>10</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION tile="true"><X>11</X><Y>9</Y></POSITION>
+			</SET_POSITION>
+			<DELAY>8</DELAY>
+			<SET_POSITION>
+				<TARGET>PLAYER</TARGET>
+				<POSITION tile="true"><X>11</X><Y>10</Y></POSITION>
+			</SET_POSITION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_set_pos_player>
+
+	<!-- SET_FACING: NPC -->
+	<EVENT_test_set_facing_npc>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>Set Facing Guy</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>Set Facing Guy</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>Set Facing Guy</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>Set Facing Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_set_facing_npc>
+
+	<!-- SET_FACING: Player -->
+	<EVENT_test_set_facing_player>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_set_facing_player>
+
+	<!-- SHOW_EMOTE: NPC -->
+	<EVENT_test_show_emote_npc>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Exclaim</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Fish</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Happy</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Heart</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Question</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Skull</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+				<EMOTE>Sleep</EMOTE>
+			</SHOW_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_show_emote_npc>
+
+	<!-- SHOW_EMOTE: Player -->
+	<EVENT_test_show_emote_player>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Exclaim</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Fish</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Happy</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Heart</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Question</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Skull</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Sleep</EMOTE>
+			</SHOW_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_show_emote_player>
+
+	<!-- HIDE_EMOTE: NPC -->
+	<EVENT_test_hide_emote_npc>
+		<SEQUENCE>
+			<HIDE_EMOTE>
+				<TARGET>Emote Guy</TARGET>
+			</HIDE_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_hide_emote_npc>
+
+	<!-- HIDE_EMOTE: Player -->
+	<EVENT_test_hide_emote_player>
+		<SEQUENCE>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_hide_emote_player>
+
+	<!-- GIVE_MONEY -->
+	<EVENT_test_give_money>
+		<SEQUENCE>
+			<GIVE_MONEY>20</GIVE_MONEY>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_give_money>
+
+	<!-- TAKE_MONEY -->
+	<EVENT_test_take_money>
+		<SEQUENCE>
+			<TAKE_MONEY>10</TAKE_MONEY>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_take_money>
+
+	<!-- GIVE_ITEM -->
+	<EVENT_test_give_item>
+		<SEQUENCE>
+			<GIVE_ITEM>Potion</GIVE_ITEM>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_give_item>
+
+	<!-- TAKE_ITEM -->
+	<EVENT_test_take_item>
+		<SEQUENCE>
+			<TAKE_ITEM>Potion</TAKE_ITEM>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_take_item>
+
+	<!-- PLAY_SOUND -->
+	<EVENT_test_play_sound>
+		<SEQUENCE>
+			<PLAY_SOUND>BOSS DEATH</PLAY_SOUND>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_play_sound>
+
+	<!-- PLAY_MUSIC -->
+	<EVENT_test_play_music>
+		<SEQUENCE>
+			<PLAY_MUSIC>
+				<NAME>EVAN THEME</NAME>
+			</PLAY_MUSIC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_play_music>
+
+	<!-- WALK: NPC -->
+	<EVENT_test_walk_npc>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>Walk Girl</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>Walk Girl</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>Walk Girl</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>Walk Girl</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_walk_npc>
+
+	<!-- WALK: Player -->
+	<EVENT_test_walk_player>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_walk_player>
+
+	<!-- WALK: Sync NPC -->
+	<EVENT_test_walk_sync_npc>
+		<SEQUENCE>
+			<WALK sync="TRUE">
+				<TARGET>Walk Girl</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>3</TILES>
+			</WALK>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Talkin and walkin!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_walk_sync_npc>
+
+	<!-- WALK: Sync Player -->
+	<EVENT_test_walk_sync_player>
+		<SEQUENCE>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>3</TILES>
+			</WALK>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Talkin and walkin!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_walk_sync_player>
+
+	<EVENT_test_conditional_flag>
+		<CONDITIONAL>
+			<FLAG>test_flag</FLAG>
+			<SEQUENCE>
+				<DIALOG>
+					<SPEAKER></SPEAKER>
+					<TEXT>Flag IS NOT set   [end]</TEXT>
+				</DIALOG>
+				<END></END>
+			</SEQUENCE>
+			<ELSE>
+				<SEQUENCE>
+					<DIALOG>
+						<SPEAKER></SPEAKER>
+						<TEXT>Flag IS set   [end]</TEXT>
+					</DIALOG>
+					<END></END>
+				</SEQUENCE>
+			</ELSE>
+			<END></END>
+		</CONDITIONAL>
+	</EVENT_test_conditional_flag>
+
+	<EVENT_test_player_move_sync>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+				<SYNC>TRUE</SYNC>
+			</WALK>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Talking and walking!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_player_move_sync>
+</EVENTS>

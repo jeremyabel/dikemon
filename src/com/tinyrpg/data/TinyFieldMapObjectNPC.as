@@ -13,6 +13,7 @@ package com.tinyrpg.data
 		public var spriteName 	: String;
 		public var eventName 	: String;
 		public var walkSprite 	: TinyWalkSprite;
+		public var isInGrass	: Boolean;
 		
 		public function TinyFieldMapObjectNPC() : void 
 		{
@@ -25,6 +26,12 @@ package com.tinyrpg.data
 			this.walkSprite = new TinyWalkSprite( TinySpriteLookup.getFieldSpriteId( this.spriteName ), this.facing );
 			this.walkSprite.x += 8;
 			this.walkSprite.y += 8;
+			
+			// Configure hitbox
+			this.hitbox = this.walkSprite.hitBox;
+			this.walkSprite.hitBox.owner = this;
+			
+			// Add 'em up
 			this.addChild( this.walkSprite );
 			
 			super.dataReady();

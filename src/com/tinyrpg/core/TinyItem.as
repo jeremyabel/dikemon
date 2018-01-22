@@ -22,6 +22,7 @@ package com.tinyrpg.core
 		public static var ITEM_CONTEXT_FIELD 		: String = 'ITEM_CONTEXT_FIELD';
 		
 		public var name 			: String;
+		public var originalName		: String;
 		public var description  	: String;
 		public var price 			: int;		
 		public var effect			: String;
@@ -49,6 +50,7 @@ package com.tinyrpg.core
 			TinyLogManager.log( 'newFromXML', newItem );
 			
 			// Set properties
+			newItem.originalName = xmlData.child( 'NAME' ).text();
 			newItem.name = xmlData.child( 'RENAME' ).text();
 			newItem.description = xmlData.child( 'DESCRIPTION' ).text();
 			newItem.price = int( xmlData.child( 'PRICE' ).text() );

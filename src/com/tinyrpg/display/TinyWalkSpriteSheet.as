@@ -8,6 +8,7 @@ package com.tinyrpg.display
 	import flash.geom.Rectangle;
 
 	import com.greensock.TweenMax;
+	
 	import com.tinyrpg.display.OverworldChars;
 	import com.tinyrpg.display.misc.GrassTile;
 	import com.tinyrpg.events.TinyInputEvent;

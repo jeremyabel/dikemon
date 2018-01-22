@@ -180,7 +180,11 @@ package com.tinyrpg.core
 			if ( triggerObject.requiredFacing )
 			{
 				// If the facing doesn't match, exit
-				if ( this.walkSprite.currentDirection != triggerObject.requiredFacing ) return;
+				if ( this.walkSprite.currentDirection != triggerObject.requiredFacing ) 
+				{
+					TinyLogManager.log( 'onHitTrigger: current facing does not match trigger facing', this );
+					return;
+				}
 				
 				TinyLogManager.log( 'onHitTrigger: current facing matches trigger facing', this );
 			}

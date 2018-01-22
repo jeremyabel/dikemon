@@ -14,11 +14,12 @@ package com.tinyrpg.sequence
 		public static const REMOVE_NPC	  			: String = 'REMOVE_NPC';
 		public static const SHOW_EMOTE				: String = 'SHOW_EMOTE';
 		public static const HIDE_EMOTE				: String = 'HIDE_EMOTE';
+		public static const SET_FACING				: String = 'SET_FACING';
 		public static const SUB_SEQUENCE  			: String = 'SUB_SEQUENCE';
 		public static const GIVE_ITEM	  			: String = 'GIVE_ITEM';
 		public static const TAKE_ITEM	  			: String = 'TAKE_ITEM';
-		public static const GIVE_GOLD	  			: String = 'GIVE_GOLD';
-		public static const TAKE_GOLD	  			: String = 'TAKE_GOLD';
+		public static const GIVE_MONEY	  			: String = 'GIVE_MONEY';
+		public static const TAKE_MONEY				: String = 'TAKE_MONEY';
 		public static const WALK		  			: String = 'WALK';
 		public static const SET_POSITION  			: String = 'SET_POSITION';
 		public static const SET_VISIBLITY 			: String = 'SET_VISIBILITY';

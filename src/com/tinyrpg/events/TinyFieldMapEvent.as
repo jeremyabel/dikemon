@@ -19,7 +19,6 @@ package com.tinyrpg.events
 		public static const STEP_COMPLETE		: String = 'STEP_COMPLETE';
 		public static const EVENT_COMPLETE 		: String = 'EVENT_COMPLETE'; 
 		
-		
 		public var param : * = null;
 		
 		public function TinyFieldMapEvent( type : String, param : * = null )

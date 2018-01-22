@@ -3,6 +3,7 @@ package com.tinyrpg.data
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.display.TinyWalkSprite;
 	
+	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	
 	/**
@@ -11,18 +12,16 @@ package com.tinyrpg.data
 	public class TinyFieldMapObject extends MovieClip
 	{
 		public var icon : MovieClip;
+		public var hitbox : DisplayObject;
 		
 		public function TinyFieldMapObject() : void 
 		{
-			if ( this.icon )
-			{
-				this.icon.visible = false;
-			}	 
+			this.hitbox = this;
 		}
 		
 		public function dataReady() : void
 		{
-			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.DATA_READY ) );
+			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.DATA_READY, this ) );
 		}
 	
 		public function isBlocking( walkSprite : TinyWalkSprite ) : Boolean

@@ -55,7 +55,7 @@ package com.tinyrpg.display
 			
 			this.hide();
 			
-			switch ( emoteName ) 
+			switch ( emoteName.toUpperCase() ) 
 			{
 				case EMOTE_EXCLAIM:		this.emoteExclaim.visible = true; break;
 				case EMOTE_FISH:		this.emoteFish.visible = true; break;

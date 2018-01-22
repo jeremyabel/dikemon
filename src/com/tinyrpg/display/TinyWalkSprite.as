@@ -36,14 +36,15 @@ package com.tinyrpg.display
 		private var grassOverlay : Bitmap;
 		private var prevX : int;
 		private var prevY : int;
-		private var hitBox : Sprite;
-		private var movementBox : Sprite;
+		private var movementBox : TinyWalkSpriteHitbox;
 		private var hasCollidedWithWall : Boolean;
 		private var hasCollidedWithGrass : Boolean;
 		private var hasCollidedWithObject : Boolean;
 		private var hasCollidedWithJump : Boolean;
 		private var hasCollidedWithDisable : Boolean;
+		private var eventStepCounter : uint;
 		
+		public var hitBox : TinyWalkSpriteHitbox;
 		public var emoteIcon : TinyEmoteIcon; 
 		public var lockToCamera : Boolean;
 		public var isPlayer : Boolean;
@@ -64,19 +65,10 @@ package com.tinyrpg.display
 			this.grassOverlay.y = -12;
 			this.grassOverlay.visible = false;
 			
-			this.hitBox = new Sprite;
-			this.hitBox.name = 'hitBox_' + name;
-			this.hitBox.graphics.beginFill( 0xFF00FF, 0.25 );
-			this.hitBox.graphics.drawRect( -8, -8, 16, 16 );
-			this.hitBox.graphics.endFill();
-			this.hitBox.visible = false;
-			
-			this.movementBox = new Sprite;
-			this.movementBox.name = 'movementBox_' + name;
-			this.movementBox.graphics.beginFill( 0x00FFFF, 0.25 );
-			this.movementBox.graphics.drawRect( -8, -8, 16, 16 );
-			this.movementBox.graphics.endFill();
-			this.movementBox.visible = false;
+			this.movementBox = new TinyWalkSpriteHitbox( this, 0x00FF00 );
+			this.hitBox = new TinyWalkSpriteHitbox( this, 0xFF00FF );
+//			this.movementBox.visible = false;
+//			this.hitBox.visible = false;
 			
 			this.emoteIcon = new TinyEmoteIcon();
 			this.emoteIcon.x -= 8;
@@ -85,9 +77,14 @@ package com.tinyrpg.display
 			// Add 'em up
 			this.addChild( this.spritesheet );
 			this.addChild( this.grassOverlay );
-			this.addChild( this.hitBox );
-			this.addChild( this.movementBox );
 			this.addChild( this.emoteIcon );
+			this.addChild( this.hitBox );
+			
+			// Only the player gets the movement hitbox
+			if ( this.isPlayer )
+			{
+				this.addChild( this.movementBox );
+			}
 
 			// Wait for control
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
@@ -302,10 +299,7 @@ package com.tinyrpg.display
 			this.checkObjectCollision();
 				
 			// Emit move complete event
-			if ( this.isPlayer )
-			{
-				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_COMPLETE ) );
-			}
+			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.MOVE_COMPLETE ) );
 		}
 
 		protected function onMovementUpdate( event : Event = null ) : void
@@ -353,12 +347,25 @@ package com.tinyrpg.display
 				// Dispatch relevant collision events and return a boolean value indicating if anything has been hit
 				if ( objectCollision.hit ) 
 				{
+		
+					var hitObject : TinyFieldMapObject;
+					
+					// If the collision object is from a walk sprite, pull the owner out.
+					// Otherwise just use the collision object as normal. 
+					if ( objectCollision.object is TinyWalkSpriteHitbox )
+					{
+						hitObject = ( objectCollision.object as TinyWalkSpriteHitbox ).owner;
+					}
+					else 
+					{
+						hitObject = objectCollision.object as TinyFieldMapObject;
+					}
+					
 					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, { 
-						object: objectCollision.object,
+						object: hitObject,
 						fromAcceptKeypress: fromAcceptKeypress
 					}));
 					
-					var hitObject : TinyFieldMapObject = objectCollision.object as TinyFieldMapObject;
 					return hitObject.isBlocking( this );
 				} 
 				else 
@@ -473,6 +480,15 @@ package com.tinyrpg.display
 		
 		public function takeStep() : void
 		{
+			this.takeSteps( 1 );
+		}
+		
+		public function takeSteps( numSteps : uint = 0 ) : void
+		{
+			TinyLogManager.log( 'takeSteps: ' + numSteps, this );
+			
+			this.eventStepCounter = numSteps;
+			
 			this.updateMovementHitbox();
 			this.spritesheet.startWalking( this.currentDirection );
 			this.onMovementAdvanced( this.currentDirection );
@@ -481,10 +497,22 @@ package com.tinyrpg.display
 		
 		protected function onStepComplete( event : TinyFieldMapEvent ) : void
 		{
-			this.removeEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
-			this.stop();
+			this.eventStepCounter--;
 			
-			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
+			TinyLogManager.log( 'onStepComplete: ' + this.eventStepCounter + ' left', this );
+			
+			if ( this.eventStepCounter == 0 )
+			{			
+				// Step counter is at 0, event stepping is complete	
+				this.removeEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.STEP_COMPLETE ) );
+				this.stop();
+			}
+			else
+			{
+				// Take another step
+				this.onMovementAdvanced( this.currentDirection );
+			}
 		}
 		
 		protected function hideGrassOverlay() : void
