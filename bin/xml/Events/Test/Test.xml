@@ -315,6 +315,14 @@
 		</SEQUENCE>
 	</EVENT_test_play_music>
 
+	<!-- SET_FLAG -->
+	<EVENT_test_set_flag>
+		<SEQUENCE>
+			<SET_FLAG>TEST_FLAG</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_set_flag>
+
 	<!-- WALK: NPC -->
 	<EVENT_test_walk_npc>
 		<SEQUENCE>
@@ -499,5 +507,38 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_test_conditional_name>
+
+	<!-- CONDITIONAL: Flag -->
+	<EVENT_test_conditional_flag>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>TEST_FLAG</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>test_flag is set, nice!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>Go set test_flag!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>End of Conditional   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_conditional_flag>
 
 </EVENTS>

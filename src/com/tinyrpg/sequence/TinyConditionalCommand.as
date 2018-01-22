@@ -3,6 +3,7 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.core.TinyEventSequence;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyItemDataList;
+	import com.tinyrpg.lookup.TinyEventFlagLookup;
 	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.utils.TinyLogManager;
 	
@@ -67,7 +68,10 @@ package com.tinyrpg.sequence
 			{
 				case CONDITION_FLAG:
 				{
+					isTruthy = TinyEventFlagLookup.getInstance().getFlagByName( this.conditionValue ).value;
 					
+					TinyLogManager.log( 'executing condition = flag ' + this.conditionValue + ' is set: ' + isTruthy, this );
+					break;
 				}
 				
 				case CONDITION_ITEM:
