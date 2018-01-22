@@ -401,42 +401,103 @@
 		</SEQUENCE>
 	</EVENT_test_walk_sync_player>
 
-	<EVENT_test_conditional_flag>
-		<CONDITIONAL>
-			<FLAG>test_flag</FLAG>
-			<SEQUENCE>
-				<DIALOG>
-					<SPEAKER></SPEAKER>
-					<TEXT>Flag IS NOT set   [end]</TEXT>
-				</DIALOG>
-				<END></END>
-			</SEQUENCE>
-			<ELSE>
-				<SEQUENCE>
-					<DIALOG>
-						<SPEAKER></SPEAKER>
-						<TEXT>Flag IS set   [end]</TEXT>
-					</DIALOG>
-					<END></END>
-				</SEQUENCE>
-			</ELSE>
-			<END></END>
-		</CONDITIONAL>
-	</EVENT_test_conditional_flag>
-
-	<EVENT_test_player_move_sync>
+	<!-- CONDITIONAL: Money -->
+	<EVENT_test_conditional_money>
 		<SEQUENCE>
-			<WALK>
-				<TARGET>PLAYER</TARGET>
-				<DIRECTION>RIGHT</DIRECTION>
-				<TILES>2</TILES>
-				<SYNC>TRUE</SYNC>
-			</WALK>
+			<CONDITIONAL>
+				<TYPE>MONEY</TYPE>
+				<VALUE>120</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>YOU RICH!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>GET MORE MONEY!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
 			<DIALOG>
 				<SPEAKER></SPEAKER>
-				<TEXT>Talking and walking!   [end]</TEXT>
+				<TEXT>End of Conditional   [end]</TEXT>
 			</DIALOG>
 			<END></END>
 		</SEQUENCE>
-	</EVENT_test_player_move_sync>
+	</EVENT_test_conditional_money>
+
+	<!-- CONDITIONAL: Item -->
+	<EVENT_test_conditional_item>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>ITEM</TYPE>
+				<VALUE>Potion</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>You have a Potion!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>Go get a Potion!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>End of Conditional   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_conditional_item>
+
+	<!-- CONDITIONAL: Name -->
+	<EVENT_test_conditional_name>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>NAME</TYPE>
+				<VALUE>Bob</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>Your name is Bob!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>Why isn't your name Bob?   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>End of Conditional   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_conditional_name>
+
 </EVENTS>

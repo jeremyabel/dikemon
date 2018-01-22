@@ -136,6 +136,23 @@ package com.tinyrpg.core
 			}
 		}
 		
+		public function hasItem( item : TinyItem ) : Boolean
+		{
+			for ( var i : int = 0; i < this.inventory.length; i++ )
+			{
+				var currentItem : TinyItem = this.inventory[ i ];
+				
+				if ( currentItem.name == item.name ) 
+				{
+					TinyLogManager.log( 'hasItem: ' + item.name + ', true', this );	
+					return true;
+				}
+			}
+			
+			TinyLogManager.log( 'hasItem: ' + item.name + ', false', this );
+			return false;
+		}
+		
 		public function addMoney( amount : int ) : void
 		{
 			TinyLogManager.log( 'addMoney: ' + amount, this );
