@@ -541,4 +541,19 @@
 		</SEQUENCE>
 	</EVENT_test_conditional_flag>
 
+	<!-- BATTLE -->
+	<EVENT_test_battle>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Hey jerk imma fight you!   [end]</TEXT>
+			</DIALOG>
+			<BATTLE>TRAINER_TEST</BATTLE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Aw ya beat me!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_battle>
 </EVENTS>

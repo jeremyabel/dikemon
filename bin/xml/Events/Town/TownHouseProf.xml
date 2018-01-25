@@ -1,3 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<!-- Add intro NPCs: Oak + Rival -->
+	<EVENT_intro_prefade>
+		<SEQUENCE restoreControl="false">
+			<ADD_NPC>
+				<NPC_NAME>Oak</NPC_NAME>
+				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<FACING>UP</FACING>
+				<POSITION tile="true"><X>5</X><Y>11</Y></POSITION>
+			</ADD_NPC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_intro_prefade>
+
+	<!-- Oak takes the player into the lab and ball shenanigans occur -->
+	<EVENT_intro_postfade>
+		<SEQUENCE>
+			<WALK sync="TRUE">
+				<TARGET>Oak</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>9</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+
+			<!-- Delay until Oak walks off screen (5 steps) -->
+			<DELAY>55</DELAY>
+
+			<!-- Player follows Oak -->
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>8</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+
+			<!-- Delay until Oak reaches his destination (4 steps) -->
+			<DELAY>44</DELAY>
+			<SET_FACING>
+				<TARGET>Oak</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+
+			<!-- Delay until the player reaches their destination -->
+			<DELAY>44</DELAY>
+
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>RIVAL</SPEAKER>
+				<TEXT>HEY BUBS   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_intro_postfade>
+
 </EVENTS>

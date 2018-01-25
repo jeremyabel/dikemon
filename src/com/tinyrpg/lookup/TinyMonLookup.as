@@ -27,7 +27,10 @@ package com.tinyrpg.lookup
 		
 		private var monData : XML;
 		
-		public function TinyMonLookup() : void { }
+		public function TinyMonLookup() : void
+		{ 
+		
+		}
 		
 		public function initMonsterData() : void
 		{

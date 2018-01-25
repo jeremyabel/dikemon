@@ -28,9 +28,9 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'EventTestZone';
-			testWarpObject.targetWarpName = 'warpTestZone';
-			testWarpObject.destinationFacing = 'DOWN';
+			testWarpObject.targetMapName = 'Route29';
+			testWarpObject.targetWarpName = 'warpTown1';
+			testWarpObject.destinationFacing = 'LEFT';
 			testWarpObject.stepForwardAfterWarp = true;
 			
 			TinyMonLookup.getInstance().initMonsterData();

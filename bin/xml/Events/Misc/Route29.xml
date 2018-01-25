@@ -1,3 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<!-- First sign -->
+	<EVENT_sign_route_start>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It says "Route 69"[halt] .[delay 6].[delay 6].[delay 6]but it's hard to read[delay 6], since so many people have written[delay 6] "nice" [delay 6]over the lettering.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_route_start>
+
+	<!-- Exclaim emote before Oak enters -->
+	<EVENT_oak_intro_player_surprise>
+		<SEQUENCE>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>Exclaim</EMOTE>
+			</SHOW_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_oak_intro_player_surprise>
+
+	<!-- Intro event for upper tile -->
+	<EVENT_oak_intro_start_1>
+		<SEQUENCE restoreControl="false">
+			<SUB_SEQUENCE>oak_intro_player_surprise</SUB_SEQUENCE>
+			<ADD_NPC>
+				<NPC_NAME>Oak</NPC_NAME>
+				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<FACING>LEFT</FACING>
+				<POSITION tile="true"><X>54</X><Y>8</Y></POSITION>
+			</ADD_NPC>
+			<SUB_SEQUENCE>oak_intro_bush_jokes</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_oak_intro_start_1>
+
+	<!--Intro event for lower tile -->
+	<EVENT_oak_intro_start_2>
+		<SEQUENCE restoreControl="false">
+			<SUB_SEQUENCE>oak_intro_player_surprise</SUB_SEQUENCE>
+			<ADD_NPC>
+				<NPC_NAME>Oak</NPC_NAME>
+				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<FACING>LEFT</FACING>
+				<POSITION tile="true"><X>54</X><Y>9</Y></POSITION>
+			</ADD_NPC>
+			<SUB_SEQUENCE>oak_intro_bush_jokes</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_oak_intro_start_2>
+
+	<!-- Oak stops player, warns about dangerous bushes, drags player back to the lab. -->
+	<EVENT_oak_intro_bush_jokes>
+		<SEQUENCE restoreControl="false">
+			<DIALOG>
+				<SPEAKER>SOME GUY</SPEAKER>
+				<TEXT>Hold up!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+
+			<!-- Oak walks in -->
+			<WALK>
+				<TARGET>Oak</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>6</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<DELAY>8</DELAY>
+
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Wait [name]! [halt]Dikémon hide in thick bush! [halt]You need protection before you enter the bush! [halt]Come with me.   [end]</TEXT>
+			</DIALOG>
+			
+			<DELAY>8</DELAY>
+
+			<!-- Both walk back to lab -->
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>8</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>Oak</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>8</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<DELAY>38</DELAY>
+			<WARP>
+				<MAP_NAME>TOWNHOUSEPROFESSOR</MAP_NAME>
+				<WARP_NAME>warpTown2</WARP_NAME>
+				<FACING>UP</FACING>
+				<PREFADE>intro_prefade</PREFADE>
+				<POSTFADE>intro_postfade</POSTFADE>
+				<FADE_SPEED>16</FADE_SPEED>
+				<FADE_DELAY>32</FADE_DELAY>
+			</WARP>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_oak_intro_bush_jokes>
+
 </EVENTS>

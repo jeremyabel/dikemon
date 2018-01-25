@@ -4,6 +4,7 @@ package com.tinyrpg.sequence
 	
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
+	import com.tinyrpg.events.TinySequenceEvent;
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -16,7 +17,8 @@ package com.tinyrpg.sequence
 	public class TinyWalkCommand extends EventDispatcher
 	{
 		public var tiles 	 	: int;
-		public var sync		 	: Boolean;
+		public var speed		: int;
+		public var sync		 	: Boolean; 
 		public var targetName	: String;
 		public var direction 	: String;
 		public var targetSprite : TinyWalkSprite;
@@ -36,11 +38,12 @@ package com.tinyrpg.sequence
 			// Get number of tiles to move
 			newCommand.tiles = int( xmlData.child( 'TILES' ).text() );
 			
+			// Get walk speed
+			newCommand.speed = int( xmlData.child( 'SPEED' ).text() );
+			
 			// Get sync status
 			newCommand.sync = xmlData.attribute( 'sync' ) == 'TRUE';
 
-			trace( xmlData.attribute( 'sync' ) );
-			
 			return newCommand;
 		}
 		
@@ -58,6 +61,7 @@ package com.tinyrpg.sequence
 				this.targetSprite = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName ).walkSprite;
 			}
 			
+			this.targetSprite.speed = this.speed;
 			this.targetSprite.setFacing( this.direction );
 			this.targetSprite.takeSteps( this.tiles );
 			
@@ -65,23 +69,21 @@ package com.tinyrpg.sequence
 			// Otherwise, wait for the steps to be completed before proceeding.
 			if ( this.sync )
 			{
-				this.dispatchEvent( new Event( Event.COMPLETE ) );
+				this.dispatchEvent( new TinySequenceEvent( TinySequenceEvent.WALK_COMPLETE, this ) );
 			}
-			else
+			else 
 			{
 				this.targetSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWalkComplete );	
 			}
+			
 		}
 		
 		private function onWalkComplete( event : Event ) : void
 		{
-			TinyLogManager.log( 'onWalkComplete', this );
-				
-			// Cleanup
-			TinyMapManager.getInstance().playerSprite.removeEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWalkComplete );
+			TinyLogManager.log( 'onWalkComplete - id: ' + this.targetSprite.id, this );
 			
 			// Emit complete event after a 1-frame delay so that the sprite can come to a stop
-			TweenLite.delayedCall( 1, this.dispatchEvent, [ new Event( Event.COMPLETE ) ], true );
+			TweenLite.delayedCall( 1, this.dispatchEvent, [ new TinySequenceEvent( TinySequenceEvent.WALK_COMPLETE, this ) ], true );
 		}
 	}
 }

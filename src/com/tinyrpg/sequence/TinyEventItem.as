@@ -21,6 +21,7 @@ package com.tinyrpg.sequence
 		public static const GIVE_MONEY	  			: String = 'GIVE_MONEY';
 		public static const TAKE_MONEY				: String = 'TAKE_MONEY';
 		public static const WALK		  			: String = 'WALK';
+		public static const WARP					: String = 'WARP';
 		public static const SET_POSITION  			: String = 'SET_POSITION';
 		public static const SET_VISIBLITY 			: String = 'SET_VISIBILITY';
 		public static const SHOW_OBJECT	  			: String = 'SHOW_OBJECT';

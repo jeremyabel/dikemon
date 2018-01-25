@@ -8,6 +8,7 @@ package com.tinyrpg.managers
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;	
 	import com.tinyrpg.lookup.TinySpriteLookup;
+	import com.tinyrpg.sequence.TinyWarpCommand;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.display.DisplayObject;
@@ -24,6 +25,7 @@ package com.tinyrpg.managers
 		private var m_currentMap : TinyFieldMap;
 		private var fadeTransition : TinyFadeTransitionOverlay;
 		private var warpObjectInProgress : TinyFieldMapObjectWarp;
+		private var warpCommandInProgress : TinyWarpCommand;
 		
 		public var playerSprite : TinyWalkSprite;
 		public var playerFieldState : TinyPlayerFieldState;
@@ -60,8 +62,10 @@ package com.tinyrpg.managers
 			// Fade out the current map, if there is one
 			if ( this.m_currentMap ) 
 			{
+				var fadeOutSpeed : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeSpeed : 6;
+				
 				this.fadeTransition.addEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onWarpHideComplete );
-				this.fadeTransition.fadeOutToWhite();
+				this.fadeTransition.fadeOutToWhite( fadeOutSpeed );
 			}
 			else
 			{
@@ -97,9 +101,18 @@ package com.tinyrpg.managers
 			// Move the player sprite to the destination warp
 			this.playerSprite.setPosition( destinationWarpObject.x, destinationWarpObject.y );
 			
-			// Fade in the new current map
 			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
-			this.fadeTransition.fadeInFromWhite();
+			
+			// Run any pre-fade event sequences, otherwise fade in the current map immediately
+			if ( this.warpCommandInProgress && this.warpCommandInProgress.preFadeSequenceName )
+			{
+				TinyLogManager.log( 'starting pre-fade sequence: ' + this.warpCommandInProgress.preFadeSequenceName, this );
+				this.startEventByName( this.warpCommandInProgress.preFadeSequenceName );
+			}
+			else
+			{
+				this.fadeTransition.fadeInFromWhite( 6, 12 );
+			}
 		}
 		
 		private function onWarpShowComplete( event : TinyGameEvent = null ) : void
@@ -112,22 +125,33 @@ package com.tinyrpg.managers
 			// Reset player step counter
 			this.playerFieldState.resetStepsSinceEncounter();
 			
-			// Move the player forward one step if required by the warp object
-			if ( this.warpObjectInProgress.stepForwardAfterWarp )
+			// First priority is to run any post-warp event sequences. If there are none, then proceed with
+			// normal player setup and map entry
+			if ( this.warpCommandInProgress && this.warpCommandInProgress.postFadeSequenceName )
 			{
-				// Disable map object collision while taking the first step
-				this.playerFieldState.objectCollisionEnabled = false;
-				
-				// Move forward one step
-				this.playerSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWarpStepForwardComplete );
-				this.playerSprite.takeStep(); 
+				TinyLogManager.log( 'starting post-fade sequence: ' + this.warpCommandInProgress.postFadeSequenceName, this );
+				this.startEventByName( this.warpCommandInProgress.postFadeSequenceName );
 			}
-			else 
+			else
 			{
-				// Otherwise give control to the player immediately
-				TinyInputManager.getInstance().setTarget( this.playerSprite );
+				// Move the player forward one step if required by the warp object
+				if ( this.warpObjectInProgress.stepForwardAfterWarp )
+				{
+					// Disable map object collision while taking the first step
+					this.playerFieldState.objectCollisionEnabled = false;
+					
+					// Move forward one step
+					this.playerSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onWarpStepForwardComplete );
+					this.playerSprite.takeStep(); 
+				}
+				else 
+				{
+					// Otherwise give control to the player immediately
+					TinyInputManager.getInstance().setTarget( this.playerSprite );
+				}
 			}
 			
+			this.warpCommandInProgress = null;
 			this.warpObjectInProgress = null;
 		}
 		
@@ -186,8 +210,18 @@ package com.tinyrpg.managers
 			// Clean up
 			this.m_currentMap.removeEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
 			
-			// Return control to the player
-			TinyInputManager.getInstance().setTarget( this.playerSprite );
+			// Return control to the player if the event allows it 
+			if ( event.param.restoreControl )
+			{
+				TinyInputManager.getInstance().setTarget( this.playerSprite );
+			}
+			
+			// If the completed event sequence's name matches the name of the pre-fade event sequence, then
+			// the completed event was the pre-fade sequence, so start the fade-in.
+			if ( this.warpCommandInProgress && event.param.eventName == this.warpCommandInProgress.preFadeSequenceName )
+			{
+				this.fadeTransition.fadeInFromWhite( this.warpCommandInProgress.fadeSpeed, this.warpCommandInProgress.fadeDelay );
+			}
 		}
 		
 		public function onBattleComplete() : void
@@ -199,6 +233,14 @@ package com.tinyrpg.managers
 			
 			// Return control to the player
 			TinyInputManager.getInstance().setTarget( this.playerSprite );
+		}
+		
+		public function executeWarpEventCommand( warpEventCommand : TinyWarpCommand ) : void
+		{
+			TinyLogManager.log( 'executeWarpEventCommand', this );
+			
+			this.warpCommandInProgress = warpEventCommand;
+			this.warp( this.warpCommandInProgress.warpObject );
 		}
 		
 		public function set currentMap( value : TinyFieldMap ) : void

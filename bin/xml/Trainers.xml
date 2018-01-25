@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRAINERS>
+	
+	<TRAINER>
+		<NAME></NAME>
+		<DVS></DVS>
+		<MONEY>16</MONEY>
+		<SPRITE></SPRITE>
+		<PARTY>
+			<MON><NAME></NAME><LEVEL></LEVEL></MON>
+			<MON><NAME></NAME><LEVEL></LEVEL></MON>
+		</PARTY>
+	</TRAINER>
+
+</TRAINERS>

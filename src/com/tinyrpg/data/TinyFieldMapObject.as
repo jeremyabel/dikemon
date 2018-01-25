@@ -17,6 +17,11 @@ package com.tinyrpg.data
 		public function TinyFieldMapObject() : void 
 		{
 			this.hitbox = this;
+			
+			if ( this.icon )
+			{
+				this.icon.alpha = 0.01; //false;
+			}
 		}
 		
 		public function dataReady() : void
