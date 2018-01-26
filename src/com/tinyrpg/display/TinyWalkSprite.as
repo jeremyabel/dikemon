@@ -5,7 +5,9 @@ package com.tinyrpg.display
 	import com.greensock.easing.Linear;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
+	
 	import com.tinyrpg.core.TinyFieldMap;
+	import com.tinyrpg.data.TinyCollisionData;
 	import com.tinyrpg.data.TinyFieldMapObject;
 	import com.tinyrpg.display.misc.GrassOverlay;
 	import com.tinyrpg.events.TinyFieldMapEvent;
@@ -36,7 +38,6 @@ package com.tinyrpg.display
 		private var grassOverlay : Bitmap;
 		private var prevX : int;
 		private var prevY : int;
-		private var movementBox : TinyWalkSpriteHitbox;
 		private var hasCollidedWithWall : Boolean;
 		private var hasCollidedWithGrass : Boolean;
 		private var hasCollidedWithObject : Boolean;
@@ -46,6 +47,7 @@ package com.tinyrpg.display
 		
 		public var id : uint;
 		public var speed : int;
+		public var movementBox : TinyWalkSpriteHitbox;
 		public var hitBox : TinyWalkSpriteHitbox;
 		public var emoteIcon : TinyEmoteIcon;
 		public var isPlayer : Boolean; 
@@ -356,7 +358,7 @@ package com.tinyrpg.display
 				var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
 				
 				// Check for map object collisions
-				var objectCollision = TinyMapManager.getInstance().currentMap.checkObjectCollision( hitboxToUse );
+				var objectCollision : TinyCollisionData = TinyMapManager.getInstance().currentMap.checkObjectCollision( hitboxToUse );
 				
 				// Dispatch relevant collision events and return a boolean value indicating if anything has been hit
 				if ( objectCollision.hit ) 

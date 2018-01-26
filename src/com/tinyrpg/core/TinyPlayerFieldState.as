@@ -1,6 +1,7 @@
 package com.tinyrpg.core 
 {	
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.data.TinyCollisionData;
 	import com.tinyrpg.data.TinyFieldMapObject;
 	import com.tinyrpg.data.TinyFieldMapObjectTrigger;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
@@ -96,6 +97,16 @@ package com.tinyrpg.core
 		{
 			this.stepsSinceEncounter++;
 			
+			// Check for map object collisions
+			var objectCollision : TinyCollisionData = TinyMapManager.getInstance().currentMap.checkObjectCollision( this.walkSprite.movementBox );
+			
+			// Disregard any grass collision events that intersect with object collisions. This prevents
+			// the player from possibly triggering a battle while stepping into a trigger event tile.
+			if ( objectCollision.hit ) {
+				TinyLogManager.log( 'object tile hit, disregarding grass collision', this );
+				return;
+			}
+				
 			// Wait until the step counter is at least 5 before trying to spawn an encounter.
 			// This prevents encounter-locking after battles and when entering a map. 
 			if ( this.stepsSinceEncounter <= 5 ) return;
