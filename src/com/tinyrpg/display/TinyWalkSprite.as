@@ -248,23 +248,8 @@ package com.tinyrpg.display
 
 		protected function onMovementStart( facing : String ) : void
 		{	
-			if ( this.isPlayer && !this.hasControl ) return;
-	
-			this.prevX = this.x;
-			this.prevY = this.y;
-			
-			this.currentDirection = facing;
-			this.spritesheet.setFacing( this.currentDirection );
-			this.updateMovementHitbox();
-			
-			// Check collision before every movement (player only)
-			if ( this.isPlayer )
-			{
-				this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
-				this.hasCollidedWithJump = this.checkJumpCollision();
-				this.hasCollidedWithGrass = this.checkGrassCollision();
-				this.hasCollidedWithObject = this.checkObjectCollision();
-			}
+			// Check for grass collisions
+			this.hasCollidedWithGrass = this.checkGrassCollision();
 			
 			// Show the grass overlay for a few frames if a grass collision is detected
 			if ( this.hasCollidedWithGrass )
@@ -276,6 +261,23 @@ package com.tinyrpg.display
 			else
 			{
 				this.spritesheet.setGrassVisible( false );
+			}
+			
+			if ( this.isPlayer && !this.hasControl ) return;
+	
+			this.prevX = this.x;
+			this.prevY = this.y;
+			
+			this.currentDirection = facing;
+			this.spritesheet.setFacing( this.currentDirection );
+			this.updateMovementHitbox();
+			
+			// Check for various collisions before every movement (player only)
+			if ( this.isPlayer )
+			{
+				this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
+				this.hasCollidedWithJump = this.checkJumpCollision();
+				this.hasCollidedWithObject = this.checkObjectCollision();
 			}
 			
 			// Force an early timeline completion if this sprite has collided with something (player only)
@@ -411,22 +413,20 @@ package com.tinyrpg.display
 		
 		public function checkGrassCollision( useMovementHitbox : Boolean = true ) : Boolean
 		{
-			if ( this.isPlayer && this.hasControl ) 
-			{
-				// Get the desired hitbox to test with
-				var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
-					
-				// Emit collision events depending on if some grass has been hit by the any NPC
-				var grassCollision = TinyMapManager.getInstance().currentMap.checkGrassCollision( hitboxToUse );
+			// Get the desired hitbox to test with
+			var hitboxToUse : DisplayObject = useMovementHitbox ? this.movementBox : this.hitBox;
 				
-				if ( grassCollision.hit )
-				{
-					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.GRASS_HIT, { 
-						object: grassCollision.object
-					}));
-					
-					return true;
-				}
+			// Emit collision events depending on if some grass has been hit by the any NPC
+			var grassCollision = TinyMapManager.getInstance().currentMap.checkGrassCollision( hitboxToUse );
+	
+			// Only dispatch collision events for the player			
+			if ( grassCollision.hit && this.isPlayer && this.hasControl )
+			{
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.GRASS_HIT, { 
+					object: grassCollision.object
+				}));
+				
+				return true;
 			}
 			
 			return false;
