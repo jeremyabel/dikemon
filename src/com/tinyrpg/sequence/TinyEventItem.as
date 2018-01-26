@@ -31,9 +31,10 @@ package com.tinyrpg.sequence
 		public static const PLAY_MUSIC	  			: String = 'PLAY_MUSIC';
 		public static const DELAY		  			: String = 'DELAY';
 		public static const SET_FLAG	  			: String = 'SET_FLAG';
+		public static const CLEAR_FLAG	  			: String = 'CLEAR_FLAG';
+		public static const REMOVE_TRIGGER			: String = 'REMOVE_TRIGGER';
 		public static const HEAL_ALL	  			: String = 'HEAL_ALL';
 		public static const END			  			: String = 'END';
-		public static const FINAL_END	  			: String = 'FINAL_END';
 		
 		// Battle Events
 		public static const SHOW_TRAINER 			: String = 'SHOW_TRAINER';

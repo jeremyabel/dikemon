@@ -2,5 +2,9 @@
 <FLAGS>
 	
 	<FLAG>test_flag</FLAG>
+	<FLAG>picking_ball</FLAG>
+	<FLAG>picked_ball</FLAG>
+	<FLAG>exit_lab_left</FLAG>
+	<FLAG>done_first_battle</FLAG>
 
 </FLAGS>

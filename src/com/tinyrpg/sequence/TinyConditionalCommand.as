@@ -5,6 +5,7 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.lookup.TinyEventFlagLookup;
 	import com.tinyrpg.managers.TinyGameManager;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
@@ -51,10 +52,13 @@ package com.tinyrpg.sequence
 			// Wrap the conditional sequences in an EVENT tag to create a new full event XML object
 			var xmlStringTrue  : String = '<EVENT>' + xmlData.child( 'IF_TRUE'  ).child( 'SEQUENCE' ).toXMLString() + '</EVENT>';
 			var xmlStringFalse : String = '<EVENT>' + xmlData.child( 'IF_FALSE' ).child( 'SEQUENCE' ).toXMLString() + '</EVENT>';
+
+			// Get the source XML data from the current map			
+			var sourceXML : XML = TinyMapManager.getInstance().currentMap.eventXML;
 			
 			// Create new true and false sequences
-			newCommand.trueSequence  = TinyEventSequence.newFromXML( new XML( xmlStringTrue ) );
-			newCommand.falseSequence = TinyEventSequence.newFromXML( new XML( xmlStringFalse ) );
+			newCommand.trueSequence  = TinyEventSequence.newFromXML( new XML( xmlStringTrue ), sourceXML, 'true_sequence' );
+			newCommand.falseSequence = TinyEventSequence.newFromXML( new XML( xmlStringFalse ), sourceXML, 'false_sequence' );
 			
 			return newCommand;
 		}

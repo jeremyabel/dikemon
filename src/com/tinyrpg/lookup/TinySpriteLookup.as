@@ -188,7 +188,7 @@ package com.tinyrpg.lookup
 			return newSprite;	
 		}
 		
-		public static function getTrainerSprite(name : String) : BitmapData
+		public static function getTrainerSprite( name : String ) : BitmapData
 		{
 			TinyLogManager.log('getTrainerSprite: ' + name, null);
 			

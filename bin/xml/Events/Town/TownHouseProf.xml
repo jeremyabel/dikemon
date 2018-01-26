@@ -4,15 +4,41 @@
 	<!-- Add intro NPCs: Oak + Rival -->
 	<EVENT_intro_prefade>
 		<SEQUENCE restoreControl="false">
+			<SET_FLAG>picked_ball</SET_FLAG>
 			<ADD_NPC>
-				<NPC_NAME>Oak</NPC_NAME>
+				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>5</X><Y>11</Y></POSITION>
 			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>RIVAL</NPC_NAME>
+				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<FACING>UP</FACING>
+				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
+			</ADD_NPC>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_intro_prefade>
+	
+	 <!-- Debug event which sets up testing the 2nd half of the intro -->
+	<EVENT_intro_prefade_debug>
+		<SEQUENCE>
+			<ADD_NPC>
+				<NPC_NAME>OAK</NPC_NAME>
+				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>5</X><Y>2</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>RIVAL</NPC_NAME>
+				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<FACING>UP</FACING>
+				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_intro_prefade_debug>
 
 	<!-- Oak takes the player into the lab and ball shenanigans occur -->
 	<EVENT_intro_postfade>
@@ -44,14 +70,396 @@
 
 			<!-- Delay until the player reaches their destination -->
 			<DELAY>44</DELAY>
-
 			<DELAY>8</DELAY>
+
+			<!-- Oak prompts player to pick a Dikémon and Rival gets cranky -->
+			<SHOW_EMOTE>
+				<TARGET>RIVAL</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>RIVAL</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>RIVAL</SPEAKER>
-				<TEXT>HEY BUBS   [end]</TEXT>
+				<TEXT>Gramps![delay 6] I'm tired of waiting![halt] I need to get my hands on your Dikéballs [delay 2]now!   [end]</TEXT>
 			</DIALOG>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>That's right, [delay 2] I told you to come too. [delay 6]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [delay 8]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
+			</DIALOG>
+			<SHOW_EMOTE>
+				<TARGET>RIVAL</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>RIVAL</TARGET>
+			</HIDE_EMOTE>
+			<DIALOG>
+				<SPEAKER>RIVAL</SPEAKER>
+				<TEXT>[custom_dialog_lab_rival_intro]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Be patient, [delay 2][name]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [name], make your wrong choice.   [end]</TEXT>
+			</DIALOG>
+			<SET_FLAG>picking_ball</SET_FLAG>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_intro_postfade>
+
+	<!-- Rival picks a ball and challenges Player to a battle -->
+	<EVENT_intro_after_pick>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>So [delay 2]uh[delay 2].[delay 2].[delay 2].[delay 2] These aren't real Dikémon are they?   [end]</TEXT>
+			</DIALOG>
+			<SHOW_EMOTE>
+				<TARGET>OAK</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>OAK</TARGET>
+			</HIDE_EMOTE>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird [delay 1]huh? [halt]Well, [delay 1][name], [delay 2]your turn.   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+
+			<!-- Rival walks to pick up the first ball -->
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+
+			<!-- Rival picks up ball -->
+			<SET_FACING>
+				<TARGET>RIVAL</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+
+			<!-- Rival walks back to Player -->
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+
+			<!-- Rival sasses Player, Oak tells everyone to get out -->
+			<SET_FACING>
+				<TARGET>RIVAL</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>RIVAL</SPEAKER>
+				<TEXT>I guess I'll take the one that conveniently [delay 2]couters your dumb pick.   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>RIVAL</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Great,[delay 4] now get outta here! [halt] I've got some very [delay 4]uh, [delay 4] important [delay 2]Dikémon research [delay 1]I must get back to!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<CLEAR_FLAG>picking_ball</CLEAR_FLAG>
+			<SET_FLAG>picked_ball</SET_FLAG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_intro_after_pick>
+
+	<EVENT_try_leave_lab_left>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picked_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE restoreControl="false">
+						<SET_FLAG>exit_lab_left</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE restoreControl="false"><END></END></SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<SUB_SEQUENCE>try_leave_lab</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_try_leave_lab_left>
+
+	<EVENT_try_leave_lab_right>
+		<SEQUENCE>
+			<SUB_SEQUENCE>try_leave_lab</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_try_leave_lab_right>
+
+	<EVENT_try_leave_lab>
+		<SEQUENCE restoreControl="false">
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picking_ball</VALUE>
+
+				<!-- If the Player should be picking a ball, Oak yells at them for trying to leave. -->
+				<IF_TRUE>
+					<SEQUENCE restoreControl="false">
+						<DELAY>4</DELAY>
+						<SET_FACING>
+							<TARGET>PLAYER</TARGET>
+							<FACING>UP</FACING>
+						</SET_FACING>
+						<DIALOG>
+							<SPEAKER>OAK</SPEAKER>
+							<TEXT>Hey!! [delay 4]Get back here and grab one of my balls!   [end]</TEXT>
+						</DIALOG>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>UP</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>11</SPEED>
+						</WALK>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+
+				<!-- If the Player has picked a ball but tries to leave the lab, Rival interrupts Player for a battle. -->
+				<IF_FALSE>
+					<SEQUENCE restoreControl="false">
+						<CONDITIONAL>
+							<TYPE>FLAG</TYPE>
+							<VALUE>done_first_battle</VALUE>
+							<IF_TRUE>
+								<SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_TRUE>
+
+							<IF_FALSE>
+								<SEQUENCE restoreControl="false">
+									<DELAY>4</DELAY>
+									<SET_FACING>
+										<TARGET>PLAYER</TARGET>
+										<FACING>UP</FACING>
+									</SET_FACING>
+									<DELAY>4</DELAY>
+									
+									<!-- Rival approaches player depending on which side the player tried to exit from -->
+									<CONDITIONAL>
+										<TYPE>FLAG</TYPE>
+										<VALUE>exit_lab_left</VALUE>
+										<IF_TRUE>
+											<SEQUENCE restoreControl="false">
+												<SUB_SEQUENCE>rival_approach_left</SUB_SEQUENCE>
+												<END></END>
+											</SEQUENCE>
+										</IF_TRUE>
+										<IF_FALSE>
+											<SEQUENCE restoreControl="false">
+												<SUB_SEQUENCE>rival_approach_right</SUB_SEQUENCE>
+												<END></END>
+											</SEQUENCE>
+										</IF_FALSE>
+									</CONDITIONAL>
+
+									<DIALOG>
+										<SPEAKER>RIVAL</SPEAKER>
+										<TEXT>Wait, [name]! [halt]Let's whip out our Dikémon!   [end]</TEXT>
+									</DIALOG>
+
+									<!-- TODO: BATTLE GOES HERE -->
+
+									<!-- Rival loses, yells -->
+									<DIALOG>
+										<SPEAKER>RIVAL</SPEAKER>
+										<TEXT>Damn, [delay 6]your Dikémon really is a try-hard, [delay 6]huh. [halt]Well [delay 2]I'm gonna 'roid up my Dikémon to compensate for my own sense of inadequacy. [delay 4]SMELL YA LATER, [delay 4]FUCKTARD!   [end]</TEXT>
+									</DIALOG>
+									
+									<!-- Rival exits, depending on which side the player tried to exit from -->
+									<CONDITIONAL>
+										<TYPE>FLAG</TYPE>
+										<VALUE>exit_lab_left</VALUE>
+										<IF_TRUE>
+											<SEQUENCE restoreControl="false">
+												<SUB_SEQUENCE>rival_exit_left</SUB_SEQUENCE>
+												<END></END>
+											</SEQUENCE>
+										</IF_TRUE>
+										<IF_FALSE>
+											<SEQUENCE restoreControl="false">
+												<SUB_SEQUENCE>rival_exit_right</SUB_SEQUENCE>
+												<END></END>
+											</SEQUENCE>
+										</IF_FALSE>
+									</CONDITIONAL>
+
+									<REMOVE_NPC>RIVAL</REMOVE_NPC>
+									<SET_FLAG>done_first_battle</SET_FLAG>
+
+									<END></END>
+								</SEQUENCE>
+							</IF_FALSE>
+						</CONDITIONAL>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+
+			<!-- Remove both "try leaving the lab" triggers to prevent getting stuck on them after the event is done -->
+			<REMOVE_TRIGGER>triggerTryLeaveLabLeft</REMOVE_TRIGGER>
+			<REMOVE_TRIGGER>triggerTryLeaveLabRight</REMOVE_TRIGGER>
+
+			<END></END>
+		</SEQUENCE>
+	</EVENT_try_leave_lab>
+
+	<!-- Player tries to leave from the LEFT tile and Rival approaches for battle -->
+	<EVENT_rival_approach_left>
+		<SEQUENCE restoreControl="false">
+			<DELAY>4</DELAY>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_approach_left>
+
+	<!-- Player tries to leave from the RIGHT tile and Rival approaches for battle -->
+	<EVENT_rival_approach_right>
+		<SEQUENCE restoreControl="false">
+			<DELAY>4</DELAY>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_approach_right>
+
+	<!-- Rival exits the map from the LEFT tile -->
+	<EVENT_rival_exit_left>
+		<SEQUENCE restoreControl="false">
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>8</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_exit_left>
+
+	<!-- Rival exits the map from the RIGHT tile -->
+	<EVENT_rival_exit_right>
+		<SEQUENCE restoreControl="false">
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>RIVAL</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>8</TILES>
+				<SPEED>9</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_exit_right>
+
+	<EVENT_test_ball>
+		<SEQUENCE>
+			<SET_FLAG>picked_ball</SET_FLAG>
+			<SET_FACING>
+				<TARGET>RIVAL</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<SUB_SEQUENCE>intro_after_pick</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_test_ball>
 
 </EVENTS>

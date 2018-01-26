@@ -63,12 +63,15 @@ package com.tinyrpg.display
 			
 			this.id = id;
 			this.currentDirection = initialFacing;
-			this.spritesheet = new TinyWalkSpriteSheet( id, this.currentDirection );
+			this.spritesheet = new TinyWalkSpriteSheet( this.id, this.currentDirection );
 			this.lockToCamera = lockToCamera;
 			this.isPlayer = isPlayer;
 			this.speed = MOVEMENT_SPEED;
 			
-			this.homeMapName = TinyMapManager.getInstance().currentMap.mapName;
+			if ( TinyMapManager.getInstance().currentMap )
+			{
+				this.homeMapName = TinyMapManager.getInstance().currentMap.mapName;
+			}
 			
 			this.grassOverlay = new Bitmap( new GrassOverlay() );
 			this.grassOverlay.x = -8;

@@ -6,7 +6,9 @@ package com.tinyrpg.debug
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.managers.TinyGameManager;
+	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.misc.TinyCSS;
+	import com.tinyrpg.sequence.TinyWarpCommand;
 
 	import flash.display.MovieClip;
 	import flash.display.StageAlign;
@@ -28,10 +30,14 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'Route29';
-			testWarpObject.targetWarpName = 'warpTown1';
-			testWarpObject.destinationFacing = 'LEFT';
-			testWarpObject.stepForwardAfterWarp = true;
+			testWarpObject.targetMapName = 'TownHouseProfessor';
+			testWarpObject.targetWarpName = 'warpDebug';
+			testWarpObject.destinationFacing = 'UP';
+			testWarpObject.stepForwardAfterWarp = false;
+			
+			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
+			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';
+			TinyMapManager.getInstance().warpCommandInProgress = testWarpCommand;
 			
 			TinyMonLookup.getInstance().initMonsterData();
 			TinyGameManager.getInstance().initWithTestData();
@@ -42,7 +48,6 @@ package com.tinyrpg.debug
 			TinyGameManager.getInstance().scaleX *= scaleFactor;
 			TinyGameManager.getInstance().scaleY *= scaleFactor;
 			this.addChild( TinyGameManager.getInstance() );
-			
 		}
 	}
 }

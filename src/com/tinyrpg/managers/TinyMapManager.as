@@ -25,7 +25,8 @@ package com.tinyrpg.managers
 		private var m_currentMap : TinyFieldMap;
 		private var fadeTransition : TinyFadeTransitionOverlay;
 		private var warpObjectInProgress : TinyFieldMapObjectWarp;
-		private var warpCommandInProgress : TinyWarpCommand;
+		
+		public var warpCommandInProgress : TinyWarpCommand;
 		
 		public var playerSprite : TinyWalkSprite;
 		public var playerFieldState : TinyPlayerFieldState;
