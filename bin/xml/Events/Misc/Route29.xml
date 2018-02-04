@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
+	<!-- =========================================================================================== -->
+	<!-- SIGNS -->
+	<!-- =========================================================================================== -->
+
 	<!-- First sign -->
 	<EVENT_sign_route_start>
 		<SEQUENCE>
@@ -12,9 +16,14 @@
 		</SEQUENCE>
 	</EVENT_sign_route_start>
 
+	<!-- =========================================================================================== -->
+	<!-- INTRO -->
+	<!-- =========================================================================================== -->
+
 	<!-- Exclaim emote before Oak enters -->
 	<EVENT_oak_intro_player_surprise>
 		<SEQUENCE>
+			<SET_FLAG>started_intro</SET_FLAG>
 			<DELAY>4</DELAY>
 			<SET_FACING>
 				<TARGET>PLAYER</TARGET>
@@ -114,4 +123,169 @@
 		</SEQUENCE>
 	</EVENT_oak_intro_bush_jokes>
 
+	<!-- =========================================================================================== -->
+	<!-- MEETING TEAM VOMIT -->
+	<!-- =========================================================================================== -->
+
+	<EVENT_meet_team_vomit>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>Hey there cool dude!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>You look like a winner!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Cat Thing</SPEAKER>
+				<TEXT>Meow!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Umm, [delay 6]can I get through?   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>You're in luck!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>Today is the big give-away!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>Just beat us-   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>Team Pop-And-Lock-It!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>-in a dance battle [delay 2]and win a trip to a land full of [delay 4]Dikémon!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>Exotic!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Umm, [delay 6]no?   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>Don't our moves make you want to shake your [delay 2]butt?!   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Evan 4-way spin here -->
+
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>Look at me gyrate!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Cat Thing</SPEAKER>
+				<TEXT>Me[delay 6]ow!   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Evan 4-way spin here -->
+
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>I feel [delay 2]nauseous.[delay 2].[delay 2].[halt] Are you just [delay 3]square [delay 3]dancing?   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Mercy 4-way spin here -->
+			
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>Fine then!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>If you're gonna be a turd [delay 4]then you better.[delay 2].[delay 2].   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+
+			<!-- TODO: Both 4-way spin -->
+
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>Prepare for trouble!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>And make it double!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>To protect the world from fragmentation!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>To unite all peoples in our nation!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Funky Girl</SPEAKER>
+				<TEXT>To denounce the evils of truth and love!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Fly Boy</SPEAKER>
+				<TEXT>To extend our reach to the moon above!   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Mercy 4-way spin -->
+
+			<DIALOG>
+				<SPEAKER>Mercy</SPEAKER>
+				<TEXT>Mercy!   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Evan 4-way spin -->
+
+			<DIALOG>
+				<SPEAKER>Evan</SPEAKER>
+				<TEXT>Evan!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Mercy</SPEAKER>
+				<TEXT>Team Vomit blasts chunks at the speed of light!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Evan</SPEAKER>
+				<TEXT>Surrender now or get covered in barf!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>2</DELAY>
+			<DIALOG>
+				<SPEAKER>Cat Thing</SPEAKER>
+				<TEXT>*hairball*   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Battle! -->
+
+			<DIALOG>
+				<SPEAKER>Team Vomit</SPEAKER>
+				<TEXT>Looks like Team Vomit's blasting chunks aga[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]n!   [end]</TEXT>
+			</DIALOG>
+
+			<!-- TODO: Fly off or something -->
+
+			<END></END>
+		</SEQUENCE>
+	</EVENT_meet_team_vomit>
+	
 </EVENTS>

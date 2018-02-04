@@ -30,14 +30,14 @@ package com.tinyrpg.debug
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'TownHouseProfessor';
-			testWarpObject.targetWarpName = 'warpDebug';
-			testWarpObject.destinationFacing = 'UP';
-			testWarpObject.stepForwardAfterWarp = false;
+			testWarpObject.targetMapName = 'Town';
+			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.destinationFacing = 'DOWN';
+			testWarpObject.stepForwardAfterWarp = true;
 			
-			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
-			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';
-			TinyMapManager.getInstance().warpCommandInProgress = testWarpCommand;
+//			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
+//			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';
+//			TinyMapManager.getInstance().warpCommandInProgress = testWarpCommand;
 			
 			TinyMonLookup.getInstance().initMonsterData();
 			TinyGameManager.getInstance().initWithTestData();

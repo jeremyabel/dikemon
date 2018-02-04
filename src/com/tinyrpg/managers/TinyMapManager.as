@@ -104,6 +104,22 @@ package com.tinyrpg.managers
 			
 			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
 			
+			// Wait for the map to be ready before starting the fade transition
+			this.currentMap.addEventListener( TinyFieldMapEvent.DATA_READY, this.onMapDataReady ); 
+		}
+		
+		private function onMapDataReady( event : TinyFieldMapEvent ) : void
+		{
+			TinyLogManager.log( 'onMapDataReady', this );
+			
+			// Start the post-load sequence
+			this.startEventByName( 'map_setup' );
+		}
+		
+		private function onSetupSequenceComplete() : void
+		{
+			TinyLogManager.log( 'onSetupSequenceComplete', this );
+			
 			// Run any pre-fade event sequences, otherwise fade in the current map immediately
 			if ( this.warpCommandInProgress && this.warpCommandInProgress.preFadeSequenceName )
 			{
@@ -212,7 +228,7 @@ package com.tinyrpg.managers
 			this.m_currentMap.removeEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
 			
 			// Return control to the player if the event allows it 
-			if ( event.param.restoreControl )
+			if ( event.param.restoreControl && event.param.eventName != 'map_setup' )
 			{
 				TinyInputManager.getInstance().setTarget( this.playerSprite );
 			}
@@ -222,6 +238,14 @@ package com.tinyrpg.managers
 			if ( this.warpCommandInProgress && event.param.eventName == this.warpCommandInProgress.preFadeSequenceName )
 			{
 				this.fadeTransition.fadeInFromWhite( this.warpCommandInProgress.fadeSpeed, this.warpCommandInProgress.fadeDelay );
+				return;
+			}
+			
+			// If the completed even sequence's name matches the name of the map setup event sequence, then
+			// the completed event was the setup sequence, so continue fading stuff in.
+			if ( event.param.eventName == 'map_setup' ) 
+			{
+				this.onSetupSequenceComplete();
 			}
 		}
 		

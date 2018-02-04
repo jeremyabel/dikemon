@@ -5,9 +5,13 @@
 	<FLAG>test_flag</FLAG>
 
 	<!-- Intro -->
+	<FLAG>started_intro</FLAG>
 	<FLAG>picking_ball</FLAG>
 	<FLAG>picked_ball</FLAG>
 	<FLAG>exit_lab_left</FLAG>
 	<FLAG>done_first_battle</FLAG>
+
+	<!-- Town: Oak's Lab -->
+	<FLAG>scientist_gave_potion</FLAG>
 
 </FLAGS>

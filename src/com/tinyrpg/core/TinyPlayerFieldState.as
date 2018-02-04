@@ -179,6 +179,9 @@ package com.tinyrpg.core
 			
 			// Set the NPC to face the player
 			npcObject.setFacingFromPlayerFacing( this.walkSprite.currentDirection );
+			
+			// Play the NPC's event
+			TinyMapManager.getInstance().startEventByName( npcObject.eventName );
 		}
 		
 		private function onHitTrigger( triggerObject : TinyFieldMapObjectTrigger, fromAcceptKeypress : Boolean ) : void

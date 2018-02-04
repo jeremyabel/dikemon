@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>started_intro</VALUE>
+				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>triggerTryLeaveLabLeft</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerTryLeaveLabRight</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall1</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall2</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall3</REMOVE_TRIGGER>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>done_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>triggerTryLeaveLabLeft</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerTryLeaveLabRight</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall1</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall2</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerBall3</REMOVE_TRIGGER>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<!-- =========================================================================================== -->
+	<!-- INTRO -->
+	<!-- =========================================================================================== -->
+
 	<!-- Add intro NPCs: Oak + Rival + 3 Balls -->
 	<EVENT_intro_prefade>
 		<SEQUENCE restoreControl="false">
+			<REMOVE_NPC>Oak At PC</REMOVE_NPC>
 			<ADD_NPC>
 				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<EVENT_NAME>talk_oak</EVENT_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>5</X><Y>11</Y></POSITION>
 			</ADD_NPC>
 			<ADD_NPC>
 				<NPC_NAME>RIVAL</NPC_NAME>
 				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<EVENT_NAME>talk_rival</EVENT_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
 			</ADD_NPC>
@@ -41,17 +84,20 @@
 	 <!-- Debug event which sets up testing the 2nd half of the intro -->
 	<EVENT_intro_prefade_debug>
 		<SEQUENCE>
+			<REMOVE_NPC>Oak At PC</REMOVE_NPC>
 			<!-- <SET_FLAG>picked_ball</SET_FLAG> -->
 			<SET_FLAG>picking_ball</SET_FLAG>
 			<ADD_NPC>
 				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
+				<EVENT_NAME>talk_oak</EVENT_NAME>
 				<FACING>DOWN</FACING>
 				<POSITION tile="true"><X>5</X><Y>2</Y></POSITION>
 			</ADD_NPC>
 			<ADD_NPC>
 				<NPC_NAME>RIVAL</NPC_NAME>
 				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<EVENT_NAME>talk_rival</EVENT_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
 			</ADD_NPC>
@@ -120,11 +166,11 @@
 			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>RIVAL</SPEAKER>
-				<TEXT>Gramps![delay 6] I'm tired of waiting![halt] I need to get my hands on your Dikéballs [delay 2]now!   [end]</TEXT>
+				<TEXT>Gramps![delay 6] I'm tired of waiting![halt] I need to get my hands on your Dikéballs now!   [end]</TEXT>
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>That's right, [delay 2] I told you to come too. [delay 6]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
+				<TEXT>That's right, [delay 2] I told you to come too. [halt]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>RIVAL</TARGET>
@@ -152,7 +198,7 @@
 		<SEQUENCE>
 			<DIALOG>
 				<SPEAKER>PLAYER</SPEAKER>
-				<TEXT>So [delay 2]uh[delay 2].[delay 2].[delay 2].[delay 2] These aren't [delay 4]real [delay 4]Dikémon, [delay 8]are they?   [end]</TEXT>
+				<TEXT>So [delay 2]uh[delay 2].[delay 2].[delay 2].[delay 2] These aren't real Dikémon, [delay 8]are they?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>OAK</TARGET>
@@ -164,7 +210,7 @@
 			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird [delay 1]huh? [halt]Well, [delay 4][name], [delay 4]your turn.   [end]</TEXT>
+				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird, huh? [halt]Well, [delay 4][name], [delay 4]your turn.   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
 
@@ -217,7 +263,7 @@
 			<DELAY>8</DELAY>
 			<DIALOG>
 				<SPEAKER>RIVAL</SPEAKER>
-				<TEXT>I guess I'll take the one that conveniently [delay 2]couters your dumb pick.   [end]</TEXT>
+				<TEXT>I guess I'll take the one that conveniently couters your dumb pick.   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
 			<SET_FACING>
@@ -231,7 +277,41 @@
 			<DELAY>8</DELAY>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>Great, [delay 6]now get outta here! [halt]I've got some very [delay 4]uh, [delay 6] important [delay 4]Dikémon research [delay 4]I must get back to!   [end]</TEXT>
+				<TEXT>Great, [delay 6]now get outta here! [halt]I've got some very uh, [delay 6]important Dikémon research I must get back to!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+
+			<!-- Oak walks away, then remembers something and walks back and tells Player to go to the city -->
+			<WALK>
+				<TARGET>OAK</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>4</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>OAK</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>OAK</TARGET>
+			</HIDE_EMOTE>
+			<WALK>
+				<TARGET>OAK</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>2</DELAY>
+			<SET_FACING>
+				<TARGET>OAK</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Oh and [name], [delay 4]I heard some people were looking for you in Cherrygrove City to the west. [halt]You should probably go there, or whatever.   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
 
@@ -347,7 +427,7 @@
 									<!-- Rival loses, yells -->
 									<DIALOG>
 										<SPEAKER>RIVAL</SPEAKER>
-										<TEXT>Damn, [delay 6]your Dikémon really is a try-hard, [delay 6]huh. [halt]Well [delay 2]I'm gonna 'roid up my Dikémon to compensate for my own sense of inadequacy. [delay 4]SMELL YA LATER, [delay 4]FUCKTARD!   [end]</TEXT>
+										<TEXT>Damn, [delay 6]your Dikémon really is a try-hard, [delay 6]huh. [halt]Well, I'm gonna 'roid up my Dikémon to compensate for my own sense of inadequacy. [halt]SMELL YA LATER, FUCKTARD!   [end]</TEXT>
 									</DIALOG>
 									
 									<!-- Rival exits, depending on which side the player tried to exit from -->
@@ -493,7 +573,7 @@
 						</HIDE_EMOTE>
 						<DIALOG>
 							<SPEAKER>OAK</SPEAKER>
-							<TEXT>You idiot, [delay 8]that's a goddamn [delay 4]bucket! [halt]Try a different one.   [end]</TEXT>
+							<TEXT>You idiot, [delay 8]that's a goddamn bucket! [halt]Try a different one.   [end]</TEXT>
 						</DIALOG>
 						<END></END>
 					</SEQUENCE>
@@ -512,7 +592,7 @@
 	<EVENT_pick_ball_2>
 		<SEQUENCE>
 			<CHOOSE_STARTER>
-				<NAME>STARTER</NAME>
+				<NAME>TALL GRASS</NAME>
 				<IF_YES>
 					<SEQUENCE restoreControl="false">
 						<SUB_SEQUENCE>return_from_ball_choice</SUB_SEQUENCE>
@@ -556,6 +636,7 @@
 							<SPEAKER>PLAYER</SPEAKER>
 							<TEXT>There. Much better.   [end]</TEXT>
 						</DIALOG>
+						<REMOVE_TRIGGER>triggerBall3</REMOVE_TRIGGER>
 						<END></END>
 					</SEQUENCE>
 				</IF_TRUE>
@@ -575,7 +656,7 @@
 									</HIDE_EMOTE>
 									<DIALOG>
 										<SPEAKER>OAK</SPEAKER>
-										<TEXT>Look, [delay 6]if you try and battle [delay 4]with that thing, [delay 6]I'm pretty sure your mom would disown [delay 4]you from the shame. [halt]Try again.   [end]</TEXT>
+										<TEXT>Look, [delay 6]if you try and battle with that thing, [delay 6]I'm pretty sure your mom would disown you from the shame. [halt]Try again.   [end]</TEXT>
 									</DIALOG>
 									<END></END>
 								</SEQUENCE>
@@ -597,6 +678,8 @@
 	<!-- Player walks back to Oak after picking their starter -->
 	<EVENT_return_from_ball_choice restoreControl="false">
 		<SEQUENCE>
+			<REMOVE_TRIGGER>triggerBall1</REMOVE_TRIGGER>
+			<REMOVE_TRIGGER>triggerBall2</REMOVE_TRIGGER>
 			<DELAY>10</DELAY>
 			<REMOVE_NPC>BALL 2</REMOVE_NPC>
 			<DELAY>10</DELAY>
@@ -625,10 +708,159 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_return_from_ball_choice>
+	
+
+	<!-- =========================================================================================== -->
+	<!-- NPCS -->
+	<!-- =========================================================================================== -->	
+
+	<!-- Talking to Oak during the intro -->
+	<EVENT_talk_oak>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picking_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>OAK</SPEAKER>
+							<TEXT>Go ahead, [delay 6] touch one!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picked_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>OAK</SPEAKER>
+							<TEXT>Get outta here!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_oak>
+
+	<!-- Talking to Rival during the intro -->
+	<EVENT_talk_rival>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picking_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Heh, I don't need to be greedy like you! [halt]Go ahead and choose, dingus!    [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Aren't you supposed to be leaving?   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_rival>
+
+	<!-- Talking to Oak at the PC after the intro -->
+	<EVENT_talk_oak_at_pc>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>Oak At PC</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>15</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Oak At PC</TARGET>
+			</HIDE_EMOTE>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Jeez don't stand behind me like that! [halt]Get outta here!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>Oak At PC</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_oak_at_pc>
+
+	<!-- Talking to the scientist before / after the intro -->
+	<EVENT_talk_scientist>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>scientist_gave_potion</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Oak's Aide</SPEAKER>
+							<TEXT>There's only two of us, so work is pretty hard, heh heh.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+
+					<!-- Scientist gives a potion after the first battle -->
+					<SEQUENCE>
+						<CONDITIONAL>
+							<TYPE>FLAG</TYPE>
+							<VALUE>picked_ball</VALUE>
+							<IF_TRUE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Oak's Aide</SPEAKER>
+										<TEXT>[name], I want you to have this for your trip to the city.   [end]</TEXT>
+									</DIALOG>
+									<GIVE_ITEM>Potion</GIVE_ITEM>
+									<SET_FLAG>scientist_gave_potion</SET_FLAG>
+									<DELAY>8</DELAY>
+									<DIALOG>
+										<SPEAKER></SPEAKER>
+										<TEXT>You got an OKFeels™ Spray!   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</IF_TRUE>
+							<IF_FALSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Oak's Aide</SPEAKER>
+										<TEXT>There's only two of us, so work is pretty hard, heh heh.   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</IF_FALSE>
+						</CONDITIONAL>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_scientist>
 
 
 	<!-- =========================================================================================== -->
-	<!-- MISC THINGS (not related to the intro) 													 -->
+	<!-- OBJECTS -->
 	<!-- =========================================================================================== -->
 
 	<!-- Check Computer -->
@@ -647,11 +879,48 @@
 		<SEQUENCE>
 			<DIALOG>
 				<SPEAKER></SPEAKER>
-				<TEXT>There's a spinning 3D DNA molecule on screen. [delay 4]Fancy!   [end]</TEXT>
+				<TEXT>There's a spinning 3D DNA molecule on screen. Fancy!   [end]</TEXT>
 			</DIALOG>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_check_machine>
+
+	<!-- Check trashcan by the table -->
+	<EVENT_check_trashcan>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>There's like 20 empty cans of prunes in here...   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_trashcan>
+
+	<!-- Check the healer -->
+	<EVENT_check_healer>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picked_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<!-- TODO: Heal all mons -->
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>This looks like a device for healing your busted Dikémon.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_healer>
 
 	<!-- Check Bookshelf 1 -->
 	<EVENT_check_books_1>
