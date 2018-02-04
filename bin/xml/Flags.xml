@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FLAGS>
 	
+	<!-- Development -->
 	<FLAG>test_flag</FLAG>
+
+	<!-- Intro -->
 	<FLAG>picking_ball</FLAG>
 	<FLAG>picked_ball</FLAG>
 	<FLAG>exit_lab_left</FLAG>

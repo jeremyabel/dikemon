@@ -83,6 +83,7 @@ package com.tinyrpg.lookup
 		public static var NPC_FAIRY_MON			: int = 432;
 		public static var NPC_BIRD_MON			: int = 438;
 		public static var NPC_DRAGON_MON		: int = 444;
+		public static var NPC_DIKEBALL			: int = 472;
 		
 		public static function getFieldSpriteId( name : String ) : int
 		{
@@ -162,6 +163,7 @@ package com.tinyrpg.lookup
 				case "FAIRY MON":			return NPC_FAIRY_MON;
 				case "BIRD MON":			return NPC_BIRD_MON;
 				case "DRAGON MON":			return NPC_DRAGON_MON;
+				case "DIKEBALL":			return NPC_DIKEBALL;
 			}
 		}
 

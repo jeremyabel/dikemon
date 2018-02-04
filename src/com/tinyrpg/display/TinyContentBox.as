@@ -15,13 +15,19 @@ package com.tinyrpg.display
 		protected var boxWidth : uint;
 		protected var boxHeight : uint; 
 		
-		public function TinyContentBox(content : DisplayObject, width : uint = 0, height : uint = 0, opaque : Boolean = false)
+		public function TinyContentBox( content : DisplayObject, width : uint = 0, height : uint = 0, centerContent : Boolean = false )
 		{
 			this.content = content;
 			this.containerBox = new Sprite;
 			
 			this.boxWidth = width;
 			this.boxHeight = height;
+			
+			if ( centerContent ) 
+			{
+				this.content.x = ( this.boxWidth / 2 ) - ( this.content.width / 2 );
+				this.content.y = ( this.boxHeight / 2 ) - ( this.content.height / 2 );
+			}
 			
 			var cornerUpLeft 	: DisplayObject;
 			var cornerUpRight	: DisplayObject;

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
-	<!-- Add intro NPCs: Oak + Rival -->
+	<!-- Add intro NPCs: Oak + Rival + 3 Balls -->
 	<EVENT_intro_prefade>
 		<SEQUENCE restoreControl="false">
-			<SET_FLAG>picked_ball</SET_FLAG>
 			<ADD_NPC>
 				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
@@ -17,6 +16,24 @@
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
 			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 1</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>6</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 2</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>7</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 3</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>8</X><Y>3</Y></POSITION>
+			</ADD_NPC>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_intro_prefade>
@@ -24,6 +41,8 @@
 	 <!-- Debug event which sets up testing the 2nd half of the intro -->
 	<EVENT_intro_prefade_debug>
 		<SEQUENCE>
+			<!-- <SET_FLAG>picked_ball</SET_FLAG> -->
+			<SET_FLAG>picking_ball</SET_FLAG>
 			<ADD_NPC>
 				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
@@ -35,6 +54,24 @@
 				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 1</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>6</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 2</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>7</X><Y>3</Y></POSITION>
+			</ADD_NPC>
+			<ADD_NPC>
+				<NPC_NAME>BALL 3</NPC_NAME>
+				<SPRITE_NAME>DIKEBALL</SPRITE_NAME>
+				<FACING>DOWN</FACING>
+				<POSITION tile="true"><X>8</X><Y>3</Y></POSITION>
 			</ADD_NPC>
 			<END></END>
 		</SEQUENCE>
@@ -87,7 +124,7 @@
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>That's right, [delay 2] I told you to come too. [delay 6]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [delay 8]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
+				<TEXT>That's right, [delay 2] I told you to come too. [delay 6]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>RIVAL</TARGET>
@@ -103,7 +140,7 @@
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>Be patient, [delay 2][name]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [name], make your wrong choice.   [end]</TEXT>
+				<TEXT>Be patient, [delay 2][name]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [delay 4][name], [delay 4]make your dumb choice.   [end]</TEXT>
 			</DIALOG>
 			<SET_FLAG>picking_ball</SET_FLAG>
 			<END></END>
@@ -115,7 +152,7 @@
 		<SEQUENCE>
 			<DIALOG>
 				<SPEAKER>PLAYER</SPEAKER>
-				<TEXT>So [delay 2]uh[delay 2].[delay 2].[delay 2].[delay 2] These aren't real Dikémon are they?   [end]</TEXT>
+				<TEXT>So [delay 2]uh[delay 2].[delay 2].[delay 2].[delay 2] These aren't [delay 4]real [delay 4]Dikémon, [delay 8]are they?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>OAK</TARGET>
@@ -127,7 +164,7 @@
 			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird [delay 1]huh? [halt]Well, [delay 1][name], [delay 2]your turn.   [end]</TEXT>
+				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird [delay 1]huh? [halt]Well, [delay 4][name], [delay 4]your turn.   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
 
@@ -150,6 +187,8 @@
 				<TARGET>RIVAL</TARGET>
 				<FACING>UP</FACING>
 			</SET_FACING>
+			<DELAY>8</DELAY>
+			<REMOVE_NPC>BALL 1</REMOVE_NPC>
 			<DELAY>8</DELAY>
 
 			<!-- Rival walks back to Player -->
@@ -192,11 +231,14 @@
 			<DELAY>8</DELAY>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>Great,[delay 4] now get outta here! [halt] I've got some very [delay 4]uh, [delay 4] important [delay 2]Dikémon research [delay 1]I must get back to!   [end]</TEXT>
+				<TEXT>Great, [delay 6]now get outta here! [halt]I've got some very [delay 4]uh, [delay 6] important [delay 4]Dikémon research [delay 4]I must get back to!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
+
+			<!-- Set the flag which triggers the next bit to happen when the player tries to leave the lab -->
 			<CLEAR_FLAG>picking_ball</CLEAR_FLAG>
 			<SET_FLAG>picked_ball</SET_FLAG>
+
 			<END></END>
 		</SEQUENCE>
 	</EVENT_intro_after_pick>
@@ -434,8 +476,130 @@
 		</SEQUENCE>
 	</EVENT_rival_exit_right>
 
-	<EVENT_test_ball>
+	<!-- Player picks useless BUCKET ball. Oak yells -->
+	<EVENT_pick_ball_1>
 		<SEQUENCE>
+			<CHOOSE_STARTER>
+				<NAME>BUCKET</NAME>
+				<IF_YES>
+					<SEQUENCE>
+						<SHOW_EMOTE>
+							<TARGET>OAK</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<DELAY>20</DELAY>
+						<HIDE_EMOTE>
+							<TARGET>OAK</TARGET>
+						</HIDE_EMOTE>
+						<DIALOG>
+							<SPEAKER>OAK</SPEAKER>
+							<TEXT>You idiot, [delay 8]that's a goddamn [delay 4]bucket! [halt]Try a different one.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_YES>
+				<IF_NO>
+					<SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_NO>
+			</CHOOSE_STARTER>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_pick_ball_1>
+
+	<!-- Player picks the second ball, which is the only actual choice -->
+	<EVENT_pick_ball_2>
+		<SEQUENCE>
+			<CHOOSE_STARTER>
+				<NAME>STARTER</NAME>
+				<IF_YES>
+					<SEQUENCE restoreControl="false">
+						<SUB_SEQUENCE>return_from_ball_choice</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_YES>
+				<IF_NO>
+					<SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_NO>
+			</CHOOSE_STARTER>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_pick_ball_2>
+
+	<!-- Before picking a ball: Player picks useless SHOE ball. Oak yells again -->
+	<!-- After picking a ball: Player pushes the extra ball into the trash -->
+	<EVENT_pick_ball_3>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picked_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Let me just[delay 4].[delay 4].[delay 4].[delay 4] take care of this.[delay 2].[delay 2].[delay 2].   [end]</TEXT>
+						</DIALOG>
+						<DELAY>4</DELAY>
+						<WALK>
+							<TARGET>BALL 3</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>60</SPEED>
+						</WALK>
+						<DELAY>3</DELAY>
+						<REMOVE_NPC>BALL 3</REMOVE_NPC>
+						<DELAY>10</DELAY>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>There. Much better.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<CHOOSE_STARTER>
+							<NAME>SHOE</NAME>
+							<IF_YES>
+								<SEQUENCE>
+									<SHOW_EMOTE>
+										<TARGET>OAK</TARGET>
+										<EMOTE>EXCLAIM</EMOTE>
+									</SHOW_EMOTE>
+									<DELAY>20</DELAY>
+									<HIDE_EMOTE>
+										<TARGET>OAK</TARGET>
+									</HIDE_EMOTE>
+									<DIALOG>
+										<SPEAKER>OAK</SPEAKER>
+										<TEXT>Look, [delay 6]if you try and battle [delay 4]with that thing, [delay 6]I'm pretty sure your mom would disown [delay 4]you from the shame. [halt]Try again.   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</IF_YES>
+							<IF_NO>
+								<SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_NO>
+						</CHOOSE_STARTER>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_pick_ball_3>
+
+	<!-- Player walks back to Oak after picking their starter -->
+	<EVENT_return_from_ball_choice restoreControl="false">
+		<SEQUENCE>
+			<DELAY>10</DELAY>
+			<REMOVE_NPC>BALL 2</REMOVE_NPC>
+			<DELAY>10</DELAY>
 			<SET_FLAG>picked_ball</SET_FLAG>
 			<SET_FACING>
 				<TARGET>RIVAL</TARGET>
@@ -444,7 +608,7 @@
 			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
-				<TILES>1</TILES>
+				<TILES>2</TILES>
 				<SPEED>11</SPEED>
 			</WALK>
 			<WALK>
@@ -460,6 +624,154 @@
 			<SUB_SEQUENCE>intro_after_pick</SUB_SEQUENCE>
 			<END></END>
 		</SEQUENCE>
-	</EVENT_test_ball>
+	</EVENT_return_from_ball_choice>
 
+
+	<!-- =========================================================================================== -->
+	<!-- MISC THINGS (not related to the intro) 													 -->
+	<!-- =========================================================================================== -->
+
+	<!-- Check Computer -->
+	<EVENT_check_computer>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It's just a hollow plastic box painted to look like a computer!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_computer>
+
+	<!-- Check machine by bookshelves -->
+	<EVENT_check_machine>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>There's a spinning 3D DNA molecule on screen. [delay 4]Fancy!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_machine>
+
+	<!-- Check Bookshelf 1 -->
+	<EVENT_check_books_1>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Ethical Dikémon Eugenics"  [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_1>
+
+	<!-- Check Bookshelf 2 -->
+	<EVENT_check_books_2>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"The Leg Bone's Connected to the What Now? Basic Human Anatomy for Idiots"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_2>
+
+	<!-- Check Bookshelf 3 -->
+	<EVENT_check_books_3>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Introduction to Office Planning for Dungeon Masters"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_3>
+
+	<!-- Check Bookshelf 4 -->
+	<EVENT_check_books_4>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"101 Easy Recipies For That Goo In Those Glass Specimin Storage Tanks You See In Sci-Fi Movies Sometimes"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_4>
+
+	<!-- Check Bookshelf 5 -->
+	<EVENT_check_books_5>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Beaks N' Things: Wholesale Taxidermy Supply Catalog"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_5>
+
+	<!-- Check Bookshelf 3 -->
+	<EVENT_check_books_6>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Chimp Limbs: Theory And Practice"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_6>
+
+	<!-- Check Bookshelf 7 -->
+	<EVENT_check_books_7>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"1-2-3 Abomination! The Easy Guide to Birthing Unholy Creations in your Own Kitchen"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_7>
+
+	<!-- Check Bookshelf 8 -->
+	<EVENT_check_books_8>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"The Great Dikéxplorers"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_8>
+
+	<!-- Check Bookshelf 9 -->
+	<EVENT_check_books_9>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"My Life In Fish Prison" by Gleonard Magikarp   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_9>
+
+	<!-- Check Bookshelf 10 -->
+	<EVENT_check_books_10>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Are You There God? It's Me, Pikachu: My Journey To Jesus"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_10>
+
+	<!-- Check Bookshelf 11 -->
+	<EVENT_check_books_11>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>The shelf is entirely taken up with an entire 102-volume set of "The Schtain's Guide To Collecting Erotic Push-Puppets"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books_11>
+	
 </EVENTS>

@@ -15,32 +15,34 @@ package com.tinyrpg.ui
 	public class TinyDialogSelectList extends TinyDialogBox 
 	{
 		public var selectList : TinyTwoChoiceList;
-		public var choiceOneSeq : TinyEventSequence;
-		public var choiceTwoSeq : TinyEventSequence;
 		
 		private var textField  : TextField;
 		
-		public function TinyDialogSelectList(selectItems : Array, introDialogText : String, horizontal : Boolean = false, horizontalSpacing : int = 0, speaker : String = '', width : int = 288, height : int = 56) : void
+		public function TinyDialogSelectList(selectItems : Array, introDialogText : String, horizontal : Boolean = false, horizontalSpacing : int = 0, speaker : String = '', width : int = 144, height : int = 33) : void
 		{
 			super(speaker, width, height);
 			
 			// Show dialog
 			this.textField = TinyFontManager.returnTextField();
 			this.textField.htmlText = TinyFontManager.returnHtmlText(introDialogText, 'dialogText');
-			this.textField.x = 7;
-			this.textField.y = -3;
+			this.textField.x = 0;
+			this.textField.y = -4;
 			
 			// Make select list
 			this.selectList = new TinyTwoChoiceList('', selectItems, width, height, 11, 0, 0, horizontal, horizontalSpacing);
 			this.selectList.containerBox.visible = false;
 			
 			// Deal with horizontalness
-			if (horizontal) {
-				this.selectList.x = 200;
-				this.selectList.y = -3;
-			} else {
+			if (horizontal) 
+			{
+				this.selectList.x = 3;
+				this.selectList.y = 20;
+			} 
+			else 
+			{
 				this.selectList.x = 2;
-				if (introDialogText == '') {
+				
+				if ( introDialogText == '' ) {
 					this.selectList.y = 0;
 				} else {
 					this.selectList.y = 6;
@@ -97,9 +99,6 @@ package com.tinyrpg.ui
 			
 			// Make new dialog select thing
 			var newDialogSelectList : TinyDialogSelectList = new TinyDialogSelectList([choiceOne, choiceTwo], xmlData.child('INTRO_TEXT').toString(), false, 0, xmlData.child('SPEAKER').toString());	
-			
-			// Make choice sequences
-			newDialogSelectList.choiceOneSeq = TinyEventSequence.newFromXML(choiceOneXML);			newDialogSelectList.choiceTwoSeq = TinyEventSequence.newFromXML(choiceTwoXML);
 			
 			return newDialogSelectList;
 		}

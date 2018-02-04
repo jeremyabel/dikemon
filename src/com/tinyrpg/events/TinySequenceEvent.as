@@ -10,6 +10,7 @@ package com.tinyrpg.events
 		public static var SEQUENCE_END 		: String = 'SEQUENCE_END';
 		public static var DIALOG_COMPLETE 	: String = 'DIALOG_COMPLETE';
 		public static var WALK_COMPLETE		: String = 'WALK_COMPLETE';
+		public static var CHOICE_COMPLETE	: String = 'CHOICE_COMPLETE';
 		
 		public var param : *;
 		
