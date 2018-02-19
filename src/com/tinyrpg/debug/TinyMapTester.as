@@ -1,7 +1,9 @@
 package com.tinyrpg.debug 
 {
+	import com.tinyrpg.core.TinyPlayer;
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
+	import com.tinyrpg.lookup.TinyEventFlagLookup;
 	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
@@ -28,10 +30,13 @@ package com.tinyrpg.debug
 			// Init font manager
 			var tinyCSS : TinyCSS = new TinyCSS();
 			TinyFontManager.initWithCSS( TinyCSS.cssString );
+	
+			TinyEventFlagLookup.getInstance().getFlagByName( 'finished_intro_cutscene' ).value = true;
+			TinyPlayer.getInstance().usedRepel = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'Town';
-			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.targetMapName = 'TownHousePlayerFloor2';
+			testWarpObject.targetWarpName = 'warpHousePlayerFloor1';
 			testWarpObject.destinationFacing = 'DOWN';
 			testWarpObject.stepForwardAfterWarp = true;
 			

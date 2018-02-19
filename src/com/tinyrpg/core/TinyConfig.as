@@ -12,5 +12,6 @@ package com.tinyrpg.core
 		public static var SCREEN_WIDTH  : uint = 160;
 		public static var SCREEN_HEIGHT : uint = 144;
 		public static var TEXT_SPEED : uint = 1;
+		public static var TEXT_SPEED_FAST : uint = 3;
 	}
 }

@@ -11,6 +11,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinyBattleTurnArrow;
 	import com.tinyrpg.display.TinyTitleBox;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.events.TinyAutotypeTextEvent;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -24,52 +25,45 @@ package com.tinyrpg.ui
 	{
 		private var dialogSequence : Array = [];
 		private var textField : TinyAutotypeTextField;
-		private var textSpeed : int;
 		private var nextArrow : TinyBattleTurnArrow;
 		private var textMask : Sprite;
 		private var arrowTween : TweenMax; 
 		private var hasControl : Boolean = false;
 		private var atEnd : Boolean = false;
-		private var skipping : Boolean = false;
 		private var savedDialogSequence : Array = [];
+		private var parsedText : String = '';
 
 		public var battle : Boolean = false;
 		public var time : int = 0;
 
 		private static var dialogXML : XML;
 
-		public function TinyDialogBox(speaker : String, width : int = 144, height : int = 33, time : int = 0)
+		public function TinyDialogBox( speaker : String, width : int = 144, height : int = 33, time : int = 0 )
 		{
 			super( null, '', width, height );
 			
 			this.time = time;
 
 			// Set speaker
-			var speakerString : String = (speaker == '' || speaker == null) ? '' : speaker + ': ';
-			if (speakerString == 'PLAYER') 
+			var speakerString : String = ( speaker == '' || speaker == null || speaker == 'null' ) ? '' : speaker + ': ';
+			if ( speakerString == 'PLAYER' )
 			{
-				speakerString = TinyPlayer.getInstance( ).playerName.toUpperCase( ) + ': '; 
+				speakerString = TinyPlayer.getInstance().playerName.toUpperCase( ) + ': '; 
 			}
-
-			// Set properties
-			this.textSpeed = TinyConfig.TEXT_SPEED;
+			
+			this.parsedText += speakerString;
+			this.dialogSequence.push( new TinyDialogItem( TinyDialogItem.TEXT, speakerString ) );
 			
 			// Set up text field
 			this.textField = new TinyAutotypeTextField( 141, 20, 'dialogText' );
 			this.textField.originalY = 
 			this.textField.y = -4;
 			
-			// Append speaker string if it exists
-			if ( speakerString )
-			{
-				this.textField.appendText( speakerString, true, speakerString.length );
-			}
-			
 			// Next arrow
-			this.nextArrow = new TinyBattleTurnArrow;
+			this.nextArrow = new TinyBattleTurnArrow();
 			this.nextArrow.x = this.width - 20;
 			this.nextArrow.y = this.height - 6;
-			this.arrowTween = new TweenMax( this.nextArrow, 0.4, { y:this.height - 4, repeat:-1, yoyo:true, roundProps:[ "x", "y" ], ease:Sine.easeInOut } );
+			this.arrowTween = new TweenMax( this.nextArrow, 0.4, { y: this.height - 4, repeat: -1, yoyo: true, roundProps:[ "x", "y" ], ease: Sine.easeInOut } );
 			this.arrowTween.play();
 			
 			// Textfield mask
@@ -104,15 +98,8 @@ package com.tinyrpg.ui
 		{
 			TinyLogManager.log( 'newFromXML', newDialogBox );
 			
-			var dialogText : String = xmlData.child( 'TEXT' ).text( );
-			
-			var speakerText : String = xmlData.child( 'SPEAKER' ).toString( ).toUpperCase( );
-			if (speakerText == 'PLAYER') 
-			{
-				speakerText = TinyPlayer.getInstance( ).playerName.toUpperCase( );
-			}
-			
-			var newDialogBox : TinyDialogBox = new TinyDialogBox( speakerText, width, height, time );
+			var dialogText : String = xmlData.child( 'TEXT' ).text();
+			var newDialogBox : TinyDialogBox = new TinyDialogBox( xmlData.child( 'SPEAKER' ).toString().toUpperCase(), width, height, time );
 			
 			// Split string by bracketed commands
 			var pattern : RegExp = /(\[[^]+?\])/g;
@@ -137,7 +124,7 @@ package com.tinyrpg.ui
 				if ( string.charAt( ) == '[' )
 				{
 					// Just in case
-					string = string.toLowerCase( );
+					string = string.toLowerCase();
 					
 					// Is this a delay command?
 					var delayPattern : RegExp = /\[delay.?\d*\]/;
@@ -150,35 +137,35 @@ package com.tinyrpg.ui
 						
 						newCommand = new TinyDialogItem( TinyDialogItem.DELAY, Number( delayArray[0] ) );
 						TinyLogManager.log( 'add new DELAY command: ' + newCommand.value, newDialogBox );
-					} 
-					
-					// Is it a player-specific command?
-					var playerPattern : RegExp = /\[player.?\w*\]/;
-					var playerMatch : Array = string.match( playerPattern );
-					if ( playerMatch && playerMatch.length > 0 )
-					{
-						// Find the dialog name parameter
-						playerPattern = /(?<=\[player\s)\w*/;
-						var playerArray : Array = string.match( playerPattern );
-						
-						// Get the string from XML
-						var xmlString : String = TinyDialogBox.dialogXML.child( String( playerArray[0] ).toUpperCase( ) ).child( TinyPlayer.getInstance( ).playerName.toUpperCase( ) ).toString( );
-						newCommand = new TinyDialogItem( TinyDialogItem.TEXT, xmlString );
-						TinyLogManager.log( 'add new TEXT command: ' + newCommand.value, newDialogBox );
 					}
-				
+
+//					// Is it a player-specific command?
+//					var playerPattern : RegExp = /\[player.?\w*\]/;
+//					var playerMatch : Array = string.match( playerPattern );
+//					if ( playerMatch && playerMatch.length > 0 )
+//					{
+//						// Find the dialog name parameter
+//						playerPattern = /(?<=\[player\s)\w*/;
+//						var playerArray : Array = string.match( playerPattern );
+//						
+//						// Get the string from XML
+//						var xmlString : String = TinyDialogBox.dialogXML.child( String( playerArray[0] ).toUpperCase( ) ).child( TinyPlayer.getInstance( ).playerName.toUpperCase( ) ).toString( );
+//						newCommand = new TinyDialogItem( TinyDialogItem.TEXT, xmlString );
+//						
+//						newDialogBox.parsedText += TinyPlayer.getInstance( ).playerName;
+//						
+//						TinyLogManager.log( 'add new TEXT command: ' + newCommand.value, newDialogBox );
+//					}
+
 					// What kind of command is it?
 					else 
 					{
 						switch (string) 
 						{
-							case '[br]':
-								TinyLogManager.log( 'add new BREAK command', newDialogBox );
-								newCommand = new TinyDialogItem( TinyDialogItem.BREAK );
-								break;
 							case '[name]':
 								TinyLogManager.log( 'add new NAME command', newDialogBox );
-								newCommand = new TinyDialogItem( TinyDialogItem.NAME );
+								newDialogBox.parsedText += TinyPlayer.getInstance().playerName;
+								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, TinyPlayer.getInstance().playerName );
 								break;
 							case '[halt]':
 								TinyLogManager.log( 'add new HALT command', newDialogBox );
@@ -200,6 +187,7 @@ package com.tinyrpg.ui
 				else 
 				{
 					// Normal text
+					newDialogBox.parsedText += string;
 					newCommand = new TinyDialogItem( TinyDialogItem.TEXT, string );
 					TinyLogManager.log( 'add new TEXT command: ' + newCommand.value, newDialogBox );
 				}
@@ -233,9 +221,9 @@ package com.tinyrpg.ui
 
 		private function onAccept( event : TinyInputEvent ) : void
 		{
-			TinyLogManager.log( 'onAccept: skipping = ' + this.skipping, this );
+			TinyLogManager.log( 'onAccept: fast text = ' + this.textField.fastText, this );
 			
-			if ( this.hasControl && !this.skipping ) 
+			if ( this.hasControl && !this.textField.fastText ) 
 			{
 				if ( this.atEnd ) 
 				{
@@ -253,32 +241,30 @@ package com.tinyrpg.ui
 					TinyInputManager.getInstance().addEventListener( TinyInputEvent.KEY_UP_ACCEPT, resetSpeed );
 				}
 					
-				this.textSpeed = 3;
-				this.textField.textSpeed = this.textSpeed;
-				this.skipping = true;
+				this.textField.fastText = true;
 			}
 		}
 
-		private function resetSpeed(event : TinyInputEvent) : void 
+		private function resetSpeed( event : TinyInputEvent ) : void 
 		{
 			TinyLogManager.log( 'resetSpeed', this );
 			
-			TinyInputManager.getInstance( ).removeEventListener( TinyInputEvent.KEY_UP_ACCEPT, resetSpeed );
+			TinyInputManager.getInstance().removeEventListener( TinyInputEvent.KEY_UP_ACCEPT, resetSpeed );
 			
-			this.textSpeed = TinyConfig.TEXT_SPEED;
-			this.textField.textSpeed = this.textSpeed;
-			this.skipping = false;
+			this.textField.fastText = false;			
 		}
 
-		public function show(noCommand : Boolean = false) : void
+		public function show( noCommand : Boolean = false ) : void
 		{
 			TinyLogManager.log( 'show', this );
 			this.visible = true;
-			this.reset(); 
+			this.reset();
+			 
+			this.textField.setText( this.parsedText );
 			
-			if (!noCommand) 
+			if ( !noCommand ) 
 			{
-				this.doNextCommand( );
+				this.doNextCommand();
 			}
 		}
 
@@ -300,7 +286,7 @@ package com.tinyrpg.ui
 			}
 		}
 
-		private function doNextCommand(event : Event = null) : void
+		private function doNextCommand( event : Event = null ) : void
 		{
 			TinyLogManager.log( 'doNextCommand', this );
 			var activeCommand : TinyDialogItem = this.dialogSequence.shift();
@@ -308,7 +294,7 @@ package com.tinyrpg.ui
 			this.savedDialogSequence.push( activeCommand );
 
 			// Clean up
-			this.textField.removeEventListener( Event.COMPLETE, doNextCommand );
+			this.textField.removeEventListener( TinyAutotypeTextEvent.TEXT_ENTRY_COMPLETE, doNextCommand );
 			this.hasControl = false;
 			
 			// If there is no next command, end and exit
@@ -328,12 +314,6 @@ package com.tinyrpg.ui
 				case TinyDialogItem.TEXT:
 					this.handleText( activeCommand.value );
 					break;
-				case TinyDialogItem.BREAK:
-					this.handleBreak();
-					break;
-				case TinyDialogItem.NAME:
-					this.handleName();
-					break;
 				case TinyDialogItem.HALT:
 					this.handleHalt(); 
 					break;
@@ -341,27 +321,16 @@ package com.tinyrpg.ui
 					this.handleDelay( activeCommand.value );
 					break;
 				case TinyDialogItem.END_INT:
-					this.handleEndInterrupt( );
+					this.handleEndInterrupt();
 					break;
 			}
 		}
 
-		private function handleText(textString : String) : void
+		private function handleText( textString : String ) : void
 		{
 			TinyLogManager.log( 'handleText', this );
-			this.textField.addEventListener( Event.COMPLETE, doNextCommand );			this.textField.appendText( textString, false, this.textSpeed );
-		}
-
-		private function handleBreak() : void
-		{			TinyLogManager.log( 'handleBreak', this );
-			this.textField.addLineBreak( );
-			var delayTime : int = this.skipping ? 1 : 2;
-			TweenLite.delayedCall( delayTime, this.doNextCommand, null, true );
-		}
-
-		private function handleName() : void
-		{			TinyLogManager.log( 'handleName', this );
-			this.handleText( TinyPlayer.getInstance( ).playerName );
+			this.textField.addEventListener( TinyAutotypeTextEvent.TEXT_ENTRY_COMPLETE, doNextCommand );
+			this.textField.printNumberOfChars( textString.length );
 		}
 
 		private function handleHalt() : void
@@ -376,8 +345,12 @@ package com.tinyrpg.ui
 		private function handleDelay(delayTime : int) : void
 		{			TinyLogManager.log( 'handleDelay: ' + delayTime, this );
 
-			if (this.skipping) 
-				delayTime = 0;
+			// If fast text is enabled, delays are skipped 
+			if ( this.textField.fastText )
+			{ 
+				this.doNextCommand();
+				return;
+			}
 
 			TweenLite.delayedCall( delayTime, this.doNextCommand, null, true );
 		}
