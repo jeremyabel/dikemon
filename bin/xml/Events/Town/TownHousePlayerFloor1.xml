@@ -1,3 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>finished_intro_cutscene</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<SET_FLAG>has_not_talked_to_mom_after_intro</SET_FLAG>
+						<CLEAR_FLAG>finished_intro_cutscene</CLEAR_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>done_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<CLEAR_FLAG>has_not_talked_to_mom_after_intro</CLEAR_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+
+	<!-- =========================================================================================== -->
+	<!-- NPCS -->
+	<!-- =========================================================================================== -->	
+
+	<EVENT_talk_mom>
+		<SEQUENCE>
+
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>has_not_talked_to_mom_after_intro</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>Oh, [name]...! [halt]Our neighbor, PROF. OAK, was looking for you! He said he wanted you to do something for him. [halt]You should head over there!   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>mom_face_left</SUB_SEQUENCE>
+
+						<CLEAR_FLAG>has_not_talked_to_mom_after_intro</CLEAR_FLAG>
+						<SET_FLAG>talked_to_mom_after_intro</SET_FLAG>
+						<EXIT_EARLY></EXIT_EARLY>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>talked_to_mom_after_intro</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>PROF. OAK is waiting for you. [halt]Get over there!   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>mom_face_left</SUB_SEQUENCE>
+						<EXIT_EARLY></EXIT_EARLY>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<!-- Player has left and come back after the first battle -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>done_with_mom_talking</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>Hi! Welcome home! [halt]You're trying very hard, I see. I've kept your room tiny, and the sink clean. [halt]Yes... [delay 6]clean sink   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>mom_sink_love</SUB_SEQUENCE>
+						<DELAY>4</DELAY>
+						<SUB_SEQUENCE>mom_face_left</SUB_SEQUENCE>
+						<EXIT_EARLY></EXIT_EARLY>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<!-- If Player has completed the first battle and HAS NOT talked to Mom before -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>has_not_talked_to_mom_after_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>Wow, [delay 4]that's a cute Dikémon. [halt]Where did you get it? [halt]... So you're leaving on an adventure? [halt]OK! I'll help too. [halt]But what can I do for you? [halt]Oh, I know! [delay 4]I'll keep the sink extremely clean! [halt]Yes, clean sink... [delay 4]Always clean sink... [halt]Sink, my true love...    [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>mom_sink_love</SUB_SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>Anyway, [delay 4]be careful! [halt]Dikémon are your friends. [halt]You need to work as a team! [halt]Some people even end up marrying their Dikémon, [delay 4]wink wink. [halt]Now, go on!   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>mom_face_left</SUB_SEQUENCE>
+
+						<!-- Next time the player talks to mom before leaving the house, sequence flow will advance to the next option -->
+						<CLEAR_FLAG>has_not_talked_to_mom_after_first_battle</CLEAR_FLAG>
+						<SET_FLAG>talked_to_mom_after_first_battle</SET_FLAG>
+						<EXIT_EARLY></EXIT_EARLY>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<!-- If Player has completed the first battle and HAS talked to Mom before -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>talked_to_mom_after_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>MOM</SPEAKER>
+							<TEXT>[name], do it! [halt]I'm behind you all the way!   [end]</TEXT>
+						</DIALOG>
+						<EXIT_EARLY></EXIT_EARLY>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_mom>
+
+
+	<EVENT_talk_mom_after_first_battle>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>MOM</SPEAKER>
+				<TEXT>Wow, [delay 4]that's a cute Dikémon. [halt]Where did you get it? [halt]... So you're leaving on an adventure? [halt]OK! I'll help too. [halt]But what can I do for you? [halt]Oh, I know! [delay 4]I'll keep the sink extremely clean! [halt]Yes, clean sink... [delay 4]always clean sink... [halt]sink, my true love...    [end]</TEXT>
+			</DIALOG>
+			<SUB_SEQUENCE>mom_sink_love</SUB_SEQUENCE>			
+			<DIALOG>
+				<SPEAKER>MOM</SPEAKER>
+				<TEXT>Anyway, [delay 4]be careful! [halt]Dikémon are your friends. [halt]You need to work as a team! [halt]Some people even end up marrying their Dikémon, [delay 4]wink wink. [halt]Now, go on!   [end]</TEXT>
+			</DIALOG>
+			<SUB_SEQUENCE>mom_face_left</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_mom_after_first_battle>
+
+	<EVENT_mom_face_left>
+		<SEQUENCE>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>MOM</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_mom_face_left>
+
+	<EVENT_mom_sink_love>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>MOM</TARGET>
+				<EMOTE>HEART</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>25</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>MOM</TARGET>
+			</HIDE_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_mom_sink_love>
+
+	<!-- =========================================================================================== -->
+	<!-- TRIGGERS -->
+	<!-- =========================================================================================== -->	
+	
+	<EVENT_check_stove>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It's some kind of Dikémon shaped like a stove.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_stove>
+
+	<EVENT_check_sink>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Jeez it's just a regular sink, [delay 6]ok?   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_sink>
+
+	<EVENT_check_fridge>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Let's see what's in the fridge... [halt] Good, it looks like your mom got that pudding you asked for.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_fridge>
+
+	<EVENT_check_tv>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>There's a movie on TV: Stars dot the sky as two boys ride on a train... [halt]wow did they really put a Harry Potter reference in this game?   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_tv>
+
 </EVENTS>

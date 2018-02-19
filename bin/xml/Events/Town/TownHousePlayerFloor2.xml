@@ -1,3 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_check_computer>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>If you actually knew how to use this thing, [delay 4]you'd probably just be wasting your time playing anime MMOs all day.  [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_computer>
+
+	<EVENT_check_radio>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"AWWWwww yeah we're back at it again on W[delay 4]D[delay 4]I[delay 4]K, [delay 8]blasting those good times and HOT oldies [halt]ALL [halt]DAY [halt]LONG!"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_radio>
+
+	<EVENT_check_books>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>You'd think there would be school books in here, [halt]but there's actually no schools at all in Dikémon-world!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books>
+
+	<EVENT_check_tv>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It was really cool of your mom to let you have a T[delay 4]V in your room. [halt]Shame it's completely broken.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_tv>
+
+	<EVENT_check_bed>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Ahhh, [delay 4]the sleepzone. [halt]One ticket to Snoozerville, [delay 4]please!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_bed>
+
 </EVENTS>

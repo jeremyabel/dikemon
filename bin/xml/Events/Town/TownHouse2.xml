@@ -1,3 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_check_books1>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>The front of these shelves have been painted to look like books.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books1>
+
+	<EVENT_check_books2>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Help! My Child Is An Asshole: A Guide For Parents"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books2>
+
+	<EVENT_check_tv>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Looks like a documentary called "The Gleonard Magikarp Story: My Life In Fish Prison".   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_tv>
+
+	<EVENT_check_painting>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It's a painting of a landscape made up of large colored squares.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_painting>
+
+	<EVENT_check_window>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>It's a very convincing painting of a window.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_window>
+
+	<EVENT_check_radio>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"AWWWwww yeah we're back at it again on W[delay 4]D[delay 4]I[delay 4]K, [delay 8]blasting those good times and HOT oldies [halt]ALL [halt]DAY [halt]LONG!"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_radio>
+
 </EVENTS>

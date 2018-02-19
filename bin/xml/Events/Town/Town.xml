@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>done_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<CLEAR_FLAG>talked_to_mom_after_intro</CLEAR_FLAG>
+						<SET_FLAG>has_not_talked_to_mom_after_first_battle</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>talked_to_mom_after_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<CLEAR_FLAG>has_not_talked_to_mom_after_first_battle</CLEAR_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<!-- =========================================================================================== -->
+	<!-- NPCS -->
+	<!-- =========================================================================================== -->	
+
+
+	<!-- =========================================================================================== -->
+	<!-- OBJECTS -->
+	<!-- =========================================================================================== -->	
+
 	<EVENT_sign_town_center>
 		<SEQUENCE>
 			<DIALOG>

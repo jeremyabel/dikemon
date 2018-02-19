@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>started_intro_lab</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>triggerOakIntro1</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerOakIntro2</REMOVE_TRIGGER>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>done_first_battle</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<SET_FLAG>done_with_mom_talking</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+
 	<!-- =========================================================================================== -->
 	<!-- SIGNS -->
 	<!-- =========================================================================================== -->
@@ -16,6 +47,41 @@
 		</SEQUENCE>
 	</EVENT_sign_route_start>
 
+
+	<!-- =========================================================================================== -->
+	<!-- NPCS -->
+	<!-- =========================================================================================== -->
+
+	<EVENT_talk_bush_guy>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>BUSH GUY</SPEAKER>
+				<TEXT>Dikémon hide in the thick bush. [halt]Who knows when they'll pop out...   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_bush_guy>
+
+	<EVENT_talk_ledge_girl>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>GIRL</SPEAKER>
+				<TEXT>See those ledges? [halt]Don't be a pussy, [delay 6]jump off off them! [halt]You can go back to town without walking through the thick bush that way.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_ledge_girl>
+
+	<EVENT_talk_save_guy>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>GUY</SPEAKER>
+				<TEXT>I wanted to take a break, [delay 6]so I saved to record my progress. [halt]Wait, [delay 4]how does that even work?   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_save_guy>
+
 	<!-- =========================================================================================== -->
 	<!-- INTRO -->
 	<!-- =========================================================================================== -->
@@ -23,7 +89,7 @@
 	<!-- Exclaim emote before Oak enters -->
 	<EVENT_oak_intro_player_surprise>
 		<SEQUENCE>
-			<SET_FLAG>started_intro</SET_FLAG>
+			<SET_FLAG>started_intro_lab</SET_FLAG>
 			<DELAY>4</DELAY>
 			<SET_FACING>
 				<TARGET>PLAYER</TARGET>

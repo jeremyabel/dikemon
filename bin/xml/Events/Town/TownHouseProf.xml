@@ -5,7 +5,7 @@
 		<SEQUENCE>
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
-				<VALUE>started_intro</VALUE>
+				<VALUE>started_intro_lab</VALUE>
 				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
 				<IF_FALSE>
 					<SEQUENCE>
@@ -54,7 +54,7 @@
 			</ADD_NPC>
 			<ADD_NPC>
 				<NPC_NAME>RIVAL</NPC_NAME>
-				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<SPRITE_NAME>RIVAL</SPRITE_NAME>
 				<EVENT_NAME>talk_rival</EVENT_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
@@ -96,7 +96,7 @@
 			</ADD_NPC>
 			<ADD_NPC>
 				<NPC_NAME>RIVAL</NPC_NAME>
-				<SPRITE_NAME>GARY RIVAL</SPRITE_NAME>
+				<SPRITE_NAME>RIVAL</SPRITE_NAME>
 				<EVENT_NAME>talk_rival</EVENT_NAME>
 				<FACING>UP</FACING>
 				<POSITION tile="true"><X>4</X><Y>3</Y></POSITION>
@@ -170,7 +170,7 @@
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>That's right, [delay 2] I told you to come too. [halt]Just take it easy, [delay 4][name]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
+				<TEXT>That's right, [delay 2] I told you to come too. [halt]Just take it easy, [delay 4][rival]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>RIVAL</TARGET>
@@ -186,7 +186,7 @@
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>Be patient, [delay 2][name]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [delay 4][name], [delay 4]make your dumb choice.   [end]</TEXT>
+				<TEXT>Be patient, [delay 2][rival]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [delay 4][name], [delay 4]make your dumb choice.   [end]</TEXT>
 			</DIALOG>
 			<SET_FLAG>picking_ball</SET_FLAG>
 			<END></END>
@@ -210,7 +210,7 @@
 			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird, huh? [halt]Well, [delay 4][name], [delay 4]your turn.   [end]</TEXT>
+				<TEXT>What?! [delay 4]Oh yeah. [delay 4]All the Dikémon have kinda disappeared. [halt]No one knows where they went. [halt]Weird, huh? [halt]Well, [delay 4][rival], [delay 4]your turn.   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
 
@@ -450,6 +450,7 @@
 
 									<REMOVE_NPC>RIVAL</REMOVE_NPC>
 									<SET_FLAG>done_first_battle</SET_FLAG>
+								 	<SET_FLAG>has_not_talked_to_mom_after_first_battle</SET_FLAG>
 
 									<END></END>
 								</SEQUENCE>

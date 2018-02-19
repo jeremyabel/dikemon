@@ -5,13 +5,25 @@
 	<FLAG>test_flag</FLAG>
 
 	<!-- Intro -->
-	<FLAG>started_intro</FLAG>
+	<FLAG>finished_intro_cutscene</FLAG>
+	<FLAG>started_intro_lab</FLAG>
 	<FLAG>picking_ball</FLAG>
 	<FLAG>picked_ball</FLAG>
 	<FLAG>exit_lab_left</FLAG>
 	<FLAG>done_first_battle</FLAG>
 
+	<!-- Town: Player's House -->
+	<FLAG>left_player_house</FLAG>
+	<FLAG>has_not_talked_to_mom_after_first_battle</FLAG>
+	<FLAG>has_not_talked_to_mom_after_intro</FLAG>
+	<FLAG>talked_to_mom_after_first_battle</FLAG>
+	<FLAG>talked_to_mom_after_intro</FLAG>
+	<FLAG>done_with_mom_talking</FLAG>
+
 	<!-- Town: Oak's Lab -->
 	<FLAG>scientist_gave_potion</FLAG>
+
+	<!-- Route 29 -->
+	<FLAG>fought_team_vomit</FLAG>
 
 </FLAGS>
