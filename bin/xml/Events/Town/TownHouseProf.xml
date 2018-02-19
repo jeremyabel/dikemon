@@ -170,7 +170,7 @@
 			</DIALOG>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>That's right, [delay 2] I told you to come too. [halt]Just take it easy, [delay 4][rival]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 2]nudge [delay 2]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
+				<TEXT>That's right, [delay 2]I told you to come too. [halt]Just take it easy, [delay 4][rival]. [halt]Here [name], [delay 4]I have some protection for you. [halt]There are three Dikémon in my balls. [delay 4]When I was your age, [delay 2]I was a serious trainer. [halt]I was also really good at some other stuff, [delay 4]nudge [delay 4]nudge. [halt]Anyhoo, [delay 2]why don't you go pick one of my Dikéballs on the table?   [end]</TEXT>
 			</DIALOG>
 			<SHOW_EMOTE>
 				<TARGET>RIVAL</TARGET>
@@ -180,13 +180,10 @@
 			<HIDE_EMOTE>
 				<TARGET>RIVAL</TARGET>
 			</HIDE_EMOTE>
-			<DIALOG>
-				<SPEAKER>RIVAL</SPEAKER>
-				<TEXT>[custom_dialog_lab_rival_intro]</TEXT>
-			</DIALOG>
+			<SUB_SEQUENCE>rival_angry_ball_dialog</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>Be patient, [delay 2][rival]. [delay 4]You'll get to counter-pick this bitch and wipe the floor with them throughout the early game. [halt]OK, [delay 4][name], [delay 4]make your dumb choice.   [end]</TEXT>
+				<TEXT>Be patient, [delay 2][rival]. [delay 4]You'll get to counter-pick [delay 4]this bitch and wipe the floor with them throughout [delay 4]the early game. [halt]OK, [delay 4][name], [delay 4]make your dumb choice.   [end]</TEXT>
 			</DIALOG>
 			<SET_FLAG>picking_ball</SET_FLAG>
 			<END></END>
@@ -593,7 +590,7 @@
 	<EVENT_pick_ball_2>
 		<SEQUENCE>
 			<CHOOSE_STARTER>
-				<NAME>TALL GRASS</NAME>
+				<NAME>STARTER</NAME>
 				<IF_YES>
 					<SEQUENCE restoreControl="false">
 						<SUB_SEQUENCE>return_from_ball_choice</SUB_SEQUENCE>
@@ -709,7 +706,167 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_return_from_ball_choice>
-	
+
+	<!-- Custom per-player dialog for when Rival wants to pick first -->
+	<EVENT_rival_angry_ball_dialog>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>CHRIS</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Hey![delay 4] Let's do an improv game. [halt]Throw me the ball, coach!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>YULIA</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Hey![delay 4] What about me!?[halt] To each according to their need!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>JASON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Hey![delay 4] What about me!? [halt]I've been such a good boy!  [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>RON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Hey![delay 4] What about Ole' Ronnie!? [halt]Can't Ronnie get a taste?   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>ANDY</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I gave you dick soap though!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>EVAN</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>AAAAAHHHHH!!!!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>RACHEL</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Let's A/B test having me pick first.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>QUINN</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Give it to me you rascal!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>DAVE</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Hey, [delay 4]my hands are big enough for your balls!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>BILL</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I already have a cube, [delay 4]I want a ball now.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>BRENTON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I need a ball bearing though!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_angry_ball_dialog>
 
 	<!-- =========================================================================================== -->
 	<!-- NPCS -->

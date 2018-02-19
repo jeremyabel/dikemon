@@ -4,6 +4,7 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.lookup.TinyEventFlagLookup;
+	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -16,6 +17,7 @@ package com.tinyrpg.sequence
 		public static const CONDITION_FLAG 	: String = 'FLAG';
 		public static const CONDITION_ITEM	: String = 'ITEM';
 		public static const CONDITION_NAME	: String = 'NAME';
+		public static const CONDITION_RIVAL	: String = 'RIVAL';
 		public static const CONDITION_MONEY	: String = 'MONEY';
 		
 		public var conditionType	: String;
@@ -42,6 +44,7 @@ package com.tinyrpg.sequence
 				case CONDITION_FLAG:	
 				case CONDITION_ITEM:
 				case CONDITION_NAME:
+				case CONDITION_RIVAL:
 					newCommand.conditionValue = xmlData.child( 'VALUE' ).toString().toUpperCase();
 					break;
 				case CONDITION_MONEY:
@@ -91,6 +94,14 @@ package com.tinyrpg.sequence
 					isTruthy = player.name.toUpperCase() == this.conditionValue;
 					
 					TinyLogManager.log( 'executing condition = is named ' + this.conditionValue + ': ' + isTruthy, this );
+					break;
+				}
+				
+				case CONDITION_RIVAL:
+				{
+					isTruthy = TinyNameLookup.getRivalNameForPlayerName( player.name ).toUpperCase() == this.conditionValue;
+					
+					TinyLogManager.log( 'executing condition = is rival ' + this.conditionValue + ': ' + isTruthy, this );
 					break;
 				}
 				

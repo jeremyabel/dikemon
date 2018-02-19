@@ -8,6 +8,7 @@
     <RIVAL>PS4?
 Fruity Drink</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>jacked</STARTER_TEXT>
     <TYPE_1>Fighting</TYPE_1>
     <TYPE_2>Fighting</TYPE_2>
     <MOVES> 1: LOW_KICK;
@@ -42,6 +43,7 @@ Fruity Drink</RIVAL>
     <STYLE>Dark</STYLE>
     <RIVAL>MTG</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>thin-haired</STARTER_TEXT>
     <TYPE_1>Dark</TYPE_1>
     <TYPE_2>Fire</TYPE_2>
     <MOVES> 1: LEER;
@@ -76,6 +78,7 @@ Fruity Drink</RIVAL>
     <STYLE>Carefree</STYLE>
     <RIVAL>???</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Water</TYPE_1>
     <TYPE_2>Grass</TYPE_2>
     <MOVES> 1: ASTONISH;
@@ -110,6 +113,7 @@ Fruity Drink</RIVAL>
 Tiny hand holds?
 Black Lotus</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Fire</TYPE_1>
     <TYPE_2>Fighting</TYPE_2>
     <MOVES> 1: FIRE_PUNCH;
@@ -149,6 +153,7 @@ Black Lotus</RIVAL>
     <STYLE>Iron Leg</STYLE>
     <RIVAL>Dishes? (Soapy water = rust)</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>riviting</STARTER_TEXT>
     <TYPE_1>Steel</TYPE_1>
     <TYPE_2>Psychic</TYPE_2>
     <MOVES> 1: TAKE-DOWN;
@@ -188,6 +193,7 @@ Black Lotus</RIVAL>
 Testicles?
 Prescription?</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>pathetic</STARTER_TEXT>
     <TYPE_1>Electric</TYPE_1>
     <TYPE_2>Electric</TYPE_2>
     <MOVES> 1: TACKLE;
@@ -222,6 +228,7 @@ Prescription?</RIVAL>
     <STYLE>Mud Fish</STYLE>
     <RIVAL>Pizza</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>gassy</STARTER_TEXT>
     <TYPE_1>Water</TYPE_1>
     <TYPE_2>Ground</TYPE_2>
     <MOVES> 1: TACKLE;
@@ -258,6 +265,7 @@ Prescription?</RIVAL>
     <STYLE>Bagworm</STYLE>
     <RIVAL>McDonalds microwave </RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>loud</STARTER_TEXT>
     <TYPE_1>Bug</TYPE_1>
     <TYPE_2>Steel</TYPE_2>
     <MOVES> 1: TACKLE;
@@ -292,6 +300,7 @@ Prescription?</RIVAL>
     <STYLE>Mystic</STYLE>
     <RIVAL>Cyst? Pile of Comics?</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>nerdy</STARTER_TEXT>
     <TYPE_1>Ground</TYPE_1>
     <TYPE_2>Dragon</TYPE_2>
     <MOVES> 1: BITE;
@@ -328,6 +337,7 @@ Prescription?</RIVAL>
     <STYLE>Shadow</STYLE>
     <RIVAL>Strobe Light</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>tatted up</STARTER_TEXT>
     <TYPE_1>Ghost</TYPE_1>
     <TYPE_2>Poison</TYPE_2>
     <MOVES> 1: HYPNOSIS;
@@ -362,6 +372,7 @@ Prescription?</RIVAL>
     <STYLE>Bivalve</STYLE>
     <RIVAL>Candy</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Water</TYPE_1>
     <TYPE_2>Water</TYPE_2>
     <MOVES> 1: CLAMP;
@@ -395,6 +406,7 @@ Prescription?</RIVAL>
     <STYLE>Tender</STYLE>
     <RIVAL>d20?</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>cute</STARTER_TEXT>
     <TYPE_1>Water</TYPE_1>
     <TYPE_2>Water</TYPE_2>
     <MOVES> 1: WATER_GUN;
@@ -425,12 +437,13 @@ Prescription?</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>Nash</HUMAN>
+    <HUMAN>Rachel</HUMAN>
     <NAME>FPO</NAME>
     <ORIG_NAME>Jirachi</ORIG_NAME>
     <STYLE>Wish</STYLE>
     <RIVAL>Bunny</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Steel</TYPE_1>
     <TYPE_2>Psychic</TYPE_2>
     <MOVES> 1: WISH;
@@ -465,6 +478,7 @@ Prescription?</RIVAL>
     <STYLE>Forest</STYLE>
     <RIVAL>Broken Lens</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Grass</TYPE_1>
     <TYPE_2>Grass</TYPE_2>
     <MOVES> 1: POUND;
@@ -504,6 +518,7 @@ Prescription?</RIVAL>
     <RIVAL>Tie
 Soccer Shorts</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>all about soccer shorts</STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES> 1: SCRATCH;
@@ -541,6 +556,7 @@ Soccer Shorts</RIVAL>
     <STYLE>Fossil</STYLE>
     <RIVAL>Dog Leash</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Rock</TYPE_1>
     <TYPE_2>Flying</TYPE_2>
     <MOVES> 1: WING_ATTACK;
@@ -575,6 +591,7 @@ Soccer Shorts</RIVAL>
     <STYLE>Dragon</STYLE>
     <RIVAL>US Flag</RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT>Russian</STARTER_TEXT>
     <TYPE_1>Water</TYPE_1>
     <TYPE_2>Dragon</TYPE_2>
     <MOVES> 1: BUBBLE;
@@ -612,6 +629,7 @@ Soccer Shorts</RIVAL>
     <STYLE>Time Travel</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Psychic</TYPE_1>
     <TYPE_2>Grass</TYPE_2>
     <MOVES> 1: ABSORB;
@@ -644,6 +662,7 @@ Soccer Shorts</RIVAL>
     <STYLE>New Species</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Psychic</TYPE_1>
     <TYPE_2>Psychic</TYPE_2>
     <MOVES> 1: POUND;
@@ -676,6 +695,7 @@ Soccer Shorts</RIVAL>
     <STYLE>Eon</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Dragon</TYPE_1>
     <TYPE_2>Psychic</TYPE_2>
     <MOVES> 1: PSYWAVE;
@@ -704,12 +724,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Box</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Cardboard</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: PAPER_CUT;
@@ -724,7 +745,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -734,12 +755,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Bucket</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Leaky</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: MOIST_DROPS;
@@ -752,7 +774,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -762,12 +784,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Shorts Kid</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Comfy</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: KICK;
@@ -782,7 +805,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -792,17 +815,18 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Egg</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Scrambled?</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
-    <MOVES> 1: DRIPPY_YOLK;
- 1: CHICKEN_TIME;
- 1: WIGGLE</MOVES>
+    <MOVES>1: DRIPPY_YOLK;
+1: CHICKEN_TIME;
+1: WIGGLE;</MOVES>
     <HP>40</HP>
     <ATK>45</ATK>
     <DEF>40</DEF>
@@ -811,7 +835,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -821,12 +845,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Shoe</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Left</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: LACE_WRAP;
@@ -840,7 +865,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -850,12 +875,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Tall Grass</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Mowable</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES> 1: OVERGROWN;
@@ -870,7 +896,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -880,12 +906,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Computer</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>Broken?</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: SCRATCH;
@@ -900,7 +927,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -910,12 +937,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Ace Of Spades</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>???</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: SCRATCH;
@@ -930,7 +958,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>
@@ -940,12 +968,13 @@ Soccer Shorts</RIVAL>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
   <MON>
-    <HUMAN>N/A</HUMAN>
+    <HUMAN></HUMAN>
     <NAME>Four Of Clubs</NAME>
     <ORIG_NAME>Pidgey</ORIG_NAME>
     <STYLE>???</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: SCRATCH;
@@ -960,7 +989,7 @@ Soccer Shorts</RIVAL>
     <SPD>56</SPD>
     <EXP>55</EXP>
     <LV_RATE>MS</LV_RATE>
-    <CATCH_RATE>60</CATCH_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
     <WEIGHT></WEIGHT>
     <YIELD_HP>0</YIELD_HP>
     <YIELD_ATK>0</YIELD_ATK>

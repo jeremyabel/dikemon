@@ -7,7 +7,9 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.events.TinySequenceEvent;
 	import com.tinyrpg.lookup.TinyMonLookup;
+	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.managers.TinyInputManager;
+	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.ui.TinyDialogBox;
 	import com.tinyrpg.ui.TinyDialogSelectList;
@@ -47,13 +49,23 @@ package com.tinyrpg.sequence
 			newCommand.monName = xmlData.child( 'NAME' ).toString().toUpperCase();
 			
 			// Get the chosen mon
-			newCommand.mon = TinyMonLookup.getInstance().getMonByName( newCommand.monName );
+			if ( newCommand.monName == 'STARTER' )
+			{
+				var playerName : String = TinyGameManager.getInstance().playerTrainer.name;
+				var starterName : String = TinyNameLookup.getStarterNameForPlayerName( playerName );
+				newCommand.mon = TinyMonLookup.getInstance().getMonByHuman( starterName );
+				newCommand.monName = starterName.toUpperCase();
+			}
+			else 
+			{ 
+				newCommand.mon = TinyMonLookup.getInstance().getMonByName( newCommand.monName );
+			}	
 			
 			// Create the mon sprite display box
 			newCommand.monDisplayBox = new TinyContentBox( newCommand.mon.bitmap, 60, 60, true );
 			
 			// Create the mon description dialog
-			newCommand.monDescriptionDialog = TinyDialogBox.newFromString( 'This is a test yay!   [end]' );
+			newCommand.monDescriptionDialog = TinyDialogBox.newFromString( 'This Dikémon is really [delay 4] ' + newCommand.mon.starterText + '!   [end]' );
 			
 			// Get the confirmation question string
 			var confirmationString : String = 'Choose ' + newCommand.monName + '?'; 

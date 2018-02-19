@@ -76,7 +76,7 @@ package com.tinyrpg.display
 				var newLineMask : TinyAutotypeLineMask = new TinyAutotypeLineMask( this.textField.getLineLength( i ), CHAR_W, CHAR_H );
 				newLineMask.addEventListener( TinyAutotypeTextEvent.LINE_COMPLETE, this.onLineMaskComplete );
 				newLineMask.x = 2;
-				newLineMask.y = i * CHAR_H + ( CHAR_H / 2 );
+				newLineMask.y = i * CHAR_H + Math.floor( CHAR_H / 2 );
 				
 				this.lineMasks.push( newLineMask );
 				this.textMask.addChild( newLineMask );

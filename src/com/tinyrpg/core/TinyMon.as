@@ -18,9 +18,11 @@ package com.tinyrpg.core
 	public class TinyMon 
 	{
 		private var m_bitmap		: Bitmap;
+		private var m_human			: String;
 		private var m_name			: String;
 		private var m_style			: String;
 		private var m_dexEntry		: String;
+		private var m_starterText	: String;
 		private var m_type1			: TinyType;
 		private var m_type2			: TinyType;
 		private var m_level			: int;
@@ -30,6 +32,7 @@ package com.tinyrpg.core
 		private var m_growthRate	: TinyExpGrowthRate;
 		private var m_currentExp	: int;
 		private var m_currentHP		: int;
+		private var m_isEvolved		: Boolean = false;
 		
 		public var moveSet			: TinyMoveSet;
 		
@@ -61,41 +64,45 @@ package com.tinyrpg.core
 		public var yieldStatSet		: TinyStatSet;
 		public var battleModStatSet : TinyStatSet;
 		
-		public var accuracyModStage 	: int = 0;
-		public var evasivenessModStage	: int = 0;
-		public var critModStage 		: int = 0;
+		public var accuracyModStage 		: int = 0;
+		public var evasivenessModStage		: int = 0;
+		public var critModStage 			: int = 0;
 		
-		public var didUseMudsport		: Boolean = false;
-		public var didUseWatersport		: Boolean = false;
+		public var didUseMudsport			: Boolean = false;
+		public var didUseWatersport			: Boolean = false;
 		
-		public function get bitmap()	: Bitmap { return m_bitmap; }
-		public function get name() 		: String { return m_name; }
-		public function get style() 	: String { return m_style; }
-		public function get dexEntry() 	: String { return m_dexEntry; }
-		public function get type1() 	: TinyType { return m_type1; }
-		public function get type2() 	: TinyType { return m_type2; }
-		public function get level()		: int { return m_level; }
-		public function get catchRate() : int { return m_catchRate; }
-		public function get baseExp() 	: int { return m_baseExp; }
-		public function get weight() 	: int { return m_weight; }
-		public function get currentHP()	: int { return m_currentHP; }
-		public function get currentEXP(): int { return m_currentExp; }
+		public function get bitmap()		: Bitmap { return m_bitmap; }
+		public function get human()			: String { return m_human; }
+		public function get style() 		: String { return m_style; }
+		public function get dexEntry() 		: String { return m_dexEntry; }
+		public function get starterText() 	: String { return m_starterText; } 
+		public function get type1() 		: TinyType { return m_type1; }
+		public function get type2() 		: TinyType { return m_type2; }
+		public function get level()			: int { return m_level; }
+		public function get catchRate() 	: int { return m_catchRate; }
+		public function get baseExp() 		: int { return m_baseExp; }
+		public function get weight() 		: int { return m_weight; }
+		public function get currentHP()		: int { return m_currentHP; }
+		public function get currentEXP()	: int { return m_currentExp; }
+		public function get isEvolved() 	: Boolean { return m_isEvolved; }
 		
 		public function TinyMon( xmlData : XML, level : uint = 5 )
 		{
 			this.initFromXML(xmlData);
 		}
 		
-		public function initFromXML( xmlData : XML, level : uint = 5 ) : void
+		public function initFromXML( xmlData : XML, level : uint = 5, evolved : Boolean = false ) : void
 		{
-			m_name 		 = xmlData.child('NAME');
-			m_style 	 = xmlData.child('STYLE');
-			m_dexEntry	 = xmlData.child('DEX_ENTRY');
-			m_type1 	 = TinyType.getTypeFromString(xmlData.child('TYPE_1'));
-			m_type2 	 = TinyType.getTypeFromString(xmlData.child('TYPE_2'));
-			m_catchRate  = int(xmlData.child('CATCH_RATE').text());
-			m_baseExp 	 = int(xmlData.child('EXP').text());
-			m_weight 	 = Number(xmlData.child('WEIGHT').text());
+			m_name 		  = xmlData.child('NAME');
+			m_human		  = xmlData.child('HUMAN');
+			m_style 	  = xmlData.child('STYLE');
+			m_dexEntry	  = xmlData.child('DEX_ENTRY');
+			m_starterText = xmlData.child('STARTER_TEXT');
+			m_type1		  = TinyType.getTypeFromString(xmlData.child('TYPE_1'));
+			m_type2 	  = TinyType.getTypeFromString(xmlData.child('TYPE_2'));
+			m_catchRate   = int(xmlData.child('CATCH_RATE').text());
+			m_baseExp 	  = int(xmlData.child('EXP').text());
+			m_weight 	  = Number(xmlData.child('WEIGHT').text());
 			
 			m_growthRate = new TinyExpGrowthRate( xmlData.child('LV_RATE') );
 			
@@ -124,12 +131,20 @@ package com.tinyrpg.core
 			m_level = level;
 			m_currentExp = 1;
 			m_currentHP = TinyMath.deepCopyInt(this.maxHP);
+			m_isEvolved = evolved;
 			
 			this.moveSet = TinyMoveSet.newFromXML(xmlData);
 			this.moveSet.setMovesToLevel( this.m_level );
 			this.moveSet.logMoves();
 			
-			m_bitmap = new Bitmap(TinySpriteLookup.getMonsterSprite(m_name));
+			m_bitmap = new Bitmap( TinySpriteLookup.getMonsterSprite( this.name ) );
+		}
+		
+		
+		public function get name() : String 
+		{ 
+			if ( m_human.length > 0 && !m_isEvolved ) return m_human;
+			return m_name; 
 		}
 				
 				

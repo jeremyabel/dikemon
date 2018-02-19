@@ -189,23 +189,44 @@ package com.tinyrpg.lookup
 			}
 		}
 
-		public static function getMonsterSprite(name : String) : BitmapData
+		public static function getMonsterSprite( name : String ) : BitmapData
 		{
-			TinyLogManager.log('getMonsterSprite: ' + name, null);
+			TinyLogManager.log( 'getMonsterSprite: ' + name, null );
 			
 			var newSprite : BitmapData;
 
-			switch (name) 
+			switch ( name.toUpperCase() ) 
 			{
-				case 'Box'				: newSprite = new Box; break;
-				case 'Bucket'			: newSprite = new Bucket; break;
-				case 'Shorts Kid'		: newSprite = new ComfyShortsKid; break;
-				case 'Egg'				: newSprite = new Egg; break;
-				case 'Shoe'				: newSprite = new Shoe; break;
-				case 'Tall Grass'		: newSprite = new TallGrass; break;
-				case 'Computer'			: newSprite = new Computer; break;
-				case 'Four Of Clubs'	: newSprite = new FourOfClubs; break;
-				case 'Ace Of Spades'	: newSprite = new AceOfSpades; break;
+				// Garbage
+				case 'BOX'				: newSprite = new Box; break;
+				case 'BUCKET'			: newSprite = new Bucket; break;
+				case 'SHORTS KID'		: newSprite = new ComfyShortsKid; break;
+				case 'EGG'				: newSprite = new Egg; break;
+				case 'SHOE'				: newSprite = new Shoe; break;
+				case 'TALL GRASS'		: newSprite = new TallGrass; break;
+				case 'COMPUTER'			: newSprite = new Computer; break;
+				case 'FOUR OF CLUBS'	: newSprite = new FourOfClubs; break;
+				case 'ACE OF SPADES'	: newSprite = new AceOfSpades; break;
+					
+				// Humans
+				case 'GAGNON'			: newSprite = new HumanGagnon; break;
+				case 'MARUSKA'			: newSprite = new HumanMaruska; break;
+				case 'ALEX'				: newSprite = new HumanAlex; break;
+				case 'BILL'				: newSprite = new HumanBill; break;
+				case 'BRENTON'			: newSprite = new HumanBrenton; break;
+				case 'CHRIS'			: newSprite = new HumanChris; break;
+				case 'DAVE'				: newSprite = new HumanDave; break;
+				case 'STARK'			: newSprite = new HumanStark; break;
+				case 'JASON'			: newSprite = new HumanJason; break;
+				case 'KRISTI'			: newSprite = new HumanKristi; break;
+				case 'CLEGG'			: newSprite = new HumanClegg; break;
+				case 'ZIGGY'			: newSprite = new HumanZiggy; break;
+				case 'RACHEL'			: newSprite = new HumanRachel; break;
+				case 'RALPH'			: newSprite = new HumanRalph; break;
+				case 'RON'				: newSprite = new HumanRon; break;
+				case 'QUINN'			: newSprite = new HumanQuinn; break;
+				case 'YULIA'			: newSprite = new HumanYulia; break;
+				
 				default					: newSprite = new ComfyShortsKid; break;
 			}
 			

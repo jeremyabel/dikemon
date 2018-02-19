@@ -22,6 +22,23 @@ package com.tinyrpg.lookup
 		public static const MON_COMPUTER		: String = 'COMPUTER';
 		public static const MON_ACE_OF_SPADES 	: String = 'ACE OF SPADES';
 		public static const MON_FOUR_OF_CLUBS	: String = 'FOUR OF CLUBS';
+		public static const MON_HUMAN_GAGNON	: String = 'GAGNON';
+		public static const MON_HUMAN_MARUSKA	: String = 'MARUSKA';
+		public static const MON_HUMAN_ALEX		: String = 'ALEX';
+		public static const MON_HUMAN_BILL		: String = 'BILL';
+		public static const MON_HUMAN_BRENTON	: String = 'BRENTON';
+		public static const MON_HUMAN_CHRIS		: String = 'CHRIS';
+		public static const MON_HUMAN_DAVE		: String = 'DAVE';
+		public static const MON_HUMAN_STARK		: String = 'STARK';
+		public static const MON_HUMAN_JASON		: String = 'JASON';
+		public static const MON_HUMAN_KRISTI	: String = 'KRISTI';
+		public static const MON_HUMAN_CLEGG		: String = 'CLEGG';
+		public static const MON_HUMAN_ZIGGY		: String = 'ZIGGY';
+		public static const MON_HUMAN_RACHEL	: String = 'RACHEL';
+		public static const MON_HUMAN_RALPH		: String = 'RALPH';
+		public static const MON_HUMAN_RON		: String = 'RON';
+		public static const MON_HUMAN_QUINN		: String = 'QUINN';
+		public static const MON_HUMAN_YULIA		: String = 'YULIA';
 		
 		private static var instance : TinyMonLookup = new TinyMonLookup;
 		
@@ -60,5 +77,14 @@ package com.tinyrpg.lookup
 			return null;
 		}
 		
+		public function getMonByHuman( humanName : String, level : uint = 5 ) : TinyMon
+		{
+			TinyLogManager.log( 'getMonByHuman: ' + humanName, this );
+			
+			var monXML : XML = this.monData.MON.( HUMAN.toUpperCase() == humanName.toUpperCase() )[ 0 ];
+			
+			if ( monXML ) return new TinyMon( monXML, level );
+			return null;
+		}
 	}
 }
