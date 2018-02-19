@@ -12,6 +12,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.display.TinyTitleBox;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.events.TinyAutotypeTextEvent;
+	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -45,11 +46,9 @@ package com.tinyrpg.ui
 			this.time = time;
 
 			// Set speaker
-			var speakerString : String = ( speaker == '' || speaker == null || speaker == 'null' ) ? '' : speaker + ': ';
-			if ( speakerString == 'PLAYER' )
-			{
-				speakerString = TinyPlayer.getInstance().playerName.toUpperCase( ) + ': '; 
-			}
+			var speakerString : String = ( speaker == '' || speaker == null || speaker == 'null' ) ? '' : speaker;
+			if ( speakerString == 'PLAYER' ) speakerString = TinyPlayer.getInstance().playerName.toUpperCase( ) + ': ';
+			if ( speakerString == 'RIVAL' ) speakerString = TinyNameLookup.getRivalNameForPlayerName( TinyPlayer.getInstance().playerName ).toUpperCase() + ': '; 
 			
 			this.parsedText += speakerString;
 			this.dialogSequence.push( new TinyDialogItem( TinyDialogItem.TEXT, speakerString ) );
@@ -120,13 +119,13 @@ package com.tinyrpg.ui
 			{
 				var newCommand : TinyDialogItem;
 				
-				// Is it a command, or normal text?
+				// Parse commands
 				if ( string.charAt( ) == '[' )
 				{
 					// Just in case
 					string = string.toLowerCase();
 					
-					// Is this a delay command?
+					// Is this a delay command? If so, parse the number parameter as well.
 					var delayPattern : RegExp = /\[delay.?\d*\]/;
 					var delayMatch : Array = string.match( delayPattern );
 					if ( delayMatch && delayMatch.length > 0 ) 
@@ -160,12 +159,19 @@ package com.tinyrpg.ui
 					// What kind of command is it?
 					else 
 					{
-						switch (string) 
+						switch ( string ) 
 						{
 							case '[name]':
 								TinyLogManager.log( 'add new NAME command', newDialogBox );
-								newDialogBox.parsedText += TinyPlayer.getInstance().playerName;
-								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, TinyPlayer.getInstance().playerName );
+								var playerName : String = TinyPlayer.getInstance().playerName;
+								newDialogBox.parsedText += playerName;
+								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, playerName );
+								break;
+							case '[rival]':
+								TinyLogManager.log( 'add new RIVAL command', newDialogBox );
+								var rivalName : String = TinyNameLookup.getRivalNameForPlayerName( TinyPlayer.getInstance().playerName );
+								newDialogBox.parsedText += rivalName;
+								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, rivalName );
 								break;
 							case '[halt]':
 								TinyLogManager.log( 'add new HALT command', newDialogBox );
