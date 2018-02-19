@@ -21,19 +21,21 @@ package com.tinyrpg.core
 		
 		protected var m_name : String;
 		protected var m_battleBitmap : Bitmap;
-		protected var m_overworldSprite : TinySpriteSheet; 
+		protected var m_overworldSpriteId : int; 
 		protected var m_isEnemy : Boolean;
 		protected var m_money : uint = 100;
 		
 		public function get name() : String { return m_name; }
+		public function get overworldSpriteId() : int { return m_overworldSpriteId; }
 		public function get battleBitmap() : Bitmap { return m_battleBitmap; }
 		public function get isEnemy() : Boolean { return m_isEnemy; }
 		public function get money() : uint { return m_money; }
 		
-		public function TinyTrainer(battleSpriteData : BitmapData, name : String)
+		public function TinyTrainer( battleSpriteData : BitmapData, name : String )
 		{
-			m_battleBitmap = new Bitmap(battleSpriteData);
 			m_name = name;
+			m_battleBitmap = new Bitmap( battleSpriteData );
+			m_overworldSpriteId = TinySpriteLookup.getPlayerSpriteId( this.name );
 		}
 		
 		public static function newFromTestData( name : String = 'Player' ) : TinyTrainer 

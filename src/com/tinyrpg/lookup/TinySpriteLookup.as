@@ -12,11 +12,11 @@ package com.tinyrpg.lookup
 	 */
 	public class TinySpriteLookup 
 	{
-		public static var PLAYER_1				: int = 0;
+		public static var PLAYER_1				: int = 27;
 		public static var PLAYER_1_BIKE 		: int = 6;
 		public static var PLAYER_2				: int = 457;
 		public static var PLAYER_2_BIKE			: int = 463;		
-		public static var PLAYER_3				: int = 27;
+		public static var PLAYER_3				: int = 0;
 		public static var PLAYER_4				: int = 387;
 		public static var NPC_PROF_OAK			: int = 21;
 		public static var NPC_GARY_RIVAL		: int = 33;
@@ -166,6 +166,28 @@ package com.tinyrpg.lookup
 				case "DIKEBALL":			return NPC_DIKEBALL;
 			}
 		}
+		
+		public static function getPlayerSpriteId( name : String ) : int
+		{
+			TinyLogManager.log( 'getPlayerSpriteId: ' + name, null );
+			
+			switch ( name.toUpperCase() ) 
+			{	
+				case 'ANDY': 	return NPC_GARY_RIVAL;
+				case 'BILL':	return NPC_CASUAL_GUY_4;
+				case 'BRENTON':	return NPC_GARY_RIVAL;
+				case 'CHRIS':	return PLAYER_1;
+				case 'DAVE':	return NPC_CASUAL_GUY_2;
+				case 'EVAN':	return PLAYER_3;
+				case 'JASON':	return PLAYER_4;
+				case 'MEGAN':	return NPC_PONY_TAIL_GIRL_1;
+				case 'RACHEL':	return NPC_PONY_TAIL_GIRL_4;
+				case 'RALPH':	return NPC_SCRUFFY_GUY;
+				case 'RON':		return NPC_GERMAN_GUY;
+				case 'QUINN':	return NPC_EMO_GUY;
+				default:		return PLAYER_1;
+			}
+		}
 
 		public static function getMonsterSprite(name : String) : BitmapData
 		{
@@ -192,7 +214,7 @@ package com.tinyrpg.lookup
 		
 		public static function getTrainerSprite( name : String ) : BitmapData
 		{
-			TinyLogManager.log('getTrainerSprite: ' + name, null);
+			TinyLogManager.log( 'getTrainerSprite: ' + name, null );
 			
 			var newSprite : BitmapData;
 			

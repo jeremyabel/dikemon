@@ -1,7 +1,9 @@
 package com.tinyrpg.data 
 {
 	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
+	import com.tinyrpg.managers.TinyGameManager;
 	
 	/**
 	 * @author jeremyabel
@@ -22,8 +24,16 @@ package com.tinyrpg.data
 		
 		override public function dataReady() : void
 		{
+			var spriteId : uint = TinySpriteLookup.getFieldSpriteId( this.spriteName );
+			
+			// Rename the rival sprite to the correct name if required
+			if ( this.spriteName.toUpperCase() == 'RIVAL' ) 
+			{
+				spriteId = TinySpriteLookup.getPlayerSpriteId( TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name ) ); 
+			}
+			
 			// Create the NPC sprite
-			this.walkSprite = new TinyWalkSprite( TinySpriteLookup.getFieldSpriteId( this.spriteName ), this.facing );
+			this.walkSprite = new TinyWalkSprite( spriteId, this.facing );
 			this.walkSprite.x += 8;
 			this.walkSprite.y += 8;
 			

@@ -1,5 +1,7 @@
 package com.tinyrpg.lookup
 {
+	import com.tinyrpg.utils.TinyLogManager;
+	
 	/**
 	 * @author jeremyabel
 	 */
@@ -7,6 +9,8 @@ package com.tinyrpg.lookup
 	{
 		public static function getRivalNameForPlayerName( playerName : String ) : String
 		{
+			TinyLogManager.log( 'getRivalNameForPlayerName: ' + playerName, TinyNameLookup );
+	
 			switch ( playerName.toUpperCase() )
 			{
 				case 'ANDY': 	return 'Rachel';

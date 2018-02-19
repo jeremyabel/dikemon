@@ -1,6 +1,7 @@
 package com.tinyrpg.managers
 {	
 	import com.tinyrpg.battle.TinyBattle;
+	import com.tinyrpg.core.TinyConfig;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
@@ -48,7 +49,7 @@ package com.tinyrpg.managers
 		public function initWithTestData() : void
 		{
 			TinyLogManager.log( 'initWithTestData', this );
-			this.playerTrainer = TinyTrainer.newFromTestData();
+			this.playerTrainer = TinyTrainer.newFromTestData( TinyConfig.PLAYER_NAME );
 		}
 			
 		public function gotoMap( warpObject : TinyFieldMapObjectWarp ) : void

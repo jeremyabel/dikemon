@@ -194,7 +194,7 @@ package com.tinyrpg.managers
 			this.playerFieldState = null;
 			this.playerSprite = null;
 			
-			this.playerSprite = new TinyWalkSprite( TinySpriteLookup.PLAYER_1, initialFacing, true, true );
+			this.playerSprite = new TinyWalkSprite( TinyGameManager.getInstance().playerTrainer.overworldSpriteId, initialFacing, true, true );
 			this.playerFieldState = new TinyPlayerFieldState( playerSprite );
 			
 			this.m_currentMap.mapUserObjects.addChild( this.playerSprite );			

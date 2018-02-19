@@ -14,6 +14,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.events.TinyAutotypeTextEvent;
 	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.managers.TinyInputManager;
+	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.Event;
@@ -46,9 +47,9 @@ package com.tinyrpg.ui
 			this.time = time;
 
 			// Set speaker
-			var speakerString : String = ( speaker == '' || speaker == null || speaker == 'null' ) ? '' : speaker;
-			if ( speakerString == 'PLAYER' ) speakerString = TinyPlayer.getInstance().playerName.toUpperCase( ) + ': ';
-			if ( speakerString == 'RIVAL' ) speakerString = TinyNameLookup.getRivalNameForPlayerName( TinyPlayer.getInstance().playerName ).toUpperCase() + ': '; 
+			var speakerString : String = ( speaker == '' || speaker == null || speaker == 'null' ) ? '' : speaker + ': ';
+			if ( speakerString == 'PLAYER: ' ) speakerString = TinyGameManager.getInstance().playerTrainer.name.toUpperCase( ) + ': ';
+			if ( speakerString == 'RIVAL: ' ) speakerString = TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name ).toUpperCase() + ': ';
 			
 			this.parsedText += speakerString;
 			this.dialogSequence.push( new TinyDialogItem( TinyDialogItem.TEXT, speakerString ) );
@@ -163,13 +164,13 @@ package com.tinyrpg.ui
 						{
 							case '[name]':
 								TinyLogManager.log( 'add new NAME command', newDialogBox );
-								var playerName : String = TinyPlayer.getInstance().playerName;
+								var playerName : String = TinyGameManager.getInstance().playerTrainer.name;
 								newDialogBox.parsedText += playerName;
 								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, playerName );
 								break;
 							case '[rival]':
 								TinyLogManager.log( 'add new RIVAL command', newDialogBox );
-								var rivalName : String = TinyNameLookup.getRivalNameForPlayerName( TinyPlayer.getInstance().playerName );
+								var rivalName : String = TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name );
 								newDialogBox.parsedText += rivalName;
 								newCommand = new TinyDialogItem( TinyDialogItem.TEXT, rivalName );
 								break;
