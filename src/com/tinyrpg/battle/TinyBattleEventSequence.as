@@ -232,7 +232,7 @@ package com.tinyrpg.battle
 			TinyLogManager.log('addShowTrainer: ' + (isEnemy ? 'enemy' : 'player' ), this);	
 		 	
 		 	// Make new tween command	
-			var xLocation : int = isEnemy ? 96 : 16;
+			var xLocation : int = isEnemy ? 96 : 16 + 56;
 			var tween : TweenLite = new TweenLite( trainerContainer, 1.0, { x: xLocation, ease: SteppedEase.create(30) } );
 			var tweenCommand : TinyTweenCommand = new TinyTweenCommand( tween, waitForCompletion );
 			

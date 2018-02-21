@@ -42,7 +42,7 @@ package com.tinyrpg.sequence
 			newCommand.speed = int( xmlData.child( 'SPEED' ).text() );
 			
 			// Get sync status
-			newCommand.sync = xmlData.attribute( 'sync' ) == 'TRUE';
+			newCommand.sync = xmlData.attribute( 'sync' ).toString().toUpperCase() == 'TRUE';
 
 			return newCommand;
 		}

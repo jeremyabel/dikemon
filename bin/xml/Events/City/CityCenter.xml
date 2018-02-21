@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_gameover>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>NURSE</SPEAKER>
+				<TEXT>Ah, [delay 4]you're awake! [halt]Someone found you passed out in a ditch and dragged you back here. [halt]We managed to wash all the blood off your face, [delay 4]but sadly your health insurance doesn't cover anything more than that. [halt]We did heal all your Dikémon for free, [delay 4]though! [halt]Now, [delay 4]if you can't pay to fix your broken face, [delay 4]please kindly get out of here.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_gameover>
+
 </EVENTS>

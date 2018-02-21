@@ -1,12 +1,14 @@
 package com.tinyrpg.managers 
 {
+	import com.tinyrpg.battle.TinyBattleResult;
 	import com.tinyrpg.core.TinyFieldMap;
 	import com.tinyrpg.core.TinyPlayerFieldState;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
-	import com.tinyrpg.events.TinyGameEvent;	
+	import com.tinyrpg.events.TinyGameEvent;
+	import com.tinyrpg.events.TinySequenceEvent;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.sequence.TinyWarpCommand;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -61,7 +63,7 @@ package com.tinyrpg.managers
 			TinyInputManager.getInstance().setTarget( null );
 			
 			// Fade out the current map, if there is one
-			if ( this.m_currentMap ) 
+			if ( this.m_currentMap && !this.warpObjectInProgress.fromGameOver ) 
 			{
 				var fadeOutSpeed : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeSpeed : 6;
 				
@@ -70,6 +72,13 @@ package com.tinyrpg.managers
 			}
 			else
 			{
+				// Pre-set the black transition overlay to 100% alpha so it fades in seamlessly
+				if ( this.warpObjectInProgress.fromGameOver ) 
+				{
+					this.fadeTransition.setBlackNormalBlending();
+					this.fadeTransition.setBlackAlpha( 1 );
+				}
+				
 				this.onWarpHideComplete();
 			}
 		}
@@ -128,7 +137,15 @@ package com.tinyrpg.managers
 			}
 			else
 			{
-				this.fadeTransition.fadeInFromWhite( 6, 12 );
+				if ( this.warpObjectInProgress && this.warpObjectInProgress.fromGameOver ) 
+				{
+					// Slowly fade in from black after a game-over
+					this.fadeTransition.fadeInFromBlack( 20, 60 );
+				}
+				else 
+				{
+					this.fadeTransition.fadeInFromWhite( 6, 12 );
+				}
 			}
 		}
 		
@@ -148,6 +165,11 @@ package com.tinyrpg.managers
 			{
 				TinyLogManager.log( 'starting post-fade sequence: ' + this.warpCommandInProgress.postFadeSequenceName, this );
 				this.startEventByName( this.warpCommandInProgress.postFadeSequenceName );
+			}
+			else if ( this.warpObjectInProgress && this.warpObjectInProgress.postFadeSequenceName )
+			{
+				TinyLogManager.log( 'starting post-fade sequence: ' + this.warpObjectInProgress.postFadeSequenceName, this );
+				this.startEventByName( this.warpObjectInProgress.postFadeSequenceName );
 			}
 			else
 			{
@@ -249,15 +271,23 @@ package com.tinyrpg.managers
 			}
 		}
 		
-		public function onBattleComplete() : void
+		public function onBattleComplete( result : TinyBattleResult, wasTrainerBattle : Boolean = false ) : void
 		{
-			TinyLogManager.log( 'onBattleComplete', this );
+			TinyLogManager.log( 'onBattleComplete: ' + result.value, this );
 			
 			// Reset player step counter
 			this.playerFieldState.resetStepsSinceEncounter();
-			
-			// Return control to the player
-			TinyInputManager.getInstance().setTarget( this.playerSprite );
+				
+			// Trainer battles need to continue running their host event sequence, whereas wild battles return control 
+			// to the player immediately.
+			if ( wasTrainerBattle )
+			{
+				this.dispatchEvent( new TinyGameEvent( TinyGameEvent.BATTLE_COMPLETE, result ) );
+			}
+			else
+			{
+				TinyInputManager.getInstance().setTarget( this.playerSprite );
+			}
 		}
 		
 		public function executeWarpEventCommand( warpEventCommand : TinyWarpCommand ) : void

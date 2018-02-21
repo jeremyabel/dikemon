@@ -13,7 +13,6 @@ package com.tinyrpg.events
 		public static const FADE_IN_COMPLETE 	: String = 'FADE_IN_COMPLETE';
 		public static const FADE_OUT_COMPLETE 	: String = 'FADE_OUT_COMPLETE';
 		public static const BATTLE_IN_COMPLETE	: String = 'BATTLE_IN_COMPLETE';
-		public static const BATTLE_START		: String = 'BATTLE_START';
 		public static const BATTLE_COMPLETE		: String = 'BATTLE_COMPLETE';
 		
 		public var param : *;

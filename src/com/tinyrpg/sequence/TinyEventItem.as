@@ -9,7 +9,7 @@ package com.tinyrpg.sequence
 		// Field Events
 		public static const DIALOG	 	  			: String = 'DIALOG';
 		public static const CONDITIONAL	 			: String = 'CONDITIONAL';
-		public static const BATTLE		 			: String = 'BATTLE';
+		public static const BATTLE		 			: String = 'TRAINER_BATTLE';
 		public static const ADD_NPC		 			: String = 'ADD_NPC';
 		public static const REMOVE_NPC	  			: String = 'REMOVE_NPC';
 		public static const SHOW_EMOTE				: String = 'SHOW_EMOTE';

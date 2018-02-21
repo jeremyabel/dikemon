@@ -15,8 +15,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.display.TinyBattleBallDisplay;
 	import com.tinyrpg.display.TinyBattleMonStatDisplay;
 	import com.tinyrpg.events.TinyBattleEvent;
+	import com.tinyrpg.events.TinyGameEvent;
 	import com.tinyrpg.events.TinyInputEvent;
-//	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.ui.TinyBattleItemList;
 	import com.tinyrpg.ui.TinyBattleCommandMenu;
@@ -60,7 +60,6 @@ package com.tinyrpg.battle
 		private var m_battleCommandMenu			: TinyBattleCommandMenu;
 		private var m_moveSelectMenu			: TinyMoveSelectMenu;
 		private var m_switchMonMenu				: TinySwitchMonMenu;
-		public var m_isWildEncounter			: Boolean;
 		private var m_battleEvent				: TinyBattleEventSequence;
 		private var m_battleIntroWhirl			: TinySpriteSheet;
 		private var m_battleEmptyDialogBox		: TinyTitleBox;
@@ -68,13 +67,16 @@ package com.tinyrpg.battle
 		private var isForcedSwitch				: Boolean = false;
 		private var background					: Sprite;
 		
+		public var m_isWildEncounter			: Boolean;
 		public var wasLastSwitchEnemy			: Boolean = false;
 		public var wasLastTurnEnemy				: Boolean = false;
 		public var battlePalette				: TinyBattlePalette;
 		public var moveFXArray					: Array;
 		public var debugMoveFX					: Boolean = false;
+		public var allowGameOver				: Boolean = true;
+		public var result						: TinyBattleResult;
 			
-		public function TinyBattle( playerTrainer : TinyTrainer, enemyMon : TinyMon, enemyTrainer : TinyTrainer = null )
+		public function TinyBattle( playerTrainer : TinyTrainer, enemyMon : TinyMon, enemyTrainer : TinyTrainer = null, allowGameOver : Boolean = true )
 		{
 			TinyLogManager.log( 'new battle with ' + playerTrainer.name, this );
 			
@@ -82,6 +84,7 @@ package com.tinyrpg.battle
 			this.battleCommandRunner = new TinyBattleCommandSequencer( this );
 			
 			// Set parameters
+			this.allowGameOver = allowGameOver;
 			m_isWildEncounter = enemyTrainer == null;
 			m_playerTrainer = playerTrainer;
 			m_enemyTrainer = enemyTrainer;
@@ -200,9 +203,6 @@ package com.tinyrpg.battle
 			this.addChild(m_battleIntroWhirl);
 			
 			TweenLite.delayedCall( m_battleIntroWhirl.length + 32, this.whirlInComplete, null, true );
-
-			// Sound
-//			TinyAudioManager.play(TinyAudioManager.BATTLE_START);
 		}
 		
 		private function whirlInComplete() : void
@@ -216,6 +216,7 @@ package com.tinyrpg.battle
 			// Position player trainer
 			m_playerTrainerContainer.x = 144 + 48;
 			m_playerTrainerContainer.y = 50;
+			m_playerTrainerContainer.scaleX = -1;
 			m_playerTrainerContainer.addChild( m_playerTrainer.battleBitmap );
 	
 			// Position enemy trainer
@@ -360,8 +361,8 @@ package com.tinyrpg.battle
 		
 		public function endBattle() : void
 		{
-			TinyLogManager.log( 'endBattle', this );
-			this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.BATTLE_COMPLETE ) );	
+			TinyLogManager.log( 'endBattle: ' + this.result.value, this );
+			this.dispatchEvent( new TinyGameEvent( TinyGameEvent.BATTLE_COMPLETE, this.result ) );
 		}
 		
 		public function forcePlayerSwitch() : void

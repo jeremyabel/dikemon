@@ -67,23 +67,23 @@ package com.tinyrpg.lookup
 			return instance;
 		}		
 		
-		public function getMonByName( monName : String, level : uint = 5 ) : TinyMon
+		public function getMonByName( monName : String, level : uint = 5, evolved : Boolean = false ) : TinyMon
 		{
 			TinyLogManager.log( 'getMonByName: ' + monName, this );
 			
 			var monXML : XML = this.monData.MON.( NAME.toUpperCase() == monName.toUpperCase() )[ 0 ];
 			
-			if ( monXML ) return new TinyMon( monXML, level );
+			if ( monXML ) return new TinyMon( monXML, level, evolved );
 			return null;
 		}
 		
-		public function getMonByHuman( humanName : String, level : uint = 5 ) : TinyMon
+		public function getMonByHuman( humanName : String, level : uint = 5, evolved : Boolean = false ) : TinyMon
 		{
 			TinyLogManager.log( 'getMonByHuman: ' + humanName, this );
 			
 			var monXML : XML = this.monData.MON.( HUMAN.toUpperCase() == humanName.toUpperCase() )[ 0 ];
 			
-			if ( monXML ) return new TinyMon( monXML, level );
+			if ( monXML ) return new TinyMon( monXML, level, evolved );
 			return null;
 		}
 	}

@@ -24,6 +24,8 @@ package com.tinyrpg.display
 		public var hasJumpR 	: Boolean = false;
 		public var hasDisableU 	: Boolean = false;
 		
+		public var gameoverMapName  : String = '';
+		
 		public function TinyMapMovieClip() : void 
 		{
 			 if ( this.grass ) this.hasGrass = true;

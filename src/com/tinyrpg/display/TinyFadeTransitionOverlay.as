@@ -40,6 +40,30 @@ package com.tinyrpg.display
 			this.addChild( this.blackBacking );
 		}
 		
+		public function setWhiteAlpha( value : uint ) : void
+		{
+			TinyLogManager.log( 'setWhiteAlpha: ' + value, this );
+			this.whiteBacking.alpha = value;
+		}
+		
+		public function setBlackAlpha( value : uint ) : void
+		{
+			TinyLogManager.log( 'setBlackAlpha: ' + value, this );
+			this.blackBacking.alpha = value;
+		}
+		
+		public function setWhiteNormalBlending() : void
+		{
+			TinyLogManager.log( 'setWhiteNormalBlending', this );
+			this.whiteBacking.blendMode = BlendMode.NORMAL;
+		}
+		
+		public function setBlackNormalBlending() : void
+		{
+			TinyLogManager.log( 'setBlackNormalBlending', this );
+			this.blackBacking.blendMode = BlendMode.NORMAL;
+		}
+		
 		public function fadeOutToWhite( speed : uint = 6, delay : uint = 0 ) : void
 		{
 			TinyLogManager.log( 'fadeOutToWhite', this );
@@ -69,10 +93,20 @@ package com.tinyrpg.display
 			TweenMax.to( object, speed, { 
 				alpha: alpha, 
 				delay: delay,
-				ease: SteppedEase.create( speed / 2 ), 
+				ease: SteppedEase.create( Math.min( speed / 2, 4 ) ), 
 				useFrames: true,
-				onComplete: alpha == 0 ? this.onFadeInComplete : this.onFadeOutComplete  
+				onStart: this.onFadeStart,
+				onComplete: alpha == 0 ? this.onFadeInComplete : this.onFadeOutComplete
 			});
+		}
+		
+		private function onFadeStart() : void
+		{
+			TinyLogManager.log( 'onFadeStart', this );
+			
+			// Reset blend modes for both the white and black backing sprites
+			this.whiteBacking.blendMode = BlendMode.ADD;
+			this.blackBacking.blendMode = BlendMode.MULTIPLY;
 		}
 		
 		private function onFadeOutComplete() : void

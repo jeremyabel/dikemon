@@ -243,6 +243,7 @@ package com.tinyrpg.battle
 						TinyLogManager.log('commandSelected: Player = RUN PASSED. Player goes, then end battle.', this);	
 						this.commands.push( this.playerCommand );
 						this.commands.push( TinyBattleCommand.getEndBattleCommand( this.battle, TinyBattleCommand.USER_PLAYER ) );
+						this.battle.result = new TinyBattleResult( TinyBattleResult.RESULT_RAN );
 						break;
 					}
 				}
@@ -284,6 +285,8 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('onCommandCompleted: ' + this.currentCommand.logString, this); 
 			
+			var doNextCommand : Boolean = true;
+			
 			// Add any additional commands that resulted from running the previous command
 			this.commands = this.commands.concat( this.currentCommand.getNextCommands() ); 
 			
@@ -293,6 +296,18 @@ package com.tinyrpg.battle
 				var moveCommand : TinyBattleCommandMove = this.currentCommand as TinyBattleCommandMove;
 				if ( moveCommand.isFirstMoveCommand ) this.firstMoveCommand = null;
 				if ( moveCommand.isSecondMoveCommand ) this.secondMoveCommand = null;
+			}
+			
+			// Translate victory command to winning battle result
+			if ( this.currentCommand.type == TinyBattleCommand.COMMAND_PLAYER_VICTORY ) 
+			{
+				this.battle.result = new TinyBattleResult( TinyBattleResult.RESULT_WIN );
+			}
+			
+			// Translate loss command to losing battle result
+			if ( this.currentCommand.type == TinyBattleCommand.COMMAND_PLAYER_LOSS ) 
+			{
+				this.battle.result = new TinyBattleResult( TinyBattleResult.RESULT_LOSE );
 			}
 			
 			// If no victory or loss has occurred, and there are no commands left...

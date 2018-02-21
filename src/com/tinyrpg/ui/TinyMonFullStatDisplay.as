@@ -57,7 +57,7 @@ package com.tinyrpg.ui
 		
 		public function TinyMonFullStatDisplay()
 		{
-			super( null, 144, 130, true );	
+			super( null, 144, 130 );	
 			
 			// Create new mon container with an empty dummy bitmap
 			this.monContainer = new TinyMonContainer( new Bitmap( new BitmapData( 1, 1 ) ), true );

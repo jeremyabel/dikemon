@@ -18,7 +18,6 @@ package com.tinyrpg.events
 		public static var MOVE_SELECTED		: String = 'MOVE_SELECTED';
 		public static var MON_SELECTED		: String = 'MON_SELECTED';
 		public static var ITEM_USED			: String = 'ITEM_USED';
-		public static var BATTLE_COMPLETE	: String = 'BATTLE_COMPLETE';
 		
 		public var move : TinyMoveData;
 		public var mon  : TinyMon;

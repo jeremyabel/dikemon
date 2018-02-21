@@ -5,6 +5,7 @@ package com.tinyrpg.core
 
 	import com.tinyrpg.display.TinySpriteSheet;
 	import com.tinyrpg.lookup.TinyMonLookup;
+	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -18,18 +19,16 @@ package com.tinyrpg.core
 		
 		public var runAttempts : int = 0;
 		public var usedWish : Boolean = false;
+		public var money : uint = 100;
+		public var isEnemy : Boolean;
 		
 		protected var m_name : String;
 		protected var m_battleBitmap : Bitmap;
 		protected var m_overworldSpriteId : int; 
-		protected var m_isEnemy : Boolean;
-		protected var m_money : uint = 100;
 		
 		public function get name() : String { return m_name; }
 		public function get overworldSpriteId() : int { return m_overworldSpriteId; }
 		public function get battleBitmap() : Bitmap { return m_battleBitmap; }
-		public function get isEnemy() : Boolean { return m_isEnemy; }
-		public function get money() : uint { return m_money; }
 		
 		public function TinyTrainer( battleSpriteData : BitmapData, name : String )
 		{
@@ -38,14 +37,27 @@ package com.tinyrpg.core
 			m_overworldSpriteId = TinySpriteLookup.getPlayerSpriteId( this.name );
 		}
 		
-		public static function newFromTestData( name : String = 'Player' ) : TinyTrainer 
+		public static function newFromStarterData( name : String = 'Andy' ) : TinyTrainer 
 		{
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
 			
-			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_BUCKET ) );
-			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_TALL_GRASS ) );
-			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByName( TinyMonLookup.MON_BOX ) );
+			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( name );
+			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByHuman( starterName ) );
 			
+			return newTrainer;
+		}
+		
+		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0 ) : TinyTrainer
+		{
+			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
+			newTrainer.money = money;
+			newTrainer.isEnemy = true;
+			
+			for ( var i : uint = 0; i < mons.length; i++ )
+			{
+				newTrainer.squad.push( mons[ i ] );
+			}
+	
 			return newTrainer;
 		}
 		
@@ -159,7 +171,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'addMoney: ' + amount, this );
 			
-			this.m_money += amount;
+			this.money += amount;
 			TinyLogManager.log( 'current money: ' + this.money, this );
 		}
 		
@@ -167,7 +179,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'removeMoney: ' + amount, this );
 			
-			this.m_money = Math.max( 0, this.m_money - amount );
+			this.money = Math.max( 0, this.money - amount );
 			TinyLogManager.log( 'current money: ' + this.money, this );
 		}
 	}

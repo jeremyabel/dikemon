@@ -761,15 +761,18 @@ Soccer Shorts</RIVAL>
     <STYLE>Leaky</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
-    <STARTER_TEXT></STARTER_TEXT>
+    <STARTER_TEXT>leaky</STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: MOIST_DROPS;
 5: TURBO_BUCKET</MOVES>
-    <HP>40</HP>
-    <ATK>45</ATK>
+    <HP>4</HP>
+    <!-- <HP>40</HP> -->
+    <ATK>4500</ATK>
+    <!-- <ATK>45</ATK> -->
     <DEF>40</DEF>
-    <SP_ATK>35</SP_ATK>
+    <SP_ATK>3500</SP_ATK>
+    <!-- <SP_ATK>35</SP_ATK> -->
     <SP_DEF>35</SP_DEF>
     <SPD>56</SPD>
     <EXP>55</EXP>
@@ -851,7 +854,7 @@ Soccer Shorts</RIVAL>
     <STYLE>Left</STYLE>
     <RIVAL></RIVAL>
     <DEX_ENTRY></DEX_ENTRY>
-    <STARTER_TEXT></STARTER_TEXT>
+    <STARTER_TEXT>kinda stinky</STARTER_TEXT>
     <TYPE_1>Normal</TYPE_1>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: LACE_WRAP;

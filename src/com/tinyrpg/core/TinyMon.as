@@ -32,10 +32,10 @@ package com.tinyrpg.core
 		private var m_growthRate	: TinyExpGrowthRate;
 		private var m_currentExp	: int;
 		private var m_currentHP		: int;
-		private var m_isEvolved		: Boolean = false;
 		
 		public var moveSet			: TinyMoveSet;
 		
+		public var isEvolved		: Boolean = false;
 		public var isInBattle		: Boolean = false;
 		public var usedInBattle		: Boolean = false;
 		public var isFainted		: Boolean = false;
@@ -84,11 +84,10 @@ package com.tinyrpg.core
 		public function get weight() 		: int { return m_weight; }
 		public function get currentHP()		: int { return m_currentHP; }
 		public function get currentEXP()	: int { return m_currentExp; }
-		public function get isEvolved() 	: Boolean { return m_isEvolved; }
 		
-		public function TinyMon( xmlData : XML, level : uint = 5 )
+		public function TinyMon( xmlData : XML, level : uint = 5, evolved : Boolean = false )
 		{
-			this.initFromXML(xmlData);
+			this.initFromXML( xmlData, level, evolved );
 		}
 		
 		public function initFromXML( xmlData : XML, level : uint = 5, evolved : Boolean = false ) : void
@@ -131,9 +130,10 @@ package com.tinyrpg.core
 			m_level = level;
 			m_currentExp = 1;
 			m_currentHP = TinyMath.deepCopyInt(this.maxHP);
-			m_isEvolved = evolved;
 			
-			this.moveSet = TinyMoveSet.newFromXML(xmlData);
+			this.isEvolved = evolved;
+			
+			this.moveSet = TinyMoveSet.newFromXML( xmlData );
 			this.moveSet.setMovesToLevel( this.m_level );
 			this.moveSet.logMoves();
 			
@@ -143,7 +143,7 @@ package com.tinyrpg.core
 		
 		public function get name() : String 
 		{ 
-			if ( m_human.length > 0 && !m_isEvolved ) return m_human;
+			if ( m_human.length > 0 && !this.isEvolved ) return m_human;
 			return m_name; 
 		}
 				

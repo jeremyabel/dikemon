@@ -3,7 +3,8 @@
 
 	<EVENT_map_setup>
 		<SEQUENCE>
-			<CONDITIONAL>
+			<!-- NOTE: For the intro_prefade_debug event to function properly, comment out this first conditional block!! -->
+			<!-- <CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>started_intro_lab</VALUE>
 				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
@@ -17,7 +18,7 @@
 						<END></END>
 					</SEQUENCE>
 				</IF_FALSE>
-			</CONDITIONAL>
+			</CONDITIONAL> -->
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>done_first_battle</VALUE>
@@ -85,8 +86,9 @@
 	<EVENT_intro_prefade_debug>
 		<SEQUENCE>
 			<REMOVE_NPC>Oak At PC</REMOVE_NPC>
-			<!-- <SET_FLAG>picked_ball</SET_FLAG> -->
-			<SET_FLAG>picking_ball</SET_FLAG>
+			<SET_FLAG>started_intro_lab</SET_FLAG>
+			<SET_FLAG>picked_ball</SET_FLAG>
+			<!-- <SET_FLAG>picking_ball</SET_FLAG> -->
 			<ADD_NPC>
 				<NPC_NAME>OAK</NPC_NAME>
 				<SPRITE_NAME>PROF OAK</SPRITE_NAME>
@@ -419,14 +421,32 @@
 										<TEXT>Wait, [name]! [halt]Let's whip out our Dikémon!   [end]</TEXT>
 									</DIALOG>
 
-									<!-- TODO: BATTLE GOES HERE -->
+									<!-- Battle vs Rival -->
+									<TRAINER_BATTLE gameover="false">
+										<TRAINER_NAME>RIVAL</TRAINER_NAME>
+										<TRAINER_MONS>
+											<MON><NAME>BUCKET</NAME><LEVEL>5</LEVEL></MON>
+										</TRAINER_MONS>
+										<IF_WIN>
+											<SEQUENCE>
+												<DIALOG>
+													<SPEAKER>RIVAL</SPEAKER>
+													<TEXT>Damn, [delay 6]your Dikémon really is a try-hard, [delay 6]huh. [halt]Well, I'm gonna 'roid up my Dikémon to compensate for my own sense of inadequacy. [halt]SMELL YA LATER, FUCKTARD!   [end]</TEXT>
+												</DIALOG>
+												<END></END>
+											</SEQUENCE>
+										</IF_WIN>
+										<IF_LOSE>
+											<SEQUENCE>
+												<DIALOG>
+													<SPEAKER>RIVAL</SPEAKER>
+													<TEXT>You shoulda picked the bucket. [halt]Well, I'm gonna 'roid up my Dikémon so I can continue to validate my fragile ego. [halt]SMELL YA LATER, FUCKTARD!   [end]</TEXT>
+												</DIALOG>
+												<END></END>
+											</SEQUENCE>
+										</IF_LOSE>
+									</TRAINER_BATTLE>
 
-									<!-- Rival loses, yells -->
-									<DIALOG>
-										<SPEAKER>RIVAL</SPEAKER>
-										<TEXT>Damn, [delay 6]your Dikémon really is a try-hard, [delay 6]huh. [halt]Well, I'm gonna 'roid up my Dikémon to compensate for my own sense of inadequacy. [halt]SMELL YA LATER, FUCKTARD!   [end]</TEXT>
-									</DIALOG>
-									
 									<!-- Rival exits, depending on which side the player tried to exit from -->
 									<CONDITIONAL>
 										<TYPE>FLAG</TYPE>
