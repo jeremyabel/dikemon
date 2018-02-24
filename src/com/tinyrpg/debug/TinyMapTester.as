@@ -35,13 +35,21 @@ package com.tinyrpg.debug
 			TinyPlayer.getInstance().usedRepel = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'TownHouseProfessor';
-			testWarpObject.targetWarpName = 'warpDebug';
-			testWarpObject.destinationFacing = 'UP';
-			testWarpObject.stepForwardAfterWarp = true;
+			testWarpObject.targetMapName = 'Intro';
+			testWarpObject.targetWarpName = 'warpIntro';
 			
+//			testWarpObject.targetMapName = 'TownHouseProfessor';
+//			testWarpObject.targetWarpName = 'warpDebug';
+//			testWarpObject.destinationFacing = 'UP';
+//			testWarpObject.stepForwardAfterWarp = true;
+			
+//			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
+//			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';
+//			TinyMapManager.getInstance().warpCommandInProgress = testWarpCommand;
+
 			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
 			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';
+			testWarpCommand.postFadeSequenceName = 'intro';
 			TinyMapManager.getInstance().warpCommandInProgress = testWarpCommand;
 			
 			TinyMonLookup.getInstance().initMonsterData();

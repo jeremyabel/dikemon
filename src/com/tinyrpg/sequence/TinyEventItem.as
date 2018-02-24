@@ -24,6 +24,10 @@ package com.tinyrpg.sequence
 		public static const WARP					: String = 'WARP';
 		public static const SET_POSITION  			: String = 'SET_POSITION';
 		public static const SET_VISIBLITY 			: String = 'SET_VISIBILITY';
+		public static const SHOW_PLAYER				: String = 'SHOW_PLAYER';
+		public static const HIDE_PLAYER				: String = 'HIDE_PLAYER';
+		public static const SHOW_SPRITE				: String = 'SHOW_SPRITE';
+		public static const HIDE_SPRITE				: String = 'HIDE_SPRITE';
 		public static const SHOW_OBJECT	  			: String = 'SHOW_OBJECT';
 		public static const HIDE_OBJECT	  			: String = 'HIDE_OBJECT';
 		public static const PLAY_ANIM	  			: String = 'PLAY_ANIM';

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<HIDE_PLAYER></HIDE_PLAYER>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<EVENT_intro>
+		<SEQUENCE>
+
+			<!-- Oak sprite appears -->
+			<DELAY>10</DELAY>
+			<SHOW_SPRITE>OAK</SHOW_SPRITE>
+			<DELAY>4</DELAY>
+
+			<DIALOG>
+				<SPEAKER>VIRILE OLD MAN</SPEAKER>
+				<TEXT>Hello there! [delay 4]Welcome to the world of Dikémon. [halt]People call me Professor Oak. [delay 4]They call me that because [delay 1]I know a lot about [delay 2]hard wood.  [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>;)   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Anyway, [delay 4]I'm the local expert on Dikémon.   [end]</TEXT>
+			</DIALOG>
+
+			<!-- Dikemon sprite appears -->
+			<HIDE_SPRITE>OAK</HIDE_SPRITE>
+			<DELAY>10</DELAY>
+			<SHOW_SPRITE>EGG</SHOW_SPRITE>
+			<DELAY>8</DELAY>
+
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>This world is inhabitied by Dikémon. [halt]Some people keep them as pets. [halt]Others do [delay 8]different [delay 8]things [delay 8]with them[delay 4].[delay 4].[delay 4].   [end]</TEXT>
+			</DIALOG>
+
+			<!-- Player sprite appears -->
+			<HIDE_SPRITE>EGG</HIDE_SPRITE>
+			<DELAY>10</DELAY>
+			<SHOW_SPRITE>PLAYER</SHOW_SPRITE>
+			<DELAY>8</DELAY>
+
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>First,[delay 3] what’s your name?[halt] Wait don’t tell me,[delay 8] I’m really good at this.[delay 8] Your[delay 5] name[delay 5] is[delay 5].[delay 5].[delay 5].[delay 16] Mitch. [halt]Yup, [delay 8] got a real Mitch-vibe to you. [halt]An intense [delay 4]Mitch [delay 4]aura. [delay 8]All [delay 4]over.   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>.[delay 8].[delay 8].   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Naw [delay 4]I’m just joshin’.[delay 8] You’re [name], right?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>I feel like this is a mistake,[delay 4] but yeah,[delay 4] I’m [name].   [end]</TEXT>
+			</DIALOG>
+
+			<!-- Rival sprite appears -->
+			<HIDE_SPRITE>PLAYER</HIDE_SPRITE>
+			<DELAY>10</DELAY>
+			<SHOW_SPRITE>RIVAL</SHOW_SPRITE>
+			<DELAY>8</DELAY>
+
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>This is [rival].[delay 8] They've been your rival since you were born.   [end]</TEXT>
+			</DIALOG>
+			<DELAY>10</DELAY>
+			<SUB_SEQUENCE>rival_dialog</SUB_SEQUENCE>
+
+			<!-- Oak sprite appears again -->
+			<HIDE_SPRITE>RIVAL</HIDE_SPRITE>
+			<DELAY>10</DELAY>
+			<SHOW_SPRITE>OAK</SHOW_SPRITE>
+			<DELAY>8</DELAY>
+
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>[name]! [delay 4]Your very own Dikémon experience is about to commence.[halt] A world of sensual adventure awaits!   [end]</TEXT>
+			</DIALOG>
+
+			<DELAY>8</DELAY>
+			<HIDE_SPRITE>OAK</HIDE_SPRITE>
+			<DELAY>8</DELAY>
+
+			<!-- Done, warp to the player house, second floor -->
+			<WARP>
+				<MAP_NAME>TOWNHOUSEPLAYERFLOOR2</MAP_NAME>
+				<WARP_NAME>warpFromIntro</WARP_NAME>
+				<FACING>RIGHT</FACING>
+				<FADE_SPEED>16</FADE_SPEED>
+			</WARP>
+
+			<END></END>
+		</SEQUENCE>
+	</EVENT_intro>
+
+	<EVENT_rival_dialog>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>CHRIS</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>You make my balls hurt,[delay 4] nerd.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>YULIA</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Cyka blyat!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>JASON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Every hero needs an archvillain!  [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>RON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Pah, you're unreal.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>ANDY</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I guess I'll have to put up with you.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>EVAN</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>You could use some more flavor.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>RACHEL</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>You call that accessorizing!?   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>QUINN</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I am your salvation!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>DAVE</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I'll tie you up!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>BILL</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I took up rock climbing to get away from you.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>BRENTON</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>I have some cool machines you should stick your face in!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_rival_dialog>
+
+</EVENTS>

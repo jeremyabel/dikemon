@@ -4,12 +4,13 @@
 	<EVENT_map_setup>
 		<SEQUENCE>
 			<!-- NOTE: For the intro_prefade_debug event to function properly, comment out this first conditional block!! -->
-			<!-- <CONDITIONAL>
+			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>started_intro_lab</VALUE>
 				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
 				<IF_FALSE>
 					<SEQUENCE>
+						<REMOVE_NPC>Oak At PC</REMOVE_NPC>
 						<REMOVE_TRIGGER>triggerTryLeaveLabLeft</REMOVE_TRIGGER>
 						<REMOVE_TRIGGER>triggerTryLeaveLabRight</REMOVE_TRIGGER>
 						<REMOVE_TRIGGER>triggerBall1</REMOVE_TRIGGER>
@@ -18,7 +19,7 @@
 						<END></END>
 					</SEQUENCE>
 				</IF_FALSE>
-			</CONDITIONAL> -->
+			</CONDITIONAL>
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>done_first_battle</VALUE>
@@ -1020,10 +1021,28 @@
 							</IF_TRUE>
 							<IF_FALSE>
 								<SEQUENCE>
-									<DIALOG>
-										<SPEAKER>Oak's Aide</SPEAKER>
-										<TEXT>There's only two of us, so work is pretty hard, heh heh.   [end]</TEXT>
-									</DIALOG>
+									<CONDITIONAL>
+										<TYPE>FLAG</TYPE>
+										<VALUE>started_intro_lab</VALUE>
+										<IF_TRUE>
+											<SEQUENCE>
+												<DIALOG>
+													<SPEAKER>Oak's Aide</SPEAKER>
+													<TEXT>There's only two of us, so work is pretty hard, heh heh.   [end]</TEXT>
+												</DIALOG>
+												<END></END>
+											</SEQUENCE>
+										</IF_TRUE>
+										<IF_FALSE>
+											<SEQUENCE>
+												<DIALOG>
+													<SPEAKER>Oak's Aide</SPEAKER>
+													<TEXT>Oak? [delay 4]He's not here right now. [halt]He's probably lurking out in the bushes to the west of town.   [end]</TEXT>
+												</DIALOG>
+												<END></END>
+											</SEQUENCE>
+										</IF_FALSE>
+									</CONDITIONAL>
 									<END></END>
 								</SEQUENCE>
 							</IF_FALSE>

@@ -257,6 +257,7 @@ package com.tinyrpg.lookup
 				case 'RALPH': 		newSprite = new HumanRalph; break;
 				case 'RON': 		newSprite = new HumanRon; break;
 				case 'QUINN': 		newSprite = new HumanQuinn; break;
+				case 'OAK':			newSprite = new TrainerOak; break;
 				default: 			newSprite = new TrainerPlayer; break;
 			}
 			
