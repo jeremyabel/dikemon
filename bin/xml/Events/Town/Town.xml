@@ -35,6 +35,70 @@
 	<!-- NPCS -->
 	<!-- =========================================================================================== -->	
 
+	<EVENT_talk_lady>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>picked_ball</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<CONDITIONAL>
+							<TYPE>FLAG</TYPE>
+							<VALUE>town_lady_gave_balls</VALUE>
+							<IF_TRUE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Lady</SPEAKER>
+										<TEXT>Be careful out there!   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</IF_TRUE>
+							<IF_FALSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Lady</SPEAKER>
+										<TEXT>Oh, [delay 4]are you on your way to the city? [halt]Take these, [delay 7]maybe you'll catch something out there!   [end]</TEXT>
+									</DIALOG>
+									<GIVE_ITEM>Pokeball</GIVE_ITEM>
+									<GIVE_ITEM>Pokeball</GIVE_ITEM>
+									<GIVE_ITEM>Pokeball</GIVE_ITEM>
+									<SET_FLAG>town_lady_gave_balls</SET_FLAG>
+									<DELAY>8</DELAY>
+									<DIALOG>
+										<SPEAKER></SPEAKER>
+										<TEXT>You got 3 Dikéballs!   [end]</TEXT>
+									</DIALOG>
+									<END></END>
+								</SEQUENCE>
+							</IF_FALSE>
+						</CONDITIONAL>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Lady</SPEAKER>
+							<TEXT>I saw Prof. Oak creeping in the bushes to the west.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_lady>
+
+	<EVENT_talk_big_man>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Big Man</SPEAKER>
+				<TEXT>I'm a [delay 6]big [delay 6]man with b[delay 4]i[delay 4]g[delay 4] Dikéballs!   [end]</TEXT>
+			</DIALOG>
+		</SEQUENCE>
+	</EVENT_talk_big_man>
+
 
 	<!-- =========================================================================================== -->
 	<!-- OBJECTS -->

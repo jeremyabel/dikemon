@@ -23,6 +23,9 @@
 	<!-- Town: Oak's Lab -->
 	<FLAG>scientist_gave_potion</FLAG>
 
+	<!-- Town: Overworld -->
+	<FLAG>town_lady_gave_balls</FLAG>
+
 	<!-- Route 29 -->
 	<FLAG>fought_team_vomit</FLAG>
 

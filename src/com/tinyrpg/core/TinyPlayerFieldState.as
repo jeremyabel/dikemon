@@ -177,6 +177,9 @@ package com.tinyrpg.core
 			// Exit if an accept keypress is required and none was found
 			if ( !fromAcceptKeypress ) return;
 			
+			// Disable random spinning so the npc doesn't change orientation while talking to the player
+			npcObject.enableSpin = false;
+			
 			// Set the NPC to face the player
 			npcObject.setFacingFromPlayerFacing( this.walkSprite.currentDirection );
 			

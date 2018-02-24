@@ -1,9 +1,13 @@
 package com.tinyrpg.data 
 {
+	import com.greensock.TweenLite;
+	
 	import com.tinyrpg.display.TinyWalkSprite;
 	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.managers.TinyGameManager;
+	import com.tinyrpg.utils.TinyLogManager;
+	import com.tinyrpg.utils.TinyMath;
 	
 	/**
 	 * @author jeremyabel
@@ -16,6 +20,10 @@ package com.tinyrpg.data
 		public var eventName 	: String;
 		public var walkSprite 	: TinyWalkSprite;
 		public var isInGrass	: Boolean;
+		public var randomSpin	: Boolean = false;
+		public var enableSpin	: Boolean = true;
+		
+		private var randomDirections : Array = [ 'UP', 'DOWN', 'LEFT', 'RIGHT' ];
 		
 		public function TinyFieldMapObjectNPC() : void 
 		{
@@ -43,8 +51,18 @@ package com.tinyrpg.data
 			
 			// Add 'em up
 			this.addChild( this.walkSprite );
-			
+				
+			this.tryRestartSpin();
 			super.dataReady();
+		}
+		
+		public function tryRestartSpin() : void
+		{
+			if ( this.randomSpin ) 
+			{		
+				TinyLogManager.log( 'tryRestartSpin', this );
+				TweenLite.delayedCall( TinyMath.randomInt( 100, 200 ), this.updateSpin, null, true );
+			}
 		}
 		
 		public function setFacingFromPlayerFacing( facing : String ) : void
@@ -55,6 +73,17 @@ package com.tinyrpg.data
 				case 'DOWN':	this.walkSprite.setFacing( 'UP' ); break;
 				case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
 				case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
+			}
+		}
+		
+		private function updateSpin() : void
+		{
+			if ( this.enableSpin )
+			{
+				var directionIndex : uint = TinyMath.randomInt( 0, 3 );
+				this.walkSprite.setFacing( this.randomDirections[ directionIndex ] );
+				
+				TweenLite.delayedCall( TinyMath.randomInt( 100, 200 ), this.updateSpin, null, true );
 			}
 		}
 	}
