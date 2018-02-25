@@ -83,6 +83,7 @@ package com.tinyrpg.lookup
 		public static var NPC_FAIRY_MON			: int = 432;
 		public static var NPC_BIRD_MON			: int = 438;
 		public static var NPC_DRAGON_MON		: int = 444;
+		public static var NPC_CAT_MON			: int = 450;
 		public static var NPC_DIKEBALL			: int = 472;
 		
 		public static function getFieldSpriteId( name : String ) : int
@@ -163,6 +164,7 @@ package com.tinyrpg.lookup
 				case "FAIRY MON":			return NPC_FAIRY_MON;
 				case "BIRD MON":			return NPC_BIRD_MON;
 				case "DRAGON MON":			return NPC_DRAGON_MON;
+				case "CAT MON":				return NPC_CAT_MON;
 				case "DIKEBALL":			return NPC_DIKEBALL;
 			}
 		}
@@ -258,6 +260,7 @@ package com.tinyrpg.lookup
 				case 'RON': 		newSprite = new HumanRon; break;
 				case 'QUINN': 		newSprite = new HumanQuinn; break;
 				case 'OAK':			newSprite = new TrainerOak; break;
+				case 'TEAM VOMIT':	newSprite = new TrainerTeamVomit1; break;
 				default: 			newSprite = new TrainerPlayer; break;
 			}
 			

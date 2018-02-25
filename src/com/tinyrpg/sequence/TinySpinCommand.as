@@ -112,13 +112,13 @@ package com.tinyrpg.sequence
 			TweenLite.delayedCall( this.speed * 2, this.update, null, true );
 			TweenLite.delayedCall( this.speed * 3, this.update, null, true );
 			
-			if ( !this.continuous )
+			if ( this.continuous && this.targetSprite.isAlive )
 			{
-				TweenLite.delayedCall( this.speed * 4, this.onSpinComplete, null, true );	
+				TweenLite.delayedCall( this.speed * 4, this.playSpin, null, true );
 			}
 			else 
 			{
-				TweenLite.delayedCall( this.speed * 4, this.playSpin, null, true );
+				TweenLite.delayedCall( this.speed * 4, this.onSpinComplete, null, true );	
 			}
 		}
 		

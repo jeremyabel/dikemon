@@ -87,6 +87,9 @@ package com.tinyrpg.sequence
 		{
 			TinyLogManager.log( 'onWalkComplete - id: ' + this.targetSprite.id, this );
 			
+			// Allow sprite to change direction again
+			this.targetSprite.setKeepFacing( false );
+			
 			// Emit complete event after a 1-frame delay so that the sprite can come to a stop
 			TweenLite.delayedCall( 1, this.dispatchEvent, [ new TinySequenceEvent( TinySequenceEvent.WALK_COMPLETE, this ) ], true );
 		}

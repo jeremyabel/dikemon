@@ -150,19 +150,26 @@ package com.tinyrpg.battle
 					// Reset total damage counter
 					damage = 0;
 					
-					// If the accuracy check fails, show the "missed" dialog box and exit. Moves with the ALWAYS_HIT effect bypass the accuracy check.
+					// If the accuracy check fails on the first hit, show the "missed" dialog box and exit. 
+					// Moves with the ALWAYS_HIT effect bypass the accuracy check.
+					// If the accuracy check fails on any subsequent hits, any further hits are skipped.
 					if ( !TinyBattleMath.checkAccuracy( attackingMon, defendingMon, move ) && !move.hasEffect( TinyMoveEffect.ALWAYS_HIT ) )
 					{
-						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.MISSED, attackingMon ) );
-						this.eventSequence.addEnd();
-						return;	
+						if ( i == 0 )
+						{
+							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.MISSED, attackingMon ) );
+							this.eventSequence.addEnd();
+							return;	
+						}
+						else break;
 					}
 					
 					// Increment successful hits counter if there are multiple hits
 					if ( numHits > 1 ) numSuccessfulHits++;
 					
 					// Attack hits. Show the "used move" dialog, but only for the first 
-					if (i == 0) {
+					if ( i == 0 ) 
+					{
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.USED_MOVE, attackingMon, null, move ) );
 					}
 					
@@ -193,7 +200,7 @@ package com.tinyrpg.battle
 					}
 					
 					// Show one-hit-KO dialog, if applicable
-					if ( isOneHitKO )
+					if ( isOneHitKO && !this.isEnemy )
 					{
 						TinyLogManager.log('it\'s a one-hit KO!', this);
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.ONE_HIT_KO ) );	
@@ -218,7 +225,8 @@ package com.tinyrpg.battle
 			}
 			
 			// Show num hits dialog, if applicable
-			if ( numSuccessfulHits > 1 ) {
+			if ( numSuccessfulHits > 1 ) 
+			{
 				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.HIT_MULTI, null, null, null, null, numSuccessfulHits ) );
 			}
 			
@@ -527,7 +535,7 @@ package com.tinyrpg.battle
 			// Get the next enemy mon from the trainer's squad if this isn't a wild encounter
 			if ( !this.battle.m_isWildEncounter ) 
 			{
-				this.battle.m_enemyTrainer.getFirstHealthyMon();
+				nextEnemyMon = this.battle.m_enemyTrainer.getFirstHealthyMon();
 			}
 			
 			switch ( this.result )

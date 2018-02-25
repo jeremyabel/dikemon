@@ -12,6 +12,7 @@ package com.tinyrpg.events
 		public static var SPIN_COMPLETE		: String = 'SPIN_COMPLETE';
 		public static var WALK_COMPLETE		: String = 'WALK_COMPLETE';
 		public static var CHOICE_COMPLETE	: String = 'CHOICE_COMPLETE';
+		public static var TWEEN_COMPLETE 	: String = 'TWEEN_COMPLETE';
 		
 		public var param : *;
 		

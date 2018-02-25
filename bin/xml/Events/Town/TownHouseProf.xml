@@ -39,6 +39,30 @@
 		</SEQUENCE>
 	</EVENT_map_setup>
 
+	<EVENT_gameover>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>Oak At PC</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>OAK</SPEAKER>
+				<TEXT>Ah, [delay 4]you're awake! [halt]Someone found you passed out in a ditch and dragged you back here. [halt]I healed all your Dikémon using this machine, [delay 4]but try to be more careful next time!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>Oak At PC</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_gameover>
+
 	<!-- =========================================================================================== -->
 	<!-- INTRO -->
 	<!-- =========================================================================================== -->

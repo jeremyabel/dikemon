@@ -383,9 +383,11 @@ Prescription?</RIVAL>
 36: CRUNCH;
 50: HYDRO_PUMP</MOVES>
     <HP>35</HP>
-    <ATK>64</ATK>
+    <ATK>6400</ATK>
+    <!-- <ATK>64</ATK> -->
     <DEF>85</DEF>
-    <SP_ATK>74</SP_ATK>
+    <SP_ATK>7400</SP_ATK>
+    <!-- <SP_ATK>74</SP_ATK> -->
     <SP_DEF>55</SP_DEF>
     <SPD>32</SPD>
     <EXP>142</EXP>
@@ -766,13 +768,10 @@ Soccer Shorts</RIVAL>
     <TYPE_2>Normal</TYPE_2>
     <MOVES>1: MOIST_DROPS;
 5: TURBO_BUCKET</MOVES>
-    <HP>4</HP>
-    <!-- <HP>40</HP> -->
-    <ATK>4500</ATK>
-    <!-- <ATK>45</ATK> -->
+    <HP>40</HP>
+    <ATK>45</ATK>
     <DEF>40</DEF>
-    <SP_ATK>3500</SP_ATK>
-    <!-- <SP_ATK>35</SP_ATK> -->
+    <SP_ATK>35</SP_ATK>
     <SP_DEF>35</SP_DEF>
     <SPD>56</SPD>
     <EXP>55</EXP>

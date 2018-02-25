@@ -59,6 +59,7 @@ package com.tinyrpg.display
 		public var currentDirection : String;
 		public var hasControl : Boolean = false;
 		public var enableCollisions : Boolean = true;
+		public var isAlive : Boolean = true;
 
 		public function TinyWalkSprite( id : uint, initialFacing : String = 'DOWN', lockToCamera : Boolean = false, isPlayer : Boolean = false ) : void
 		{

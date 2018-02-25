@@ -26,6 +26,21 @@
 				</IF_TRUE>
 				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
 			</CONDITIONAL>
+
+			<!-- Remove Team Vomit after the fight is done -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>fought_team_vomit</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_NPC>Vomit Girl</REMOVE_NPC>
+						<REMOVE_NPC>Vomit Guy</REMOVE_NPC>
+						<REMOVE_NPC>Vomit Cat</REMOVE_NPC>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_map_setup>
@@ -191,6 +206,17 @@
 	<!-- =========================================================================================== -->
 	<!-- MEETING TEAM VOMIT -->
 	<!-- =========================================================================================== -->
+
+	<EVENT_meet_team_vomit_cat>
+		<SEQUENCE>
+			<SUB_SEQUENCE>vomit_cat_nod</SUB_SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Cat Thing</SPEAKER>
+				<TEXT>Meow!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_meet_team_vomit_cat>
 
 	<EVENT_meet_team_vomit_girl>
 		<SEQUENCE>
@@ -407,6 +433,7 @@
 				<TARGET>PLAYER</TARGET>
 				<FACING>UP</FACING>
 			</SET_FACING>
+			<SUB_SEQUENCE>vomit_cat_nod</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Cat Thing</SPEAKER>
 				<TEXT>Me-[halt]ow!   [end]</TEXT>
@@ -518,8 +545,7 @@
 			</SET_FACING>
 			<DELAY>4</DELAY>
 
-			<!-- TODO: Both 4-way spin -->
-
+			<!-- Both Team Vomit pals do a spin -->
 			<SET_FACING>
 				<TARGET>Vomit Girl</TARGET>
 				<FACING>RIGHT</FACING>
@@ -529,10 +555,10 @@
 				<FACING>RIGHT</FACING>
 			</SET_FACING>
 			<DELAY>8</DELAY>
-			<SET_EMOTE>
+			<SHOW_EMOTE>
 				<TARGET>PLAYER</TARGET>
 				<EMOTE>EXCLAIM</EMOTE>
-			</SET_EMOTE>
+			</SHOW_EMOTE>
 			<SPIN_NPC sync="TRUE">
 				<TARGET>Vomit Guy</TARGET>
 				<SPEED>4</SPEED>
@@ -554,80 +580,218 @@
 			</HIDE_EMOTE>
 			<DELAY>8</DELAY>
 
+			<SUB_SEQUENCE>vomit_girl_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>Prepare for trouble!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_girl_step_back</SUB_SEQUENCE>
+			<SUB_SEQUENCE>vomit_guy_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>And make it double!   [end]</TEXT>
 			</DIALOG>
-			<DELAY>8</DELAY>
+			<SUB_SEQUENCE>vomit_guy_step_back</SUB_SEQUENCE>
+			<SUB_SEQUENCE>vomit_girl_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>To protect the world from fragmentation!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_girl_step_back</SUB_SEQUENCE>
+			<SUB_SEQUENCE>vomit_guy_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>To unite all peoples in our nation!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_guy_step_back</SUB_SEQUENCE>
+			<SUB_SEQUENCE>vomit_girl_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>To denounce the evils of truth and love!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_girl_step_back</SUB_SEQUENCE>
+			<SUB_SEQUENCE>vomit_guy_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>To extend our reach to the moon above!   [end]</TEXT>
 			</DIALOG>
-
+			<SUB_SEQUENCE>vomit_guy_step_back</SUB_SEQUENCE>
+			
 			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>Vomit Girl</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
 			<SPIN_NPC>
 				<TARGET>Vomit Girl</TARGET>
-				<SPEED>4</SPEED>
+				<SPEED>3</SPEED>
 			</SPIN_NPC>
-			<DELAY>8</DELAY>
+			<SUB_SEQUENCE>vomit_girl_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Mercy</SPEAKER>
 				<TEXT>Mercy!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_girl_step_back</SUB_SEQUENCE>
 
 			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>Vomit Guy</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
 			<SPIN_NPC>
 				<TARGET>Vomit Guy</TARGET>
-				<SPEED>4</SPEED>
+				<SPEED>3</SPEED>
 			</SPIN_NPC>
-			<DELAY>8</DELAY>
+			<SUB_SEQUENCE>vomit_guy_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Evan</SPEAKER>
 				<TEXT>Evan!   [end]</TEXT>
 			</DIALOG>
+			<SUB_SEQUENCE>vomit_guy_step_back</SUB_SEQUENCE>
+			<DELAY>8</DELAY>
 
+			<SUB_SEQUENCE>vomit_girl_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Mercy</SPEAKER>
 				<TEXT>Team Vomit blasts chunks at the speed of light!   [end]</TEXT>
 			</DIALOG>
-			<DELAY>4</DELAY>
+			<SUB_SEQUENCE>vomit_guy_step_out</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Evan</SPEAKER>
 				<TEXT>Surrender now or get covered in barf!   [end]</TEXT>
 			</DIALOG>
-			<DELAY>2</DELAY>
+			<SUB_SEQUENCE>vomit_cat_nod</SUB_SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Cat Thing</SPEAKER>
 				<TEXT>*hairball*   [end]</TEXT>
 			</DIALOG>
+			<DELAY>8</DELAY>
 
-			<!-- TODO: Battle! -->
-
-			<DIALOG>
-				<SPEAKER>Team Vomit</SPEAKER>
-				<TEXT>Looks like Team Vomit's blasting chunks aga[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]n!   [end]</TEXT>
-			</DIALOG>
-
-			<!-- TODO: Fly off or something -->
-
+			<!-- Battle! -->
+			<TRAINER_BATTLE>
+				<TRAINER_NAME>Team Vomit</TRAINER_NAME>
+				<TRAINER_MONS>
+					<MON><NAME>BOX</NAME><LEVEL>8</LEVEL></MON>
+					<!-- <MON><NAME>SHOE</NAME><LEVEL>6</LEVEL></MON> -->
+				</TRAINER_MONS>
+				<IF_WIN>
+					<SEQUENCE>
+						<SET_FLAG>fought_team_vomit</SET_FLAG>
+						<DELAY>8</DELAY>
+						<DIALOG>
+							<SPEAKER>Team Vomit</SPEAKER>
+							<TEXT>Looks like Team Vomit's blasting chunks aga[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]a[delay 2]n!   [end]</TEXT>
+						</DIALOG>
+						<SPIN_NPC continuous="true">
+							<TARGET>Vomit Cat</TARGET>
+							<SPEED>3</SPEED>
+						</SPIN_NPC>
+						<SPIN_NPC continuous="true">
+							<TARGET>Vomit Girl</TARGET>
+							<SPEED>3</SPEED>
+						</SPIN_NPC>
+						<SPIN_NPC continuous="true">
+							<TARGET>Vomit Guy</TARGET>
+							<SPEED>3</SPEED>
+						</SPIN_NPC>
+						<SET_FACING>
+							<TARGET>PLAYER</TARGET>
+							<FACING>UP</FACING>
+						</SET_FACING>
+						<TWEEN_NPC sync="true" relative="true">
+							<TARGET>Vomit Cat</TARGET>
+							<DURATION>30</DURATION>
+							<Y>-70</Y>
+						</TWEEN_NPC>
+						<TWEEN_NPC sync="true" relative="true">
+							<TARGET>Vomit Girl</TARGET>
+							<DURATION>30</DURATION>
+							<DELAY>3</DELAY>
+							<Y>-70</Y>
+						</TWEEN_NPC>
+						<TWEEN_NPC relative="true">
+							<TARGET>Vomit Guy</TARGET>
+							<DURATION>30</DURATION>
+							<DELAY>6</DELAY>
+							<Y>-70</Y>
+						</TWEEN_NPC>
+						<REMOVE_NPC>Vomit Girl</REMOVE_NPC>
+						<REMOVE_NPC>Vomit Guy</REMOVE_NPC>
+						<REMOVE_NPC>Vomit Cat</REMOVE_NPC>
+						<END></END>
+					</SEQUENCE>
+				</IF_WIN>
+				<IF_LOSE>
+					<SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_LOSE>
+			</TRAINER_BATTLE>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_meet_team_vomit>
+
+	<EVENT_vomit_girl_step_out>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>Vomit Girl</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_vomit_girl_step_out>
+
+	<EVENT_vomit_girl_step_back>
+		<SEQUENCE>
+			<WALK sync="TRUE" keepfacing="TRUE">
+				<TARGET>Vomit Girl</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_vomit_girl_step_back>
+
+	<EVENT_vomit_guy_step_out>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>Vomit Guy</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_vomit_guy_step_out>
+
+	<EVENT_vomit_guy_step_back>
+		<SEQUENCE>
+			<WALK sync="TRUE" keepfacing="TRUE">
+				<TARGET>Vomit Guy</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_vomit_guy_step_back>
+
+	<EVENT_vomit_cat_nod>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>Vomit Cat</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>14</DELAY>
+			<SET_FACING>
+				<TARGET>Vomit Cat</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_vomit_cat_nod>
 	
 </EVENTS>
