@@ -3,6 +3,7 @@ package com.tinyrpg.display
 	import com.greensock.TweenMax;
 	import com.greensock.TimelineMax;
 	import com.greensock.easing.Linear;
+	import com.greensock.easing.Cubic;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
 	
@@ -10,6 +11,7 @@ package com.tinyrpg.display
 	import com.tinyrpg.data.TinyCollisionData;
 	import com.tinyrpg.data.TinyFieldMapObject;
 	import com.tinyrpg.display.misc.GrassOverlay;
+	import com.tinyrpg.display.misc.JumpShadow;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.lookup.TinySpriteLookup;
@@ -36,6 +38,7 @@ package com.tinyrpg.display
 		private var spritesheet : TinyWalkSpriteSheet;
 		private var movementTimeline : TimelineMax;
 		private var grassOverlay : Bitmap;
+		private var jumpShadow : Bitmap;
 		private var prevX : int;
 		private var prevY : int;
 		private var hasCollidedWithWall : Boolean;
@@ -78,6 +81,11 @@ package com.tinyrpg.display
 			this.grassOverlay.y = -12;
 			this.grassOverlay.visible = false;
 			
+			this.jumpShadow = new Bitmap( new JumpShadow() );
+			this.jumpShadow.x = -8;
+			this.jumpShadow.y = -8;
+			this.jumpShadow.visible = false;
+			
 			this.movementBox = new TinyWalkSpriteHitbox( this, 0x00FF00 );
 			this.hitBox = new TinyWalkSpriteHitbox( this, 0xFF00FF );
 			this.movementBox.visible = false;
@@ -88,6 +96,7 @@ package com.tinyrpg.display
 			this.emoteIcon.y -= 4 + 8 + 16;
 			
 			// Add 'em up
+			this.addChild( this.jumpShadow );
 			this.addChild( this.spritesheet );
 			this.addChild( this.grassOverlay );
 			this.addChild( this.emoteIcon );
@@ -492,6 +501,58 @@ package com.tinyrpg.display
 		{
 			this.spritesheet.isWalking = false;
 			this.spritesheet.reset();
+		}
+		
+		public function playJump() : void 
+		{
+			TinyLogManager.log( 'playJump', this );
+			
+			var offsetY : String = '0'; 
+			var offsetAmount = 8;
+			var jumpTime = 8;
+			
+			switch ( this.currentDirection )
+			{
+				case TinyWalkSprite.UP: 	offsetY = '+' + offsetAmount.toString(); break;
+				case TinyWalkSprite.DOWN: 	offsetY = '-' + offsetAmount.toString(); break;
+			}
+			
+			if ( this.currentDirection == TinyWalkSprite.LEFT || this.currentDirection == TinyWalkSprite.RIGHT )
+			{
+				// Move the walk sprite up and down a bit during sideways jumps
+				TweenMax.to( this.spritesheet, jumpTime, {
+					y: "-12",
+					ease: Cubic.easeOut,
+					roundProps: [ 'y' ],
+					yoyo: true,
+					repeat: 1,
+					useFrames: true
+				});
+			} 
+			else
+			{
+				// Simulate parallax by pushing the sprite backwards or forwards during vertical jumps
+				TweenMax.to( this.spritesheet, jumpTime, {
+					y: offsetY,
+					ease: Cubic.easeOut,
+					roundProps: [ 'y' ],
+					yoyo: true,
+					repeat: 1,
+					useFrames: true
+				});
+			}
+		}
+		
+		public function showJumpShadow() : void
+		{
+			TinyLogManager.log( 'showJumpShadow', this );
+			this.jumpShadow.visible = true;
+		}
+		
+		public function hideJumpShadow() : void
+		{
+			TinyLogManager.log( 'hideJumpShadow', this );
+			this.jumpShadow.visible = false;
 		}
 		
 		public function takeStep() : void

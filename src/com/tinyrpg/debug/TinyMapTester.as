@@ -35,10 +35,10 @@ package com.tinyrpg.debug
 			TinyPlayer.getInstance().usedRepel = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'Town';
-			testWarpObject.targetWarpName = 'warpHouse1';
+			testWarpObject.targetMapName = 'Route29';
+			testWarpObject.targetWarpName = 'warpJumpTest';
 			testWarpObject.destinationFacing = 'DOWN';
-			testWarpObject.stepForwardAfterWarp = true;
+			testWarpObject.stepForwardAfterWarp = false;
 			
 //			var testWarpCommand : TinyWarpCommand = new TinyWarpCommand();
 //			testWarpCommand.preFadeSequenceName = 'intro_prefade_debug';

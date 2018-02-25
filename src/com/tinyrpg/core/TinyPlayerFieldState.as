@@ -1,5 +1,10 @@
 package com.tinyrpg.core 
 {	
+	import com.greensock.TweenMax;
+	import com.greensock.easing.Linear;
+	import com.greensock.plugins.RoundPropsPlugin;
+	import com.greensock.plugins.TweenPlugin;
+	
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.data.TinyCollisionData;
 	import com.tinyrpg.data.TinyFieldMapObject;
@@ -13,6 +18,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.managers.TinyMapManager;
 	import com.tinyrpg.utils.TinyLogManager;
 	
+	import flash.display.Sprite;
 	import flash.events.EventDispatcher;
 	
 	/**
@@ -22,12 +28,14 @@ package com.tinyrpg.core
 	{
 		public var objectCollisionEnabled : Boolean = true;
 		
-		private var walkSprite : TinyWalkSprite;
-		private var lastWarpHit : TinyFieldMapObjectWarp = null;
+		private var walkSprite 			: TinyWalkSprite;
+		private var lastWarpHit 		: TinyFieldMapObjectWarp = null;
 		private var stepsSinceEncounter : int = 0;
 		
 		public function TinyPlayerFieldState( walkSprite : TinyWalkSprite ) : void 
 		{
+			TweenPlugin.activate( [ RoundPropsPlugin ] );
+			
 			this.walkSprite = walkSprite;
 			this.walkSprite.addEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
 			this.walkSprite.addEventListener( TinyFieldMapEvent.GRASS_HIT, this.onHitGrass );
@@ -78,19 +86,36 @@ package com.tinyrpg.core
 			TinyLogManager.log( 'onHitJump: ' + event.param.object.name, this );
 			
 			this.stepsSinceEncounter++;
-			
-			var jumpTileIncrement : uint = 2; 
-			var jumpTargetX : int = this.walkSprite.x;
-			var jumpTargetY : int = this.walkSprite.y;
-			
-			// Get the player's post-jump location according to what sort of tile they're trying to jump from
+	
+			// Only allow a jump if the player is facing the right direction
 			switch ( event.param.object.name )
 			{
-				case 'jumpU': jumpTargetY -= 16 * jumpTileIncrement; break;
-				case 'jumpD': jumpTargetY += 16 * jumpTileIncrement; break;
-				case 'jumpL': jumpTargetX -= 16 * jumpTileIncrement; break;
-				case 'jumpR': jumpTargetX += 16 * jumpTileIncrement; break;
+				case 'jumpU': if ( this.walkSprite.currentDirection != TinyWalkSprite.UP ) return; break;
+				case 'jumpD': if ( this.walkSprite.currentDirection != TinyWalkSprite.DOWN ) return; break;
+				case 'jumpL': if ( this.walkSprite.currentDirection != TinyWalkSprite.LEFT ) return; break;
+				case 'jumpR': if ( this.walkSprite.currentDirection != TinyWalkSprite.RIGHT ) return; break;
 			}
+			
+			// Remove player control during the jump
+			TinyInputManager.getInstance().setTarget( null );
+	
+			// Take 3 steps in the current direction
+			this.walkSprite.addEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onJumpComplete );
+			this.walkSprite.takeSteps( 3 );
+			this.walkSprite.playJump();
+			this.walkSprite.showJumpShadow();
+		}
+		
+		private function onJumpComplete( event : TinyFieldMapEvent ) : void 
+		{
+			TinyLogManager.log( 'onJumpComplete', this );
+			
+			// Cleanup
+			this.walkSprite.removeEventListener( TinyFieldMapEvent.STEP_COMPLETE, this.onJumpComplete );
+			this.walkSprite.hideJumpShadow();
+			
+			// Return player control
+			TinyInputManager.getInstance().setTarget( this.walkSprite );
 		}
 		
 		private function onHitGrass( event : TinyFieldMapEvent ) : void 
