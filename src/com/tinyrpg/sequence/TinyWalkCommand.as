@@ -18,7 +18,8 @@ package com.tinyrpg.sequence
 	{
 		public var tiles 	 	: int;
 		public var speed		: int;
-		public var sync		 	: Boolean; 
+		public var sync		 	: Boolean;
+		public var keepFacing	: Boolean = false; 
 		public var targetName	: String;
 		public var direction 	: String;
 		public var targetSprite : TinyWalkSprite;
@@ -43,6 +44,9 @@ package com.tinyrpg.sequence
 			
 			// Get sync status
 			newCommand.sync = xmlData.attribute( 'sync' ).toString().toUpperCase() == 'TRUE';
+			
+			// Get keep facing status
+			newCommand.keepFacing = xmlData.attribute( 'keepfacing' ).toString().toUpperCase() == 'TRUE'; 
 
 			return newCommand;
 		}
@@ -62,6 +66,7 @@ package com.tinyrpg.sequence
 			}
 			
 			this.targetSprite.speed = this.speed;
+			this.targetSprite.setKeepFacing( this.keepFacing );
 			this.targetSprite.setFacing( this.direction );
 			this.targetSprite.takeSteps( this.tiles );
 			

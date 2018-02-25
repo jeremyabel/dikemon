@@ -36,6 +36,7 @@ package com.tinyrpg.display
 		public var speed			: uint = 5;
 		public var facing			: String;
 		public var isWalking		: Boolean = false;
+		public var keepFacing		: Boolean = false;
 		public var keepDirection	: Boolean = false;
 		public var walkCycleIndex 	: uint = 0;
 		
@@ -167,6 +168,8 @@ package com.tinyrpg.display
 		
 		public function setFacing( facing : String ) : void
 		{
+			if ( this.keepFacing ) return;
+			
 			if ( this.facing == facing ) 
 			{
 				this.keepDirection = true;

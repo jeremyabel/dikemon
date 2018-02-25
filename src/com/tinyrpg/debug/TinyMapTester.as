@@ -36,7 +36,7 @@ package com.tinyrpg.debug
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
 			testWarpObject.targetMapName = 'Route29';
-			testWarpObject.targetWarpName = 'warpJumpTest';
+			testWarpObject.targetWarpName = 'warpTeamVomitTest';
 			testWarpObject.destinationFacing = 'DOWN';
 			testWarpObject.stepForwardAfterWarp = false;
 			

@@ -9,8 +9,9 @@ package com.tinyrpg.sequence
 	 */
 	public class TinySetFacingCommand 
 	{
-		public var targetName 	: String;
-		public var targetFacing : String;
+		public var targetName 			: String;
+		public var targetFacing 		: String;
+		public var targetFacingNPCName 	: String;
 		
 		public function TinySetFacingCommand() : void { }
 		
@@ -21,8 +22,11 @@ package com.tinyrpg.sequence
 			// Get target name
 			newCommand.targetName = xmlData.child( 'TARGET' ).toString().toUpperCase();
 			
-			// Get facing
+			// Get target facing
 			newCommand.targetFacing = xmlData.child( 'FACING' ).toString().toUpperCase();
+			
+			// Get target facing NPC name
+			newCommand.targetFacingNPCName = xmlData.child( 'TO_NPC' ).toString().toUpperCase();
 			
 			return newCommand;
 		}
@@ -41,6 +45,19 @@ package com.tinyrpg.sequence
 			{	
 				TinyLogManager.log( 'execute: ' + this.targetName, this );
 				target = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName ).walkSprite;
+			}
+			
+			if ( this.targetFacingNPCName )
+			{
+				var targetFacingNPC : TinyWalkSprite = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetFacingNPCName ).walkSprite;
+				
+				switch ( targetFacingNPC.currentDirection )
+				{
+					case TinyWalkSprite.UP: 	this.targetFacing = 'DOWN'; break;
+					case TinyWalkSprite.DOWN:	this.targetFacing = 'UP'; break;
+					case TinyWalkSprite.LEFT:	this.targetFacing = 'RIGHT'; break;
+					case TinyWalkSprite.RIGHT:	this.targetFacing = 'LEFT'; break;
+				}
 			}
 			
 			// Set facing

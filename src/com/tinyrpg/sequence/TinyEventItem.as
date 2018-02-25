@@ -12,6 +12,7 @@ package com.tinyrpg.sequence
 		public static const BATTLE		 			: String = 'TRAINER_BATTLE';
 		public static const ADD_NPC		 			: String = 'ADD_NPC';
 		public static const REMOVE_NPC	  			: String = 'REMOVE_NPC';
+		public static const SPIN_NPC				: String = 'SPIN_NPC';
 		public static const SHOW_EMOTE				: String = 'SHOW_EMOTE';
 		public static const HIDE_EMOTE				: String = 'HIDE_EMOTE';
 		public static const SET_FACING				: String = 'SET_FACING';

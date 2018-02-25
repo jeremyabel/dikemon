@@ -15,7 +15,6 @@
 				</IF_TRUE>
 				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
 			</CONDITIONAL>
-
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>done_first_battle</VALUE>
@@ -193,6 +192,48 @@
 	<!-- MEETING TEAM VOMIT -->
 	<!-- =========================================================================================== -->
 
+	<EVENT_meet_team_vomit_girl>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>Vomit Guy</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>Vomit Guy</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<SET_FLAG>team_vomit_talked_girl</SET_FLAG>
+			<SUB_SEQUENCE>meet_team_vomit</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_meet_team_vomit_girl>
+
+	<EVENT_meet_team_vomit_guy>
+		<SEQUENCE>
+			<WALK>
+				<TARGET>Vomit Girl</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>Vomit Girl</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<SUB_SEQUENCE>meet_team_vomit</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_meet_team_vomit_guy>
+
 	<EVENT_meet_team_vomit>
 		<SEQUENCE>
 			<DIALOG>
@@ -200,92 +241,318 @@
 				<TEXT>Hey there cool dude!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>You look like a winner!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Cat Thing</SPEAKER>
 				<TEXT>Meow!   [end]</TEXT>
 			</DIALOG>
-			<DELAY>8</DELAY>
+			<DELAY>6</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>6</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>QUESTION</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>16</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>PLAYER</SPEAKER>
 				<TEXT>Umm, [delay 6]can I get through?   [end]</TEXT>
 			</DIALOG>
 			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Girl</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>10</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>You're in luck!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>10</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>Today is the big give-away!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Girl</TO_NPC>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>Just beat us-   [end]</TEXT>
 			</DIALOG>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
-				<TEXT>Team Pop-And-Lock-It!   [end]</TEXT>
+				<TEXT>Team Pop-[delay 6]And-[delay 6]Lock-[delay 6]It!   [end]</TEXT>
 			</DIALOG>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+			</HIDE_EMOTE>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Girl</TO_NPC>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
-				<TEXT>-in a dance battle [delay 2]and win a trip to a land full of [delay 4]Dikémon!   [end]</TEXT>
+				<TEXT>-in a dance battle, [delay 7]and win a trip to a land full of [delay 4]Dikémon!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>10</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Guy</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>Exotic!   [end]</TEXT>
 			</DIALOG>
-			<DELAY>8</DELAY>
+			<DELAY>12</DELAY>
 			<DIALOG>
 				<SPEAKER>PLAYER</SPEAKER>
-				<TEXT>Umm, [delay 6]no?   [end]</TEXT>
+				<TEXT>U[delay 4]m[delay4]m, [delay 8]no?   [end]</TEXT>
 			</DIALOG>
-			<DELAY>4</DELAY>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Girl</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+				<EMOTE>QUESTION</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>Don't our moves make you want to shake your [delay 2]butt?!   [end]</TEXT>
 			</DIALOG>
 
-			<!-- TODO: Evan 4-way spin here -->
-
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
+			<SPIN_NPC>
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SPIN_NPC>
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>Look at me gyrate!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Cat Thing</SPEAKER>
-				<TEXT>Me[delay 6]ow!   [end]</TEXT>
+				<TEXT>Me-[halt]ow!   [end]</TEXT>
 			</DIALOG>
+			<DELAY>4</DELAY>
 
-			<!-- TODO: Evan 4-way spin here -->
-
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<SPIN_NPC>
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SPIN_NPC>
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>SKULL</EMOTE>
+			</SHOW_EMOTE>
 			<DIALOG>
 				<SPEAKER>PLAYER</SPEAKER>
-				<TEXT>I feel [delay 2]nauseous.[delay 2].[delay 2].[halt] Are you just [delay 3]square [delay 3]dancing?   [end]</TEXT>
+				<TEXT>I feel [delay 4]nauseous.[delay 4].[delay 4].   [end]</TEXT>
+			</DIALOG>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Are you just [delay 6]square [delay 6]dancing?   [end]</TEXT>
 			</DIALOG>
 
-			<!-- TODO: Mercy 4-way spin here -->
-			
+			<SPIN_NPC>
+				<TARGET>Vomit Girl</TARGET>
+				<SPEED>3</SPEED>
+			</SPIN_NPC>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Girl</TO_NPC>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>20</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Vomit Girl</TARGET>
+			</HIDE_EMOTE>
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
 				<TEXT>Fine then!   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<TO_NPC>Vomit Guy</TO_NPC>
+			</SET_FACING>
 			<DIALOG>
 				<SPEAKER>Fly Boy</SPEAKER>
 				<TEXT>If you're gonna be a turd [delay 4]then you better.[delay 2].[delay 2].   [end]</TEXT>
 			</DIALOG>
 			<DELAY>4</DELAY>
 
+			<!-- Team Vomit closes in -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>team_vomit_talked_girl</VALUE>
+				<IF_TRUE>
+					<SEQUENCE restoreControl="false">
+						<WALK sync="TRUE">
+							<TARGET>Vomit Girl</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>8</SPEED>
+						</WALK>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE restoreControl="false">
+						<WALK sync="TRUE">
+							<TARGET>Vomit Guy</TARGET>
+							<DIRECTION>RIGHT</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>8</SPEED>
+						</WALK>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+
+			<!-- Player backs up two steps -->
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<WALK keepfacing="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+
 			<!-- TODO: Both 4-way spin -->
+
+			<SET_FACING>
+				<TARGET>Vomit Girl</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>Vomit Guy</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<SET_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SET_EMOTE>
+			<SPIN_NPC sync="TRUE">
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SPIN_NPC>
+				<TARGET>Vomit Girl</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SPIN_NPC sync="TRUE">
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<SPIN_NPC>
+				<TARGET>Vomit Girl</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<DELAY>8</DELAY>
 
 			<DIALOG>
 				<SPEAKER>Funky Girl</SPEAKER>
@@ -313,19 +580,28 @@
 				<TEXT>To extend our reach to the moon above!   [end]</TEXT>
 			</DIALOG>
 
-			<!-- TODO: Mercy 4-way spin -->
-
+			<DELAY>8</DELAY>
+			<SPIN_NPC>
+				<TARGET>Vomit Girl</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<DELAY>8</DELAY>
 			<DIALOG>
 				<SPEAKER>Mercy</SPEAKER>
 				<TEXT>Mercy!   [end]</TEXT>
 			</DIALOG>
 
-			<!-- TODO: Evan 4-way spin -->
-
+			<DELAY>8</DELAY>
+			<SPIN_NPC>
+				<TARGET>Vomit Guy</TARGET>
+				<SPEED>4</SPEED>
+			</SPIN_NPC>
+			<DELAY>8</DELAY>
 			<DIALOG>
 				<SPEAKER>Evan</SPEAKER>
 				<TEXT>Evan!   [end]</TEXT>
 			</DIALOG>
+
 			<DIALOG>
 				<SPEAKER>Mercy</SPEAKER>
 				<TEXT>Team Vomit blasts chunks at the speed of light!   [end]</TEXT>

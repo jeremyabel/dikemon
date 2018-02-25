@@ -531,7 +531,7 @@ package com.tinyrpg.display
 			} 
 			else
 			{
-				// Simulate parallax by pushing the sprite backwards or forwards during vertical jumps
+				// Fake parallax by pushing the sprite backwards or forwards during vertical jumps
 				TweenMax.to( this.spritesheet, jumpTime, {
 					y: offsetY,
 					ease: Cubic.easeOut,
@@ -605,6 +605,12 @@ package com.tinyrpg.display
 		protected function isOnMap() : Boolean
 		{
 			return this.homeMapName == TinyMapManager.getInstance().currentMap.mapName;
+		}
+
+		public function setKeepFacing( value : Boolean ) : void
+		{
+			TinyLogManager.log( 'setKeepFacing: ' + value, this );
+			this.spritesheet.keepFacing = value;
 		}
 	}
 }
