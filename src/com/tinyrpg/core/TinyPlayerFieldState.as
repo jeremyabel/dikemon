@@ -1,10 +1,5 @@
 package com.tinyrpg.core 
 {	
-	import com.greensock.TweenMax;
-	import com.greensock.easing.Linear;
-	import com.greensock.plugins.RoundPropsPlugin;
-	import com.greensock.plugins.TweenPlugin;
-	
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.data.TinyCollisionData;
 	import com.tinyrpg.data.TinyFieldMapObject;
@@ -34,8 +29,6 @@ package com.tinyrpg.core
 		
 		public function TinyPlayerFieldState( walkSprite : TinyWalkSprite ) : void 
 		{
-			TweenPlugin.activate( [ RoundPropsPlugin ] );
-			
 			this.walkSprite = walkSprite;
 			this.walkSprite.addEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
 			this.walkSprite.addEventListener( TinyFieldMapEvent.GRASS_HIT, this.onHitGrass );
