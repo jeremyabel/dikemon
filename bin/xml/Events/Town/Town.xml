@@ -107,7 +107,7 @@
 	<EVENT_sign_town_center>
 		<SEQUENCE>
 			<DIALOG>
-				<SPEAKER> </SPEAKER>
+				<SPEAKER></SPEAKER>
 				<TEXT>NEW BARK TOWN:[halt] The Town Where the Winds of a New Beginning Blow   [end]</TEXT>
 			</DIALOG>
 			<END></END>

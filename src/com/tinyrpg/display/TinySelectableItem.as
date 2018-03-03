@@ -22,7 +22,7 @@ package com.tinyrpg.display
 		
 		private var _disabled 	: Boolean = false;
 		
-		public function TinySelectableItem(itemText : String, idNumber : int = 0, styleSheet : String = 'selecterText', xOffset : int = 0, yOffset : int = 0)
+		public function TinySelectableItem(itemText : String, idNumber : int = 0, styleSheet : String = 'selecterText', xOffset : int = 0, yOffset : int = -1 )
 		{
 			// Set properties
 			this.idNumber = idNumber;

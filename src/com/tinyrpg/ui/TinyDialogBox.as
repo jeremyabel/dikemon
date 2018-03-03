@@ -57,7 +57,7 @@ package com.tinyrpg.ui
 			// Set up text field
 			this.textField = new TinyAutotypeTextField( 141, 20, 'dialogText' );
 			this.textField.originalY = 
-			this.textField.y = -4;
+			this.textField.y = -5;
 			
 			// Next arrow
 			this.nextArrow = new TinyBattleTurnArrow();

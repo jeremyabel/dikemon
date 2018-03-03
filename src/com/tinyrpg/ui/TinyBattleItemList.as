@@ -7,6 +7,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
+	import com.tinyrpg.data.TinyCommonStrings;
 	import com.tinyrpg.data.TinyItemUseResult;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.data.TinyMoveData;
@@ -36,9 +37,7 @@ package com.tinyrpg.ui
 		private var m_currentMon : TinyMon;
 		private var item : TinyItem;
 		
-		private static const CANCEL_OPTION : String = 'CANCEL';
-		
-		
+
 		public function TinyBattleItemList( trainer : TinyTrainer )
 		{
 			this.trainer = trainer;
@@ -56,7 +55,7 @@ package com.tinyrpg.ui
 			}
 			
 			// Add CANCEL item
-			newItemArray.push( new TinySelectableItem( CANCEL_OPTION, newItemArray.length ) );
+			newItemArray.push( new TinySelectableItem( TinyCommonStrings.CANCEL, newItemArray.length ) );
 			
 			super( '', newItemArray, 130, 49, 12, 2, 0, 4 );
 			
@@ -107,11 +106,9 @@ package com.tinyrpg.ui
 		}
 
 
-		public function show() : void
+		override public function show() : void
 		{
-			TinyLogManager.log('show', this);
-			
-			this.visible = true;
+			super.show();
 			
 			// Update item quantities
 			for each ( var selectableItem : TinySelectableItem in this.itemArray )
@@ -123,13 +120,6 @@ package com.tinyrpg.ui
 			}	
 		}
 
-
-		public function hide() : void
-		{
-			TinyLogManager.log('hide', this);
-			this.visible = false;
-		}
-		
 		
 		override protected function onControlAdded( e : TinyInputEvent ) : void
 		{
@@ -137,8 +127,8 @@ package com.tinyrpg.ui
 			
 			if ( this.itemArray.length > 0 ) 
 			{
-				// Update or clera description box
-				if ( this.selectedItem.textString != CANCEL_OPTION )
+				// Update or clear description box
+				if ( this.selectedItem.textString != TinyCommonStrings.CANCEL)
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
 					this.setDescriptionText( itemText );
@@ -170,7 +160,7 @@ package com.tinyrpg.ui
 				super.onArrowUp( e );
 								
 				// Update or clear description box
-				if ( this.selectedItem.textString != CANCEL_OPTION )
+				if ( this.selectedItem.textString != TinyCommonStrings.CANCEL )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
 					this.setDescriptionText( itemText );
@@ -190,7 +180,7 @@ package com.tinyrpg.ui
 				super.onArrowDown( e );
 								
 				// Update or clear description box			
-				if ( this.selectedItem.textString != CANCEL_OPTION )
+				if ( this.selectedItem.textString != TinyCommonStrings.CANCEL )
 				{
 					var itemText : String = TinyItemDataList.getInstance().getItemByName( this.selectedItem.textString ).description;
 					this.setDescriptionText( itemText );
@@ -209,7 +199,7 @@ package com.tinyrpg.ui
 			{
 				super.onAccept( e );
 				
-				if ( this.selectedItem.textString == CANCEL_OPTION )
+				if ( this.selectedItem.textString == TinyCommonStrings.CANCEL )
 				{
 					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.CANCEL ) );	
 				}

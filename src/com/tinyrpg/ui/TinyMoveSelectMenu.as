@@ -46,18 +46,6 @@ package com.tinyrpg.ui
 			this.resetListItems( newItems );
 		}
 		
-		public function show() : void
-		{
-			TinyLogManager.log('show', this);
-			this.visible = true;
-		}
-
-		public function hide() : void
-		{
-			TinyLogManager.log('hide', this);
-			this.visible = false;
-		}
-		
 		override protected function onControlAdded(e : TinyInputEvent) : void
 		{
 			super.onControlAdded(e);

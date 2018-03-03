@@ -64,7 +64,7 @@ package com.tinyrpg.ui
 			this.addChild( this.selectedMonSubmenu );
 		}
 
-		public function show() : void
+		override public function show() : void
 		{
 			TinyLogManager.log("show", this);	
 			
@@ -89,7 +89,7 @@ package com.tinyrpg.ui
 			this.show();
 		}
 
-		public function hide() : void
+		override public function hide() : void
 		{
 			TinyLogManager.log("hide", this);
 			

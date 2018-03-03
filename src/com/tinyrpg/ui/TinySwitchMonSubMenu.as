@@ -49,17 +49,10 @@ package com.tinyrpg.ui
 			this.mon = mon;
 		}
 		
-		public function show() : void
+		override public function show() : void
 		{
-			TinyLogManager.log("show", this);	
 			this.setSelectedItemIndex(0);
-			this.visible = true;
-		}
-		
-		public function hide() : void
-		{
-			TinyLogManager.log("hide", this);
-			this.visible = false;	
+			super.show();
 		}
 		
 		override protected function onAccept( e : TinyInputEvent ) : void

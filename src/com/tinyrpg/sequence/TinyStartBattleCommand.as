@@ -16,9 +16,6 @@ package com.tinyrpg.sequence
 		public static function newFromXML( xmlData : XML ) : TinyStartBattleCommand
 		{
 			var newCommand : TinyStartBattleCommand = new TinyStartBattleCommand();
-			
-			
-			
 			return newCommand;	
 		}
 	}	

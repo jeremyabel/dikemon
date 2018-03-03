@@ -37,7 +37,28 @@ package com.tinyrpg.data
 			
 			// Find function
 			var findFunction : Function = function( item : *, index : int, array : Array ) : Boolean
-				{ index; array; return ( TinyItem( item ).originalName.toUpperCase() == targetName.toUpperCase() ); };
+			{ 
+				index; 
+				array; 
+				
+				return ( TinyItem( item ).name.toUpperCase() == targetName.toUpperCase() ); 
+			};
+				
+			return this.itemList.filter( findFunction )[ 0 ];
+		}
+		
+		public function getItemByOriginalName( targetName : String ) : TinyItem
+		{
+			TinyLogManager.log( 'getItemByOriginalName: ' + targetName, this );
+			
+			// Find function
+			var findFunction : Function = function( item : *, index : int, array : Array ) : Boolean
+			{ 
+				index; 
+				array; 
+				
+				return ( TinyItem( item ).originalName.toUpperCase() == targetName.toUpperCase() ); 
+			};
 				
 			return this.itemList.filter( findFunction )[ 0 ];
 		}

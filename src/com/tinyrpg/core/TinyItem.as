@@ -2,6 +2,7 @@ package com.tinyrpg.core
 {
 	import com.tinyrpg.battle.TinyBattleStrings;
 	import com.tinyrpg.data.TinyItemUseResult;
+	import com.tinyrpg.data.TinyMoneyAmount;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.EventDispatcher;
@@ -24,7 +25,7 @@ package com.tinyrpg.core
 		public var name 			: String;
 		public var originalName		: String;
 		public var description  	: String;
-		public var price 			: int;		
+		public var price 			: TinyMoneyAmount;		
 		public var effect			: String;
 		public var graphics			: String;
 		public var quantity 		: int = 1;
@@ -53,7 +54,7 @@ package com.tinyrpg.core
 			newItem.originalName = xmlData.child( 'NAME' ).text();
 			newItem.name = xmlData.child( 'RENAME' ).text();
 			newItem.description = xmlData.child( 'DESCRIPTION' ).text();
-			newItem.price = int( xmlData.child( 'PRICE' ).text() );
+			newItem.price = new TinyMoneyAmount( int( xmlData.child( 'PRICE' ).text() ) );
 			newItem.effect = xmlData.child( 'EFFECT' ).text();
 			
 			// Initial parsing for item effects

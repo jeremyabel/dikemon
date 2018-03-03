@@ -42,6 +42,8 @@ package com.tinyrpg.sequence
 		public static const CHOOSE_STARTER			: String = 'CHOOSE_STARTER';
 		public static const HEAL_ALL	  			: String = 'HEAL_ALL';
 		public static const EXIT_EARLY				: String = 'EXIT_EARLY';
+		public static const PRINT_LOG				: String = 'PRINT_LOG';
+		public static const SHOP					: String = 'SHOP';
 		public static const END			  			: String = 'END';
 		
 		// Battle Events

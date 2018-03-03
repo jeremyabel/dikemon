@@ -3,6 +3,8 @@ package com.tinyrpg.core
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 
+	import com.tinyrpg.data.TinyMoneyAmount;
+	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinySpriteSheet;
 	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.lookup.TinyNameLookup;
@@ -15,11 +17,12 @@ package com.tinyrpg.core
 	public class TinyTrainer 
 	{
 		public var squad : Array = [];
+		public var squadInPC : Array = [];
 		public var inventory : Array = [];
 		
 		public var runAttempts : int = 0;
 		public var usedWish : Boolean = false;
-		public var money : uint = 100;
+		public var money : TinyMoneyAmount;
 		public var isEnemy : Boolean;
 		
 		protected var m_name : String;
@@ -44,13 +47,24 @@ package com.tinyrpg.core
 			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( name );
 			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByHuman( starterName ) );
 			
+			var item1 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Potion' );
+			var item2 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Antidote' );
+			
+			newTrainer.addItem( item1 );
+			newTrainer.addItem( item1 );
+			newTrainer.addItem( item1 );
+			newTrainer.addItem( item2 );
+			
+			// Give starting allowance
+			newTrainer.money = new TinyMoneyAmount( 3000 );
+			
 			return newTrainer;
 		}
 		
 		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0 ) : TinyTrainer
 		{
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
-			newTrainer.money = money;
+			newTrainer.money = new TinyMoneyAmount( money );
 			newTrainer.isEnemy = true;
 			
 			for ( var i : uint = 0; i < mons.length; i++ )
@@ -171,16 +185,16 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'addMoney: ' + amount, this );
 			
-			this.money += amount;
-			TinyLogManager.log( 'current money: ' + this.money, this );
+			this.money.value += amount;
+			TinyLogManager.log( 'current money: ' + this.money.value, this );
 		}
 		
 		public function removeMoney( amount : int ) : void
 		{
 			TinyLogManager.log( 'removeMoney: ' + amount, this );
 			
-			this.money = Math.max( 0, this.money - amount );
-			TinyLogManager.log( 'current money: ' + this.money, this );
+			this.money.value = Math.max( 0, this.money.value - amount );
+			TinyLogManager.log( 'current money: ' + this.money.value, this );
 		}
 	}
 }

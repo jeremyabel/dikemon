@@ -160,6 +160,13 @@ package com.tinyrpg.core
 			TinyLogManager.log('recoverHP: ' + this.name + ' - ' + value, this);
 			this.m_currentHP = Math.min( this.currentHP + value, this.maxHP );
 		}
+		
+		
+		public function healFull() : void
+		{
+			TinyLogManager.log( 'healFull', this );
+			this.m_currentHP = this.maxHP;
+		}
 
 
 		public function addExp(exp : int) : TinyLevelUpInfo 

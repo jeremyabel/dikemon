@@ -154,6 +154,8 @@ package com.tinyrpg.ui
 		
 		protected function updateScroll() : void
 		{
+			if ( this.length <= this.maxItemsBeforeScroll ) return;
+			
 			this.itemHolder.y = this.itemHolderOrigY;
 			this.itemHolder.y -= this.scrollOffset * this.spacing;
 				

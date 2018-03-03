@@ -32,21 +32,14 @@ package com.tinyrpg.ui
 			super( '', listItems, 25, 22, 11, 1, 0 );
 		}
 		
-		public function show() : void
+		override public function show() : void
 		{
-			TinyLogManager.log('show', this);
-			this.visible = true;
-			
+			super.show();
+						
 			// Reset selected item to the top
 			this.setSelectedItemIndex( 0 );
 		}
 
-		public function hide() : void
-		{
-			TinyLogManager.log('hide', this);
-			this.visible = false;
-		}
-		
 		override protected function onAccept( e : TinyInputEvent ) : void
 		{
 			if ( this.itemArray.length > 0 ) 

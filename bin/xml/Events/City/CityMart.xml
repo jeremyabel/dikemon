@@ -1,3 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_shop>
+		<SEQUENCE>
+			<SHOP>
+				<WELCOME>Welcome! [delay 4]How may I help you?   [end]</WELCOME>
+				<ANYTHING_ELSE>Can I do anything else for you?   [end]</ANYTHING_ELSE>
+				<ITEMS>
+					<ITEM>Potion</ITEM>
+					<ITEM>Antidote</ITEM>
+					<ITEM>Paralyze Heal</ITEM>
+					<ITEM>Awakening</ITEM>
+				</ITEMS>
+			</SHOP>
+			<DELAY>12</DELAY>
+			<DIALOG>
+				<SPEAKER>Shop Guy</SPEAKER>
+				<TEXT>Thanks, [delay 4]please come again!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_shop>
+
 </EVENTS>

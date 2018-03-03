@@ -107,7 +107,7 @@ package com.tinyrpg.sequence
 				
 				case CONDITION_MONEY:
 				{
-					isTruthy = player.money >= this.conditionValue;
+					isTruthy = player.money.value >= this.conditionValue;
 					
 					TinyLogManager.log( 'executing condition = has at least ' + this.conditionValue + ' bucks: ' + isTruthy, this );
 					break;

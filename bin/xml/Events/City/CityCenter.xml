@@ -3,6 +3,7 @@
 
 	<EVENT_gameover>
 		<SEQUENCE>
+			<HEAL_ALL></HEAL_ALL>
 			<DIALOG>
 				<SPEAKER>NURSE</SPEAKER>
 				<TEXT>Ah, [delay 4]you're awake! [halt]Someone found you passed out in a ditch and dragged you back here. [halt]We managed to wash all the blood off your face, [delay 4]but sadly your health insurance doesn't cover anything more than that. [halt]We did heal all your Dikémon for free, [delay 4]though! [halt]Now, [delay 4]if you can't pay to fix your broken face, [delay 4]please kindly get out of here.   [end]</TEXT>
@@ -10,5 +11,40 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_gameover>
+
+	<EVENT_talk_nurse>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>NURSE</SPEAKER>
+				<TEXT>Welcome to The Dikécenter! [halt]I'll heal your Dikémon for you, [delay 6]one moment please.   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>NURSE</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>20</DELAY>
+			<SET_FACING>
+				<TARGET>NURSE</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>NURSE</SPEAKER>
+				<TEXT>All done!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_nurse>
+
+	<EVENT_talk_computer_guy>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Guy</SPEAKER>
+				<TEXT>That PC is free for any trainer to use! [halt]It's great! I can store any number of Dikémon, [delay 4]and it's all free.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_computer_guy>
 
 </EVENTS>
