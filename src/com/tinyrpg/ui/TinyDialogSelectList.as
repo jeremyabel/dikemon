@@ -3,6 +3,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.core.TinyEventSequence;
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.managers.TinyAudioManager;
 	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -15,7 +16,9 @@ package com.tinyrpg.ui
 	public class TinyDialogSelectList extends TinyDialogBox 
 	{
 		public var selectList : TinyTwoChoiceList;
-		
+		public var isCancellable : Boolean = true;
+		public var cancelOptionEvent : String = null;
+	
 		private var textField  : TextField;
 		
 		public function TinyDialogSelectList(selectItems : Array, introDialogText : String, horizontal : Boolean = false, horizontalSpacing : int = 0, speaker : String = '', width : int = 144, height : int = 33) : void
@@ -65,6 +68,7 @@ package com.tinyrpg.ui
 
 			// Clean up
 			this.selectList.removeEventListener(TinyInputEvent.OPTION_ONE, onOptionOne);			this.selectList.removeEventListener(TinyInputEvent.OPTION_TWO, onOptionTwo);
+			this.selectList.removeEventListener(TinyInputEvent.CANCEL, this.onCancelled);
 		}
 
 		private function onOptionTwo(event : TinyInputEvent) : void 
@@ -76,6 +80,7 @@ package com.tinyrpg.ui
 			// Clean up
 			this.selectList.removeEventListener(TinyInputEvent.OPTION_ONE, onOptionOne);
 			this.selectList.removeEventListener(TinyInputEvent.OPTION_TWO, onOptionTwo);
+			this.selectList.removeEventListener(TinyInputEvent.CANCEL, this.onCancelled);
 		}
 
 		public static function newFromXML(xmlData : XML) : TinyDialogSelectList
@@ -110,17 +115,47 @@ package com.tinyrpg.ui
 			this.addEventListener(TinyInputEvent.CONTROL_REMOVED, onControlRemoved);
 			this.selectList.addEventListener(TinyInputEvent.OPTION_ONE, onOptionOne);
 			this.selectList.addEventListener(TinyInputEvent.OPTION_TWO, onOptionTwo);
+			this.selectList.addEventListener(TinyInputEvent.CANCEL, this.onCancelled);
 			this.removeEventListener(TinyInputEvent.CONTROL_ADDED, onControlAdded);
 			
-			TinyInputManager.getInstance().setTarget(this.selectList);
+			TinyInputManager.getInstance().setTarget( this.selectList );
 		}
 
-		private function onControlRemoved(e : TinyInputEvent) : void
+		private function onControlRemoved( event : TinyInputEvent ) : void
 		{
 			TinyLogManager.log('onControlRemoved', this);
 			
-			this.removeEventListener(TinyInputEvent.CONTROL_REMOVED, onControlRemoved);
-			this.addEventListener(TinyInputEvent.CONTROL_ADDED, onControlAdded);
+			this.removeEventListener( TinyInputEvent.CONTROL_REMOVED, onControlRemoved );
+			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
+		}
+		
+		private function onCancelled( event : TinyInputEvent ) : void
+		{
+			if ( this.isCancellable )
+			{
+				// Cancelling can optionally trigger one of the two selections instead of throwing the cancel event
+				if ( this.cancelOptionEvent )
+				{
+					switch ( this.cancelOptionEvent )
+					{
+						case TinyInputEvent.OPTION_ONE: this.onOptionOne( null ); return;
+						case TinyInputEvent.OPTION_TWO: this.onOptionTwo( null ); return;
+					}
+				}
+				
+				TinyLogManager.log('onCancel', this);
+				this.dispatchEvent(new TinyInputEvent(TinyInputEvent.CANCEL));
+				
+				// Play sound
+				TinyAudioManager.play(TinyAudioManager.CANCEL);
+			}
+			else
+			{
+				TinyLogManager.log('onCancel - nope, cannot cancel this element', this);
+				
+				// Play sound
+				TinyAudioManager.play(TinyAudioManager.ERROR);	
+			}
 		}
 	}
 }

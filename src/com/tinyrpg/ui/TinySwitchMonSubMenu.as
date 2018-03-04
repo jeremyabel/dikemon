@@ -3,6 +3,7 @@ package com.tinyrpg.ui
 	import flash.events.Event;
 
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.data.TinyCommonStrings;
 	import com.tinyrpg.display.IShowHideObject;
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.events.TinyBattleEvent;
@@ -14,112 +15,49 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinySwitchMonSubMenu extends TinySelectList implements IShowHideObject
+	public class TinySwitchMonSubMenu extends TinyMonSubMenu
 	{
-		private var mon : TinyMon;
-		private var warningDialogBox : TinyDialogBox;
-		private var fullStatDisplay : TinyMonFullStatDisplay;
-		private var isInStatsDisplay : Boolean = false;
-		
-		private const SWITCH_STRING : String = 'SWITCH';
-		private const STATS_STRING	: String = 'STATS';
-		private const CANCEL_STRING : String = 'CANCEL';
+		protected var warningDialogBox : TinyDialogBox;
 		
 		public function TinySwitchMonSubMenu()
 		{	
+			super();
+			
 			var newItemArray : Array = [
-				new TinySelectableItem( SWITCH_STRING, 0 ),
-				new TinySelectableItem( STATS_STRING,  1 ),
-				new TinySelectableItem( CANCEL_STRING, 2 ),					
+				new TinySelectableItem( TinyCommonStrings.SWITCH.toUpperCase(), 0 ),
+				new TinySelectableItem( TinyCommonStrings.STATS.toUpperCase(),  1 ),
+				new TinySelectableItem( TinyCommonStrings.CANCEL.toUpperCase(), 2 ),					
 			];
 			
-			super( '', newItemArray, 43, 33, 12, 1, 1 );
+			this.resetListItems( newItemArray );
+		}
+		
+		override protected function onAccept( event : TinyInputEvent ) : void
+		{
+			super.onAccept( event );
 			
-			this.fullStatDisplay = new TinyMonFullStatDisplay();
-			this.fullStatDisplay.x = -130 + 24 + 5;
-			this.fullStatDisplay.y = -144 + 33 + 14;
-			this.fullStatDisplay.hide();
-			
-			// Add 'em up
-			this.addChild( this.fullStatDisplay );
-		}
-		
-		public function set currentMon( mon : TinyMon ) : void
-		{
-			this.mon = mon;
-		}
-		
-		override public function show() : void
-		{
-			this.setSelectedItemIndex(0);
-			super.show();
-		}
-		
-		override protected function onAccept( e : TinyInputEvent ) : void
-		{
-			if (this.itemArray.length > 0) 
+			if ( this.selectedItem.textString.toUpperCase() == TinyCommonStrings.SWITCH.toUpperCase() )
 			{
-				super.onAccept( e );
-				
-				// Send cancel event if the cancel option is picked, otherwise show the submenu
-				if (this.selectedItem.textString == this.CANCEL_STRING)
+				if ( this.mon.isInBattle )
 				{
-					// Dispatch cancel event
-					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.CANCEL ) );
+					this.showWarningDialogBox( 'This DIKÉMON is already out, dingus!   [end]' );
 				}
-				else if (this.selectedItem.textString == this.SWITCH_STRING)
+				else if ( !this.mon.isHealthy )
 				{
-					if ( this.mon.isInBattle )
-					{
-						this.showWarningDialogBox( 'This DIK√©MON is already out, dingus!   [end]' );
-					}
-					else if ( !this.mon.isHealthy )
-					{
-						this.showWarningDialogBox( 'This DIK√©MON is too dead to fight!   [end]');
-					}
-					else 
-					{
-						// Dispatch selected mon event if the SWITCH option is picked
-						this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.MON_SELECTED, null, this.mon ) );
-					}	
+					this.showWarningDialogBox( 'This DIKÉMON is too dead to fight!   [end]');
 				}
 				else 
 				{
-					// Transfer control to stat display
-					this.isInStatsDisplay = true;
-					this.fullStatDisplay.addEventListener( TinyInputEvent.CANCEL, this.onStatDisplayCancelled );	
-					TinyInputManager.getInstance().setTarget( this.fullStatDisplay );
-					
-					// Show selected item as inactive-selected	
-					this.selectedItem.autoSelected = true;
-					
-					// TODO: Show stats display	
-					this.fullStatDisplay.currentMon = this.mon;
-					this.fullStatDisplay.show();
-				}
+					// Dispatch selected mon event if the SWITCH option is picked and the mon is ready to fight
+					this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.MON_SELECTED, null, this.mon ) );
+				}	
 			}
 		}
 		
-		private function onStatDisplayCancelled( event : Event ) : void
-		{
-			TinyLogManager.log('onStatDisplayCancelled', this);
-			
-			// Hide the stats display
-			this.fullStatDisplay.hide();
-			
-			// Restore active-selected state
-			this.selectedItem.autoSelected = false;
-			this.selectedItem.selected = true;
-			
-			// Return control
-			this.fullStatDisplay.removeEventListener( TinyInputEvent.CANCEL, this.onStatDisplayCancelled );
-			TinyInputManager.getInstance().setTarget( this );	
-			this.isInStatsDisplay = false;
-		}
 		
-		private function showWarningDialogBox( text : String ) : void
+		protected function showWarningDialogBox( text : String ) : void
 		{
-			TinyLogManager.log('showWarningDialogBox: ' + text, this);
+			TinyLogManager.log( 'showWarningDialogBox: ' + text, this );
 			
 			this.warningDialogBox = TinyDialogBox.newFromString( text );
 			this.warningDialogBox.x = -this.x;
@@ -129,12 +67,13 @@ package com.tinyrpg.ui
 			this.addChild( this.warningDialogBox );
 					
 			TinyInputManager.getInstance().setTarget( this.warningDialogBox );		
-			this.warningDialogBox.addEventListener(Event.COMPLETE, onWarningDialogBoxComplete);
+			this.warningDialogBox.addEventListener( Event.COMPLETE, onWarningDialogBoxComplete );
 		}
 		
-		private function onWarningDialogBoxComplete( event : Event ) : void
+		
+		protected function onWarningDialogBoxComplete( event : Event ) : void
 		{
-			TinyLogManager.log('onWarningDialogBoxComplete', this);
+			TinyLogManager.log( 'onWarningDialogBoxComplete', this );
 			
 			// Cleanup
 			this.removeChild( this.warningDialogBox );

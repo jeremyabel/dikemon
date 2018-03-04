@@ -47,13 +47,24 @@ package com.tinyrpg.core
 			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( name );
 			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByHuman( starterName ) );
 			
+			// TODO: REMOVE, FOR TESTING
 			var item1 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Potion' );
-			var item2 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Antidote' );
+			var item2 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Super Potion' );
+			var item3 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Antidote' );
+			var item4 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Revive' );
+			var item5 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Ether' );
+			var item6 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Repel' );
 			
 			newTrainer.addItem( item1 );
 			newTrainer.addItem( item1 );
 			newTrainer.addItem( item1 );
 			newTrainer.addItem( item2 );
+			newTrainer.addItem( item3 );
+			newTrainer.addItem( item3 );
+			newTrainer.addItem( item4 );
+			newTrainer.addItem( item5 );
+			newTrainer.addItem( item6 );
+			newTrainer.addItem( item6 );
 			
 			// Give starting allowance
 			newTrainer.money = new TinyMoneyAmount( 3000 );

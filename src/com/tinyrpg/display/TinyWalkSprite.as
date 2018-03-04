@@ -613,6 +613,11 @@ package com.tinyrpg.display
 			TinyLogManager.log( 'setKeepFacing: ' + value, this );
 			this.spritesheet.keepFacing = value;
 		}
+		
+		public function get isMoving() : Boolean
+		{
+			return this.movementTimeline ? true : false;
+		}
 	}
 }
 		

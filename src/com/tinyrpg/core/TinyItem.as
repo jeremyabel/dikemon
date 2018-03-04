@@ -113,7 +113,7 @@ package com.tinyrpg.core
 			TinyLogManager.log('item effect amount: ' + this.effectAmount, this);
 		}
 		
-		public function checkCanUse( useContext : String, targetMon : TinyMon ) : TinyItemUseResult
+		public function checkCanUse( useContext : String, targetMon : TinyMon = null ) : TinyItemUseResult
 		{
 			TinyLogManager.log("checkCanUse: " + useContext, this);
 			
@@ -134,6 +134,24 @@ package com.tinyrpg.core
 				if ( this.isBall ) 
 				{
 					return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_BALL );
+				}
+				
+				// Can't use PP items out of battle (because I'm too lazy)
+				if ( this.healPP ) 
+				{
+					return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_ITEM_FIELD );
+				}
+				
+				// Repels CAN be be used in the field
+				if ( this.isRepel ) 
+				{
+					return new TinyItemUseResult( true, null );	
+				}
+				
+				// All other field items require a mon to be selected. If one isn't, return an alert
+				if ( !targetMon ) 
+				{
+					return new TinyItemUseResult( true, 'MON REQUIRED', true );
 				}
 			}
 			

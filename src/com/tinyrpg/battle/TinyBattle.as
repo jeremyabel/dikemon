@@ -18,7 +18,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.events.TinyGameEvent;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.managers.TinyInputManager;
-	import com.tinyrpg.ui.TinyBattleItemList;
+	import com.tinyrpg.ui.TinyBattleItemMenu;
 	import com.tinyrpg.ui.TinyBattleCommandMenu;
 	import com.tinyrpg.ui.TinyMoveSelectMenu;
 	import com.tinyrpg.ui.TinySwitchMonMenu;
@@ -63,7 +63,7 @@ package com.tinyrpg.battle
 		private var m_battleEvent				: TinyBattleEventSequence;
 		private var m_battleIntroWhirl			: TinySpriteSheet;
 		private var m_battleEmptyDialogBox		: TinyTitleBox;
-		private var m_itemSelectorList			: TinyBattleItemList;
+		private var m_itemSelectorList			: TinyBattleItemMenu;
 		private var isForcedSwitch				: Boolean = false;
 		private var background					: Sprite;
 		
@@ -123,7 +123,7 @@ package com.tinyrpg.battle
 			m_switchMonMenu.visible = false;
 			
 			// Item select menu
-			m_itemSelectorList = new TinyBattleItemList( m_playerTrainer );
+			m_itemSelectorList = new TinyBattleItemMenu( m_playerTrainer );
 			m_itemSelectorList.x = 22;
 			m_itemSelectorList.y = 48;
 			m_itemSelectorList.visible = false;

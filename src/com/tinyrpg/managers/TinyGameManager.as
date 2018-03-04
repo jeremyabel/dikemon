@@ -9,7 +9,10 @@ package com.tinyrpg.managers
 	import com.tinyrpg.display.TinyFadeTransitionOverlay;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;
+	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.lookup.TinySpriteLookup;
+	import com.tinyrpg.managers.TinyInputManager;
+	import com.tinyrpg.ui.TinyGameMenu;
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	import flash.display.Sprite;
@@ -25,6 +28,7 @@ package com.tinyrpg.managers
 		public var playerTrainer 	: TinyTrainer;
 		 
 		private var currentBattle 	: TinyBattle;
+		private var gameMenu		: TinyGameMenu;
 		private var fadeTransition 	: TinyFadeTransitionOverlay;
 		
 		public function TinyGameManager() : void
@@ -32,11 +36,15 @@ package com.tinyrpg.managers
 			this.gameContainer = new Sprite();
 			this.fadeTransition = new TinyFadeTransitionOverlay();
 			
+			// Create the main game menu
+			this.gameMenu = new TinyGameMenu();
+			
 			// Add the map to the main game container sprite
 			this.gameContainer.addChild( TinyMapManager.getInstance() );
 			
 			// Add 'em up
 			this.addChild( this.gameContainer );
+			this.addChild( this.gameMenu );
 			this.addChild( this.fadeTransition );
 		}
 
@@ -50,6 +58,34 @@ package com.tinyrpg.managers
 		{
 			TinyLogManager.log( 'initWithTestData', this );
 			this.playerTrainer = TinyTrainer.newFromStarterData( TinyConfig.PLAYER_NAME );
+			
+			// Listen for menu keypress events
+			TinyInputManager.getInstance().addEventListener( TinyInputEvent.MENU, this.onGameMenuRequested );
+			this.gameMenu.addEventListener( TinyInputEvent.CANCEL, this.onGameMenuClosed );
+		}
+		
+		public function onGameMenuRequested( event : TinyInputEvent ) : void
+		{
+			// The menu can ONLY be opened when the player has control over the player sprite and the sprite has stopped moving.
+			// This means the menu cannot be opened in battles, or during events, or during any transitions.
+			if ( TinyMapManager.getInstance().playerSprite.hasControl && !TinyMapManager.getInstance().playerSprite.isMoving )
+			{
+				TinyLogManager.log( 'onGameMenuRequested: OK - menu is available', this );
+				TinyMapManager.getInstance().playerSprite.stop();
+				TinyInputManager.getInstance().setTarget( this.gameMenu );
+			}
+			else
+			{
+				TinyLogManager.log( 'onGameMenuRequested: NO - menu is unavailable', this );
+			}
+		}
+		
+		public function onGameMenuClosed( event : TinyInputEvent ) : void
+		{
+			TinyLogManager.log( 'onGameMenuClosed', this );
+			
+			// Return control to the player sprite
+			TinyInputManager.getInstance().setTarget( TinyMapManager.getInstance().playerSprite );
 		}
 			
 		public function gotoMap( warpObject : TinyFieldMapObjectWarp ) : void

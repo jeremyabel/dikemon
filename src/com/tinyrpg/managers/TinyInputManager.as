@@ -71,66 +71,77 @@ package com.tinyrpg.managers
 				return false;
 		}
 		
-		public function onKeyDown(e : KeyboardEvent) : void
+		public function onKeyDown( event : KeyboardEvent ) : void
 		{
-			switch(e.keyCode) 
+			switch( event.keyCode ) 
 			{
 				case keyMenu:
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.MENU));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.MENU ) );
 					break;
+					
 				case keyUp:
 					this.tryUpdateArrowQueue( TinyInputManager.ARROW_UP );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.ARROW_UP));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ARROW_UP ) );
 					break;
+					
 				case keyDown:
 					this.tryUpdateArrowQueue( TinyInputManager.ARROW_DOWN );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.ARROW_DOWN));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ARROW_DOWN ) );
 					break;
+					
 				case keyLeft:
 					this.tryUpdateArrowQueue( TinyInputManager.ARROW_LEFT );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.ARROW_LEFT));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ARROW_LEFT ) );
 					break;
+					
 				case keyRight:
 					this.tryUpdateArrowQueue( TinyInputManager.ARROW_RIGHT );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.ARROW_RIGHT));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ARROW_RIGHT ) );
 					break;
+					
 				case keyAccept:
 					if (!this.holdingAccept) {
-						this.dispatchEvent(new TinyInputEvent(TinyInputEvent.ACCEPT));
+						this.dispatchEvent( new TinyInputEvent( TinyInputEvent.ACCEPT ) );
 					}
 					this.holdingAccept = true;
 					break;
+					
 				case keyCancel:
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.CANCEL));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.CANCEL ) );
 					break;
+					
 				default:
 					break;
 			}
 		}
 		
-		public function onKeyUp(e : KeyboardEvent) : void 
+		public function onKeyUp( event : KeyboardEvent ) : void 
 		{
-			switch(e.keyCode) 
+			switch( event.keyCode ) 
 			{
 				case keyUp:
 					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_UP );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_UP));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.KEY_UP_UP ) );
 					break;
+					
 				case keyDown:
 					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_DOWN );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_DOWN));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.KEY_UP_DOWN ) );
 					break;
+					
 				case keyLeft:
 					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_LEFT );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_LEFT));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.KEY_UP_LEFT ) );
 					break;
+					
 				case keyRight:
 					this.tryRemoveFromArrowQueue( TinyInputManager.ARROW_RIGHT );
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_RIGHT));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.KEY_UP_RIGHT ) );
 					break;
+					
 				case keyAccept:
 					this.holdingAccept = false;
-					this.dispatchEvent(new TinyInputEvent(TinyInputEvent.KEY_UP_ACCEPT));
+					this.dispatchEvent( new TinyInputEvent( TinyInputEvent.KEY_UP_ACCEPT ) );
 					break;
 			}
 		}

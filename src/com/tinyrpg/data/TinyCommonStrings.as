@@ -13,6 +13,12 @@ package com.tinyrpg.data
 		public static const YES			: String = 'Yes';
 		public static const NO			: String = 'No';
 		public static const OK			: String = 'Ok';
+		public static const DIKEMON		: String = 'Dikémon';
+		public static const ITEMS		: String = 'Items';
+		public static const ITEM		: String = 'Item';
+		public static const SAVE		: String = 'Save';
+		public static const SWITCH		: String = 'Switch';
+		public static const STATS		: String = 'Stats';
 	}
 		
 }
