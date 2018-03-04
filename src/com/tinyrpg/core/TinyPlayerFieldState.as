@@ -26,6 +26,7 @@ package com.tinyrpg.core
 		private var walkSprite 			: TinyWalkSprite;
 		private var lastWarpHit 		: TinyFieldMapObjectWarp = null;
 		private var stepsSinceEncounter : int = 0;
+		private var repelStepCounter	: int = 0;
 		
 		public function TinyPlayerFieldState( walkSprite : TinyWalkSprite ) : void 
 		{
@@ -48,7 +49,7 @@ package com.tinyrpg.core
 		{
 			if ( !this.objectCollisionEnabled ) return;
 			
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 			
 			var hitObject : * = event.param.object;
 			
@@ -78,7 +79,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'onHitJump: ' + event.param.object.name, this );
 			
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 	
 			// Only allow a jump if the player is facing the right direction
 			switch ( event.param.object.name )
@@ -113,7 +114,7 @@ package com.tinyrpg.core
 		
 		private function onHitGrass( event : TinyFieldMapEvent ) : void 
 		{
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 			
 			// Check for map object collisions
 			var objectCollision : TinyCollisionData = TinyMapManager.getInstance().currentMap.checkObjectCollision( this.walkSprite.movementBox );
@@ -147,7 +148,7 @@ package com.tinyrpg.core
 		
 		private function onHitNothing( event : TinyFieldMapEvent ) : void
 		{
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 			this.clearLastWarp();
 		}
 				
@@ -190,7 +191,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'onHitNPC: ' + npcObject.npcName, this );
 			
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 			
 			// Exit if an accept keypress is required and none was found
 			if ( !fromAcceptKeypress ) return;
@@ -209,7 +210,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'onHitTrigger: ' + triggerObject.eventName, this );
 			
-			this.stepsSinceEncounter++;
+			this.incrementStepCounter();
 			
 			// If there is a required facing, check it before executing the event
 			if ( triggerObject.requiredFacing )
@@ -236,11 +237,16 @@ package com.tinyrpg.core
 			this.lastWarpHit = null;
 		}
 		
+		public function incrementStepCounter() : void
+		{
+			this.stepsSinceEncounter++;
+			TinyGameManager.getInstance().playerTrainer.incrementRepelCounter();
+		}
+		
 		public function resetStepsSinceEncounter() : void
 		{
 			TinyLogManager.log( 'resetStepsSinceEncounter', this );
 			this.stepsSinceEncounter = 0;
 		}
-		
 	}
 }

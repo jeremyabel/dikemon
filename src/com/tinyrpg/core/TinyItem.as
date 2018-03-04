@@ -3,6 +3,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.battle.TinyBattleStrings;
 	import com.tinyrpg.data.TinyItemUseResult;
 	import com.tinyrpg.data.TinyMoneyAmount;
+	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.EventDispatcher;
@@ -163,6 +164,12 @@ package com.tinyrpg.core
 				return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_DEAD );
 			}
 			
+			// Can't use a revive item on a non-dead mon
+			if ( this.revive && targetMon.isHealthy )
+			{
+				return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_ALIVE );
+			}
+			
 			// Can't use a healing item on a mon with max HP
 			if ( this.healHP && targetMon.isMaxHP )
 			{
@@ -195,6 +202,85 @@ package com.tinyrpg.core
 			
 			// Everything looks good, the item can be used
 			return new TinyItemUseResult( true, null );
+		}
+		
+		
+		public function useItem( targetMon : TinyMon = null ) : String
+		{
+			if ( targetMon ) 
+			{
+				TinyLogManager.log( 'useItem: ' + this.name + ' on ' + targetMon.name, this );
+				
+				var itemUsedString : String;
+				
+				// Resolve burning
+				if ( this.healBurn ) 
+				{
+					TinyLogManager.log( 'heal status: BURN', this );
+					itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.BURN_HEAL, targetMon );
+					targetMon.isBurned = false;
+				}
+				
+				// Resolve paralysis
+				if ( this.healParalysis )
+				{
+					TinyLogManager.log( 'heal status: PARALYSIS', this );
+					itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.PARALYSIS_HEALED, targetMon );
+					targetMon.isParaylzed = false;
+				}
+				
+				// Resolve poison
+				if ( this.healPoison )
+				{
+					TinyLogManager.log( 'heal status: POISON', this );
+					itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.POISON_HEAL, targetMon );
+					targetMon.isPoisoned = false;
+				}
+	
+				// Resolve sleep			
+				if ( this.healSleep )
+				{
+				 	TinyLogManager.log( 'heal status: SLEEP', this );
+				 	itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.WOKE_UP_ITEM, targetMon );
+				 	targetMon.setSleepCounter( 0 );
+				}
+				
+				// Recover HP
+				if ( this.healHP )
+				{
+					TinyLogManager.log( 'heal HP: ' + this.effectAmount, this );
+					targetMon.recoverHP( this.effectAmount );
+					
+					if ( targetMon.isMaxHP ) {
+						itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.HP_FULL, targetMon );
+					} else {
+						itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.REGAINED_HEALTH, targetMon );
+					}
+				}
+				
+				// Revive
+				if ( this.revive ) 
+				{	
+					// Revives heal the target mon to half of their max HP
+					var revivedHP : int = Math.floor( targetMon.maxHP / 2 );
+					TinyLogManager.log( 'revived with HP: ' + revivedHP, this );
+					targetMon.recoverHP( revivedHP );
+					itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.REVIVED, targetMon );
+				}
+				
+				return itemUsedString;
+			}
+			else
+			{
+				TinyLogManager.log( 'useItem: ' + this.name, this );
+				
+				if ( this.isRepel ) 
+				{
+					TinyGameManager.getInstance().playerTrainer.usedRepel = true;
+				}
+				
+				return null;
+			}
 		}
 	}
 }

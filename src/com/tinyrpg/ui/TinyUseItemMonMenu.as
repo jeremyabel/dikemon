@@ -124,7 +124,4 @@ package com.tinyrpg.ui
 			this.errorTextField.htmlText = TinyFontManager.returnHtmlText( error, 'dialogText' );
 		}
 	}
-	
-
-	
 }

@@ -2,10 +2,12 @@ package com.tinyrpg.core
 {
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
+	import flash.events.EventDispatcher;
 
 	import com.tinyrpg.data.TinyMoneyAmount;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinySpriteSheet;
+	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
@@ -14,7 +16,7 @@ package com.tinyrpg.core
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyTrainer 
+	public class TinyTrainer extends EventDispatcher
 	{
 		public var squad : Array = [];
 		public var squadInPC : Array = [];
@@ -25,14 +27,17 @@ package com.tinyrpg.core
 		public var money : TinyMoneyAmount;
 		public var isEnemy : Boolean;
 		
+		protected var m_usedRepel : Boolean = false;
+		protected var m_repelStepCounter : uint = 0;
 		protected var m_name : String;
 		protected var m_battleBitmap : Bitmap;
 		protected var m_overworldSpriteId : int; 
 		
-		public function get name() : String { return m_name; }
-		public function get overworldSpriteId() : int { return m_overworldSpriteId; }
-		public function get battleBitmap() : Bitmap { return m_battleBitmap; }
-		
+		public function get name() : String { return this.m_name; }
+		public function get overworldSpriteId() : int { return this.m_overworldSpriteId; }
+		public function get battleBitmap() : Bitmap { return this.m_battleBitmap; }
+		public function get usedRepel() : Boolean { return this.m_usedRepel; }
+	
 		public function TinyTrainer( battleSpriteData : BitmapData, name : String )
 		{
 			m_name = name;
@@ -45,7 +50,12 @@ package com.tinyrpg.core
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
 			
 			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( name );
-			newTrainer.squad.push( TinyMonLookup.getInstance().getMonByHuman( starterName ) );
+			var starterMon : TinyMon = TinyMonLookup.getInstance().getMonByHuman( starterName );
+			newTrainer.squad.push( starterMon );
+			
+			// TODO: REMOVE, FOR TESTING
+			starterMon.dealDamage( 5 );
+			starterMon.isPoisoned = true;
 			
 			// TODO: REMOVE, FOR TESTING
 			var item1 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Potion' );
@@ -206,6 +216,30 @@ package com.tinyrpg.core
 			
 			this.money.value = Math.max( 0, this.money.value - amount );
 			TinyLogManager.log( 'current money: ' + this.money.value, this );
+		}
+		
+		public function set usedRepel( value ) : void 
+		{
+			TinyLogManager.log( 'usedRepel: ' + value, this );
+			this.m_usedRepel = value;
+			this.m_repelStepCounter = 0;				
+		}
+		
+		public function incrementRepelCounter() : void
+		{
+			if ( !this.usedRepel ) return;
+			
+			this.m_repelStepCounter++;
+			TinyLogManager.log( 'incrementRepelCounter: ' + this.m_repelStepCounter, this );
+			
+			// Repel wears off after 200 steps
+			if ( this.m_repelStepCounter >= 200 )
+			{
+				TinyLogManager.log( 'repel has worn off!', this );
+				
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.REPEL_WORN_OFF ) );
+				this.usedRepel = false;	
+			}
 		}
 	}
 }

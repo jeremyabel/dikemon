@@ -1,5 +1,7 @@
 package com.tinyrpg.ui
 {
+	import com.greensock.TweenLite;
+	
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.data.TinyCommonStrings;
@@ -19,6 +21,7 @@ package com.tinyrpg.ui
 	{
 		private var itemMenu 		: TinyItemMenu;
 		private var usedItemDialog	: TinyDialogBox;
+		private var itemResultDialog: TinyDialogBox;
 		private var confirmDialog	: TinyDialogSelectList;
 		private var monMenu			: TinyUseItemMonMenu;
 		private var item 			: TinyItem;
@@ -52,6 +55,8 @@ package com.tinyrpg.ui
 			
 			TinyLogManager.log( 'onItemUsed: ' + this.item.name, this );
 			
+			this.itemMenu.setStickySelection();
+			
 			var confirmOptions : Array = [ 
 				new TinySelectableItem( TinyCommonStrings.YES.toUpperCase(), 0 ),
 				new TinySelectableItem( TinyCommonStrings.NO.toUpperCase(), 1 )
@@ -76,6 +81,10 @@ package com.tinyrpg.ui
 		{
 			this.item = event.param;
 			
+			TinyLogManager.log( 'onItemRequiresMon: ' + this.item.name, this );
+			
+			this.itemMenu.setStickySelection();
+			
 			// Create the mon menu
 			this.monMenu = new TinyUseItemMonMenu( TinyGameManager.getInstance().playerTrainer, this.item );
 			this.addChild( this.monMenu );
@@ -86,8 +95,6 @@ package com.tinyrpg.ui
 			this.monMenu.addEventListener( TinyItemEvent.MON_FOR_ITEM_CHOSEN, this.onMonChosen );
 			this.monMenu.addEventListener( TinyInputEvent.CANCEL, this.onMonMenuCancelled );
 			TinyInputManager.getInstance().setTarget( this.monMenu );			 
-			
-			TinyLogManager.log( 'onItemRequiresMon: ' + this.item.name, this );
 		}
 		
 		
@@ -96,6 +103,7 @@ package com.tinyrpg.ui
 			TinyLogManager.log( 'onMonChosen: ' + event.param.name, this );
 			
 			this.mon = event.param;
+			this.onItemUsed( new TinyItemEvent( TinyItemEvent.ITEM_USED, this.item ) );
 		}
 		
 		
@@ -114,7 +122,8 @@ package com.tinyrpg.ui
 			
 			this.removeConfirmDialog();
 			
-			this.usedItemDialog = TinyDialogBox.newFromString( '[name] used the ' + this.item.name + '!   [end]' );
+			// Create the "you used this item" dialog
+			this.usedItemDialog = TinyDialogBox.newFromString( '[name] used the ' + this.item.name + '!    [end]' );
 			this.usedItemDialog.x = 0;
 			this.usedItemDialog.y = 104 - 8;
 			this.usedItemDialog.show();
@@ -148,17 +157,82 @@ package com.tinyrpg.ui
 		{
 			TinyLogManager.log( 'onUsedItemDialogComplete', this );
 			
+			this.removeUsedItemDialog();
+			
+			// Use the item, which returns a string that says what the item did
+			var itemResultString : String = this.item.useItem( this.mon );
+			
+			// Show the item results dialog, if required
+			if ( itemResultString )
+			{
+				// Create the item results dialog
+				this.itemResultDialog = TinyDialogBox.newFromString( itemResultString );
+				this.itemResultDialog.x = 0;
+				this.itemResultDialog.y = 104 - 8;
+				this.itemResultDialog.show();
+				this.addChild( this.itemResultDialog );
+				
+				// Update the selected mon to reflect any changes caused by using the item
+				this.monMenu.refreshSelectedMon( true );
+				
+				// Add a delay before passing control to the dialog, otherwise it feels too fast
+				TweenLite.delayedCall( 10, this.enableItemResultDialog, null, true );
+			}
+			else
+			{
+				this.onItemResultDialogComplete( null );		
+			}
+		}
+		
+		
+		private function enableItemResultDialog() : void
+		{
+			TinyLogManager.log( 'enableItemResultDialog', this );
+			
+			this.itemResultDialog.addEventListener( Event.COMPLETE, this.onItemResultDialogComplete );
+			TinyInputManager.getInstance().setTarget( this.itemResultDialog );
+		}
+		
+		
+		private function onItemResultDialogComplete( event : Event ) : void
+		{
+			TinyLogManager.log( 'onItemResultDialogComplete', this );
+			
+			// Delay removing the item results dialog, otherwise it feels too fast
+			TweenLite.delayedCall( 16, this.onDelayedItemResultDialogComplete, null, true );
+		}
+		
+		
+		private function onDelayedItemResultDialogComplete() : void
+		{
+			TinyLogManager.log( 'onDelayedItemResultDialogComplete', this );
+				
 			// Remove the item from the player's inventory
 			TinyGameManager.getInstance().playerTrainer.removeItem( this.item );
 			this.itemMenu.refreshItems();
 			
 			// Cleanup
-			this.usedItemDialog.addEventListener( Event.COMPLETE, this.onUsedItemDialogComplete );
-			this.removeChild( this.usedItemDialog );
-			this.usedItemDialog = null;
+			if ( this.itemResultDialog )
+			{
+				this.itemResultDialog.removeEventListener( Event.COMPLETE, this.onItemResultDialogComplete );
+				this.removeChild( this.itemResultDialog );
+				this.itemResultDialog = null;
+			}
+			
 			this.removeMonMenu();
 			
-			this.returnControlToItemMenu();			
+			this.returnControlToItemMenu();
+		}
+		
+		
+		private function removeUsedItemDialog() : void
+		{
+			TinyLogManager.log( 'removeUsedItemDialog', this );
+			
+			// Cleanup
+			this.usedItemDialog.removeEventListener( Event.COMPLETE, this.onUsedItemDialogComplete );
+			this.removeChild( this.usedItemDialog );
+			this.usedItemDialog = null;
 		}
 		
 		

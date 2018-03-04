@@ -76,7 +76,31 @@ package com.tinyrpg.ui
 		public function refreshItems() : void
 		{
 			TinyLogManager.log( 'refreshItems', this );
+			
+			// Keep track of the name of the selected item before the list is reset.
+			// The selection of this item will be restored after the list is reset.
+			var previousSelectedItemName : String
+			if ( this.selectedItem )
+			{
+				previousSelectedItemName = this.selectedItem.textString;
+			}
+			
 			this.resetListItems( this.getItemListForTrainer( this.trainer ) );
+			
+			// Restore the previous selected item, if there is one
+			if ( previousSelectedItemName ) 
+			{
+				this.selectedItem = this.getItemByName( previousSelectedItemName );
+				
+				if ( this.selectedItem )
+				{
+					TinyLogManager.log( 'restoring previous selection: ' + this.selectedItem.textString, this );
+				}
+				else 
+				{
+					TinyLogManager.log( 'previous selection was removed, selecting first item', this );
+				}
+			}
 		}
 		
 		
@@ -130,9 +154,6 @@ package com.tinyrpg.ui
 			
 			// Empty the description dialog box
 			this.setDescriptionText( '' );
-			
-			// Clear the selected item
-			this.selectedItem = null;
 		}
 
 
@@ -239,7 +260,24 @@ package com.tinyrpg.ui
 				return ( TinySelectableItem( item ).idNumber == targetID ); 
 			};
 			
-			// Search for character
+			// Search for item
+			return this.itemArray.filter( findFunction )[ 0 ];
+		}
+		
+		
+		protected function getItemByName( targetName : String ) : TinySelectableItem
+		{
+			TinyLogManager.log( 'getItemByName: ' + targetName, this );
+			
+			// Find function
+			var findFunction : Function = function( item : *, index : int, array : Array ) : Boolean
+			{ 
+				index; 
+				array; 
+				return ( TinySelectableItem( item ).textString.toUpperCase() == targetName.toUpperCase() ); 
+			};
+			
+			// Search for item
 			return this.itemArray.filter( findFunction )[ 0 ];
 		}
 	}

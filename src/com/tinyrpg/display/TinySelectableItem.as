@@ -60,7 +60,7 @@ package com.tinyrpg.display
 		
 		public function set disabled(value : Boolean) : void
 		{
-			TinyLogManager.log('set disabled: ' + value, this);
+			TinyLogManager.log( this.textString + ' set disabled: ' + value, this );
 			
 			if (value) {
 				this._disabled = true;

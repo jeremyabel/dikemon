@@ -38,7 +38,7 @@ package com.tinyrpg.battle
 		public static const POISONED			: String = 'MON got real sick from that one!';
 		public static const ALREDY_POISONED		: String = 'MON is already pretty sick!';
 		public static const POISON_HURT			: String = 'MON just barfed all over the place![delay 4] Gross!';
-		public static const POISON_HEAL			: String = 'MON feels better! Barf Fix: it works every time!';
+		public static const POISON_HEAL			: String = 'MON feels better!';
 		
 		// Sleep status strings
 		public static const FELL_ASLEEP 		: String = 'MON fell asleep!';
@@ -100,6 +100,7 @@ package com.tinyrpg.battle
 		public static const REGAINED_PP			: String = 'MON\'s move MOVE regained PP!';
 		public static const HP_FULL				: String = 'MON\'s HP is full!'; 
 		public static const PP_FULL				: String = 'MON\'s move MOVE is at max PP!';
+		public static const REVIVED				: String = 'MON isn\'t dead anymore!';
 		
 		// Attack result strings
 		public static const USED_MOVE			: String = 'MON used MOVE!';
@@ -167,6 +168,7 @@ package com.tinyrpg.battle
 		public static const CANT_USE_ITEM_FIELD	: String = 'Hey, you can\'t use this outside of a battle!';
 	 	public static const CANT_USE_BALL		: String = 'Hey, you can only touch your balls during a battle!';
 	 	public static const CANT_USE_DEAD		: String = 'This guy is way too dead for that to work...';
+	 	public static const CANT_USE_ALIVE		: String = 'This guy is already pretty alive...';
 	 	public static const CANT_USE_MAX_HP		: String = 'Buddy, this guy is pretty healthy already...';
 	 	public static const CANT_USE_POISON		: String = 'It\'s been at least a few hours since this guy barfed...';
 	 	public static const CANT_USE_BURN		: String = 'This guy is already cool as a cucumber!';

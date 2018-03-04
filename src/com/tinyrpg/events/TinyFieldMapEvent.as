@@ -18,6 +18,7 @@ package com.tinyrpg.events
 		public static const MOVE_COMPLETE 		: String = 'MOVE_COMPLETE';
 		public static const STEP_COMPLETE		: String = 'STEP_COMPLETE';
 		public static const EVENT_COMPLETE 		: String = 'EVENT_COMPLETE';
+		public static const REPEL_WORN_OFF		: String = 'REPEL_WORN_OFF';
 		
 		public var param : * = null;
 		

@@ -47,6 +47,11 @@ package com.tinyrpg.utils
 		{
 			return interpolate(normalize(value, min1, max1), min2, max2);	
 		}
+		
+		public static function mapClamped(value : Number, min1 : Number, max1 : Number, min2 : Number, max2 : Number) : Number
+		{
+			return clamp(map(value, min1, max1, min2, max2), min2, max2);
+		}
 
 		public static function clamp(value : Number, min : Number, max : Number) : Number
 		{

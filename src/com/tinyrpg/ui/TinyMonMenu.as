@@ -105,6 +105,13 @@ package com.tinyrpg.ui
 		}
 		
 		
+		public function refreshSelectedMon( tween : Boolean = false ) : void
+		{
+			TinyLogManager.log( 'refreshSelectedMon', this );
+			( this.selectedItem as TinySelectableMonItem ).update( tween );
+		}
+		
+		
 		protected function showSubMenu() : void
 		{
 			TinyLogManager.log( 'showSubMenu', this );

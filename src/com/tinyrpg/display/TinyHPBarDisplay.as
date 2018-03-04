@@ -1,8 +1,14 @@
 package com.tinyrpg.display 
 {
-	import flash.display.Sprite;
-
+	import com.greensock.TweenLite;
+	import com.greensock.easing.Linear;
+	import com.greensock.plugins.TweenPlugin;
+	import com.greensock.plugins.RoundPropsPlugin;
+	
 	import com.tinyrpg.utils.TinyColor;
+	import com.tinyrpg.utils.TinyMath;
+	
+	import flash.display.Sprite;
 
 	/**
 	 * @author jeremyabel
@@ -26,6 +32,8 @@ package com.tinyrpg.display
 		
 		public function TinyHPBarDisplay( width : int )
 		{
+			TweenPlugin.activate( [ RoundPropsPlugin ] );
+			
 			this.barWidth = width;
 			
 			// Make colors
@@ -61,9 +69,21 @@ package com.tinyrpg.display
 			this.addChild(this.barContainer);
 		}
 
-		public function setRatio( ratio : Number ) : void
+		public function setRatio( ratio : Number, tween : Boolean = false ) : void
 		{
-			this.barContainer.scaleX = Math.floor(ratio * this.barWidth);
+			if ( tween )
+			{
+				TweenLite.to( this.barContainer, 8, {
+					scaleX: Math.floor( ratio * this.barWidth ),
+					ease: Linear.easeNone, 
+					useFrames: true,
+					roundProps:  [ 'scaleX' ]
+				});
+			}
+			else
+			{
+				this.barContainer.scaleX = Math.floor(ratio * this.barWidth);
+			}
 			
 			if (this.barContainer.scaleX <= 10) 
 			{
