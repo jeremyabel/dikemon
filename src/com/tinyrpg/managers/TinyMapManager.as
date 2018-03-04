@@ -228,7 +228,7 @@ package com.tinyrpg.managers
 			this.m_currentMap.y = -y + ( 144 / 2 ) - 8;
 		}
 		
-		public function startEventByName( eventName : String ) : void
+		public function startEventByName( eventName : String, isGlobal : Boolean = false ) : void
 		{
 			TinyLogManager.log( 'startEventByName: ' + eventName, this );
 			
@@ -239,7 +239,7 @@ package com.tinyrpg.managers
 			
 			// Start the event
 			this.m_currentMap.addEventListener( TinyFieldMapEvent.EVENT_COMPLETE, this.onEventComplete );
-			this.m_currentMap.startEventByName( eventName );
+			this.m_currentMap.startEventByName( eventName, isGlobal );
 		}
 		
 		private function onEventComplete( event : TinyFieldMapEvent ) : void

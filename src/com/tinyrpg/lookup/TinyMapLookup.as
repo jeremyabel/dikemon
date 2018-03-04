@@ -44,6 +44,7 @@ package com.tinyrpg.lookup
 		private static const MAP_ISLANDENTRANCE			: String = 'ISLANDENTRANCE';
 		private static const MAP_ROUTE29				: String = 'ROUTE29';
 		private static const MAP_INTRO					: String = 'INTRO';
+		private static const MAP_GLOBAL					: String = 'GLOBAL';
 		private static const MAP_EVENTTESTZONE			: String = 'EVENTTESTZONE';
 		
 		// City
@@ -93,6 +94,7 @@ package com.tinyrpg.lookup
 		
 		// Misc
 		[Embed(source='../../../../bin/xml/Events/Misc/Route29.xml', mimeType='application/octet-stream')] 					public static const Route29_Events_XML : Class;
+		[Embed(source='../../../../bin/xml/Events/Misc/Global.xml', mimeType='application/octet-stream')] 					public static const Global_Events_XML : Class;
 		[Embed(source='../../../../bin/xml/Events/Misc/Intro.xml', mimeType='application/octet-stream')] 					public static const Intro_Events_XML : Class;
 		[Embed(source='../../../../bin/xml/Events/Test/Test.xml', mimeType='application/octet-stream')] 					public static const EventTestZone_Events_XML : Class;
 		
@@ -213,6 +215,7 @@ package com.tinyrpg.lookup
 				
 				// Misc
 				case MAP_INTRO:					newXMLBytes = new Intro_Events_XML as ByteArray; break;
+				case MAP_GLOBAL:				newXMLBytes = new Global_Events_XML as ByteArray; break;
 				case MAP_ROUTE29:				newXMLBytes = new Route29_Events_XML as ByteArray; break;
 				case MAP_EVENTTESTZONE:			newXMLBytes = new EventTestZone_Events_XML as ByteArray; break;
 				

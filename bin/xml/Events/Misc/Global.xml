@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EVENTS>
+
+	<!-- These events can be accessed by any map -->
+
+	<EVENT_repel_wore_off>
+		<SEQUENCE>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>[name]'s GoAway™ Spray has worn off!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_repel_wore_off>
+
+</EVENTS>

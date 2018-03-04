@@ -57,7 +57,9 @@ package com.tinyrpg.managers
 		public function initWithTestData() : void
 		{
 			TinyLogManager.log( 'initWithTestData', this );
+			
 			this.playerTrainer = TinyTrainer.newFromStarterData( TinyConfig.PLAYER_NAME );
+			this.playerTrainer.addEventListener( TinyFieldMapEvent.REPEL_WORE_OFF, this.onRepelWoreOff );
 			
 			// Listen for menu keypress events
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.MENU, this.onGameMenuRequested );
@@ -225,6 +227,21 @@ package com.tinyrpg.managers
 			TinyMapManager.getInstance().onBattleComplete( this.currentBattle.result, true );
 			
 			this.currentBattle = null;
+		}
+		
+		private function onRepelWoreOff( event : TinyFieldMapEvent ) : void
+		{
+			TinyLogManager.log( 'onRepelWoreOff', this );
+			
+			// If no events are already running, start the global "repel wore off" event 
+			if ( !TinyMapManager.getInstance().currentMap.isRunningEvent )
+			{
+				TinyMapManager.getInstance().startEventByName( 'repel_wore_off', true );
+			}
+			else
+			{
+				TinyLogManager.log( 'an event is already running; skipping "repel wore off" event', this );	
+			}
 		}
 	}
 }

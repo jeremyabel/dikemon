@@ -235,10 +235,12 @@ package com.tinyrpg.core
 			// Repel wears off after 200 steps
 			if ( this.m_repelStepCounter >= 200 )
 			{
+				this.usedRepel = false;
+					
 				TinyLogManager.log( 'repel has worn off!', this );
 				
-				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.REPEL_WORN_OFF ) );
-				this.usedRepel = false;	
+				// Trigger the event which shows the "repel has worn off!" dialog box
+				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.REPEL_WORE_OFF ) );
 			}
 		}
 	}

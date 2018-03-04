@@ -231,17 +231,20 @@ package com.tinyrpg.core
 			// Good to go: play the event
 			TinyMapManager.getInstance().startEventByName( triggerObject.eventName );
 		}
+	
 		
 		public function clearLastWarp() : void
 		{
 			this.lastWarpHit = null;
 		}
 		
+		
 		public function incrementStepCounter() : void
 		{
 			this.stepsSinceEncounter++;
 			TinyGameManager.getInstance().playerTrainer.incrementRepelCounter();
 		}
+		
 		
 		public function resetStepsSinceEncounter() : void
 		{

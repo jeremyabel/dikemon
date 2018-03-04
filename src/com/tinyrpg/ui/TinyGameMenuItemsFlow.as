@@ -199,7 +199,7 @@ package com.tinyrpg.ui
 			TinyLogManager.log( 'onItemResultDialogComplete', this );
 			
 			// Delay removing the item results dialog, otherwise it feels too fast
-			TweenLite.delayedCall( 16, this.onDelayedItemResultDialogComplete, null, true );
+			TweenLite.delayedCall( 13, this.onDelayedItemResultDialogComplete, null, true );
 		}
 		
 		
