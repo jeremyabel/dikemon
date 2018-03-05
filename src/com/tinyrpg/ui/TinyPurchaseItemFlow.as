@@ -183,7 +183,7 @@ package com.tinyrpg.ui
 						default:
 						case 0: purchaseResultsString = "Hmm, [delay 4]looks like you're a little short in the cash department, [delay 4]yeah?   [end]"; break;
 						case 1: purchaseResultsString = "Looks like you have a mixture of cash and uh, [delay 6]pocket [delay 6]lint? [halt]Nice try, [delay 4]but pocket lint is not legal tender[delay 2].[delay 2].[delay 2].   [end]"; break;
-						case 2: purchaseResultsString = "Hey buddy, [delay 4]this is a boutique Dikémart, [delay 8]ya gotta pay full price for this stuff!   [end]"; break;
+						case 2: purchaseResultsString = "Hey buddy, [delay 4]this is a boutique Dik√©mart, [delay 8]ya gotta pay full price for this stuff!   [end]"; break;
 						case 3: purchaseResultsString = "Nuh-uh. [delay 8]Come back when you've got the dough, [delay 4]kiddo.  [end]"; break;
 						case 4: purchaseResultsString = "I'm sorry, [delay 6]we don't serve poor people here.   [end]"; break;
 					}

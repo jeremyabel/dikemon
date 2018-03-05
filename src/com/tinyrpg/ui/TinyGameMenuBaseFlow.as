@@ -20,7 +20,7 @@ package com.tinyrpg.ui
 			
 		}
 		
-		protected function onFlowComplete( event : Event ) : void
+		protected function onFlowComplete( event : Event = null ) : void
 		{
 			TinyLogManager.log( 'onFlowComplete', this );
 			this.dispatchEvent( new Event( Event.COMPLETE ) );			

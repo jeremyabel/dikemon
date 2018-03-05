@@ -18,6 +18,16 @@ package com.tinyrpg.data
 			this.value = false;
 		}
 		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			jsonObject.name = this.name;
+			jsonObject.value = this.value;
+			
+			return jsonObject;
+		}
+		
 		public function setValue( value : Boolean ) : void
 		{
 			this.value = value;

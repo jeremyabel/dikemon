@@ -65,7 +65,7 @@ package com.tinyrpg.sequence
 			newCommand.monDisplayBox = new TinyContentBox( newCommand.mon.bitmap, 60, 60, true );
 			
 			// Create the mon description dialog
-			newCommand.monDescriptionDialog = TinyDialogBox.newFromString( 'This Dikémon is really [delay 4] ' + newCommand.mon.starterText + '!   [end]' );
+			newCommand.monDescriptionDialog = TinyDialogBox.newFromString( 'This Dik√©mon is really [delay 4] ' + newCommand.mon.starterText + '!   [end]' );
 			
 			// Get the confirmation question string
 			var confirmationString : String = 'Choose ' + newCommand.monName + '?'; 

@@ -11,7 +11,7 @@ package com.tinyrpg.data
 	 */
 	public class TinyMoveData 
 	{
-		private var m_name 				: String;
+		private var m_name 				: String = '-';
 		private var m_description 		: String;
 		private var m_basePower 		: int;
 		private var m_accuracy 			: int;
@@ -152,6 +152,16 @@ package com.tinyrpg.data
 				TinyMath.deepCopyString( target.fxPaletteEffect ),
 				TinyMath.deepCopyString( target.uselessText )
 			);
+		}
+		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			// Only the move name needs to be saved, the rest is derived from the default XML data
+			jsonObject.name = this.name;
+			
+			return jsonObject;
 		}
 		
 		public function loadMoveFXAnimation( palette : TinyBattlePalette, isEnemy : Boolean ) : void

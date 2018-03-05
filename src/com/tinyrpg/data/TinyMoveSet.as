@@ -65,6 +65,18 @@ package com.tinyrpg.data
 			return newMoveSet;
 		}
 		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+		
+			if ( this.move1 ) jsonObject.move1 = this.move1.toJSON();
+			if ( this.move2 ) jsonObject.move2 = this.move2.toJSON();
+			if ( this.move3 ) jsonObject.move3 = this.move3.toJSON();
+			if ( this.move4 ) jsonObject.move4 = this.move4.toJSON();
+			
+			return jsonObject;
+		}
+		
 		public function logMoves() : void
 		{
 			TinyLogManager.log('logMoves: move 1 = ' + (m_move1 ? m_move1.name : '--'), this);
@@ -72,6 +84,7 @@ package com.tinyrpg.data
 			TinyLogManager.log('logMoves: move 3 = ' + (m_move3 ? m_move3.name : '--'), this);
 			TinyLogManager.log('logMoves: move 4 = ' + (m_move4 ? m_move4.name : '--'), this);
 		}
+		
 		
 		public function setMoves( move1 : TinyMoveData, move2 : TinyMoveData, move3 : TinyMoveData, move4 : TinyMoveData ) : void
 		{

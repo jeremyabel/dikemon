@@ -36,6 +36,26 @@ package com.tinyrpg.lookup
 			}			
 		}
 		
+		
+		public function restoreFromJSON( jsonObject : Object ) : void
+		{
+			TinyLogManager.log( 'restoreFromJSON', this );
+		}
+		
+		
+		public function toJSON() : Array
+		{
+			var jsonArray : Array = [];
+			
+			for each ( var flag : TinyEventFlag in this.eventFlags )
+			{
+				jsonArray.push( flag.toJSON() );
+			}
+			
+			return jsonArray;
+		}
+		
+		
 		public function getFlagByName( targetName : String ) : TinyEventFlag
 		{
 			TinyLogManager.log( 'getFlagByName: ' + targetName, TinyEventFlagLookup );
@@ -50,6 +70,7 @@ package com.tinyrpg.lookup
 				
 			return this.eventFlags.filter( findFunction )[ 0 ];			
 		}
+		
 		
 		public static function getInstance() : TinyEventFlagLookup
 		{

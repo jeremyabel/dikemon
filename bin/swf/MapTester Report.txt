@@ -1,0 +1,747 @@
+﻿MapTester.swf Movie Report
+---------------------------
+
+Frame #    Frame Bytes    Total Bytes    Scene
+-------    -----------    -----------    -----
+      1        3258715        3258715    Scene 1 (AS 3.0 Classes Export Frame)
+
+Scene      Shape Bytes    Text Bytes    ActionScript Bytes
+-------    -----------    ----------    ------------------
+Scene 1              0             0                350529
+
+Symbol                                                            Shape Bytes    Text Bytes    ActionScript Bytes
+--------------------------------------------------------------    -----------    ----------    ------------------
+com.tinyrpg.display.TinyBattleTurnArrow                                    50             0                     0
+com.tinyrpg.display.TinyModalScrollArrow                                   32             0                     0
+com.tinyrpg.display.TinyModalSelectArrow                                  167             0                     0
+MapAssets_fla.City_Boat_objects_18 dependency 2                            49             0                     0
+MapAssets_fla.City_Boat_objects_18 dependency 1                             0             0                     0
+MapAssets_fla.City_Boat_objects_18 dependency 4                             0             0                     0
+MapAssets_fla.City_Boat_objects_18                                          0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 1                  0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 2                  0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 3                  0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 5                 49             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 4                  0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110 dependency 7                  0             0                     0
+MapAssets_fla.Island_LakeEntrance_objects_110                               0             0                     0
+MapAssets_fla.Island_BoatDock_objects_160 dependency 1                      0             0                     0
+MapAssets_fla.Island_BoatDock_objects_160 dependency 2                      0             0                     0
+MapAssets_fla.Island_BoatDock_objects_160                                   0             0                     0
+MapAssets_fla.Island_Cave_objects_99 dependency 1                           0             0                     0
+MapAssets_fla.Island_Cave_objects_99                                        0             0                     0
+MapAssets_fla.Office_Floor2_objects_48 dependency 1                         0             0                     0
+MapAssets_fla.Office_Floor2_objects_48 dependency 2                         0             0                     0
+MapAssets_fla.Office_Floor2_objects_48                                      0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 1                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 2                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 3                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 4                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 5                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 6                           0             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 8                          78             0                     0
+MapAssets_fla.Town_House1_objects_68 dependency 7                           0             0                     0
+MapAssets_fla.Town_House1_objects_68                                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 1                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 2                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 3                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 4                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 5                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 6                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 7                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 8                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 9                        0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 10                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 11                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 12                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 13                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 14                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 15                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 16                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 17                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 18                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 19                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 20                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 21                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 22                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 23                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 24                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 25                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 27                      68             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 26                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80 dependency 29                       0             0                     0
+MapAssets_fla.Town_HouseProf_objects_80                                     0             0                     0
+MapAssets_fla.Island_BoatExitMart_objects_142 dependency 1                  0             0                     0
+MapAssets_fla.Island_BoatExitMart_objects_142 dependency 2                  0             0                     0
+MapAssets_fla.Island_BoatExitMart_objects_142                               0             0                     0
+MapAssets_fla.Office_Floor3_objects_52 dependency 1                         0             0                     0
+MapAssets_fla.Office_Floor3_objects_52 dependency 2                         0             0                     0
+MapAssets_fla.Office_Floor3_objects_52                                      0             0                     0
+MapAssets_fla.City_House3_objects_40 dependency 1                           0             0                     0
+MapAssets_fla.City_House3_objects_40 dependency 2                           0             0                     0
+MapAssets_fla.City_House3_objects_40                                        0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 1                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 2                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 3                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 4                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 5                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 6                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 7                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 8                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 9                               0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 11                             83             0                     0
+MapAssets_fla.Route29_objects_60 dependency 10                              0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 13                              0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 14                              0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 15                              0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 16                              0             0                     0
+MapAssets_fla.Route29_objects_60 dependency 17                              0             0                     0
+MapAssets_fla.Route29_objects_60                                            0             0                     0
+MapAssets_fla.Town_objects_64 dependency 1                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 2                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 3                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 4                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 5                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 6                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 7                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 8                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 9                                  0             0                     0
+MapAssets_fla.Town_objects_64 dependency 10                                 0             0                     0
+MapAssets_fla.Town_objects_64 dependency 11                                 0             0                     0
+MapAssets_fla.Town_objects_64 dependency 12                                 0             0                     0
+MapAssets_fla.Town_objects_64                                               0             0                     0
+MapAssets_fla.Island_CaveSide_objects_106 dependency 1                      0             0                     0
+MapAssets_fla.Island_CaveSide_objects_106 dependency 2                      0             0                     0
+MapAssets_fla.Island_CaveSide_objects_106                                   0             0                     0
+MapAssets_fla.Island_ForestEntrance_objects_133 dependency 1                0             0                     0
+MapAssets_fla.Island_ForestEntrance_objects_133 dependency 2                0             0                     0
+MapAssets_fla.Island_ForestEntrance_objects_133                             0             0                     0
+MapAssets_fla.City_Mart_objects_28 dependency 1                             0             0                     0
+MapAssets_fla.City_Mart_objects_28 dependency 2                             0             0                     0
+MapAssets_fla.City_Mart_objects_28 dependency 3                             0             0                     0
+MapAssets_fla.City_Mart_objects_28 dependency 4                             0             0                     0
+MapAssets_fla.City_Mart_objects_28                                          0             0                     0
+MapAssets_fla.Island_BoatExit_objects_138 dependency 1                      0             0                     0
+MapAssets_fla.Island_BoatExit_objects_138 dependency 2                      0             0                     0
+MapAssets_fla.Island_BoatExit_objects_138 dependency 3                      0             0                     0
+MapAssets_fla.Island_BoatExit_objects_138 dependency 4                      0             0                     0
+MapAssets_fla.Island_BoatExit_objects_138                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 1                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 2                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 3                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 4                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 5                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 6                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 7                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 8                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 9                                   0             0                     0
+MapAssets_fla.City_objects_4 dependency 10                                  0             0                     0
+MapAssets_fla.City_objects_4 dependency 11                                  0             0                     0
+MapAssets_fla.City_objects_4 dependency 12                                  0             0                     0
+MapAssets_fla.City_objects_4 dependency 13                                  0             0                     0
+MapAssets_fla.City_objects_4 dependency 14                                  0             0                     0
+MapAssets_fla.City_objects_4 dependency 15                                  0             0                     0
+MapAssets_fla.City_objects_4                                                0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 1                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 2                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 3                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 4                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 5                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 6                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 7                           0             0                     0
+MapAssets_fla.Town_House2_objects_72 dependency 8                           0             0                     0
+MapAssets_fla.Town_House2_objects_72                                        0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 1               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 2               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 3               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 4               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 5               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 6               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 7               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 9              80             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 8               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor1_objects_76                            0             0                     0
+MapAssets_fla.Island_CaveEntrance_objects_92 dependency 1                   0             0                     0
+MapAssets_fla.Island_CaveEntrance_objects_92 dependency 2                   0             0                     0
+MapAssets_fla.Island_CaveEntrance_objects_92 dependency 3                   0             0                     0
+MapAssets_fla.Island_CaveEntrance_objects_92 dependency 4                   0             0                     0
+MapAssets_fla.Island_CaveEntrance_objects_92                                0             0                     0
+MapAssets_fla.Island_LakeCave_objects_114 dependency 1                      0             0                     0
+MapAssets_fla.Island_LakeCave_objects_114                                   0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 1               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 2               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 3               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 4               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 5               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 6               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 7               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84 dependency 8               0             0                     0
+MapAssets_fla.Town_HousePlayer_Floor2_objects_84                            0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 1                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 2                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 3                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 4                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 5                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 6                           0             0                     0
+MapAssets_fla.City_Center_objects_22 dependency 7                           0             0                     0
+MapAssets_fla.City_Center_objects_22                                        0             0                     0
+MapAssets_fla.Intro_objects_154 dependency 2                               53             0                     0
+MapAssets_fla.Intro_objects_154 dependency 1                                0             0                     0
+MapAssets_fla.Intro_objects_154 dependency 4                                0             0                     0
+MapAssets_fla.Intro_objects_154 dependency 5                                0             0                     0
+MapAssets_fla.Intro_objects_154 dependency 6                                0             0                     0
+MapAssets_fla.Intro_objects_154 dependency 7                                0             0                     0
+MapAssets_fla.Intro_objects_154                                             0             0                     0
+MapAssets_fla.Island_Forest_objects_127 dependency 1                        0             0                     0
+MapAssets_fla.Island_Forest_objects_127 dependency 2                        0             0                     0
+MapAssets_fla.Island_Forest_objects_127                                     0             0                     0
+MapAssets_fla.City_House1_objects_32 dependency 1                           0             0                     0
+MapAssets_fla.City_House1_objects_32 dependency 2                           0             0                     0
+MapAssets_fla.City_House1_objects_32                                        0             0                     0
+MapAssets_fla.Office_Reception_objects_44 dependency 1                      0             0                     0
+MapAssets_fla.Office_Reception_objects_44 dependency 2                      0             0                     0
+MapAssets_fla.Office_Reception_objects_44 dependency 3                      0             0                     0
+MapAssets_fla.Office_Reception_objects_44                                   0             0                     0
+MapAssets_fla.Island_Lake_objects_119 dependency 1                          0             0                     0
+MapAssets_fla.Island_Lake_objects_119 dependency 2                          0             0                     0
+MapAssets_fla.Island_Lake_objects_119                                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 1                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 2                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 3                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 4                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 5                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 6                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 7                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 8                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 9                        0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 10                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 11                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 12                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 13                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 14                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 15                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 16                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 17                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 18                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 19                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 20                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 21                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 22                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 23                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 24                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 25                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 26                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 27                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 28                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 29                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 30                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150 dependency 31                       0             0                     0
+MapAssets_fla.EventTestZone_objects_150                                     0             0                     0
+MapAssets_fla.City_House2_objects_36 dependency 1                           0             0                     0
+MapAssets_fla.City_House2_objects_36 dependency 2                           0             0                     0
+MapAssets_fla.City_House2_objects_36                                        0             0                     0
+MapAssets_fla.Island_CaveCenter_objects_146 dependency 1                    0             0                     0
+MapAssets_fla.Island_CaveCenter_objects_146 dependency 2                    0             0                     0
+MapAssets_fla.Island_CaveCenter_objects_146                                 0             0                     0
+com.tinyrpg.display.TinyModalPageArrow                                      0             0                     0
+com.tinyrpg.display.TinyModalDivider                                       35             0                     0
+com.tinyrpg.display.maps.MapCityBoat dependency 1                         117             0                     0
+com.tinyrpg.display.maps.MapCityBoat dependency 3                         934             0                     0
+com.tinyrpg.display.maps.MapCityBoat dependency 5                           0             0                     0
+com.tinyrpg.display.maps.MapCityBoat                                        0             0                     0
+com.tinyrpg.display.maps.MapIslandLakeEntrance dependency 1               240             0                     0
+com.tinyrpg.display.maps.MapIslandLakeEntrance dependency 3              2227             0                     0
+com.tinyrpg.display.maps.MapIslandLakeEntrance dependency 5                 0             0                     0
+com.tinyrpg.display.maps.MapIslandLakeEntrance                              0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatDock dependency 1                   164             0                     0
+com.tinyrpg.display.maps.MapIslandBoatDock dependency 3                   663             0                     0
+com.tinyrpg.display.maps.MapIslandBoatDock dependency 5                     0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatDock                                  0             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 1                       478             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 3                       137             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 5                       215             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 7                       183             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 9                      2935             0                     0
+com.tinyrpg.display.maps.MapIslandCave dependency 11                        0             0                     0
+com.tinyrpg.display.maps.MapIslandCave                                      0             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor2 dependency 1                     140             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor2 dependency 3                    1152             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor2 dependency 5                       0             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor2                                    0             0                     0
+com.tinyrpg.display.maps.MapTownHouse1 dependency 1                        85             0                     0
+com.tinyrpg.display.maps.MapTownHouse1 dependency 3                       531             0                     0
+com.tinyrpg.display.maps.MapTownHouse1 dependency 5                         0             0                     0
+com.tinyrpg.display.maps.MapTownHouse1                                      0             0                     0
+com.tinyrpg.display.maps.MapTownHouseProfessor dependency 1                87             0                     0
+com.tinyrpg.display.maps.MapTownHouseProfessor dependency 3               675             0                     0
+com.tinyrpg.display.maps.MapTownHouseProfessor dependency 5                 0             0                     0
+com.tinyrpg.display.maps.MapTownHouseProfessor                              0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExitMart dependency 1                94             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExitMart dependency 3               787             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExitMart dependency 5                 0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExitMart                              0             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor3 dependency 1                      83             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor3 dependency 3                     568             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor3 dependency 5                       0             0                     0
+com.tinyrpg.display.maps.MapOfficeFloor3                                    0             0                     0
+com.tinyrpg.display.maps.MapCityHouse3 dependency 1                        88             0                     0
+com.tinyrpg.display.maps.MapCityHouse3 dependency 3                       754             0                     0
+com.tinyrpg.display.maps.MapCityHouse3 dependency 5                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse3                                      0             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 1                          647             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 3                         3078             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 5                          252             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 7                          234             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 9                          243             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 11                         493             0                     0
+com.tinyrpg.display.maps.MapRoute29 dependency 13                           0             0                     0
+com.tinyrpg.display.maps.MapRoute29                                         0             0                     0
+com.tinyrpg.display.maps.MapTown dependency 1                             606             0                     0
+com.tinyrpg.display.maps.MapTown dependency 3                            3282             0                     0
+com.tinyrpg.display.maps.MapTown dependency 5                               0             0                     0
+com.tinyrpg.display.maps.MapTown                                            0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 1                   173             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 3                   101             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 5                    94             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 7                   103             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 9                  1618             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide dependency 11                    0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveSide                                  0             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance dependency 1             242             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance dependency 3              97             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance dependency 5             145             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance dependency 7            1462             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance dependency 9               0             0                     0
+com.tinyrpg.display.maps.MapIslandForestEntrance                            0             0                     0
+com.tinyrpg.display.maps.MapCityDikemart dependency 1                       0             0                     0
+com.tinyrpg.display.maps.MapCityDikemart dependency 2                       0             0                     0
+com.tinyrpg.display.maps.MapCityDikemart dependency 3                       0             0                     0
+com.tinyrpg.display.maps.MapCityDikemart                                    0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExit dependency 1                   218             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExit dependency 3                   114             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExit dependency 5                  1325             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExit dependency 7                     0             0                     0
+com.tinyrpg.display.maps.MapIslandBoatExit                                  0             0                     0
+com.tinyrpg.display.maps.MapCity dependency 1                             513             0                     0
+com.tinyrpg.display.maps.MapCity dependency 3                            3897             0                     0
+com.tinyrpg.display.maps.MapCity dependency 5                               0             0                     0
+com.tinyrpg.display.maps.MapCity                                            0             0                     0
+com.tinyrpg.display.maps.MapTownHouse2 dependency 1                         0             0                     0
+com.tinyrpg.display.maps.MapTownHouse2 dependency 2                         0             0                     0
+com.tinyrpg.display.maps.MapTownHouse2 dependency 3                         0             0                     0
+com.tinyrpg.display.maps.MapTownHouse2                                      0             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor1 dependency 1             82             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor1 dependency 3            501             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor1 dependency 5              0             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor1                           0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 1               617             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 3               259             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 5               282             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 7               290             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 9               460             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 11             4360             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 13                0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveEntrance                              0             0                     0
+com.tinyrpg.display.maps.MapIslandLakeCave dependency 1                    81             0                     0
+com.tinyrpg.display.maps.MapIslandLakeCave dependency 3                   468             0                     0
+com.tinyrpg.display.maps.MapIslandLakeCave dependency 5                     0             0                     0
+com.tinyrpg.display.maps.MapIslandLakeCave                                  0             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor2 dependency 1             87             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor2 dependency 3            499             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor2 dependency 5              0             0                     0
+com.tinyrpg.display.maps.MapTownHousePlayerFloor2                           0             0                     0
+com.tinyrpg.display.maps.MapCityDikecenter dependency 1                    80             0                     0
+com.tinyrpg.display.maps.MapCityDikecenter dependency 3                   649             0                     0
+com.tinyrpg.display.maps.MapCityDikecenter dependency 5                     0             0                     0
+com.tinyrpg.display.maps.MapCityDikecenter                                  0             0                     0
+com.tinyrpg.display.maps.MapIntro dependency 1                             15             0                     0
+com.tinyrpg.display.maps.MapIntro dependency 2                             27             0                     0
+com.tinyrpg.display.maps.MapIntro dependency 3                              0             0                     0
+com.tinyrpg.display.maps.MapIntro                                           0             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 1                     874             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 3                     250             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 5                     268             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 7                     265             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 9                     596             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 11                   6633             0                     0
+com.tinyrpg.display.maps.MapIslandForest dependency 13                      0             0                     0
+com.tinyrpg.display.maps.MapIslandForest                                    0             0                     0
+com.tinyrpg.display.maps.MapCityHouse1 dependency 1                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse1 dependency 2                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse1 dependency 3                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse1                                      0             0                     0
+com.tinyrpg.display.maps.MapOfficeReception dependency 1                   97             0                     0
+com.tinyrpg.display.maps.MapOfficeReception dependency 3                  629             0                     0
+com.tinyrpg.display.maps.MapOfficeReception dependency 5                    0             0                     0
+com.tinyrpg.display.maps.MapOfficeReception                                 0             0                     0
+com.tinyrpg.display.maps.MapIslandLake dependency 1                       724             0                     0
+com.tinyrpg.display.maps.MapIslandLake dependency 3                       534             0                     0
+com.tinyrpg.display.maps.MapIslandLake dependency 5                      6132             0                     0
+com.tinyrpg.display.maps.MapIslandLake dependency 7                         0             0                     0
+com.tinyrpg.display.maps.MapIslandLake                                      0             0                     0
+com.tinyrpg.display.maps.MapEventTestZone dependency 1                    594             0                     0
+com.tinyrpg.display.maps.MapEventTestZone dependency 3                   1108             0                     0
+com.tinyrpg.display.maps.MapEventTestZone dependency 5                      0             0                     0
+com.tinyrpg.display.maps.MapEventTestZone                                   0             0                     0
+com.tinyrpg.display.maps.MapCityHouse2 dependency 1                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse2 dependency 2                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse2 dependency 3                         0             0                     0
+com.tinyrpg.display.maps.MapCityHouse2                                      0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveCenter dependency 1                   0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveCenter dependency 2                   0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveCenter dependency 3                   0             0                     0
+com.tinyrpg.display.maps.MapIslandCaveCenter                                0             0                     0
+com.tinyrpg.display.maps.MapObjectWarp                                      0             0                     0
+com.tinyrpg.display.maps.MapObjectNPCRight                                  0             0                     0
+com.tinyrpg.display.maps.MapObjectNPCUp                                     0             0                     0
+com.tinyrpg.display.maps.MapObjectNPCDown                                   0             0                     0
+com.tinyrpg.display.maps.MapObjectNPCLeft                                   0             0                     0
+com.tinyrpg.display.maps.MapObjectTrigger                                   0             0                     0
+com.tinyrpg.display.maps.MapObjectSprite                                    0             0                     0
+
+Font Name                               Bytes         Characters
+------------------------------------    ----------    ----------
+com.tinyrpg.misc.TinyCSS__04b03               3498    
+com.tinyrpg.misc.TinyCSS_Mono0755             4917    
+com.tinyrpg.misc.TinyCSS_dkmn0706              932    
+com.tinyrpg.misc.TinyCSS_Kroeger0465          3483    
+
+ActionScript Bytes    Location
+------------------    --------
+            350529    Scene 1:Frame 1
+
+Bitmap                                                            Compressed    Original      Compression
+--------------------------------------------------------------    ----------    ----------    -----------
+com.tinyrpg.display.BattleWhirl                                         1586                  com.tinyrpg.display.misc.GrassOverlay                                     43                  com.tinyrpg.display.misc.JumpShadow                                       27                  com.tinyrpg.display.monsters.HumanStark                                  276                  com.tinyrpg.display.monsters.HumanRon                                    209                  com.tinyrpg.display.monsters.HumanJason                                  186                  com.tinyrpg.display.monsters.HumanBrenton                                231                  com.tinyrpg.display.monsters.ComfyShortsKid                              268                  com.tinyrpg.display.monsters.Egg                                         142                  com.tinyrpg.display.monsters.HumanYulia                                  316                  com.tinyrpg.display.monsters.Bucket                                      211                  com.tinyrpg.display.monsters.HumanBill                                   237                  com.tinyrpg.display.monsters.FourOfClubs                                 169                  com.tinyrpg.display.monsters.HumanAlex                                   264                  com.tinyrpg.display.monsters.HumanClegg                                  233                  com.tinyrpg.display.monsters.HumanChris                                  227                  com.tinyrpg.display.monsters.HumanZiggy                                  223                  com.tinyrpg.display.trainers.TrainerPlayer                               221                  com.tinyrpg.display.trainers.TrainerTeamVomit1                           358                  com.tinyrpg.display.monsters.HumanMaruska                                191                  com.tinyrpg.display.monsters.HumanQuinn                                  248                  com.tinyrpg.display.monsters.HumanRalph                                  275                  com.tinyrpg.display.monsters.TallGrass                                   176                  com.tinyrpg.display.trainers.TrainerOak                                  229                  com.tinyrpg.display.monsters.AceOfSpades                                 137                  com.tinyrpg.display.monsters.HumanGagnon                                 318                  com.tinyrpg.display.monsters.HumanDave                                   245                  com.tinyrpg.display.monsters.HumanKristi                                 216                  com.tinyrpg.display.monsters.HumanRachel                                 205                  com.tinyrpg.display.monsters.Box                                         132                  com.tinyrpg.display.monsters.Shoe                                        247                  com.tinyrpg.display.monsters.Computer                                    142                  com.tinyrpg.display.status.icons.IconParalysis                            32                  com.tinyrpg.display.EnemyStatsContainer                                   51                  com.tinyrpg.display.PlayerStatsContainer                                  67                  com.tinyrpg.display.status.icons.IconConfusion                            30                  com.tinyrpg.display.status.icons.IconSleep                                24                  com.tinyrpg.display.status.icons.IconPoison                               32                  com.tinyrpg.display.status.icons.IconBurn                                 40                  com.tinyrpg.display.SummonPoofSheet                                      195                  com.tinyrpg.display.BattleBallFull                                        32                  com.tinyrpg.display.TrainerBallsContainer                                 49                  com.tinyrpg.display.BattleBallKO                                          32                  com.tinyrpg.display.emotes.EmoteExclaim                                   39                  com.tinyrpg.display.emotes.EmoteHappy                                     44                  com.tinyrpg.display.emotes.EmoteSkull                                     45                  com.tinyrpg.display.emotes.EmoteQuestion                                  43                  com.tinyrpg.display.emotes.EmoteFish                                      43                  com.tinyrpg.display.emotes.EmoteHeart                                     46                  com.tinyrpg.display.emotes.EmoteSleep                                     45                  com.tinyrpg.display.OverworldChars                                      7734                  com.tinyrpg.display.misc.GrassTile                                        56                  com.tinyrpg.display.ModalBoxSideB                                         21                  com.tinyrpg.display.ModalBoxCornerB                                       29                  com.tinyrpg.display.ModalBoxSideLR                                        17                  com.tinyrpg.display.ModalBoxCornerT                                       29                  com.tinyrpg.display.ModalBoxSideT                                         24                  com.tinyrpg.display.status.enemy.PoisonEnemy                             175                  com.tinyrpg.display.status.player.ConfusePlayer                         2333                  com.tinyrpg.display.status.enemy.SleepEnemy                              837                  com.tinyrpg.display.status.enemy.BurnEnemy                               262                  com.tinyrpg.display.status.player.ParalyzePlayer                        1542                  com.tinyrpg.display.status.player.BurnPlayer                             518                  com.tinyrpg.display.status.enemy.ConfuseEnemy                           2982                  com.tinyrpg.display.status.enemy.ParalyzeEnemy                          1542                  com.tinyrpg.display.status.player.PoisonPlayer                           126                  com.tinyrpg.display.status.player.SleepPlayer                            857                  com.tinyrpg.display.itemfx.BallBurstUltra                                708                  com.tinyrpg.display.itemfx.BallBurstRegular                              785                  com.tinyrpg.display.itemfx.BallCloseUltra                                552                  com.tinyrpg.display.itemfx.BallWobbleUltra                               134                  com.tinyrpg.display.itemfx.BallOpenRegular                              1447                  com.tinyrpg.display.itemfx.BallRejectRegular                             444                  com.tinyrpg.display.itemfx.BallWobbleRegular                             135                  com.tinyrpg.display.itemfx.BallCloseRegular                              554                  com.tinyrpg.display.itemfx.BallOpenUltra                                1365                  com.tinyrpg.display.itemfx.BallRejectUltra                               443                  com.tinyrpg.display.misc.MonPartyHPBar                                    30                  com.tinyrpg.display.misc.MonPartySprites                                1581                  com.tinyrpg.display.attacks.player.BubblePlayer                         4516                  com.tinyrpg.display.attacks.enemy.PoundEnemy                             252                  com.tinyrpg.display.attacks.enemy.MeteorMashEnemy                      10130                  com.tinyrpg.display.attacks.enemy.RapidSpinEnemy                        1149                  com.tinyrpg.display.attacks.player.GrowlPlayer                          1135                  com.tinyrpg.display.attacks.enemy.SubmissionEnemy                        181                  com.tinyrpg.display.attacks.player.HowlPlayer                           1139                  com.tinyrpg.display.attacks.enemy.DetectEnemy                            243                  com.tinyrpg.display.attacks.player.SandAttackPlayer                     2036                  com.tinyrpg.display.attacks.enemy.WaterGunEnemy                         2675                  com.tinyrpg.display.attacks.enemy.GrowlEnemy                            1102                  com.tinyrpg.display.attacks.player.MetronomePlayer                      1844                  com.tinyrpg.display.attacks.player.SlashPlayer                           719                  com.tinyrpg.display.attacks.enemy.DoubleKickEnemy                        254                  com.tinyrpg.display.attacks.player.MeanLookPlayer                       1786                  com.tinyrpg.display.attacks.player.RainDancePlayer                      9077                  com.tinyrpg.display.attacks.enemy.TailWhipEnemy                           12                  com.tinyrpg.display.attacks.player.ThunderPlayer                        2899                  com.tinyrpg.display.attacks.player.FocusEnergyPlayer                     609                  com.tinyrpg.display.attacks.enemy.ConfuseRayEnemy                       9142                  com.tinyrpg.display.attacks.player.DragonBreathPlayer                   1715                  com.tinyrpg.display.attacks.player.LickPlayer                            147                  com.tinyrpg.display.attacks.player.HyperBeamPlayer                      2690                  com.tinyrpg.display.attacks.enemy.LowKickEnemy                           268                  com.tinyrpg.display.attacks.player.MeteorMashPlayer                    10662                  com.tinyrpg.display.attacks.enemy.FlamethrowerEnemy                    15413                  com.tinyrpg.display.attacks.player.DoubleKickPlayer                      229                  com.tinyrpg.display.attacks.enemy.RestEnemy                              837                  com.tinyrpg.display.attacks.player.BitePlayer                           1104                  com.tinyrpg.display.attacks.enemy.MudSportEnemy                         3384                  com.tinyrpg.display.attacks.player.DreamEaterPlayer                    10940                  com.tinyrpg.display.attacks.player.DoubleEdgePlayer                      149                  com.tinyrpg.display.attacks.enemy.MetalClawEnemy                         575                  com.tinyrpg.display.attacks.enemy.RainDanceEnemy                        8891                  com.tinyrpg.display.attacks.enemy.SlashEnemy                             706                  com.tinyrpg.display.attacks.enemy.SpiteEnemy                             448                  com.tinyrpg.display.attacks.player.ConfusionPlayer                        13                  com.tinyrpg.display.attacks.enemy.MuddyWaterEnemy                       8022                  com.tinyrpg.display.attacks.enemy.FirePunchEnemy                        3624                  com.tinyrpg.display.attacks.player.SupersonicPlayer                     2117                  com.tinyrpg.display.attacks.enemy.ThrashEnemy                            414                  com.tinyrpg.display.attacks.player.SpitePlayer                          1277                  com.tinyrpg.display.attacks.enemy.HealBellEnemy                        18181                  com.tinyrpg.display.attacks.enemy.SandAttackEnemy                       1824                  com.tinyrpg.display.attacks.player.HealBellPlayer                      20077                  com.tinyrpg.display.attacks.enemy.RecoverEnemy                          4822                  com.tinyrpg.display.attacks.enemy.FeintAttackEnemy                       194                  com.tinyrpg.display.attacks.player.SafeguardPlayer                      6821                  com.tinyrpg.display.attacks.enemy.FocusEnergyEnemy                       698                  com.tinyrpg.display.attacks.enemy.HypnosisEnemy                         2493                  com.tinyrpg.display.attacks.enemy.BlazeKickEnemy                       15702                  com.tinyrpg.display.attacks.enemy.MetronomeEnemy                        2175                  com.tinyrpg.display.attacks.player.TailWhipPlayer                         12                  com.tinyrpg.display.attacks.player.AgilityPlayer                        3003                  com.tinyrpg.display.attacks.player.BlazeKickPlayer                     14537                  com.tinyrpg.display.attacks.enemy.TakeDownEnemy                          110                  com.tinyrpg.display.attacks.player.ThrashPlayer                          345                  com.tinyrpg.display.attacks.player.PoundPlayer                           229                  com.tinyrpg.display.attacks.player.DetectPlayer                          241                  com.tinyrpg.display.attacks.player.PsychicPlayer                        2718                  com.tinyrpg.display.attacks.player.LeerPlayer                            961                  com.tinyrpg.display.attacks.player.LowKickPlayer                         268                  com.tinyrpg.display.attacks.player.ScreechPlayer                         629                  com.tinyrpg.display.attacks.player.SmokescreenPlayer                    3870                  com.tinyrpg.display.attacks.enemy.SupersonicEnemy                       2324                  com.tinyrpg.display.attacks.player.ConfuseRayPlayer                     6843                  com.tinyrpg.display.attacks.player.KarateChopPlayer                      388                  com.tinyrpg.display.attacks.player.WaterGunPlayer                       2267                  com.tinyrpg.display.attacks.player.EmberPlayer                           844                  com.tinyrpg.display.attacks.enemy.OvergrownEnemy                        1712                  com.tinyrpg.display.attacks.enemy.WingAttackEnemy                        306                  com.tinyrpg.display.attacks.player.FalseSwipePlayer                     1296                  com.tinyrpg.display.attacks.enemy.KarateChopEnemy                        388                  com.tinyrpg.display.attacks.enemy.WishEnemy                             1754                  com.tinyrpg.display.attacks.enemy.SlamEnemy                              125                  com.tinyrpg.display.attacks.enemy.TwisterEnemy                         13894                  com.tinyrpg.display.attacks.enemy.DreamEaterEnemy                      11077                  com.tinyrpg.display.attacks.player.ProtectPlayer                        6313                  com.tinyrpg.display.attacks.player.FeintAttackPlayer                     134                  com.tinyrpg.display.attacks.player.ScaryFacePlayer                      2258                  com.tinyrpg.display.attacks.enemy.CosmicPowerEnemy                     10928                  com.tinyrpg.display.attacks.player.FlamethrowerPlayer                  14525                  com.tinyrpg.display.attacks.enemy.PsywaveEnemy                          3249                  com.tinyrpg.display.attacks.player.SelfDestructPlayer                   1853                  com.tinyrpg.display.attacks.enemy.ThundershockEnemy                     1612                  com.tinyrpg.display.attacks.enemy.FalseSwipeEnemy                       1145                  com.tinyrpg.display.attacks.enemy.LeafBladeEnemy                        6980                  com.tinyrpg.display.attacks.enemy.LickEnemy                              154                  com.tinyrpg.display.attacks.enemy.AncientPowerEnemy                     3915                  com.tinyrpg.display.attacks.enemy.MudSlapEnemy                          2051                  com.tinyrpg.display.attacks.enemy.ConfusionEnemy                          13                  com.tinyrpg.display.attacks.player.TacklePlayer                          140                  com.tinyrpg.display.attacks.player.BulkUpPlayer                         3653                  com.tinyrpg.display.attacks.enemy.SnoreEnemy                            1300                  com.tinyrpg.display.attacks.enemy.SmogEnemy                             7773                  com.tinyrpg.display.attacks.player.MudSportPlayer                       4147                  com.tinyrpg.display.attacks.enemy.MeanLookEnemy                         2210                  com.tinyrpg.display.attacks.enemy.ProtectEnemy                          6616                  com.tinyrpg.display.attacks.player.ScratchPlayer                         732                  com.tinyrpg.display.attacks.player.MetalClawPlayer                      1571                  com.tinyrpg.display.attacks.player.SwiftPlayer                          1990                  com.tinyrpg.display.attacks.player.MegaPunchPlayer                       373                  com.tinyrpg.display.attacks.enemy.SwiftEnemy                            2205                  com.tinyrpg.display.attacks.player.TakeDownPlayer                         98                  com.tinyrpg.display.attacks.enemy.HowlEnemy                             1107                  com.tinyrpg.display.attacks.player.StrugglePlayer                        125                  com.tinyrpg.display.attacks.player.WingAttackPlayer                      307                  com.tinyrpg.display.attacks.enemy.ScratchEnemy                           692                  com.tinyrpg.display.attacks.player.SnorePlayer                          1060                  com.tinyrpg.display.attacks.enemy.ScreechEnemy                           642                  com.tinyrpg.display.attacks.player.AbsorbPlayer                         6072                  com.tinyrpg.display.attacks.player.QuickAttackPlayer                     267                  com.tinyrpg.display.attacks.player.CosmicPowerPlayer                   10661                  com.tinyrpg.display.attacks.player.WishPlayer                           1627                  com.tinyrpg.display.attacks.enemy.BiteEnemy                             1165                  com.tinyrpg.display.attacks.enemy.FurySwipesEnemy                        705                  com.tinyrpg.display.attacks.player.PsywavePlayer                        3198                  com.tinyrpg.display.attacks.player.FirePunchPlayer                      2667                  com.tinyrpg.display.attacks.enemy.LaceWhipEnemy                          112                  com.tinyrpg.display.attacks.enemy.ClampEnemy                            3021                  com.tinyrpg.display.attacks.enemy.HydroPumpEnemy                        4136                  com.tinyrpg.display.attacks.player.TwisterPlayer                       12506                  com.tinyrpg.display.attacks.player.LeafBladePlayer                      7459                  com.tinyrpg.display.attacks.enemy.LusterPurgeEnemy                      4709                  com.tinyrpg.display.attacks.enemy.PsychicEnemy                          3327                  com.tinyrpg.display.attacks.player.RecoverPlayer                        4787                  com.tinyrpg.display.attacks.enemy.BubbleEnemy                           4819                  com.tinyrpg.display.attacks.enemy.HyperBeamEnemy                        2599                  com.tinyrpg.display.attacks.enemy.SmokescreenEnemy                      3654                  com.tinyrpg.display.attacks.enemy.AgilityEnemy                          3266                  com.tinyrpg.display.attacks.player.WaterPulsePlayer                     1977                  com.tinyrpg.display.attacks.enemy.DynamicPunchEnemy                     2174                  com.tinyrpg.display.attacks.enemy.DoubleEdgeEnemy                        201                  com.tinyrpg.display.attacks.player.RapidSpinPlayer                      1051                  com.tinyrpg.display.attacks.player.MuddyWaterPlayer                     8022                  com.tinyrpg.display.attacks.player.LusterPurgePlayer                    4599                  com.tinyrpg.display.attacks.player.HypnosisPlayer                       2200                  com.tinyrpg.display.attacks.player.HydroPumpPlayer                      3385                  com.tinyrpg.display.attacks.enemy.DragonBreathEnemy                     1623                  com.tinyrpg.display.attacks.enemy.AbsorbEnemy                           5962                  com.tinyrpg.display.attacks.enemy.StruggleEnemy                          107                  com.tinyrpg.display.attacks.player.ThundershockPlayer                   1600                  com.tinyrpg.display.attacks.enemy.DrippyYolkEnemy                       2647                  com.tinyrpg.display.attacks.player.SubmissionPlayer                      138                  com.tinyrpg.display.attacks.enemy.SafeguardEnemy                        6862                  com.tinyrpg.display.attacks.enemy.MegaPunchEnemy                         373                  com.tinyrpg.display.attacks.player.ClampPlayer                          2868                  com.tinyrpg.display.attacks.player.AncientPowerPlayer                   3794                  com.tinyrpg.display.attacks.enemy.EmberEnemy                            1159                  com.tinyrpg.display.attacks.player.DrippyYolkPlayer                     2267                  com.tinyrpg.display.attacks.enemy.BulkUpEnemy                           3390                  com.tinyrpg.display.attacks.player.LaceWhipPlayer                        111                  com.tinyrpg.display.attacks.player.DynamicPunchPlayer                   2139                  com.tinyrpg.display.attacks.player.ExplosionPlayer                      2012                  com.tinyrpg.display.attacks.player.MudSlapPlayer                        1878                  com.tinyrpg.display.attacks.enemy.QuickAttackEnemy                       276                  com.tinyrpg.display.attacks.player.SlamPlayer                            125                  com.tinyrpg.display.attacks.enemy.ExplosionEnemy                        3553                  com.tinyrpg.display.attacks.enemy.LeerEnemy                             1294                  com.tinyrpg.display.attacks.player.FurySwipesPlayer                      593                  com.tinyrpg.display.attacks.player.SmogPlayer                           4121                  com.tinyrpg.display.attacks.enemy.WaterPulseEnemy                       2539                  com.tinyrpg.display.attacks.enemy.ThunderEnemy                          2832                  com.tinyrpg.display.attacks.player.NightShadePlayer                       13                  com.tinyrpg.display.attacks.player.RestPlayer                            679                  com.tinyrpg.display.attacks.enemy.SelfDestructEnemy                     3585                  com.tinyrpg.display.attacks.enemy.ScaryFaceEnemy                        3722                  com.tinyrpg.display.attacks.player.OvergrownPlayer                      1279                  com.tinyrpg.display.attacks.enemy.NightShadeEnemy                         13                  com.tinyrpg.display.attacks.enemy.TackleEnemy                            130                  com.tinyrpg.display.TinyBattleTurnArrow dependency 1                      25                  com.tinyrpg.display.TinyModalScrollArrow dependency 1                     16                  com.tinyrpg.display.TinyModalSelectArrow dependency 1                     19                  com.tinyrpg.display.TinyModalSelectArrow dependency 2                     19                  com.tinyrpg.display.TinyModalSelectArrow dependency 3                     20                  com.tinyrpg.display.TinyModalSelectArrow dependency 4                     16                  MapAssets_fla.City_Boat_objects_18 dependency 3                           21                  MapAssets_fla.Island_LakeEntrance_objects_110 dependency 6                21                  MapAssets_fla.Town_House1_objects_68 dependency 9                         50                  MapAssets_fla.Town_HouseProf_objects_80 dependency 28                     41                  MapAssets_fla.Route29_objects_60 dependency 12                            55                  MapAssets_fla.Town_HousePlayer_Floor1_objects_76 dependency 10            52                  MapAssets_fla.Intro_objects_154 dependency 3                              26                  com.tinyrpg.display.TinyModalDivider dependency 1                         16                  com.tinyrpg.display.maps.MapCityBoat dependency 2                         97                  com.tinyrpg.display.maps.MapCityBoat dependency 4                        915                  com.tinyrpg.display.maps.MapIslandLakeEntrance dependency 2              221                  com.tinyrpg.display.maps.MapIslandLakeEntrance dependency 4             2208                  com.tinyrpg.display.maps.MapIslandBoatDock dependency 2                  144                  com.tinyrpg.display.maps.MapIslandBoatDock dependency 4                  643                  com.tinyrpg.display.maps.MapIslandCave dependency 2                      458                  com.tinyrpg.display.maps.MapIslandCave dependency 4                      118                  com.tinyrpg.display.maps.MapIslandCave dependency 6                      196                  com.tinyrpg.display.maps.MapIslandCave dependency 8                      163                  com.tinyrpg.display.maps.MapIslandCave dependency 10                    2915                  com.tinyrpg.display.maps.MapOfficeFloor2 dependency 2                    121                  com.tinyrpg.display.maps.MapOfficeFloor2 dependency 4                   1133                  com.tinyrpg.display.maps.MapTownHouse1 dependency 2                       66                  com.tinyrpg.display.maps.MapTownHouse1 dependency 4                      512                  com.tinyrpg.display.maps.MapTownHouseProfessor dependency 2               68                  com.tinyrpg.display.maps.MapTownHouseProfessor dependency 4              656                  com.tinyrpg.display.maps.MapIslandBoatExitMart dependency 2               75                  com.tinyrpg.display.maps.MapIslandBoatExitMart dependency 4              767                  com.tinyrpg.display.maps.MapOfficeFloor3 dependency 2                     64                  com.tinyrpg.display.maps.MapOfficeFloor3 dependency 4                    548                  com.tinyrpg.display.maps.MapCityHouse3 dependency 2                       69                  com.tinyrpg.display.maps.MapCityHouse3 dependency 4                      735                  com.tinyrpg.display.maps.MapRoute29 dependency 2                         627                  com.tinyrpg.display.maps.MapRoute29 dependency 4                        3058                  com.tinyrpg.display.maps.MapRoute29 dependency 6                         232                  com.tinyrpg.display.maps.MapRoute29 dependency 8                         213                  com.tinyrpg.display.maps.MapRoute29 dependency 10                        222                  com.tinyrpg.display.maps.MapRoute29 dependency 12                        472                  com.tinyrpg.display.maps.MapTown dependency 2                            586                  com.tinyrpg.display.maps.MapTown dependency 4                           3263                  com.tinyrpg.display.maps.MapIslandCaveSide dependency 2                  154                  com.tinyrpg.display.maps.MapIslandCaveSide dependency 4                   82                  com.tinyrpg.display.maps.MapIslandCaveSide dependency 6                   75                  com.tinyrpg.display.maps.MapIslandCaveSide dependency 8                   83                  com.tinyrpg.display.maps.MapIslandCaveSide dependency 10                1599                  com.tinyrpg.display.maps.MapIslandForestEntrance dependency 2            223                  com.tinyrpg.display.maps.MapIslandForestEntrance dependency 4             78                  com.tinyrpg.display.maps.MapIslandForestEntrance dependency 6            125                  com.tinyrpg.display.maps.MapIslandForestEntrance dependency 8           1443                  com.tinyrpg.display.maps.MapIslandBoatExit dependency 2                  199                  com.tinyrpg.display.maps.MapIslandBoatExit dependency 4                   95                  com.tinyrpg.display.maps.MapIslandBoatExit dependency 6                 1305                  com.tinyrpg.display.maps.MapCity dependency 2                            493                  com.tinyrpg.display.maps.MapCity dependency 4                           3877                  com.tinyrpg.display.maps.MapTownHousePlayerFloor1 dependency 2            63                  com.tinyrpg.display.maps.MapTownHousePlayerFloor1 dependency 4           482                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 2              597                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 4              239                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 6              261                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 8              270                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 10             440                  com.tinyrpg.display.maps.MapIslandCaveEntrance dependency 12            4340                  com.tinyrpg.display.maps.MapIslandLakeCave dependency 2                   62                  com.tinyrpg.display.maps.MapIslandLakeCave dependency 4                  449                  com.tinyrpg.display.maps.MapTownHousePlayerFloor2 dependency 2            68                  com.tinyrpg.display.maps.MapTownHousePlayerFloor2 dependency 4           479                  com.tinyrpg.display.maps.MapCityDikecenter dependency 2                   61                  com.tinyrpg.display.maps.MapCityDikecenter dependency 4                  629                  com.tinyrpg.display.maps.MapIslandForest dependency 2                    854                  com.tinyrpg.display.maps.MapIslandForest dependency 4                    230                  com.tinyrpg.display.maps.MapIslandForest dependency 6                    248                  com.tinyrpg.display.maps.MapIslandForest dependency 8                    245                  com.tinyrpg.display.maps.MapIslandForest dependency 10                   576                  com.tinyrpg.display.maps.MapIslandForest dependency 12                  6613                  com.tinyrpg.display.maps.MapOfficeReception dependency 2                  78                  com.tinyrpg.display.maps.MapOfficeReception dependency 4                 610                  com.tinyrpg.display.maps.MapIslandLake dependency 2                      704                  com.tinyrpg.display.maps.MapIslandLake dependency 4                      513                  com.tinyrpg.display.maps.MapIslandLake dependency 6                     6111                  com.tinyrpg.display.maps.MapEventTestZone dependency 2                   574                  com.tinyrpg.display.maps.MapEventTestZone dependency 4                  1088                  
+
+Sound name                                      Bytes         Format
+--------------------------------------------    ----------    ------
+com.tinyrpg.media.sfx.itemfx.SFXUseItem               2026    
+com.tinyrpg.media.sfx.battlefx.SFXKnockout            2655    
+com.tinyrpg.media.sfx.SoundErrorBuzz                  2712    
+com.tinyrpg.media.sfx.statusfx.SFXSelfHit              625    
+com.tinyrpg.media.sfx.statusfx.SFXSleep               2115    
+com.tinyrpg.media.sfx.statusfx.SFXBurn                2116    
+com.tinyrpg.media.sfx.statusfx.SFXPoison              2606    
+com.tinyrpg.media.sfx.statusfx.SFXConfusion           1409    
+com.tinyrpg.media.sfx.statusfx.SFXParalysis           6844    
+com.tinyrpg.media.sfx.SoundEnemyAttack               11871    
+com.tinyrpg.media.sfx.SoundRecruit                    6250    
+com.tinyrpg.media.sfx.SoundBuy                        1227    
+com.tinyrpg.media.sfx.SoundHitA                       1296    
+com.tinyrpg.media.sfx.SoundSelect                      264    
+com.tinyrpg.media.sfx.SoundImpossibleHit              2715    
+com.tinyrpg.media.sfx.SoundCancel                      212    
+com.tinyrpg.media.sfx.SoundMiss                       1425    
+com.tinyrpg.media.sfx.SoundRachelAttack               1425    
+com.tinyrpg.media.sfx.SoundText                        523    
+com.tinyrpg.media.sfx.SoundBattleStart                3618    
+com.tinyrpg.media.sfx.SoundRonAttack                 20150    
+com.tinyrpg.media.sfx.SoundFishAttack                 3360    
+com.tinyrpg.media.sfx.SoundCursor                      264    
+com.tinyrpg.media.sfx.SoundEnemyDie                   3876    
+com.tinyrpg.media.sfx.SoundHealA                      5294    
+com.tinyrpg.media.sfx.itemfx.SFXBallOpen             11402    
+com.tinyrpg.media.sfx.itemfx.SFXBallReject            6045    
+com.tinyrpg.media.sfx.itemfx.SFXBallClose            27473    
+com.tinyrpg.media.sfx.itemfx.SFXBallBurst             1241    
+com.tinyrpg.media.sfx.itemfx.SFXBallWobble            7281    
+com.tinyrpg.media.sfx.movefx.SFXLick                  3360    
+com.tinyrpg.media.sfx.movefx.SFXSwift                 6068    
+com.tinyrpg.media.sfx.movefx.SFXHyperBeam            18247    
+com.tinyrpg.media.sfx.movefx.SFXDetect                4263    
+com.tinyrpg.media.sfx.movefx.SFXScreech               7358    
+com.tinyrpg.media.sfx.movefx.SFXFocusEnergy           9163    
+com.tinyrpg.media.sfx.movefx.SFXHydroPump            18448    
+com.tinyrpg.media.sfx.movefx.SFXDragonBreath         12387    
+com.tinyrpg.media.sfx.movefx.SFXClamp                 6326    
+com.tinyrpg.media.sfx.movefx.SFXSlam                  7744    
+com.tinyrpg.media.sfx.movefx.SFXAncientPower          7744    
+com.tinyrpg.media.sfx.movefx.SFXFirePunch            13547    
+com.tinyrpg.media.sfx.movefx.SFXRainDance            14579    
+com.tinyrpg.media.sfx.movefx.SFXThundershock          9292    
+com.tinyrpg.media.sfx.movefx.SFXAbsorb               11742    
+com.tinyrpg.media.sfx.movefx.SFXRapidSpin             8131    
+com.tinyrpg.media.sfx.movefx.SFXPsychic              14708    
+com.tinyrpg.media.sfx.movefx.SFXEmber                14579    
+com.tinyrpg.media.sfx.movefx.SFXNightShade           13805    
+com.tinyrpg.media.sfx.movefx.SFXBubble               15353    
+com.tinyrpg.media.sfx.movefx.SFXDoubleKick            1812    
+com.tinyrpg.media.sfx.movefx.SFXBite                  4005    
+com.tinyrpg.media.sfx.movefx.SFXMeanLook             13419    
+com.tinyrpg.media.sfx.movefx.SFXBlazeKick            52643    
+com.tinyrpg.media.sfx.movefx.SFXWaterGun             10710    
+com.tinyrpg.media.sfx.movefx.SFXHealBell             23735    
+com.tinyrpg.media.sfx.movefx.SFXQuickAttack           4649    
+com.tinyrpg.media.sfx.movefx.SFXRecover               7100    
+com.tinyrpg.media.sfx.movefx.SFXKarateChop            5036    
+com.tinyrpg.media.sfx.movefx.SFXSelfDestruct          6971    
+com.tinyrpg.media.sfx.movefx.SFXConfusion             8776    
+com.tinyrpg.media.sfx.movefx.SFXDynamicPunch          8518    
+com.tinyrpg.media.sfx.movefx.SFXRest                 12000    
+com.tinyrpg.media.sfx.movefx.SFXGrowl                 5681    
+com.tinyrpg.media.sfx.movefx.SFXWaterSport           27163    
+com.tinyrpg.media.sfx.movefx.SFXSpite                 9679    
+com.tinyrpg.media.sfx.movefx.SFXProtect              14063    
+com.tinyrpg.media.sfx.movefx.SFXSupersonic           20053    
+com.tinyrpg.media.sfx.movefx.SFXRazorLeaf            12258    
+com.tinyrpg.media.sfx.movefx.SFXSafeguard            14063    
+com.tinyrpg.media.sfx.movefx.SFXSmog                 16642    
+com.tinyrpg.media.sfx.movefx.SFXSandAttack            4907    
+com.tinyrpg.media.sfx.movefx.SFXTackle                2586    
+com.tinyrpg.media.sfx.movefx.SFXMudSlap               4778    
+com.tinyrpg.media.sfx.movefx.SFXLowKick               2973    
+com.tinyrpg.media.sfx.movefx.SFXThrash                2973    
+com.tinyrpg.media.sfx.movefx.SFXScratch               2844    
+com.tinyrpg.media.sfx.movefx.SFXScaryFace             6713    
+com.tinyrpg.media.sfx.movefx.SFXFlamethrower         22832    
+com.tinyrpg.media.sfx.movefx.SFXMegaPunch             9464    
+com.tinyrpg.media.sfx.movefx.SFXPound                 1630    
+com.tinyrpg.media.sfx.movefx.SFXFeintAtack           14579    
+com.tinyrpg.media.sfx.movefx.SFXSurf                 27862    
+com.tinyrpg.media.sfx.movefx.SFXDoubleEdge            3489    
+com.tinyrpg.media.sfx.movefx.SFXHypnosis             10066    
+com.tinyrpg.media.sfx.movefx.SFXPsywave              15482    
+com.tinyrpg.media.sfx.movefx.SFXThunder               9808    
+com.tinyrpg.media.sfx.movefx.SFXTakeDown              3231    
+com.tinyrpg.media.sfx.movefx.SFXOvergrown             9342    
+com.tinyrpg.media.sfx.movefx.SFXAgility               9937    
+com.tinyrpg.media.sfx.movefx.SFXLaceWhip              4603    
+com.tinyrpg.media.sfx.movefx.SFXLeer                  2844    
+com.tinyrpg.media.sfx.movefx.SFXTwister              26056    
+com.tinyrpg.media.sfx.movefx.SFXWingAttack            8776    
+com.tinyrpg.media.sfx.movefx.SFXMetalClaw            14321    
+com.tinyrpg.media.sfx.movefx.SFXMudSport             27163    
+com.tinyrpg.media.sfx.movefx.SFXLusterPurge          11265    
+com.tinyrpg.media.sfx.movefx.SFXFalseSwipe            3618    
+com.tinyrpg.media.sfx.movefx.SFXSlash                 3489    
+com.tinyrpg.media.sfx.movefx.SFXTailWhip              3618    
+com.tinyrpg.media.sfx.movefx.SFXConfuseRay           14966    
+com.tinyrpg.media.sfx.movefx.SFXExplosion             6842    
+com.tinyrpg.media.sfx.movefx.SFXFurySwipes            3231    
+com.tinyrpg.media.sfx.movefx.SFXSmokescreen          14708    
+com.tinyrpg.media.sfx.movefx.SFXStruggle              1296    
+com.tinyrpg.media.sfx.movefx.SFXSubmission            9499    
+com.tinyrpg.media.sfx.movefx.SFXMetronome             8518    
+com.tinyrpg.media.sfx.movefx.SFXDreamEater           14837    
+com.tinyrpg.media.sfx.movefx.SFXSnore                 5552    
+
+Binary Data                                                          Bytes         Location
+-----------------------------------------------------------------    ----------    --------
+com.tinyrpg.misc.TinyCSS_styleCSS                                           511    
+com.tinyrpg.lookup.TinyEventFlagLookup_Flags_XML                            405    
+com.tinyrpg.lookup.TinyMonLookup_XML_Monsters                             11999    
+com.tinyrpg.data.TinyItemDataList_Item_Data                                1570    
+com.tinyrpg.data.TinyMoveDataList_Move_Data                               44440    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Burn_Player                      2253    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Poison_Player                    2601    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Confuse_Enemy                    6142    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Poison_Enemy                     2598    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Sleep_Enemy                      8073    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Paralyze_Player                  7952    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Burn_Enemy                       2639    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Confuse_Player                   6087    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Paralyze_Enemy                   7983    
+com.tinyrpg.lookup.TinyStatusFXLookup_XML_Sleep_Player                     8249    
+com.tinyrpg.lookup.TinyMapLookup_IslandBoatExitMart_Events_XML               34    
+com.tinyrpg.lookup.TinyMapLookup_IslandBoatDock_Events_XML                   34    
+com.tinyrpg.lookup.TinyMapLookup_TownHouse2_Events_XML                      744    
+com.tinyrpg.lookup.TinyMapLookup_CityDikemart_Events_XML                    288    
+com.tinyrpg.lookup.TinyMapLookup_IslandBoatExit_Events_XML                   34    
+com.tinyrpg.lookup.TinyMapLookup_IslandForest_Events_XML                     34    
+com.tinyrpg.lookup.TinyMapLookup_Town_Events_XML                           1845    
+com.tinyrpg.lookup.TinyMapLookup_IslandLakeEntrance_Events_XML               34    
+com.tinyrpg.lookup.TinyMapLookup_CityHouse1_Events_XML                       34    
+com.tinyrpg.lookup.TinyMapLookup_IslandEntrance_Events_XML                   34    
+com.tinyrpg.lookup.TinyMapLookup_Route29_Events_XML                       10008    
+com.tinyrpg.lookup.TinyMapLookup_CityBoat_Events_XML                         34    
+com.tinyrpg.lookup.TinyMapLookup_TownHouseProf_Events_XML                 16791    
+com.tinyrpg.lookup.TinyMapLookup_TownHousePlayerFloor1_Events_XML          3591    
+com.tinyrpg.lookup.TinyMapLookup_Intro_Events_XML                          3475    
+com.tinyrpg.lookup.TinyMapLookup_IslandCave_Events_XML                       34    
+com.tinyrpg.lookup.TinyMapLookup_IslandCaveEntrance_Events_XML               34    
+com.tinyrpg.lookup.TinyMapLookup_OfficeReception_Events_XML                  34    
+com.tinyrpg.lookup.TinyMapLookup_OfficeFloor2_Events_XML                     34    
+com.tinyrpg.lookup.TinyMapLookup_CityHouse2_Events_XML                       34    
+com.tinyrpg.lookup.TinyMapLookup_CityDikecenter_Events_XML                  755    
+com.tinyrpg.lookup.TinyMapLookup_CityHouse3_Events_XML                       34    
+com.tinyrpg.lookup.TinyMapLookup_TownHousePlayerFloor2_Events_XML           715    
+com.tinyrpg.lookup.TinyMapLookup_IslandLakeCave_Events_XML                   34    
+com.tinyrpg.lookup.TinyMapLookup_IslandCaveCenter_Events_XML                 34    
+com.tinyrpg.lookup.TinyMapLookup_EventTestZone_Events_XML                  5809    
+com.tinyrpg.lookup.TinyMapLookup_IslandLake_Events_XML                       34    
+com.tinyrpg.lookup.TinyMapLookup_IslandForestEntrance_Events_XML             34    
+com.tinyrpg.lookup.TinyMapLookup_OfficeFloor3_Events_XML                     34    
+com.tinyrpg.lookup.TinyMapLookup_TownHouse1_Events_XML                      629    
+com.tinyrpg.lookup.TinyMapLookup_City_Events_XML                             34    
+com.tinyrpg.lookup.TinyMapLookup_Global_Events_XML                          180    
+com.tinyrpg.lookup.TinyMapLookup_IslandCaveSide_Events_XML                   34    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Pound_Enemy                        1340    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Ancient_Power_Player               5559    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Confusion_Enemy                    5746    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Flamethrower_Enemy                16571    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Tail_Whip_Player                   2436    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Psychic_Player                     9887    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rain_Dance_Enemy                   9180    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Explosion_Player                   4682    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Spite_Player                       6558    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Tackle_Enemy                       1826    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Psychic_Enemy                     10205    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Muddy_Water_Enemy                 18199    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Ember_Enemy                        9722    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Growl_Enemy                        2992    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bite_Enemy                         2623    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Submission_Player                  6372    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Ember_Player                       9540    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Spite_Enemy                        6115    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rapid_Spin_Enemy                   4779    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Smog_Player                       10921    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Smog_Enemy                        17955    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Protect_Enemy                      9687    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Karate_Chop_Enemy                  3041    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Leer_Enemy                         2291    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Psywave_Player                    10427    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Howl_Player                        2933    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Scary_Face_Player                  4704    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Scratch_Enemy                      2370    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Slash_Player                       2363    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Focus_Energy_Enemy                 6600    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Confuse_Ray_Player                10567    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Supersonic_Player                  8630    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Smokescreen_Enemy                 10655    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Tail_Whip_Enemy                    2436    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Quick_Attack_Player                3224    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Agility_Enemy                      7100    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Clamp_Player                       4324    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Take_Down_Enemy                    2206    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Absorb_Enemy                       8808    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Self_Destruct_Enemy                5168    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Fire_Punch_Player                  8433    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Protect_Player                     9484    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thunder_Enemy                      6740    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Self_Destruct_Player               4982    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Psywave_Enemy                     10634    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thrash_Enemy                       1741    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Water_Gun_Player                   7482    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Low_Kick_Enemy                     1764    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Lace_Whip_Enemy                    2272    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bulk_Up_Enemy                      8657    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Blaze_Kick_Enemy                  21366    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dynamic_Punch_Enemy                6563    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Clamp_Enemy                        4937    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Tackle_Player                      1798    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dream_Eater_Player                10582    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dream_Eater_Enemy                 11682    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Feint_Attack_Enemy                10453    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Leaf_Blade_Enemy                  10971    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bulk_Up_Player                     8503    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bubble_Enemy                      10722    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Safeguard_Enemy                    9904    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Double_Kick_Player                 1374    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dynamic_Punch_Player               6114    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Safeguard_Player                   9700    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Twister_Player                    17729    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Struggle_Enemy                      963    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bite_Player                        2748    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Ancient_Power_Enemy                6658    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Smokescreen_Player                10366    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Metronome_Enemy                    6144    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hydro_Pump_Player                 12764    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Heal_Bell_Enemy                   17757    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Overgrown_Player                   4326    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Wing_Attack_Enemy                  6156    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Sand_Attack_Player                 3466    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Double_Edge_Enemy                  2478    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Feint_Attack_Player               10005    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Metronome_Player                   5945    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Howl_Enemy                         2992    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Lace_Whip_Player                   2279    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Blaze_Kick_Player                 18629    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mud_Slap_Player                    3334    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Slam_Player                        4989    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Night_Shade_Player                 9241    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Double_Edge_Player                 2436    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Explosion_Enemy                    4903    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hypnosis_Player                    6798    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Focus_Energy_Player                6445    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Fire_Punch_Enemy                   8632    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Twister_Enemy                     19187    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Confusion_Player                   5746    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mega_Punch_Player                  4217    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Screech_Enemy                      5021    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thundershock_Enemy                 7556    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Bubble_Player                     10393    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thunder_Player                     6633    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Metal_Claw_Player                  9777    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Wish_Enemy                         4815    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hypnosis_Enemy                     6986    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Lick_Enemy                         2364    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Wing_Attack_Player                 6081    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Scratch_Player                     2007    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Agility_Player                     6773    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Swift_Player                       4116    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hyper_Beam_Player                  8274    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Metal_Claw_Enemy                   8630    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rapid_Spin_Player                  5521    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Screech_Player                     4961    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Lick_Player                        2275    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dragon_Breath_Player               8743    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Recover_Player                     4862    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Pound_Player                       1330    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hyper_Beam_Enemy                   4510    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Snore_Enemy                        5017    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Slam_Enemy                         5053    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rain_Dance_Player                  8945    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Heal_Bell_Player                  16434    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_False_Swipe_Player                 2580    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Absorb_Player                      7953    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Muddy_Water_Player                18199    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Slash_Enemy                        2394    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Take_Down_Player                   2231    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Double_Kick_Enemy                  1385    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Leaf_Blade_Player                  8602    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Luster_Purge_Player                7254    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Confuse_Ray_Enemy                 13602    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thundershock_Player                6632    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Snore_Player                       3765    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Struggle_Player                     958    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Karate_Chop_Player                 3608    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Overgrown_Enemy                    4263    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_False_Swipe_Enemy                  2500    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rest_Enemy                        10504    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Growl_Player                       2933    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Water_Gun_Enemy                    8226    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Night_Shade_Enemy                  9241    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Thrash_Player                      2094    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Low_Kick_Player                    2075    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Flamethrower_Player               16071    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Sand_Attack_Enemy                  3654    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Rest_Player                        7906    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mean_Look_Player                   9363    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Scary_Face_Enemy                   5872    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Fury_Swipes_Enemy                  2435    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mega_Punch_Enemy                   4228    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Submission_Enemy                   6419    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Dragon_Breath_Enemy                8916    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mean_Look_Enemy                    9597    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Supersonic_Enemy                   8892    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Fury_Swipes_Player                 2339    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Detect_Enemy                       2819    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Leer_Player                        1921    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Quick_Attack_Enemy                 3229    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Recover_Enemy                      5276    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Swift_Enemy                        3654    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Luster_Purge_Enemy                 7770    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Hydro_Pump_Enemy                  13110    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Mud_Slap_Enemy                     3459    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Detect_Player                      2868    
+com.tinyrpg.lookup.TinyMoveFXLookup_XML_Wish_Player                        4591    
+com.tinyrpg.display.TinyBallFXAnimation_XML_Ball_Burst                     2089    
+com.tinyrpg.display.TinyBallFXAnimation_XML_Ball_Reject                    2997    
+com.tinyrpg.display.TinyBallFXAnimation_XML_Ball_Close                    12743    
+com.tinyrpg.display.TinyBallFXAnimation_XML_Ball_Wobble                    3551    
+com.tinyrpg.display.TinyBallFXAnimation_XML_Ball_Open                      5415    
+
+
+
+

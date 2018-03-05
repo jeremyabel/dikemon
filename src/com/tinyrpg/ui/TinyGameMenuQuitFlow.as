@@ -61,7 +61,7 @@ package com.tinyrpg.ui
 		}
 		
 	
-		override protected function onFlowComplete( event : Event ) : void
+		override protected function onFlowComplete( event : Event = null ) : void
 		{
 			// Cleanup
 			this.confirmQuitDialog.removeEventListener( TinyInputEvent.OPTION_ONE, this.onConfirmQuitYes );

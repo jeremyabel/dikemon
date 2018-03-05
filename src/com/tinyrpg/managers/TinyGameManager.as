@@ -171,7 +171,7 @@ package com.tinyrpg.managers
 			this.fadeTransition.removeEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onBattleOutCompleteToGameOver );
 			this.currentBattle = null;
 			
-			// A game over warps the player back to the nearest Dikécenter
+			// A game over warps the player back to the nearest Dik√©center
 			var gameOverWarp : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp()
 			gameOverWarp.targetMapName = TinyMapManager.getInstance().currentMap.gameoverMapName;
 			gameOverWarp.targetWarpName = 'warpGameover';

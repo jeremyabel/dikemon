@@ -102,6 +102,16 @@ package com.tinyrpg.core
 			return newItem;
 		}
 		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			jsonObject.name = this.name;
+			jsonObject.quantity = this.quantity;
+			
+			return jsonObject;
+		}
+		
 		public function printLog() 
 		{
 			TinyLogManager.log('item: ====================================',  this);

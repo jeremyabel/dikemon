@@ -58,6 +58,20 @@ package com.tinyrpg.data
 			TinyLogManager.log('sp. defense: ' + this.spDefense, this);
 			TinyLogManager.log('speed: ' + this.speed, this);
 		}
+		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			jsonObject.hp = this.hp;
+			jsonObject.attack = this.attack;
+			jsonObject.defense = this.defense;
+			jsonObject.spAttack = this.spAttack;
+			jsonObject.spDefense = this.spDefense;
+			jsonObject.speed = this.speed;
+			
+			return jsonObject;
+		}
 
 		public static function getStatStageMultiplier( stage : int ) : Number 
 		{

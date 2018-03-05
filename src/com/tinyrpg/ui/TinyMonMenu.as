@@ -45,8 +45,8 @@ package com.tinyrpg.ui
 			// Populate the list
 			this.resetListItems( newItemArray );
 			
-			// Make "choose a dikémon" instruction box
-			this.chooseInstructionBox = new TinyOneLineBox( 'Choose a DIKÉMON.', 144 );
+			// Make "choose a dik√©mon" instruction box
+			this.chooseInstructionBox = new TinyOneLineBox( 'Choose a DIK√âMON.', 144 );
 			this.chooseInstructionBox.y = 130 - ( this.chooseInstructionBox.height / 2 );
 			
 			// Add 'em up

@@ -32,7 +32,7 @@ package com.tinyrpg.ui
 		}
 		
 		
-		override protected function onFlowComplete( event : Event ) : void
+		override protected function onFlowComplete( event : Event = null ) : void
 		{
 			// Cleanup
 			this.monMenu.removeEventListener( TinyInputEvent.CANCEL, this.onFlowComplete );

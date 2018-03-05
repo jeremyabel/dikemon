@@ -141,6 +141,26 @@ package com.tinyrpg.core
 		}
 		
 		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			// Only save the data that is unique to this mon. The rest will be derived from the
+			// mon's default data stored in the Monsters.xml file.
+			jsonObject.name = this.m_name;
+			jsonObject.humanName = this.m_human;
+			jsonObject.currentEXP = this.currentEXP;
+			jsonObject.currentHP = this.currentHP;			
+			jsonObject.ivs = this.ivStatSet.toJSON();
+			jsonObject.evs = this.evStatSet.toJSON();
+			jsonObject.moveSet = this.moveSet.toJSON();
+			jsonObject.isEvolved = this.isEvolved; 
+			jsonObject.level = this.level;
+			
+			return jsonObject;	
+		}
+		
+		
 		public function get name() : String 
 		{ 
 			if ( m_human.length > 0 && !this.isEvolved ) return m_human;

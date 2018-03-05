@@ -23,6 +23,7 @@ package com.tinyrpg.display
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.geom.Point;
 
 	/**
 	 * @author jeremyabel
@@ -478,6 +479,14 @@ package com.tinyrpg.display
 			{
 				TinyMapManager.getInstance().updateCamera( this.x, this.y );
 			}
+		}
+		
+		public function getPositionOnGrid() : Point
+		{
+			var result : Point = new Point();
+			result.x = ( this.x - 8 ) / 16;
+			result.y = ( this.y - 8 ) / 16;
+			return result; 
 		}
 		
 		public function setPosition( x : int, y : int ) : void

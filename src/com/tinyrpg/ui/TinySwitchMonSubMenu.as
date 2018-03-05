@@ -40,11 +40,11 @@ package com.tinyrpg.ui
 			{
 				if ( this.mon.isInBattle )
 				{
-					this.showWarningDialogBox( 'This DIKƒMON is already out, dingus!   [end]' );
+					this.showWarningDialogBox( 'This DIKÃ‰MON is already out, dingus!   [end]' );
 				}
 				else if ( !this.mon.isHealthy )
 				{
-					this.showWarningDialogBox( 'This DIKƒMON is too dead to fight!   [end]');
+					this.showWarningDialogBox( 'This DIKÃ‰MON is too dead to fight!   [end]');
 				}
 				else 
 				{

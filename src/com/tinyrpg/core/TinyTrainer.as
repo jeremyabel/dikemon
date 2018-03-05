@@ -12,6 +12,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyLogManager;
+	import com.tinyrpg.utils.TinyJSONUtils;
 
 	/**
 	 * @author jeremyabel
@@ -79,7 +80,14 @@ package com.tinyrpg.core
 			// Give starting allowance
 			newTrainer.money = new TinyMoneyAmount( 3000 );
 			
+			trace( JSON.stringify( newTrainer.toJSON() ) );
+			
 			return newTrainer;
+		}
+		
+		public static function newFromJSON( jsonObject : Object ) : void
+		{
+			// TODO: implement
 		}
 		
 		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0 ) : TinyTrainer
@@ -94,6 +102,22 @@ package com.tinyrpg.core
 			}
 	
 			return newTrainer;
+		}
+		
+		public function toJSON() : Object
+		{
+			var jsonObject : Object = {};
+			
+			jsonObject.name = this.name;
+			jsonObject.squad = TinyJSONUtils.monSquadToJSONArray( this.squad );
+			jsonObject.squadInPC = TinyJSONUtils.monSquadToJSONArray( this.squadInPC );
+			jsonObject.inventory = TinyJSONUtils.inventoryToJSONArray( this.inventory );
+			jsonObject.runAttempts = this.runAttempts;
+			jsonObject.money = this.money.value;
+			jsonObject.usedRepel = this.usedRepel;
+			jsonObject.repelSteps = this.m_repelStepCounter;
+
+			return jsonObject;
 		}
 		
 		public function getMonAtIndex( index : int ) : TinyMon 
