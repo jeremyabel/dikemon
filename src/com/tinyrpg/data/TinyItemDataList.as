@@ -31,6 +31,16 @@ package com.tinyrpg.data
 			}
 		}
 		
+		public function newItemFromJSON( jsonObject : Object ) : TinyItem
+		{
+			TinyLogManager.log( 'newItemFromJSON: ' + jsonObject.name, TinyItemDataList );
+			
+			var newItem : TinyItem = this.getItemByName( jsonObject.name );
+			newItem.quantity = jsonObject.quantity;
+			
+			return newItem; 
+		}
+		
 		public function getItemByName( targetName : String ) : TinyItem
 		{
 			TinyLogManager.log( 'getItemByName: ' + targetName, this );

@@ -12,6 +12,9 @@ package com.tinyrpg.data
 		public var requiredFacing : String;
 		public var destinationFacing : String;
 		public var postFadeSequenceName : String;
+		public var useGridPos : Boolean = false;
+		public var gridPosX : int;
+		public var gridPosY : int;
 		
 		// Whether or not you warp instantly after stepping on the tile
 		public var instant : Boolean = false;

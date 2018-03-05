@@ -27,9 +27,9 @@ package com.tinyrpg.core
 		public var usedWish : Boolean = false;
 		public var money : TinyMoneyAmount;
 		public var isEnemy : Boolean;
+		public var repelStepCounter : uint = 0;
 		
 		protected var m_usedRepel : Boolean = false;
-		protected var m_repelStepCounter : uint = 0;
 		protected var m_name : String;
 		protected var m_battleBitmap : Bitmap;
 		protected var m_overworldSpriteId : int; 
@@ -48,6 +48,8 @@ package com.tinyrpg.core
 		
 		public static function newFromStarterData( name : String = 'Andy' ) : TinyTrainer 
 		{
+			TinyLogManager.log( 'newFromStarterData: ' + name, TinyTrainer );
+			
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
 			
 			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( name );
@@ -85,11 +87,6 @@ package com.tinyrpg.core
 			return newTrainer;
 		}
 		
-		public static function newFromJSON( jsonObject : Object ) : void
-		{
-			// TODO: implement
-		}
-		
 		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0 ) : TinyTrainer
 		{
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
@@ -104,6 +101,23 @@ package com.tinyrpg.core
 			return newTrainer;
 		}
 		
+		public static function newFromJSON( jsonObject : Object ) : TinyTrainer
+		{
+			TinyLogManager.log( 'newFromJSON: ' + jsonObject.name, TinyTrainer );
+						
+			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( jsonObject.name ), jsonObject.name );
+			
+			newTrainer.squad = TinyJSONUtils.parseMonSquadJSON( jsonObject.squad );
+			newTrainer.squadInPC = TinyJSONUtils.parseMonSquadJSON( jsonObject.squadInPC );
+			newTrainer.inventory = TinyJSONUtils.parseInventoryJSON( jsonObject.inventory );
+			newTrainer.money = new TinyMoneyAmount( jsonObject.money );
+			newTrainer.usedRepel = jsonObject.usedRepel;
+			newTrainer.runAttempts = jsonObject.runAttempts;
+			newTrainer.repelStepCounter = jsonObject.repelStepCounter;
+			
+			return newTrainer;
+		}
+		
 		public function toJSON() : Object
 		{
 			var jsonObject : Object = {};
@@ -115,7 +129,7 @@ package com.tinyrpg.core
 			jsonObject.runAttempts = this.runAttempts;
 			jsonObject.money = this.money.value;
 			jsonObject.usedRepel = this.usedRepel;
-			jsonObject.repelSteps = this.m_repelStepCounter;
+			jsonObject.repelSteps = this.repelStepCounter;
 
 			return jsonObject;
 		}
@@ -246,18 +260,18 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log( 'usedRepel: ' + value, this );
 			this.m_usedRepel = value;
-			this.m_repelStepCounter = 0;				
+			this.repelStepCounter = 0;				
 		}
 		
 		public function incrementRepelCounter() : void
 		{
 			if ( !this.usedRepel ) return;
 			
-			this.m_repelStepCounter++;
-			TinyLogManager.log( 'incrementRepelCounter: ' + this.m_repelStepCounter, this );
+			this.repelStepCounter++;
+			TinyLogManager.log( 'incrementRepelCounter: ' + this.repelStepCounter, this );
 			
 			// Repel wears off after 200 steps
-			if ( this.m_repelStepCounter >= 200 )
+			if ( this.repelStepCounter >= 200 )
 			{
 				this.usedRepel = false;
 					

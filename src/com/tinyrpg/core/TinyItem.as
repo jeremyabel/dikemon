@@ -101,7 +101,7 @@ package com.tinyrpg.core
 			
 			return newItem;
 		}
-		
+
 		public function toJSON() : Object
 		{
 			var jsonObject : Object = {};

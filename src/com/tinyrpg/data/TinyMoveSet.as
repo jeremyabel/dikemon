@@ -64,6 +64,7 @@ package com.tinyrpg.data
 			
 			return newMoveSet;
 		}
+	
 		
 		public function toJSON() : Object
 		{
@@ -95,6 +96,39 @@ package com.tinyrpg.data
 			m_move3 = move3 ? TinyMoveData.newFromCopy( move3 ) : null;
 			m_move4 = move4 ? TinyMoveData.newFromCopy( move4 ) : null;
 		}
+		
+		
+		public function setMovesFromJSON( jsonObject : Object ) : void
+		{
+			TinyLogManager.log( 'setMovesFromJSON', this );
+			
+			if ( jsonObject.move1 ) 
+			{
+				this.m_move1 = TinyMoveDataList.getInstance().getMoveByName( jsonObject.move1.name );
+				this.m_move1.currentPP = jsonObject.move1.pp;
+			}
+			
+			if ( jsonObject.move2 ) 
+			{
+				this.m_move2 = TinyMoveDataList.getInstance().getMoveByName( jsonObject.move2.name );
+				this.m_move2.currentPP = jsonObject.move2.pp;
+			}
+			
+			if ( jsonObject.move3 ) 
+			{
+				this.m_move3 = TinyMoveDataList.getInstance().getMoveByName( jsonObject.move3.name );
+				this.m_move3.currentPP = jsonObject.move3.pp;
+			}
+			
+			if ( jsonObject.move4 ) 
+			{
+				this.m_move4 = TinyMoveDataList.getInstance().getMoveByName( jsonObject.move4.name );
+				this.m_move4.currentPP = jsonObject.move4.pp;
+			}
+			
+			this.logMoves();
+		}
+		
 		
 		public function setMoveInSlot( move : TinyMoveData, slot : int ) : void
 		{

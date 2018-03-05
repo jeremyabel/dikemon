@@ -10,9 +10,11 @@ package com.tinyrpg.managers
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinyGameEvent;
 	import com.tinyrpg.events.TinyInputEvent;
+	import com.tinyrpg.lookup.TinyEventFlagLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.managers.TinyInputManager;
 	import com.tinyrpg.ui.TinyGameMenu;
+	import com.tinyrpg.utils.TinyJSONUtils;
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	import flash.display.Sprite;
@@ -64,6 +66,28 @@ package com.tinyrpg.managers
 			// Listen for menu keypress events
 			TinyInputManager.getInstance().addEventListener( TinyInputEvent.MENU, this.onGameMenuRequested );
 			this.gameMenu.addEventListener( TinyInputEvent.CANCEL, this.onGameMenuClosed );
+		}
+		
+		public function initWithJSON( jsonObject : Object, doWarp : Boolean = true ) : void
+		{
+			TinyLogManager.log( 'initWithJSON', this );
+			
+			// Restore all event flag settings
+			TinyEventFlagLookup.getInstance().restoreFromJSON( jsonObject.flags );
+			
+			// Create the player trainer
+			this.playerTrainer = TinyTrainer.newFromJSON( jsonObject.trainer );
+			this.playerTrainer.addEventListener( TinyFieldMapEvent.REPEL_WORE_OFF, this.onRepelWoreOff );
+			
+			// Listen for menu keypress events
+			TinyInputManager.getInstance().addEventListener( TinyInputEvent.MENU, this.onGameMenuRequested );
+			this.gameMenu.addEventListener( TinyInputEvent.CANCEL, this.onGameMenuClosed );
+
+			if ( doWarp )
+			{
+				// Warp to the saved map at the saved position
+				this.gotoMap( TinyJSONUtils.parseWarpObjectJSON( jsonObject ) );
+			}			
 		}
 		
 		public function onGameMenuRequested( event : TinyInputEvent ) : void

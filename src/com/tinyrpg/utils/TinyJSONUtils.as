@@ -2,6 +2,8 @@ package com.tinyrpg.utils
 {
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
+	import com.tinyrpg.data.TinyItemDataList;
+	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	
 	import flash.geom.Point;
 	
@@ -44,6 +46,46 @@ package com.tinyrpg.utils
 			jsonObject.y = point.y;
 			
 			return jsonObject;			
+		}
+		
+		
+		public static function parseMonSquadJSON( jsonArray : Array ) : Array
+		{
+			var squad : Array = [];
+			
+			for each ( var jsonObject : Object in jsonArray ) 
+			{
+				squad.push( TinyMon.newFromJSON( jsonObject ) );
+			}
+			
+			return squad;
+		}
+		
+		
+		public static function parseInventoryJSON( jsonArray : Array ) : Array
+		{
+			var inventory : Array = [];
+			
+			for each ( var jsonObject : Object in jsonArray ) 
+			{
+				inventory.push( TinyItemDataList.getInstance().newItemFromJSON( jsonObject ) );
+			}
+			
+			return inventory;
+		}
+		
+		
+		public static function parseWarpObjectJSON( jsonObject : Object ) : TinyFieldMapObjectWarp
+		{
+			var warpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
+			
+			warpObject.targetMapName = jsonObject.currentMap;
+			warpObject.useGridPos = true;
+			warpObject.gridPosX = jsonObject.position.x;
+			warpObject.gridPosY = jsonObject.position.y; 
+			warpObject.destinationFacing = 'DOWN';
+			
+			return warpObject;
 		}
 	}
 }

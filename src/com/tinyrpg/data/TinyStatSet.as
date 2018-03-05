@@ -72,6 +72,18 @@ package com.tinyrpg.data
 			
 			return jsonObject;
 		}
+		
+		public static function newFromJSON( jsonObject : Object, canModify : Boolean = false ) : TinyStatSet
+		{
+			var hp : int = jsonObject.hp;
+			var attack : int = jsonObject.attack;
+			var defense : int = jsonObject.defense;
+			var spAttack : int = jsonObject.spAttack;
+			var spDefense : int = jsonObject.spDefense;
+			var speed : int = jsonObject.speed;
+			
+			return new TinyStatSet( hp, attack, defense, spAttack, spDefense, speed, canModify );
+		}
 
 		public static function getStatStageMultiplier( stage : int ) : Number 
 		{

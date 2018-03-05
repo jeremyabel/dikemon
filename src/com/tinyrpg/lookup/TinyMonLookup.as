@@ -65,7 +65,23 @@ package com.tinyrpg.lookup
 		public static function getInstance() : TinyMonLookup
 		{
 			return instance;
-		}		
+		}	
+		
+		public function getMonXMLByName( monName : String, monHumanName : String = null ) : XML
+		{
+			if ( monHumanName )
+			{
+				TinyLogManager.log( 'getMonXMLByName: ' + monHumanName, this );
+				return this.monData.MON.( HUMAN.toUpperCase() == monHumanName.toUpperCase() )[ 0 ];
+			}
+			else
+			{
+				TinyLogManager.log( 'getMonXMLByName: ' + monName, this );
+				var monXML : XML = this.monData.MON.( NAME.toUpperCase() == monName.toUpperCase() )[ 0 ];	
+			}
+			
+			return null;
+		}
 		
 		public function getMonByName( monName : String, level : uint = 5, evolved : Boolean = false ) : TinyMon
 		{

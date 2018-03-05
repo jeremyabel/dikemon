@@ -8,6 +8,7 @@ package com.tinyrpg.core
 	import com.tinyrpg.data.TinyMoveSet;
 	import com.tinyrpg.data.TinyStatSet;
 	
+	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.utils.TinyMath;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -85,10 +86,12 @@ package com.tinyrpg.core
 		public function get currentHP()		: int { return m_currentHP; }
 		public function get currentEXP()	: int { return m_currentExp; }
 		
+		
 		public function TinyMon( xmlData : XML, level : uint = 5, evolved : Boolean = false )
 		{
 			this.initFromXML( xmlData, level, evolved );
 		}
+		
 		
 		public function initFromXML( xmlData : XML, level : uint = 5, evolved : Boolean = false ) : void
 		{
@@ -135,9 +138,41 @@ package com.tinyrpg.core
 			
 			this.moveSet = TinyMoveSet.newFromXML( xmlData );
 			this.moveSet.setMovesToLevel( this.m_level );
-			this.moveSet.logMoves();
 			
 			m_bitmap = new Bitmap( TinySpriteLookup.getMonsterSprite( this.name ) );
+		}
+		
+		
+		public function initWithJSON( jsonObject : Object ) : void
+		{
+			TinyLogManager.log( 'initWithJSON: ' + this.name, this );
+			
+			this.ivStatSet = TinyStatSet.newFromJSON( jsonObject.ivs );
+			this.evStatSet = TinyStatSet.newFromJSON( jsonObject.evs, true );
+			
+			this.m_currentHP = TinyMath.deepCopyInt( jsonObject.currentHP );
+			this.m_currentExp = TinyMath.deepCopyInt( jsonObject.currentEXP );
+			this.isEvolved = jsonObject.isEvolved;
+			this.m_level = TinyMath.deepCopyInt( jsonObject.level );
+			
+			this.moveSet.setMovesFromJSON( jsonObject.moveSet );
+		}
+		
+		
+		public static function newFromJSON( jsonObject : Object ) : TinyMon
+		{
+			if ( jsonObject.humanName ) {
+				TinyLogManager.log( 'newFromJSON: ' + jsonObject.humanName, TinyMon );
+			} else {
+				TinyLogManager.log( 'newFromJSON: ' + jsonObject.name, TinyMon );	
+			}
+			
+			// Initialize with default data, then update with the JSON data
+			var xmlData : XML = TinyMonLookup.getInstance().getMonXMLByName( jsonObject.name, jsonObject.humanName );
+			var newMon : TinyMon = new TinyMon( xmlData );
+			newMon.initWithJSON( jsonObject );
+			
+			return newMon; 
 		}
 		
 		

@@ -104,12 +104,20 @@ package com.tinyrpg.managers
 			// Add the player sprite to the map with the correct facing
 			this.addPlayerSprite( this.warpObjectInProgress.destinationFacing );
 			
-			// Find the destination warp object
-			var destinationWarpObject : DisplayObject = this.currentMap.getMapObjectByName( this.warpObjectInProgress.targetWarpName );
-			TinyLogManager.log( 'warp destination: ' + this.warpObjectInProgress.targetWarpName, this );
-			
-			// Move the player sprite to the destination warp
-			this.playerSprite.setPosition( destinationWarpObject.x, destinationWarpObject.y );
+			// Move the player sprite to the either the specified grid tile or the destination warp sprite's location
+			if ( this.warpObjectInProgress.useGridPos )
+			{
+				TinyLogManager.log( 'warp destination: ' + this.warpObjectInProgress.gridPosX + ', ' + this.warpObjectInProgress.gridPosY, this );
+				this.playerSprite.setPositionOnGrid( this.warpObjectInProgress.gridPosX, this.warpObjectInProgress.gridPosY );				
+			}
+			else
+			{
+				TinyLogManager.log( 'warp destination: ' + this.warpObjectInProgress.targetWarpName, this );
+				
+				// Find the destination warp object
+				var destinationWarpObject : DisplayObject = this.currentMap.getMapObjectByName( this.warpObjectInProgress.targetWarpName );
+				this.playerSprite.setPosition( destinationWarpObject.x, destinationWarpObject.y );
+			}
 			
 			this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onWarpShowComplete );
 			

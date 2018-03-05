@@ -37,9 +37,14 @@ package com.tinyrpg.lookup
 		}
 		
 		
-		public function restoreFromJSON( jsonObject : Object ) : void
+		public function restoreFromJSON( jsonArray : Array ) : void
 		{
 			TinyLogManager.log( 'restoreFromJSON', this );
+			
+			for each ( var jsonObject : Object in jsonArray )
+			{
+				this.getFlagByName( jsonObject.name ).value = jsonObject.value;
+			}
 		}
 		
 		

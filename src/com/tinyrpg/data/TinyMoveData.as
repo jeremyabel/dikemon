@@ -28,7 +28,7 @@ package com.tinyrpg.data
 		private var m_fxAnimDistortion	: String;
 		private var m_fxPaletteEffect	: String;
 		private var m_uselessText		: String;
-		
+	
 		public var moveFXSAnimation		: TinyMoveFXAnimation;
 		
 		public function get name() 			 	: String { return m_name; }
@@ -158,8 +158,8 @@ package com.tinyrpg.data
 		{
 			var jsonObject : Object = {};
 			
-			// Only the move name needs to be saved, the rest is derived from the default XML data
 			jsonObject.name = this.name;
+			jsonObject.pp = this.currentPP;
 			
 			return jsonObject;
 		}
@@ -227,6 +227,19 @@ package com.tinyrpg.data
 			TinyLogManager.log('recoverAllPP', this);
 			this.m_currentPP = this.maxPP;
 		}
+		
+		public function set currentPP( value : int ) : void 
+		{
+			var ppValue : int = value;
+			
+			if ( !value ) 
+			{
+				ppValue = this.maxPP;	
+			}
+			
+			TinyLogManager.log( this.name + ' set current PP: ' + ppValue, this ); 
+			this.m_currentPP = ppValue; 
+		} 
 		
 		public function get isMaxPP() : Boolean
 		{
