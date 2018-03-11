@@ -143,7 +143,7 @@ package com.tinyrpg.battle
 		public static const PLAYER_RECALLED_1	: String = 'MON, that\'s enough, come back!';
 		public static const PLAYER_RECALLED_2	: String = 'MON, come back!';
 		public static const PLAYER_RECALLED_3	: String = 'MON OK! Come back!';
-		public static const PLAYER_RECALLED_4	: String = 'You dissapoint me, MON! Get back in your ball!'; 		
+		public static const PLAYER_RECALLED_4	: String = 'You disappoint me, MON! Get back in your ball!'; 		
 		
 		// Trainer battle strings
 		public static const TRAINER_BATTLE_1	: String = 'TRAINER wants to battle!';
@@ -185,6 +185,7 @@ package com.tinyrpg.battle
 	 	public static const BALL_ALMOST_3		: String = 'Hey you caught it![halt] Oh wait,[delay 2] no,[delay 2] you didn\'t.';
 	 	public static const BALL_ALMOST_4		: String = 'JUST GET IN THE DAMN BALL!';
 	 	public static const BALL_CAUGHT			: String = 'Nice, you caught a MON!';
+	 	public static const CAUGHT_SQUAD_FULL	: String = 'Your squad is already full! MON was sent to the Storage PC.';
 		
 		// Misc other battle strings
 		public static const EXPLOSION_FAINT		: String = 'MON fainted from the explosion!';
@@ -361,7 +362,8 @@ package com.tinyrpg.battle
 			attempts = Math.min( attempts, TinyBattleStrings.RUN_IMPOSSIBLE_STRINGS.length - 1 );
 	
 			// TODO: Check dad call story flag
-			if ( attempts == 5 && true ) {
+			if ( attempts == 5 && true ) 
+			{
 				return getBattleString( RUN_IMPOSSIBLE_DAD );
 			}
 			

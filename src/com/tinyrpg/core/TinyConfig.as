@@ -11,5 +11,6 @@ package com.tinyrpg.core
 		public static var SCREEN_WIDTH  : uint = 160;
 		public static var SCREEN_HEIGHT : uint = 144;
 		public static var PLAYER_NAME : String = 'Andy';
+		public static var MAX_SQUAD_LENGTH : int = 6;
 	}
 }

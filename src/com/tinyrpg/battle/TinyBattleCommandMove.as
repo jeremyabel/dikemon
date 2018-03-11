@@ -86,19 +86,16 @@ package com.tinyrpg.battle
 				TinyLogManager.log(attackingMon.name + ' used ' + move.name + ' against ' + defendingMon.name + '.', this);
 			
 			// Do pre-attack checks
-			var preAttackCheckResult : String = TinyBattleMath.doPreAttackChecks( attackingMon, this.eventSequence ); 
+			var preAttackCheckResult : String = TinyBattleMath.doPreAttackChecks( attackingMon, isEnemy, this.eventSequence ); 
 			
 			// If the pre-attack checks fail, run the current battle event, then end the turn
 			if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_FAILED || preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED )
 			{	
 				// Confusion damage: 33% hit rate, as if mon attacks itself with a power 40 physical attack, no chance to crit
-				if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED ) // && Math.random() < TinyBattleMath.CONFUSION_HIT_PROB )
+				if ( preAttackCheckResult == TinyBattleMath.PRE_ATTACK_RESULT_CONFUSED && Math.random() < TinyBattleMath.CONFUSION_HIT_PROB )
 				{
 					// Calculate confusion damage using the special confusion attack					
 					var confusionDamage : int = TinyBattleMath.calculateDamage( attackingMon, attackingMon, TinyMoveData.CONFUSION_ATTACK, false );
-					
-					// Play confusion effect animation
-					this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.CONFUSION, isEnemy ) );
 					
 					// Play hit sfx
 					this.eventSequence.addPlaySound( TinyStatusFXLookup.SFX_HIT_SELF );
@@ -422,6 +419,7 @@ package com.tinyrpg.battle
 				// Play burn effect animation
 				this.eventSequence.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.BURN, isEnemy ) );
 				
+				// Calculate burn damage			
 				var burnDamage : int = Math.floor( Number(attackingMon.maxHP) / TinyBattleMath.BURN_DAMAGE_RATIO );
 				
 				// Show "hurt by burn" dialog

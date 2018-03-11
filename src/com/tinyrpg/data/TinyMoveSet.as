@@ -44,7 +44,7 @@ package com.tinyrpg.data
 				var moveName : String = separatedString[1];
 				
 				// Remove whitespace from move name
-				moveName = moveName.replace(regex, '');
+				moveName = moveName.replace( regex, '' );
 				
 				// Replace underscores with spaces
 				moveName = moveName.replace('_', ' ');

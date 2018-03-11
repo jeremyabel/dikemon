@@ -383,10 +383,10 @@ Prescription?</RIVAL>
 36: CRUNCH;
 50: HYDRO_PUMP</MOVES>
     <HP>35</HP>
-    <ATK>6400</ATK>
+    <ATK>64</ATK>
     <!-- <ATK>64</ATK> -->
     <DEF>85</DEF>
-    <SP_ATK>7400</SP_ATK>
+    <SP_ATK>74</SP_ATK>
     <!-- <SP_ATK>74</SP_ATK> -->
     <SP_DEF>55</SP_DEF>
     <SPD>32</SPD>

@@ -20,7 +20,7 @@ package com.tinyrpg.data
 			
 			if ( this.icon )
 			{
-				this.icon.alpha = 0.01; //false;
+				this.icon.alpha = 0.01; 
 			}
 		}
 		

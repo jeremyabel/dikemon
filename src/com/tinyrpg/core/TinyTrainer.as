@@ -67,6 +67,7 @@ package com.tinyrpg.core
 			var item4 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Revive' );
 			var item5 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Ether' );
 			var item6 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Repel' );
+			var item7 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Ultraball' );
 			
 			newTrainer.addItem( item1 );
 			newTrainer.addItem( item1 );
@@ -78,6 +79,8 @@ package com.tinyrpg.core
 			newTrainer.addItem( item5 );
 			newTrainer.addItem( item6 );
 			newTrainer.addItem( item6 );
+			newTrainer.addItem( item7 );
+			newTrainer.addItem( item7 );
 			
 			// Give starting allowance
 			newTrainer.money = new TinyMoneyAmount( 3000 );
@@ -115,10 +118,22 @@ package com.tinyrpg.core
 			newTrainer.runAttempts = jsonObject.runAttempts;
 			newTrainer.repelStepCounter = jsonObject.repelStepCounter;
 	
-			// TODO: REMOVE. For testing: add extra mons
+			// TODO: REMOVE, FOR TESTING
 			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( 'Chris' );			
 			var starterMon : TinyMon = TinyMonLookup.getInstance().getMonByHuman( starterName );
 			newTrainer.squad.push( starterMon );
+			
+			// TODO: REMOVE, FOR TESTING
+			var item1 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Potion' );
+			var item2 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Super Potion' );
+			var item3 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Antidote' );
+			var item4 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Revive' );
+			var item5 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Ether' );
+			var item6 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Repel' );
+			var item7 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Ultraball' );
+			
+			newTrainer.addItem( item7 );
+			newTrainer.addItem( item7 );
 			
 			return newTrainer;
 		}

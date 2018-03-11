@@ -24,6 +24,7 @@ package com.tinyrpg.ui
 		private var isWithdraw 			: Boolean = false;
 		private var numMons 			: uint = 0;
 		
+		
 		public function TinyStorageMonMenu( monArray : Array, isWithdraw : Boolean = false ) : void
 		{
 			this.isWithdraw = isWithdraw;
@@ -106,6 +107,14 @@ package com.tinyrpg.ui
 			if ( !this.isWithdraw && this.numMons <= 1 )
 			{
 				this.instructionBox.text = "That's your last guy!";
+				TinyAudioManager.play( TinyAudioManager.ERROR );
+				return;
+			}
+			
+			// If the player has six mons already, don't allow them to withdraw any more
+			if ( this.isWithdraw && this.numMons >= 6 ) 
+			{
+				this.instructionBox.text = "Can't have any more!";
 				TinyAudioManager.play( TinyAudioManager.ERROR );
 				return;
 			}

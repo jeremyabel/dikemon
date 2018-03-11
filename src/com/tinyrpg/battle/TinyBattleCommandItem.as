@@ -3,10 +3,12 @@ package com.tinyrpg.battle
 	import flash.media.Sound;
 	
 	import com.tinyrpg.battle.TinyBattleMath;
+	import com.tinyrpg.core.TinyConfig;
 	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.TinyBallFXAnimation;
+	import com.tinyrpg.managers.TinyGameManager;
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
 	import com.tinyrpg.data.TinyBallThrowResult;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -16,9 +18,16 @@ package com.tinyrpg.battle
 	 */
 	public class TinyBattleCommandItem extends TinyBattleCommand 
 	{
+		public static const RESULT_OK 			: String = 'ITEM_OK';
+		public static const RESULT_MON_CAUGHT	: String = 'ITEM_MON_CAUGHT';
+		
 		private var mon : TinyMon;
 		private var item : TinyItem;
 		private var move : TinyMoveData;
+		private var canCatch : Boolean;
+		private var numWobbles : int;
+		
+		public var result : String = RESULT_OK;
 		
 		public function TinyBattleCommandItem( battle : TinyBattle, item : TinyItem, move : TinyMoveData )
 		{
@@ -29,6 +38,19 @@ package com.tinyrpg.battle
 			this.mon = this.battle.m_currentPlayerMon;
 			
 			this.item.printLog();
+			
+			// The result of a ball item is pre-calculated before the command is executed
+			if ( this.item.isBall && this.battle.m_isWildEncounter ) 
+			{
+				// Calculate catch result and number of wobbles
+				this.canCatch = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				this.numWobbles = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				
+				if ( this.canCatch )
+				{
+					this.result = RESULT_MON_CAUGHT;
+				}
+			}
 		}
 		
 		
@@ -48,21 +70,16 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('useBall: ' + this.item.effectAmount, this);
 
-			var resultString : String = '';
 			var isUltra : Boolean = this.item.effectAmount > 1;
 			
 			// Add delay for nice feels
 			this.eventSequence.addDelay( 0.2 );
 			
-			// Calculate and animate the ball throw result 
+			// Animate the ball throw result 
 			if ( this.battle.m_isWildEncounter )
 			{
-				// Calculate catch result and number of wobbles
-				var canCatch : Boolean = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
-				var numWobbles : int = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
-				
-				TinyLogManager.log('canCatch: ' + canCatch, this );
-				TinyLogManager.log('numWobbles: ' + numWobbles, this );
+				TinyLogManager.log( 'canCatch: ' + this.canCatch, this );
+				TinyLogManager.log( 'numWobbles: ' + this.numWobbles, this );
 				
 				// Throw and open the ball
 				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_OPEN, isUltra ) );
@@ -74,21 +91,31 @@ package com.tinyrpg.battle
 				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_CLOSE, isUltra ) );
 				
 				// Wobble the ball some number of times
-				for ( var i : int = 0; i < numWobbles; i++ ) 
+				for ( var i : int = 0; i < this.numWobbles; i++ ) 
 				{
 					this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_WOBBLE, isUltra ) );
 				}
 				
 				// The rest of the sequence depends on if the mon is caught or not
-				if ( canCatch )
+				if ( this.canCatch )
 				{
 					// TODO: play some sound
-					// TODO: add to dex and stuff
 					
 					// Show caught message
-					resultString = TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.m_currentEnemyMon );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.m_currentEnemyMon ) );
 					
-					// TODO: end battle
+					// If the player already has a full squad, send the caught mon to the storage PC. Otherwise, add it to the player's regular squad. 
+					if ( TinyGameManager.getInstance().playerTrainer.squad.length >= TinyConfig.MAX_SQUAD_LENGTH )
+					{
+						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.CAUGHT_SQUAD_FULL, this.battle.m_currentEnemyMon ) );
+						TinyGameManager.getInstance().playerTrainer.squadInPC.push( this.battle.m_currentEnemyMon );
+						TinyLogManager.log( 'added ' + this.battle.m_currentEnemyMon.name + ' to Storage PC', this );
+					}
+					else
+					{
+						TinyGameManager.getInstance().playerTrainer.squad.push( this.battle.m_currentEnemyMon );
+						TinyLogManager.log( 'added ' + this.battle.m_currentEnemyMon.name + ' to squad', this );
+					}
 				}
 				else
 				{
@@ -99,18 +126,15 @@ package com.tinyrpg.battle
 					this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_BURST, isUltra ) );
 					
 					// Show "almost" message
-					resultString = TinyBattleStrings.getBallWobbleString( numWobbles );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBallWobbleString( this.numWobbles ) );
 				}
 			}
 			else
 			{
 				// Can't capture trainer mons, so reject the ball throw
 				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_REJECT, isUltra ) );
-				resultString = TinyBattleStrings.BALL_THROW_REJECT;
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.BALL_THROW_REJECT );
 			}
-			
-			// Show dialog box
-			this.eventSequence.addDialogBoxFromString( resultString );
 		}
 		
 		

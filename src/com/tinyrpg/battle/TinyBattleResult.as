@@ -10,6 +10,7 @@ package com.tinyrpg.battle
 		public static var RESULT_WIN : String = 'RESULT_WIN';
 		public static var RESULT_LOSE : String = 'RESULT_LOSE';
 		public static var RESULT_FORCED : String = 'RESULT_FORCED';	// for battles you can't win
+		public static var RESULT_CAUGHT	: String = 'RESULT_CAUGHT';
 		
 		public var value : String;
 		

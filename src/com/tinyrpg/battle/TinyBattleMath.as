@@ -3,6 +3,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.data.TinyMoveEffect;
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.data.TinyStatSet;
+	import com.tinyrpg.data.TinyStatusEffect;
+	import com.tinyrpg.display.TinyStatusFXAnimation;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -44,16 +46,17 @@ package com.tinyrpg.battle
 		}
 		
 		
-		public static function doPreAttackChecks( targetMon : TinyMon, battleEvent : TinyBattleEventSequence ) : String 
+		public static function doPreAttackChecks( targetMon : TinyMon, isEnemy : Boolean, battleEvent : TinyBattleEventSequence ) : String 
 		{
 			TinyLogManager.log('doPreAttackChecks: ' + targetMon.name, TinyBattleMath);
 			
 			// Sleep check
-			if (targetMon.isSleeping)
+			if ( targetMon.isSleeping )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (asleep)', TinyBattleMath);
 				
-				// TODO: Play sleep effect animation
+				// Play sleep effect animation
+				battleEvent.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.SLEEP, isEnemy ) );
 				
 				// Show "fast asleep" dialog
 				battleEvent.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.FAST_ASLEEP, targetMon ) );
@@ -62,7 +65,7 @@ package com.tinyrpg.battle
 			}
 			
 			// Recharge check
-			if (targetMon.isRecharging)
+			if ( targetMon.isRecharging )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (recharging)', TinyBattleMath);
 				
@@ -73,7 +76,7 @@ package com.tinyrpg.battle
 			}
 			
 			// Flinch check
-			if (targetMon.isFlinching)
+			if ( targetMon.isFlinching )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (flinched)', TinyBattleMath);
 				
@@ -84,11 +87,12 @@ package com.tinyrpg.battle
 			}
 			
 			// Confusion check
-			if (targetMon.isConfused)
+			if ( targetMon.isConfused )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (confused)', TinyBattleMath);
 				
-				// TODO: Play confusion effect animation
+				// Play confusion effect animation
+				battleEvent.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.CONFUSION, isEnemy ) );
 				
 				// Show "confused" dialog
 				battleEvent.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.TOO_DRUNK, targetMon ) );
@@ -98,11 +102,12 @@ package com.tinyrpg.battle
 			}
 			
 			// Paralysis check (25% to lose turn)
-			if (targetMon.isParaylzed && Math.random() < PARALYSIS_SKIP_PROB)
+			if ( targetMon.isParaylzed && Math.random() < PARALYSIS_SKIP_PROB )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (paralyzed)', TinyBattleMath);
 				
-				// TODO: Play paralysis effect animation
+				// Play paralysis effect animation
+				battleEvent.addPlayStatusAnim( new TinyStatusFXAnimation( TinyStatusEffect.PARALYSIS, isEnemy ) );
 				
 				// Show "paralyzed" dialog
 				battleEvent.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.IS_PARALYZED_2, targetMon ) );
@@ -122,7 +127,7 @@ package com.tinyrpg.battle
 			// Moves with an accuracy of 0 or the ALWAYS_HIT effect automatically pass
 			if ( accuracyValue == 0 || move.hasEffect( TinyMoveEffect.ALWAYS_HIT ) ) 
 			{
-				TinyLogManager.log('checkAccuracy: passed (always hit)', TinyBattleMath);
+				TinyLogManager.log( 'checkAccuracy: passed (always hit)', TinyBattleMath );
 				return true;
 			}
 			
@@ -130,11 +135,11 @@ package com.tinyrpg.battle
 			var modifiedAccuracyStage : int = move.targetsSelf ? attackingMon.accuracyModStage : attackingMon.accuracyModStage - defendingMon.evasivenessModStage;
 			
 			// Clamp to -6, +6
-			modifiedAccuracyStage = Math.min(Math.max(modifiedAccuracyStage, -6), 6);
+			modifiedAccuracyStage = Math.min( Math.max( modifiedAccuracyStage, -6 ), 6 );
 			
 			// Get accuracy multipler from table
 			var accuracyMultiplier : Number = 1.0;
-			switch (modifiedAccuracyStage)
+			switch ( modifiedAccuracyStage )
 			{
 				case -6: accuracyMultiplier = 0.33; break;
 				case -5: accuracyMultiplier = 0.36; break;
@@ -153,9 +158,9 @@ package com.tinyrpg.battle
 			var finalAccuracy : Number = accuracyValue * accuracyMultiplier; 
 			
 			// If a random int from 1 - 100 is <= accurracy, attack passes
-			var result : Boolean = TinyMath.random(1, 100) <= finalAccuracy;  
+			var result : Boolean = TinyMath.random( 1, 100 ) <= finalAccuracy;  
 			
-			TinyLogManager.log('checkAccuracy: ' + (result ? 'passed' : 'failed') + ', ' + finalAccuracy, TinyBattleMath);
+			TinyLogManager.log( 'checkAccuracy: ' + ( result ? 'passed' : 'failed' ) + ', ' + finalAccuracy, TinyBattleMath );
 			return result;
 		}
 
@@ -174,13 +179,13 @@ package com.tinyrpg.battle
 			// TODO: If Water Sport is active, do power mod 
 			
 			// EXPLOSION: target's defense is halved
-			if ( move.hasEffect( TinyMoveEffect.EXPLOSION ) ) D = D / 2;
+			if ( move.hasEffect( TinyMoveEffect.EXPLOSION ) ) D = Math.floor( D / 2 );
 			
 			// If attack is a crit, clamp stat stages
-			if (isCrit) 
+			if ( isCrit ) 
 			{
-				Am = Math.max(0, Am);
-				Dm = Math.min(0, Dm);
+				Am = Math.max( 0, Am );
+				Dm = Math.min( 0, Dm );
 			}
 			
 			// Multiply by stat stages
@@ -194,7 +199,7 @@ package com.tinyrpg.battle
 			damage /= attackingMon.isBurned ? 2 : 1;
 			
 			// If the attack is physical, min damage value is 1
-			if (move.type.isPhysical) damage = Math.max(1, damage);
+			if ( move.type.isPhysical ) damage = Math.max( 1, damage );
 			
 			// Add two, just because
 			damage += 2;
@@ -205,9 +210,9 @@ package com.tinyrpg.battle
 			// TODO: Apply any particular move damage multiplier 
 			
 			// Apply same-type bonus
-			if (move.type.name == attackingMon.type1.name || move.type.name == attackingMon.type2.name) 
+			if ( move.type.name == attackingMon.type1.name || move.type.name == attackingMon.type2.name ) 
 			{
-				TinyLogManager.log('calculateDamage: same-type bonus!', TinyBattleMath);
+				TinyLogManager.log( 'calculateDamage: same-type bonus!', TinyBattleMath );
 				damage *= SAME_TYPE_BONUS;	
 			}
 			
@@ -216,21 +221,23 @@ package com.tinyrpg.battle
 			var type2Multiplier : Number = move.type.getMatchupValueVersus( defendingMon.type2 );
 			damage *= type1Multiplier;
 			
-			// If defender has a second type, multiply by second type matchup value
+			// If defender has a different second type, multiply by second type matchup value
 			if ( defendingMon.type2.name != defendingMon.type1.name ) damage *= type2Multiplier;
 			
 			// Apply damage variance
 			damage *= TinyMath.randomInt( 85, 100 );
 			damage = Math.floor( damage / 100.0 );
+			
+			// Always do at least 1 damage
 			damage = Math.max( 1, damage );
 			
-			TinyLogManager.log('calculateDamage:  L = ' + L, TinyBattleMath);
-			TinyLogManager.log('calculateDamage:  P = ' + P, TinyBattleMath);
-			TinyLogManager.log('calculateDamage:  A = ' + A, TinyBattleMath);
-			TinyLogManager.log('calculateDamage:  D = ' + D, TinyBattleMath);
-			TinyLogManager.log('calculateDamage: T1 = ' + type1Multiplier, TinyBattleMath);
-			TinyLogManager.log('calculateDamage: T2 = ' + type2Multiplier, TinyBattleMath);
-			TinyLogManager.log('calculateDamage: DAMAGE = ' + damage, TinyBattleMath);
+			TinyLogManager.log( 'calculateDamage:  L = ' + L, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:  P = ' + P, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:  A = ' + A, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:  D = ' + D, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage: T1 = ' + type1Multiplier, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage: T2 = ' + type2Multiplier, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage: DAMAGE = ' + damage, TinyBattleMath );
 			
 			return damage;	
 		}
@@ -239,13 +246,13 @@ package com.tinyrpg.battle
 		public static function canRun( targetTrainer : TinyTrainer, trainerMon : TinyMon, targetMon : TinyMon ) : Boolean
 		{	
 			// If the trainer's mon's speed is greater than or equal to the target's speed, running is automatically successful. 
-			// Otherwise, do some math to calculate whether or not the run is successful.  
 			if ( trainerMon.speed >= targetMon.speed ) return true;
 
+			// Otherwise, do some math to calculate whether or not the run is successful.
 			var A : int = trainerMon.speed;
 			var B : int = targetMon.speed;
 			var C : int = targetTrainer.runAttempts;
-			var X : int = ( Math.floor( A * 128 / Math.min( 1, B ) ) + (30 * C) ) % 256;
+			var X : int = ( Math.floor( A * 128 / Math.min( 1, B ) ) + ( 30 * C ) ) % 256;
 			var R : int = TinyMath.randomInt( 0, 255 );
 
 			return R < X;
@@ -259,7 +266,7 @@ package com.tinyrpg.battle
 			var S : int = numMonsUsedInBattle;
 			var X : Number = isWildEncounter ? 1.0 : 1.5;
 			
-			return Math.floor(Math.max( 1, L * G / ( 7 * S ) ) * X );
+			return Math.floor( Math.max( 1, L * G / ( 7 * S ) ) * X );
 		}
 		
 		

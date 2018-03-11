@@ -34,8 +34,8 @@ package com.tinyrpg.debug
 			TinyEventFlagLookup.getInstance().getFlagByName( 'finished_intro_cutscene' ).value = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'CITYDIKECENTER';
-			testWarpObject.targetWarpName = 'warpPCTesting';
+			testWarpObject.targetMapName = 'ROUTE29';
+			testWarpObject.targetWarpName = 'warpWildBattleTest';
 			testWarpObject.destinationFacing = 'UP';
 			
 //			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();

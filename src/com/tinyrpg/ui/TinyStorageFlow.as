@@ -17,6 +17,7 @@ package com.tinyrpg.ui
 		private var transferDialog	: TinyDialogBox;
 		private var isWithdraw 		: Boolean;
 		
+		
 		public function TinyStorageFlow( isWithdraw : Boolean ) : void
 		{
 			this.isWithdraw = isWithdraw;

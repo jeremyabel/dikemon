@@ -191,13 +191,6 @@ package com.tinyrpg.battle
 
 			TinyLogManager.log('', this);
 			TinyLogManager.log('==================== START BATTLE MODE ====================', this);
-			TinyLogManager.log('vs: ', this);
-			
-			for ( var i : uint = 0; i < this.m_enemyTrainer.squad.length; i++ )
-			{
-				TinyLogManager.log( '   ' + this.m_enemyTrainer.getMonAtIndex( i ).name, this );
-			}
-			
 			TinyLogManager.log( '', this );
 			
 			// Whirl mask

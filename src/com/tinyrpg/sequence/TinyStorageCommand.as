@@ -1,15 +1,9 @@
 package com.tinyrpg.sequence
 {
-	import com.tinyrpg.core.TinyMon;
-	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.data.TinyCommonStrings;
-	import com.tinyrpg.display.TinyContentBox
 	import com.tinyrpg.display.TinySelectableItem;
 	import com.tinyrpg.events.TinyInputEvent;
-	import com.tinyrpg.managers.TinyFontManager;
 	import com.tinyrpg.managers.TinyInputManager;
-	import com.tinyrpg.ui.TinyBaseFlow;
-	import com.tinyrpg.ui.TinyDialogBox;
 	import com.tinyrpg.ui.TinySelectList;
 	import com.tinyrpg.ui.TinyStorageFlow;
 	import com.tinyrpg.utils.TinyLogManager;
@@ -25,6 +19,7 @@ package com.tinyrpg.sequence
 	{
 		private var storageMenu			: TinySelectList;
 		private var currentStorageFlow	: TinyStorageFlow;
+		
 		
 		public function TinyStorageCommand() : void
 		{

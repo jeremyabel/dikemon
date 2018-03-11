@@ -198,11 +198,26 @@ package com.tinyrpg.battle
 				// Player Command = ITEM	
 				case TinyBattleCommand.COMMAND_ITEM:
 				{
+					itemCommand = this.playerCommand as TinyBattleCommandItem;
+					
+					// Player Command = ITEM: Player item use goes first, but Player caught the mon so end the battle
+					if ( itemCommand.result == TinyBattleCommandItem.RESULT_MON_CAUGHT )
+					{
+						TinyLogManager.log( 'commandSelected: Player = ITEM. Player goes first, catches mon, then end battle.', this );
+						this.commands.push( this.playerCommand );
+						this.commands.push( TinyBattleCommand.getEndBattleCommand( this.battle, TinyBattleCommand.USER_PLAYER ) );
+						this.battle.result = new TinyBattleResult( TinyBattleResult.RESULT_CAUGHT );
+						break; 
+					}
+					
 					// Player Command = ITEM: Player item use goes first, then enemy goes
-					TinyLogManager.log('commandSelected: Player = ITEM. Player goes first.', this);
-					this.commands.push( this.playerCommand );
-					this.commands.push( this.enemyCommand );
-					break;
+					else
+					{
+				 		TinyLogManager.log( 'commandSelected: Player = ITEM. Player goes first.', this );
+						this.commands.push( this.playerCommand );
+						this.commands.push( this.enemyCommand );
+						break;
+					}
 				}
 				
 				// Player Command = RUN
