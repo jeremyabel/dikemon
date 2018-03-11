@@ -43,6 +43,7 @@ package com.tinyrpg.sequence
 		public static const HEAL_ALL	  			: String = 'HEAL_ALL';
 		public static const EXIT_EARLY				: String = 'EXIT_EARLY';
 		public static const PRINT_LOG				: String = 'PRINT_LOG';
+		public static const STORAGE_PC				: String = 'STORAGE_PC';
 		public static const SHOP					: String = 'SHOP';
 		public static const END			  			: String = 'END';
 		

@@ -12,7 +12,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyGameMenuQuitFlow extends TinyGameMenuBaseFlow 
+	public class TinyGameMenuQuitFlow extends TinyBaseFlow 
 	{
 		private var confirmQuitDialog : TinyDialogSelectList;
 		

@@ -4,10 +4,6 @@ package com.tinyrpg.sequence
 	import com.greensock.easing.Linear;
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
-//	import com.tinyrpg.core.TinyFieldMap;
-//	import com.tinyrpg.core.TinyFriendSprite;
-//	import com.tinyrpg.core.TinyPlayer;
-//	import com.tinyrpg.core.TinyStatsEntity;
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.Event;
@@ -118,7 +114,6 @@ package com.tinyrpg.sequence
 //				newAnimCommand._target = null;
 //			} else { 
 //				if (xmlData.child('TARGET') == 'PLAYER') {
-//					newAnimCommand._target = TinyFriendSprite(TinyStatsEntity(TinyPlayer.getInstance().party.party[0]).graphics);
 //				//} else {
 //				//	newAnimCommand._target = TinyFieldMap.getNPCSpriteByName(xmlData.child('TARGET'));
 //				}

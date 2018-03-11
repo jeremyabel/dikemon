@@ -39,7 +39,7 @@ package com.tinyrpg.ui
 			}
 			
 			// Add cancel item
-			this.selectableCancelItem = new TinySelectableItem( TinyCommonStrings.CANCEL, newItemArray.length ); 
+			this.selectableCancelItem = new TinySelectableItem( TinyCommonStrings.CANCEL.toUpperCase(), newItemArray.length ); 
 			newItemArray.push( this.selectableCancelItem );
 			
 			// Populate the list

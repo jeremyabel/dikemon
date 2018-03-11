@@ -11,8 +11,9 @@ package com.tinyrpg.display
 	 */
 	public class TinyOneLineBox extends TinyContentBox 
 	{
-		private var textField : TextField;
-		private var smallFont : Boolean;
+		private var textField  : TextField;
+		private var smallFont  : Boolean;
+		private var textString : String;
 		
 		public function TinyOneLineBox(textString : String = null, width : int = 288, smallFont : Boolean = false)
 		{
@@ -30,15 +31,18 @@ package com.tinyrpg.display
 			this.addChild(textField);
 		}
 		
-		public function set text(string : String) : void
+		public function set text( string : String ) : void
 		{
-			TinyLogManager.log('set text: ' + string, this);
+			if ( string == this.textString ) return;
+			
+			TinyLogManager.log( 'set text: ' + string, this );
 			
 			var style : String = this.smallFont ?  'battleItemText' : 'selecterText';
 			
 			// Set text and center
+			this.textString = string;
 			this.textField.visible = false;
-			this.textField.htmlText = TinyFontManager.returnHtmlText(string, style, 'center');
+			this.textField.htmlText = TinyFontManager.returnHtmlText(this.textString, style, 'center');
 			TweenLite.delayedCall(3, this.setX, null, true);
 		}
 		

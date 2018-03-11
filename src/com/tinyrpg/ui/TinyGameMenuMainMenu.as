@@ -16,13 +16,13 @@ package com.tinyrpg.ui
 		public function TinyGameMenuMainMenu() : void
 		{
 			var newItems : Array = [
-				new TinySelectableItem( TinyCommonStrings.DIKEMON, 0 ),
-				new TinySelectableItem( TinyCommonStrings.ITEMS, 1 ),
-				new TinySelectableItem( TinyCommonStrings.SAVE, 2 ),
-				new TinySelectableItem( TinyCommonStrings.QUIT, 3 )
+				new TinySelectableItem( TinyCommonStrings.DIKEMON.toUpperCase(), 0 ),
+				new TinySelectableItem( TinyCommonStrings.ITEMS.toUpperCase(), 1 ),
+				new TinySelectableItem( TinyCommonStrings.SAVE.toUpperCase(), 2 ),
+				new TinySelectableItem( TinyCommonStrings.QUIT.toUpperCase(), 3 )
 			];
 			
-			super( '', newItems, 50, 46, 11, 2 );
+			super( '', newItems, 50, 64 );
 		}
 
 		

@@ -10,7 +10,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyGameMenuMonsFlow extends TinyGameMenuBaseFlow
+	public class TinyGameMenuMonsFlow extends TinyBaseFlow
 	{
 		private var monMenu : TinyMonMenu;
 		

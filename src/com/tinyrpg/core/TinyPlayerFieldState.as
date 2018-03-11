@@ -229,7 +229,7 @@ package com.tinyrpg.core
 			if ( triggerObject.requireAcceptKeypress && !fromAcceptKeypress ) return;
 			
 			// Good to go: play the event
-			TinyMapManager.getInstance().startEventByName( triggerObject.eventName );
+			TinyMapManager.getInstance().startEventByName( triggerObject.eventName, triggerObject.isGlobal );
 		}
 	
 		

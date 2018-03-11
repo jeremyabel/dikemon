@@ -11,6 +11,7 @@ package com.tinyrpg.data
 		public var requiredFacing : String;
 		public var requireAcceptKeypress : Boolean = true;
 		public var blocking : Boolean = false;
+		public var isGlobal : Boolean = false;
 		
 		public function TinyFieldMapObjectTrigger() : void 
 		{

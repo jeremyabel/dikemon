@@ -19,6 +19,9 @@ package com.tinyrpg.data
 		public static const SAVE		: String = 'Save';
 		public static const SWITCH		: String = 'Switch';
 		public static const STATS		: String = 'Stats';
+		public static const WITHDRAW	: String = 'Withdraw';
+		public static const DEPOSIT		: String = 'Deposit';
+		public static const CHOOSE_DKMN	: String = 'Choose a DIKÉMON.';
 	}
 		
 }

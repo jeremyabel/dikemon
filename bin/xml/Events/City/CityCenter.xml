@@ -41,7 +41,7 @@
 		<SEQUENCE>
 			<DIALOG>
 				<SPEAKER>Guy</SPEAKER>
-				<TEXT>That PC is free for any trainer to use! [halt]It's great! I can store any number of Dikémon, [delay 4]and it's all free.   [end]</TEXT>
+				<TEXT>That PC is free for any trainer to use! [halt]It's great! It can store any number of Dikémon, [delay 4]and it's all free.   [end]</TEXT>
 			</DIALOG>
 			<END></END>
 		</SEQUENCE>

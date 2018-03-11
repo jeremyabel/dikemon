@@ -19,14 +19,14 @@ package com.tinyrpg.ui
 		protected var fullStatDisplay : TinyMonFullStatDisplay;
 		protected var isInStatsDisplay : Boolean = false;
 		
-		public function TinyMonSubMenu()
+		public function TinyMonSubMenu( width : int = 43 ) : void
 		{	
 			var newItemArray : Array = [
 				new TinySelectableItem( TinyCommonStrings.STATS.toUpperCase(),  0 ),
 				new TinySelectableItem( TinyCommonStrings.CANCEL.toUpperCase(), 1 ),					
 			];
 			
-			super( '', newItemArray, 43, 33, 12, 1, 1 );
+			super( '', newItemArray, width, 33, 12, 1, 1 );
 			
 			this.fullStatDisplay = new TinyMonFullStatDisplay();
 			this.fullStatDisplay.x = -130 + 24 + 5;

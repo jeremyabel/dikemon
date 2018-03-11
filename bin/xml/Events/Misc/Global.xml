@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
-	<!-- These events can be accessed by any map -->
+	<!-- These events can be accessed by every map -->
 
 	<EVENT_repel_wore_off>
 		<SEQUENCE>
@@ -14,5 +14,16 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_repel_wore_off>
+
+	<EVENT_check_storage_computer>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>[name] booted up the Storage PC.   [end]</TEXT>
+			</DIALOG>
+			<STORAGE_PC></STORAGE_PC>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_storage_computer>
 
 </EVENTS>

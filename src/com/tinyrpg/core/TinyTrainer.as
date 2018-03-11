@@ -114,6 +114,11 @@ package com.tinyrpg.core
 			newTrainer.usedRepel = jsonObject.usedRepel;
 			newTrainer.runAttempts = jsonObject.runAttempts;
 			newTrainer.repelStepCounter = jsonObject.repelStepCounter;
+	
+			// TODO: REMOVE. For testing: add extra mons
+			var starterName : String = TinyNameLookup.getStarterNameForPlayerName( 'Chris' );			
+			var starterMon : TinyMon = TinyMonLookup.getInstance().getMonByHuman( starterName );
+			newTrainer.squad.push( starterMon );
 			
 			return newTrainer;
 		}
@@ -277,7 +282,8 @@ package com.tinyrpg.core
 					
 				TinyLogManager.log( 'repel has worn off!', this );
 				
-				// Trigger the event which shows the "repel has worn off!" dialog box
+				// Trigger the event which shows the "repel has worn off!" dialog box.
+				// The listener for this event is in TinyGameManager.
 				this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.REPEL_WORE_OFF ) );
 			}
 		}

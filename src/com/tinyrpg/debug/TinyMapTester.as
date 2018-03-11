@@ -1,6 +1,5 @@
 package com.tinyrpg.debug 
 {
-	import com.tinyrpg.core.TinyPlayer;
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.data.TinySaveData;
@@ -35,9 +34,9 @@ package com.tinyrpg.debug
 			TinyEventFlagLookup.getInstance().getFlagByName( 'finished_intro_cutscene' ).value = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'CITYDIKEMART';
-			testWarpObject.targetWarpName = 'warpShopDebug';
-			testWarpObject.destinationFacing = 'LEFT';
+			testWarpObject.targetMapName = 'CITYDIKECENTER';
+			testWarpObject.targetWarpName = 'warpPCTesting';
+			testWarpObject.destinationFacing = 'UP';
 			
 //			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
 //			testWarpObject.targetMapName = 'Route29';
@@ -57,8 +56,8 @@ package com.tinyrpg.debug
 			TinyMonLookup.getInstance().initMonsterData();
 			
 			// Load saved data
-			TinyGameManager.getInstance().initWithJSON( TinySaveData.loadToJSON() );//, false );
-//			TinyGameManager.getInstance().gotoMap( testWarpObject );
+			TinyGameManager.getInstance().initWithJSON( TinySaveData.loadToJSON(), false );
+			TinyGameManager.getInstance().gotoMap( testWarpObject );
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;

@@ -19,10 +19,11 @@ package com.tinyrpg.display
 		public var selectID 	: int;
 		public var textString 	: String;
 		public var tinyFont	  	: Boolean;
+		public var customData	: *;
 		
 		private var _disabled 	: Boolean = false;
 		
-		public function TinySelectableItem(itemText : String, idNumber : int = 0, styleSheet : String = 'selecterText', xOffset : int = 0, yOffset : int = -1 )
+		public function TinySelectableItem( itemText : String, idNumber : int = 0, styleSheet : String = 'selecterText', xOffset : int = 0, yOffset : int = -1 )
 		{
 			// Set properties
 			this.idNumber = idNumber;

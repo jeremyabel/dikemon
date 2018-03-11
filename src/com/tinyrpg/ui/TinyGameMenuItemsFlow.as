@@ -17,7 +17,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyGameMenuItemsFlow extends TinyGameMenuBaseFlow
+	public class TinyGameMenuItemsFlow extends TinyBaseFlow
 	{
 		private var itemMenu 		: TinyItemMenu;
 		private var usedItemDialog	: TinyDialogBox;

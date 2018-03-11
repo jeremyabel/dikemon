@@ -5,7 +5,6 @@ package com.tinyrpg.ui
 	import com.greensock.easing.Sine;
 	
 	import com.tinyrpg.core.TinyConfig;
-	import com.tinyrpg.core.TinyPlayer;
 	import com.tinyrpg.data.TinyDialogItem;
 	import com.tinyrpg.display.TinyAutotypeTextField;
 	import com.tinyrpg.display.TinyBattleTurnArrow;
@@ -35,6 +34,7 @@ package com.tinyrpg.ui
 		private var savedDialogSequence : Array = [];
 		private var parsedText : String = '';
 
+		public var enableFastText : Boolean = true;
 		public var battle : Boolean = false;
 		public var time : int = 0;
 
@@ -139,24 +139,6 @@ package com.tinyrpg.ui
 						TinyLogManager.log( 'add new DELAY command: ' + newCommand.value, newDialogBox );
 					}
 
-//					// Is it a player-specific command?
-//					var playerPattern : RegExp = /\[player.?\w*\]/;
-//					var playerMatch : Array = string.match( playerPattern );
-//					if ( playerMatch && playerMatch.length > 0 )
-//					{
-//						// Find the dialog name parameter
-//						playerPattern = /(?<=\[player\s)\w*/;
-//						var playerArray : Array = string.match( playerPattern );
-//						
-//						// Get the string from XML
-//						var xmlString : String = TinyDialogBox.dialogXML.child( String( playerArray[0] ).toUpperCase( ) ).child( TinyPlayer.getInstance( ).playerName.toUpperCase( ) ).toString( );
-//						newCommand = new TinyDialogItem( TinyDialogItem.TEXT, xmlString );
-//						
-//						newDialogBox.parsedText += TinyPlayer.getInstance( ).playerName;
-//						
-//						TinyLogManager.log( 'add new TEXT command: ' + newCommand.value, newDialogBox );
-//					}
-
 					// What kind of command is it?
 					else 
 					{
@@ -247,8 +229,11 @@ package com.tinyrpg.ui
 				{
 					TinyInputManager.getInstance().addEventListener( TinyInputEvent.KEY_UP_ACCEPT, resetSpeed );
 				}
-					
-				this.textField.fastText = true;
+				
+				if ( this.enableFastText ) 
+				{
+					this.textField.fastText = true;
+				}
 			}
 		}
 

@@ -8,7 +8,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyGameMenuBaseFlow extends Sprite 
+	public class TinyBaseFlow extends Sprite 
 	{
 		public function TinyGameMenuBaseFlow() : void
 		{

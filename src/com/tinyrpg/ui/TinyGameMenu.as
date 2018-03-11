@@ -14,7 +14,7 @@ package com.tinyrpg.ui
 	public class TinyGameMenu extends Sprite
 	{
 		private var mainMenu 			: TinyGameMenuMainMenu;
-		private var currentSubMenuFlow	: TinyGameMenuBaseFlow;
+		private var currentSubMenuFlow	: TinyBaseFlow;
 		
 		
 		public function TinyGameMenu() : void
@@ -109,7 +109,7 @@ package com.tinyrpg.ui
 		}
 		
 		
-		private function executeSubMenuFlow( flow : TinyGameMenuBaseFlow ) : void
+		private function executeSubMenuFlow( flow : TinyBaseFlow ) : void
 		{
 			TinyLogManager.log( 'executeSubMenuFlow', this );
 			

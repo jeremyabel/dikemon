@@ -37,9 +37,9 @@ package com.tinyrpg.sequence
 		public function TinyShopCommand() : void
 		{
 			var buyOrSellMenuItems : Array = [];
-			buyOrSellMenuItems[0] = new TinySelectableItem( TinyCommonStrings.BUY,  0 );
-			buyOrSellMenuItems[1] = new TinySelectableItem( TinyCommonStrings.SELL, 1 );
-			buyOrSellMenuItems[2] = new TinySelectableItem( TinyCommonStrings.QUIT, 2 );
+			buyOrSellMenuItems[ 0 ] = new TinySelectableItem( TinyCommonStrings.BUY.toUpperCase(),  0 );
+			buyOrSellMenuItems[ 1 ] = new TinySelectableItem( TinyCommonStrings.SELL.toUpperCase(), 1 );
+			buyOrSellMenuItems[ 2 ] = new TinySelectableItem( TinyCommonStrings.QUIT.toUpperCase(), 2 );
 			
 			this.buyOrSellMenu = new TinySelectList( '', buyOrSellMenuItems, 36, 50 );
 			this.buyOrSellMenu.x = 8;
@@ -103,18 +103,18 @@ package com.tinyrpg.sequence
 			this.welcomeDialog.hide();
 			this.buyOrSellMenu.hide();
 			
-			switch ( this.buyOrSellMenu.selectedItem.textString )
+			switch ( this.buyOrSellMenu.selectedItem.textString.toUpperCase() )
 			{
-				case TinyCommonStrings.BUY:
+				case TinyCommonStrings.BUY.toUpperCase():
 					this.isSelling = false;
 					break;
 					
-				case TinyCommonStrings.SELL:
+				case TinyCommonStrings.SELL.toUpperCase():
 					this.isSelling = true;
 					break;
 					
-				case TinyCommonStrings.QUIT:
-					this.dispatchEvent( new Event( Event.COMPLETE ) );
+				case TinyCommonStrings.QUIT.toUpperCase():
+					this.onBuyOrSellMenuCancelled( null );
 					return;
 			}
 			
