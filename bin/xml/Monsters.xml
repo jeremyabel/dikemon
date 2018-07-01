@@ -1000,4 +1000,35 @@ Soccer Shorts</RIVAL>
     <YIELD_SP_DEF>0</YIELD_SP_DEF>
     <YIELD_SPD>0</YIELD_SPD>
   </MON>
+  <MON>
+    <HUMAN></HUMAN>
+    <NAME>Fax Machine</NAME>
+    <ORIG_NAME>Pidgey</ORIG_NAME>
+    <STYLE>???</STYLE>
+    <RIVAL></RIVAL>
+    <DEX_ENTRY></DEX_ENTRY>
+    <STARTER_TEXT></STARTER_TEXT>
+    <TYPE_1>Normal</TYPE_1>
+    <TYPE_2>Normal</TYPE_2>
+    <MOVES>1: SCRATCH;
+1: SCRATCH;
+1: SCRATCH;
+5: SCRATCH</MOVES>
+    <HP>40</HP>
+    <ATK>45</ATK>
+    <DEF>40</DEF>
+    <SP_ATK>35</SP_ATK>
+    <SP_DEF>35</SP_DEF>
+    <SPD>56</SPD>
+    <EXP>55</EXP>
+    <LV_RATE>MS</LV_RATE>
+    <CATCH_RATE>45</CATCH_RATE>
+    <WEIGHT></WEIGHT>
+    <YIELD_HP>0</YIELD_HP>
+    <YIELD_ATK>0</YIELD_ATK>
+    <YIELD_DEF>0</YIELD_DEF>
+    <YIELD_SP_ATK>0</YIELD_SP_ATK>
+    <YIELD_SP_DEF>0</YIELD_SP_DEF>
+    <YIELD_SPD>0</YIELD_SPD>
+  </MON>
 </MONS>
