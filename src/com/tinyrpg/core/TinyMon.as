@@ -14,7 +14,8 @@ package com.tinyrpg.core
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
-	 * @author jeremyabel
+	 * Class which represents a single mon, with all included
+	 * stats, moves, and other related data.
 	 */
 	public class TinyMon 
 	{
@@ -494,7 +495,7 @@ package com.tinyrpg.core
 		
 		private function statCalculation( base : int, iv : int, ev : int, level : int ) : int
 		{
-			return Math.floor(Math.floor((2 * base + iv + ev) * level / 100 + 5));
+			return Math.floor( Math.floor( (2 * base + iv + ev) * level / 100 + 5 ) );
 		}
 	}
 }

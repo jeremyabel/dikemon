@@ -1,3 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<!-- Remove Guide Guy NPC if the player completed his tutorial -->
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>finished_guide_guy_tutorial</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_NPC>Guide Guy</REMOVE_NPC>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<!-- =========================================================================================== -->
+	<!-- NPCS -->
+	<!-- =========================================================================================== -->
+	
+	<EVENT_talk_guide_guy>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>refused_guide_guy_tutorial</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Guide Guy</SPEAKER>
+							<TEXT>So you came crawling back,[delay 8] eh?[halt] Still want some of my sweet,[delay 8] hot knowledge?   [end]</TEXT>
+						</DIALOG>
+						
+						<!-- Re-ask the player if they want the tutorial -->
+						<DELAY>4</DELAY>
+						<SUB_SEQUENCE>guide_guy_question</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<!--<DIALOG>
+							<SPEAKER>Guide Guy</SPEAKER>
+							<TEXT>You have no idea what you're doing,[delay 4] do you?[halt] That's OK,[delay 8] I've spent my entire life standing in this exact spot,[delay 6] mentally preparing myself for the time when some[delay 4] idiot came along and needs some advice.[halt] And here you are!    [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Hey man,[delay 6] you don't have to be a dick about it!   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>Guide Guy</SPEAKER>
+							<TEXT>Listen up![delay 6] The world of Dikémon is hard and sticky,[delay 8] and there's just no way you'll get through it unless I thrust some hot knowledge deep into your earholes.</TEXT>
+						</DIALOG> -->
+						
+						<!-- Ask the player if they want the tutorial -->
+						<SUB_SEQUENCE>guide_guy_question</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_guide_guy>
+	
+	<!-- Ask if the player will accept the knowledge and start the tutorial -->
+	<EVENT_guide_guy_question>
+		<SEQUENCE>
+			<YESNO_QUESTION>
+				<QUESTION>Accept his knowledge?</QUESTION>
+				<IF_YES>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Fiiiiiiine[delay 4].[delay 4].[delay 4].   [end]</TEXT>
+						</DIALOG>
+						
+						<!-- Guide Guy pushes player down -->
+						<WALK sync="TRUE">
+							<TARGET>Guide Guy</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>8</SPEED>
+						</WALK>
+						<WALK sync="TRUE" keepfacing="TRUE">
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>8</SPEED>
+						</WALK>
+						
+						<DELAY>4</DELAY>									
+						<SHOW_EMOTE>
+							<TARGET>PLAYER</TARGET>
+							<EMOTE>Exclaim</EMOTE>
+						</SHOW_EMOTE>
+						
+						<DELAY>6</DELAY>
+						<HIDE_EMOTE>
+							<TARGET>PLAYER</TARGET>
+						</HIDE_EMOTE>
+						<DELAY>8</DELAY>
+						
+						<DIALOG>
+							<SPEAKER>Guide Guy</SPEAKER>
+							<TEXT>Great![halt] Follow me!   [end]</TEXT>
+						</DIALOG>
+						
+						<SUB_SEQUENCE>guide_guy_tutorial</SUB_SEQUENCE>
+						
+						<SET_FLAG>finished_guide_guy_tutorial</SET_FLAG>
+						
+						<END></END>
+					</SEQUENCE>
+				</IF_YES>
+				<IF_NO>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uhhh,[delay 6] I'm ok, thanks.   [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>Guide Guy</SPEAKER>
+							<TEXT>Dammit,[delay 8] I've been holding this knowledge in for so long![halt] You'll be back[delay 8].[delay 8].[delay 8].   [end]</TEXT>
+						</DIALOG>
+						<SET_FLAG>refused_guide_guy_tutorial</SET_FLAG>
+						<END></END>
+					</SEQUENCE>
+				</IF_NO>
+			</YESNO_QUESTION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_guide_guy_question>
+	
+	<EVENT_guide_guy_tutorial>
+		<SEQUENCE>
+		
+			<!-- Guide Guy and Player walk to the left, then up, to see the Dikémart -->
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>32</DELAY>
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>18</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>10</DELAY>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>DIKECENTER   [end]</TEXT>
+			</DIALOG>
+			
+			<DELAY>10</DELAY>
+			
+			<!-- Guide Guy and Player walk to the left some more, to see the Dikémart -->
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>6</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>6</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>56</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>	
+			<DELAY>10</DELAY>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>DIKEMART   [end]</TEXT>
+				<!--<TEXT>This is a DIKÉMART.[halt] They sell balls for catching wild Dikémon, and other useful items.[halt] Place smells kinda funny though,[delay 8] so don't spend too long in there.  [end]</TEXT>-->
+			</DIALOG>
+			
+			<DELAY>10</DELAY>
+			
+			<!-- Guide Guy and Player walk to the left some more, then down -->
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>10</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>10</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>84</DELAY>
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>22</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>10</DELAY>	
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>SEA   [end]</TEXT>
+			</DIALOG>
+			
+			<DELAY>10</DELAY>
+			
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>22</DELAY>
+			
+			<END></END>
+		</SEQUENCE>
+	</EVENT_guide_guy_tutorial>
+
+	<!-- =========================================================================================== -->
+	<!-- OBJECTS -->
+	<!-- =========================================================================================== -->	
+
+	<EVENT_sign_welcome>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>THE BIG CITY:[halt] It's the biggest one we've got,[delay 6] so you better like it.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_welcome>
+	
+	<EVENT_sign_house_2>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Some guy lives here, probably.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_sign_house_2>
+	
 </EVENTS>

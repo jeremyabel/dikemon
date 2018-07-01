@@ -29,5 +29,9 @@
 	<!-- Route 29 -->
 	<FLAG>team_vomit_talked_girl</FLAG>
 	<FLAG>fought_team_vomit</FLAG>
+	
+	<!-- City -->
+	<FLAG>finished_guide_guy_tutorial</FLAG>
+	<FLAG>refused_guide_guy_tutorial</FLAG>
 
 </FLAGS>

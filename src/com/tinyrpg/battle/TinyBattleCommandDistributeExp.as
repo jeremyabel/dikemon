@@ -18,7 +18,7 @@ package com.tinyrpg.battle
 		{
 			super( battle, TinyBattleCommand.COMMAND_DISTRIBUTE_EXP, TinyBattleCommand.USER_PLAYER );
 			
-			TinyLogManager.log('adding battle command: ' + this.logString, this);
+			TinyLogManager.log( 'adding battle command: ' + this.logString, this );
 			
 			this.participatingMons = participatingMons;
 			this.earnedExp = earnedExp;
@@ -50,15 +50,16 @@ package com.tinyrpg.battle
 					for each ( var newMove : TinyMoveData in levelUpInfo.newMoves )
 					{
 						var firstOpenMoveSlot : int = mon.moveSet.getFirstOpenMoveSlot();
+						
+						// If there's an open slot, just add the move and show the basic dialog. 
+						// If there isn't an open move slot, the player is given the option to overwrite an old move
 						if ( firstOpenMoveSlot > -1 )
 						{
-							// There's an open slot, just add the move and show the basic dialog 
 							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.LEARNED_MOVE, mon, null, newMove ) );
 							mon.moveSet.setMoveInSlot( newMove, firstOpenMoveSlot );
 						}
 						else 
 						{
-							// If there isn't an open move slot, the player is given the option to overwrite an old move
 							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.TRYING_TO_LEARN, mon, null, newMove ) );
 						}
 					}

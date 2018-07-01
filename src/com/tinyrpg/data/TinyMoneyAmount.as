@@ -1,7 +1,8 @@
 package com.tinyrpg.data
 {
 	/**
-	 * @author jeremyabel
+	 * Class which represents an amount of money, either as a reward from a trainer or
+	 * in the player's inventory. 
 	 */
 	public class TinyMoneyAmount 
 	{
@@ -12,6 +13,9 @@ package com.tinyrpg.data
 			this.value = amount;
 		}
 		
+		/**
+		 * Returns a formatted string based on value: 100 = $1.00
+		 */
 		public function toString() : String
 		{
 			if ( this.value < 100 )

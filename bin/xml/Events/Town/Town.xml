@@ -58,7 +58,7 @@
 								<SEQUENCE>
 									<DIALOG>
 										<SPEAKER>Lady</SPEAKER>
-										<TEXT>Oh, [delay 4]are you on your way to the city? [halt]Take these, [delay 7]maybe you'll catch something out there!   [end]</TEXT>
+										<TEXT>Oh, [delay 4]are you on your way to the city? [halt]Take these fresh balls, [delay 7]maybe you'll catch something out there!   [end]</TEXT>
 									</DIALOG>
 									<GIVE_ITEM>Pokeball</GIVE_ITEM>
 									<GIVE_ITEM>Pokeball</GIVE_ITEM>

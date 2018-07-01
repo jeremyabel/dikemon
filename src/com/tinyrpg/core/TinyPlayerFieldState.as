@@ -37,6 +37,10 @@ package com.tinyrpg.core
 			this.walkSprite.addEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
 		}
 		
+		
+		/**
+		 * Prepares object for destruction by removing all event listeners.
+		 */	
 		public function destroy() : void
 		{
 			this.walkSprite.removeEventListener( TinyFieldMapEvent.JUMP_HIT, this.onHitJump );
@@ -75,6 +79,13 @@ package com.tinyrpg.core
 			}
 		}
 		
+		
+		/**
+		 * Handler for collisions with the JUMP layer. The JUMP layer is only traversable in one direction, 
+		 * and it triggers a 3-step jump animation over a ledge.
+		 * 
+		 * @param	event	the {@link TinyFieldMapEvent} instance
+		 */
 		private function onHitJump( event : TinyFieldMapEvent ) : void
 		{
 			TinyLogManager.log( 'onHitJump: ' + event.param.object.name, this );
@@ -100,6 +111,13 @@ package com.tinyrpg.core
 			this.walkSprite.showJumpShadow();
 		}
 		
+		
+		/**
+		 * Function that is called when the jump movement is complete. Removes the jump shadow sprite and 
+		 * returns control to the player. 
+		 * 
+		 * @param	event	the {@link TinyFieldMapEvent} instance
+		 */
 		private function onJumpComplete( event : TinyFieldMapEvent ) : void 
 		{
 			TinyLogManager.log( 'onJumpComplete', this );
@@ -112,6 +130,13 @@ package com.tinyrpg.core
 			TinyInputManager.getInstance().setTarget( this.walkSprite );
 		}
 		
+		
+		/**
+		 * Handler for collisions with the GRASS layer. GRASS is traversable in all directions, but it has the 
+		 * potential to trigger a random encounter.
+		 * 
+		 * @param	event	the {@link TinyFieldMapEvent} instance
+		 */
 		private function onHitGrass( event : TinyFieldMapEvent ) : void 
 		{
 			this.incrementStepCounter();
@@ -146,12 +171,13 @@ package com.tinyrpg.core
 			}
 		}
 		
-		private function onHitNothing( event : TinyFieldMapEvent ) : void
-		{
-			this.incrementStepCounter();
-			this.clearLastWarp();
-		}
-				
+		
+		/**
+		 * Handler for steps which collide with {@link TinyFieldMapObjectWarp} objects. These are single-tile objects which are
+		 * traversable in all directions, and trigger a map transition.
+		 * 
+		 * @param	warpObject	the {@link TinyFieldMapObjectWarp} warp object that was hit
+		 */		
 		private function onHitWarp( warpObject : TinyFieldMapObjectWarp ) : void
 		{
 			TinyLogManager.log( 'onHitWarp: ' + warpObject.targetMapName, this );
@@ -187,6 +213,13 @@ package com.tinyrpg.core
 			}
 		}
 		
+		
+		/**
+		 * Handler for steps which collide with {@link TinyFieldMapObjectNPC} objects. NPCs are not traversable in any direction. 
+		 * 
+		 * @param 	npcObject			the {@link TinyFieldMapObjectNPC} object that was hit
+		 * @param 	fromAcceptKeypress	uhhhh I forget
+		 */
 		private function onHitNPC( npcObject : TinyFieldMapObjectNPC, fromAcceptKeypress : Boolean ) : void
 		{
 			TinyLogManager.log( 'onHitNPC: ' + npcObject.npcName, this );
@@ -206,6 +239,14 @@ package com.tinyrpg.core
 			TinyMapManager.getInstance().startEventByName( npcObject.eventName );
 		}
 		
+		
+		/**
+		 * Handler for steps which collide with {@link TinyFieldMapObjectTrigger} objects. Triggers are traversable in all directions
+		 * and can execute an event when they are hit.
+		 * 
+		 * @param 	triggerObject		the {@link TinyFieldMapObjectTrigger} object that was hit
+		 * @param	fromAcceptKeypress	uhhhh I forget
+		 */
 		private function onHitTrigger( triggerObject : TinyFieldMapObjectTrigger, fromAcceptKeypress : Boolean ) : void
 		{
 			TinyLogManager.log( 'onHitTrigger: ' + triggerObject.eventName, this );
@@ -230,6 +271,18 @@ package com.tinyrpg.core
 			
 			// Good to go: play the event
 			TinyMapManager.getInstance().startEventByName( triggerObject.eventName, triggerObject.isGlobal );
+		}
+		
+		
+		/**
+		 * Handler for steps which collide with nothing.
+		 * 
+		 * @param 	event	the {@link TinyFieldMapEvent} instance
+		 */
+		private function onHitNothing( event : TinyFieldMapEvent ) : void
+		{
+			this.incrementStepCounter();
+			this.clearLastWarp();
 		}
 	
 		

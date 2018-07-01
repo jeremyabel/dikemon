@@ -34,9 +34,9 @@ package com.tinyrpg.battle
 				{	
 					var firstOpenMoveSlot : int = levelUpInfo.mon.moveSet.getFirstOpenMoveSlot();
 			
+					// Add move immediately if there's an open slot, otherwise show the "trying to learn" dialog
 					if ( firstOpenMoveSlot > -1 )
 					{
-						// Add move immediately if there's an open slot
 						levelUpInfo.mon.moveSet.setMoveInSlot( newMove, firstOpenMoveSlot );
 						
 						// Show "learned move" dialog

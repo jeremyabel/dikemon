@@ -32,7 +32,8 @@ package com.tinyrpg.battle
 					case 3: chosenMove = mon.moveSet.move4; break; 
 				}				
 			}
-				
+			
+			// If the chosen move has enough PP, return it. Otherwise, pick another one. 
 			if ( chosenMove.currentPP > 0 ) {
 				TinyLogManager.log('getWildMonMove: ' + mon.name + ' - ' + chosenMove.name, TinyTrainerAI); 
 				return chosenMove; 

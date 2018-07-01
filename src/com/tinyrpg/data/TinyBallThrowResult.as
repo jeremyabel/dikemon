@@ -3,7 +3,7 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
-	 * @author jeremyabel
+	 * Class which represents the results of a ball throw event. 
 	 */
 	public class TinyBallThrowResult 
 	{

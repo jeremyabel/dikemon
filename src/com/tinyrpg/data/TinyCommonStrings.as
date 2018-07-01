@@ -1,7 +1,7 @@
 package com.tinyrpg.data
 {
 	/**
-	 * @author jeremyabel
+	 * Class which contains static constants for commonly-used strings.
 	 */
 	public class TinyCommonStrings 
 	{
@@ -23,5 +23,4 @@ package com.tinyrpg.data
 		public static const DEPOSIT		: String = 'Deposit';
 		public static const CHOOSE_DKMN	: String = 'Choose a DIKÉMON.';
 	}
-		
 }

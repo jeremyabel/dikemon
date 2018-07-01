@@ -11,6 +11,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.utils.TinyMath;	
 
 	/**
+	 * Class which contains static functions for doing calculations related to mon and trainer battles.
+	 *   
 	 * @author jeremyabel
 	 */
 	public class TinyBattleMath 
@@ -27,7 +29,15 @@ package com.tinyrpg.battle
 		public static const SAME_TYPE_BONUS			: Number = 1.5;
 		public static const MAX_CATCH_WOBBLES		: int = 4;
 		
-		
+		/**
+		 * Returns true if an enemy mon's move should be executed before the player mon's move.
+		 * 
+		 * @param 	playerMon	the player's mon
+		 * @param 	playerMove	the move the player's mon is using
+		 * @param 	enemyMon	the enemy's mon
+		 * @param	enemyMove	the move the enemy's mon is using
+		 * @return				true if the enemy mon's move should be executed firsst
+		 */
 		public static function doesEnemyGoFirst( playerMon : TinyMon, playerMove : TinyMoveData, enemyMon : TinyMon, enemyMove : TinyMoveData ) : Boolean
 		{
 			// Attacks with higher priority go first
@@ -45,7 +55,20 @@ package com.tinyrpg.battle
 			return Math.random() > 0.5; 
 		}
 		
-		
+		/**
+		 * Runs a series of checks to see if a mon is capable of attacking. This adds additional events to the stack
+		 * to handle an attack failing due to various status conditions. For example, an attack failing due to the 
+		 * sleep status effect would add events that play the sleep effect animation, and show a "fast asleep" dialog
+		 * message. 
+		 * 
+		 * @param	targetMon		the mon doing the attack
+		 * @param	isEnemy			whether or not the mon is on the enemy side
+		 * @param	battleEvent		the current battle event sequence
+		 * @return					string representing the check result, either:
+		 * 							PRE_ATTACK_RESULT_PASSED, 
+		 * 							PRE_ATTACK_RESULT_FAILED, or 
+		 * 							PRE_ATTACK_RESULT_CONFUSED
+		 */
 		public static function doPreAttackChecks( targetMon : TinyMon, isEnemy : Boolean, battleEvent : TinyBattleEventSequence ) : String 
 		{
 			TinyLogManager.log('doPreAttackChecks: ' + targetMon.name, TinyBattleMath);
@@ -112,14 +135,23 @@ package com.tinyrpg.battle
 				// Show "paralyzed" dialog
 				battleEvent.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.IS_PARALYZED_2, targetMon ) );
 				battleEvent.addEnd();	
+				
 				return PRE_ATTACK_RESULT_FAILED;
 			}
 			
 			TinyLogManager.log('doPreAttackChecks: passed', TinyBattleMath);
 			return PRE_ATTACK_RESULT_PASSED;
 		}
-		
-		
+
+		/**
+		 * Returns true if a given move used by one mon hits the defending mon
+		 * 
+		 * @param	attackingMon		the mon using the move
+		 * @param 	defendingMon		the mon recieving the move
+		 * @param	move				the move the attacking mon is using
+		 * @param	isSecondaryEffect	whether or not this check is being made via a move's secondary effect
+		 * @return						true if the move hits, false otherwise
+		 */
 		public static function checkAccuracy( attackingMon : TinyMon, defendingMon : TinyMon, move : TinyMoveData, isSecondaryEffect : Boolean = false ) : Boolean
 		{			
 			var accuracyValue : int = isSecondaryEffect ? move.effectAccuracy : move.accuracy;
@@ -164,7 +196,15 @@ package com.tinyrpg.battle
 			return result;
 		}
 
-			
+		/**
+		 * Returns the amount of damage dealt between two mons using a given move.
+		 * 
+		 * @param 	attackingMon	the mom using the move
+		 * @param	defendingMon	the mon recieving the move
+		 * @param	move			the move the attacking mon is using
+		 * @param 	isCrit			whether or not the move is a critical hit
+		 * @return					the amount of damage dealt to the defending mon
+		 */
 		public static function calculateDamage( attackingMon : TinyMon, defendingMon : TinyMon, move : TinyMoveData, isCrit : Boolean ) : int 
 		{
 			// Initial damage variables
@@ -242,7 +282,9 @@ package com.tinyrpg.battle
 			return damage;	
 		}
 		
-		
+		/**
+		 * Returns a boolean for whether or not the player can run from a battle.
+		 */
 		public static function canRun( targetTrainer : TinyTrainer, trainerMon : TinyMon, targetMon : TinyMon ) : Boolean
 		{	
 			// If the trainer's mon's speed is greater than or equal to the target's speed, running is automatically successful. 
@@ -258,7 +300,13 @@ package com.tinyrpg.battle
 			return R < X;
 		}
 		
-		
+		/**
+		 * Returns the number of experience points earned for defeating a given mon.
+		 * 
+		 * @param 	defeatedMon				the defeated mon
+		 * @param	numMonsUsedInBattle		the number of mons the player used in the battle
+		 * @param 	isWildEncounter			true if the mon was encountered in the wild rather than in a trainer battle
+		 */
 		public static function getEarnedExp( defeatedMon : TinyMon, numMonsUsedInBattle : int, isWildEncounter : Boolean ) : int
 		{
 			var L : int = defeatedMon.level;
@@ -269,7 +317,13 @@ package com.tinyrpg.battle
 			return Math.floor( Math.max( 1, L * G / ( 7 * S ) ) * X );
 		}
 		
-		
+		/**
+		 * Returns a boolean for whether or not a given target mon can be caught.
+		 * 
+		 * @param 	targetMon	the mon the ball was thrown at
+		 * @param 	ballBonus	the catch rate bonus provided by the ball type
+		 * @return				true if the mon can be caught, false otherwise
+		 */
 		public static function canCatch( targetMon : TinyMon, ballBonus : Number = 1.0 ) : Boolean
 		{
 			var A : int = targetMon.currentHP * 2;
@@ -300,7 +354,13 @@ package com.tinyrpg.battle
 			return false;
 		}
 		
-		
+		/**
+		 * Returns the number of times a ball wobbles before a given mon is captured or escapes.
+		 * 
+		 * @param 	targetMon	the mon the ball was thrown at
+		 * @param 	ballBonus	the catch rate bonus provided by the ball type
+		 * @return				the number of ball wobbles
+		 */
 		public static function getNumCaptureWobbles( targetMon : TinyMon, ballBonus : Number = 1.0 ) : int
 		{
 			TinyLogManager.log('getNumCaptureWobbles', TinyBattleMath);

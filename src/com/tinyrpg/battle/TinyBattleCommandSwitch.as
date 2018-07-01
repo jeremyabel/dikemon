@@ -16,11 +16,6 @@ package com.tinyrpg.battle
 		public var switchMon : TinyMon;
 		public var isForced : Boolean;
 		
-		override public function get logString() : String
-		{
-			return 'SWITCH: ' + this.user + ' switched to ' + switchMon.name;
-		}
-		
 		public function TinyBattleCommandSwitch( battle : TinyBattle, user : String, switchMon : TinyMon, isForced : Boolean = false )
 		{
 			super( battle, TinyBattleCommand.COMMAND_SWITCH, user );
@@ -98,6 +93,11 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('doSwitchMon: ' + this.switchMon.name, this);
 			super.execute();
+		}
+		
+		override public function get logString() : String
+		{
+			return 'SWITCH: ' + this.user + ' switched to ' + switchMon.name;
 		}
 	}
 }

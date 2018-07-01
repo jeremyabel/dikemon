@@ -7,7 +7,10 @@ package com.tinyrpg.core
 	import com.tinyrpg.utils.TinyLogManager;
 
 	import flash.events.EventDispatcher;
-
+	
+	/**
+	 * Class which represents an item the player can use in battle or in the field.
+	 */
 	public class TinyItem extends EventDispatcher
 	{
 		private static var REMOVE_STATUS_PARALYSIS	: String = '-PARALYZE';  
@@ -46,19 +49,23 @@ package com.tinyrpg.core
 		
 		private var trace			: Boolean = false;
 		
+		
+		/**
+		 * Static function which returns a new TinyItem using the given XML data.
+		 */
 		public static function newFromXML( xmlData : XML ) : TinyItem
 		{
 			var newItem : TinyItem = new TinyItem;
 			TinyLogManager.log( 'newFromXML', newItem );
 			
-			// Set properties
+			// Set properties from XML data
 			newItem.originalName = xmlData.child( 'NAME' ).text();
 			newItem.name = xmlData.child( 'RENAME' ).text();
 			newItem.description = xmlData.child( 'DESCRIPTION' ).text();
 			newItem.price = new TinyMoneyAmount( int( xmlData.child( 'PRICE' ).text() ) );
 			newItem.effect = xmlData.child( 'EFFECT' ).text();
 			
-			// Initial parsing for item effects
+			// Initial parsing for item effects (for simple items like status heals)
 			var needsAdditionalParsing : Boolean = true;
 			switch ( newItem.effect )
 			{
@@ -70,7 +77,7 @@ package com.tinyrpg.core
 				default: break;
 			}
 			
-			// Do any additional parsing
+			// Do any additional parsing (for items that have effect numbers)
 			if ( needsAdditionalParsing ) 
 			{
 				// Remove underscores 
@@ -93,15 +100,19 @@ package com.tinyrpg.core
 			
 			TinyLogManager.log('new item: ' + newItem.name, newItem);
 			
-			// Trace stuff
-			if ( newItem.trace ) 
-			{
-				newItem.printLog();
-			}
+			// Trace stuff if requested
+			if ( newItem.trace ) newItem.printLog();
 			
 			return newItem;
 		}
 
+	
+		/**
+		 * Returns a JSON object for this item. 
+		 * Used for seralizing data when saving the game.
+		 * 
+		 * @return 	a JSON object for this item
+		 */
 		public function toJSON() : Object
 		{
 			var jsonObject : Object = {};
@@ -112,6 +123,10 @@ package com.tinyrpg.core
 			return jsonObject;
 		}
 		
+		
+		/**
+		 * Prints item stats and info to the console.
+		 */
 		public function printLog() 
 		{
 			TinyLogManager.log('item: ====================================',  this);
@@ -124,6 +139,20 @@ package com.tinyrpg.core
 			TinyLogManager.log('item effect amount: ' + this.effectAmount, this);
 		}
 		
+		
+		/**
+		 * Checks if an item can be used on a target mon in a given context. For example, certain items
+		 * can only be used outside of battle, and other items can only be used if a mon has a certain
+		 * status effect. A {@link TinyItemUseResult} object is returned which contains data on what
+		 * message to show the player (if any), and whether or not the item can be used.
+		 * 
+		 * @param 	useContext		string representing the context the item is used in. Valid values are
+		 * 							"ITEM_CONTEXT_BATTLE" or "ITEM_CONTEXT_FIELD"
+		 * @param	targetMon		the mon the item will be used on. If none is specified, the item
+		 * 							will be used on the player themselves, if possible. 
+		 * @return					A {@link TinyItemUseResult} object which contains the results
+		 * 							of the usage check and any relevant info to send to the player.
+		 */
 		public function checkCanUse( useContext : String, targetMon : TinyMon = null ) : TinyItemUseResult
 		{
 			TinyLogManager.log("checkCanUse: " + useContext, this);
@@ -215,8 +244,16 @@ package com.tinyrpg.core
 		}
 		
 		
+		/**
+		 * Applies the item to a given target mon. If no mon is specified, the item has a global
+		 * effect on the player, for example: Repel.
+		 * 
+		 * @param	targetMon	the mon the item will be used on
+		 * @return				the relevant "item used" string to be shown in a dialog box 
+		 */
 		public function useItem( targetMon : TinyMon = null ) : String
-		{
+		{	
+			// Deal with items that are required to be used on a specific mon
 			if ( targetMon ) 
 			{
 				TinyLogManager.log( 'useItem: ' + this.name + ' on ' + targetMon.name, this );
@@ -271,7 +308,7 @@ package com.tinyrpg.core
 				// Revive
 				if ( this.revive ) 
 				{	
-					// Revives heal the target mon to half of their max HP
+					// The Revive item heals the target mon to half of their max HP
 					var revivedHP : int = Math.floor( targetMon.maxHP / 2 );
 					TinyLogManager.log( 'revived with HP: ' + revivedHP, this );
 					targetMon.recoverHP( revivedHP );
@@ -280,10 +317,11 @@ package com.tinyrpg.core
 				
 				return itemUsedString;
 			}
-			else
+			else	// Deal with items that are not required to be used on a specific mon
 			{
 				TinyLogManager.log( 'useItem: ' + this.name, this );
 				
+				// Repel
 				if ( this.isRepel ) 
 				{
 					TinyGameManager.getInstance().playerTrainer.usedRepel = true;

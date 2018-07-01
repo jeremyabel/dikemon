@@ -90,7 +90,7 @@ package com.tinyrpg.lookup
 		{
 			TinyLogManager.log( 'getFieldSpriteId: ' + name, null );
 			
-			switch ( name )
+			switch ( name.toUpperCase() )
 			{
 				default:
 				case "PLAYER 1":			return PLAYER_1;
@@ -209,6 +209,7 @@ package com.tinyrpg.lookup
 				case 'COMPUTER': 		newSprite = new Computer; break;
 				case 'FOUR OF CLUBS': 	newSprite = new FourOfClubs; break;
 				case 'ACE OF SPADES': 	newSprite = new AceOfSpades; break;
+				case 'FAX MACHINE':		newSprite = new FaxMachine; break;
 					
 				// Humans
 				case 'GAGNON': 			newSprite = new HumanGagnon; break;

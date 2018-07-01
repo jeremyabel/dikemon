@@ -1,6 +1,5 @@
 package com.tinyrpg.data 
 {
-
 	/**
 	 * @author jeremyabel
 	 */

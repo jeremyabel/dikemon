@@ -10,7 +10,15 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyMath;
 	
 	/**
-	 * @author jeremyabel
+	 * Class which represents a NPC sprite on the map. 
+	 * 
+	 * NPCs consist of a {@link TinyWalkSprite} which contains the visual representation
+	 * of the NPC, along with an event name which will be executed if the player presses
+	 * the Activate button while touching the NPC's sprite.  
+	 * 
+	 * In the original Pokemon Crystal, some NPCs were able to move. This has not been
+	 * implemented here in order to keep things simple. NPCs are able to spin in place,
+	 * in order to prevent them from being entirely static. 
 	 */
 	public class TinyFieldMapObjectNPC extends TinyFieldMapObject
 	{
@@ -56,6 +64,10 @@ package com.tinyrpg.data
 			super.dataReady();
 		}
 		
+		
+		/**
+		 * If spinning is enabled, start the spin update after a brief delay. 
+		 */
 		public function tryRestartSpin() : void
 		{
 			if ( this.randomSpin ) 
@@ -65,17 +77,10 @@ package com.tinyrpg.data
 			}
 		}
 		
-		public function setFacingFromPlayerFacing( facing : String ) : void
-		{
-			switch ( facing )
-			{
-				case 'UP':		this.walkSprite.setFacing( 'DOWN' ); break;
-				case 'DOWN':	this.walkSprite.setFacing( 'UP' ); break;
-				case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
-				case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
-			}
-		}
 		
+		/**
+		 * Randomizes the NPC's facing direction every 100 - 200 miliseconds.  
+		 */
 		private function updateSpin() : void
 		{
 			if ( this.enableSpin )
@@ -84,6 +89,23 @@ package com.tinyrpg.data
 				this.walkSprite.setFacing( this.randomDirections[ directionIndex ] );
 				
 				TweenLite.delayedCall( TinyMath.randomInt( 100, 200 ), this.updateSpin, null, true );
+			}
+		}
+		
+		
+		/**
+		 * Sets the NPC's facing direction such that it is facing towards the player.
+		 * 
+		 * @param	facing	the player's current facing direction
+		 */
+		public function setFacingFromPlayerFacing( facing : String ) : void
+		{
+			switch ( facing )
+			{
+				case 'UP':		this.walkSprite.setFacing( 'DOWN' ); break;
+				case 'DOWN':	this.walkSprite.setFacing( 'UP' ); break;
+				case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
+				case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
 			}
 		}
 	}

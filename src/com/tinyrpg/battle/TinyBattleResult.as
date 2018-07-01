@@ -2,6 +2,9 @@ package com.tinyrpg.battle
 {
 
 	/**
+	 * Class which represents the final result of a battle.
+	 * Used for determining what action to take after a battle is completed.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyBattleResult 
@@ -14,6 +17,9 @@ package com.tinyrpg.battle
 		
 		public var value : String;
 		
+		/**
+		 * Class constructor which takes a results string value
+		 */
 		public function TinyBattleResult( result : String ) : void
 		{
 			this.value = result;
