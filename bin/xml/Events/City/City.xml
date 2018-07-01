@@ -106,9 +106,10 @@
 						
 						<DIALOG>
 							<SPEAKER>Guide Guy</SPEAKER>
-							<TEXT>Great![halt] Follow me!   [end]</TEXT>
+							<TEXT>Great![delay 8] Follow me!   [end]</TEXT>
 						</DIALOG>
 						
+						<!-- Run the tutorial sub-sequence -->
 						<SUB_SEQUENCE>guide_guy_tutorial</SUB_SEQUENCE>
 						
 						<SET_FLAG>finished_guide_guy_tutorial</SET_FLAG>
@@ -138,7 +139,7 @@
 	<EVENT_guide_guy_tutorial>
 		<SEQUENCE>
 		
-			<!-- Guide Guy and Player walk to the left, then up, to see the Dikémart -->
+			<!-- Guide Guy and Player walk to the left, then up, to see the Dikécenter -->
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
@@ -173,13 +174,29 @@
 				<TARGET>PLAYER</TARGET>
 				<FACING>UP</FACING>
 			</SET_FACING>
-			<DELAY>10</DELAY>
+			<DELAY>6</DELAY>
 			<DIALOG>
 				<SPEAKER>Guide Guy</SPEAKER>
-				<TEXT>DIKECENTER   [end]</TEXT>
+				<TEXT>This here is the Dikécenter![halt] You bust up any of your dudes,[delay 8] they'll fix 'em up for free!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>But what if I get hurt?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>You,[delay 8] the human?![halt] Well,[delay 10] you'll have to find a hospital,[delay 8] which is three towns over,[delay 8] and you better hope your insurance[delay 4] is up to date and[delay 8].[delay 8].[delay 8].  [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Ok,[delay 10] ok![halt] I guess I'll just die then[delay 8].[delay 8].[delay 8].   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>Now you're gettin' it!   [end]</TEXT>
 			</DIALOG>
 			
-			<DELAY>10</DELAY>
+			<DELAY>2</DELAY>
 			
 			<!-- Guide Guy and Player walk to the left some more, to see the Dikémart -->
 			<WALK sync="TRUE">
@@ -203,29 +220,68 @@
 				<TARGET>PLAYER</TARGET>
 				<FACING>UP</FACING>
 			</SET_FACING>	
-			<DELAY>10</DELAY>
+			<DELAY>6</DELAY>
 			<DIALOG>
 				<SPEAKER>Guide Guy</SPEAKER>
-				<TEXT>DIKEMART   [end]</TEXT>
-				<!--<TEXT>This is a DIKÉMART.[halt] They sell balls for catching wild Dikémon, and other useful items.[halt] Place smells kinda funny though,[delay 8] so don't spend too long in there.  [end]</TEXT>-->
+				<TEXT>This is a DIKÉMART.[halt] They sell balls for catching wild Dikémon, and other useful items.[halt] Place smells kinda funny though,[delay 8] so don't spend too long in there.  [end]</TEXT>
 			</DIALOG>
 			
-			<DELAY>10</DELAY>
+			<DELAY>6</DELAY>
 			
-			<!-- Guide Guy and Player walk to the left some more, then down -->
+			<!-- Guide Guy and Player walk to the left some more, stopping to talk about the "gym" -->
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
-				<TILES>10</TILES>
+				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
 			<WALK sync="TRUE">
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
-				<TILES>10</TILES>
+				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>84</DELAY>
+			<DELAY>50</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>	
+			<DELAY>6</DELAY>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>Up there is the gym,[delay 10] I guess?   [end]</TEXT>
+			</DIALOG>
+			<DELAY>2</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>Trainers come here from all over the world to see if they've got what it takes![halt] Do you have what it takes?![halt] Nah,[delay 8] probably not.   [end]</TEXT>
+			</DIALOG>
+			
+			<DELAY>6</DELAY>
+			
+			<!-- Guide Guy and Player walk to the left more, then down to the sea -->
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>34</DELAY>
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>DOWN</DIRECTION>
@@ -247,14 +303,15 @@
 				<TARGET>PLAYER</TARGET>
 				<FACING>UP</FACING>
 			</SET_FACING>
-			<DELAY>10</DELAY>	
+			<DELAY>6</DELAY>	
 			<DIALOG>
 				<SPEAKER>Guide Guy</SPEAKER>
-				<TEXT>SEA   [end]</TEXT>
+				<TEXT>This here is the sea.[halt] Don't touch it,[delay 8] its highly poisonous![halt] Whatever they're pumping out of that weird island down there has really screwed with the water.[halt] You throw anything in there,[delay 8] it'll probably come out as some horrible gen-7 abomination.   [end]</TEXT>
 			</DIALOG>
 			
-			<DELAY>10</DELAY>
+			<DELAY>6</DELAY>
 			
+			<!-- Guide Guy and Player walk to the right to Guide Guy's home. Guide Guy walks inside and dies, yay! -->
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>DOWN</DIRECTION>
@@ -267,8 +324,42 @@
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>22</DELAY>
-			
+			<DELAY>18</DELAY>
+			<WALK sync="TRUE">
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK sync="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>38</DELAY>
+			<SET_FACING>
+				<TARGET>Guide Guy</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>10</DELAY>
+			<DIALOG>
+				<SPEAKER>Guide Guy</SPEAKER>
+				<TEXT>Welp,[delay 8] that's the end of the tour![halt] With that out of the way,[delay 8] my life is complete![halt] Now,[delay 8] I can die.[halt] Later kiddo!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>6</DELAY>
+			<WALK>
+				<TARGET>Guide Guy</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			<REMOVE_NPC>Guide Guy</REMOVE_NPC>
+			<DELAY>4</DELAY>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_guide_guy_tutorial>
