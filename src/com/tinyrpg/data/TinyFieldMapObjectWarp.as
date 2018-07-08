@@ -24,6 +24,9 @@ package com.tinyrpg.data
 		// If none is provided, no event will play.
 		public var postFadeSequenceName : String;
 		
+		// Whether or not the post-fade event is a global event
+		public var isPostFadeSequenceGlobal : Boolean = false;
+		
 		public var useGridPos : Boolean = false;
 		public var gridPosX : int;
 		public var gridPosY : int;

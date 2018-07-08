@@ -209,7 +209,7 @@
 		<SEQUENCE>
 			<DIALOG>
 				<SPEAKER></SPEAKER>
-				<TEXT>Let's see what's in the fridge... [halt] Good, it looks like your mom got that pudding you asked for.   [end]</TEXT>
+				<TEXT>Let's see what's in the fridge...[halt] Good, it looks like your mom got that pudding you asked for.   [end]</TEXT>
 			</DIALOG>
 			<END></END>
 		</SEQUENCE>

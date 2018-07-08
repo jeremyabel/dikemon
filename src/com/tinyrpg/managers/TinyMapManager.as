@@ -141,7 +141,7 @@ package com.tinyrpg.managers
 			if ( this.warpCommandInProgress && this.warpCommandInProgress.preFadeSequenceName )
 			{
 				TinyLogManager.log( 'starting pre-fade sequence: ' + this.warpCommandInProgress.preFadeSequenceName, this );
-				this.startEventByName( this.warpCommandInProgress.preFadeSequenceName );
+				this.startEventByName( this.warpCommandInProgress.preFadeSequenceName, this.warpCommandInProgress.isPreFadeSequenceGlobal );
 			}
 			else
 			{
@@ -172,12 +172,12 @@ package com.tinyrpg.managers
 			if ( this.warpCommandInProgress && this.warpCommandInProgress.postFadeSequenceName )
 			{
 				TinyLogManager.log( 'starting post-fade sequence: ' + this.warpCommandInProgress.postFadeSequenceName, this );
-				this.startEventByName( this.warpCommandInProgress.postFadeSequenceName );
+				this.startEventByName( this.warpCommandInProgress.postFadeSequenceName, this.warpCommandInProgress.isPostFadeSequenceGlobal );
 			}
 			else if ( this.warpObjectInProgress && this.warpObjectInProgress.postFadeSequenceName )
 			{
 				TinyLogManager.log( 'starting post-fade sequence: ' + this.warpObjectInProgress.postFadeSequenceName, this );
-				this.startEventByName( this.warpObjectInProgress.postFadeSequenceName );
+				this.startEventByName( this.warpObjectInProgress.postFadeSequenceName, this.warpObjectInProgress.isPostFadeSequenceGlobal );
 			}
 			else
 			{

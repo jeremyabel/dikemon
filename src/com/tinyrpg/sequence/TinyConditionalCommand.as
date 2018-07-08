@@ -20,6 +20,7 @@ package com.tinyrpg.sequence
 		public static const CONDITION_RIVAL		: String = 'RIVAL';
 		public static const CONDITION_MONEY		: String = 'MONEY';
 		public static const CONDITION_FACING 	: String = 'FACING';
+		public static const CONDITION_HEALTHY	: String = 'HEALTHY';
 		
 		public var conditionType	: String;
 		public var conditionValue	: *;
@@ -38,10 +39,9 @@ package com.tinyrpg.sequence
 			// Get condition type
 			newCommand.conditionType = xmlData.child( 'TYPE' ).toString().toUpperCase();
 			
-			// Get condition value
+			// Get condition check value, if applicable
 			switch( newCommand.conditionType )
 			{
-				default:
 				case CONDITION_FLAG:	
 				case CONDITION_ITEM:
 				case CONDITION_NAME:
@@ -120,6 +120,14 @@ package com.tinyrpg.sequence
 					isTruthy = TinyMapManager.getInstance().playerSprite.currentDirection.toUpperCase() == this.conditionValue;
 					
 					TinyLogManager.log( 'executing condition = player is facing ' + this.conditionValue + ': ' + isTruthy, this );
+					break;
+				}
+				
+				case CONDITION_HEALTHY:
+				{
+					isTruthy = player.hasAnyHealthyMons();
+					
+					TinyLogManager.log( 'executing condition = player is healthy: ' + isTruthy, this );
 					break;
 				}
 			}

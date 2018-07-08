@@ -296,7 +296,6 @@
 				<TILES>1</TILES>
 				<SPEED>12</SPEED>
 			</WALK>
-			
 			<END></END>
 		</SEQUENCE>
 	</EVENT_desk_lady_checkin>
