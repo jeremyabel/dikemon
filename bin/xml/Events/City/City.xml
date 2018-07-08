@@ -487,9 +487,12 @@
 										<TARGET>PLAYER</TARGET>
 										<FACING>DOWN</FACING>
 									</SET_FACING>
+									
+									<!-- Set flags and clean up -->
 									<SET_FLAG>gave_boat_ticket</SET_FLAG>
 									<TAKE_ITEM>Boat Ticket</TAKE_ITEM>
 									<REMOVE_TRIGGER>triggerTicketSailor</REMOVE_TRIGGER>
+									
 									<END></END>
 								</SEQUENCE>
 							</IF_TRUE>
