@@ -241,8 +241,8 @@ package com.tinyrpg.battle
 			this.addChild(m_playerStatDisplay);
 			this.addChild(m_playerMonContainer);
 			this.addChild( this.enemyContainer );
-			this.addChild(m_playerTrainerContainer);
 			this.addChild(m_enemyTrainerContainer);
+			this.addChild(m_playerTrainerContainer);
 			this.addChild(m_battleEmptyDialogBox);
 			this.addChild(this.dialogBoxContainer);
 			this.addChild(m_battleCommandMenu);

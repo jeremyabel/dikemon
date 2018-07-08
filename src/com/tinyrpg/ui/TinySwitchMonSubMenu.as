@@ -38,13 +38,13 @@ package com.tinyrpg.ui
 			
 			if ( this.selectedItem.textString.toUpperCase() == TinyCommonStrings.SWITCH.toUpperCase() )
 			{
-				if ( this.mon.isInBattle )
-				{
-					this.showWarningDialogBox( 'This DIKÉMON is already out, dingus!   [end]' );
-				}
-				else if ( !this.mon.isHealthy )
+				if ( !this.mon.isHealthy )
 				{
 					this.showWarningDialogBox( 'This DIKÉMON is too dead to fight!   [end]');
+				}
+				else if ( this.mon.isInBattle )
+				{
+					this.showWarningDialogBox( 'This DIKÉMON is already out, dingus!   [end]' );
 				}
 				else 
 				{

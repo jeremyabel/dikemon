@@ -327,6 +327,14 @@ package com.tinyrpg.battle
 						// Show any useless text dialog boxes
 						if ( effect.type == 'USELESS_TEXT' )
 						{	
+							this.eventSequence.addDelay( 0.2 );
+					
+							// Add nudge animation
+							if ( isEnemy )
+								this.eventSequence.addEnemyAttack( this.battle.m_enemyMonContainer );
+							else 
+								this.eventSequence.addPlayerAttack( this.battle.m_playerMonContainer );				
+					
 							this.eventSequence.addDialogBoxFromString( move.uselessText );
 							
 							// Show "not very effective" text, for the lulz

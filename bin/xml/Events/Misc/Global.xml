@@ -2,6 +2,31 @@
 <EVENTS>
 
 	<!-- These events can be accessed by every map -->
+	
+	<EVENT_talk_dikecenter_nurse>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>NURSE</SPEAKER>
+				<TEXT>Welcome to The Dikécenter![halt] I'll heal your Dikémon for you,[delay 6] one moment please.   [end]</TEXT>
+			</DIALOG>
+			<DELAY>8</DELAY>
+			<SET_FACING>
+				<TARGET>NURSE</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>20</DELAY>
+			<SET_FACING>
+				<TARGET>NURSE</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<DIALOG>
+				<SPEAKER>NURSE</SPEAKER>
+				<TEXT>All done!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_dikecenter_nurse>
 
 	<EVENT_repel_wore_off>
 		<SEQUENCE>

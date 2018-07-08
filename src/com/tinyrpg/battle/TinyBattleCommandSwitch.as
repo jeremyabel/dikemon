@@ -65,8 +65,10 @@ package com.tinyrpg.battle
 			switchMon.isInBattle = true;
 			if (isEnemy) {
 				this.battle.m_currentEnemyMon = this.switchMon;
+				this.battle.m_currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, true );
 			} else {
 				this.battle.m_currentPlayerMon = this.switchMon;
+				this.battle.m_currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, false );
 			}
 			
 			// Show summon dialog

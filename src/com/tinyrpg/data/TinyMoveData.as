@@ -47,7 +47,12 @@ package com.tinyrpg.data
 		public function get fxScreenShake()		: String { return m_fxScreenShake; }
 		public function get fxAnimDistortion()	: String { return m_fxAnimDistortion; }
 		public function get fxPaletteEffect()	: String { return m_fxPaletteEffect; }
-		public function get uselessText()		: String { return m_uselessText; }
+		
+		public function get uselessText() : String 
+		{ 
+			var commaReplacePattern : RegExp = /\|/;
+			return m_uselessText.replace( commaReplacePattern, ',' ); 
+		}
 		
 		// Special attack for use when a mon hurts itself in confusion
 		public static var CONFUSION_ATTACK : TinyMoveData = new TinyMoveData('CONFUSION HIT', '', 40, 0, 0, 10, TinyType.NORMAL, 0, 'SELF', [ TinyMoveEffect.HIT ] );
