@@ -22,6 +22,7 @@ package com.tinyrpg.core
 		private static var REVIVE					: String = 'REVIVE';
 		private static var REPEL					: String = 'REPEL';
 		private static var CATCH_RATE				: String = 'CATCHRATE';
+		private static var KEY_ITEM					: String = 'KEY_ITEM';
 		
 		public static var ITEM_CONTEXT_BATTLE		: String = 'ITEM_CONTEXT_BATTLE';
 		public static var ITEM_CONTEXT_FIELD 		: String = 'ITEM_CONTEXT_FIELD';
@@ -35,6 +36,7 @@ package com.tinyrpg.core
 		public var quantity 		: int = 1;
 		public var itemID			: int;
 		public var effectAmount		: int;
+		public var isKey			: Boolean = false;
 		public var isBall			: Boolean = false;
 		public var isRepel 			: Boolean = false;
 		public var healPP 			: Boolean = false;
@@ -74,6 +76,7 @@ package com.tinyrpg.core
 				case REMOVE_STATUS_POISON:		needsAdditionalParsing = false; newItem.healStatus = true; newItem.healPoison = true; break;
 				case REMOVE_STATUS_SLEEP:		needsAdditionalParsing = false; newItem.healStatus = true; newItem.healSleep = true; break;
 				case REMOVE_STATUS_BURN:		needsAdditionalParsing = false; newItem.healStatus = true; newItem.healBurn = true; break;
+				case KEY_ITEM:					needsAdditionalParsing = false; newItem.isKey = true; break;
 				default: break;
 			}
 			
@@ -156,6 +159,12 @@ package com.tinyrpg.core
 		public function checkCanUse( useContext : String, targetMon : TinyMon = null ) : TinyItemUseResult
 		{
 			TinyLogManager.log("checkCanUse: " + useContext, this);
+			
+			// Can't use a key item in any context
+			if ( this.isKey ) 
+			{
+				return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_KEY );
+			}
 			
 			// Battle-specific checks
 			if ( useContext == TinyItem.ITEM_CONTEXT_BATTLE )

@@ -1,3 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+	
+	<EVENT_check_books1>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"The Big Book Of Big Boats" by Chip Boatman   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books1>
+
+	<EVENT_check_books2>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"Boat Weddings Magazine"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_books2>
+
+	<EVENT_check_tv>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>Looks like a documentary called "The Gleonard Magikarp Story: My Life In Fish Prison".   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_tv>
+
+	<EVENT_check_painting>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>This one looks like it was painted by a small child of some sort.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_painting>
+
+	<EVENT_check_radio>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>"AWWWwww yeah we're back at it again on W[delay 4]D[delay 4]I[delay 4]K, [delay 8]blasting those good times and HOT oldies [halt]ALL [halt]DAY [halt]LONG!"   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_radio>
+	
+	<EVENT_talk_boat_fan>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Boat Fan</SPEAKER>
+				<TEXT>You see that big boat down by the pier?![halt] Dang,[delay 8] I'd love to get a ticket to ride on that sexy boat.[halt] Mmm[delay 10].[delay 10].[delay 10]. boats.    [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_boat_fan>
+	
 </EVENTS>

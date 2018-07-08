@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
 
-	<!-- Remove Guide Guy NPC if the player completed his tutorial -->
+	
 	<EVENT_map_setup>
 		<SEQUENCE>
+		
+			<!-- Remove Guide Guy NPC if the player completed his tutorial -->
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>finished_guide_guy_tutorial</VALUE>
 				<IF_TRUE>
 					<SEQUENCE>
 						<REMOVE_NPC>Guide Guy</REMOVE_NPC>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			
+			<!-- Remove the ticket sailor trigger if the player gave the ticket to the sailor -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>gave_boat_ticket</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>trigger_ticket_sailor</REMOVE_TRIGGER>
 						<END></END>
 					</SEQUENCE>
 				</IF_TRUE>
@@ -43,7 +58,7 @@
 				</IF_TRUE>
 				<IF_FALSE>
 					<SEQUENCE>
-						<!--<DIALOG>
+						<DIALOG>
 							<SPEAKER>Guide Guy</SPEAKER>
 							<TEXT>You have no idea what you're doing,[delay 4] do you?[halt] That's OK,[delay 8] I've spent my entire life standing in this exact spot,[delay 6] mentally preparing myself for the time when some[delay 4] idiot came along and needs some advice.[halt] And here you are!    [end]</TEXT>
 						</DIALOG>
@@ -54,7 +69,7 @@
 						<DIALOG>
 							<SPEAKER>Guide Guy</SPEAKER>
 							<TEXT>Listen up![delay 6] The world of Dikémon is hard and sticky,[delay 8] and there's just no way you'll get through it unless I thrust some hot knowledge deep into your earholes.</TEXT>
-						</DIALOG> -->
+						</DIALOG>
 						
 						<!-- Ask the player if they want the tutorial -->
 						<SUB_SEQUENCE>guide_guy_question</SUB_SEQUENCE>
@@ -363,6 +378,241 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_guide_guy_tutorial>
+	
+	<EVENT_talk_ticket_sailor>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>gave_boat_ticket</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>I already got your ticket,[delay 4] go on ahead!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>Buddy,[delay 8] I ain't allowed to talk to anyone who isn't standing on the dock.[halt] Union rules and all that.[halt] Come stand to my right and talk to me.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<DELAY>2</DELAY>
+			<SET_FACING>
+				<TARGET>Seaman Semen</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_ticket_sailor>
+	
+	<EVENT_trigger_ticket_sailor>
+		<SEQUENCE>
+			<DELAY>2</DELAY>
+			<SHOW_EMOTE>
+				<TARGET>Seaman Semen</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>10</DELAY>
+			<DIALOG>
+				<SPEAKER>Seaman Semen</SPEAKER>
+				<TEXT>Hey!   [end]</TEXT>
+			</DIALOG>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>2</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Seaman Semen</TARGET>
+			</HIDE_EMOTE>
+			<DELAY>2</DELAY>
+			<DIALOG>
+				<SPEAKER>Seaman Semen</SPEAKER>
+				<TEXT>You ain't allowed onto the docks without a ticket!  [end]</TEXT>
+			</DIALOG>
+			<YESNO_QUESTION>
+				<QUESTION>Do you have a ticket?</QUESTION>
+				<IF_YES>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Yes,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
+						</DIALOG>
+						<CONDITIONAL>
+							<TYPE>ITEM</TYPE>
+							<VALUE>Boat Ticket</VALUE>
+							<IF_TRUE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>Let me just look this over real quick...  [end]</TEXT>
+									</DIALOG>
+									<DELAY>4</DELAY>
+									<SET_FACING>
+										<TARGET>Seaman Semen</TARGET>
+										<FACING>DOWN</FACING>
+									</SET_FACING>
+									<DELAY>42</DELAY>
+									<SET_FACING>
+										<TARGET>Seaman Semen</TARGET>
+										<FACING>RIGHT</FACING>
+									</SET_FACING>
+									<DELAY>2</DELAY>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>Everything looks to be in order![halt] Enjoy your vacation!   [end]</TEXT>
+									</DIALOG>
+									<DELAY>4</DELAY>
+									<SET_FACING>
+										<TARGET>PLAYER</TARGET>
+										<FACING>DOWN</FACING>
+									</SET_FACING>
+									<SET_FLAG>gave_boat_ticket</SET_FLAG>
+									<REMOVE_ITEM>Boat Ticket</REMOVE_ITEM>
+									<REMOVE_TRIGGER>trigger_ticket_sailor</REMOVE_TRIGGER>
+									<END></END>
+								</SEQUENCE>
+							</IF_TRUE>
+							<IF_FALSE>
+								<SEQUENCE>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>Oh,[delay 2] thank you[delay 8]--   [end]</TEXT>
+									</DIALOG>
+									<SHOW_EMOTE>
+										<TARGET>Seaman Semen</TARGET>
+										<EMOTE>EXCLAIM</EMOTE>
+									</SHOW_EMOTE>
+									<DELAY>4</DELAY>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>Wait a minute!   [end]</TEXT>
+									</DIALOG>
+									<HIDE_EMOTE>
+										<TARGET>Seaman Semen</TARGET>
+									</HIDE_EMOTE>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>This is a fifty dollar bill!   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>Well?   [end]</TEXT>
+									</DIALOG>
+									<DIALOG>
+										<SPEAKER>Seaman Semen</SPEAKER>
+										<TEXT>You’ve got the wrong idea buddy,[delay 4] get out of here!   [end]</TEXT>
+									</DIALOG>
+									<SUB_SEQUENCE>ticket_sailor_get_out</SUB_SEQUENCE>
+									<SUB_SEQUENCE>ticket_sailor_return</SUB_SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_FALSE>
+						</CONDITIONAL>
+						<END></END>
+					</SEQUENCE>
+				</IF_YES>
+				<IF_NO>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>No,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
+						</DIALOG>						
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
+						</DIALOG>
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>And if you don’t have a ticket,[delay 8] then I can’t let you through!   [end]</TEXT>
+						</DIALOG>
+						<DELAY>4</DELAY>
+						<SUB_SEQUENCE>ticket_sailor_get_out</SUB_SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Seaman Semen</SPEAKER>
+							<TEXT>Now get outta here!   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>ticket_sailor_return</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_NO>
+			</YESNO_QUESTION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_trigger_ticket_sailor>
+	
+	<EVENT_ticket_sailor_get_out>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<WALK sync="TRUE" keepfacing="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Seaman Semen</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>Seaman Semen</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>6</DELAY>
+			<WALK sync="TRUE">
+				<TARGET>Seaman Semen</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK keepfacing="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ticket_sailor_get_out>
+	
+	<EVENT_ticket_sailor_return>
+		<SEQUENCE>	
+			<WALK>
+				<TARGET>Seaman Semen</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Seaman Semen</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>2</DELAY>
+			<SET_FACING>
+				<TARGET>Seaman Semen</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ticket_sailor_return>
 
 	<!-- =========================================================================================== -->
 	<!-- OBJECTS -->

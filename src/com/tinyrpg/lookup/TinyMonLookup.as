@@ -20,6 +20,7 @@ package com.tinyrpg.lookup
 		public static const MON_SHOE			: String = 'SHOE';
 		public static const MON_TALL_GRASS		: String = 'TALL GRASS';
 		public static const MON_COMPUTER		: String = 'COMPUTER';
+		public static const MON_FAX_MACHINE		: String = 'FAX MACHINE';
 		public static const MON_ACE_OF_SPADES 	: String = 'ACE OF SPADES';
 		public static const MON_FOUR_OF_CLUBS	: String = 'FOUR OF CLUBS';
 		public static const MON_HUMAN_GAGNON	: String = 'GAGNON';

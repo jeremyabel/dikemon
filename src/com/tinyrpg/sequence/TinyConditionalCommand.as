@@ -14,11 +14,12 @@ package com.tinyrpg.sequence
 	 */
 	public class TinyConditionalCommand 
 	{
-		public static const CONDITION_FLAG 	: String = 'FLAG';
-		public static const CONDITION_ITEM	: String = 'ITEM';
-		public static const CONDITION_NAME	: String = 'NAME';
-		public static const CONDITION_RIVAL	: String = 'RIVAL';
-		public static const CONDITION_MONEY	: String = 'MONEY';
+		public static const CONDITION_FLAG 		: String = 'FLAG';
+		public static const CONDITION_ITEM		: String = 'ITEM';
+		public static const CONDITION_NAME		: String = 'NAME';
+		public static const CONDITION_RIVAL		: String = 'RIVAL';
+		public static const CONDITION_MONEY		: String = 'MONEY';
+		public static const CONDITION_FACING 	: String = 'FACING';
 		
 		public var conditionType	: String;
 		public var conditionValue	: *;
@@ -45,6 +46,7 @@ package com.tinyrpg.sequence
 				case CONDITION_ITEM:
 				case CONDITION_NAME:
 				case CONDITION_RIVAL:
+				case CONDITION_FACING:
 					newCommand.conditionValue = xmlData.child( 'VALUE' ).toString().toUpperCase();
 					break;
 				case CONDITION_MONEY:
@@ -110,6 +112,14 @@ package com.tinyrpg.sequence
 					isTruthy = player.money.value >= this.conditionValue;
 					
 					TinyLogManager.log( 'executing condition = has at least ' + this.conditionValue + ' bucks: ' + isTruthy, this );
+					break;
+				}
+				
+				case CONDITION_FACING:
+				{
+					isTruthy = TinyMapManager.getInstance().playerSprite.currentDirection.toUpperCase() == this.conditionValue;
+					
+					TinyLogManager.log( 'executing condition = player is facing ' + this.conditionValue + ': ' + isTruthy, this );
 					break;
 				}
 			}

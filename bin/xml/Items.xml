@@ -98,4 +98,11 @@
     <DESCRIPTION>Catch wild Dikémon with this weird ball. Works real good.</DESCRIPTION>
     <EFFECT>CATCHRATE_2</EFFECT>
   </ITEM>
+  <ITEM>
+    <NAME>Boat Ticket</NAME>
+    <RENAME>Boat Ticket</RENAME>
+    <PRICE>0</PRICE>
+    <DESCRIPTION>A ticket for a sweet Dikémon boat cruise!</DESCRIPTION>
+    <EFFECT>KEY_ITEM</EFFECT>
+  </ITEM>
 </ITEMS>

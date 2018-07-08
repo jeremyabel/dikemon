@@ -166,6 +166,7 @@ package com.tinyrpg.battle
 		// Item usage strings
 		public static const CANT_USE_ITEM		: String = 'Hey, you can\'t use this during battle!';
 		public static const CANT_USE_ITEM_FIELD	: String = 'Hey, you can\'t use this outside of a battle!';
+		public static const CANT_USE_KEY		: String = 'This item is way too important to use right now!';
 	 	public static const CANT_USE_BALL		: String = 'Hey, you can only touch your balls during a battle!';
 	 	public static const CANT_USE_DEAD		: String = 'This guy is way too dead for that to work...';
 	 	public static const CANT_USE_ALIVE		: String = 'This guy is already pretty alive...';

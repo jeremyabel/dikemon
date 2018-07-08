@@ -33,5 +33,6 @@
 	<!-- City -->
 	<FLAG>finished_guide_guy_tutorial</FLAG>
 	<FLAG>refused_guide_guy_tutorial</FLAG>
+	<FLAG>gave_boat_ticket</FLAG>
 
 </FLAGS>

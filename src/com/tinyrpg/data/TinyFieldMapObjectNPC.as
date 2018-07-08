@@ -30,6 +30,7 @@ package com.tinyrpg.data
 		public var isInGrass	: Boolean;
 		public var randomSpin	: Boolean = false;
 		public var enableSpin	: Boolean = true;
+		public var facePlayer	: Boolean = true;
 		
 		private var randomDirections : Array = [ 'UP', 'DOWN', 'LEFT', 'RIGHT' ];
 		
@@ -47,6 +48,10 @@ package com.tinyrpg.data
 			{
 				spriteId = TinySpriteLookup.getPlayerSpriteId( TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name ) ); 
 			}
+			
+			// Get facing from the object name. Object name format is a string like "[object MapObjectNPCLeft]".
+			// It needs to be sliced down to just the facing string at the end of the object name.
+			this.facing = this.toString().toUpperCase().slice( 20, -1 );
 			
 			// Create the NPC sprite
 			this.walkSprite = new TinyWalkSprite( spriteId, this.facing );
@@ -100,12 +105,15 @@ package com.tinyrpg.data
 		 */
 		public function setFacingFromPlayerFacing( facing : String ) : void
 		{
-			switch ( facing )
+			if ( this.facePlayer )
 			{
-				case 'UP':		this.walkSprite.setFacing( 'DOWN' ); break;
-				case 'DOWN':	this.walkSprite.setFacing( 'UP' ); break;
-				case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
-				case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
+				switch ( facing )
+				{
+					case 'UP':		this.walkSprite.setFacing( 'DOWN' ); break;
+					case 'DOWN':	this.walkSprite.setFacing( 'UP' ); break;
+					case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
+					case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
+				}
 			}
 		}
 	}

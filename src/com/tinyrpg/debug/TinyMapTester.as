@@ -1,8 +1,10 @@
 package com.tinyrpg.debug 
 {
+	import com.tinyrpg.core.TinyItem;
 	import com.tinyrpg.data.TinyAppSettings;
 	import com.tinyrpg.data.TinyFieldMapObjectWarp;
 	import com.tinyrpg.data.TinySaveData;
+	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.lookup.TinyEventFlagLookup;
 	import com.tinyrpg.lookup.TinyMonLookup;
 	import com.tinyrpg.managers.TinyFontManager;
@@ -35,8 +37,9 @@ package com.tinyrpg.debug
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
 			testWarpObject.targetMapName = 'CITY';
-			testWarpObject.targetWarpName = 'warpRoute1';
-			testWarpObject.destinationFacing = 'LEFT';
+			testWarpObject.targetWarpName = 'warpHouse3';
+			testWarpObject.stepForwardAfterWarp = true;
+			testWarpObject.destinationFacing = 'DOWN';
 			
 //			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
 //			testWarpObject.targetMapName = 'Route29';
@@ -58,6 +61,9 @@ package com.tinyrpg.debug
 			// Load saved data
 			TinyGameManager.getInstance().initWithJSON( TinySaveData.loadToJSON(), false );
 			TinyGameManager.getInstance().gotoMap( testWarpObject );
+			
+			var testItem : TinyItem = TinyItemDataList.getInstance().getItemByName( 'Boat Ticket' );
+			TinyGameManager.getInstance().playerTrainer.addItem( testItem );
 			
 			var scaleFactor : Number = stage.stageHeight / 144;
 			TinyAppSettings.SCALE_FACTOR = scaleFactor;
