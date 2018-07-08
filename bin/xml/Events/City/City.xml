@@ -371,11 +371,14 @@
 		</SEQUENCE>
 	</EVENT_guide_guy_tutorial>
 	
+	<!-- Player talks to the ticket sailor from the front -->
 	<EVENT_talk_ticket_sailor>
 		<SEQUENCE>
 			<CONDITIONAL>
 				<TYPE>FLAG</TYPE>
 				<VALUE>gave_boat_ticket</VALUE>
+				
+				<!-- Player has already given ticket sailor the ticket -->
 				<IF_TRUE>
 					<SEQUENCE>
 						<DIALOG>
@@ -385,6 +388,8 @@
 						<END></END>
 					</SEQUENCE>
 				</IF_TRUE>
+				
+				<!-- Player has not given the ticket sailor the ticket, and is told to talk to the sailor to his right, because framing -->
 				<IF_FALSE>
 					<SEQUENCE>
 						<DIALOG>
@@ -404,8 +409,10 @@
 		</SEQUENCE>
 	</EVENT_talk_ticket_sailor>
 	
+	<!-- Player walks into the trigger next to the ticket sailor -->
 	<EVENT_trigger_ticket_sailor>
 		<SEQUENCE>
+			<!-- Ticket Sailor stops the player and asks to see a ticket -->
 			<DELAY>2</DELAY>
 			<SHOW_EMOTE>
 				<TARGET>Seaman Semen</TARGET>
@@ -431,8 +438,12 @@
 			</DIALOG>
 			<YESNO_QUESTION>
 				<QUESTION>Do you have a ticket?</QUESTION>
+				
+				<!-- Player answers yes, they do have a ticket -->
 				<IF_YES>
 					<SEQUENCE>
+					
+						<!-- Play semen nametag gag -->
 						<DIALOG>
 							<SPEAKER>PLAYER</SPEAKER>
 							<TEXT>Yes,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
@@ -443,9 +454,13 @@
 							<TEXT>Ok,[delay 4] jeez,[delay 4] I'm sorry[delay 4].[delay 4].[delay 4].    [end]</TEXT>
 						</DIALOG>
 						<DELAY>4</DELAY>
+						
+						<!-- Check if player really has the Boat Ticket item -->
 						<CONDITIONAL>
 							<TYPE>ITEM</TYPE>
 							<VALUE>Boat Ticket</VALUE>
+							
+							<!-- Yep, player really has the Boat Ticket item, so ticket sailor looks it over and lets the player pass -->
 							<IF_TRUE>
 								<SEQUENCE>
 									<DIALOG>
@@ -478,6 +493,8 @@
 									<END></END>
 								</SEQUENCE>
 							</IF_TRUE>
+							
+							<!-- No, the player doesn't really have the Boat Ticket item. Player tries to bribe ticket sailor with a $50 bill, and he gets upset and tells the player to get out -->
 							<IF_FALSE>
 								<SEQUENCE>
 									<DIALOG>
@@ -517,13 +534,19 @@
 						<END></END>
 					</SEQUENCE>
 				</IF_YES>
+				
+				<!-- Player answered no, they do not have a ticket. Ticket sailor says they need one to pass, and tells them to get out -->
 				<IF_NO>
 					<SEQUENCE>
+						
+						<!-- Play semen nametag gag -->
 						<DIALOG>
 							<SPEAKER>PLAYER</SPEAKER>
 							<TEXT>No,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
 						</DIALOG>						
 						<SUB_SEQUENCE>ticket_sailor_nametag_gag</SUB_SEQUENCE>
+						
+						<!-- Ticket sailor tells player to get out -->
 						<DIALOG>
 							<SPEAKER>Seaman Semen</SPEAKER>
 							<TEXT>And if you don’t have a ticket,[delay 8] then I can’t let you through!   [end]</TEXT>
@@ -543,6 +566,7 @@
 		</SEQUENCE>
 	</EVENT_trigger_ticket_sailor>
 	
+	<!-- Sub-event for the ticket sailor semen nametag gag -->
 	<EVENT_ticket_sailor_nametag_gag>
 		<SEQUENCE>
 			<SHOW_EMOTE>
@@ -552,7 +576,7 @@
 			<DELAY>4</DELAY>
 			<DIALOG>
 				<SPEAKER>Seaman Semen</SPEAKER>
-				<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
+				<TEXT>IT’S[halt] PRONOUNCED[halt] "SIMON"!    [end]</TEXT>
 			</DIALOG>
 			<HIDE_EMOTE>
 				<TARGET>Seaman Semen</TARGET>
@@ -561,6 +585,7 @@
 		</SEQUENCE>
 	</EVENT_ticket_sailor_nametag_gag>
 	
+	<!-- Sub-event for the ticket sailor kicking the player off the dock -->
 	<EVENT_ticket_sailor_get_out>
 		<SEQUENCE>
 			<SET_FACING>
@@ -600,6 +625,7 @@
 		</SEQUENCE>
 	</EVENT_ticket_sailor_get_out>
 	
+	<!-- Sub-event for the ticket sailor returning to their post after kicking the player off the dock -->
 	<EVENT_ticket_sailor_return>
 		<SEQUENCE>	
 			<WALK>
