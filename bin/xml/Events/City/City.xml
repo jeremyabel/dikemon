@@ -24,7 +24,7 @@
 				<VALUE>gave_boat_ticket</VALUE>
 				<IF_TRUE>
 					<SEQUENCE>
-						<REMOVE_TRIGGER>trigger_ticket_sailor</REMOVE_TRIGGER>
+						<REMOVE_TRIGGER>triggerTicketSailor</REMOVE_TRIGGER>
 						<END></END>
 					</SEQUENCE>
 				</IF_TRUE>
@@ -161,26 +161,24 @@
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>32</DELAY>
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>UP</DIRECTION>
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>UP</DIRECTION>
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>18</DELAY>
 			<SET_FACING>
 				<TARGET>Guide Guy</TARGET>
 				<FACING>DOWN</FACING>
@@ -220,13 +218,12 @@
 				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
 				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>56</DELAY>
 			<SET_FACING>
 				<TARGET>Guide Guy</TARGET>
 				<FACING>DOWN</FACING>
@@ -250,13 +247,12 @@
 				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
 				<TILES>6</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>50</DELAY>
 			<SET_FACING>
 				<TARGET>Guide Guy</TARGET>
 				<FACING>UP</FACING>
@@ -290,26 +286,24 @@
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>LEFT</DIRECTION>
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>34</DELAY>
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>DOWN</DIRECTION>
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>DOWN</DIRECTION>
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>22</DELAY>
 			<SET_FACING>
 				<TARGET>Guide Guy</TARGET>
 				<FACING>DOWN</FACING>
@@ -333,26 +327,24 @@
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>DOWN</DIRECTION>
 				<TILES>2</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>18</DELAY>
 			<WALK sync="TRUE">
 				<TARGET>Guide Guy</TARGET>
 				<DIRECTION>RIGHT</DIRECTION>
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<WALK sync="TRUE">
+			<WALK>
 				<TARGET>PLAYER</TARGET>
 				<DIRECTION>RIGHT</DIRECTION>
 				<TILES>4</TILES>
 				<SPEED>8</SPEED>
 			</WALK>
-			<DELAY>38</DELAY>
 			<SET_FACING>
 				<TARGET>Guide Guy</TARGET>
 				<FACING>DOWN</FACING>
@@ -445,10 +437,12 @@
 							<SPEAKER>PLAYER</SPEAKER>
 							<TEXT>Yes,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
 						</DIALOG>
+						<SUB_SEQUENCE>ticket_sailor_nametag_gag</SUB_SEQUENCE>
 						<DIALOG>
-							<SPEAKER>Seaman Semen</SPEAKER>
-							<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ok,[delay 4] jeez,[delay 4] I'm sorry[delay 4].[delay 4].[delay 4].    [end]</TEXT>
 						</DIALOG>
+						<DELAY>4</DELAY>
 						<CONDITIONAL>
 							<TYPE>ITEM</TYPE>
 							<VALUE>Boat Ticket</VALUE>
@@ -479,8 +473,8 @@
 										<FACING>DOWN</FACING>
 									</SET_FACING>
 									<SET_FLAG>gave_boat_ticket</SET_FLAG>
-									<REMOVE_ITEM>Boat Ticket</REMOVE_ITEM>
-									<REMOVE_TRIGGER>trigger_ticket_sailor</REMOVE_TRIGGER>
+									<TAKE_ITEM>Boat Ticket</TAKE_ITEM>
+									<REMOVE_TRIGGER>triggerTicketSailor</REMOVE_TRIGGER>
 									<END></END>
 								</SEQUENCE>
 							</IF_TRUE>
@@ -529,10 +523,7 @@
 							<SPEAKER>PLAYER</SPEAKER>
 							<TEXT>No,[delay 4] but oh bro,[delay 4] someone wrote "semen" on your nametag.    [end]</TEXT>
 						</DIALOG>						
-						<DIALOG>
-							<SPEAKER>Seaman Semen</SPEAKER>
-							<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
-						</DIALOG>
+						<SUB_SEQUENCE>ticket_sailor_nametag_gag</SUB_SEQUENCE>
 						<DIALOG>
 							<SPEAKER>Seaman Semen</SPEAKER>
 							<TEXT>And if you don’t have a ticket,[delay 8] then I can’t let you through!   [end]</TEXT>
@@ -551,6 +542,24 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_trigger_ticket_sailor>
+	
+	<EVENT_ticket_sailor_nametag_gag>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>Seaman Semen</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Seaman Semen</SPEAKER>
+				<TEXT>IT’S PRONOUNCED "SIMON"!    [end]</TEXT>
+			</DIALOG>
+			<HIDE_EMOTE>
+				<TARGET>Seaman Semen</TARGET>
+			</HIDE_EMOTE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ticket_sailor_nametag_gag>
 	
 	<EVENT_ticket_sailor_get_out>
 		<SEQUENCE>
