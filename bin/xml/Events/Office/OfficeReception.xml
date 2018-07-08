@@ -1,3 +1,390 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+	
+	<EVENT_map_setup>
+		<SEQUENCE>
+		
+			<!-- Remove the 2nd Floor warp if the player hasn't checked in with the receptionist, 
+				 otherwise remove the trigger that prevents the player from going upstairs. -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>checked_in_with_receptionist</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>triggerStairs</REMOVE_TRIGGER>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<REMOVE_WARP>warpOfficeFloor2</REMOVE_WARP>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+	
+	<!-- =========================================================================================== -->
+	<!-- TRIGGERS -->
+	<!-- =========================================================================================== -->	
+
+	<!-- Player talks to receptionist from the across the desk like a normal person -->
+	<EVENT_talk_desk_lady>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>checked_in_with_receptionist</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Desk Lady</SPEAKER>
+							<TEXT>You really should be upstairs meeting with the bosses!   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<SUB_SEQUENCE>desk_lady_checkin</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_desk_lady>
+	
+	<!-- Player attempts to check in with the receptionist. Ends up getting pushed upstairs to meet with the bosses -->
+	<EVENT_desk_lady_checkin>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>Uh,[delay 4] hi.[delay 8] I'm [name].[halt] Didn't this used to be a gym or something?   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>U[delay 2]m[delay 2]m[delay 2]m[delay 2].[delay 2].[delay 2].   [end]</TEXT>
+			</DIALOG>
+			<DELAY>10</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>20</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>20</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>10</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>10</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY>5</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>6</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Nope,[delay 8] definitely always been an office![halt] No gym here!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>But the sign out front--   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Oh don’t pay any attention to that!   [end]</TEXT>
+			</DIALOG>
+			<DIALOG>
+				<SPEAKER>PLAYER</SPEAKER>
+				<TEXT>But--   [end]</TEXT>
+			</DIALOG>
+			<SHOW_EMOTE>
+				<TARGET>Desk Lady</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>14</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>Desk Lady</TARGET>
+			</HIDE_EMOTE>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Oh but the bosses would just love to meet you,[delay 8] come with me!   [end]</TEXT>
+			</DIALOG>
+			<DELAY>4</DELAY>
+			
+			<SET_FLAG>checked_in_with_receptionist</SET_FLAG>
+			<REMOVE_TRIGGER>triggerStairs</REMOVE_TRIGGER>
+			
+			<WALK keepfacing="TRUE">
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>6</SPEED>
+			</WALK>
+			<DELAY>2</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>8</DELAY>
+			<WALK keepfacing="TRUE">
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>6</SPEED>
+			</WALK>
+			<DELAY>3</DELAY>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>5</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>3</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>LEFT</FACING>
+			</SET_FACING>
+			<DELAY></DELAY>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>*shove shove*   [end]</TEXT>
+			</DIALOG>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>11</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<WALK sync="TRUE" nowalkcycle="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>5</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>5</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			
+			<!-- Receptionist shoves Player up towards the stairs -->
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>3</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>*shove shove*   [end]</TEXT>
+			</DIALOG>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>11</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<WALK sync="TRUE" nowalkcycle="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>3</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			
+			<!-- Warp to the 2nd floor -->
+			<WARP stepforward="TRUE">
+				<MAP_NAME>OFFICEFLOOR2</MAP_NAME>
+				<WARP_NAME>warpOfficeReception</WARP_NAME>
+				<FACING>DOWN</FACING>
+				<FADE_SPEED>10</FADE_SPEED>
+			</WARP>
+			
+			<!-- Continue walking one step up during the warp fade-out -->
+			<WALK sync="TRUE" nowalkcycle="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>Desk Lady</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>12</SPEED>
+			</WALK>
+			
+			<END></END>
+		</SEQUENCE>
+	</EVENT_desk_lady_checkin>
+	
+	<!-- Player tries to walk upstairs before checking in with the receptionist, she gets angry and calls player over to the desk -->
+	<EVENT_trigger_stairs>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Hey!   [end]</TEXT>
+			</DIALOG>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>PLAYER</TARGET>
+				<EMOTE>QUESTION</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>22</DELAY>
+			<HIDE_EMOTE>
+				<TARGET>PLAYER</TARGET>
+			</HIDE_EMOTE>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>DOWN</DIRECTION>
+				<TILES>4</TILES>
+				<SPEED>10</SPEED>
+			</WALK>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>5</TILES>
+				<SPEED>10</SPEED>
+			</WALK>
+			<SET_FACING>
+				<TARGET>PLAYER</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Where do you think you're going?![halt] What's your name,[delay 4] and what are you doing here?   [end]</TEXT>
+			</DIALOG>
+			<SUB_SEQUENCE>talk_desk_lady</SUB_SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_trigger_stairs>
+	
+	<!-- Player tries to walk behind desk, receptionist gets angry -->
+	<EVENT_trigger_behind_desk>
+		<SEQUENCE>
+			<SHOW_EMOTE>
+				<TARGET>Desk Lady</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DELAY>10</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>RIGHT</FACING>
+			</SET_FACING>
+			<DELAY>4</DELAY>
+			<DIALOG>
+				<SPEAKER>Desk Lady</SPEAKER>
+				<TEXT>Hey, you're not allowed back here!   [end]</TEXT>
+			</DIALOG>
+			<HIDE_EMOTE>
+				<TARGET>Desk Lady</TARGET>
+			</HIDE_EMOTE>
+			<WALK keepfacing="TRUE">
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>RIGHT</DIRECTION>
+				<TILES>1</TILES>
+				<SPEED>8</SPEED>
+			</WALK>
+			<DELAY>4</DELAY>
+			<SET_FACING>
+				<TARGET>Desk Lady</TARGET>
+				<FACING>UP</FACING>
+			</SET_FACING>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_trigger_behind_desk>
+	
+	<EVENT_office_sign>
+		<SEQUENCE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_office_sign>
+	
 </EVENTS>

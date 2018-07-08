@@ -570,7 +570,7 @@ package com.tinyrpg.display
 			this.takeSteps( 1 );
 		}
 		
-		public function takeSteps( numSteps : uint = 0 ) : void
+		public function takeSteps( numSteps : uint = 0, playWalkCycle : Boolean = true ) : void
 		{
 			TinyLogManager.log( 'takeSteps: ' + numSteps, this );
 			
@@ -581,8 +581,14 @@ package com.tinyrpg.display
 			this.hasCollidedWithGrass = false;
 			this.hasCollidedWithObject = false;
 			
+			this.setFacing( this.currentDirection );
 			this.updateMovementHitbox();
-			this.spritesheet.startWalking( this.currentDirection, this.speed );
+			
+			if ( playWalkCycle ) 
+			{
+				this.spritesheet.startWalking( this.currentDirection, this.speed );
+			}
+			
 			this.onMovementAdvanced( this.currentDirection );
 			this.addEventListener( TinyFieldMapEvent.MOVE_COMPLETE, this.onStepComplete );
 		}

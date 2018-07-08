@@ -16,10 +16,11 @@ package com.tinyrpg.sequence
 	 */
 	public class TinyWalkCommand extends EventDispatcher
 	{
-		public var tiles 	 	: int;
+		public var tiles  		: int;
 		public var speed		: int;
 		public var sync		 	: Boolean;
-		public var keepFacing	: Boolean = false; 
+		public var keepFacing	: Boolean = false;
+		public var noWalkCycle 	: Boolean = true;
 		public var targetName	: String;
 		public var direction 	: String;
 		public var targetSprite : TinyWalkSprite;
@@ -47,6 +48,9 @@ package com.tinyrpg.sequence
 			
 			// Get keep facing status
 			newCommand.keepFacing = xmlData.attribute( 'keepfacing' ).toString().toUpperCase() == 'TRUE'; 
+			
+			// Get walk cycle status
+			newCommand.noWalkCycle = xmlData.attribute( 'nowalkcycle' ).toString().toUpperCase() == 'TRUE';
 
 			return newCommand;
 		}
@@ -68,7 +72,7 @@ package com.tinyrpg.sequence
 			this.targetSprite.speed = this.speed;
 			this.targetSprite.setKeepFacing( this.keepFacing );
 			this.targetSprite.setFacing( this.direction );
-			this.targetSprite.takeSteps( this.tiles );
+			this.targetSprite.takeSteps( this.tiles, !this.noWalkCycle );
 			
 			// Immediately proceed to the next step if we're syncing with other animations.
 			// Otherwise, wait for the steps to be completed before proceeding.

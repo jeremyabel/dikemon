@@ -39,6 +39,7 @@ package com.tinyrpg.sequence
 		public static const SET_FLAG	  			: String = 'SET_FLAG';
 		public static const CLEAR_FLAG	  			: String = 'CLEAR_FLAG';
 		public static const REMOVE_TRIGGER			: String = 'REMOVE_TRIGGER';
+		public static const REMOVE_WARP				: String = 'REMOVE_WARP';
 		public static const CHOOSE_STARTER			: String = 'CHOOSE_STARTER';
 		public static const YESNO_QUESTION			: String = 'YESNO_QUESTION';
 		public static const HEAL_ALL	  			: String = 'HEAL_ALL';
