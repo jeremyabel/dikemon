@@ -12,6 +12,22 @@
 				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
 			</CONDITIONAL>
 			
+			<!-- Disable Steve Pizazz if he has been defeated -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_steve_pizazz</VALUE>
+				<IF_TRUE><SEQUENCE><DISABLE_TRAINER>Steve Pizazz</DISABLE_TRAINER><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			
+			<!-- Disable Wally if he has been defeated -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_wally</VALUE>
+				<IF_TRUE><SEQUENCE><DISABLE_TRAINER>Wally</DISABLE_TRAINER><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			
 			<END></END>
 		</SEQUENCE>
 	</EVENT_map_setup>
@@ -75,5 +91,125 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_talk_gary_montana>
+	
+	<EVENT_encounter_steve_pizazz>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_steve_pizazz</VALUE>
+				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<SHOW_EMOTE>
+							<TARGET>Steve Pizazz</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<SET_FACING>
+							<TARGET>PLAYER</TARGET>
+							<FACING>UP</FACING>
+						</SET_FACING>
+						<DELAY>4</DELAY>
+						<DIALOG>
+							<SPEAKER>Steve Pizazz</SPEAKER>
+							<TEXT>Let’s take a break. [delay 4]I’ll show you a card trick!   [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Steve Pizazz</TARGET>
+						</HIDE_EMOTE>
+						<TRAINER_BATTLE>
+							<TRAINER_NAME>Steve Pizazz</TRAINER_NAME>
+							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_MONS>
+								<MON><NAME>Bucket</NAME><LEVEL>2</LEVEL></MON>
+							</TRAINER_MONS>
+							<IF_WIN>
+								<SEQUENCE>
+									<DISABLE_TRAINER>Steve Pizazz</DISABLE_TRAINER>
+									<SET_FLAG>defeated_steve_pizazz</SET_FLAG>
+									<SUB_SEQUENCE>talk_steve_pizazz</SUB_SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_WIN>
+							<IF_LOSE>
+								<SEQUENCE><END></END></SEQUENCE>
+							</IF_LOSE>
+						</TRAINER_BATTLE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>		
+	</EVENT_encounter_steve_pizazz>
+	
+	<EVENT_talk_steve_pizazz>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Steve Pizazz</SPEAKER>
+				<TEXT>Is this your card![halt] No?  [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_steve_pizazz>
+	
+	<EVENT_encounter_wally>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_wally</VALUE>
+				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<SHOW_EMOTE>
+							<TARGET>Wally</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<SET_FACING>
+							<TARGET>PLAYER</TARGET>
+							<FACING>RIGHT</FACING>
+						</SET_FACING>
+						<DELAY>4</DELAY>
+						<DIALOG>
+							<SPEAKER>Wally</SPEAKER>
+							<TEXT>Oh god I hope I can fix this computer![halt] I don’t know if this is a good idea!   [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Wally</TARGET>
+						</HIDE_EMOTE>
+						<TRAINER_BATTLE>
+							<TRAINER_NAME>Wally</TRAINER_NAME>
+							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_MONS>
+								<MON><NAME>Computer</NAME><LEVEL>2</LEVEL></MON>
+							</TRAINER_MONS>
+							<IF_WIN>
+								<SEQUENCE>
+									<DISABLE_TRAINER>Wally</DISABLE_TRAINER>
+									<SET_FLAG>defeated_wally</SET_FLAG>
+									<SUB_SEQUENCE>talk_wally</SUB_SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_WIN>
+							<IF_LOSE>
+								<SEQUENCE><END></END></SEQUENCE>
+							</IF_LOSE>
+						</TRAINER_BATTLE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>		
+	</EVENT_encounter_wally>
+	
+	<EVENT_talk_wally>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Wally</SPEAKER>
+				<TEXT>Oh no I hope no one finds out!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_wally>
 
 </EVENTS>
