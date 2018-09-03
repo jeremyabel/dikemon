@@ -32,5 +32,4 @@ package com.tinyrpg.data
 			
 		}
 	}
-			
 }

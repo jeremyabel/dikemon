@@ -13,6 +13,16 @@ package com.tinyrpg.battle
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which represents a battle command for a mon (either player or enemy) using a single move.
+	 * 
+	 * All self-contained logic and sequencing for using a move and dealing with its side-effects 
+	 * is implemented here. Side-effects include things like adding status effects, dealing with KOs, 
+	 * crits, and secondary effects like recoil, multi-hit attacks, etc.
+	 * 
+	 * The general sequence is "So-And-So used Move!", followed by determining if the move hits, followed by 
+	 * the move's FX animation, then resolving damage, status effects, and fainting. If fainting occurs, 
+	 * EXP is distributed and level-ups are dealt with.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyBattleCommandMove extends TinyBattleCommand 
@@ -124,7 +134,7 @@ package com.tinyrpg.battle
 				return;
 			}
 			
-			// Mark attacking mon as participating in the battle
+			// Mark attacking mon as participating in the battle for purposes of EXP distribution
 			attackingMon.usedInBattle = true;
 			
 			// Successfully passed pre-attack checks. Deduct 1 PP.
@@ -139,7 +149,7 @@ package com.tinyrpg.battle
 			// Apply any move effect modifiers to the number of hits
 			numHits = move.applyNumHitsModEffect();
 			
-			// For each hit, do an accuracy check, play the attack animation, deal damage, and show any damage-related dialog boxes
+			// For each hit: do an accuracy check, play the attack animation, deal damage, and show any damage-related dialog boxes
 			if ( move.hasEffect( TinyMoveEffect.HIT ) )
 			{
 				for ( var i : int = 0; i < numHits; i++ ) 
@@ -532,6 +542,15 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Returns an array of commands to be ran once this command completes.
+		 * What these commands are depends on whether or not the move results in a fainting mon.
+		 * 
+		 * If the Player's mon faints, they are allowed to select another, otherwise they game over.
+		 * 
+		 * If the Enemy's mon faints, for wild encounters the battle is over, otherwise the trainer
+		 * can pick another mon, otherwise the Player wins the battle.
+		 */
 		override public function getNextCommands() : Array
 		{
 			var startTurnCommand : TinyBattleCommand;
@@ -617,6 +636,13 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Function which adds the sequencing for playing a given move's animation. 
+		 * 
+		 * @param 	attackingMon	The mon using the move.
+		 * @param	move			The move who's animation will be played.
+		 * @param	isEnemy			Whether or not the move is used by the enemy.
+		 */
 		private function playAttackAnimation( attackingMon : TinyMon, move : TinyMoveData, isEnemy : Boolean ) : void
 		{
 			TinyLogManager.log('playAttackAnimation: ' + attackingMon.name + ' - ' + move.name, this);
@@ -643,7 +669,13 @@ package com.tinyrpg.battle
 			this.eventSequence.addDelay( 0.2 );
 		}
 
-
+		
+		/**
+		 * Function which adds the sequencing for a mon fainting.
+		 * 
+		 * @param	faintedMon			The mon which fainted.
+		 * @param	targetMonContainer	The mon sprite container object. 
+		 */
 		private function playMonFaint( faintedMon : TinyMon, targetMonContainer : TinyMonContainer ) : void
 		{
 			TinyLogManager.log('playMonFaint', this);
@@ -656,6 +688,14 @@ package com.tinyrpg.battle
 		}
 
 
+		/**
+		 * Function for sequencing the damage being dealt to a given mon. Deals the actual damage, then rolls
+		 * the health bar down.
+		 * 
+		 * @param	targetMon	The mon recieving the damage.
+		 * @param	damage		The amount of damage dealt.
+		 * @param	isEnemy		Whether or not the mon is the enemy. 
+		 */
 		private function applyDamageToTarget( targetMon : TinyMon, damage : int, isEnemy : Boolean ) : void
 		{
 			TinyLogManager.log('applyDamageToTarget: ' + targetMon.name + ' - ' + damage + ' points', this);

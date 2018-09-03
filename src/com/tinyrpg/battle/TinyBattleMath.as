@@ -340,7 +340,7 @@ package com.tinyrpg.battle
 			}
 			
 			// Get status modifier
-			// Fixes a bug in the original where poison, paralysis, and burn do not affect catch rate
+			// Fixes a bug in the original where only sleep would affect the catch rate
 			if ( targetMon.isSleeping ) D = 10;
 			if ( targetMon.isPoisoned ) D = 5;
 			if ( targetMon.isParalyzed ) D = 5;
@@ -372,7 +372,7 @@ package com.tinyrpg.battle
 			var S : Number = 1.0;
 			
 			// Get status modifier
-			// Fixes a bug in the original where poison, paralysis, and burn do not affect wobble count
+			// Fixes a bug in the original where only sleep would affect the wobble count
 			if ( targetMon.isSleeping ) S = 2.0;
 			if ( targetMon.isPoisoned ) S = 1.5;
 			if ( targetMon.isParalyzed ) S = 1.5;

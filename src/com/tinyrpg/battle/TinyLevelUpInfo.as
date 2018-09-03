@@ -5,6 +5,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.utils.TinyMath;
 
 	/**
+	 * Class which contains data for updating a mon's level during battle.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyLevelUpInfo 

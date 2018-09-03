@@ -7,6 +7,8 @@ package com.tinyrpg.battle
 	import com.tinyrpg.utils.TinyMath;
 	
 	/**
+	 * Class which contains static functions and variables for all text used within a battle.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyBattleStrings 

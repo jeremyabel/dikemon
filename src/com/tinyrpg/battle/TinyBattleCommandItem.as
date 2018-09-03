@@ -14,6 +14,11 @@ package com.tinyrpg.battle
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which represents a battle command for using an item.
+	 * The functionality of each item is defined in this class, including using balls.
+	 * 
+	 * Subclass of {@link TinyBattleCommand}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyBattleCommandItem extends TinyBattleCommand 
@@ -29,7 +34,19 @@ package com.tinyrpg.battle
 		
 		public var result : String = RESULT_OK;
 		
-		public function TinyBattleCommandItem( battle : TinyBattle, item : TinyItem, move : TinyMoveData )
+		
+		/**
+		 * Creates a battle command for using a given item in a given battle. 
+		 * The command is automatically set to be called by the PLAYER, because only
+		 * players can use items in battle. 
+		 * 
+		 * TODO: enemies be able to use items too if we have time...
+		 * 
+		 * @param	battle	The battle this command is created for.
+		 * @param	item	The item that is being used.
+		 * @param	move	If the item restores a move's PP, then the player picks a move before this item command is created, and it is passed in here.
+		 */
+		public function TinyBattleCommandItem( battle : TinyBattle, item : TinyItem, move : TinyMoveData = null )
 		{
 			super( battle, TinyBattleCommand.COMMAND_ITEM, TinyBattleCommand.USER_PLAYER );
 			
@@ -39,10 +56,10 @@ package com.tinyrpg.battle
 			
 			this.item.printLog();
 			
-			// The result of a ball item is pre-calculated before the command is executed
-			if ( this.item.isBall && this.battle.m_isWildEncounter ) 
+			// For ball items, the result is pre-computed in order to set up the sequencing of the commands that follow this one. 
+			if ( this.item.isBall && this.battle.m_isWildEncounter )
 			{
-				// Calculate catch result and number of wobbles
+				// Calculate this catch result and number of wobbles
 				this.canCatch = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
 				this.numWobbles = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
 				
@@ -54,22 +71,31 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Overridden execute() function which remaps the item's type to various functions which
+		 * create the required sequence for the specific item.
+		 */
 		override public function execute() : void
 		{
 			if ( this.item.healHP ) this.healHP(); 
 			if ( this.item.healPP ) this.healPP();
 			if ( this.item.healStatus ) this.healStatus();
-			if ( this.item.isBall ) this.useBall();
+			if ( this.item.isBall && this.battle.m_isWildEncounter ) this.useBall();
 			
 			this.eventSequence.addEnd();
 			super.execute();
 		}
 		
 		
+		/**
+		 * Function which handles the sequencing of ball items which have the possibility of catching a wild mon.
+		 * The probability of this happening is determined by a number of factors and is calculated by the 
+		 * {@link TinyBattleMath} class and is precalculated in the constructor.
+		 */
 		private function useBall() : void
 		{
 			TinyLogManager.log('useBall: ' + this.item.effectAmount, this);
-
+			
 			var isUltra : Boolean = this.item.effectAmount > 1;
 			
 			// Add delay for nice feels
@@ -138,6 +164,9 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Function which handles the sequencing of items which restore HP to the current mon.
+		 */
 		private function healHP() : void
 		{
 			TinyLogManager.log('healHP: ' + this.item.effectAmount, this );
@@ -166,6 +195,10 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Function which handles the sequencing of items which restore PP to a single move.
+		 * The specific move is given in the constructor and is set as a parameter.
+		 */
 		private function healPP() : void
 		{
 			TinyLogManager.log('healPP: ' + this.item.effectAmount, this );
@@ -191,6 +224,10 @@ package com.tinyrpg.battle
 		}
 		
 		
+		/**
+		 * Function which handles the sequencing of items that resolve one or more of the the four core 
+		 * status effects: burn, paralysis, poison, and sleep.
+		 */
 		private function healStatus() : void
 		{
 			// Add delay for nice feels

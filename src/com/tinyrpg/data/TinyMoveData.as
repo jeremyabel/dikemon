@@ -370,31 +370,38 @@ package com.tinyrpg.data
 					if (target.isBurned) return false;
 					target.isBurned = true; 
 					break;
+					
 				case TinyStatusEffect.CONFUSION:
 					if (target.isConfused) return false;
 					if (!target.isConfused)
 						target.setConfusionCounter();
 					break;
+					
 				case TinyStatusEffect.FLINCH:
 					if (target.isFlinching) return false;
 					target.isFlinching = true;
 					break;
+					
 				case TinyStatusEffect.LOCK_ON:
 					if (target.isLockedOn) return false;
 					target.isLockedOn = true;
 					break;
+					
 				case TinyStatusEffect.MEAN_LOOK:
 					if (target.isMeanLooked) return false;
 					target.isMeanLooked = true;
 					break;
+					
 				case TinyStatusEffect.PARALYSIS:
 					if (target.isParalyzed) return false;
 					target.isParalyzed = true;
 					break;
+					
 				case TinyStatusEffect.POISON:
 					if (target.isPoisoned) return false;
 					target.isPoisoned = true;
 					break;
+					
 				case TinyStatusEffect.SLEEP:
 					if (target.isSleeping) return false;
 					if (!target.isSleeping)
