@@ -3,6 +3,7 @@ package com.tinyrpg.data
 	import com.greensock.TweenLite;
 	
 	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.display.TinyTrainerSightHitbox;
 	import com.tinyrpg.lookup.TinyNameLookup;
 	import com.tinyrpg.lookup.TinySpriteLookup;
 	import com.tinyrpg.managers.TinyGameManager;
@@ -22,15 +23,19 @@ package com.tinyrpg.data
 	 */
 	public class TinyFieldMapObjectNPC extends TinyFieldMapObject
 	{
-		public var facing 		: String;
-		public var npcName		: String;
-		public var spriteName 	: String;
-		public var eventName 	: String;
-		public var walkSprite 	: TinyWalkSprite;
-		public var isInGrass	: Boolean;
-		public var randomSpin	: Boolean = false;
-		public var enableSpin	: Boolean = true;
-		public var facePlayer	: Boolean = true;
+		public var facing 			: String = null;
+		public var npcName			: String;
+		public var spriteName 		: String;
+		public var eventName 		: String;
+		public var walkSprite 		: TinyWalkSprite;
+		public var isInGrass		: Boolean;
+		public var randomSpin		: Boolean = false;
+		public var enableSpin		: Boolean = true;
+		public var facePlayer		: Boolean = true;
+		public var isTrainer		: Boolean = false;
+		public var encounterName	: String;
+		public var sightTiles		: int = 4;
+		public var sightBox			: TinyTrainerSightHitbox;
 		
 		private var randomDirections : Array = [ 'UP', 'DOWN', 'LEFT', 'RIGHT' ];
 		
@@ -39,7 +44,7 @@ package com.tinyrpg.data
 			
 		}
 		
-		override public function dataReady() : void
+		protected function initSprite() : void
 		{
 			var spriteId : uint = TinySpriteLookup.getFieldSpriteId( this.spriteName );
 			
@@ -49,12 +54,13 @@ package com.tinyrpg.data
 				spriteId = TinySpriteLookup.getPlayerSpriteId( TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name ) ); 
 			}
 			
-			// Get facing from the object name. Object name format is a string like "[object MapObjectNPCLeft]".
-			// It needs to be sliced down to just the facing string at the end of the object name.
-			this.facing = this.toString().toUpperCase().slice( 20, -1 );
+			// Get facing from the object name. Object name format is a string like "[object MapObjectNPCLeft]"
+			// or "[object MapObjectTrainerLeft]". It needs to be sliced down to just the facing string at the 
+			// end of the object name. 
+			this.facing = this.toString().toUpperCase().slice( this.isTrainer ? 24 : 20, -1 );
 			
 			// Create the NPC sprite
-			this.walkSprite = new TinyWalkSprite( spriteId, this.facing );
+			this.walkSprite = new TinyWalkSprite( spriteId, this.facing, false, false, this.isTrainer );
 			this.walkSprite.x += 8;
 			this.walkSprite.y += 8;
 			
@@ -62,10 +68,21 @@ package com.tinyrpg.data
 			this.hitbox = this.walkSprite.hitBox;
 			this.walkSprite.hitBox.owner = this;
 			
+			// Configure sightbox
+			this.sightBox = this.walkSprite.sightBox;
+			this.sightBox.setNumTiles( this.sightTiles );
+			this.walkSprite.sightBox.owner = this;
+			
 			// Add 'em up
 			this.addChild( this.walkSprite );
 				
 			this.tryRestartSpin();
+		}
+		
+		
+		override public function dataReady() : void
+		{
+			this.initSprite();
 			super.dataReady();
 		}
 		
@@ -114,6 +131,28 @@ package com.tinyrpg.data
 					case 'LEFT':	this.walkSprite.setFacing( 'RIGHT' ); break;
 					case 'RIGHT':	this.walkSprite.setFacing( 'LEFT' ); break;
 				}
+			}
+		}
+		
+		
+		/**
+		 * Deactivates the NPC's trainer state and removes the trainer's sightbox. 
+		 * This prevents the NPC from seeing the player and starting a battle.
+		 */
+		public function deactivateTrainer() : void
+		{
+			if ( this.isTrainer ) 
+			{
+				TinyLogManager.log( 'deactivateTrainer', this );
+				
+				// Remove the sightbox
+				this.walkSprite.removeChild( this.sightBox );
+				this.walkSprite.sightBox = null;
+				this.sightBox = null;
+				
+				// No sightbox means the NPC is not a trainer anymore
+				this.walkSprite.isTrainer = false;
+				this.isTrainer = false;
 			}
 		}
 	}

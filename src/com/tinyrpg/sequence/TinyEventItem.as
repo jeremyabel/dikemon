@@ -22,6 +22,7 @@ package com.tinyrpg.sequence
 		public static const TAKE_ITEM	  			: String = 'TAKE_ITEM';
 		public static const GIVE_MONEY	  			: String = 'GIVE_MONEY';
 		public static const TAKE_MONEY				: String = 'TAKE_MONEY';
+		public static const DISABLE_TRAINER			: String = 'DISABLE_TRAINER';
 		public static const WALK		  			: String = 'WALK';
 		public static const WARP					: String = 'WARP';
 		public static const SET_POSITION  			: String = 'SET_POSITION';

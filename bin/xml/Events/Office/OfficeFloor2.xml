@@ -1,3 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+			
+			<!-- Disable Gary Montana if he has been defeated -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_gary_montana</VALUE>
+				<IF_TRUE><SEQUENCE><DISABLE_TRAINER>Gary Montana</DISABLE_TRAINER><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<EVENT_encounter_gary_montana>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_gary_montana</VALUE>
+				<IF_TRUE><SEQUENCE><END></END></SEQUENCE></IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<SHOW_EMOTE>
+							<TARGET>Gary Montana</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<SET_FACING>
+							<TARGET>PLAYER</TARGET>
+							<FACING>LEFT</FACING>
+						</SET_FACING>
+						<DELAY>4</DELAY>
+						<DIALOG>
+							<SPEAKER>Gary Montana</SPEAKER>
+							<TEXT>Don't fire me,[delay 4] I have a child to support![halt] Actually he's dead.[delay 2].[delay 2].[delay 2] but don't fire me!    [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Gary Montana</TARGET>
+						</HIDE_EMOTE>
+						<TRAINER_BATTLE>
+							<TRAINER_NAME>Gary Montana</TRAINER_NAME>
+							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_MONS>
+								<MON><NAME>Bucket</NAME><LEVEL>2</LEVEL></MON>
+							</TRAINER_MONS>
+							<IF_WIN>
+								<SEQUENCE>
+									<DISABLE_TRAINER>Gary Montana</DISABLE_TRAINER>
+									<SET_FLAG>defeated_gary_montana</SET_FLAG>
+									<SUB_SEQUENCE>talk_gary_montana</SUB_SEQUENCE>
+									<END></END>
+								</SEQUENCE>
+							</IF_WIN>
+							<IF_LOSE>
+								<SEQUENCE><END></END></SEQUENCE>
+							</IF_LOSE>
+						</TRAINER_BATTLE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>		
+	</EVENT_encounter_gary_montana>
+	
+	<EVENT_talk_gary_montana>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Gary Montana</SPEAKER>
+				<TEXT>Well this is about par for a day at the office.   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_gary_montana>
+
 </EVENTS>

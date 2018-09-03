@@ -94,7 +94,7 @@ package com.tinyrpg.lookup
 			{
 				default:
 				case "PLAYER 1":			return PLAYER_1;
-				case "PLAER 1 BIKE":		return PLAYER_1_BIKE;
+				case "PLAYER 1 BIKE":		return PLAYER_1_BIKE;
 				case "PLAYER 2":			return PLAYER_2;
 				case "PLAYER 2 BIKE":		return PLAYER_2_BIKE;
 				case "PLAYER 3":			return PLAYER_3;
@@ -166,6 +166,87 @@ package com.tinyrpg.lookup
 				case "DRAGON MON":			return NPC_DRAGON_MON;
 				case "CAT MON":				return NPC_CAT_MON;
 				case "DIKEBALL":			return NPC_DIKEBALL;
+			}
+		}
+		
+		public static function getSpriteNameFromId( id : int ) : String
+		{
+			switch ( id )
+			{
+				default:
+				case PLAYER_1: return "PLAYER 1";
+				case PLAYER_1_BIKE: return "PLAYER 1 BIKE";
+				case PLAYER_2: return "PLAYER 2";
+				case PLAYER_2_BIKE: return "PLAYER 2 BIKE";
+				case PLAYER_3: return "PLAYER 3";
+				case PLAYER_4: return "PLAYER 4";
+				case NPC_PROF_OAK: return "PROF OAK";
+				case NPC_GARY_RIVAL: return "GARY RIVAL";
+				case NPC_OLD_MAN_1: return "OLD MAN 1";
+				case NPC_OLD_MAN_2: return "OLD MAN 2";
+				case NPC_OLD_MAN_3: return "OLD MAN 3";
+				case NPC_OLD_MAN_4: return "OLD MAN 4";
+				case NPC_OLD_MAN_5: return "OLD MAN 5";
+				case NPC_OLD_MAN_6: return "OLD MAN 6";
+				case NPC_OLD_MAN_7: return "OLD MAN 7";
+				case NPC_OLD_LADY: return "OLD LADY";
+				case NPC_HEADBAND_GIRL_1: return "HEADBAND GIRL 1";
+				case NPC_HEADBAND_GIRL_2: return "HEADBAND GIRL 2";
+				case NPC_MOHAWK_GUY: return "MOHAWK GUY";
+				case NPC_MOM_1: return "MOM 1";
+				case NPC_MOM_2: return "MOM 2";
+				case NPC_SCIENTIST_1: return "SCIENTIST 1";
+				case NPC_SCIENTIST_2: return "SCIENTIST 2";
+				case NPC_SCIENTIST_3: return "SCIENTIST 3";
+				case NPC_LONG_HAIR_GIRL_1: return "LONG HAIR GIRL 1";
+				case NPC_LONG_HAIR_GIRL_2: return "LONG HAIR GIRL 2";
+				case NPC_LONG_HAIR_GIRL_3: return "LONG HAIR GIRL 3";
+				case NPC_LONG_HAIR_GIRL_5: return "LONG HAIR GIRL 5";
+				case NPC_LONG_HAIR_GIRL_6: return "LONG HAIR GIRL 6";
+				case NPC_PONY_TAIL_GIRL_1: return "PONY TAIL GIRL 1";
+				case NPC_PONY_TAIL_GIRL_2: return "PONY TAIL GIRL 2";
+				case NPC_PONY_TAIL_GIRL_3: return "PONY TAIL GIRL 3";
+				case NPC_PONY_TAIL_GIRL_4: return "PONY TAIL GIRL 4";
+				case NPC_EMO_GUY: return "EMO GUY";
+				case NPC_SCRUFFY_GUY: return "SCRUFFY GUY";
+				case NPC_SCRUFFY_GIRL: return "SCRUFFY GIRL";
+				case NPC_HEADBAND_GUY_1: return "HEADBAND GUY 1";
+				case NPC_HEADBAND_GUY_2: return "HEADBAND GUY 2";
+				case NPC_BANDANA_GUY: return "BANDANA GUY";
+				case NPC_MOTORCYCLE_GUY: return "MOTORCYCLE GUY";
+				case NPC_SUNGLASSES_GUY: return "SUNGLASSES GUY";
+				case NPC_ANGRY_GUY: return "ANGRY GUY";
+				case NPC_KARATE_GUY: return "KARATE GUY";
+				case NPC_EVIL_CAPE_GUY: return "EVIL CAPE GUY";
+				case NPC_BROCK: return "BROCK";
+				case NPC_MISTY: return "MISTY";
+				case NPC_CASUAL_GUY_1: return "CASUAL GUY 1";
+				case NPC_CASUAL_GUY_2: return "CASUAL GUY 2";
+				case NPC_CASUAL_GUY_3: return "CASUAL GUY 3";
+				case NPC_CASUAL_GUY_4: return "CASUAL GUY 4";
+				case NPC_CASUAL_GUY_5: return "CASUAL GUY 5";
+				case NPC_NERD_GUY: return "NERD GUY";
+				case NPC_LITTLE_BOY: return "LITTLE BOY";
+				case NPC_LITTLE_GIRL: return "LITTLE GIRL";
+				case NPC_GERMAN_GUY: return "GERMAN GUY";
+				case NPC_GERMAN_GIRL: return "GERMAN GIRL";
+				case NPC_SWIMMER_GUY: return "SWIMMER GUY";
+				case NPC_SWIMMER_GIRL: return "SWIMMER GIRL";
+				case NPC_PIKA_SURFER: return "PIKA SURFER";
+				case NPC_ROCKET_GUY: return "ROCKET GUY";
+				case NPC_ROCKET_GIRL: return "ROCKET GIRL";
+				case NPC_SAFARI_GUY: return "SAFARI GUY";
+				case NPC_KIMONO_GIRL: return "KIMONO GIRL";
+				case NPC_TOPHAT_MAN: return "TOPHAT MAN";
+				case NPC_CONDUCTOR_GUY: return "CONDUCTOR GUY";
+				case NPC_SUNHAT_GIRL: return "SUNHAT GIRL";
+				case NPC_NURSE: return "NURSE";
+				case NPC_GROUND_MON: return "GROUND MON";
+				case NPC_FAIRY_MON: return "FAIRY MON";
+				case NPC_BIRD_MON: return "BIRD MON";
+				case NPC_DRAGON_MON: return "DRAGON MON";
+				case NPC_CAT_MON: return "CAT MON";
+				case NPC_DIKEBALL: return "DIKEBALL"; 
 			}
 		}
 		
@@ -244,25 +325,27 @@ package com.tinyrpg.lookup
 			
 			switch ( name.toUpperCase() ) 
 			{
-				case 'ANDY': 		newSprite = new HumanMaruska; break;
-				case 'BILL': 		newSprite = new HumanBill; break;
-				case 'CHRIS': 		newSprite = new HumanChris; break;
-				case 'DAVE': 		newSprite = new HumanDave; break;
-				case 'EVAN': 		newSprite = new HumanStark; break;
-				case 'JASON': 		newSprite = new HumanJason; break;
-				case 'GAGNON': 		newSprite = new HumanGagnon; break;
-				case 'ALEX': 		newSprite = new HumanAlex; break;
-				case 'BRENTON': 	newSprite = new HumanBrenton; break;
-				case 'KRISTI': 		newSprite = new HumanKristi; break;
-				case 'MEGAN': 		newSprite = new HumanClegg; break;
-				case 'ZIGGY': 		newSprite = new HumanZiggy; break;
-				case 'RACHEL': 		newSprite = new HumanRachel; break;
-				case 'RALPH': 		newSprite = new HumanRalph; break;
-				case 'RON': 		newSprite = new HumanRon; break;
-				case 'QUINN': 		newSprite = new HumanQuinn; break;
-				case 'OAK':			newSprite = new TrainerOak; break;
-				case 'TEAM VOMIT':	newSprite = new TrainerTeamVomit1; break;
-				default: 			newSprite = new TrainerPlayer; break;
+				case 'ANDY': 			newSprite = new HumanMaruska; break;
+				case 'BILL': 			newSprite = new HumanBill; break;
+				case 'CHRIS': 			newSprite = new HumanChris; break;
+				case 'DAVE': 			newSprite = new HumanDave; break;
+				case 'EVAN': 			newSprite = new HumanStark; break;
+				case 'JASON': 			newSprite = new HumanJason; break;
+				case 'GAGNON': 			newSprite = new HumanGagnon; break;
+				case 'ALEX': 			newSprite = new HumanAlex; break;
+				case 'BRENTON': 		newSprite = new HumanBrenton; break;
+				case 'KRISTI': 			newSprite = new HumanKristi; break;
+				case 'MEGAN': 			newSprite = new HumanClegg; break;
+				case 'ZIGGY': 			newSprite = new HumanZiggy; break;
+				case 'RACHEL': 			newSprite = new HumanRachel; break;
+				case 'RALPH': 			newSprite = new HumanRalph; break;
+				case 'RON': 			newSprite = new HumanRon; break;
+				case 'QUINN': 			newSprite = new HumanQuinn; break;
+				case 'OAK':				newSprite = new TrainerOak; break;
+				case 'TEAM VOMIT':		newSprite = new TrainerTeamVomit1; break;
+				case 'GARY MONTANA': 	newSprite = new TrainerGaryMontana; break;
+				case 'STEVE PIZZAZ':	newSprite = new TrainerStevePizzaz; break;
+				default: 				newSprite = new TrainerPlayer; break;
 			}
 			
 			return newSprite;

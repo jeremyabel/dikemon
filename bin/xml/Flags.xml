@@ -37,5 +37,9 @@
 	
 	<!-- Office -->
 	<FLAG>checked_in_with_receptionist</FLAG>
+	<FLAG>defeated_gary_montana</FLAG>
+	<FLAG>defeated_steve_pizazz</FLAG>
+	<FLAG>defeated_wally</FLAG>
+	<FLAG>defeated_team_profit</FLAG>
 
 </FLAGS>

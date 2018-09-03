@@ -2,13 +2,14 @@
 <TRAINERS>
 	
 	<TRAINER>
-		<NAME></NAME>
+		<NAME>Gary Montana</NAME>
 		<DVS></DVS>
-		<MONEY>16</MONEY>
+		<MONEY>96</MONEY>
 		<SPRITE></SPRITE>
 		<PARTY>
-			<MON><NAME></NAME><LEVEL></LEVEL></MON>
-			<MON><NAME></NAME><LEVEL></LEVEL></MON>
+			<MON><NAME>Bucket</NAME><LEVEL></LEVEL></MON>
+			<MON><NAME>Mop</NAME><LEVEL></LEVEL></MON>
+			<MON><NAME>Washer</NAME><LEVEL></LEVEL></MON>
 		</PARTY>
 	</TRAINER>
 

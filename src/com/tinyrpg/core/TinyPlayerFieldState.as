@@ -56,24 +56,40 @@ package com.tinyrpg.core
 			this.incrementStepCounter();
 			
 			var hitObject : * = event.param.object;
+			var isSightbox : Boolean = event.param.isSightbox;
+			
+			trace( event.param );
 			
 			if ( hitObject is TinyFieldMapObject )
 			{
+				// Hit trigger object
 				if ( hitObject is TinyFieldMapObjectTrigger )
 				{
 					this.onHitTrigger( hitObject as TinyFieldMapObjectTrigger, event.param.fromAcceptKeypress ); 
 					return;
 				}
 				
+				// Hit warp object
 				if ( hitObject is TinyFieldMapObjectWarp )
 				{
 					this.onHitWarp( hitObject as TinyFieldMapObjectWarp );
 					return;
 				}
 			
+				// Hit NPC object
 				if ( hitObject is TinyFieldMapObjectNPC ) 
 				{
-					this.onHitNPC( hitObject as TinyFieldMapObjectNPC, event.param.fromAcceptKeypress );
+					var npcObject : TinyFieldMapObjectNPC = hitObject as TinyFieldMapObjectNPC;
+					
+					if ( npcObject.isTrainer && isSightbox )
+					{ 
+						this.onHitSightbox( npcObject );
+					} 
+					else
+					{
+						this.onHitNPC( npcObject, event.param.fromAcceptKeypress );
+					}
+					
 					return;
 				}
 			}
@@ -237,6 +253,28 @@ package com.tinyrpg.core
 			
 			// Play the NPC's event
 			TinyMapManager.getInstance().startEventByName( npcObject.eventName );
+		}
+		
+		
+		/**
+		 * Handler for steps which collide with {@link TinyFieldMapObjectNPC} trainer sightboxes.
+		 * 
+		 * @param 	trainerObject		the {@link TinyFieldMapObjectNPC} object that was hit
+		 */
+		private function onHitSightbox( trainerObject : TinyFieldMapObjectNPC ) : void
+		{
+			TinyLogManager.log( 'onHitTrainer: ' + trainerObject.npcName, this );
+			
+			this.incrementStepCounter();
+			
+			// Disable random spinning so the trainer doesn't change orientation while talking to the player
+			trainerObject.enableSpin = false;
+			
+			// Set the trainer to face the player
+			trainerObject.setFacingFromPlayerFacing( this.walkSprite.currentDirection );
+			
+			// Play the trainer's encounter event
+			TinyMapManager.getInstance().startEventByName( trainerObject.encounterName );
 		}
 		
 		

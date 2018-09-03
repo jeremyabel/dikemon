@@ -24,7 +24,7 @@ package com.tinyrpg.lookup
 			this.trainerData = new XML( byteArray.readUTFBytes( byteArray.length ) );
 		}
 		
-		public static function getInstance() : TinyMonLookup
+		public static function getInstance() : TinyTrainerLookup
 		{
 			return instance;
 		}

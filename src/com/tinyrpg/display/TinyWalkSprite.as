@@ -53,8 +53,10 @@ package com.tinyrpg.display
 		public var speed : int;
 		public var movementBox : TinyWalkSpriteHitbox;
 		public var hitBox : TinyWalkSpriteHitbox;
+		public var sightBox : TinyTrainerSightHitbox;
 		public var emoteIcon : TinyEmoteIcon;
 		public var isPlayer : Boolean; 
+		public var isTrainer : Boolean;
 		public var homeMapName : String;
 		public var lockToCamera : Boolean;
 		public var currentDirection : String;
@@ -62,7 +64,7 @@ package com.tinyrpg.display
 		public var enableCollisions : Boolean = true;
 		public var isAlive : Boolean = true;
 
-		public function TinyWalkSprite( id : uint, initialFacing : String = 'DOWN', lockToCamera : Boolean = false, isPlayer : Boolean = false ) : void
+		public function TinyWalkSprite( id : uint, initialFacing : String = 'DOWN', lockToCamera : Boolean = false, isPlayer : Boolean = false, isTrainer : Boolean = false ) : void
 		{
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 			
@@ -71,6 +73,7 @@ package com.tinyrpg.display
 			this.spritesheet = new TinyWalkSpriteSheet( this.id, this.currentDirection );
 			this.lockToCamera = lockToCamera;
 			this.isPlayer = isPlayer;
+			this.isTrainer = isTrainer;
 			this.speed = MOVEMENT_SPEED;
 			
 			if ( TinyMapManager.getInstance().currentMap )
@@ -89,8 +92,12 @@ package com.tinyrpg.display
 			this.jumpShadow.visible = false;
 			
 			this.movementBox = new TinyWalkSpriteHitbox( this, 0x00FF00 );
+			this.sightBox = new TinyTrainerSightHitbox( this, 0x0000FF );
 			this.hitBox = new TinyWalkSpriteHitbox( this, 0xFF00FF );
+			
+			// Set hitbox visibility flags
 			this.movementBox.visible = false;
+			this.sightBox.visible = false;
 			this.hitBox.visible = false;
 			
 			this.emoteIcon = new TinyEmoteIcon();
@@ -108,6 +115,12 @@ package com.tinyrpg.display
 			if ( this.isPlayer )
 			{
 				this.addChild( this.movementBox );
+			}
+			
+			// Only trainers get the sight hitbox
+			if ( this.isTrainer ) 
+			{
+				this.addChild( this.sightBox );
 			}
 
 			// Wait for control
@@ -181,7 +194,7 @@ package com.tinyrpg.display
 			// tap of a directional arrow.			
 			if ( this.spritesheet.keepDirection ) 
 			{
-				this.checkArrowInputs();				
+				this.checkArrowInputs();
 			}
 			else 
 			{
@@ -361,6 +374,23 @@ package com.tinyrpg.display
 				case TinyWalkSprite.LEFT:	this.movementBox.x -= 16; break;
 				case TinyWalkSprite.RIGHT:	this.movementBox.x += 16; break;
 			}
+			
+			// Reset the sight hitbox position, if it exists
+			if ( this.sightBox ) 
+			{
+				this.sightBox.x = 0;
+				this.sightBox.y = 0;
+				this.sightBox.rotation = 0;
+				
+				// Position and rotate the sight hitbox according to the facing direction
+				switch ( this.spritesheet.facing ) 
+				{
+					case TinyWalkSprite.UP:		this.sightBox.rotation -= 90;  break;
+					case TinyWalkSprite.DOWN:	this.sightBox.rotation += 90;  break;
+					case TinyWalkSprite.LEFT:	this.sightBox.rotation -= 180; break;
+					case TinyWalkSprite.RIGHT:	this.sightBox.rotation += 0;   break;
+				}
+			}
 		}
 		
 		public function checkObjectCollision( useMovementHitbox : Boolean = false, fromAcceptKeypress : Boolean = false ) : Boolean
@@ -378,24 +408,36 @@ package com.tinyrpg.display
 				if ( objectCollision.hit ) 
 				{
 					var hitObject : TinyFieldMapObject;
+					var isBlocking : Boolean = false;
+					var isSightbox : Boolean = false;
 					
-					// If the collision object is from a walk sprite, pull the owner out.
-					// Otherwise just use the collision object as normal. 
-					if ( objectCollision.object is TinyWalkSpriteHitbox )
+					// If the collision object is from a walk sprite, pull the owner out. When testing trainer sightboxes,
+					// we don't want to collide with them when checking collision when the player presses the Accept button,
+					// so ignore those if necessary. Otherwise just use the collision object as normal. 
+					if ( objectCollision.object is TinyTrainerSightHitbox && !fromAcceptKeypress )
+					{
+						hitObject = ( objectCollision.object as TinyTrainerSightHitbox ).owner;
+						isBlocking = false;
+						isSightbox = true;
+					}
+					else if ( objectCollision.object is TinyWalkSpriteHitbox )
 					{
 						hitObject = ( objectCollision.object as TinyWalkSpriteHitbox ).owner;
+						isBlocking = hitObject.isBlocking( this );
 					}
 					else 
 					{
 						hitObject = objectCollision.object as TinyFieldMapObject;
+						isBlocking = hitObject.isBlocking( this );
 					}
 					
 					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, { 
 						object: hitObject,
+						isSightbox: isSightbox,
 						fromAcceptKeypress: fromAcceptKeypress
 					}));
 					
-					return hitObject.isBlocking( this );
+					return isBlocking;
 				} 
 				else 
 				{

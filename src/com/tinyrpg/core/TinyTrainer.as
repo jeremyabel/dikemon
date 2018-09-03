@@ -57,8 +57,8 @@ package com.tinyrpg.core
 			newTrainer.squad.push( starterMon );
 			
 			// TODO: REMOVE, FOR TESTING
-			starterMon.dealDamage( 5 );
-			starterMon.isPoisoned = true;
+//			starterMon.dealDamage( 5 );
+//			starterMon.isPoisoned = true;
 			
 			// TODO: REMOVE, FOR TESTING
 			var item1 : TinyItem = TinyItemDataList.getInstance().getItemByOriginalName( 'Potion' );
