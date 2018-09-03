@@ -544,6 +544,8 @@ package com.tinyrpg.display
 		
 		public function setFacing( facing : String ) : void
 		{
+			TinyLogManager.log( 'setFacing: ' + facing, this );
+			
 			this.currentDirection = facing;
 			this.spritesheet.setFacing( this.currentDirection );
 			this.updateMovementHitbox();

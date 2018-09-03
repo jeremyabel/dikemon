@@ -68,10 +68,11 @@ package com.tinyrpg.data
 			this.hitbox = this.walkSprite.hitBox;
 			this.walkSprite.hitBox.owner = this;
 			
-			// Configure sightbox
+			// Configure and update sightbox
 			this.sightBox = this.walkSprite.sightBox;
 			this.sightBox.setNumTiles( this.sightTiles );
 			this.walkSprite.sightBox.owner = this;
+			this.walkSprite.setFacing( this.facing );
 			
 			// Add 'em up
 			this.addChild( this.walkSprite );
