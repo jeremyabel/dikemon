@@ -1126,7 +1126,13 @@
 				<VALUE>picked_ball</VALUE>
 				<IF_TRUE>
 					<SEQUENCE>
-						<!-- TODO: Heal all mons -->
+						<HEAL_ALL></HEAL_ALL>
+						<!-- TODO: Play a healing sound -->
+						<DELAY>15</DELAY>
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>Wow, it healed all your busted Dikémon!   [end]</TEXT>
+						</DIALOG>
 						<END></END>
 					</SEQUENCE>
 				</IF_TRUE>
@@ -1134,7 +1140,7 @@
 					<SEQUENCE>
 						<DIALOG>
 							<SPEAKER></SPEAKER>
-							<TEXT>This looks like a device for healing your busted Dikémon.   [end]</TEXT>
+							<TEXT>This looks like a device for healing your busted Dikémon,[delay 4] if you had any.   [end]</TEXT>
 						</DIALOG>
 						<END></END>
 					</SEQUENCE>

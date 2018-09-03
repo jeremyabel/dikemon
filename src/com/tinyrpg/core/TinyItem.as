@@ -225,7 +225,7 @@ package com.tinyrpg.core
 			}
 			
 			// Can't usea paralysis heal on a non-paralyzed mon
-			if ( this.healParalysis && !targetMon.isParaylzed )
+			if ( this.healParalysis && !targetMon.isParalyzed )
 			{
 				return new TinyItemUseResult( false, TinyBattleStrings.CANT_USE_PARALYSIS );
 			}
@@ -282,7 +282,7 @@ package com.tinyrpg.core
 				{
 					TinyLogManager.log( 'heal status: PARALYSIS', this );
 					itemUsedString = TinyBattleStrings.getBattleString( TinyBattleStrings.PARALYSIS_HEALED, targetMon );
-					targetMon.isParaylzed = false;
+					targetMon.isParalyzed = false;
 				}
 				
 				// Resolve poison

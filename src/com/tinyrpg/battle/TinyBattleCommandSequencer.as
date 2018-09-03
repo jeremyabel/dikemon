@@ -112,7 +112,7 @@ package com.tinyrpg.battle
 			 
 			
 			// Get enemy command
-			// TODO: Trainer AI
+			// TODO: Trainer AI...???
 			var enemyMove : TinyMoveData = TinyTrainerAI.getWildMonMove( this.battle.m_currentEnemyMon );
 			this.enemyCommand = new TinyBattleCommandMove( this.battle, TinyBattleCommand.USER_ENEMY, enemyMove );
 			

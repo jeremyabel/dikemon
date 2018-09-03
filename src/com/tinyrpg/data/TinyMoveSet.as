@@ -211,9 +211,19 @@ package com.tinyrpg.data
 			return ppSum; 
 		}
 		
+		public function recoverAllPP() : void
+		{
+			TinyLogManager.log( 'restoreAllPP', this );
+			
+			if ( this.move1 ) this.move1.recoverAllPP();
+			if ( this.move2 ) this.move2.recoverAllPP();
+			if ( this.move3 ) this.move3.recoverAllPP();
+			if ( this.move4 ) this.move4.recoverAllPP();
+		}
+		
 		public function loadAllMoveFXSprites( palette : TinyBattlePalette, isEnemy : Boolean ) : void
 		{
-			TinyLogManager.log('loadAllMoveFXSprites', this);
+			TinyLogManager.log( 'loadAllMoveFXSprites', this );
 			
 			if ( this.move1 ) this.move1.loadMoveFXAnimation( palette, isEnemy );
 			if ( this.move2 ) this.move2.loadMoveFXAnimation( palette, isEnemy );

@@ -125,7 +125,7 @@ package com.tinyrpg.battle
 			}
 			
 			// Paralysis check (25% to lose turn)
-			if ( targetMon.isParaylzed && Math.random() < PARALYSIS_SKIP_PROB )
+			if ( targetMon.isParalyzed && Math.random() < PARALYSIS_SKIP_PROB )
 			{
 				TinyLogManager.log('doPreAttackChecks: failed (paralyzed)', TinyBattleMath);
 				
@@ -343,7 +343,7 @@ package com.tinyrpg.battle
 			// Fixes a bug in the original where poison, paralysis, and burn do not affect catch rate
 			if ( targetMon.isSleeping ) D = 10;
 			if ( targetMon.isPoisoned ) D = 5;
-			if ( targetMon.isParaylzed ) D = 5;
+			if ( targetMon.isParalyzed ) D = 5;
 			if ( targetMon.isBurned ) D = 5;
 			
 			// Main calculation
@@ -375,7 +375,7 @@ package com.tinyrpg.battle
 			// Fixes a bug in the original where poison, paralysis, and burn do not affect wobble count
 			if ( targetMon.isSleeping ) S = 2.0;
 			if ( targetMon.isPoisoned ) S = 1.5;
-			if ( targetMon.isParaylzed ) S = 1.5;
+			if ( targetMon.isParalyzed ) S = 1.5;
 			if ( targetMon.isBurned ) S = 1.5;
 			
 			var X : Number = Math.max( ( 3 * M - 2 * H ) * ( C * B ) / ( 3 * M ), 1 ) * S;

@@ -45,7 +45,7 @@ package com.tinyrpg.core
 		public var isFlinching		: Boolean = false;
 		public var isPoisoned		: Boolean = false;
 		public var isBurned			: Boolean = false;
-		public var isParaylzed		: Boolean = false;
+		public var isParalyzed		: Boolean = false;
 		public var isLockedOn		: Boolean = false;
 		public var isMeanLooked		: Boolean = false;
 		public var usedMudsport		: Boolean = false;
@@ -221,7 +221,15 @@ package com.tinyrpg.core
 		public function healFull() : void
 		{
 			TinyLogManager.log( 'healFull', this );
+			
+			// Heal all HP and PP
 			this.m_currentHP = this.maxHP;
+			this.moveSet.recoverAllPP();
+			
+			// Clear status effects
+			this.isPoisoned = false;
+			this.isBurned = false;
+			this.isParalyzed = false;
 		}
 
 
@@ -275,7 +283,7 @@ package com.tinyrpg.core
 		{
 			if ( this.isConfused ) return false;
 			if ( this.isPoisoned ) return false;
-			if ( this.isParaylzed ) return false;
+			if ( this.isParalyzed ) return false;
 			if ( this.isSleeping ) return false;
 			if ( this.isBurned ) return false;
 			return true;
@@ -372,7 +380,7 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log('postSwitchCleanup: ' + this.name, this);
 		
-			// Reset status effects that get cleared when mon is switched	
+			// Reset status effects that get cleared when the mon is switched	
 			this.safeguardCounter = 0;
 			this.isFlinching = false;
 			this.isRecharging = false;
@@ -391,7 +399,7 @@ package com.tinyrpg.core
 			this.sleepCounter = 0;
 			this.confuseCounter = 0;
 			this.safeguardCounter = 0;
-			this.isParaylzed = false;
+			this.isParalyzed = false;
 			this.isPoisoned = false;
 			this.isFlinching = false;
 			this.isMeanLooked = false;

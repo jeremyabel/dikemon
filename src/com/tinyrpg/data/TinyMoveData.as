@@ -388,8 +388,8 @@ package com.tinyrpg.data
 					target.isMeanLooked = true;
 					break;
 				case TinyStatusEffect.PARALYSIS:
-					if (target.isParaylzed) return false;
-					target.isParaylzed = true;
+					if (target.isParalyzed) return false;
+					target.isParalyzed = true;
 					break;
 				case TinyStatusEffect.POISON:
 					if (target.isPoisoned) return false;

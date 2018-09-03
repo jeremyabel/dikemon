@@ -186,7 +186,7 @@ package com.tinyrpg.display
 				if ( this.mon.isBurned ) 	this.statusIconBitmap = new Bitmap( new IconBurn() );
 				if ( this.mon.isConfused ) 	this.statusIconBitmap = new Bitmap( new IconConfusion() );
 				if ( this.mon.isSleeping ) 	this.statusIconBitmap = new Bitmap( new IconSleep() );
-				if ( this.mon.isParaylzed ) this.statusIconBitmap = new Bitmap( new IconParalysis() );
+				if ( this.mon.isParalyzed ) this.statusIconBitmap = new Bitmap( new IconParalysis() );
 				if ( this.mon.isPoisoned ) 	this.statusIconBitmap = new Bitmap( new IconPoison() ); 
 				
 				this.statusIconContainer.addChild( this.statusIconBitmap );

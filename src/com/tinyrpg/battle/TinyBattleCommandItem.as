@@ -213,7 +213,7 @@ package com.tinyrpg.battle
 			{
 				TinyLogManager.log('healStatus: PARALYSIS', this );
 				healStatusString = TinyBattleStrings.getBattleString( TinyBattleStrings.PARALYSIS_HEALED, this.mon );
-				this.mon.isParaylzed = false;
+				this.mon.isParalyzed = false;
 			}
 			
 			// Resolve poison
