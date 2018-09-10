@@ -52,14 +52,14 @@ package com.tinyrpg.data
 				// Get move object
 				var newMove : TinyMoveData = TinyMoveDataList.getInstance().getMoveByName( moveName );
 				
-				// Initialize level moveset with empty array
-				if (!newMoveSet.levelMoveSet[level])
+				// Initialize level moveset with an empty array
+				if ( !newMoveSet.levelMoveSet[ level ] )
 				{
-					newMoveSet.levelMoveSet[level] = [];
+					newMoveSet.levelMoveSet[ level ] = [];
 				}
 				
 				// Add to level moveset
-				(newMoveSet.levelMoveSet[level] as Array).push( newMove );
+				( newMoveSet.levelMoveSet[ level ] as Array ).push( newMove );
 			}
 			
 			return newMoveSet;
@@ -80,16 +80,16 @@ package com.tinyrpg.data
 		
 		public function logMoves() : void
 		{
-			TinyLogManager.log('logMoves: move 1 = ' + (m_move1 ? m_move1.name : '--'), this);
-			TinyLogManager.log('logMoves: move 2 = ' + (m_move2 ? m_move2.name : '--'), this);
-			TinyLogManager.log('logMoves: move 3 = ' + (m_move3 ? m_move3.name : '--'), this);
-			TinyLogManager.log('logMoves: move 4 = ' + (m_move4 ? m_move4.name : '--'), this);
+			TinyLogManager.log( 'logMoves: move 1 = ' + (m_move1 ? m_move1.name : '--'), this );
+			TinyLogManager.log( 'logMoves: move 2 = ' + (m_move2 ? m_move2.name : '--'), this );
+			TinyLogManager.log( 'logMoves: move 3 = ' + (m_move3 ? m_move3.name : '--'), this );
+			TinyLogManager.log( 'logMoves: move 4 = ' + (m_move4 ? m_move4.name : '--'), this );
 		}
 		
 		
 		public function setMoves( move1 : TinyMoveData, move2 : TinyMoveData, move3 : TinyMoveData, move4 : TinyMoveData ) : void
 		{
-			TinyLogManager.log('setMoves', this);
+			TinyLogManager.log( 'setMoves', this );
 			
 			m_move1 = move1 ? TinyMoveData.newFromCopy( move1 ) : null;
 			m_move2 = move2 ? TinyMoveData.newFromCopy( move2 ) : null;
@@ -132,7 +132,7 @@ package com.tinyrpg.data
 		
 		public function setMoveInSlot( move : TinyMoveData, slot : int ) : void
 		{
-			TinyLogManager.log('setMoveInSlot: ' + move.name + ' in slot ' + slot, this);
+			TinyLogManager.log( 'setMoveInSlot: ' + move.name + ' in slot ' + slot, this );
 			
 			if ( slot == 0 ) this.m_move1 = TinyMoveData.newFromCopy( move );
 			if ( slot == 1 ) this.m_move2 = TinyMoveData.newFromCopy( move );
@@ -149,17 +149,29 @@ package com.tinyrpg.data
 			return -1;
 		}
 		
+		public function getMoves() : Array
+		{
+			var results : Array = [];
+			
+			if ( this.m_move1 ) results.push( this.m_move1 );
+			if ( this.m_move2 ) results.push( this.m_move2 );
+			if ( this.m_move3 ) results.push( this.m_move3 );
+			if ( this.m_move4 ) results.push( this.m_move4 );
+			
+			return results;
+		}
+		
 		public function setMovesToLevel( level : int ) : void
 		{						
-			TinyLogManager.log('setMovesToLevel: ' + level, this);
+			TinyLogManager.log( 'setMovesToLevel: ' + level, this );
 			
-			for (var i : int = 1; i <= level; i++)
+			for ( var i : int = 1; i <= level; i++ )
 			{
 				if ( this.levelMoveSet[i] ) 
 				{					
-					for (var j : int = 0; j < (this.levelMoveSet[i] as Array).length; j++) 
+					for ( var j : int = 0; j < ( this.levelMoveSet[i] as Array ).length; j++ ) 
 					{
-						var moveData : TinyMoveData = (this.levelMoveSet[i] as Array)[j];
+						var moveData : TinyMoveData = ( this.levelMoveSet[i] as Array )[ j ];
 												
 						switch (m_oldestMoveIndex) 
 						{
@@ -182,7 +194,7 @@ package com.tinyrpg.data
 			
 			if ( moveSetAtLevel )
 			{
-				for ( var i : int = 0; i < moveSetAtLevel.length; i++)
+				for ( var i : int = 0; i < moveSetAtLevel.length; i++ )
 				{
 					learnedMoves.push( moveSetAtLevel[i] );		
 				}
@@ -233,7 +245,8 @@ package com.tinyrpg.data
 		
 		public function unloadAllMoveFXSprites() : void
 		{
-			TinyLogManager.log('unloadAllMoveFXSprites', this);
+			// TODO: implement unloadAllMoveFXSprites()
+			TinyLogManager.log( 'unloadAllMoveFXSprites', this );
 		}
 	}
 }

@@ -220,7 +220,7 @@ package com.tinyrpg.managers
 			
 			// Adjust fade-in handling based on whether or not the battle was a trainer battle or not. Trainer battles need
 			// to continue running their host event sequence, whereas wild battles return control to the player immediately.
-			if ( this.currentBattle.m_isWildEncounter ) 
+			if ( this.currentBattle.isWildEncounter ) 
 			{
 				this.fadeTransition.addEventListener( TinyGameEvent.FADE_IN_COMPLETE, this.onMapInCompleteFromWildBattle );
 			}

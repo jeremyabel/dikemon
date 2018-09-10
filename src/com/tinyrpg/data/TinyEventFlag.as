@@ -8,7 +8,7 @@ package com.tinyrpg.data
 	public class TinyEventFlag 
 	{
 		public var name  	: String;
-		private var _value 	: Boolean = false;
+		private var m_value : Boolean = false;
 		
 		public function TinyEventFlag( name : String ) : void
 		{
@@ -36,12 +36,12 @@ package com.tinyrpg.data
 		public function set value( value : Boolean ) : void
 		{
 			TinyLogManager.log( 'set ' + this.name + ' value: ' + value, this );
-			this._value = value;
+			this.m_value = value;
 		}
 		
 		public function get value() : Boolean
 		{
-			return this._value;
+			return this.m_value;
 		}
 	}
 }

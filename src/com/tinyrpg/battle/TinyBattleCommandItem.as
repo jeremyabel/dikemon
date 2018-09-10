@@ -12,6 +12,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.media.sfx.itemfx.SFXUseItem;
 	import com.tinyrpg.data.TinyBallThrowResult;
 	import com.tinyrpg.utils.TinyLogManager;
+	import com.tinyrpg.utils.TinyMath;
 
 	/**
 	 * Class which represents a battle command for using an item.
@@ -52,16 +53,16 @@ package com.tinyrpg.battle
 			
 			this.item = item;
 			this.move = move;
-			this.mon = this.battle.m_currentPlayerMon;
+			this.mon = this.battle.currentPlayerMon;
 			
 			this.item.printLog();
 			
 			// For ball items, the result is pre-computed in order to set up the sequencing of the commands that follow this one. 
-			if ( this.item.isBall && this.battle.m_isWildEncounter )
+			if ( this.item.isBall && this.battle.isWildEncounter )
 			{
 				// Calculate this catch result and number of wobbles
-				this.canCatch = TinyBattleMath.canCatch( this.battle.m_currentEnemyMon, this.item.effectAmount );
-				this.numWobbles = TinyBattleMath.getNumCaptureWobbles( this.battle.m_currentEnemyMon, this.item.effectAmount );
+				this.canCatch = TinyBattleMath.canCatch( this.battle.currentEnemyMon, this.item.effectAmount );
+				this.numWobbles = TinyBattleMath.getNumCaptureWobbles( this.battle.currentEnemyMon, this.item.effectAmount );
 				
 				if ( this.canCatch )
 				{
@@ -80,7 +81,7 @@ package com.tinyrpg.battle
 			if ( this.item.healHP ) this.healHP(); 
 			if ( this.item.healPP ) this.healPP();
 			if ( this.item.healStatus ) this.healStatus();
-			if ( this.item.isBall && this.battle.m_isWildEncounter ) this.useBall();
+			if ( this.item.isBall && this.battle.isWildEncounter ) this.useBall();
 			
 			this.eventSequence.addEnd();
 			super.execute();
@@ -102,7 +103,7 @@ package com.tinyrpg.battle
 			this.eventSequence.addDelay( 0.2 );
 			
 			// Animate the ball throw result 
-			if ( this.battle.m_isWildEncounter )
+			if ( this.battle.isWildEncounter )
 			{
 				TinyLogManager.log( 'canCatch: ' + this.canCatch, this );
 				TinyLogManager.log( 'numWobbles: ' + this.numWobbles, this );
@@ -111,7 +112,7 @@ package com.tinyrpg.battle
 				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_OPEN, isUltra ) );
 				
 				// Get in the ball
-				this.eventSequence.addGetInBall( this.battle.m_enemyMonContainer );
+				this.eventSequence.addGetInBall( this.battle.enemyMonContainer );
 				
 				// Close the ball
 				this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_CLOSE, isUltra ) );
@@ -128,25 +129,25 @@ package com.tinyrpg.battle
 					// TODO: play some sound
 					
 					// Show caught message
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.m_currentEnemyMon ) );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.BALL_CAUGHT, this.battle.currentEnemyMon ) );
 					
 					// If the player already has a full squad, send the caught mon to the storage PC. Otherwise, add it to the player's regular squad. 
 					if ( TinyGameManager.getInstance().playerTrainer.squad.length >= TinyConfig.MAX_SQUAD_LENGTH )
 					{
-						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.CAUGHT_SQUAD_FULL, this.battle.m_currentEnemyMon ) );
-						TinyGameManager.getInstance().playerTrainer.squadInPC.push( this.battle.m_currentEnemyMon );
-						TinyLogManager.log( 'added ' + this.battle.m_currentEnemyMon.name + ' to Storage PC', this );
+						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.CAUGHT_SQUAD_FULL, this.battle.currentEnemyMon ) );
+						TinyGameManager.getInstance().playerTrainer.squadInPC.push( this.battle.currentEnemyMon );
+						TinyLogManager.log( 'added ' + this.battle.currentEnemyMon.name + ' to Storage PC', this );
 					}
 					else
 					{
-						TinyGameManager.getInstance().playerTrainer.squad.push( this.battle.m_currentEnemyMon );
-						TinyLogManager.log( 'added ' + this.battle.m_currentEnemyMon.name + ' to squad', this );
+						TinyGameManager.getInstance().playerTrainer.squad.push( this.battle.currentEnemyMon );
+						TinyLogManager.log( 'added ' + this.battle.currentEnemyMon.name + ' to squad', this );
 					}
 				}
 				else
 				{
 					// Escape from the ball
-					this.eventSequence.addEscapeFromBall( this.battle.m_enemyMonContainer );
+					this.eventSequence.addEscapeFromBall( this.battle.enemyMonContainer );
 					
 					// Burst open the ball
 					this.eventSequence.addPlayBallAnim( new TinyBallFXAnimation( TinyBallFXAnimation.BALL_PHASE_BURST, isUltra ) );
@@ -184,7 +185,7 @@ package com.tinyrpg.battle
 			this.eventSequence.addDelay( 0.2 ); 
 			
 			// Update HP display
-			this.eventSequence.addUpdateHPDisplay( this.battle.m_playerStatDisplay );
+			this.eventSequence.addUpdateHPDisplay( this.mon.currentHP, this.battle.playerStatDisplay );
 			
 			// Show dialog box
 			if ( this.mon.isMaxHP ) {
@@ -270,7 +271,7 @@ package com.tinyrpg.battle
 			}
 			
 			// Update status display
-			this.eventSequence.addUpdateHPDisplay( this.battle.m_playerStatDisplay );
+			this.eventSequence.addUpdateHPDisplay( this.mon.currentHP, this.battle.playerStatDisplay );
 			
 			// Show dialog box
 			this.eventSequence.addDialogBoxFromString( healStatusString );
@@ -283,7 +284,7 @@ package com.tinyrpg.battle
 			this.eventSequence.addPlaySound( new SFXUseItem() as Sound );
 			
 			// Play the jumpy heal animation
-			this.eventSequence.addPlayerHeal( this.battle.m_playerMonContainer );
+			this.eventSequence.addPlayerHeal( this.battle.playerMonContainer );
 		}
 	}
 }

@@ -55,7 +55,9 @@ package com.tinyrpg.core
 		private var sleepCounter		: int = 0;
 		private var confuseCounter		: int = 0;
 		private var safeguardCounter 	: int = 0;
+		private var battleTurnCounter	: int = 0;
 		
+		public function get isFirstTurn() : Boolean { return this.battleTurnCounter <= 0; }
 		public function get isConfused() : Boolean { return this.confuseCounter > 0; }
 		public function get isSleeping() : Boolean { return this.sleepCounter > 0; }
 		public function get isSafeguarded() : Boolean { return this.safeguardCounter > 0; }
@@ -380,7 +382,8 @@ package com.tinyrpg.core
 		{
 			TinyLogManager.log('postSwitchCleanup: ' + this.name, this);
 		
-			// Reset status effects that get cleared when the mon is switched	
+			// Reset status effects and states that get cleared when the mon is switched	
+			this.battleTurnCounter = 0;
 			this.safeguardCounter = 0;
 			this.isFlinching = false;
 			this.isRecharging = false;
@@ -394,6 +397,7 @@ package com.tinyrpg.core
 			TinyLogManager.log('postBattleCleanup: ' + this.name, this);
 			
 			this.isInBattle = false;
+			this.battleTurnCounter = 0;
 			
 			// Reset all status effects
 			this.sleepCounter = 0;

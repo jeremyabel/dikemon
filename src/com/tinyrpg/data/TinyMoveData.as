@@ -256,6 +256,11 @@ package com.tinyrpg.data
 			return this.m_effects.indexOf( effect ) > -1;
 		}
 		
+		public function getDamageEffects() : Array
+		{
+			return this.m_effects.filter( TinyMoveEffect.isDamageEffect );
+		}
+		
 		public function getStatModEffects() : Array
 		{
 			return this.m_effects.filter( TinyMoveEffect.isStatModEffect );

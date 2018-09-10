@@ -271,12 +271,12 @@ package com.tinyrpg.battle
 			// Always do at least 1 damage
 			damage = Math.max( 1, damage );
 			
-			TinyLogManager.log( 'calculateDamage:  L = ' + L, TinyBattleMath );
-			TinyLogManager.log( 'calculateDamage:  P = ' + P, TinyBattleMath );
-			TinyLogManager.log( 'calculateDamage:  A = ' + A, TinyBattleMath );
-			TinyLogManager.log( 'calculateDamage:  D = ' + D, TinyBattleMath );
-			TinyLogManager.log( 'calculateDamage: T1 = ' + type1Multiplier, TinyBattleMath );
-			TinyLogManager.log( 'calculateDamage: T2 = ' + type2Multiplier, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:      L = ' + L, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:      P = ' + P, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:      A = ' + A, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:      D = ' + D, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:     T1 = ' + type1Multiplier, TinyBattleMath );
+			TinyLogManager.log( 'calculateDamage:     T2 = ' + type2Multiplier, TinyBattleMath );
 			TinyLogManager.log( 'calculateDamage: DAMAGE = ' + damage, TinyBattleMath );
 			
 			return damage;	
@@ -363,7 +363,7 @@ package com.tinyrpg.battle
 		 */
 		public static function getNumCaptureWobbles( targetMon : TinyMon, ballBonus : Number = 1.0 ) : int
 		{
-			TinyLogManager.log('getNumCaptureWobbles', TinyBattleMath);
+			TinyLogManager.log( 'getNumCaptureWobbles', TinyBattleMath );
 			
 			var M : int = targetMon.maxHP;
 			var H : int = targetMon.currentHP;

@@ -3,7 +3,8 @@ package com.tinyrpg.core
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.events.EventDispatcher;
-
+	
+	import com.tinyrpg.battle.TinyTrainerAI;
 	import com.tinyrpg.data.TinyMoneyAmount;
 	import com.tinyrpg.data.TinyItemDataList;
 	import com.tinyrpg.display.TinySpriteSheet;
@@ -23,6 +24,7 @@ package com.tinyrpg.core
 		public var squadInPC : Array = [];
 		public var inventory : Array = [];
 		
+		public var aiType : String = TinyTrainerAI.AI_BASIC;
 		public var runAttempts : int = 0;
 		public var usedWish : Boolean = false;
 		public var money : TinyMoneyAmount;
@@ -85,15 +87,14 @@ package com.tinyrpg.core
 			// Give starting allowance
 			newTrainer.money = new TinyMoneyAmount( 3000 );
 			
-			trace( JSON.stringify( newTrainer.toJSON() ) );
-			
 			return newTrainer;
 		}
 		
-		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0 ) : TinyTrainer
+		public static function newFromSequenceCommand( name : String, mons : Array, money : uint = 0, aiType : String = 'AI_BASIC' ) : TinyTrainer
 		{
 			var newTrainer : TinyTrainer = new TinyTrainer( TinySpriteLookup.getTrainerSprite( name ), name );
 			newTrainer.money = new TinyMoneyAmount( money );
+			newTrainer.aiType = aiType;
 			newTrainer.isEnemy = true;
 			
 			for ( var i : uint = 0; i < mons.length; i++ )

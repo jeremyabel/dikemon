@@ -59,6 +59,7 @@
 						<TRAINER_BATTLE>
 							<TRAINER_NAME>Gary Montana</TRAINER_NAME>
 							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_AI>ai_advanced</TRAINER_AI>
 							<TRAINER_MONS>
 								<MON><NAME>Bucket</NAME><LEVEL>2</LEVEL></MON>
 							</TRAINER_MONS>
@@ -119,6 +120,7 @@
 						<TRAINER_BATTLE>
 							<TRAINER_NAME>Steve Pizazz</TRAINER_NAME>
 							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_AI>ai_advanced</TRAINER_AI>
 							<TRAINER_MONS>
 								<MON><NAME>Bucket</NAME><LEVEL>2</LEVEL></MON>
 							</TRAINER_MONS>
@@ -179,6 +181,7 @@
 						<TRAINER_BATTLE>
 							<TRAINER_NAME>Wally</TRAINER_NAME>
 							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_AI>ai_good</TRAINER_AI>
 							<TRAINER_MONS>
 								<MON><NAME>Computer</NAME><LEVEL>2</LEVEL></MON>
 							</TRAINER_MONS>

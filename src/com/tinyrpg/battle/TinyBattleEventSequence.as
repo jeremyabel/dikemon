@@ -27,10 +27,12 @@ package com.tinyrpg.battle
 	import com.tinyrpg.sequence.TinySetVisibilityCommand;
 	import com.tinyrpg.sequence.TinySetMonStatDisplayCommand;
 	import com.tinyrpg.sequence.TinySummonMonCommand;
+	import com.tinyrpg.sequence.TinyUpdateHPCommand;
 	import com.tinyrpg.ui.TinyDialogBox;
 	import com.tinyrpg.ui.TinyDeleteMoveDialog;
 	import com.tinyrpg.ui.TinyLevelUpStatsDisplay;
 	import com.tinyrpg.utils.TinyLogManager;
+	import com.tinyrpg.utils.TinyMath;
 
 	/**
 	 * @author jeremyabel
@@ -120,7 +122,7 @@ package com.tinyrpg.battle
 					this.doSetMonStatDisplay( (nextEvent.thingToDo as TinySetMonStatDisplayCommand).mon, (nextEvent.thingToDo as TinySetMonStatDisplayCommand).statDisplay );
 					break;
 				case TinyEventItem.UPDATE_HP:
-					this.doUpdateHPDisplay( nextEvent.thingToDo as TinyBattleMonStatDisplay );
+					this.doUpdateHPDisplay( nextEvent.thingToDo as TinyUpdateHPCommand );
 					break;
 				case TinyEventItem.UPDATE_EXP:
 					this.doUpdateEXPDisplay( nextEvent.thingToDo as TinyBattleMonStatDisplay );
@@ -449,15 +451,20 @@ package com.tinyrpg.battle
 			m_eventSequence.push( newEventItem );	
 		}
 		
-		public function addUpdateHPDisplay( statDisplay : TinyBattleMonStatDisplay ) : void
+		public function addUpdateHPDisplay( value : int, statDisplay : TinyBattleMonStatDisplay ) : void
 		{
-			TinyLogManager.log('addUpdateHPDisplay', this);
+			// Use a deep copy of the value, since the referenced value could change between the time when
+			// this function is called and the time when the event is executed.
+			var valueDeepCopy : int = TinyMath.deepCopyInt( value );
+			
+			TinyLogManager.log( 'addUpdateHPDisplay: ' + valueDeepCopy, this );
 			
 			// Make new event item
-			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.UPDATE_HP, statDisplay );
+			var newCommand : TinyUpdateHPCommand = new TinyUpdateHPCommand( valueDeepCopy, statDisplay );
+			var newEventItem : TinyEventItem = new TinyEventItem( TinyEventItem.UPDATE_HP, newCommand );
 			
 			// Add to sequence
-			this.m_eventSequence.push(newEventItem);
+			this.m_eventSequence.push( newEventItem );
 		}
 		
 		public function addUpdateEXPDisplay( statDisplay : TinyBattleMonStatDisplay ) : void
@@ -908,7 +915,7 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('doPlayerHitDamage', this);
 			
-			var shakeSpan : int = 6;
+			var shakeSpan : int = 3;
 			this.m_hostBattle.y = -shakeSpan;
 			TweenMax.to( this.m_hostBattle, 1, { y: shakeSpan, delay: 1, ease: SteppedEase.create(1), yoyo: true, useFrames: true, repeat: 12, onComplete: this.onPlayerHitDamageComplete } );
 		}
@@ -948,7 +955,7 @@ package com.tinyrpg.battle
 		{
 			TinyLogManager.log('doPlayerHitSecondary', this);	
 			
-			var shakeSpan : int = 6;
+			var shakeSpan : int = 3;
 			this.m_hostBattle.x= -shakeSpan;
 			TweenMax.to( this.m_hostBattle, 4, { x: shakeSpan, delay: 1, yoyo: true, useFrames: true, repeat: 7, onComplete: this.onPlayerHitSecondaryComplete } );
 		}
@@ -1004,14 +1011,14 @@ package com.tinyrpg.battle
 			this.doNextCommand();	
 		}
 		
-		private function doUpdateHPDisplay( targetStatDisplay : TinyBattleMonStatDisplay ) : void
+		private function doUpdateHPDisplay( updateHPCommand : TinyUpdateHPCommand ) : void
 		{
 			TinyLogManager.log('doUpdateHPDisplay', this);
 			
 			// Start the update tween in the stat display
-			this.currentStatDisplay = targetStatDisplay;
+			this.currentStatDisplay = updateHPCommand.statDisplay;
 			this.currentStatDisplay.addEventListener( Event.COMPLETE, this.onUpdateHPDisplayComplete );
-			this.currentStatDisplay.updateHP();
+			this.currentStatDisplay.updateHP( updateHPCommand.value );
 		}
 
 		private function onUpdateHPDisplayComplete( event : Event ) : void

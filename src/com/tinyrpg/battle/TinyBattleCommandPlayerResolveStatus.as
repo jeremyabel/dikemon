@@ -14,15 +14,15 @@ package com.tinyrpg.battle
 			TinyLogManager.log('adding battle command: ' + this.logString, this);
 
 			// Decrement all status effect counters
-			var statusesResolved : Object = this.battle.m_currentPlayerMon.decrementStatusCounters();
+			var statusesResolved : Object = this.battle.currentPlayerMon.decrementStatusCounters();
 			
 			// Add any applicable resolved dialogs
 			if ( statusesResolved['sleep'] )	
-				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.WOKE_UP, this.battle.m_currentPlayerMon ) );
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.WOKE_UP, this.battle.currentPlayerMon ) );
 			if ( statusesResolved['confusion'] )
-				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SOBERED_UP, this.battle.m_currentPlayerMon ) );
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SOBERED_UP, this.battle.currentPlayerMon ) );
 			if ( statusesResolved['safeguard'] )
-				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SAFEGUARD_FADED, this.battle.m_currentPlayerMon ) );
+				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SAFEGUARD_FADED, this.battle.currentPlayerMon ) );
 		}
 	}
 }

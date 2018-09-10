@@ -110,10 +110,15 @@ package com.tinyrpg.battle
 			 *  - both faint: enemy switch -> force player switch -> player turn
 			 */
 			 
+			// Pick which move the enemy will use
+			var enemyMove : TinyMoveData = null;
+			if ( this.battle.isWildEncounter ) {
+				enemyMove = TinyTrainerAI.getWildMonMove( this.battle.currentEnemyMon );
+			} else {
+				enemyMove = TinyTrainerAI.getTrainerMonMove( this.battle.currentEnemyMon, this.battle.currentPlayerMon, this.battle.enemyTrainer.aiType );
+			}
 			
-			// Get enemy command
-			// TODO: Trainer AI...???
-			var enemyMove : TinyMoveData = TinyTrainerAI.getWildMonMove( this.battle.m_currentEnemyMon );
+			// Create the enemy's move command
 			this.enemyCommand = new TinyBattleCommandMove( this.battle, TinyBattleCommand.USER_ENEMY, enemyMove );
 			
 			// Figure out the turn order based on what the player's command is
@@ -131,7 +136,7 @@ package com.tinyrpg.battle
 						{
 							var enemyMoveCommand : TinyBattleCommandMove = this.enemyCommand as TinyBattleCommandMove;
 							
-							if ( TinyBattleMath.doesEnemyGoFirst( this.battle.m_currentPlayerMon, playerMoveCommand.move, this.battle.m_currentEnemyMon, enemyMoveCommand.move ) ) 
+							if ( TinyBattleMath.doesEnemyGoFirst( this.battle.currentPlayerMon, playerMoveCommand.move, this.battle.currentEnemyMon, enemyMoveCommand.move ) ) 
 							{
 								// Enemy goes first
 								TinyLogManager.log('commandSelected: Player = MOVE, Enemy = MOVE. Enemy goes first.', this);

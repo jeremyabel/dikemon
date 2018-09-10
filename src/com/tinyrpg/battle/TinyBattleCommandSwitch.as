@@ -26,11 +26,11 @@ package com.tinyrpg.battle
 			TinyLogManager.log('adding battle command: ' + this.logString, this);
 					
 			// Get the applicable objects to be used in the switch sequence
-			var monContainer : TinyMonContainer = this.isEnemy ? this.battle.m_enemyMonContainer : this.battle.m_playerMonContainer;
-			var ballDisplay : TinyBattleBallDisplay = this.isEnemy ? this.battle.m_enemyBallDisplay : this.battle.m_playerBallDisplay;
-			var statDisplay : TinyBattleMonStatDisplay = this.isEnemy ? this.battle.m_enemyStatDisplay : this.battle.m_playerStatDisplay; 
-			var previousMon : TinyMon = this.isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
-			var trainer : TinyTrainer = this.isEnemy ? this.battle.m_enemyTrainer : this.battle.m_playerTrainer;
+			var monContainer : TinyMonContainer = this.isEnemy ? this.battle.enemyMonContainer : this.battle.playerMonContainer;
+			var ballDisplay : TinyBattleBallDisplay = this.isEnemy ? this.battle.enemyBallDisplay : this.battle.playerBallDisplay;
+			var statDisplay : TinyBattleMonStatDisplay = this.isEnemy ? this.battle.enemyStatDisplay : this.battle.playerStatDisplay; 
+			var previousMon : TinyMon = this.isEnemy ? this.battle.currentEnemyMon : this.battle.currentPlayerMon;
+			var trainer : TinyTrainer = this.isEnemy ? this.battle.enemyTrainer : this.battle.playerTrainer;
 			
 			// If this switch isn't due to the previous mon fainting, the current mon needs to be recalled
 			if ( previousMon.isHealthy ) 
@@ -64,11 +64,11 @@ package com.tinyrpg.battle
 			previousMon.isInBattle = false;
 			switchMon.isInBattle = true;
 			if (isEnemy) {
-				this.battle.m_currentEnemyMon = this.switchMon;
-				this.battle.m_currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, true );
+				this.battle.currentEnemyMon = this.switchMon;
+				this.battle.currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, true );
 			} else {
-				this.battle.m_currentPlayerMon = this.switchMon;
-				this.battle.m_currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, false );
+				this.battle.currentPlayerMon = this.switchMon;
+				this.battle.currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battle.battlePalette, false );
 			}
 			
 			// Show summon dialog
@@ -93,7 +93,7 @@ package com.tinyrpg.battle
 		
 		override public function execute() : void
 		{
-			TinyLogManager.log('doSwitchMon: ' + this.switchMon.name, this);
+			TinyLogManager.log( 'doSwitchMon: ' + this.switchMon.name, this );
 			super.execute();
 		}
 		

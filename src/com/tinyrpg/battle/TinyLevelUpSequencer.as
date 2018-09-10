@@ -18,10 +18,10 @@ package com.tinyrpg.battle
  			for ( var i : int = 1; i <= levelUpInfo.numLevelsGained; i++ ) 
  			{
 				// Update exp bar to full
-				eventSequence.addFillEXPDisplay( battle.m_playerStatDisplay );
+				eventSequence.addFillEXPDisplay( battle.playerStatDisplay );
 				
 				// Increment the level number display
-				eventSequence.addIncrementLevelDisplay( battle.m_playerStatDisplay );
+				eventSequence.addIncrementLevelDisplay( battle.playerStatDisplay );
 				
 				// Add delay for nice feels
 				eventSequence.addDelay( 0.1 );
@@ -30,7 +30,7 @@ package com.tinyrpg.battle
 				eventSequence.addShowLevelStats( new TinyLevelUpStatsDisplay( levelUpInfo.mon, levelUpInfo.initialLevel + i, levelUpInfo.initialStatSet, levelUpInfo.updatedStatSets[ i - 1 ] ) );
 				
 				// Update the HP display with the new HP value
-				eventSequence.addSetStatDisplayMon( battle.m_currentPlayerMon, battle.m_playerStatDisplay );
+				eventSequence.addSetStatDisplayMon( battle.currentPlayerMon, battle.playerStatDisplay );
 				
 				// Deal with any new moves
 				for each ( var newMove : TinyMoveData in levelUpInfo.newMoves[ i - 1 ] )
@@ -62,12 +62,12 @@ package com.tinyrpg.battle
 				eventSequence.addDelay( 0.2 );
 				
 				// Clear the exp bar to zero to accomidate more exp juice 
-				eventSequence.addClearEXPDisplay( battle.m_playerStatDisplay );
+				eventSequence.addClearEXPDisplay( battle.playerStatDisplay );
 				
 				// If this is the last level gained, add the remaining exp to the exp bar display
 				if ( i == levelUpInfo.numLevelsGained )
 				{
-					eventSequence.addUpdateEXPDisplay( battle.m_playerStatDisplay );	
+					eventSequence.addUpdateEXPDisplay( battle.playerStatDisplay );	
 				}
 			}
 		}

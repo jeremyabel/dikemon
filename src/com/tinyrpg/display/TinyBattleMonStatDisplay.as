@@ -146,22 +146,23 @@ package com.tinyrpg.display
 		
 		public function incrementLevelDisplay() : void
 		{
+			// TODO: Implement??
 //			TinyLogManager.log('incrementLevelDisplay', this);
 			
 //			this.initialMonLevel++;
 //			this.levelField.htmlText = TinyFontManager.returnHtmlText( 'LV: ' + this.initialMonLevel, 'battleBoxTitle', this.isEnemy ? 'left' : 'right' );
 		}
 		
-		public function updateHP( highSpeed : Boolean = false ) : void
+		public function updateHP( value : int, highSpeed : Boolean = false ) : void
 		{
-			TinyLogManager.log("update HP: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
+			TinyLogManager.log( "update HP: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
 			
 			this.updateStatusIcon();
 			
 			if ( this.displayedCurrentHP != this.mon.currentHP )
 			{
 				var tweenTime : Number = highSpeed ? 0.5 : 1.0;
-				TweenLite.to( this, tweenTime, { displayedCurrentHP: this.mon.currentHP, ease: Linear.easeNone, onUpdate: this.onUpdateHPTweenUpdate, onComplete: this.onUpdateHPComplete } );				
+				TweenLite.to( this, tweenTime, { displayedCurrentHP: value, ease: Linear.easeNone, onUpdate: this.onUpdateHPTweenUpdate, onComplete: this.onUpdateHPComplete } );				
 			}
 			else
 			{

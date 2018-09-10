@@ -45,18 +45,19 @@ package com.tinyrpg.battle
 		
 		private var battleCommandRunner			: TinyBattleCommandSequencer;
 			
-		public var m_playerTrainer				: TinyTrainer;
-		public var m_enemyTrainer				: TinyTrainer;
-		public var m_currentPlayerMon 			: TinyMon;
-		public var m_currentEnemyMon			: TinyMon;
-		public var m_playerTrainerContainer		: Sprite;
-		public var m_enemyTrainerContainer		: Sprite;
-		public var m_playerMonContainer			: TinyMonContainer;
-		public var m_enemyMonContainer			: TinyMonContainer;
-		public var m_playerStatDisplay			: TinyBattleMonStatDisplay;
-		public var m_enemyStatDisplay			: TinyBattleMonStatDisplay;
-		public var m_playerBallDisplay			: TinyBattleBallDisplay;
-		public var m_enemyBallDisplay			: TinyBattleBallDisplay;
+		public var playerTrainer				: TinyTrainer;
+		public var enemyTrainer					: TinyTrainer;
+		public var currentPlayerMon 			: TinyMon;
+		public var currentEnemyMon				: TinyMon;
+		public var playerTrainerContainer		: Sprite;
+		public var enemyTrainerContainer		: Sprite;
+		public var playerMonContainer			: TinyMonContainer;
+		public var enemyMonContainer			: TinyMonContainer;
+		public var playerStatDisplay			: TinyBattleMonStatDisplay;
+		public var enemyStatDisplay				: TinyBattleMonStatDisplay;
+		public var playerBallDisplay			: TinyBattleBallDisplay;
+		public var enemyBallDisplay				: TinyBattleBallDisplay;
+		
 		private var m_battleCommandMenu			: TinyBattleCommandMenu;
 		private var m_moveSelectMenu			: TinyMoveSelectMenu;
 		private var m_switchMonMenu				: TinySwitchMonMenu;
@@ -67,7 +68,7 @@ package com.tinyrpg.battle
 		private var isForcedSwitch				: Boolean = false;
 		private var background					: Sprite;
 		
-		public var m_isWildEncounter			: Boolean;
+		public var isWildEncounter				: Boolean;
 		public var wasLastSwitchEnemy			: Boolean = false;
 		public var wasLastTurnEnemy				: Boolean = false;
 		public var battlePalette				: TinyBattlePalette;
@@ -85,11 +86,11 @@ package com.tinyrpg.battle
 			
 			// Set parameters
 			this.allowGameOver = allowGameOver;
-			m_isWildEncounter = enemyTrainer == null;
-			m_playerTrainer = playerTrainer;
-			m_enemyTrainer = enemyTrainer;
-			m_currentPlayerMon = m_playerTrainer.getFirstHealthyMon();
-			m_currentEnemyMon = m_isWildEncounter ? enemyMon : m_enemyTrainer.getFirstHealthyMon();
+			this.playerTrainer = playerTrainer;
+			this.enemyTrainer = enemyTrainer;
+			this.isWildEncounter = this.enemyTrainer == null;
+			this.currentPlayerMon = this.playerTrainer.getFirstHealthyMon();
+			this.currentEnemyMon = this.isWildEncounter ? enemyMon : this.enemyTrainer.getFirstHealthyMon();
 		}
 		
 		public function startBattle() : void
@@ -117,54 +118,54 @@ package com.tinyrpg.battle
 			m_moveSelectMenu.visible = false;
 			
 			// Switch mon menu
-			m_switchMonMenu = new TinySwitchMonMenu( m_playerTrainer );
+			m_switchMonMenu = new TinySwitchMonMenu( playerTrainer );
 			m_switchMonMenu.x = m_battleEmptyDialogBox.x;
 			m_switchMonMenu.y = 7;
 			m_switchMonMenu.visible = false;
 			
 			// Item select menu
-			m_itemSelectorList = new TinyBattleItemMenu( m_playerTrainer );
+			m_itemSelectorList = new TinyBattleItemMenu( playerTrainer );
 			m_itemSelectorList.x = 22;
 			m_itemSelectorList.y = 48;
 			m_itemSelectorList.visible = false;
 			
 			// Player ball display
-			m_playerBallDisplay = new TinyBattleBallDisplay(m_playerTrainer);
-			m_playerBallDisplay.x = 77;
-			m_playerBallDisplay.y = 80;
+			playerBallDisplay = new TinyBattleBallDisplay(playerTrainer);
+			playerBallDisplay.x = 77;
+			playerBallDisplay.y = 80;
 			
 			// Enemy ball display
-			if (!m_isWildEncounter)
+			if (!isWildEncounter)
 			{
-				m_enemyBallDisplay = new TinyBattleBallDisplay(m_enemyTrainer);
-				m_enemyBallDisplay.scaleX *= -1;
-				m_enemyBallDisplay.x = 79 + 3;
-				m_enemyBallDisplay.y = 22;
+				enemyBallDisplay = new TinyBattleBallDisplay(enemyTrainer);
+				enemyBallDisplay.scaleX *= -1;
+				enemyBallDisplay.x = 79 + 3;
+				enemyBallDisplay.y = 22;
 			}
 			
 			// Player stats display
-			m_playerStatDisplay = new TinyBattleMonStatDisplay( false );
-			m_playerStatDisplay.x = m_playerBallDisplay.x;
-			m_playerStatDisplay.y = 55;
-			m_playerStatDisplay.visible = false;
+			playerStatDisplay = new TinyBattleMonStatDisplay( false );
+			playerStatDisplay.x = playerBallDisplay.x;
+			playerStatDisplay.y = 55;
+			playerStatDisplay.visible = false;
 			
 			// Enemy stats display
-			m_enemyStatDisplay = new TinyBattleMonStatDisplay( true );
-			m_enemyStatDisplay.x = 3;
-			m_enemyStatDisplay.y = 2;
-			m_enemyStatDisplay.visible = false;
+			enemyStatDisplay = new TinyBattleMonStatDisplay( true );
+			enemyStatDisplay.x = 3;
+			enemyStatDisplay.y = 2;
+			enemyStatDisplay.visible = false;
 			
 			// Player trainer container
-			m_playerTrainerContainer = new Sprite();
+			playerTrainerContainer = new Sprite();
 			
 			// Player mon container
-			m_playerMonContainer = new TinyMonContainer( m_currentPlayerMon.bitmap, true );
+			playerMonContainer = new TinyMonContainer( currentPlayerMon.bitmap, true );
 			
 			// Enemy trainer container
-			m_enemyTrainerContainer = new Sprite();
+			enemyTrainerContainer = new Sprite();
 			
 			// Enemy mon container
-			m_enemyMonContainer = new TinyMonContainer( m_currentEnemyMon.bitmap, false );
+			enemyMonContainer = new TinyMonContainer( currentEnemyMon.bitmap, false );
 			
 			// Fill enemy container
 			this.enemyContainer = new Sprite;
@@ -173,15 +174,15 @@ package com.tinyrpg.battle
 			
 			// Make battle palette
 			this.battlePalette = new TinyBattlePalette( 
-				this.m_playerMonContainer.palette, 
-				this.m_enemyMonContainer.palette, 
-				this.m_playerStatDisplay.palette, 
-				this.m_enemyStatDisplay.palette 
+				this.playerMonContainer.palette, 
+				this.enemyMonContainer.palette, 
+				this.playerStatDisplay.palette, 
+				this.enemyStatDisplay.palette 
 			);
 			
 			// Load move FX animations for both mons
-			this.m_currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battlePalette, true );
-			this.m_currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battlePalette, false );
+			this.currentEnemyMon.moveSet.loadAllMoveFXSprites( this.battlePalette, true );
+			this.currentPlayerMon.moveSet.loadAllMoveFXSprites( this.battlePalette, false );
 			
 			// Background sprite
 			this.background = new Sprite();
@@ -214,35 +215,35 @@ package com.tinyrpg.battle
 			this.removeChild(m_battleIntroWhirl);
 			
 			// Position player trainer
-			m_playerTrainerContainer.x = 144 + 48;
-			m_playerTrainerContainer.y = 50;
-			m_playerTrainerContainer.scaleX = -1;
-			m_playerTrainerContainer.addChild( m_playerTrainer.battleBitmap );
+			playerTrainerContainer.x = 144 + 48;
+			playerTrainerContainer.y = 50;
+			playerTrainerContainer.scaleX = -1;
+			playerTrainerContainer.addChild( playerTrainer.battleBitmap );
 	
 			// Position enemy trainer
-			m_enemyTrainerContainer.x = -56;
-			m_enemyTrainerContainer.y = 0;
-			if (!m_isWildEncounter) m_enemyTrainerContainer.addChild( m_enemyTrainer.battleBitmap );
+			enemyTrainerContainer.x = -56;
+			enemyTrainerContainer.y = 0;
+			if (!isWildEncounter) enemyTrainerContainer.addChild( enemyTrainer.battleBitmap );
 			
 			// Position player mon
-			m_playerMonContainer.x = 16;
-			m_playerMonContainer.y = 54;
+			playerMonContainer.x = 16;
+			playerMonContainer.y = 54;
 			
 			// Position enemy mon
-			m_enemyMonContainer.x = m_isWildEncounter ? -56 : 96;
-			m_enemyMonContainer.y = 0;
-			if (m_isWildEncounter) m_enemyMonContainer.show();
+			enemyMonContainer.x = isWildEncounter ? -56 : 96;
+			enemyMonContainer.y = 0;
+			if (isWildEncounter) enemyMonContainer.show();
 
 			// Add 'em up
-			this.enemyContainer.addChild( this.m_enemyStatDisplay );
-			this.enemyContainer.addChild( this.m_enemyMonContainer );
+			this.enemyContainer.addChild( this.enemyStatDisplay );
+			this.enemyContainer.addChild( this.enemyMonContainer );
 			this.addChild( this.background );
-			this.addChild(m_playerBallDisplay);
-			this.addChild(m_playerStatDisplay);
-			this.addChild(m_playerMonContainer);
+			this.addChild(playerBallDisplay);
+			this.addChild(playerStatDisplay);
+			this.addChild(playerMonContainer);
 			this.addChild( this.enemyContainer );
-			this.addChild(m_enemyTrainerContainer);
-			this.addChild(m_playerTrainerContainer);
+			this.addChild(enemyTrainerContainer);
+			this.addChild(playerTrainerContainer);
 			this.addChild(m_battleEmptyDialogBox);
 			this.addChild(this.dialogBoxContainer);
 			this.addChild(m_battleCommandMenu);
@@ -251,63 +252,63 @@ package com.tinyrpg.battle
 			this.addChild(m_itemSelectorList );
 			
 			// If this isn't a wild encounter, add the enemy trainer ball display
-			if (!m_isWildEncounter) 
+			if (!isWildEncounter) 
 			{
-				this.addChild(m_enemyBallDisplay);
+				this.addChild(enemyBallDisplay);
 			}
 			
 			// Create intro event sequence
 			m_battleEvent = new TinyBattleEventSequence(this);
 			
 			// Slide both trainers in 
-			m_battleEvent.addShowTrainer(m_playerTrainerContainer, false, false);
-			m_battleEvent.addShowTrainer(m_isWildEncounter ? m_enemyMonContainer : m_enemyTrainerContainer, true, true);
+			m_battleEvent.addShowTrainer(playerTrainerContainer, false, false);
+			m_battleEvent.addShowTrainer(isWildEncounter ? enemyMonContainer : enemyTrainerContainer, true, true);
 			
 			// The rest of the intro sequence is determined by whether or not this is a wild encounter or a trainer battle
-			if (m_isWildEncounter) 
+			if (isWildEncounter) 
 			{	
 				// Show player ball display
-				m_battleEvent.addShowElement( m_playerBallDisplay );
+				m_battleEvent.addShowElement( playerBallDisplay );
 				
 				// Show enemy stat display
-				m_battleEvent.addSetStatDisplayMon( m_currentEnemyMon, m_enemyStatDisplay );
-				m_battleEvent.addShowElement( m_enemyStatDisplay );
+				m_battleEvent.addSetStatDisplayMon( currentEnemyMon, enemyStatDisplay );
+				m_battleEvent.addShowElement( enemyStatDisplay );
 				
 				// Show intro dialog box				
-				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomWildEncounterString( m_currentEnemyMon ) );
+				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomWildEncounterString( currentEnemyMon ) );
 				
 				// Hide player trainer and summon first mon
-				m_battleEvent.addHideTrainer( m_playerTrainerContainer, false, true);
-				m_battleEvent.addSetElementVisibility( m_playerBallDisplay, false );
-				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomSummonDialogString( false, m_playerTrainer.getFirstHealthyMon(), m_playerTrainer ) );		
-				m_battleEvent.addSetStatDisplayMon( m_currentPlayerMon, m_playerStatDisplay );
-				m_battleEvent.addShowElement( m_playerStatDisplay );
-				m_battleEvent.addSummonMon( m_currentPlayerMon, m_playerMonContainer );
+				m_battleEvent.addHideTrainer( playerTrainerContainer, false, true);
+				m_battleEvent.addSetElementVisibility( playerBallDisplay, false );
+				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomSummonDialogString( false, playerTrainer.getFirstHealthyMon(), playerTrainer ) );		
+				m_battleEvent.addSetStatDisplayMon( currentPlayerMon, playerStatDisplay );
+				m_battleEvent.addShowElement( playerStatDisplay );
+				m_battleEvent.addSummonMon( currentPlayerMon, playerMonContainer );
 			}
 			else
 			{	
 				// Show both ball displays
-				m_battleEvent.addShowElement( m_playerBallDisplay );
-				m_battleEvent.addShowElement( m_enemyBallDisplay );
+				m_battleEvent.addShowElement( playerBallDisplay );
+				m_battleEvent.addShowElement( enemyBallDisplay );
 				
 				// Show intro dialog box
-				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomTrainerBattleString( this.m_enemyTrainer ) );
+				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomTrainerBattleString( this.enemyTrainer ) );
 				
 				// Hide enemy trainer and summon first mon
-				m_battleEvent.addHideTrainer( m_enemyTrainerContainer, true, true);
-				m_battleEvent.addSetElementVisibility( m_enemyBallDisplay, false );
-				m_battleEvent.addDialogBoxFromString(TinyBattleStrings.getRandomSummonDialogString( true, this.m_enemyTrainer.getFirstHealthyMon(), this.m_enemyTrainer ) );
-				m_battleEvent.addSetStatDisplayMon( m_currentEnemyMon, m_enemyStatDisplay );
-				m_battleEvent.addShowElement( m_enemyStatDisplay );
-				m_battleEvent.addSummonMon( m_currentEnemyMon, m_enemyMonContainer );
+				m_battleEvent.addHideTrainer( enemyTrainerContainer, true, true);
+				m_battleEvent.addSetElementVisibility( enemyBallDisplay, false );
+				m_battleEvent.addDialogBoxFromString(TinyBattleStrings.getRandomSummonDialogString( true, this.enemyTrainer.getFirstHealthyMon(), this.enemyTrainer ) );
+				m_battleEvent.addSetStatDisplayMon( currentEnemyMon, enemyStatDisplay );
+				m_battleEvent.addShowElement( enemyStatDisplay );
+				m_battleEvent.addSummonMon( currentEnemyMon, enemyMonContainer );
 				
 				// Hide player trainer and summon first mon
-				m_battleEvent.addHideTrainer( m_playerTrainerContainer, false, true);
-				m_battleEvent.addSetElementVisibility( m_playerBallDisplay, false );
-				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomSummonDialogString( false, m_playerTrainer.getFirstHealthyMon(), m_playerTrainer ) );
-				m_battleEvent.addSetStatDisplayMon( m_currentPlayerMon, m_playerStatDisplay );
-				m_battleEvent.addShowElement( m_playerStatDisplay );
-				m_battleEvent.addSummonMon( m_currentPlayerMon, m_playerMonContainer );
+				m_battleEvent.addHideTrainer( playerTrainerContainer, false, true);
+				m_battleEvent.addSetElementVisibility( playerBallDisplay, false );
+				m_battleEvent.addDialogBoxFromString( TinyBattleStrings.getRandomSummonDialogString( false, playerTrainer.getFirstHealthyMon(), playerTrainer ) );
+				m_battleEvent.addSetStatDisplayMon( currentPlayerMon, playerStatDisplay );
+				m_battleEvent.addShowElement( playerStatDisplay );
+				m_battleEvent.addSummonMon( currentPlayerMon, playerMonContainer );
 			}
 			
 			if ( this.debugMoveFX ) 
@@ -333,19 +334,19 @@ package com.tinyrpg.battle
 			m_battleEvent = null;
 	
 			// Set mon battle state
-			m_currentPlayerMon.isInBattle = true;
-			m_currentEnemyMon.isInBattle = true;
+			currentPlayerMon.isInBattle = true;
+			currentEnemyMon.isInBattle = true;
 						
 			this.startTurn();
 		}
 
 		public function startTurn() : void
 		{
-			TinyLogManager.log('startTurn', this);
+			TinyLogManager.log( 'startTurn', this );
 			
 			// Clean up from previous turn
-			this.m_currentPlayerMon.postTurnCleanup();
-			this.m_currentEnemyMon.postTurnCleanup();
+			this.currentPlayerMon.postTurnCleanup();
+			this.currentEnemyMon.postTurnCleanup();
 			
 			// Show the battle command menu and reset the cursor position
 			this.m_battleCommandMenu.show();
@@ -385,7 +386,7 @@ package com.tinyrpg.battle
 				case TinyBattleEvent.FIGHT_SELECTED:
 					
 					// Pass control to the move selector
-					m_moveSelectMenu.setCurrentMon( m_currentPlayerMon );
+					m_moveSelectMenu.setCurrentMon( currentPlayerMon );
 					m_moveSelectMenu.show();
 					TinyInputManager.getInstance().setTarget( m_moveSelectMenu );
 					
@@ -407,7 +408,7 @@ package com.tinyrpg.battle
 					
 					// Pass control to the item selector
 					m_itemSelectorList.show();
-					m_itemSelectorList.setCurrentMon( m_currentPlayerMon );
+					m_itemSelectorList.setCurrentMon( currentPlayerMon );
 					TinyInputManager.getInstance().setTarget( m_itemSelectorList );
 					
 					m_itemSelectorList.addEventListener( TinyBattleEvent.ITEM_USED, this.onItemUsed );
@@ -531,7 +532,7 @@ package com.tinyrpg.battle
 		
 		public function getBattlePalette() : TinyBattlePalette
 		{
-			return new TinyBattlePalette( this.m_playerMonContainer.palette, this.m_enemyMonContainer.palette, this.m_playerStatDisplay.palette, this.m_enemyStatDisplay.palette );
+			return new TinyBattlePalette( this.playerMonContainer.palette, this.enemyMonContainer.palette, this.playerStatDisplay.palette, this.enemyStatDisplay.palette );
 		}
 		
 		public function debugPlayMoveFX( fxArray : Array ) : void 

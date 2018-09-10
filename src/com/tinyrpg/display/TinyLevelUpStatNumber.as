@@ -65,7 +65,6 @@ package com.tinyrpg.display
 		{
 			TinyLogManager.log('playRollup', this);	
 			
-			// If the additional stat number is 0, don't bother animating, just finish
 			if ( this.additionalStatNumber != 0 )
 			{
 				// Animate number which is the difference between the left and right numbers. This way only one property needs to be tweened
@@ -74,6 +73,7 @@ package com.tinyrpg.display
 			}
 			else
 			{
+				// If the additional stat number is 0, don't bother animating, just finish
 				this.onRollupComplete();
 			}
 		}

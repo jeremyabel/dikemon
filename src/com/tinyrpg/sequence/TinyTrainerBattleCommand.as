@@ -1,5 +1,6 @@
 package com.tinyrpg.sequence
 {
+	import com.tinyrpg.battle.TinyTrainerAI;
 	import com.tinyrpg.core.TinyMon;
 	import com.tinyrpg.core.TinyTrainer;
 	import com.tinyrpg.core.TinyEventSequence;
@@ -17,6 +18,7 @@ package com.tinyrpg.sequence
 		public var trainerName 		: String;
 		public var trainerMons 		: Array = [];
 		public var trainerMoney 	: uint;
+		public var trainerAI		: String = TinyTrainerAI.AI_BASIC;
 		public var allowGameOver 	: Boolean = true;
 		public var winSequence		: TinyEventSequence;
 		public var loseSequence		: TinyEventSequence;
@@ -43,6 +45,11 @@ package com.tinyrpg.sequence
 			// Get trainer money
 			newCommand.trainerMoney = uint( xmlData.child( 'TRAINER_MONEY' ).toString() );
 			
+			// Get trainer AI, if provided
+			if ( xmlData.child( 'TRAINER_AI' ).length > 0 ) {
+				newCommand.trainerAI = xmlData.child( 'TRAINER_AI' ).toString().toUpperCase();
+			}
+			
 			// Get trainer mons
 			for each ( var monXML : XML in xmlData.child( 'TRAINER_MONS' ).children() )
 			{
@@ -57,7 +64,8 @@ package com.tinyrpg.sequence
 			newCommand.enemyTrainer = TinyTrainer.newFromSequenceCommand(
 				newCommand.trainerName,
 				newCommand.trainerMons,
-				newCommand.trainerMoney
+				newCommand.trainerMoney,
+				newCommand.trainerAI
 			);
 			
 			// Trainer battles allow game over's by default, unless the "gameover" attribute is set to false

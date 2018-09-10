@@ -63,14 +63,14 @@ package com.tinyrpg.battle
 		public function determineResult() : void
 		{
 			// Get attacker and defender
-			var attackingMon : TinyMon = this.isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
-			var defendingMon : TinyMon = this.isEnemy ? this.battle.m_currentPlayerMon : this.battle.m_currentEnemyMon;
+			var attackingMon : TinyMon = this.isEnemy ? this.battle.currentEnemyMon : this.battle.currentPlayerMon;
+			var defendingMon : TinyMon = this.isEnemy ? this.battle.currentPlayerMon : this.battle.currentEnemyMon;
 			
 			var attackerFainted : Boolean = false;
 			var defenderFainted : Boolean = false;
 			
-			var attackerContainer : TinyMonContainer = this.isEnemy ? this.battle.m_enemyMonContainer : this.battle.m_playerMonContainer;
-			var defenderContainer : TinyMonContainer = this.isEnemy ? this.battle.m_playerMonContainer : this.battle.m_enemyMonContainer;
+			var attackerContainer : TinyMonContainer = this.isEnemy ? this.battle.enemyMonContainer : this.battle.playerMonContainer;
+			var defenderContainer : TinyMonContainer = this.isEnemy ? this.battle.playerMonContainer : this.battle.enemyMonContainer;
 			
 			// If this is the enemy's turn, resolve any outstanding status effects here.
 			// The player does this at the beginning of their turn before gaining control of the command menu, 
@@ -78,15 +78,15 @@ package com.tinyrpg.battle
 			if ( this.isEnemy )
 			{
 				// Decrement all status effect counters
-				var statusesResolved : Object = this.battle.m_currentEnemyMon.decrementStatusCounters();
+				var statusesResolved : Object = this.battle.currentEnemyMon.decrementStatusCounters();
 
 				// Add any applicable resolved dialogs
 				if ( statusesResolved[ 'sleep' ] )	
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.WOKE_UP, this.battle.m_currentEnemyMon ) );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.WOKE_UP, this.battle.currentEnemyMon ) );
 				if ( statusesResolved[ 'confusion' ] )
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SOBERED_UP, this.battle.m_currentEnemyMon ) );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SOBERED_UP, this.battle.currentEnemyMon ) );
 				if ( statusesResolved[ 'safeguard' ] )
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SAFEGUARD_FADED, this.battle.m_currentEnemyMon ) );
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.SAFEGUARD_FADED, this.battle.currentEnemyMon ) );
 			}
 			
 			// Display correct log message depending on target
@@ -152,6 +152,8 @@ package com.tinyrpg.battle
 			// For each hit: do an accuracy check, play the attack animation, deal damage, and show any damage-related dialog boxes
 			if ( move.hasEffect( TinyMoveEffect.HIT ) )
 			{
+				TinyLogManager.log( 'number of attempted hits: ' + numHits, this );
+				
 				for ( var i : int = 0; i < numHits; i++ ) 
 				{		
 					// Reset total damage counter
@@ -174,7 +176,7 @@ package com.tinyrpg.battle
 					// Increment successful hits counter if there are multiple hits
 					if ( numHits > 1 ) numSuccessfulHits++;
 					
-					// Attack hits. Show the "used move" dialog, but only for the first 
+					// Attack hits. Show the "used move" dialog, but only for the first hit
 					if ( i == 0 ) 
 					{
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.USED_MOVE, attackingMon, null, move ) );
@@ -190,8 +192,8 @@ package com.tinyrpg.battle
 					// Apply any move effect modifiers to the damage
 					damage = move.applyDamageModEffect( damage, attackingMon, defendingMon );
 					
-					// Attack deals damage, is it a one-hit KO?
-					isOneHitKO = defendingMon.currentHP == defendingMon.maxHP && damage >= defendingMon.currentHP && move.numHits <= 1;
+					// Is it a one-hit KO?
+					isOneHitKO = defendingMon.currentHP == defendingMon.maxHP && damage >= defendingMon.currentHP && i == 0;
 					
 					// Play attack animation
 					this.playAttackAnimation( attackingMon, move, isEnemy );
@@ -202,14 +204,14 @@ package com.tinyrpg.battle
 					// Show crit dialog, if applicable
 					if ( isCrit && move.hasEffect( TinyMoveEffect.HIT ) ) 
 					{
-						TinyLogManager.log('it\'s a crit!', this);
+						TinyLogManager.log( 'it\'s a crit!', this );
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.CRIT ) );
 					}
 					
 					// Show one-hit-KO dialog, if applicable
 					if ( isOneHitKO && !this.isEnemy )
 					{
-						TinyLogManager.log('it\'s a one-hit KO!', this);
+						TinyLogManager.log( 'it\'s a one-hit KO!', this );
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.ONE_HIT_KO ) );	
 					}
 					
@@ -222,9 +224,10 @@ package com.tinyrpg.battle
 							this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.NOT_EFFECTIVE ) );
 					}
 					
-					// If defending mon is dead, don't do any more attacks
+					// If the defending mon faints, don't do any more attacks
 					if ( !defendingMon.isHealthy )
 					{
+						TinyLogManager.log( 'defender fainted, exit early', this );
 						defenderFainted = true;
 						break;
 					}
@@ -248,6 +251,7 @@ package com.tinyrpg.battle
 			{
 				TinyLogManager.log('applying RECOIL effect', this);
 				
+				// Recoil is a quarter of the dealt damage
 				var recoilDamage : int = Math.ceil( damage / 4 );
 				
 				// Play hit sfx
@@ -259,7 +263,7 @@ package com.tinyrpg.battle
 				// Show recoil dialog box
 				this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.RECOIL, attackingMon ) );
 				
-				// If attacking mon is dead, faint
+				// If recoil deals enough damage to the attacking mon, faint
 				if ( !attackingMon.isHealthy )
 				{
 					this.playMonFaint( attackingMon, attackerContainer );
@@ -341,9 +345,9 @@ package com.tinyrpg.battle
 					
 							// Add nudge animation
 							if ( isEnemy )
-								this.eventSequence.addEnemyAttack( this.battle.m_enemyMonContainer );
+								this.eventSequence.addEnemyAttack( this.battle.enemyMonContainer );
 							else 
-								this.eventSequence.addPlayerAttack( this.battle.m_playerMonContainer );				
+								this.eventSequence.addPlayerAttack( this.battle.playerMonContainer );				
 					
 							this.eventSequence.addDialogBoxFromString( move.uselessText );
 							
@@ -359,7 +363,7 @@ package com.tinyrpg.battle
 							if ( this.isEnemy )
 								this.eventSequence.addPlayerHitSecondary();
 							else
-								this.eventSequence.addEnemyHitSecondary( battle.m_enemyMonContainer );
+								this.eventSequence.addEnemyHitSecondary( battle.enemyMonContainer );
 							
 							// Play the appropriate status effect animation, if applicable  	
 							if ( effect.type == 'STATUS_EFFECT' )
@@ -386,15 +390,16 @@ package com.tinyrpg.battle
 					
 					isFirstEffect = false;
 					
-				} // end for each
+				} // end for each move effect
 				
-			} // end if
+			} // end if target hasn't fainted
 			
 			// If the move has the Explosion effect, the user faints
 			if ( move.hasEffect( TinyMoveEffect.EXPLOSION ) )
 			{
 				TinyLogManager.log("applying EXPLOSION effect damage", this);
 				
+				// Deal enough damage to faint the attacking mon
 				var explosionDamage : int = attackingMon.maxHP;
 				
 				// Apply damage
@@ -485,7 +490,7 @@ package com.tinyrpg.battle
 				
 				// Tally up the number of mons used in the battle, then clear the "used in battle" flag, 
 				// since that only matters when calculating exp against the current defeated mon 
-				for each ( mon in this.battle.m_playerTrainer.squad ) 
+				for each ( mon in this.battle.playerTrainer.squad ) 
 				{
 					if ( mon.usedInBattle ) 
 					{
@@ -499,7 +504,7 @@ package com.tinyrpg.battle
 					}
 				}
 				
-				var earnedExp : int = TinyBattleMath.getEarnedExp( defendingMon, participatingMons.length, this.battle.m_isWildEncounter );
+				var earnedExp : int = TinyBattleMath.getEarnedExp( defendingMon, participatingMons.length, this.battle.isWildEncounter );
 				
 				// Distribute exp to each participating mon
 				for each ( mon in participatingMons )
@@ -509,7 +514,7 @@ package com.tinyrpg.battle
 					
 					// Add EVs
 					mon.addEVs( defendingMon );
-					TinyLogManager.log('new EVs - ' + mon.name + ':', this);
+					TinyLogManager.log( 'new EVs - ' + mon.name + ':', this );
 					mon.evStatSet.log();
 					
 					// Deal with level up stuff if there is any. The EXP will be updated by these events, 
@@ -524,7 +529,7 @@ package com.tinyrpg.battle
 						this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.GAIN_EXP_POINTS, mon, null, null, null, earnedExp ) );
 						
 						// Update the EXP bar
-						this.eventSequence.addUpdateEXPDisplay( this.battle.m_playerStatDisplay );	
+						this.eventSequence.addUpdateEXPDisplay( this.battle.playerStatDisplay );	
 					}
 				}
 			}
@@ -549,7 +554,7 @@ package com.tinyrpg.battle
 		 * If the Player's mon faints, they are allowed to select another, otherwise they game over.
 		 * 
 		 * If the Enemy's mon faints, for wild encounters the battle is over, otherwise the trainer
-		 * can pick another mon, otherwise the Player wins the battle.
+		 * can pick another mon if they have one, otherwise the Player wins the battle.
 		 */
 		override public function getNextCommands() : Array
 		{
@@ -558,9 +563,9 @@ package com.tinyrpg.battle
 			var nextEnemyMon : TinyMon = null; 
 			
 			// Get the next enemy mon from the trainer's squad if this isn't a wild encounter
-			if ( !this.battle.m_isWildEncounter ) 
+			if ( !this.battle.isWildEncounter ) 
 			{
-				nextEnemyMon = this.battle.m_enemyTrainer.getFirstHealthyMon();
+				nextEnemyMon = this.battle.enemyTrainer.getFirstHealthyMon();
 			}
 			
 			switch ( this.result )
@@ -573,7 +578,7 @@ package com.tinyrpg.battle
 					
 				case RESULT_PLAYER_FAINTED:
 				{
-					if ( this.battle.m_playerTrainer.hasAnyHealthyMons() )
+					if ( this.battle.playerTrainer.hasAnyHealthyMons() )
 					{
 						TinyLogManager.log('getNextCommands: RESULT_PLAYER_FAINTED, force player switch, then start the next turn', this);
 						
@@ -607,7 +612,7 @@ package com.tinyrpg.battle
 				case RESULT_BOTH_FAINTED:
 				{
 					// If player has any remaining mons, force them to switch. If not, player loses
-					if ( this.battle.m_playerTrainer.hasAnyHealthyMons() )
+					if ( this.battle.playerTrainer.hasAnyHealthyMons() )
 					{	
 						// If enemy has no remaining mons, player wins
 						if ( !nextEnemyMon )
@@ -653,9 +658,9 @@ package com.tinyrpg.battle
 				this.eventSequence.addDelay( 0.2 );
 				
 				if (isEnemy)
-					this.eventSequence.addEnemyAttack( this.battle.m_enemyMonContainer );
+					this.eventSequence.addEnemyAttack( this.battle.enemyMonContainer );
 				else 
-					this.eventSequence.addPlayerAttack( this.battle.m_playerMonContainer );				
+					this.eventSequence.addPlayerAttack( this.battle.playerMonContainer );				
 			}
 			else
 			{
@@ -698,7 +703,7 @@ package com.tinyrpg.battle
 		 */
 		private function applyDamageToTarget( targetMon : TinyMon, damage : int, isEnemy : Boolean ) : void
 		{
-			TinyLogManager.log('applyDamageToTarget: ' + targetMon.name + ' - ' + damage + ' points', this);
+			TinyLogManager.log( 'applyDamageToTarget: ' + targetMon.name + ' - ' + damage + ' hp', this );
 			
 			// Deal damage
 			targetMon.dealDamage( damage );
@@ -708,7 +713,7 @@ package com.tinyrpg.battle
 			
 			// Play damage shake animaton and sound
 			if ( isEnemy ) {
-				this.eventSequence.addEnemyHitDamage( this.battle.m_enemyMonContainer );
+				this.eventSequence.addEnemyHitDamage( this.battle.enemyMonContainer );
 			} else {
 				this.eventSequence.addPlayerHitDamage();
 			}
@@ -717,8 +722,8 @@ package com.tinyrpg.battle
 			this.eventSequence.addDelay( 0.2 ); 
 			
 			// Update HP display
-			var targetStatDisplay : TinyBattleMonStatDisplay = isEnemy ? this.battle.m_enemyStatDisplay : this.battle.m_playerStatDisplay;
-			this.eventSequence.addUpdateHPDisplay( targetStatDisplay );
+			var targetStatDisplay : TinyBattleMonStatDisplay = isEnemy ? this.battle.enemyStatDisplay : this.battle.playerStatDisplay;
+			this.eventSequence.addUpdateHPDisplay( targetMon.currentHP, targetStatDisplay );
 		}
 	}
 }

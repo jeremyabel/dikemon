@@ -90,6 +90,27 @@ package com.tinyrpg.data
 			this.property = property;	
 		}
 		
+		public static function isDamageEffect( element : *, index : int, arr : Array ) : Boolean
+		{
+			index; arr;
+			var moveEffect : TinyMoveEffect = element as TinyMoveEffect;
+			
+			switch ( moveEffect.type ) 
+			{
+				case HIT:				
+				case ALWAYS_HIT:		
+				case EXPLOSION:		
+				case MULTI_HIT:		
+				case DOUBLE_HIT:		
+				case PSYWAVE:			
+				case LOW_KICK:		
+				case HIGH_CRITICAL:	
+				case ABSORB:			
+				case QUICK_ATTACK: return true;
+				default: return false;
+			}
+		}
+		
 		public static function isStatModEffect( element : *, index : int, arr : Array ) : Boolean
 		{
 			index; arr;

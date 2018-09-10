@@ -20,13 +20,13 @@ package com.tinyrpg.battle
 		{
 			super( battle, TinyBattleCommand.COMMAND_RUN, user );
 			
-			var trainer : TinyTrainer = this.isEnemy ? this.battle.m_enemyTrainer : this.battle.m_playerTrainer;
+			var trainer : TinyTrainer = this.isEnemy ? this.battle.enemyTrainer : this.battle.playerTrainer;
 			
 			// You can only run from wild encounters
-			if ( this.battle.m_isWildEncounter )
+			if ( this.battle.isWildEncounter )
 			{
-				var trainerMon : TinyMon = this.isEnemy ? this.battle.m_currentEnemyMon : this.battle.m_currentPlayerMon;
-				var targetMon : TinyMon = this.isEnemy ? this.battle.m_currentPlayerMon : this.battle.m_currentEnemyMon;
+				var trainerMon : TinyMon = this.isEnemy ? this.battle.currentEnemyMon : this.battle.currentPlayerMon;
+				var targetMon : TinyMon = this.isEnemy ? this.battle.currentPlayerMon : this.battle.currentEnemyMon;
 				
 				// Calculate running success
 				this.result = TinyBattleMath.canRun( trainer, trainerMon, targetMon ) ? RESULT_PASSED : RESULT_FAILED; 
@@ -50,9 +50,9 @@ package com.tinyrpg.battle
 				case RESULT_PASSED_DAD:
 					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getBattleString( TinyBattleStrings.RUN_PASSED_DAD ) ); break;
 				case RESULT_FAILED:
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getRunFailedString( this.battle.m_playerTrainer.runAttempts ) ); break;
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getRunFailedString( this.battle.playerTrainer.runAttempts ) ); break;
 				case RESULT_IMPOSSIBLE:
-					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getRunImpossibleString( this.battle.m_playerTrainer.runAttempts ) ); break;
+					this.eventSequence.addDialogBoxFromString( TinyBattleStrings.getRunImpossibleString( this.battle.playerTrainer.runAttempts ) ); break;
 			}
 			
 			// Increment trainer's run attempts, which is used by the canRun() calculation
