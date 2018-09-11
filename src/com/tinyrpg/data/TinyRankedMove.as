@@ -3,6 +3,8 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
+	 * Class which represents a move being ranked for consideration by the {@link TinyTrainerAI} class.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyRankedMove 
@@ -15,7 +17,10 @@ package com.tinyrpg.data
 			this.move = move;
 			this.rank = 10;
 		}
-		
+
+		/**
+		 * Reduces the rank if the move is status only. Used by Basic AI.
+		 */
 		public function adjustIfStatusOnly() : void 
 		{
 			if ( this.move.getStatusEffects().length > 0 && this.move.getDamageEffects().length == 0 ) 
@@ -25,6 +30,9 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Increases the rank of the move is stat_mod. Used by Advanced AI.
+		 */
 		public function adjustIfStatMod() : void
 		{
 			if ( this.move.getStatModEffects().length > 0 ) 
@@ -34,6 +42,9 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Adjusts the rank of the move based on how effective it is. Used by Good AI.
+		 */
 		public function adjustIfEffectiveVs( types : Array ) : void
 		{
 			if ( this.move.isSuperEffectiveVs( types ) ) 

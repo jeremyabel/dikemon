@@ -104,13 +104,13 @@ package com.tinyrpg.display
 		
 		public function captureBattleBitmap( battle : TinyBattle ) : void
 		{
-			TinyLogManager.log('captureBattleBitmap', this);
+			TinyLogManager.log( 'captureBattleBitmap', this );
 			
 			// Clear to white
 			this.battleScreenCapture.fillRect( new Rectangle( 0, 0, 160, 144 ), 0xFFFFFFFF );
 			
 			// Draw the battle sprite to the bitmap
-			this.battleScreenCapture.draw( battle, null, null, null, new Rectangle(0, 0, 160, 144 ) );
+			this.battleScreenCapture.draw( battle, null, null, null, new Rectangle( 0, 0, 160, 144 ) );
 			
 			// Save a copy to restore before applying any effects each frame
 			this.battleScreenBitmapCopy = new Bitmap( this.battleScreenCapture.clone() );

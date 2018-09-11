@@ -4,6 +4,11 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which represents a set of moves for a single mon. 
+	 * 
+	 * Contains functions for adding and removing moves from the set, dealing with PP, 
+	 * and keeping track of with which moves are learned at various levels.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveSet 
@@ -12,7 +17,6 @@ package com.tinyrpg.data
 		private var m_move2 : TinyMoveData;
 		private var m_move3 : TinyMoveData;
 		private var m_move4 : TinyMoveData;
-		
 		private var m_oldestMoveIndex : int = 0;
 		
 		public var levelMoveSet : Array = [];
@@ -24,30 +28,46 @@ package com.tinyrpg.data
 		
 		public function TinyMoveSet() : void
 		{
-			this.levelMoveSet = new Array(100);
+			this.levelMoveSet = new Array( 100 );
 		}
 		
+		/**
+		 * Creates the moveset from XML data.
+		 * 
+		 * The moveset is specified as a list, where each entry is a level number followed by
+		 * the move that is learned at that level. Multiple moves can be learned per level:
+		 * 
+		 * 1: LOW_KICK;
+		 * 1: LEER;
+		 * 1: FOCUS_ENERGY;
+		 * 7: FOCUS_ENERGY;
+		 * 13: KARATE_CHOP;
+		 * 26: SUBMISSION;
+		 * 36: SCARY_FACE;
+		 * 45: DYNAMIC_PUNCH
+		 */
 		public static function newFromXML( xmlData : XML ) : TinyMoveSet
 		{
 			var newMoveSet : TinyMoveSet = new TinyMoveSet();
 			
-			var levelMoveStrings : Array = String(xmlData.child('MOVES').text()).split(';');
-			for each (var moveString : String in levelMoveStrings) 
+			var levelMoveStrings : Array = String( xmlData.child( 'MOVES' ).text() ).split( ';' );
+			
+			for each ( var moveString : String in levelMoveStrings ) 
 			{
 				// Remove whitespace
 				var regex : RegExp = /^\s*|\s*$/gim;
-				moveString = moveString.replace(regex, '');
+				moveString = moveString.replace( regex, '' );
 				
 				// Separate level number and move name
-				var separatedString : Array = moveString.split(':');
-				var level : int = int(separatedString[0]);
-				var moveName : String = separatedString[1];
+				var separatedString : Array = moveString.split( ':' );
+				var level : int = int( separatedString[ 0 ] );
+				var moveName : String = separatedString[ 1 ];
 				
 				// Remove whitespace from move name
 				moveName = moveName.replace( regex, '' );
 				
 				// Replace underscores with spaces
-				moveName = moveName.replace('_', ' ');
+				moveName = moveName.replace( '_', ' ' );
 				
 				// Get move object
 				var newMove : TinyMoveData = TinyMoveDataList.getInstance().getMoveByName( moveName );
@@ -58,14 +78,17 @@ package com.tinyrpg.data
 					newMoveSet.levelMoveSet[ level ] = [];
 				}
 				
-				// Add to level moveset
+				// Add the move to the level's moveset
 				( newMoveSet.levelMoveSet[ level ] as Array ).push( newMove );
 			}
 			
 			return newMoveSet;
 		}
 	
-		
+		/**
+		 * Serializes the current movelist to a JSON object.
+		 * Used when creating the save game data.
+		 */
 		public function toJSON() : Object
 		{
 			var jsonObject : Object = {};
@@ -78,6 +101,9 @@ package com.tinyrpg.data
 			return jsonObject;
 		}
 		
+		/**
+		 * Prints the list of moves in the set.
+		 */
 		public function logMoves() : void
 		{
 			TinyLogManager.log( 'logMoves: move 1 = ' + (m_move1 ? m_move1.name : '--'), this );
@@ -86,7 +112,9 @@ package com.tinyrpg.data
 			TinyLogManager.log( 'logMoves: move 4 = ' + (m_move4 ? m_move4.name : '--'), this );
 		}
 		
-		
+		/**
+		 * Sets the entire move list using 4 parameters. Will overwrite any existing moves.
+		 */
 		public function setMoves( move1 : TinyMoveData, move2 : TinyMoveData, move3 : TinyMoveData, move4 : TinyMoveData ) : void
 		{
 			TinyLogManager.log( 'setMoves', this );
@@ -97,7 +125,10 @@ package com.tinyrpg.data
 			m_move4 = move4 ? TinyMoveData.newFromCopy( move4 ) : null;
 		}
 		
-		
+		/**
+		 * Sets the move list from a JSON object. 
+		 * Used when recreating the moveset from saved game data.
+		 */
 		public function setMovesFromJSON( jsonObject : Object ) : void
 		{
 			TinyLogManager.log( 'setMovesFromJSON', this );
@@ -129,7 +160,9 @@ package com.tinyrpg.data
 			this.logMoves();
 		}
 		
-		
+		/**
+		 * Puts a given move into a given slot. Will overwrite any existing move in the slot.
+		 */
 		public function setMoveInSlot( move : TinyMoveData, slot : int ) : void
 		{
 			TinyLogManager.log( 'setMoveInSlot: ' + move.name + ' in slot ' + slot, this );
@@ -140,6 +173,9 @@ package com.tinyrpg.data
 			if ( slot == 3 ) this.m_move4 = TinyMoveData.newFromCopy( move );
 		}
 		
+		/**
+		 * Returns the slot number which contains a given move, or -1 if no slot is found.
+		 */
 		public function getSlotWithMove( move : TinyMoveData ) : int
 		{
 			if ( this.m_move1 && this.m_move1.name == move.name ) return 0;
@@ -149,6 +185,9 @@ package com.tinyrpg.data
 			return -1;
 		}
 		
+		/**
+		 * Returns an array containing the current moves in the set.
+		 */
 		public function getMoves() : Array
 		{
 			var results : Array = [];
@@ -161,6 +200,10 @@ package com.tinyrpg.data
 			return results;
 		}
 		
+		/**
+		 * Sets this moveset to use the 4 latest moves learned by a given level.
+		 * Used for setting up opponent mons before a battle. 
+		 */
 		public function setMovesToLevel( level : int ) : void
 		{						
 			TinyLogManager.log( 'setMovesToLevel: ' + level, this );
@@ -173,7 +216,7 @@ package com.tinyrpg.data
 					{
 						var moveData : TinyMoveData = ( this.levelMoveSet[i] as Array )[ j ];
 												
-						switch (m_oldestMoveIndex) 
+						switch ( this.m_oldestMoveIndex ) 
 						{
 							case 0: m_move1 = TinyMoveData.newFromCopy( moveData ); break;
 							case 1: m_move2 = TinyMoveData.newFromCopy( moveData ); break;
@@ -181,12 +224,15 @@ package com.tinyrpg.data
 							case 3: m_move4 = TinyMoveData.newFromCopy( moveData ); break;
 						}
 						
-						m_oldestMoveIndex = (m_oldestMoveIndex + 1) % 4;						
+						this.m_oldestMoveIndex = ( m_oldestMoveIndex + 1 ) % 4;						
 					}
 				}
 			}
 		}
 		
+		/**
+		 * Returns the array of moves that are learned at a given level. 
+		 */
 		public function getLearnedMovesAtLevel( level: int ) : Array
 		{
 			var learnedMoves : Array = [];
@@ -203,6 +249,9 @@ package com.tinyrpg.data
 			return learnedMoves;
 		}
 		
+		/**
+		 * Returns the number of the first empty move slot, or -1 if all move slots are filled.
+		 */
 		public function getFirstOpenMoveSlot() : int
 		{
 			if ( !this.move1 ) return 0;
@@ -211,7 +260,11 @@ package com.tinyrpg.data
 			if ( !this.move4 ) return 3;
 			return -1;	
 		}
-	
+		
+		/**
+		 * Returns the sum of current PP for all moves.
+		 * Used for quickly determining if we can bypass move-selection AI by using Struggle.
+		 */
 		public function getPPSum() : int
 		{
 			var ppSum : int = 0;
@@ -223,9 +276,13 @@ package com.tinyrpg.data
 			return ppSum; 
 		}
 		
+		/**
+		 * Restores all moves to full PP. 
+		 * Called as part of the Dikécenter healing process.
+		 */
 		public function recoverAllPP() : void
 		{
-			TinyLogManager.log( 'restoreAllPP', this );
+			TinyLogManager.log( 'recoverAllPP', this );
 			
 			if ( this.move1 ) this.move1.recoverAllPP();
 			if ( this.move2 ) this.move2.recoverAllPP();
@@ -233,6 +290,9 @@ package com.tinyrpg.data
 			if ( this.move4 ) this.move4.recoverAllPP();
 		}
 		
+		/**
+		 * Loads all graphics for the moveset using a given palette.
+		 */
 		public function loadAllMoveFXSprites( palette : TinyBattlePalette, isEnemy : Boolean ) : void
 		{
 			TinyLogManager.log( 'loadAllMoveFXSprites', this );

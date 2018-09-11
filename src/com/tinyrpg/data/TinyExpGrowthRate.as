@@ -2,6 +2,13 @@ package com.tinyrpg.data
 {
 
 	/**
+	 * Class which represents an EXP growth curve for a single mon.
+	 * 
+	 * As a mon gains levels, the amount of EXP required to reach the next level
+	 * increases. There are 5 different curve types: Eratic, Fast, Medium-Fast,
+	 * Medium-Slow, and Slow. Each mon has a specific EXP growth curve type as 
+	 * part of their base stats.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyExpGrowthRate 
@@ -26,6 +33,9 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Returns the level for a given EXP value.
+		 */
 		public function getLevelForExpValue( exp : int ) : int 
 		{
 			var i : int = 0;
@@ -38,12 +48,18 @@ package com.tinyrpg.data
 			return 100;
 		}
 		
+		/**
+		 * Returns the EXP required to reach a given level at a given growth rate.
+		 * Valid values for growth rate are: ERRATIC, FAST, MEDIUM_FAST, MEDIUM_SLOW, or SLOW.
+		 * 
+		 * Equations are derived from Gen 3: https://bulbapedia.bulbagarden.net/wiki/Experience 
+		 */
 		public static function getExpForLevelAtGrowth( level : int, growthRate : String ) : int
 		{
 			var L : int = level;
 			var exp : int = 1;
 			
-			switch (growthRate)
+			switch ( growthRate )
 			{
 				case TinyExpGrowthRate.ERATIC:
 					var N : int = L % 3 == 0 ? 1501 : 1500;
@@ -74,7 +90,7 @@ package com.tinyrpg.data
 					break;
 			}
 			
-			return Math.max(1, Math.floor(exp));
+			return Math.max( 1, Math.floor( exp ) );
 		}
 	}
 }

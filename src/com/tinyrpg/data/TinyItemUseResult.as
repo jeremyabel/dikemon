@@ -2,6 +2,7 @@ package com.tinyrpg.data
 {
 	/**
 	 * Class which holds the resulting data from a request to use an item.
+	 * 
 	 * The data is used to give feedback to the player if an item cannot be used
 	 * by providing an error string along with the boolean value of whether the item
 	 * can be used or not. 

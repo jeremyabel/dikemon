@@ -78,7 +78,7 @@ package com.tinyrpg.sequence
 		public static const PLAYER_HIT_SECONDARY 	: String = 'PLAYER_HIT_SECONDARY';
 		public static const ENEMY_HIT_SECONDARY 	: String = 'ENEMY_HIT_SECONDARY';
 		
-		public var type   : String;
+		public var type : String;
 		public var thingToDo : *;
 		
 		public function TinyEventItem( eventType : String, thingToDo : * )

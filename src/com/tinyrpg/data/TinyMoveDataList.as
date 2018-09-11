@@ -5,6 +5,8 @@ package com.tinyrpg.data
 	import flash.utils.ByteArray;
 	
 	/**
+	 * Singleton class which contains the list of moves in the game.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveDataList 
@@ -30,18 +32,23 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Returns the move with a given name, or null if none is found.
+		 */
 		public function getMoveByName( targetName : String ) : TinyMoveData
 		{
-			TinyLogManager.log('getMoveByName: ' + targetName, this);
+			TinyLogManager.log( 'getMoveByName: ' + targetName, this );
 			
 			// Find function
-			var findFunction : Function = function(item : *, index : int, array : Array) : Boolean
-			{ index; array; return ((item as TinyMoveData).name.toUpperCase() == targetName.toUpperCase()); };
+			var findFunction : Function = function( item : *, index : int, array : Array ) : Boolean
+			{ index; array; return ( ( item as TinyMoveData ).name.toUpperCase() == targetName.toUpperCase() ); };
 				
-			return this.moveList.filter(findFunction)[0];
+			return this.moveList.filter( findFunction )[ 0 ];
 		}
 		
-		// Singleton
+		/**
+		 * Returns the singleton instance.
+		 */
 		public static function getInstance() : TinyMoveDataList
 		{
 			return instance;

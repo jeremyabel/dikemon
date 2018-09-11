@@ -6,6 +6,11 @@ package com.tinyrpg.data
 	import flash.utils.ByteArray;
 
 	/**
+	 * Singleton class which contains the list of items in the game.
+	 * 
+	 * Contains functions for finding an item by name and recreating
+	 * an item from a serialized JSON object.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyItemDataList 
@@ -31,6 +36,10 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Returns an item from a serialized JSON object which contains the item's
+		 * name and its quantity.
+		 */
 		public function newItemFromJSON( jsonObject : Object ) : TinyItem
 		{
 			TinyLogManager.log( 'newItemFromJSON: ' + jsonObject.name, TinyItemDataList );
@@ -41,6 +50,9 @@ package com.tinyrpg.data
 			return newItem; 
 		}
 		
+		/**
+		 * Returns an item with a given name, if it exists. 
+		 */
 		public function getItemByName( targetName : String ) : TinyItem
 		{
 			TinyLogManager.log( 'getItemByName: ' + targetName, this );
@@ -73,7 +85,9 @@ package com.tinyrpg.data
 			return this.itemList.filter( findFunction )[ 0 ];
 		}
 		
-		// Singleton
+		/**
+		 * Returns the singleton instance.
+		 */
 		public static function getInstance() : TinyItemDataList
 		{
 			return instance;

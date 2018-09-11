@@ -3,6 +3,8 @@ package com.tinyrpg.data
 	import flash.display.Stage;
 
 	/**
+	 * Class which contains various core app settings.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyAppSettings 

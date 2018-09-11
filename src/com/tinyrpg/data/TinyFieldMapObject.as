@@ -27,7 +27,6 @@ package com.tinyrpg.data
 			}
 		}
 		
-		
 		/**
 		 * Overrideable function which is used for notifying the {@link TinyFieldMap} that the object's
 		 * data is set and ready. 
@@ -43,7 +42,9 @@ package com.tinyrpg.data
 			this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.DATA_READY, this ) );
 		}
 		
-		
+		/**
+		 * Overrideable function which is used for determining if the object can be walked on or not.
+		 */
 		public function isBlocking( walkSprite : TinyWalkSprite ) : Boolean
 		{
 			return true;

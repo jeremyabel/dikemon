@@ -1,6 +1,11 @@
 package com.tinyrpg.data 
 {
 	/**
+	 * Class which represents a single action in a string of dialog text.
+	 * 
+	 * Dialog text contains various embedded commands, such as delays, 
+	 * linebreaks, name replacement, etc. 
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyDialogItem 
@@ -17,7 +22,7 @@ package com.tinyrpg.data
 		public var type : String;
 		public var value : *;
 		
-		public function TinyDialogItem(type : String, value : * = null) : void
+		public function TinyDialogItem( type : String, value : * = null ) : void
 		{
 			this.type = type;
 			this.value = value;

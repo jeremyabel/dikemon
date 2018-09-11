@@ -12,12 +12,21 @@ package com.tinyrpg.data
 	import flash.events.Event;
 	
 	/**
+	 * Class which represents a sprite graphic placed on the map. 
+	 * 
+	 * Used during the intro cutscene to show the big character and mon sprites.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyFieldMapObjectSprite extends TinyFieldMapObject
 	{
+		// The name of the sprite to display
 		public var spriteName : String;
+		
+		// The type of sprite to display, either "TRAINER" or "MONSTER"
 		public var spriteType : String;
+		
+		// Whether or not the sprite is visible when it is created
 		public var startVisible : Boolean = false;
 		
 		public function TinyFieldMapObjectSprite() : void 
@@ -30,36 +39,34 @@ package com.tinyrpg.data
 			var spriteBitmap : Bitmap;
 			var replacedSpriteName : String = this.spriteName;
 			
+			// Replace sprite name "PLAYER" with the current player's trainer name 
 			if ( spriteName == 'PLAYER' )
 			{
-				if ( TinyGameManager.getInstance().playerTrainer )
-				{
+				replacedSpriteName = 'ANDY'; // Default player name
+				
+				if ( TinyGameManager.getInstance().playerTrainer ) {
 					replacedSpriteName = TinyGameManager.getInstance().playerTrainer.name;
 				}
-				else 
-				{
-					replacedSpriteName = 'ANDY';
-				}
 			}
 			
+			// Replace sprite name "RIVAL" with the current player's rival name
 			if ( spriteName == 'RIVAL' )
 			{
-				if ( TinyGameManager.getInstance().playerTrainer )
-				{
+				replacedSpriteName = 'RACHEL'; // Default rival name
+				
+				if ( TinyGameManager.getInstance().playerTrainer ) {
 					replacedSpriteName = TinyNameLookup.getRivalNameForPlayerName( TinyGameManager.getInstance().playerTrainer.name );
-				}
-				else
-				{
-					replacedSpriteName = 'RACHEL';
 				}
 			}
 			
+			// Create the sprite
 			switch ( this.spriteType )
 			{
 				case 'TRAINER': spriteBitmap = new Bitmap( TinySpriteLookup.getTrainerSprite( replacedSpriteName ) ); break;
 				case 'MONSTER': spriteBitmap = new Bitmap( TinySpriteLookup.getMonsterSprite( replacedSpriteName ) ); break;
 			}
 			
+			// Place the sprite's origin in the center
 			spriteBitmap.x -= Math.floor( spriteBitmap.width / 2 ) - 8;
 			spriteBitmap.y -= Math.floor( spriteBitmap.height / 2 ) - 8;
 			
@@ -69,27 +76,33 @@ package com.tinyrpg.data
 			super.dataReady();
 		}
 		
-		public function fadeIn() : void
+		/**
+		 * Fade the sprite in with an optional duration value, in frames.
+		 */
+		public function fadeIn( duration : uint = 20 ) : void
 		{
 			TinyLogManager.log( 'fadeIn', this );
 			
 			this.alpha = 0;
 			this.visible = true;
-			this.tweenAlpha( 1 );
+			this.tweenAlpha( 1, duration );
 		}
 		
-		public function fadeOut() : void 
+		/**
+		 * Fade the sprite out with an optional duration value, in frames.
+		 */
+		public function fadeOut( duration : uint = 20 ) : void 
 		{
 			TinyLogManager.log( 'fadeOut', this );
 			
 			this.alpha = 1;
 			this.visible = true;
-			this.tweenAlpha( 0 );
+			this.tweenAlpha( 0, duration );
 		}
 		
-		private function tweenAlpha( targetAlpha : uint ) : void
+		private function tweenAlpha( targetAlpha : uint, duration : uint = 20 ) : void
 		{
-			TweenMax.to( this, 20, { 
+			TweenMax.to( this, duration, { 
 				alpha: targetAlpha, 
 				ease: SteppedEase.create( 4 ), 
 				useFrames: true,

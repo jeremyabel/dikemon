@@ -3,6 +3,8 @@ package com.tinyrpg.data
 	import flash.geom.Point;
 	
 	/**
+	 * Class which represents position data specified in an XML file.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyPositionXMLData extends Point 

@@ -147,7 +147,7 @@ package com.tinyrpg.battle
 			var numSuccessfulHits : int = 0;
 			
 			// Apply any move effect modifiers to the number of hits
-			numHits = move.applyNumHitsModEffect();
+			numHits = TinyBattleMath.applyNumHitsModEffect( move );
 			
 			// For each hit: do an accuracy check, play the attack animation, deal damage, and show any damage-related dialog boxes
 			if ( move.hasEffect( TinyMoveEffect.HIT ) )
@@ -190,7 +190,7 @@ package com.tinyrpg.battle
 					damage = TinyBattleMath.calculateDamage( attackingMon, defendingMon, move, isCrit );
 					
 					// Apply any move effect modifiers to the damage
-					damage = move.applyDamageModEffect( damage, attackingMon, defendingMon );
+					damage = TinyBattleMath.applyDamageModEffect( move, damage, attackingMon, defendingMon );
 					
 					// Is it a one-hit KO?
 					isOneHitKO = defendingMon.currentHP == defendingMon.maxHP && damage >= defendingMon.currentHP && i == 0;
@@ -324,7 +324,7 @@ package com.tinyrpg.battle
 							var effectProperties : TinyMoveEffectStatMod = effect.property as TinyMoveEffectStatMod;
 							
 							// Success, try to apply the stat change
-							effectSucceeded = move.applyStatModEffect( affectedMon, effectProperties.effectedStat, effectProperties.numStages );
+							effectSucceeded = TinyBattleMath.applyStatModEffect( affectedMon, effectProperties.effectedStat, effectProperties.numStages );
 
 							// Get effect dialog string
 							effectDialogString = TinyBattleStrings.getStatChangeString( affectedMon, effectProperties.effectedStat, effectProperties.numStages );
@@ -332,7 +332,7 @@ package com.tinyrpg.battle
 						else if ( effect.type == 'STATUS_EFFECT' )
 						{						
 							// Success, try to apply the status effect
-							effectSucceeded = move.applyStatusChangeEffect( affectedMon, effect.property as String );
+							effectSucceeded = TinyBattleMath.applyStatusChangeEffect( affectedMon, effect.property as String );
 						
 							// Get effect dialog string
 							effectDialogString = TinyBattleStrings.getStatusChangeString( affectedMon, effect.property as String, effectSucceeded ); 

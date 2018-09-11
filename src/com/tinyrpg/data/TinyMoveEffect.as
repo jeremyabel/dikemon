@@ -1,6 +1,11 @@
 package com.tinyrpg.data 
 {
 	/**
+	 * Class which represents a special effect added to a move.
+	 * 
+	 * These effects can modify a mon's stats, cause status effects, or
+	 * do various other special things.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveEffect 
@@ -84,12 +89,19 @@ package com.tinyrpg.data
 		public var type : String;
 		public var property : *;
 		
+		/**
+		 * @param	type		The type of move effect.
+		 * @param	property	The move effect's property, if it has one.
+		 */
 		public function TinyMoveEffect( type : String, property : * = null )
 		{
 			this.type = type;
 			this.property = property;	
 		}
 		
+		/**
+		 * Array filter function which returns true if the move deals damage.
+		 */
 		public static function isDamageEffect( element : *, index : int, arr : Array ) : Boolean
 		{
 			index; arr;
@@ -111,6 +123,9 @@ package com.tinyrpg.data
 			}
 		}
 		
+		/**
+		 * Array filter function which returns true if the move type is STAT_MOD.
+		 */
 		public static function isStatModEffect( element : *, index : int, arr : Array ) : Boolean
 		{
 			index; arr;
@@ -118,6 +133,9 @@ package com.tinyrpg.data
 			return moveEffect.type == 'STAT_MOD';
 		}
 		
+		/**
+		 * Array filter function which returns true if the move type is STATUS_EFFECT.
+		 */
 		public static function isStatusEffect( element : *, index : int, arr : Array ) : Boolean
 		{
 			index; arr;
@@ -125,6 +143,9 @@ package com.tinyrpg.data
 			return moveEffect.type == 'STATUS_EFFECT';
 		}
 		
+		/**
+		 * Array filter function which returns true if the move type is USELESS_TEXT.
+		 */
 		public static function isMiscEffect( element : *, index : int, arr : Array ) : Boolean
 		{
 			index; arr;
@@ -132,9 +153,12 @@ package com.tinyrpg.data
 			return moveEffect.type == 'USELESS_TEXT';
 		}
 		
+		/**
+		 * Returns the TinyMoveEffect with a given name. Returns null if none is found.
+		 */
 		public static function getEffectByName( name : String ) : TinyMoveEffect
 		{
-			switch (name)
+			switch ( name.toUpperCase() )
 			{
 				case 'HIT': 				return HIT;
 				case 'ALWAYS_HIT':			return ALWAYS_HIT;

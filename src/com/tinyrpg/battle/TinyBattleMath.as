@@ -394,5 +394,182 @@ package com.tinyrpg.battle
 			
 			return wobbles;
 		}
+		
+		/**
+		 * Returns the modified base power value determined by various move effects.
+		 * 
+		 * @param	move		The move being used.
+		 * @param	user		The mon using the move.
+		 * @param	defender	The defending mon.
+		 */
+		public function applyPowerModEffect( move : TinyMoveData, user : TinyMon, defender : TinyMon ) : int 
+		{
+			user;
+			
+			// LOW_KICK: Power determined by target weight
+			if ( move.hasEffect( TinyMoveEffect.LOW_KICK ) )
+			{
+				TinyLogManager.log( 'applyPowerModEffect: LOW_KICK', this );
+				
+				if ( defender.weight <    9.9 ) return 20;
+				if ( defender.weight <   24.9 )	return 40;
+				if ( defender.weight <   49.9 )	return 60;
+				if ( defender.weight <   99.9 )	return 80;
+				if ( defender.weight <  199.9 )	return 100;
+				if ( defender.weight >= 200.0 ) return 120;
+			}
+			
+			// No modification: return original base power
+			return move.basePower;
+		}
+		
+		/**
+		 * Returns the modified hit number value determined by various move effects.
+		 * 
+		 * @param	move	The move being used.
+		 * @return			The modified number of hits.
+		 */
+		public static function applyNumHitsModEffect( move : TinyMoveData ) : int
+		{
+			// DOUBLE_HIT: Hits twice
+			if ( move.hasEffect( TinyMoveEffect.DOUBLE_HIT ) )
+			{
+				TinyLogManager.log( 'applyNumHitsModEffect: DOUBLE_HIT', TinyBattleMath );
+				return 2;
+			}
+			
+			// MULTI_HIT: Hits 2 - 5 times, using a weighted random choice
+			if ( move.hasEffect( TinyMoveEffect.MULTI_HIT ) )
+			{
+				TinyLogManager.log( 'applyNumHitsModEffect: MULTI_HIT', TinyBattleMath );	
+				var weights : Array = [ 0.375, 0.375, 0.125, 0.125 ];
+				var weightedRandom : int = TinyMath.weightedRandomChoice( weights );
+				return 2 + weightedRandom;
+			}
+			
+			// No modification: use original hit number
+			return move.numHits;
+		}
+		
+		/**
+		 * Returns the modified damage value determined by various move effects.
+		 * 
+		 * @param 	move		The move being used.
+		 * @param	damage		The base damage value.
+		 * @param	user		The mon using the move.
+		 * @param	defender	The defending mon.
+		 * @return				The modified damage value.
+		 */
+		public static function applyDamageModEffect( move : TinyMoveData, damage : int, user : TinyMon, defender : TinyMon ) : int
+		{
+			// FALSE_SWIPE: Inflicts damage, but will leave the target with 1 HP if it would otherwise cause it to faint.
+			if ( move.hasEffect( TinyMoveEffect.FALSE_SWIPE ) )
+			{
+				TinyLogManager.log( 'applyDamageModEffect: FALSE_SWIPE', TinyBattleMath );
+				return Math.min( damage, defender.currentHP - 1 );
+			}
+			
+			// PSYWAVE: Random damage according to some math
+			if ( move.hasEffect( TinyMoveEffect.PSYWAVE ) )
+			{
+				TinyLogManager.log( 'applyDamageModEffect: PSYWAVE', TinyBattleMath );
+				return ( Math.random() + 0.5 ) * user.level;
+			}
+			
+			// No modification: use base damage value
+			return damage;
+		}
+		
+		/**
+		 * Applies a given stat modification to a target mon. 
+		 * 
+		 * @param	target		The mon being affected.
+		 * @param	targetStat	The name of the stat being affected.
+		 * @param	modValue	The change in the stat's value.
+		 * @return				True if the stat was able to be modified, otherwise false.
+		 */
+		public static function applyStatModEffect( target : TinyMon, targetStat : String, modValue : int ) : Boolean
+		{
+			// Clamp stat stages to -6, +6		
+			if ( target.getStatStageValue( targetStat ) >= +6 || target.getStatStageValue( targetStat ) <= -6 )
+			{
+				TinyLogManager.log( 'applyStatModEffect: ' + target.name + '\'s' + targetStat + ' is already maxed out!', TinyBattleMath );
+				return false;	
+			} 
+			
+			TinyLogManager.log( 'applyStatModEffect: ' + target.name + '\'s ' + targetStat + ' ' + modValue, TinyBattleMath );
+			
+			switch ( targetStat )
+			{
+				case TinyStatSet.STAT_NAME_CRIT_CHANCE: target.critModStage += modValue; break;
+				case TinyStatSet.STAT_NAME_ACCURACY: 	target.accuracyModStage += modValue; break;
+				case TinyStatSet.STAT_NAME_EVASION:		target.evasivenessModStage += modValue; break;
+				case TinyStatSet.STAT_NAME_ATTACK:		target.battleModStatSet.attack += modValue; break;
+				case TinyStatSet.STAT_NAME_DEFENSE:		target.battleModStatSet.defense += modValue; break;
+				case TinyStatSet.STAT_NAME_SP_ATTACK:	target.battleModStatSet.spAttack += modValue; break;
+				case TinyStatSet.STAT_NAME_SP_DEFENSE:	target.battleModStatSet.spDefense += modValue; break;	
+			}
+			
+			return true;
+		}
+		
+		/**
+		 * Applies a given status effect to a given target mon, if possible.
+		 * 
+		 * @param	target			The mon recieving the status effect.
+		 * @param	statusEffect	The status effect to apply.
+		 * @return					True if the status could be applied, false otherwise.
+		 */
+		public static function applyStatusChangeEffect( target : TinyMon, statusEffect : String ) : Boolean
+		{
+			TinyLogManager.log( 'applyStatusChangeEffect: ' + target.name + ' - ' + statusEffect, TinyBattleMath );
+			
+			switch ( statusEffect )
+			{
+				case TinyStatusEffect.BURN:
+					if (target.isBurned) return false;
+					target.isBurned = true; 
+					break;
+					
+				case TinyStatusEffect.CONFUSION:
+					if (target.isConfused) return false;
+					if (!target.isConfused)
+						target.setConfusionCounter();
+					break;
+					
+				case TinyStatusEffect.FLINCH:
+					if (target.isFlinching) return false;
+					target.isFlinching = true;
+					break;
+					
+				case TinyStatusEffect.LOCK_ON:
+					if (target.isLockedOn) return false;
+					target.isLockedOn = true;
+					break;
+					
+				case TinyStatusEffect.MEAN_LOOK:
+					if (target.isMeanLooked) return false;
+					target.isMeanLooked = true;
+					break;
+					
+				case TinyStatusEffect.PARALYSIS:
+					if (target.isParalyzed) return false;
+					target.isParalyzed = true;
+					break;
+					
+				case TinyStatusEffect.POISON:
+					if (target.isPoisoned) return false;
+					target.isPoisoned = true;
+					break;
+					
+				case TinyStatusEffect.SLEEP:
+					if (target.isSleeping) return false;
+					if (!target.isSleeping)
+						target.setSleepCounter();
+					break; 
+			}
+			
+			return true;
+		}
 	}
 }

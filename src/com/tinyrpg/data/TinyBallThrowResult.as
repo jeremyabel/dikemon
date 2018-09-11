@@ -3,7 +3,9 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
-	 * Class which represents the results of a ball throw event. 
+	 * Class which represents the results of a ball-throw action. 
+	 * 
+	 * Used for determining what to show for the ball-throw FX animation.
 	 */
 	public class TinyBallThrowResult 
 	{

@@ -2,6 +2,10 @@ package com.tinyrpg.data
 {
 
 	/**
+	 * Class which represents a "type", an elemental property given to moves and mons.
+	 * 
+	 * Types are used to determine effectiveness of a move versus a mon.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyType 
@@ -103,6 +107,10 @@ package com.tinyrpg.data
 			this.name = name;
  		}
  		
+ 		/**
+ 		 * Returns a TinyType object which matches a given string name.
+ 		 * If the provided name is not a valid type, the Normal type is returned.
+ 		 */
  		public static function getTypeFromString(input : String) : TinyType
  		{
  			var typeString : String = input.toLowerCase();
@@ -130,7 +138,10 @@ package com.tinyrpg.data
 			}
 		}
 		
-		public function getMatchupValueVersus(targetType : TinyType) : Number
+		/**
+		 * Returns the matchup value for this type versus a given target type.
+		 */
+		public function getMatchupValueVersus( targetType : TinyType ) : Number
 		{
 			switch (targetType.name)
 			{
@@ -157,6 +168,9 @@ package com.tinyrpg.data
 			return 1.0;
 		}
 		
+		/**
+		 * Returns true if the type is physial, otherwise false.
+		 */
 		public function get isPhysical() : Boolean
 		{
 			switch (this.name)

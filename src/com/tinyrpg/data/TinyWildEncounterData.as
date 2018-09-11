@@ -6,6 +6,12 @@ package com.tinyrpg.data
 	import com.tinyrpg.utils.TinyMath;
 	
 	/**
+	 * Class which contains data about wild encounters on a single map.
+	 * 
+	 * Wild encounters are triggered by walking in tall grass, and can
+	 * generate battle encounters with one of 7 leveled mons. The 7 slots 
+	 * have a decreasing chance of being called.  
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyWildEncounterData 
@@ -19,6 +25,9 @@ package com.tinyrpg.data
 			this.encounterMons = encounterMonInfo;
 		}
 		
+		/**
+		 * Returns a wild encounter mon using the chance table.
+		 */
 		public function getEncounterMon() : TinyMon
 		{
 			var encounterIndex : uint = TinyMath.weightedRandomChoice( ENCOUNTER_CHANCE_TABLE ); 
