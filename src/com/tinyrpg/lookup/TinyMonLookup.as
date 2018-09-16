@@ -6,6 +6,10 @@ package com.tinyrpg.lookup
 	import flash.utils.ByteArray;
 
 	/**
+	 * Singleton class which provides lookup functions relating to {@link TinyMon}s.
+	 * 
+	 * The mon data is stored in the Monsters.xml file.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMonLookup
@@ -50,6 +54,9 @@ package com.tinyrpg.lookup
 		
 		}
 		
+		/**
+		 * Initializes the XML data
+		 */
 		public function initMonsterData() : void
 		{
 			TinyLogManager.log( 'initMonsterData', this );
@@ -62,12 +69,10 @@ package com.tinyrpg.lookup
 				this.monData = new XML( string );
 			}
 		}
-
-		public static function getInstance() : TinyMonLookup
-		{
-			return instance;
-		}	
 		
+		/**
+		 * Returns the XML for a mon with the given name, either regular name or human name.
+		 */
 		public function getMonXMLByName( monName : String, monHumanName : String = null ) : XML
 		{
 			if ( monHumanName )
@@ -84,6 +89,13 @@ package com.tinyrpg.lookup
 			return null;
 		}
 		
+		/**
+		 * Returns a {@link TinyMon} with a given name.
+		 * 
+		 * @param	monName		The name of the requested mon.
+		 * @param	level		The level the mon should be at.
+		 * @param	evolved		Whether or not the mon should be in the evolved state. 
+		 */
 		public function getMonByName( monName : String, level : uint = 5, evolved : Boolean = false ) : TinyMon
 		{
 			TinyLogManager.log( 'getMonByName: ' + monName, this );
@@ -94,6 +106,13 @@ package com.tinyrpg.lookup
 			return null;
 		}
 		
+		/**
+		 * Returns the mon with a given human name.
+		 * 
+		 * @param	humanName	The human name of the requested mon.
+		 * @param	level		The level the mon should be at.
+		 * @param	evolved		Whether or not the mon should be in the evolved state. 
+		 */
 		public function getMonByHuman( humanName : String, level : uint = 5, evolved : Boolean = false ) : TinyMon
 		{
 			TinyLogManager.log( 'getMonByHuman: ' + humanName, this );
@@ -103,5 +122,13 @@ package com.tinyrpg.lookup
 			if ( monXML ) return new TinyMon( monXML, level, evolved );
 			return null;
 		}
+		
+		/**
+		 * Returns the singleton instance.
+		 */
+		public static function getInstance() : TinyMonLookup
+		{
+			return instance;
+		}	
 	}
 }

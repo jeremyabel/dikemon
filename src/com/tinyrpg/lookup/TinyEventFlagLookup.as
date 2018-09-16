@@ -6,6 +6,10 @@ package com.tinyrpg.lookup
 	import flash.utils.ByteArray;
 	
 	/**
+	 * Singleton class which keeps track of the {@link TinyEventFlag}s used by the game.
+	 * 
+	 * The list of flags is specified in the Flags.xml file.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyEventFlagLookup 
@@ -36,7 +40,10 @@ package com.tinyrpg.lookup
 			}			
 		}
 		
-		
+		/**
+		 * Restores the flag states from a given JSON array.
+		 * Used when loading save game data.
+		 */
 		public function restoreFromJSON( jsonArray : Array ) : void
 		{
 			TinyLogManager.log( 'restoreFromJSON', this );
@@ -47,7 +54,10 @@ package com.tinyrpg.lookup
 			}
 		}
 		
-		
+		/**
+		 * Returns a JSON array of all flag states.
+		 * Used when writing save game data.
+		 */
 		public function toJSON() : Array
 		{
 			var jsonArray : Array = [];
@@ -60,7 +70,9 @@ package com.tinyrpg.lookup
 			return jsonArray;
 		}
 		
-		
+		/**
+		 * Returns the flag with a given target name, or null if no flag is found.
+		 */
 		public function getFlagByName( targetName : String ) : TinyEventFlag
 		{
 			TinyLogManager.log( 'getFlagByName: ' + targetName, TinyEventFlagLookup );
@@ -76,7 +88,9 @@ package com.tinyrpg.lookup
 			return this.eventFlags.filter( findFunction )[ 0 ];			
 		}
 		
-		
+		/**
+		 * Returns the singleton instance.
+		 */
 		public static function getInstance() : TinyEventFlagLookup
 		{
 			return instance;

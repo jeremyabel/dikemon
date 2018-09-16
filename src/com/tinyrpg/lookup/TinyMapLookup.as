@@ -9,6 +9,10 @@ package com.tinyrpg.lookup
 	import flash.utils.getQualifiedClassName;
 
 	/**
+	 * Static class which provides lookup functions related to game maps.
+	 * 
+	 * This includes functions for map movieclips, encounter rates, and event XML data.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyMapLookup 
@@ -101,6 +105,9 @@ package com.tinyrpg.lookup
 		
 		public function TinyMapLookup() : void { }
 		
+		/**
+		 * Returns the {@link TinyMapMovieClip} for the map with a given name.
+		 */
 		public static function getMapFromName( mapName : String ) : TinyMapMovieClip 
 		{
 			TinyLogManager.log( 'getMapFromName: ' + mapName, TinyMapLookup );
@@ -159,7 +166,10 @@ package com.tinyrpg.lookup
 				default:						return new MapTownHousePlayerFloor2;
 			}
 		}
-	
+		
+		/**
+		 * Returns the event XML data for the map with the given name.
+		 */
 		public static function getMapEventXMLFromName( mapName : String ) : XML
 		{
 			TinyLogManager.log( 'getMapEventXMLFromName: ' + mapName, TinyMapLookup );
@@ -226,6 +236,9 @@ package com.tinyrpg.lookup
 			return new XML( string );
 		}
 		
+		/**
+		 * Returns the encounter rate number for the map with the given name.
+		 */
 		public static function getEncounterRateForName( mapName : String ) : int
 		{
 			TinyLogManager.log( 'getEncounterRateForName: ' + mapName, TinyMapLookup );
@@ -251,6 +264,9 @@ package com.tinyrpg.lookup
 			}
 		}
 		
+		/**
+		 * Returns the encounter data for the map with the given name.
+		 */
 		public static function getEncounterDataForName( mapName : String ) : TinyWildEncounterData
 		{
 			TinyLogManager.log( 'getEncounterDataForName: ' + mapName, TinyMapLookup );
@@ -276,7 +292,6 @@ package com.tinyrpg.lookup
 				
 				default: return new TinyWildEncounterData( null );
 			}
-			
 		}
 	}
 }

@@ -10,6 +10,8 @@ package com.tinyrpg.lookup
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
+	 * Static class which contains lookup functions relating to move fx animations.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveFXLookup 
