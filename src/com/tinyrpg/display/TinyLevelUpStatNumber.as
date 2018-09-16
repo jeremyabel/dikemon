@@ -1,4 +1,4 @@
-package com.tinyrpg.display 
+	package com.tinyrpg.display 
 {
 	import com.greensock.TweenLite;
 	import com.greensock.easing.Linear;
@@ -11,6 +11,14 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Display class which provides a countdown-style numerical display, shown when
+	 * a mon's stats are adjusted after a level-up.
+	 * 
+	 * The display consists of two numbers: one on the left which shows the change in 
+	 * the stat, and one on the right which shows the actual value of the stat. As
+	 * the display animates, the left number counts down while the right number 
+	 * counts up to indicate the stat being upgraded.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyLevelUpStatNumber extends Sprite 
@@ -67,8 +75,16 @@ package com.tinyrpg.display
 			
 			if ( this.additionalStatNumber != 0 )
 			{
-				// Animate number which is the difference between the left and right numbers. This way only one property needs to be tweened
-				TweenLite.to( this, this.additionalStatNumber * 2, { difference: this.additionalStatNumber, useFrames: true, ease: Linear.easeNone, roundProps: [difference], onUpdate: this.onRollupUpdate, onComplete: this.onRollupComplete } );
+				// Animate the number which is the difference between the left and right numbers. This way only one property needs to be tweened
+				TweenLite.to( this, this.additionalStatNumber * 2, { 
+					difference: this.additionalStatNumber, 
+					useFrames: true, 
+					ease: Linear.easeNone, 
+					roundProps: [difference], 
+					onUpdate: this.onRollupUpdate, 
+					onComplete: this.onRollupComplete 
+				});
+				
 				this.countTime = this.additionalStatNumber * 2;
 			}
 			else

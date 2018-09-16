@@ -26,6 +26,13 @@ package com.tinyrpg.display
 	import flash.geom.Point;
 
 	/**
+	 * Class which provides a single animated sprite character which can be controlled by
+	 * the player or controlled by NPC AI.
+	 * 
+	 * This class handles all movement-related inputs for the player, and deals with collision
+	 * detection between the sprite and objects on the map.
+	 * 
+	 * Uses {@link TinyWalkSpriteSheet} to draw the sprite itself.
 	 * @author jeremyabel
 	 */
 	public class TinyWalkSprite extends Sprite
@@ -49,21 +56,55 @@ package com.tinyrpg.display
 		private var hasCollidedWithDisable : Boolean;
 		private var eventStepCounter : uint;
 		
+		// This sprite's ID number.
 		public var id : uint;
+		
+		// This sprite's current movement speed.
 		public var speed : int;
+		
+		// The movement hitbox attached to this sprite. Only used if isPlayer is true.
 		public var movementBox : TinyWalkSpriteHitbox;
+		
+		// The collision hitbox attached to this sprite.
 		public var hitBox : TinyWalkSpriteHitbox;
+		
+		// The trainer sightbox attached to this sprite. Only used if isTrainer is true.
 		public var sightBox : TinyTrainerSightHitbox;
+		
+		// The emote icon attached to this sprite.
 		public var emoteIcon : TinyEmoteIcon;
-		public var isPlayer : Boolean; 
+		
+		// Whether or not this sprite is the player's sprite.
+		public var isPlayer : Boolean;
+		
+		// Whether or not this sprite is a trainer. 
 		public var isTrainer : Boolean;
+		
+		// The name of the map this sprite is spawned on.
 		public var homeMapName : String;
+		
+		// Whether or not the camera should track with the movement of this sprite, keeping it in the middle of the screen.
 		public var lockToCamera : Boolean;
+		
+		// This sprite's current facing direction.
 		public var currentDirection : String;
+		
+		// Whether or not this sprite is currently being controlled by the player.
 		public var hasControl : Boolean = false;
+		
+		// Whether or not this sprite checks for collisions during movement.
 		public var enableCollisions : Boolean = true;
+		
+		// Whether or not this sprite is active and able to be updated.
 		public var isAlive : Boolean = true;
 
+		/**
+		 * @param	id				The sprite's ID number.
+		 * @param	initialFacing	Facing value the sprite should spawn with. Valid values are UP, DOWN, LEFT, and RIGHT.
+		 * @param	lockToCamera	Whether or not the camera should track with the movement of the sprite, keeping it in the middle of the screen.
+		 * @param	isPlayer		Whether or not the sprite is the player's sprite.
+		 * @param	isTrainer		Whether or not the sprite is a trainer. 
+		 */
 		public function TinyWalkSprite( id : uint, initialFacing : String = 'DOWN', lockToCamera : Boolean = false, isPlayer : Boolean = false, isTrainer : Boolean = false ) : void
 		{
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
@@ -81,16 +122,19 @@ package com.tinyrpg.display
 				this.homeMapName = TinyMapManager.getInstance().currentMap.mapName;
 			}
 			
+			// Create the grass overlay bitmap
 			this.grassOverlay = new Bitmap( new GrassOverlay() );
 			this.grassOverlay.x = -8;
 			this.grassOverlay.y = -12;
 			this.grassOverlay.visible = false;
 			
+			// Create the jump shadow bitmap
 			this.jumpShadow = new Bitmap( new JumpShadow() );
 			this.jumpShadow.x = -8;
 			this.jumpShadow.y = -8;
 			this.jumpShadow.visible = false;
 			
+			// Create the hitboxes
 			this.movementBox = new TinyWalkSpriteHitbox( this, 0x00FF00 );
 			this.sightBox = new TinyTrainerSightHitbox( this, 0x0000FF );
 			this.hitBox = new TinyWalkSpriteHitbox( this, 0xFF00FF );
@@ -100,6 +144,7 @@ package com.tinyrpg.display
 			this.sightBox.visible = false;
 			this.hitBox.visible = false;
 			
+			// Create the emote icon sprite
 			this.emoteIcon = new TinyEmoteIcon();
 			this.emoteIcon.x -= 8;
 			this.emoteIcon.y -= 4 + 8 + 16;
@@ -127,7 +172,10 @@ package com.tinyrpg.display
 			this.addEventListener( TinyInputEvent.CONTROL_ADDED, onControlAdded );
 		}
 
-		protected function onControlAdded(e : TinyInputEvent) : void
+		/**
+		 * Listener for the CONTROL_ADDED event. 
+		 */
+		protected function onControlAdded( event : TinyInputEvent ) : void
 		{
 			TinyLogManager.log( 'onControlAdded', this );
 			
@@ -146,6 +194,9 @@ package com.tinyrpg.display
 			this.removeEventListener( TinyInputEvent.CONTROL_ADDED, this.onControlAdded );
 		}
 
+		/**
+		 * Listener for the CONTROL_REMOVED event.
+		 */
 		protected function onControlRemoved( event : TinyInputEvent ) : void
 		{
 			TinyLogManager.log( 'onControlRemoved', this );
@@ -176,22 +227,23 @@ package com.tinyrpg.display
 		
 		public function startWalking( event : TinyInputEvent = null ) : void
 		{
+			// If we're already walking, we don't need to do anything
 			if ( this.spritesheet.isWalking ) return;
 			
-			// Start walking in the desired direction 			
+			// Start walking in the desired direction
 			this.spritesheet.startWalking( TinyInputManager.getInstance().getCurrentArrowKey(), this.speed );
 			this.currentDirection = this.spritesheet.facing;
 			this.updateMovementHitbox();
 			
-			// Check wall collisions and clear flag if nothing is found
+			// Check wall collisions and clear the flag if nothing is found
 			this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
 			
-			// Check for grass collisions against the regular hitbox but do not show the grass overlay yet
+			// Check for grass collisions against the regular hitbox, but do not show the grass overlay yet
 			this.hasCollidedWithGrass = this.checkGrassCollision( false );
 			
 			// If the player is already facing the direction they want to walk in, start walking immediately. 
 			// Otherwise, wait a few frames to enable the player to change the character's facing with a short
-			// tap of a directional arrow.			
+			// tap of a directional arrow.
 			if ( this.spritesheet.keepDirection ) 
 			{
 				this.checkArrowInputs();
@@ -261,6 +313,8 @@ package com.tinyrpg.display
 				case TinyWalkSprite.RIGHT:	movementEaseOptions.x = "+16"; break;
 			}
 			
+			// Create a new movement timeline if there isn't one already. The movement timeline is used to
+			// queue movement across multiple tiles.
 			if ( this.movementTimeline == null ) 
 			{
 				this.movementTimeline = new TimelineMax({
@@ -271,7 +325,7 @@ package com.tinyrpg.display
 				this.movementTimeline.autoRemoveChildren = true;
 			}
 			
-			// Tween the sprite
+			// Add the tween to the timeline
 			this.movementTimeline.add( TweenMax.to( this, this.speed, movementEaseOptions ) );
 		}
 
@@ -292,11 +346,14 @@ package com.tinyrpg.display
 				this.spritesheet.setGrassVisible( false );
 			}
 			
+			// If this is the player sprite but the player doesn't have control, we don't need
+			// to check for collisions, so exit early.
 			if ( this.isPlayer && !this.hasControl ) return;
 	
 			this.prevX = this.x;
 			this.prevY = this.y;
 			
+			// Set the sprite's direction and update the movement hitbox
 			this.currentDirection = facing;
 			this.spritesheet.setFacing( this.currentDirection );
 			this.updateMovementHitbox();
@@ -335,7 +392,7 @@ package com.tinyrpg.display
 				this.movementTimeline = null;
 			}
 	
-			// Update grass overlay visibility			
+			// Update the grass overlay visibility			
 			this.grassOverlay.visible = false;
 			
 			// Check for map object collisions
@@ -366,7 +423,7 @@ package com.tinyrpg.display
 			this.movementBox.x = 0;
 			this.movementBox.y = 0;
 			
-			// Position the movement hitbox according to the facing direction
+			// Position the movement hitbox one tile in front of the sprite, according to the facing direction
 			switch ( this.spritesheet.facing )
 			{
 				case TinyWalkSprite.UP:		this.movementBox.y -= 16; break;
@@ -375,14 +432,14 @@ package com.tinyrpg.display
 				case TinyWalkSprite.RIGHT:	this.movementBox.x += 16; break;
 			}
 			
-			// Reset the sight hitbox position, if it exists
+			// Adjust the sight hitbox position, if it exists
 			if ( this.sightBox ) 
 			{
 				this.sightBox.x = 0;
 				this.sightBox.y = 0;
 				this.sightBox.rotation = 0;
 				
-				// Position and rotate the sight hitbox according to the facing direction
+				// Rotate the sight hitbox according to the facing direction
 				switch ( this.spritesheet.facing ) 
 				{
 					case TinyWalkSprite.UP:		this.sightBox.rotation -= 90;  break;
@@ -404,7 +461,7 @@ package com.tinyrpg.display
 				// Check for map object collisions
 				var objectCollision : TinyCollisionData = TinyMapManager.getInstance().currentMap.checkObjectCollision( hitboxToUse );
 				
-				// Dispatch relevant collision events and return a boolean value indicating if anything has been hit
+				// Dispatch any relevant collision events and return a boolean value indicating if the hit should block movement or not
 				if ( objectCollision.hit ) 
 				{
 					var hitObject : TinyFieldMapObject;

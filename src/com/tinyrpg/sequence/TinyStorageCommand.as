@@ -28,7 +28,7 @@ package com.tinyrpg.sequence
 			storageMenuItems[ 1 ] = new TinySelectableItem( TinyCommonStrings.DEPOSIT.toUpperCase(),  1 );
 			storageMenuItems[ 2 ] = new TinySelectableItem( TinyCommonStrings.CANCEL.toUpperCase(),   2 );
 			
-			this.storageMenu = new TinySelectList( '', storageMenuItems, 60, 50 );
+			this.storageMenu = new TinySelectList( storageMenuItems, 60, 50 );
 			this.storageMenu.x = 8;
 			this.storageMenu.y = 8;
 		}

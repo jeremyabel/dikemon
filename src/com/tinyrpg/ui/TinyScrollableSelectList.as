@@ -27,7 +27,7 @@ package com.tinyrpg.ui
 		protected var scrollArrowUp : TinyModalScrollArrow;
 		protected var scrollArrowDown : TinyModalScrollArrow;
 		
-		public function TinyScrollableSelectList( title : String, newItemArray : Array = null, width : uint = 0, height : uint = 0, spacing : uint = 15, startingY : int = 6, startingX : int = 0, maxItemsBeforeScroll : uint = 4 )
+		public function TinyScrollableSelectList( newItemArray : Array = null, width : uint = 0, height : uint = 0, spacing : uint = 15, startingY : int = 6, startingX : int = 0, maxItemsBeforeScroll : uint = 4 )
 		{	
 			this.maxItemsBeforeScroll = maxItemsBeforeScroll;
 			
@@ -35,7 +35,7 @@ package com.tinyrpg.ui
 			this.scrollDownLimit = maxItemsBeforeScroll;
 			this.scrollOffset = 0;
 			
-			super( title, newItemArray, width, height, spacing, startingY, startingX, false );
+			super( newItemArray, width, height, spacing, startingY, startingX, false );
 			
 			this.itemHolderOrigY = this.itemHolder.y;
 					

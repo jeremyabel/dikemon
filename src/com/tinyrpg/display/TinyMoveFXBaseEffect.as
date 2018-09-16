@@ -4,19 +4,28 @@ package com.tinyrpg.display
 	import flash.geom.Rectangle;
 
 	/**
+	 * Base class used by all complex move fx animations.
+	 * 
+	 * See {@link TinyMoveFXDistortionEffect}, {@link TinyMoveFXPaletteEffect}, {@link TinyMoveFXScreenInvert},
+	 * and {@link TinyMoveFXScreenShake}.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyMoveFXBaseEffect 
 	{
-		public static const AREA_PLAYER				: String = 'PLAYER';
-		public static const AREA_ENEMY 				: String = 'ENEMY'; 
-		public static const AREA_BOTH				: String = 'BOTH';
+		public static const AREA_PLAYER	: String = 'PLAYER';
+		public static const AREA_ENEMY 	: String = 'ENEMY'; 
+		public static const AREA_BOTH	: String = 'BOTH';
 		
 		public var origBitmapData : BitmapData;
 		
 		protected var type : String;
 		protected var area : String;
-			
+		
+		/**
+		 * Returns an object containing rectangles for various screen areas. 
+		 * Used for determining what part of the screen is affected by an fx animation.
+		 */
 		protected function getAreaRectangles( area : String, isEnemy : Boolean = false ) : Object
 		{
 			var areaRects : Object = new Object();

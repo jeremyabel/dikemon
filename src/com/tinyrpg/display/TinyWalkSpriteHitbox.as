@@ -3,6 +3,8 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 	
 	/**
+	 * Class which provides a 16x16 pixel hitbox used by a {@link TinyWalkSprite}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyWalkSpriteHitbox extends Sprite 

@@ -29,7 +29,7 @@ package com.tinyrpg.ui
 				new TinySelectableItem( this.noString, 1 )
 			];
 			
-			super( '', listItems, 25, 22, 11, 1, 0 );
+			super( listItems, 25, 22, 11, 1, 0 );
 		}
 		
 		override public function show() : void

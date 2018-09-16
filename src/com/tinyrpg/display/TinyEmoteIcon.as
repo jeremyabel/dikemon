@@ -7,6 +7,12 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 	
 	/**
+	 * Display class for a emote icon sprite, shown above a {@link TinyWalkSprite}.
+	 * 
+	 * The sprite can show various emote icons and is used to add some fun to dialog scenes.
+	 * The emote icons are shown and hidden using the SHOW_EMOTE and HIDE_EMOTE
+	 * events in the event sequencer.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyEmoteIcon extends Sprite 
@@ -49,12 +55,17 @@ package com.tinyrpg.display
 			this.addChild( this.emoteSleep );	
 		}
 		
+		/**
+		 * Shows the specified emote icon sprite. 
+		 */
 		public function show( emoteName : String ) : void
 		{
 			TinyLogManager.log( 'show: ' + emoteName, this );
 			
+			// Hide all emote icons
 			this.hide();
 			
+			// Show only the one requested
 			switch ( emoteName.toUpperCase() ) 
 			{
 				case EMOTE_EXCLAIM:		this.emoteExclaim.visible = true; break;
@@ -67,6 +78,9 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Hides the emote icon sprite.
+		 */
 		public function hide() : void
 		{
 			this.emoteExclaim.visible = false;

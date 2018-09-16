@@ -32,7 +32,7 @@ package com.tinyrpg.ui
 			this.textField.y = -4;
 			
 			// Make select list
-			this.selectList = new TinyTwoChoiceList('', selectItems, width, height, 11, 0, 0, horizontal, horizontalSpacing);
+			this.selectList = new TinyTwoChoiceList( selectItems, width, height, 11, 0, 0, horizontal, horizontalSpacing );
 			this.selectList.containerBox.visible = false;
 			
 			// Deal with horizontalness

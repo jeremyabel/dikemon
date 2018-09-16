@@ -19,7 +19,7 @@ package com.tinyrpg.ui
 			var useLabel  : TinySelectableItem = new TinySelectableItem(useString,  0);			var dropLabel : TinySelectableItem = new TinySelectableItem(dropString, 1);
 			var newItems  : Array = [useLabel, dropLabel];
 			
-			super('', newItems, 80, 13, 15, 6, 0, true, 30, true);
+			super( newItems, 80, 13, 15, 6, 0, true, 30, true );
 			
 			// Reposition
 			this.itemHolder.y = -9;

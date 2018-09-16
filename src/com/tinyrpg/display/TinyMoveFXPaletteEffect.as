@@ -9,6 +9,59 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyFourColorPalette;
 
 	/**
+	 * Class which handles the display of various palette-based move fx animations. 
+	 * 
+	 * These effects operate on a bitmap which stores a capture of the state of the screen, 
+	 * and then modifies the 4-color palettes used to draw specific areas of the screen. 
+	 * 
+	 * There are a number of palette effects available:
+	 *
+	 *  	INVERT: Inverts the palette's order.
+	 *		LIGHTEN1, 2, 3, 4: Lightens the palette, by 1, 2, 3, or 4 steps.
+	 *		DARKEN1, 2, 3, 4: Darkens the palette, by 1, 2, 3, or 4 steps.
+	 *		CYCLE: Cycles the normal palette.
+	 *		CYCLE_INV: Cycles the inverted-order palette. 
+	 *	
+	 * These effects emulate the way the Gameboy Color deals with sprite color palettes, which 
+	 * contain 4 unique colors, usually white, black, and two others, ordered by luminance from
+	 * lightest to darkest. The palette effects operate by shifting and copying the entries in 
+	 * the palettes. 
+	 * 
+	 * 		For example: the "LIGHTEN1" effect is done by shifting all palette entries forward by 1:
+	 *
+	 *		Before: 1 2 3 4
+	 *		After:  1 1 2 3
+	 *		
+	 *	   	If you picture color 1 being white, 2 being light grey, 3 being dark grey, and 4 being black,
+	 *	   	then in this case everything colored black becomes dark grey, everything dark grey becomes
+	 *	   	light grey, and so on. All palette effects work like this. "LIGHTEN2-4" repeats this step
+	 *	   	2-4 times to simulate 4 different levels of lightening. "DARKEN1-4" works the same way, only
+	 *	   	from the other end of the palette:  
+	 *	   	
+	 *	   	Before: 1 2 3 4
+	 *	   	After:  2 3 4 4
+	 *	   	
+	 *	   	The CYCLE and CYCLE_INV effects work by cycling the colors in the palette:
+	 *	   	
+	 *	   	Before: 1 2 3 4
+	 *	   	After:  2 3 4 1 
+	 *	   	
+	 * The battle screen is divided up into 2 areas: "player" and "enemy". These areas are further divided
+	 * into 2 more areas: "mon" and "stat", resulting in 4 areas total. Each individual area uses a unique 
+	 * 4-color palette, and therefore has its own individual effected palette. Not all moves effect the 
+	 * entire screen, so it has to be divided like this in order to animate the effect properly. For example,
+	 * the INVERT effect changes the entire screen, so it modifies the palettes of all 4 areas. But the LIGHTEN1
+	 * effect only effects the player and enemy mons, so it only modifies those 2 "mon" areas and leaves the two 
+	 * "stat" areas unmodified. 
+	 * 
+	 * These effects are defined per-move using the ANIM_PALETTE_EFFECT tag. The tag's contents must be in the format:
+	 * 
+	 * 		effect_name, area_name
+	 * 		
+	 * For example: DARKEN2, PLAYER
+	 * 
+	 * See also: {@link TinyBattlePalette}, {@link TinyFourColorPalette}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveFXPaletteEffect extends TinyMoveFXBaseEffect
@@ -45,6 +98,11 @@ package com.tinyrpg.display
 		
 		private var isEnemy : Boolean = false;
 		
+		/**
+		 * @param	type		The palette effect type. Valid values are listed in the class comment.
+		 * @param	area		The type of area to apply the effect to. Valid values are "PLAYER", "ENEMY", and "BOTH".
+		 * @param	isEnemy		Whether or not the effect is from a move used by the enemy mon.
+		 */
 		public function TinyMoveFXPaletteEffect( type : String, area : String, isEnemy : Boolean = false )
 		{
 			this.type = type;
@@ -52,6 +110,13 @@ package com.tinyrpg.display
 			this.isEnemy = isEnemy;
 		}
 
+		/**
+		 * Returns a new {@link TinyMoveFXPaletteEffect} from a string with the format "effect_name, area_name". 
+		 * Used when parsing XML move data.
+		 * 
+		 * @param	str			The input string. Expects a format of "enemy_name, area_name".
+		 * @param	isEnemy		Whether or not the effect is from a move used by the enemy mon.
+		 */
 		public static function newFromString( str : String, isEnemy : Boolean = false ) : TinyMoveFXPaletteEffect
 		{
 			var strings : Array = str.split( ',' );
@@ -61,11 +126,25 @@ package com.tinyrpg.display
 			return new TinyMoveFXPaletteEffect( type.replace( rex, '' ), area.replace( rex, '' ), isEnemy );		
 		}
 		
+		/**
+		 * Executes the palette effect on a given input bitmap.
+		 * 
+		 * @param	bitmap		The bitmap the effect will be applied to.
+		 * @param	frame	 	The frame number of the effect to be rendered.
+		 */
 		public function execute( bitmap : Bitmap, frame : int = 0 ) : void
 		{
 			this.applyEffect( this.type, bitmap, this.area, frame );
 		}
 		
+		/**
+		 * Applies a palette effect with a given name to a given input bitmap.
+		 * 
+		 * @param	type	The palette effect type. Valid values are listed in the class comment.
+		 * @param	bitmap	The bitmap the effect will be applied to.
+		 * @param	area	The type of area to apply the effect to. Valid values are "PLAYER", "ENEMY", and "BOTH".
+		 * @param	frame	The frame number of the effect to be rendered. 	
+		 */
 		public function applyEffect( name : String, bitmap : Bitmap, area : String, frame : int = 0 ) : void
 		{	
 			var rects : Object = this.getAreaRectangles( area, this.isEnemy );
@@ -189,6 +268,12 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Generates the offset palettes from a given {@link TinyBattlePalette}.
+		 * 
+		 * Called whenever a new move is used in order to precalculate the palette data
+		 * required by the effect.
+		 */
 		public function generateOffsetPalettes( battlePalette : TinyBattlePalette ) : void
 		{
 			// Regular palettes

@@ -7,6 +7,10 @@ package com.tinyrpg.display
 	import com.tinyrpg.display.misc.MonPartySprites;
 
 	/**
+	 * Class which provides a little dancing mon sprite.
+	 * 
+	 * Used by {@link TinySelectableMonItem} for listing mons in the switch and storage menus.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyPartyMonSprite extends TinySpriteSheet 

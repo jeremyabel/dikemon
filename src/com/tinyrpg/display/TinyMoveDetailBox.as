@@ -7,6 +7,10 @@ package com.tinyrpg.display
 	import flash.text.TextField;
 
 	/**
+	 * Display class which provides a info box that displays basic info about a battle move.
+	 * 
+	 * The display shows the move's name, its type, and the move's current and max PP.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveDetailBox extends TinyContentBox 
@@ -15,7 +19,7 @@ package com.tinyrpg.display
 		private var typeField : TextField; 
 		private var ppTitleField : TextField;
 		private var ppField : TextField;
-	
+		
 		public function TinyMoveDetailBox( width : uint = 0, height : uint = 0 )
 		{
 			super( content, width, height );
@@ -47,6 +51,9 @@ package com.tinyrpg.display
 			this.addChild( this.ppField );
 		}
 		
+		/**
+		 * Sets which move's information is shown in box. 
+		 */
 		public function setMove( move : TinyMoveData ) : void
 		{
 			TinyLogManager.log('setMove: ' + move.name, this);

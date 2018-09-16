@@ -11,6 +11,29 @@ package com.tinyrpg.display
 	
 		
 	/**
+	 * Class which handles the "scale-in / out" animation played when a mon is summoned 
+	 * or returned to their ball.
+	 * 
+	 * The animation itself emulates the Gameboy Color's fake sprite scale effect, which 
+	 * simulates scaling by drawing specific 8x8 pieces of a mon in two stages. This works
+	 * by dividing a mon's 48x48 sprite into a 6x6 grid and copying specific source cells to 
+	 * specific destination cells. The animation works by copying cells from the source 
+	 * grid onto a destination grid. The source grid is shown below:
+	 * 
+	 *	+----+----+----+----+----+----+
+	 *	| 1  | 2  | 3  | 4  | 5  | 6  |
+	 *	+----+----+----+----+----+----+
+	 *	| 7  | 8  | 9  | 10 | 11 | 12 |
+	 *	+----+----+----+----+----+----+
+	 *	| 13 | 14 | 15 | 16 | 17 | 18 |
+	 *	+----+----+----+----+----+----+
+	 *	| 19 | 20 | 21 | 22 | 23 | 24 |
+	 *	+----+----+----+----+----+----+
+	 *	| 25 | 26 | 27 | 28 | 29 | 30 |
+	 *	+----+----+----+----+----+----+
+	 *	| 31 | 32 | 33 | 34 | 35 | 36 |
+	 *	+----+----+----+----+----+----+ 
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMonScaleAnimation
@@ -18,6 +41,24 @@ package com.tinyrpg.display
 		private static const MON_SIZE : int = 56;
 		private static const BORDER_SIZE : int = 4;
 		
+		/**
+		 * Draws the first scale grid using a given source bitmap to a given destination bitmap.
+		 * The source grid is drawn to the destination grid as follows:
+		 * 
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    | 1  | 6  |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    | 31 | 36 |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 */
 		public static function drawScale1( srcBitmap : Bitmap, destBitmap : Bitmap ) : void 
 		{
 			clearBitmap( destBitmap );
@@ -28,6 +69,24 @@ package com.tinyrpg.display
 			drawGridAtIndex( 36, srcBitmap, 34, destBitmap );
 		}
 		
+		/**
+		 * Draws the second scale grid using a given source bitmap to a given destination bitmap.
+		 * The source grid is drawn to the destination grid as follows:
+		 * 
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 * |    | 1  | 3  | 4  | 6  |    |
+		 * +----+----+----+----+----+----+
+		 * |    | 13 | 15 | 16 | 18 |    |
+		 * +----+----+----+----+----+----+
+		 * |    | 19 | 21 | 22 | 24 |    |
+		 * +----+----+----+----+----+----+
+		 * |    | 31 | 33 | 34 | 36 |    |
+		 * +----+----+----+----+----+----+
+		 * |    |    |    |    |    |    |
+		 * +----+----+----+----+----+----+
+		 */
 		public static function drawScale2( srcBitmap : Bitmap, destBitmap : Bitmap ) : void
 		{
 			clearBitmap( destBitmap );
@@ -53,15 +112,29 @@ package com.tinyrpg.display
 			drawGridAtIndex( 36, srcBitmap, 35, destBitmap );
 		}
 		
-		public static function drawGridAtIndex( srcIndex : int, srcBitmap : Bitmap, destIndex : int, destBitmap : Bitmap ) : void
+		/**
+		 * Copies a grid cell from a given source index to a given destination index.
+		 * 
+		 * @param	scrIndex	Index in the source grid to copy from.
+		 * @param	srcBitmap	Bitmap to copy from.	
+		 * @param	destIndex	Index in the destination grid to copy to.
+		 * @param	destBitap	Bitmap to copy to.
+		 */
+		private static function drawGridAtIndex( srcIndex : int, srcBitmap : Bitmap, destIndex : int, destBitmap : Bitmap ) : void
 		{
+			// Calculate the source rectangle from the source index
 			var srcX : int = 8 * ( ( srcIndex - 1 ) % 6 );
 			var srcY : int = 8 * Math.floor( ( srcIndex - 1 ) / 6 );
 			var srcW : int = 8;
 			var srcH : int = 8;
 			
+			// Calculate the destination origin point from the destination index
 			var destX : int = 8 * ( ( destIndex - 1 ) % 6 );
 			var destY : int = 8 * Math.floor( ( destIndex - 1 ) / 6 );
+			
+			// The grid is for a 48x48 sprite split into a 6x6 grid, but the actual mon sprites are 56x56 due to an added
+			// 4-pixel border around the entire sprite. This needs to be taken into account when calculating the grid
+			// coordinates.
 			
 			// Compensate for border
 			srcX += BORDER_SIZE;
@@ -69,30 +142,30 @@ package com.tinyrpg.display
 			destX += BORDER_SIZE;
 			destY += BORDER_SIZE;
 	
-			// Adjust top border
-			if ( isTopBorder( srcIndex ) )
+			// Adjust the top border
+			if ( srcIndex <= 6 )
 			{
 				srcY -= BORDER_SIZE;
 				srcH += BORDER_SIZE;
 				destY -= BORDER_SIZE;
 			}
 			
-			// Adjust bottom border
-			if ( isBottomBorder( srcIndex ) )
+			// Adjust the bottom border
+			if ( srcIndex >= 31 )
 			{	
 				srcH += BORDER_SIZE;
 			}
 			
-			// Adjust left border
-			if ( isLeftBorder( srcIndex ) )
+			// Adjust the left border
+			if ( ( srcIndex - 1 ) % 6 == 0 )
 			{
 				srcX -= BORDER_SIZE;
 				srcW += BORDER_SIZE;
 				destX -= BORDER_SIZE;
 			}
 			
-			// Adjust right border
-			if ( isRightBorder( srcIndex ) )
+			// Adjust the right border
+			if ( srcIndex % 6 == 0 )
 			{
 				srcW += BORDER_SIZE;
 			}
@@ -102,31 +175,7 @@ package com.tinyrpg.display
 			var destPoint : Point = new Point( destX, destY );
 			destBitmap.bitmapData.copyPixels( srcBitmap.bitmapData, srcRect, destPoint );
 		}
-		
-		private static function isTopBorder( index : int ) : Boolean
-		{
-			if ( index <= 6 ) return true;
-			return false;
-		}
-		
-		private static function isBottomBorder( index : int ) : Boolean
-		{
-			if ( index >= 31 ) return true;
-			return false;
-		}
-		
-		private static function isLeftBorder( index : int ) : Boolean
-		{
-			if ( ( index - 1 ) % 6 == 0 ) return true;
-			return false;
-		}
-		
-		private static function isRightBorder( index : int ) : Boolean
-		{
-			if ( index % 6 == 0 ) return true;
-			return false;
-		}
-		
+	
 		private static function clearBitmap( bitmap : Bitmap ) : void
 		{
 			var clearRect = new Rectangle( 0, 0, MON_SIZE, MON_SIZE );

@@ -15,6 +15,15 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Display class which provides a means of displaying and playing back a spritesheet
+	 * battle move fx animation.
+	 * 
+	 * These fx sprites are generated from the original Gen 3 game and are packed into 
+	 * spritesheets using the TexturePacker program. The layout of each spritesheet is
+	 * specified in an accompanying XML file. This class handles reading that XML file
+	 * and animating each frame of the spritesheet by copying the area specified in the
+	 * XML data from the spritesheet to a destination bitmap. 
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyFXSprite extends Sprite 
@@ -33,7 +42,9 @@ package com.tinyrpg.display
 		public var isPlaying		: Boolean;
 		public var trace			: Boolean = false;
 
-		
+		/**
+		 * Creates a spritesheet fx animation from a given source bitmap and XML data.
+		 */
 		public function TinyFXSprite( sourceBitmap : BitmapData, xmlData : XML )
 		{
 			this.sourceData = sourceBitmap;
@@ -48,7 +59,9 @@ package com.tinyrpg.display
 			this.length = this.frameData.length;
 		}
 
-
+		/**
+		 * Creates a battle move fx animation for a given move.
+		 */
 		public static function newFromMoveData( move : TinyMoveData, isEnemy : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyMoveFXLookup.getMoveFXSprite( move.name, isEnemy );
@@ -60,7 +73,9 @@ package com.tinyrpg.display
 			return sprite; 	
 		}
 		
-		
+		/**
+		 * Creates a status effect fx animation for a given status effect.
+		 */
 		public static function newFromStatusEffect( statusName : String, isEnemy : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyStatusFXLookup.getStatusFXSprite( statusName, isEnemy );
@@ -71,7 +86,10 @@ package com.tinyrpg.display
 			return sprite;
 		}
 		
-		
+		/**
+		 * Creates a ball throw fx animation for a given ball phase. 
+		 * Valid ball phases are specified in {@link TinyBallFXAnimation}.
+		 */
 		public static function newFromBallThrowPhase( ballPhase : String, isUltra : Boolean ) : TinyFXSprite
 		{
 			var sourceData : BitmapData = TinyBallFXAnimation.getBallFXSprite( ballPhase, isUltra );
@@ -82,7 +100,10 @@ package com.tinyrpg.display
 			return sprite;
 		}
 		
-		
+		/**
+		 * Begins playing the fx sprite animation, along with any audio.
+		 * When playback is complete, a COMPLETE event will be dispatched.
+		 */
 		public function play() : void
 		{
 			this.isPlaying = true;
@@ -142,7 +163,7 @@ package com.tinyrpg.display
 			this.playerBitmap.bitmapData.copyPixels( this.sourceData, currentFrameInfo.copyRect, currentFrameInfo.destPoint );
 			this.currentFrame = Math.min( this.currentFrame + this.skipFrames, this.length - 1 );
 			
-			// Check if animation is over. If so, clean up
+			// Check if the animation is over. If so, clean up
 			if ( this.currentFrame  == this.length - 1 ) 
 			{ 
 				this.removeEventListener( Event.ENTER_FRAME, onEnterFrame );

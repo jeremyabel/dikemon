@@ -25,7 +25,7 @@ package com.tinyrpg.ui
 		
 		public function TinyMonMenu( trainer : TinyTrainer ) 
 		{
-			super( '', null, 144, 130, 16, 6, 1 );
+			super( null, 144, 130, 16, 6, 1 );
 			
 			this.trainer = trainer;
 			

@@ -20,6 +20,12 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyMath;
 
 	/**
+	 * Display class for the indiviual mon stat display used during battle.
+	 * 
+	 * For the player, the stat display shows the current mon's name, current / max HP, EXP, level, 
+	 * and status-effect information. The enemy's stat display only shows their HP as a bar, 
+	 * along with their level. 
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyBattleMonStatDisplay extends Sprite implements IShowHideObject
@@ -38,16 +44,16 @@ package com.tinyrpg.display
 		
 		public var displayedCurrentHP : Number = 0;
 		
+		/**
+		 * @param	isEnemy		Whether or not the stat display should be formatted for the enemy or not.
+		 * 						The enemy display contains less info than the player display.
+		 */
 		public function TinyBattleMonStatDisplay( isEnemy : Boolean )
 		{
 			this.isEnemy = isEnemy;
 			
 			// Make stat container graphic
-			if (this.isEnemy) {
-				this.statsContainer = new Bitmap( new EnemyStatsContainer );		
-			} else {
-				this.statsContainer = new Bitmap( new PlayerStatsContainer);
-			}
+			this.statsContainer = new Bitmap( this.isEnemy? new EnemyStatsContainer : new PlayerStatsContainer );		
 			
 			// Make name textfield
 			this.nameField = TinyFontManager.returnTextField('none');
@@ -84,6 +90,7 @@ package com.tinyrpg.display
 			this.expBarSprite.y = this.statsContainer.y + 16;
 			this.expBarSprite.visible = !this.isEnemy;
 			
+			// Make status icon container
 			this.statusIconContainer = new Sprite();
 			this.statusIconContainer.x = this.isEnemy ? this.hpBarDisplay.x + this.hpBarDisplay.width + 6 : 1;
 			this.statusIconContainer.y = this.hpBarDisplay.y - 2;
@@ -98,6 +105,10 @@ package com.tinyrpg.display
 			this.addChild( this.statusIconContainer );
 		}
 		
+		/**
+		 * Returns the four-color palette for this display.
+		 * Used for color shifting move FX.
+		 */
 		public function get palette() : TinyFourColorPalette
 		{
 			var color1 : TinyColor = new TinyColor( 0, 0, 0 );
@@ -108,6 +119,9 @@ package com.tinyrpg.display
 			return new TinyFourColorPalette( color1, color2, color3, color4 );
 		}
 		
+		/**
+		 * Sets the info shown in the status bar to match a given mon.
+		 */
 		public function setCurrentMon( mon : TinyMon ) : void
 		{
 			this.mon = mon;
@@ -132,12 +146,18 @@ package com.tinyrpg.display
 			this.updateStatusIcon();
 		}
 
+		/**
+		 * Sets the status display as visible.
+		 */
 		public function show() : void
 		{
 			TinyLogManager.log("show: " + (this.isEnemy ? 'Enemy' : 'Player'), this);	
 			this.visible = true;
 		}
 		
+		/**
+		 * Sets the status display as hidden.
+		 */
 		public function hide() : void
 		{
 			TinyLogManager.log("hide: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
@@ -153,26 +173,13 @@ package com.tinyrpg.display
 //			this.levelField.htmlText = TinyFontManager.returnHtmlText( 'LV: ' + this.initialMonLevel, 'battleBoxTitle', this.isEnemy ? 'left' : 'right' );
 		}
 		
-		public function updateHP( value : int, highSpeed : Boolean = false ) : void
-		{
-			TinyLogManager.log( "update HP: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
-			
-			this.updateStatusIcon();
-			
-			if ( this.displayedCurrentHP != this.mon.currentHP )
-			{
-				var tweenTime : Number = highSpeed ? 0.5 : 1.0;
-				TweenLite.to( this, tweenTime, { displayedCurrentHP: value, ease: Linear.easeNone, onUpdate: this.onUpdateHPTweenUpdate, onComplete: this.onUpdateHPComplete } );				
-			}
-			else
-			{
-				this.onUpdateHPComplete();
-			}
-		}
-		
+		/**
+		 * Updates the status effect icon display. 
+		 * If the mon has no status effect, the icon will be removed.
+		 */
 		public function updateStatusIcon() : void
 		{
-			TinyLogManager.log("update Status: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
+			TinyLogManager.log( "update Status: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
 			
 			// Remove previous icon bitmap, if there is one
 			if ( this.statusIconBitmap )
@@ -194,37 +201,96 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Updates the HP bar to a given value.
+		 * 
+		 * @param 	value		The value to update to.
+		 * @param	highSpeed	Whether or not to animate the bar at double speed.
+		 */
+		public function updateHP( value : int, highSpeed : Boolean = false ) : void
+		{
+			TinyLogManager.log( "update HP: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
+			
+			this.updateStatusIcon();
+			
+			// Only start the tween if animation is necessary
+			if ( this.displayedCurrentHP != this.mon.currentHP )
+			{
+				// Scale the tween duration by the change in HP so that the speed is constant
+				var deltaHP : Number = Math.abs( value - this.displayedCurrentHP ) / this.mon.maxHP;
+				var tweenTime : Number = deltaHP * ( highSpeed ? 0.5 : 1.0 );
+				
+				TweenLite.to( this, tweenTime, { 
+					displayedCurrentHP: value, 
+					ease: Linear.easeNone, 
+					onUpdate: this.onUpdateHPTweenUpdate, 
+					onComplete: this.onUpdateHPComplete 
+				});				
+			}
+			else
+			{
+				this.onUpdateHPComplete();
+			}
+		}
+		
+		/**
+		 * Listener which is called each frame as the HP bar tween is updated.
+		 * Updates both the bar display and the text display simultaniously.
+		 */
 		private function onUpdateHPTweenUpdate() : void
 		{
 			// Update HP bar and text displays
-			this.hpBarDisplay.setRatio( this.displayedCurrentHP / Number(this.mon.maxHP) );
-			this.hpField.htmlText = TinyFontManager.returnHtmlText( Math.ceil(displayedCurrentHP) + '/' + this.mon.maxHP, 'battleItemHP', 'right');
+			this.hpBarDisplay.setRatio( this.displayedCurrentHP / Number( this.mon.maxHP ) );
+			this.hpField.htmlText = TinyFontManager.returnHtmlText( Math.ceil( displayedCurrentHP ) + '/' + this.mon.maxHP, 'battleItemHP', 'right');
 		}
 
+		/**
+		 * Listener which is called when the HP bar tween is complete.
+		 */
 		private function onUpdateHPComplete() : void
 		{
-			TinyLogManager.log("onUpdateHPComplete: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
+			TinyLogManager.log( "onUpdateHPComplete: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
 			this.dispatchEvent( new Event( Event.COMPLETE ) );
 		}
 		
+		/**
+		 * Animates the EXP bar to the mon's latest currentEXP value. 
+		 */
 		public function updateEXP( toFull : Boolean = false ) : void
 		{
-			TinyLogManager.log("update EXP: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
+			TinyLogManager.log( "update EXP: " + (this.isEnemy ? 'Enemy' : 'Player'), this );
 			
 			var x : int = toFull ? 64 : Math.floor( ( Math.min( 1.0, this.mon.currentEXP / this.mon.getEXPForNextLevel() ) ) * 64 );
-			TweenLite.to( this.expBarSprite, 1.0, { scaleX: -x, roundProps: ['scaleX'], ease: Linear.easeNone, onComplete: this.onUpdateEXPComplete } );
+			
+			// Scale the tween duration by the change in EXP so that the speed is constant
+			var deltaX : Number = Math.abs( x - this.expBarSprite.scaleX ) / 64;
+			var tweenTime : Number = deltaX;
+			
+			TweenLite.to( this.expBarSprite, tweenTime, { 
+				scaleX: -x, 
+				roundProps: ['scaleX'], 
+				ease: Linear.easeNone, 
+				onComplete: this.onUpdateEXPComplete
+			});
 		}
 		
-		public function clearEXPBar() : void
-		{
-			TinyLogManager.log('clearEXPBar', this);
-			this.expBarSprite.scaleX = 0;
-		}
-		
+		/**
+		 * Listener which is called when the EXP bar tween is complete.
+		 */
 		private function onUpdateEXPComplete() : void
 		{
 			TinyLogManager.log("onUpdateEXPComplete: " + (this.isEnemy ? 'Enemy' : 'Player'), this);
 			this.dispatchEvent( new Event( Event.COMPLETE ) );		
+		}
+		
+		/**
+		 * Instantly clears the EXP bar.
+		 * Called by the battle event sequencer in a level-up sequence created by {@link TinyLevelUpSequencer}. 
+		 */
+		public function clearEXPBar() : void
+		{
+			TinyLogManager.log('clearEXPBar', this);
+			this.expBarSprite.scaleX = 0;
 		}
 	}
 }

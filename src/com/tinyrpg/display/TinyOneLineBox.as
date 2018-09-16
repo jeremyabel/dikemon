@@ -7,6 +7,9 @@ package com.tinyrpg.display
 	import flash.text.TextField;
 
 	/**
+	 * Class which provides a one-line non-interactive text display box.
+	 * 
+	 * Used mostly for showing short instructions over various selection menus.
 	 * @author jeremyabel
 	 */
 	public class TinyOneLineBox extends TinyContentBox 
@@ -15,6 +18,11 @@ package com.tinyrpg.display
 		private var smallFont  : Boolean;
 		private var textString : String;
 		
+		/**
+		 * @param	textString		The text to display in the box.
+		 * @param	width			The width of the box.
+		 * @param	smallFont		Whether or not to use the small font.
+		 */
 		public function TinyOneLineBox(textString : String = null, width : int = 288, smallFont : Boolean = false)
 		{
 			super(content, width, 11);
@@ -31,12 +39,16 @@ package com.tinyrpg.display
 			this.addChild(textField);
 		}
 		
+		/**
+		 * Sets the text shown in the box.
+		 */
 		public function set text( string : String ) : void
 		{
 			if ( string == this.textString ) return;
 			
 			TinyLogManager.log( 'set text: ' + string, this );
 			
+			// Use a smaller font if requested
 			var style : String = this.smallFont ?  'battleItemText' : 'selecterText';
 			
 			// Set text and center

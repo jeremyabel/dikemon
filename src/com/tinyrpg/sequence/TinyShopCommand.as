@@ -41,7 +41,7 @@ package com.tinyrpg.sequence
 			buyOrSellMenuItems[ 1 ] = new TinySelectableItem( TinyCommonStrings.SELL.toUpperCase(), 1 );
 			buyOrSellMenuItems[ 2 ] = new TinySelectableItem( TinyCommonStrings.QUIT.toUpperCase(), 2 );
 			
-			this.buyOrSellMenu = new TinySelectList( '', buyOrSellMenuItems, 36, 50 );
+			this.buyOrSellMenu = new TinySelectList( buyOrSellMenuItems, 36, 50 );
 			this.buyOrSellMenu.x = 8;
 			this.buyOrSellMenu.y = 8;
 		}

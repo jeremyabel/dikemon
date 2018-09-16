@@ -9,6 +9,25 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyMath;
 
 	/**
+	 * Class which handles the display of various screen-distorting move fx animations. 
+	 * 
+	 * These effects operate on a bitmap which stores a capture of the state of the screen, 
+	 * and then modifies the x- and y-axis offsets of each line in the bitmap to create
+	 * various distortion effects.
+	 * 
+	 * There are four distortion effects available:
+	 *
+	 *  	WAVE_X: An effect which offsets each line of the screen on the x-axis, creating a horizontal wavy effect.
+	 *		WAVE_Y: An effect which offsets each line of the screen on the y-axis, creating a vertical wavy effect.
+	 *		HIDE: An effect which blanks the effected area of the screen.
+	 *		WAGGLE: An effect which wobbles the entire effected area of the screen back and forth.
+	 *	
+	 * These effects are defined per-move using the ANIM_DISTORTION_EFFECT tag. The tag's contents must be in the format:
+	 * 
+	 * 		effect_name, area_name
+	 * 		
+	 * For example: WAVE_X, ENEMY
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyMoveFXDistortionEffect extends TinyMoveFXBaseEffect
@@ -35,6 +54,11 @@ package com.tinyrpg.display
 		private var alphaBitmap	: BitmapData;
 		private var isEnemy 	: Boolean;
 		
+		/**
+		 * @param	type		The distortion effect type. Valid values are "WAVE_X", "WAVE_Y", "HIDE", and "WAGGLE".
+		 * @param	area		The type of area to apply the effect to. Valid values are "PLAYER", "ENEMY", and "BOTH".
+		 * @param	isEnemy		Whether or not the effect is from a move used by the enemy mon.
+		 */
 		public function TinyMoveFXDistortionEffect( type : String, area : String, isEnemy : Boolean = false )
 		{
 			this.type = type;
@@ -45,6 +69,13 @@ package com.tinyrpg.display
 			this.alphaBitmap = new BitmapData( 160, 144, false, 0xFF000000 );
 		}
 
+		/**
+		 * Returns a new {@link TinyMoveFXDistortionEffect} from a string with the format "effect_name, area_name". 
+		 * Used when parsing XML move data.
+		 * 
+		 * @param	str			The input string. Expects a format of "enemy_name, area_name".
+		 * @param	isEnemy		Whether or not the effect is from a move used by the enemy mon.
+		 */
 		public static function newFromString( str : String, isEnemy : Boolean = false ) : TinyMoveFXDistortionEffect
 		{
 			var strings : Array = str.split( ',' );
@@ -54,6 +85,13 @@ package com.tinyrpg.display
 			return new TinyMoveFXDistortionEffect( type.replace( rex, '' ), area.replace( rex, '' ), isEnemy );		
 		}
 		
+		/**
+		 * Executes the distortion effect on a given input bitmap.
+		 * 
+		 * @param	bitmap		The bitmap the effect will be applied to.
+		 * @param	bgColor		The color of the screen background.
+		 * @param	frame	 	The frame number of the effect to be rendered.
+		 */
 		public function execute( bitmap : Bitmap, bgColor : uint, frame : int = 0 ) : void
 		{
 			this.bgSprite.graphics.clear();
@@ -67,11 +105,19 @@ package com.tinyrpg.display
 			this.applyEffect( this.type, bitmap, this.area, frame );
 		}	
 		
-		public function applyEffect( name : String, bitmap : Bitmap, area : String, frame : int = 0 ) : void
+		/**
+		 * Applies a distortion effect with a given name to a given input bitmap.
+		 * 
+		 * @param	type	The distortion effect type. Valid values are "WAVE_X", "WAVE_Y", "HIDE", and "WAGGLE".
+		 * @param	bitmap	The bitmap the effect will be applied to.
+		 * @param	area	The type of area to apply the effect to. Valid values are "PLAYER", "ENEMY", and "BOTH".
+		 * @param	frame	The frame number of the effect to be rendered. 	
+		 */
+		public function applyEffect( type : String, bitmap : Bitmap, area : String, frame : int = 0 ) : void
 		{	
 			var rects : Array = this.getAreaRectanglesArray( area );
 			
-			switch ( name ) 
+			switch ( type ) 
 			{
 				default:
 				case DISTORT_WAVE_X:	this.applyWaveX( bitmap, rects, frame ); break;

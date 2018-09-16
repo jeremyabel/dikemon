@@ -8,7 +8,7 @@ package com.tinyrpg.ui
 	import com.tinyrpg.data.TinyDialogItem;
 	import com.tinyrpg.display.TinyAutotypeTextField;
 	import com.tinyrpg.display.TinyBattleTurnArrow;
-	import com.tinyrpg.display.TinyTitleBox;
+	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.events.TinyInputEvent;
 	import com.tinyrpg.events.TinyAutotypeTextEvent;
 	import com.tinyrpg.lookup.TinyNameLookup;
@@ -22,7 +22,7 @@ package com.tinyrpg.ui
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyDialogBox extends TinyTitleBox
+	public class TinyDialogBox extends TinyContentBox
 	{
 		private var dialogSequence : Array = [];
 		private var textField : TinyAutotypeTextField;
@@ -42,7 +42,7 @@ package com.tinyrpg.ui
 
 		public function TinyDialogBox( speaker : String, width : int = 144, height : int = 33, time : int = 0 )
 		{
-			super( null, '', width, height );
+			super( null, width, height );
 			
 			this.time = time;
 

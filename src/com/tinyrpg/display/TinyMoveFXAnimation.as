@@ -13,6 +13,16 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager; 
 
 	/**
+	 * Class which provides a full sprite-based animation for a single battle move.
+	 * 
+	 * Handles the playback of the sprite animation itself, along with creating and 
+	 * managing the playback of any special effects. These special effects are:
+	 * 
+	 * 		- Screen Distortion ({@link TinyMoveFXDistortionEffect})
+	 * 		- Palette Shifting ({@link TinyMoveFXPaletteEffect})
+	 * 		- Color Inverting ({@link TinyMoveFXScreenInvert})
+	 * 		- Screen Shaking ({@link TinyMoveFXScreenShake})
+	 * 		
 	 * @author jeremyabel
 	 */
 	public class TinyMoveFXAnimation extends Sprite 
@@ -31,12 +41,18 @@ package com.tinyrpg.display
 		private var bgColor : uint = 0xFFFFFFFF;
 		private var bgFillSprite : Sprite;
 		
-		public var isEnemy 			: Boolean;
-		public var length 			: int;
-		public var isPlaying		: Boolean;
-		public var trace			: Boolean = false;
-		public var moveName			: String;
+		public var isEnemy 		: Boolean;
+		public var length 		: int;
+		public var isPlaying	: Boolean;
+		public var trace		: Boolean = false;
+		public var moveName		: String;
 		
+		/**
+		 * @param	move		The move who's animation will be played.
+		 * @param	isEnemy		Whether or not the move is being used by the enemy mon.
+		 * @param	palette		The palette used by the battle.
+		 * @param	trae		Whether or not to print extra debug info.
+		 */
 		public function TinyMoveFXAnimation( move : TinyMoveData, isEnemy : Boolean, palette : TinyBattlePalette, trace : Boolean = false )
 		{
 			this.isEnemy = isEnemy;
@@ -62,8 +78,11 @@ package com.tinyrpg.display
 			// Make screen invert effects, if there are any
 			if ( move.fxScreenInverts.length )
 			{
+				// A move can have multiple inverts, which are separated by commas in the XML.
+				// Separate them and create a single TinyMoveFXScreenInvert for each one. 
 				var regex : RegExp = /(\d+,\s\d+)/;
 				var invertStrings : Array = move.fxScreenInverts.split( regex );
+				
 				for ( var i : int = 1; i < invertStrings.length; i += 2 )
 				{
 					this.invertEffects.push( TinyMoveFXScreenInvert.newFromString( invertStrings[ i ], this.palette ) ); 
@@ -102,6 +121,10 @@ package com.tinyrpg.display
 			this.addChild( this.moveFXSprite );
 		}
 		
+		/**
+		 * Captures a given battle to a bitmap.
+		 * Used as the source imagery for palette and distortion effects.
+		 */
 		public function captureBattleBitmap( battle : TinyBattle ) : void
 		{
 			TinyLogManager.log( 'captureBattleBitmap', this );
@@ -134,6 +157,10 @@ package com.tinyrpg.display
 			}
 		}
 
+		/**
+		 * Plays the move fx animation.
+		 * When playback is complete, a COMPLETE event will be emitted. 
+		 */
 		public function play() : void
 		{
 			TinyLogManager.log('play', this);
@@ -197,6 +224,7 @@ package com.tinyrpg.display
 			}
 			else 
 			{
+				// Reset the background color if there are no inverts to do 
 				this.setBGColor( 0xFFFFFFFF );
 			}
 			

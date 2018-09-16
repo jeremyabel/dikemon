@@ -42,7 +42,7 @@ package com.tinyrpg.ui
 			this.isSelling = selling;
 			
 			// Create scrollable item list
-			this.itemScrollList = new TinyScrollableSelectList( '', this.getShopItemsArray(), 144, 62, 12, 2, 0, 5 );
+			this.itemScrollList = new TinyScrollableSelectList( this.getShopItemsArray(), 144, 62, 12, 2, 0, 5 );
 			this.itemScrollList.x = 8;
 			this.itemScrollList.y = 36;
 			

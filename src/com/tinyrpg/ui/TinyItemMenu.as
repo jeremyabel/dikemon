@@ -32,7 +32,7 @@ package com.tinyrpg.ui
 
 		public function TinyItemMenu( trainer : TinyTrainer, width : uint = 144, height : uint = 90, maxItems : uint = 7 )
 		{
-			super( '', this.getItemListForTrainer( trainer ), width, height, 12, 2, 0, maxItems );
+			super( this.getItemListForTrainer( trainer ), width, height, 12, 2, 0, maxItems );
 			
 			// Make description text field
 			this.descriptionTextField = TinyFontManager.returnTextField( 'left', false, true, true );

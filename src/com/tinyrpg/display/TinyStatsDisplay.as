@@ -17,6 +17,9 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which handles the displaying of a single mon's player-visible stat values
+	 * when showing the {@link TinyMonFullStatDisplay}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyStatsDisplay extends TinyContentBox implements IShowHideObject
@@ -45,6 +48,9 @@ package com.tinyrpg.display
 		private var panelWidth : int = 82;
 		private var numberYOffset : int = 3;
 			
+		/**
+		 * @param	mon		Optionally, the mon who's stats will be shown initially.
+		 */
 		public function TinyStatsDisplay( mon : TinyMon = null )
 		{			
 			// Make Attack label
@@ -93,6 +99,11 @@ package com.tinyrpg.display
 			if ( mon ) this.setCurrentMon( mon ); 
 		}
 		
+		/**
+		 * Sets the display to show the stats of a given mon.
+		 * 
+		 * @param	mon		The mon who's stats will be displayed.
+		 */
 		public function setCurrentMon( mon : TinyMon ) : void 
 		{
 			this.mon = mon;

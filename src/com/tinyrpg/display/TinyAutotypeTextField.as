@@ -13,6 +13,9 @@ package com.tinyrpg.display
 	import flash.text.TextField;
 
 	/**
+	 * Display class for a chunk of text which animates on letter-by-letter, typewriter-style.
+	 * Used and controlled by {@link TinyDialogBox}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyAutotypeTextField extends Sprite 
@@ -31,10 +34,17 @@ package com.tinyrpg.display
 		
 		public var originalY			: int;
 		public var fastText				: Boolean = false;
+		public var showDebug			: Boolean = false;
 		
 		public const CHAR_W 			: uint = 6;
 		public const CHAR_H 			: uint = 11;
 		
+		/**
+		 * @param	width			Width of the textfield.
+		 * @param	height			Height of the textfield.
+		 * @param	styleClass		Textfield's font CSS class name.
+		 * @param	maxLinesAtOnce	Maximum number of lines to display before scrolling.
+		 */
 		public function TinyAutotypeTextField( width : int, height : int, styleClass : String, maxLinesAtOnce : int = 3 )
 		{
 			// Set properties
@@ -48,7 +58,7 @@ package com.tinyrpg.display
 			
 			// Text field mask container
 			this.textMask = new Sprite;
-//			this.textMask.alpha = 0.6;
+			this.textMask.alpha = this.showDebug ? 0.6 : 1.0;	
 			
 			// Set mask
 			this.textMask.cacheAsBitmap = 
@@ -60,6 +70,9 @@ package com.tinyrpg.display
 			this.addChild( this.textMask );
 		}
 		
+		/**
+		 * Sets the text field to a given string, and optionally disable the beeping audio.
+		 */
 		public function setText( text : String, noBeep : Boolean = false ) : void
 		{
 			this.text = text;
@@ -82,9 +95,13 @@ package com.tinyrpg.display
 				this.textMask.addChild( newLineMask );
 			}
 			
+			// Begin animating
 			this.addEventListener( Event.ENTER_FRAME, onEnterFrame );
 		}
 		
+		/**
+		 * Clears and resets the text display.
+		 */
 		public function clear() : void
 		{
 			TinyLogManager.log('clear', this);
@@ -95,12 +112,20 @@ package com.tinyrpg.display
 			this.textField.htmlText = '';
 			this.y = TinyMath.deepCopyInt( this.originalY );
 			
+			// Remove all line masks
 			while ( this.textMask.numChildren ) this.textMask.removeChildAt( 0 );
 		}
 		
+		/**
+		 * Sets the number of characters to print before the text entry is considered complete.
+		 * 
+		 * This is the main means of controlling the text animation used by {@link TinyDialogBox}.
+		 * Since the dialog text might need to delay or halt at various points in a dialog string,
+		 * characters are only printed up until a delay or halt command is encountered.
+		 */
 		public function printNumberOfChars( numChars : uint ) 
 		{
-			TinyLogManager.log( 'printCharacters: ' + numChars, this );
+			TinyLogManager.log( 'printNumberOfChars: ' + numChars, this );
 			
 			// Complete instantly if no characters need to be printed
 			if ( numChars <= 0 ) 
@@ -125,6 +150,9 @@ package com.tinyrpg.display
 			this.printingEnabled = false;
 		}
 
+		/**
+		 * Updates the text type-on animation.
+		 */
 		public function onEnterFrame( event : Event ) : void
 		{
 			if ( !this.printingEnabled ) return;
@@ -146,7 +174,7 @@ package com.tinyrpg.display
 			// When a textfield needs to break the text to fit the field's width, it inserts a newline character at that point in the line.
 			// However, the textfield's character count does not reflect this added newline character, so we need to compensate for this 
 			// extra character that is not accounted for in the numCharsToPrint variable. Therefore, if the current character index is at 
-			// the end of the current line, and that character matches the code for a newline, advance the mask twice instead of once.   
+			// the end of the current line, and that character matches the code for a newline (32), advance the mask twice instead of just once.   
 			if ( currentCharIndex == lastCharIndexInCurrentLine && lastCharCodeInCurrentLine == 32 ) 
 			{
 				currentLineMask.showNextChar();
@@ -168,6 +196,9 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Listener which is triggered by a line mask reaching the end of a line of text. 
+		 */
 		private function onLineMaskComplete( event : Event ) : void
 		{
 			TinyLogManager.log( 'onLineMaskComplete', this );
@@ -176,7 +207,7 @@ package com.tinyrpg.display
 			
 			if ( this.currentLineIndex < this.textField.numLines ) 
 			{
-				// If this next line is past the line limit, move the whole text up a bit to accomodate the next line
+				// If this next line is past the line limit, move the whole text up a bit to accomodate the next line.
 				if ( this.currentLineIndex >= this.maxLinesAtOnce )
 				{
 					TinyLogManager.log( 'scrolling text', this );
@@ -185,6 +216,7 @@ package com.tinyrpg.display
 			} 
 			else
 			{
+				// No more lines left, we're done.
 				TinyLogManager.log( 'dialog complete', this );
 				this.removeEventListener( Event.ENTER_FRAME, onEnterFrame );
 				this.dispatchEvent( new TinyAutotypeTextEvent( TinyAutotypeTextEvent.DIALOG_COMPLETE ) );

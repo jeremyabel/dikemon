@@ -6,6 +6,11 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager; 
 
 	/**
+	 * Class which provides a sprite-based animation which is played when a mon is affected
+	 * by a status effect and is prevented from using a normal move. 
+	 * 
+	 * For example: the "spinning birds" animation used when a mon is affected by Confusion. 
+	 *
 	 * @author jeremyabel
 	 */
 	public class TinyStatusFXAnimation extends Sprite 
@@ -17,6 +22,10 @@ package com.tinyrpg.display
 		public var length 			: int;
 		public var isPlaying		: Boolean;
 		
+		/**
+		 * @param	name		The name of the status effect animation.
+		 * @param	isEnemy		Whether or not the animation is called by the enemy mon.
+		 */
 		public function TinyStatusFXAnimation( name : String, isEnemy : Boolean )
 		{
 			this.isEnemy = isEnemy;
@@ -29,6 +38,10 @@ package com.tinyrpg.display
 			this.addChild( this.statusFXSprite );
 		}
 		
+		/**
+		 * Plays the status effect animation.
+		 * When the animation is complete, a COMPLETE event will be emitted.
+		 */
 		public function play() : void
 		{
 			TinyLogManager.log('play', this);

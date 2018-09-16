@@ -16,6 +16,8 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which provides an animated character sprite used by {@link TinyWalkSprite}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyWalkSpriteSheet extends Sprite 
@@ -40,6 +42,10 @@ package com.tinyrpg.display
 		public var keepDirection	: Boolean = false;
 		public var walkCycleIndex 	: uint = 0;
 		
+		/**
+		 * @param	id				The sprite's ID number.
+		 * @param	initialFacing	Facing value the sprite should spawn with. Valid values are UP, DOWN, LEFT, and RIGHT.
+		 */
 		public function TinyWalkSpriteSheet( id : uint, initialFacing : String )
 		{	
 			this.spriteId = id;
@@ -115,6 +121,12 @@ package com.tinyrpg.display
 			this.update();
 		}
 		
+		/**
+		 * Starts the sprite's walk animation at a given speed with a given facing.
+		 * 
+		 * @param	facing	The desired facing value. Valid values are UP, DOWN, LEFT, and RIGHT.
+		 * @param	speed	The desired movement speed.  
+		 */
 		public function startWalking( facing : String, speed : uint = 5 ) : void
 		{
 			if ( this.isWalking ) return;
@@ -137,6 +149,10 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Increments the sprite's walk cycle animation as long as the sprite is walking. 
+		 * Triggers the next step automatically.
+		 */
 		public function incrementWalkCycle() : void
 		{
 			if ( !this.isWalking ) return;
@@ -166,6 +182,11 @@ package com.tinyrpg.display
 			this.update();
 		}
 		
+		/**
+		 * Sets the sprite's facing. 
+		 * 
+		 * @param	facing	The desired facing value. Valid values are UP, DOWN, LEFT, and RIGHT.
+		 */
 		public function setFacing( facing : String ) : void
 		{
 			if ( this.keepFacing ) return;
@@ -184,6 +205,12 @@ package com.tinyrpg.display
 			this.update();
 		}
 		
+		/**
+		 * Sets both the sprite's facing and the step state.
+		 * 
+		 * @param	facing	The desired facing value. Valid values are UP, DOWN, LEFT, and RIGHT.
+		 * @param	step	Whether or not the step sprite is shown.
+		 */
 		public function setSprite( facing : String, step : Boolean ) : void 
 		{	
 			this.facing = facing;
@@ -199,6 +226,9 @@ package com.tinyrpg.display
 			this.spriteHolder.scaleX = this.getXScaleForWalkCycleIndex();
 		}
 		
+		/**
+		 * Sets the visibility of the grass layer.
+		 */
 		public function setGrassVisible( visible : Boolean ) : void
 		{
 			this.grassTile.visible = visible;

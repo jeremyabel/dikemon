@@ -18,6 +18,12 @@ package com.tinyrpg.display
 	import flash.text.TextField;
 
 	/**
+	 * Display class for a {@link TinySelectableItem} which adds a mon icon and a basic stat display,
+	 * used for showing the player's current squad of mons in the pause menu, the battle switch menu, 
+	 * and the storage PC menu.
+	 * 
+	 * See {@link TinyStorageMonMenu}, {@link TinySwitchMonMenu}, and {@link TinyMonMenu}.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinySelectableMonItem extends TinySelectableItem 
@@ -35,6 +41,10 @@ package com.tinyrpg.display
 		
 		private const MON_ICON_Y_OFFSET : int = 9;
 		
+		/**
+		 * @param	mon			The mon to display.
+		 * @param	idNumber	The item's index number in the selection array.
+		 */
 		public function TinySelectableMonItem( mon : TinyMon, idNumber : int = 0 )
 		{
 			TweenPlugin.activate([RoundPropsPlugin]);

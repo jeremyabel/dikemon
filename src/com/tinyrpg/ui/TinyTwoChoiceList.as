@@ -8,9 +8,9 @@ package com.tinyrpg.ui
 	 */
 	public class TinyTwoChoiceList extends TinySelectList 
 	{
-		public function TinyTwoChoiceList(title : String, newItemArray : Array = null, width : uint = 0, height : uint = 0, spacing : uint = 15, startingY : uint = 6, startingX : uint = 0, horizontal : Boolean = false, horizontalSpacing : int = 20, opaque : Boolean = false)
+		public function TinyTwoChoiceList( newItemArray : Array = null, width : uint = 0, height : uint = 0, spacing : uint = 15, startingY : uint = 6, startingX : uint = 0, horizontal : Boolean = false, horizontalSpacing : int = 20, opaque : Boolean = false )
 		{
-			super(title, newItemArray, width, height, spacing, startingY, startingX, horizontal, horizontalSpacing, opaque);
+			super( newItemArray, width, height, spacing, startingY, startingX, horizontal, horizontalSpacing, opaque);
 		}
 		
 		override protected function onAccept(event : TinyInputEvent) : void

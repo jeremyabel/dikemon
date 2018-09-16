@@ -8,6 +8,11 @@ package com.tinyrpg.display
 	import flash.text.TextField;
 
 	/**
+	 * Base display class for any object that needs to be selectable inside a {@link TinySelectList}.
+	 * 
+	 * The base class provides just a textfield with a {@link TinyModalSelectArrow}.
+	 * To add extra elements to the display, extend this class.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinySelectableItem extends Sprite 
@@ -23,6 +28,13 @@ package com.tinyrpg.display
 		
 		private var _disabled 	: Boolean = false;
 		
+		/**
+		 * @param	itemText		The item's text string.
+		 * @param	idNumber		The item's index number in the selection list array.
+		 * @param	styleSheet		The CSS stylesheet used for the textfield.
+		 * @param	xOffset			An optional x-axis offset.
+		 * @param	yOffset			An optional y-axis offset.
+		 */
 		public function TinySelectableItem( itemText : String, idNumber : int = 0, styleSheet : String = 'selecterText', xOffset : int = 0, yOffset : int = -1 )
 		{
 			// Set properties
@@ -47,18 +59,28 @@ package com.tinyrpg.display
 			this.addChild(this.itemText);			this.addChild(this.selectArrow);
 		}
 		
+		/**
+		 * Sets the visibility state of the selection arrow and starts the flashing animation. 
+		 */
 		public function set selected(value : Boolean) : void
 		{
 			this.selectArrow.visible = value;
 			MovieClip(this.selectArrow).gotoAndPlay(1);
 		}
 		
+		/**
+		 * Sets the visibility state of the selection arrow and shows the solid black arrow.
+		 */
 		public function set autoSelected(value : Boolean) : void
 		{
 			this.selectArrow.visible = value;
 			MovieClip(this.selectArrow).gotoAndStop('autoselect');
 		}
 		
+		/**
+		 * Sets the disabled state of the item. If the item is disabled it will be dimmed out 
+		 * and will make an error sound when the Accept button is pressed.
+		 */
 		public function set disabled(value : Boolean) : void
 		{
 			TinyLogManager.log( this.textString + ' set disabled: ' + value, this );
@@ -72,6 +94,9 @@ package com.tinyrpg.display
 			}
 		}
 		
+		/**
+		 * Returns the disabled state of this item.
+		 */
 		public function get disabled() : Boolean
 		{
 			return this._disabled;

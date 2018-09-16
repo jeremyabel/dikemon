@@ -11,6 +11,11 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 
 	/**
+	 * Display class which provides a 3-color health bar.
+	 * 
+	 * As HP decreases, the color changes from green, to yellow, to red. 
+	 * Used in {@link TinyBattleMonStatDisplay}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyHPBarDisplay extends Sprite 
@@ -69,6 +74,11 @@ package com.tinyrpg.display
 			this.addChild(this.barContainer);
 		}
 
+		/**
+		 * Sets the width ratio of the bar, from 0..1. By default the bar is set immediately, 
+		 * but can be tweened by setting the second parameter. The color of the bar will
+		 * automatically be updated based on the ratio given.
+		 */
 		public function setRatio( ratio : Number, tween : Boolean = false ) : void
 		{
 			if ( tween )
@@ -85,16 +95,19 @@ package com.tinyrpg.display
 				this.barContainer.scaleX = Math.floor(ratio * this.barWidth);
 			}
 			
+			// Below 10%, the bar is red
 			if (this.barContainer.scaleX <= 10) 
 			{
 				this.setVisibleBar( this.redBar );
 				this.color = this.redColor;
 			} 
+			// Below 24%, the bar is yellow
 			else if (this.barContainer.scaleX <= 24) 
 			{
 				this.setVisibleBar(this.yellowBar);
 				this.color = this.yellowColor;
 			} 
+			// Otherwise, the bar is green
 			else 
 			{
 				this.setVisibleBar(this.greenBar);

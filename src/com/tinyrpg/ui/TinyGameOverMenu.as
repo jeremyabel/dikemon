@@ -18,7 +18,7 @@ package com.tinyrpg.ui
 			var newItems : Array = [];
 			newItems[0] = new TinySelectableItem(this.continueString, 0);			newItems[1] = new TinySelectableItem(this.quitString, 1);
 			
-			super('', newItems);
+			super( newItems );
 			this.containerBox.visible = false;
 		}
 		

@@ -10,6 +10,12 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 
 	/**
+	 * Display class which provides a full-screen solid sprite for various fade-out effects.
+	 * 
+	 * Used during map transitions and battle transistions. 
+	 * {@link TinyGameManager} manages the timing of battle transitions. 
+	 * {@link TinyMapManager} manages the timing of map transitions. 
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyFadeTransitionOverlay extends Sprite 

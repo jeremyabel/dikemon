@@ -21,7 +21,7 @@ package com.tinyrpg.ui
 		
 		public function TinyMoveSelectMenu( targetMon : TinyMon = null, showDetailDisplay : Boolean = true )
 		{
-			super( '', null, 84, 33, 8, 1, 0);
+			super( null, 84, 33, 8, 1, 0);
 			
 			this.moveDetailDisplay = new TinyMoveDetailBox(144 - 94, 33);
 			this.moveDetailDisplay.x = -this.moveDetailDisplay.width;

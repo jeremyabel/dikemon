@@ -8,6 +8,11 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Display class which shows the PP stats for all moves in a moveset.
+	 * 
+	 * Used as part of {@link TinyMonFullStatDisplay}, which is shown when inspecting a mon's stats. 
+	 * Each individual move's information is contained in a single {@link TinyMoveStatListItem}.
+	 *      
 	 * @author jeremyabel
 	 */
 	public class TinyMoveStatDisplay extends Sprite
@@ -40,6 +45,9 @@ package com.tinyrpg.display
 			this.addChild( this.moveListItem1 );
 		}
 		
+		/**
+		 * Sets the moveset to display.
+		 */
 		public function setMoveSet( moveSet : TinyMoveSet ) : void
 		{
 			TinyLogManager.log('set moveSet', this);

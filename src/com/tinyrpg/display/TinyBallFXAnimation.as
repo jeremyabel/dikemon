@@ -13,6 +13,14 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager; 
 
 	/**
+	 * Display class which provides a complete ball fx sprite animation for 
+	 * a specific ball type and a specific ball-throw result.
+	 * 
+	 * Due to the fact that a complete ball throw fx animation is made up of multiple
+	 * fx sprites, this class provides functions for looking up the various required
+	 * spritesheets, depending on the ball type and throw result. The sequencing
+	 * is set up in the useBall() function in {@link TinyBattleCommandItem}.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyBallFXAnimation extends Sprite 
@@ -35,7 +43,14 @@ package com.tinyrpg.display
 		[Embed(source='../../../../bin/xml/ItemFX/pokeball_burst.xml', mimeType='application/octet-stream')] public static const XML_Ball_Burst : Class;
 		[Embed(source='../../../../bin/xml/ItemFX/pokeball_reject.xml', mimeType='application/octet-stream')] public static const XML_Ball_Reject : Class;
 		
-		
+		/**
+		 * Creates a single phase of a ball throw fx animation. Multiples of these are 
+		 * sequenced together to create the desired full throw animation. 
+		 * 
+		 * @param	ballPhase	The desired ball throw animation phase.
+		 * @param	isUltra		Whether or not the ball is an Ultraball. Ultraballs are colored
+		 * 						differently, and use separate sprites.
+		 */
 		public function TinyBallFXAnimation( ballPhase : String, isUltra : Boolean )
 		{
 			// Make status FX sprite
@@ -46,7 +61,9 @@ package com.tinyrpg.display
 			this.addChild( this.ballFXSprite );
 		}
 		
-		
+		/**
+		 * Begins playing the ball throw fx spritesheet.
+		 */
 		public function play() : void
 		{
 			TinyLogManager.log('play', this);
@@ -58,7 +75,6 @@ package com.tinyrpg.display
 			this.ballFXSprite.play();
 			this.addEventListener( Event.ENTER_FRAME, this.onEnterFrame );
 		}
-		
 		
 		protected function onEnterFrame( event : Event ) : void
 		{
@@ -72,7 +88,11 @@ package com.tinyrpg.display
 			}
 		}
 		
-		
+		/**
+		 * Returns the XML spritesheet data for a ball fx sprite with a given ball phase.
+		 * 
+		 * @param	ballPhase	The desired ball throw animation phase.
+		 */
 		public static function getBallFXXML( ballPhase : String ) : XML
 		{
 			var newXMLBytes : ByteArray;
@@ -91,7 +111,13 @@ package com.tinyrpg.display
 			return new XML( string );
 		}
 		
-		
+		/**
+		 * Returns the BitmapData for a ball fx sprite with a given ball phase and coloring.
+		 * 
+		 * @param	ballPhase	The desired ball throw animation phase.
+		 * @param	isUltra		Whether or not the ball is an Ultraball. Ultraballs are colored
+		 * 						differently, and use separate sprites.
+		 */
 		public static function getBallFXSprite( ballPhase : String, isUltra : Boolean ) : BitmapData
 		{	
 			var newSprite : BitmapData;
@@ -109,10 +135,12 @@ package com.tinyrpg.display
 			return newSprite;
 		}
 		
-		
+		/**
+		 * Returns the sound to be played for a given ball phase.
+		 */
 		public static function getBallSFX( ballPhase : String ) : Sound
 		{
-			switch( ballPhase )
+			switch ( ballPhase )
 			{
 				default:
 				case BALL_PHASE_OPEN	: return new SFXBallOpen as Sound; break;

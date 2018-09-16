@@ -27,7 +27,7 @@ package com.tinyrpg.ui
 //			}
 						newItemArray.push(new TinySelectableItem(this.quitString, newItemArray.length));
 			
-			super('', newItemArray, 100, 100, 10);
+			super( newItemArray, 100, 100, 10 );
 			this.containerBox.visible = false;
 		}
 		

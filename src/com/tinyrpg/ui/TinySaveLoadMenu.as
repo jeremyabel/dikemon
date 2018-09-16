@@ -36,7 +36,7 @@ package com.tinyrpg.ui
 			if (TinySaveData.doesSaveExist(1)) this.addGameData(1); else this.addEmptySlot(1);			if (TinySaveData.doesSaveExist(2)) this.addGameData(2); else this.addEmptySlot(2);			if (TinySaveData.doesSaveExist(3)) this.addGameData(3); else this.addEmptySlot(3);
 			
 			// Make select list
-			this.gameSelectList = new TinySelectList('', this.saveList, 0, 0, 37);
+			this.gameSelectList = new TinySelectList( this.saveList, 0, 0, 37 );
 			this.gameSelectList.y = this.helpBox.height - 7;
 			this.gameSelectList.containerBox.visible = false;
 			
@@ -117,7 +117,7 @@ package com.tinyrpg.ui
 					if (TinySaveData.doesSaveExist(3)) this.addGameData(3); else this.addEmptySlot(3);
 					
 					// Make select list
-					this.gameSelectList = new TinySelectList('', this.saveList, 0, 0, 37);
+					this.gameSelectList = new TinySelectList( this.saveList, 0, 0, 37 );
 					this.gameSelectList.y = this.helpBox.height - 7;
 					this.gameSelectList.containerBox.visible = false;
 					

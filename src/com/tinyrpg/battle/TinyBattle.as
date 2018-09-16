@@ -8,7 +8,7 @@ package com.tinyrpg.battle
 	import com.tinyrpg.data.TinyMoveData;
 	import com.tinyrpg.display.BattleWhirl;
 	import com.tinyrpg.display.TinyMonContainer;
-	import com.tinyrpg.display.TinyTitleBox;
+	import com.tinyrpg.display.TinyContentBox;
 	import com.tinyrpg.display.TinySpriteSheet;
 	import com.tinyrpg.display.TinyMoveFXAnimation;
 	import com.tinyrpg.display.TinyStatusFXAnimation;
@@ -63,7 +63,7 @@ package com.tinyrpg.battle
 		private var m_switchMonMenu				: TinySwitchMonMenu;
 		private var m_battleEvent				: TinyBattleEventSequence;
 		private var m_battleIntroWhirl			: TinySpriteSheet;
-		private var m_battleEmptyDialogBox		: TinyTitleBox;
+		private var m_battleEmptyDialogBox		: TinyContentBox;
 		private var m_itemSelectorList			: TinyBattleItemMenu;
 		private var isForcedSwitch				: Boolean = false;
 		private var background					: Sprite;
@@ -96,7 +96,7 @@ package com.tinyrpg.battle
 		public function startBattle() : void
 		{
 			// Empty dialog box that sits behind the battle menu
-			m_battleEmptyDialogBox = new TinyTitleBox( null, '', 144, 33 );
+			m_battleEmptyDialogBox = new TinyContentBox( null, 144, 33 );
 			m_battleEmptyDialogBox.x = int( ( 160 / 2 ) - ( m_battleEmptyDialogBox.width / 2 ) ) + 5;
 			m_battleEmptyDialogBox.y = 104;
 			

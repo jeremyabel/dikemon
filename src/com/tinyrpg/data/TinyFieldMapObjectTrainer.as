@@ -1,7 +1,5 @@
 package com.tinyrpg.data 
 {
-	import com.tinyrpg.display.TinyTrainerSightHitbox;
-	
 	import flash.display.Sprite;
 	
 	/**
@@ -9,9 +7,6 @@ package com.tinyrpg.data
 	 */
 	public class TinyFieldMapObjectTrainer extends TinyFieldMapObjectNPC
 	{
-//		public var sightTiles 	: int = 5;
-//		public var sightHitbox 	: TinyTrainerSightHitbox;
-		 
 		public function TinyFieldMapObjectTrainer() : void 
 		{
 			

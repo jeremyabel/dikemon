@@ -7,6 +7,9 @@ package com.tinyrpg.display
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
+	 * Display class for a {@link TinySelectableItem} which adds a numeric quantity field,
+	 * used for showing the items in the player's inventory.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinySelectableItemItem extends TinySelectableItem 
@@ -16,6 +19,13 @@ package com.tinyrpg.display
 		private var quantityField 	: TextField;
 		private var showPrice		: Boolean = false;
 		
+		/**
+		 * @param	item			The item represented.
+		 * @param	idNumber		The index in the selection array.
+		 * @param	quantityOffset	An optional x-axis offset for the item quantity number.
+		 * @param	showPrice		Whether or not to show the item's price instead of the quantity number.
+		 * 							Used for showing the item list in a shop.
+		 */
 		public function TinySelectableItemItem( item : TinyItem, idNumber : int = 0, quantityOffset : int = 124, showPrice : Boolean = false ) 
 		{
 			this.item = item;
@@ -38,6 +48,9 @@ package com.tinyrpg.display
 			super( this.item.name, idNumber );
 		}
 		
+		/**
+		 * Updates the quantity number of the item.
+		 */
 		public function updateQuantity() : void
 		{
 			TinyLogManager.log( 'updateQuantity: ' + this.item.quantity, this );
@@ -45,6 +58,9 @@ package com.tinyrpg.display
 			this.quantityField.htmlText = TinyFontManager.returnHtmlText( 'x' + this.item.quantity.toString(), 'battleItemHP', 'right' );
 		}
 		
+		/**
+		 * Updates the price number of the item.
+		 */
 		public function updatePrice() : void
 		{
 			TinyLogManager.log( 'updatePrice: ' + this.item.price, this );

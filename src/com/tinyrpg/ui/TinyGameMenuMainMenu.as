@@ -22,7 +22,7 @@ package com.tinyrpg.ui
 				new TinySelectableItem( TinyCommonStrings.QUIT.toUpperCase(), 3 )
 			];
 			
-			super( '', newItems, 50, 64 );
+			super( newItems, 50, 64 );
 		}
 
 		

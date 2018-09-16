@@ -9,6 +9,10 @@ package com.tinyrpg.display
 	import com.tinyrpg.managers.TinyFontManager;
 
 	/**
+	 * Display class which shows information about a single battle move.
+	 * 
+	 * Used as part of the {@link TinyMoveStatDisplay} full move stat display.
+	 *   
 	 * @author jeremyabel
 	 */
 	public class TinyMoveStatListItem extends Sprite 
@@ -26,13 +30,12 @@ package com.tinyrpg.display
 			this.moveNameValue.backgroundColor = 0xFFFFFF;
 			this.moveNameValue.height = 10;
 			
-			this.divider = new TinyModalDivider();
-			this.divider.alpha = 0.35;
-			this.divider.y = 12;
-			
 			this.ppValue = TinyFontManager.returnTextField();
 			this.ppValue.x = 102; 
 			
+			this.divider = new TinyModalDivider();
+			this.divider.alpha = 0.35;
+			this.divider.y = 12;
 			this.divider.x = this.ppValue.x - this.divider.width - 1;
 			
 			// Add 'em up
@@ -41,9 +44,12 @@ package com.tinyrpg.display
 			this.addChild( this.ppValue );
 		}
 		
+		/**
+		 * Sets which move's stats are shown in the display.
+		 */
 		public function setMove( moveData : TinyMoveData ) : void
 		{
-			// No move data, show empty entry
+			// No move data, show empty entry with "--" placeholder data.
 			if ( !moveData )
 			{
 				TinyLogManager.log('setMove: --', this);

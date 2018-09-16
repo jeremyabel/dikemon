@@ -42,7 +42,7 @@ package com.tinyrpg.ui
 			// Add cancel item
 			newItemArray.push( new TinySelectableItem( TinyCommonStrings.CANCEL.toUpperCase(), newItemArray.length ) );
 			
-			super( '', newItemArray, 60, 64, 12, 6, 0, 6 );
+			super( newItemArray, 60, 64, 12, 6, 0, 6 );
 			
 			// Make the instruction box
 			this.instructionBox = new TinyOneLineBox( TinyCommonStrings.CHOOSE_DKMN, 144 );
@@ -132,7 +132,7 @@ package com.tinyrpg.ui
 			];
 			
 			// Create the confirm choice dialog
-			this.confirmChoiceDialog = new TinyTwoChoiceList( '', confirmChoiceItems, 32, 32, 15, 4 );
+			this.confirmChoiceDialog = new TinyTwoChoiceList( confirmChoiceItems, 32, 32, 15, 4 );
 			this.confirmChoiceDialog.x = this.selectedMonSubMenu.x + 28;
 			this.confirmChoiceDialog.y = this.selectedMonSubMenu.y;
 			this.addChild( this.confirmChoiceDialog );

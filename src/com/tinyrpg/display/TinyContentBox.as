@@ -5,6 +5,8 @@ package com.tinyrpg.display
 	import flash.display.Sprite;
 
 	/**
+	 * Base display class for a simple box with a 9-slice border.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyContentBox extends Sprite 
@@ -15,6 +17,12 @@ package com.tinyrpg.display
 		protected var boxWidth : uint;
 		protected var boxHeight : uint; 
 		
+		/**
+		 * @param	content			An optional DisplayObject which is added to the box.
+		 * @param	width			The width of the box, in pixels.
+		 * @param	height  		The height of the box, in pixels.
+		 * @param	centerContent	Whether or not the content object is centered in the box.
+		 */
 		public function TinyContentBox( content : DisplayObject, width : uint = 0, height : uint = 0, centerContent : Boolean = false )
 		{
 			this.content = content;
