@@ -16,6 +16,7 @@ package com.tinyrpg.managers
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.EventDispatcher;
+	import flash.geom.Point;
 
 	/**
 	 * @author jeremyabel
@@ -230,10 +231,10 @@ package com.tinyrpg.managers
 			this.m_currentMap.mapUserObjects.addChild( this.playerSprite );			
 		}
 		
-		public function updateCamera( x : int, y : int ) : void
+		public function updateCamera( x : int, y : int, fromCenter : Boolean = true ) : void
 		{
-			this.m_currentMap.x = -x + ( 160 / 2 ) - 8;
-			this.m_currentMap.y = -y + ( 144 / 2 ) - 8;
+			this.m_currentMap.x = -x + ( fromCenter ? ( 160 / 2 ) - 8 : 0 );
+			this.m_currentMap.y = -y + ( fromCenter ? ( 144 / 2 ) - 8 : 0 );
 		}
 		
 		public function startEventByName( eventName : String, isGlobal : Boolean = false ) : void
