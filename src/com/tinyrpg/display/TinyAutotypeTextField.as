@@ -63,7 +63,7 @@ package com.tinyrpg.display
 			// Set mask
 			this.textMask.cacheAsBitmap = 
 			this.textField.cacheAsBitmap = true;
-			this.textField.mask = this.textMask;
+			this.textField.mask = this.showDebug ? null : this.textMask;
 			
 			// Add 'em up
 			this.addChild( this.textField );
@@ -82,6 +82,14 @@ package com.tinyrpg.display
 			
 			this.textBeepEnabled = !noBeep;
 			this.textField.htmlText += TinyFontManager.returnHtmlText( this.text, this.styleClass, 'left', true );
+			
+			// If the text field contains only one line of text and uses the "dialogText" style, then the style's
+			// leading needs to be removed, otherwise the bottom pixels of the text will be cut off.
+			// This is done by replacing the "dialogText" style with a "dialogTextNoLeading" style.
+			if ( this.textField.numLines == 1 && this.styleClass == 'dialogText' )
+			{
+				this.textField.htmlText = this.textField.htmlText.replace( 'dialogText', 'dialogTextNoLeading' );
+			}
 			
 			// Set up mask objects for each line
 			for ( var i : uint = 0; i < this.textField.numLines; i++ )

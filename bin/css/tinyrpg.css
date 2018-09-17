@@ -57,7 +57,14 @@
 	font-size: 8px;
 	background: #FF00FF;
 	color: #000000;
-	leading: -2px;
+	leading: -2;
+}
+
+.dialogTextNoLeading {
+	font-family: "Mono0755_8pt_st";
+	font-size: 8px;
+	background: #FF00FF;
+	color: #000000;
 }
 
 .menuTextWhite {
