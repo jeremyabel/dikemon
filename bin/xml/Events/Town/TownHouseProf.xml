@@ -910,6 +910,20 @@
 				</IF_TRUE>
 				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
 			</CONDITIONAL>
+			<CONDITIONAL>
+				<TYPE>RIVAL</TYPE>
+				<VALUE>CLEGG</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>RIVAL</SPEAKER>
+							<TEXT>Is there a juice box in that ball?[halt] I need it now or I'm going to die.   [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
 			<END></END>
 		</SEQUENCE>
 	</EVENT_rival_angry_ball_dialog>
