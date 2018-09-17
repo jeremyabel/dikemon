@@ -1,3 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+	
+	<EVENT_talk_bobsy_twins>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Bobsy Twins</SPEAKER>
+				<TEXT>No![halt] You have to talk to us from in front the desk!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_bobsy_twins>
+	
+	<EVENT_talk_cat_thing>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>Cat Thing</SPEAKER>
+				<TEXT>Meow!   [end]</TEXT>
+			</DIALOG>
+		</SEQUENCE>
+	</EVENT_talk_cat_thing>
+
+	<EVENT_talk_bobsy_twins_desk>
+		<SEQUENCE>
+			<SET_FACING>
+				<TARGET>Bobsy Twins 1</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>Bobsy Twins 2</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SET_FACING>
+				<TARGET>Cat Thing</TARGET>
+				<FACING>DOWN</FACING>
+			</SET_FACING>
+			<SHOW_EMOTE>
+				<TARGET>Bobsy Twins 1</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<SHOW_EMOTE>
+				<TARGET>Bobsy Twins 2</TARGET>
+				<EMOTE>EXCLAIM</EMOTE>
+			</SHOW_EMOTE>
+			<DIALOG>
+				<SPEAKER>Bobsy Twins</SPEAKER>
+				<TEXT>We're the most productive people in this office.[halt] We're Team Profit!   [end]</TEXT>
+			</DIALOG>
+			<HIDE_EMOTE>
+				<TARGET>Bobsy Twins 1</TARGET>
+			</HIDE_EMOTE>
+			<HIDE_EMOTE>
+				<TARGET>Bobsy Twins 2</TARGET>
+			</HIDE_EMOTE>
+			<TRAINER_BATTLE>
+				<TRAINER_NAME>Team Profit</TRAINER_NAME>
+				<TRAINER_MONEY>96</TRAINER_MONEY>
+				<TRAINER_AI>ai_good</TRAINER_AI>
+				<TRAINER_MONS>
+					<MON><NAME>Bucket</NAME><LEVEL>1</LEVEL></MON>
+				</TRAINER_MONS>
+				<IF_WIN>
+					<SEQUENCE>
+						<SET_FLAG>defeated_bobsy_twins</SET_FLAG>
+						<DELAY>12</DELAY>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+							<EMOTE>HAPPY</EMOTE>
+						</SHOW_EMOTE>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+							<EMOTE>HAPPY</EMOTE>
+						</SHOW_EMOTE>
+						<DIALOG>
+							<SPEAKER>Bobsy Twins</SPEAKER>
+							<TEXT>Y[delay 1]o[delay 1]u[delay 1] a[delay 1]r[delay 1]e[delay 1] e[delay 1]v[delay 1]e[delay 1]n[delay 1] m[delay 1]o[delay 1]r[delay 1]e p[delay 1]r[delay 1]o[delay 1]d[delay 1]u[delay 1]c[delay 1]t[delay 1]i[delay 1]v[delay 1]e t[delay 1]h[delay 1]a[delay 1]n u[delay 1]s![halt] Y[delay 1]o[delay 1]u d[delay 1]e[delay 1]s[delay 1]e[delay 1]r[delay 1]v[delay 1]e a v[delay 1]a[delay 1]c[delay 1]a[delay 1]t[delay 1]i[delay 1]o[delay 1]n!   [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+						</HIDE_EMOTE>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+						</HIDE_EMOTE>
+						<SHOW_EMOTE>
+							<TARGET>PLAYER</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<DELAY>12</DELAY>
+						<HIDE_EMOTE>
+							<TARGET>PLAYER</TARGET>
+						</HIDE_EMOTE>
+						<DELAY>2</DELAY>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Oh god, if it means getting away from you two, sign me up.   [end]</TEXT>
+						</DIALOG>
+						<DELAY>4</DELAY>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+							<EMOTE>HAPPY</EMOTE>
+						</SHOW_EMOTE>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+							<EMOTE>HAPPY</EMOTE>
+						</SHOW_EMOTE>
+						<DELAY>4</DELAY>
+						<DIALOG>
+							<SPEAKER>Bobsy Twins</SPEAKER>
+							<TEXT>G[delay 1]r[delay 1]e[delay 1]a[delay 1]t! H[delay 1]e[delay 1]r[delay 1]e[delay 1]'[delay 1]s y[delay 1]o[delay 1]u[delay 1]r t[delay 1]i[delay 1]c[delay 1]k[delay 1]e[delay 1]t.   [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+						</HIDE_EMOTE>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+						</HIDE_EMOTE>
+						<DELAY>4</DELAY>
+						
+						<GIVE_ITEM>Boat Ticket</GIVE_ITEM>
+						
+						<!-- TODO: Play item get sound -->
+						
+						<DIALOG>
+							<SPEAKER></SPEAKER>
+							<TEXT>You got the Boat Ticket!   [end]</TEXT>
+						</DIALOG>
+						
+						<DELAY>12</DELAY>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Thanks?   [end]</TEXT>
+						</DIALOG>
+						<DELAY>12</DELAY>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<SHOW_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<DIALOG>
+							<SPEAKER>Bobsy Twins</SPEAKER>
+							<TEXT>Now get out![halt] The office is closed!   [end]</TEXT>
+						</DIALOG>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 1</TARGET>
+						</HIDE_EMOTE>
+						<HIDE_EMOTE>
+							<TARGET>Bobsy Twins 2</TARGET>
+						</HIDE_EMOTE>
+						<DELAY>4</DELAY>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Ok,[delay 4] jeez.   [end]</TEXT>
+						</DIALOG>
+						<DELAY>4</DELAY>
+						
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TILES>3</TILES>
+							<SPEED>10</SPEED>
+						</WALK>
+						<HIDE_PLAYER></HIDE_PLAYER>
+						<DELAY>30</DELAY>
+						
+						<CAMERA_MOVE>
+							<DIRECTION>UP</DIRECTION>
+							<TILES>4</TILES>
+							<SPEED>15</SPEED>
+						</CAMERA_MOVE>
+						<DELAY>14</DELAY>
+					
+						<SET_FACING>
+							<TARGET>Bobsy Twins 1</TARGET>
+							<FACING>RIGHT</FACING>
+						</SET_FACING>
+						<DELAY>5</DELAY>
+						<DIALOG>
+							<SPEAKER>Mercy</SPEAKER>
+							<TEXT>They bought it!   [end]</TEXT>
+						</DIALOG>
+						<DELAY>5</DELAY>
+						<SET_FACING>
+							<TARGET>Bobsy Twins 2</TARGET>
+							<FACING>LEFT</FACING>
+						</SET_FACING>
+						<DIALOG>
+							<SPEAKER>Evan</SPEAKER>
+							<TEXT>What a mushbrain!   [end]</TEXT>
+						</DIALOG>
+						<DELAY>5</DELAY>
+						<SET_FACING>
+							<TARGET>Cat Thing</TARGET>
+							<FACING>RIGHT</FACING>
+						</SET_FACING>
+						<DIALOG>
+							<SPEAKER>Cat Thing</SPEAKER>
+							<TEXT>Heh heh!   [end]</TEXT>
+						</DIALOG>
+						
+						<DELAY>8</DELAY>
+						<WARP stepforward="TRUE">
+							<MAP_NAME>OFFICEFLOOR2</MAP_NAME>
+							<WARP_NAME>warpOfficeFloor3</WARP_NAME>
+							<FACING>DOWN</FACING>
+							<FADE_SPEED>11</FADE_SPEED>
+						</WARP>
+						
+						<END></END>
+					</SEQUENCE>
+				</IF_WIN>
+				<IF_LOSE>
+					<SEQUENCE><END></END></SEQUENCE>
+				</IF_LOSE>
+			</TRAINER_BATTLE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_bobsy_twins_desk>
+	
 </EVENTS>

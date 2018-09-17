@@ -28,9 +28,37 @@
 				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
 			</CONDITIONAL>
 			
+			<!-- Remove the warp to the 3rd floor after defeating the Bobsy Twins -->			
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_bobsy_twins</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_WARP>warpOfficeFloor3</REMOVE_WARP>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<REMOVE_TRIGGER>triggerUpstairs</REMOVE_TRIGGER>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+
 			<END></END>
 		</SEQUENCE>
 	</EVENT_map_setup>
+	
+	<EVENT_check_upstairs_blocked>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER>A Voice</SPEAKER>
+				<TEXT>Go away, the office is closed now!   [end]</TEXT>
+			</DIALOG>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_check_upstairs_blocked>
 
 	<EVENT_encounter_gary_montana>
 		<SEQUENCE>
@@ -44,6 +72,7 @@
 							<TARGET>Gary Montana</TARGET>
 							<EMOTE>EXCLAIM</EMOTE>
 						</SHOW_EMOTE>
+						<DELAY>4</DELAY>
 						<SET_FACING>
 							<TARGET>PLAYER</TARGET>
 							<FACING>LEFT</FACING>
@@ -105,6 +134,7 @@
 							<TARGET>Steve Pizazz</TARGET>
 							<EMOTE>EXCLAIM</EMOTE>
 						</SHOW_EMOTE>
+						<DELAY>4</DELAY>
 						<SET_FACING>
 							<TARGET>PLAYER</TARGET>
 							<FACING>UP</FACING>
@@ -166,6 +196,7 @@
 							<TARGET>Wally</TARGET>
 							<EMOTE>EXCLAIM</EMOTE>
 						</SHOW_EMOTE>
+						<DELAY>4</DELAY>
 						<SET_FACING>
 							<TARGET>PLAYER</TARGET>
 							<FACING>RIGHT</FACING>

@@ -325,6 +325,7 @@ package com.tinyrpg.lookup
 			
 			switch ( name.toUpperCase() ) 
 			{
+				// Humans
 				case 'ANDY': 			newSprite = new HumanMaruska; break;
 				case 'BILL': 			newSprite = new HumanBill; break;
 				case 'CHRIS': 			newSprite = new HumanChris; break;
@@ -342,9 +343,14 @@ package com.tinyrpg.lookup
 				case 'RON': 			newSprite = new HumanRon; break;
 				case 'QUINN': 			newSprite = new HumanQuinn; break;
 				case 'OAK':				newSprite = new TrainerOak; break;
+				
+				// Enemy Trainers
 				case 'TEAM VOMIT':		newSprite = new TrainerTeamVomit1; break;
+				case 'TEAM PROFIT':		newSprite = new TrainerTeamVomit2; break;
 				case 'GARY MONTANA': 	newSprite = new TrainerGaryMontana; break;
-				case 'STEVE PIZZAZ':	newSprite = new TrainerStevePizzaz; break;
+				case 'STEVE PIZAZZ':	newSprite = new TrainerStevePizazz; break;
+				case 'WALLY':			newSprite = new TrainerWally; break;
+				
 				default: 				newSprite = new TrainerPlayer; break;
 			}
 			
