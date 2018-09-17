@@ -57,9 +57,7 @@ package com.tinyrpg.core
 			
 			var hitObject : * = event.param.object;
 			var isSightbox : Boolean = event.param.isSightbox;
-			
-			trace( event.param );
-			
+						
 			if ( hitObject is TinyFieldMapObject )
 			{
 				// Hit trigger object
@@ -89,8 +87,6 @@ package com.tinyrpg.core
 					{
 						this.onHitNPC( npcObject, event.param.fromAcceptKeypress );
 					}
-					
-					return;
 				}
 			}
 		}
@@ -269,9 +265,6 @@ package com.tinyrpg.core
 			
 			// Disable random spinning so the trainer doesn't change orientation while talking to the player
 			trainerObject.enableSpin = false;
-			
-			// Set the trainer to face the player
-			trainerObject.setFacingFromPlayerFacing( this.walkSprite.currentDirection );
 			
 			// Play the trainer's encounter event
 			TinyMapManager.getInstance().startEventByName( trainerObject.encounterName );

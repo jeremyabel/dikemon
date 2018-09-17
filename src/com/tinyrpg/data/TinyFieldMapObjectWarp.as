@@ -47,7 +47,7 @@ package com.tinyrpg.data
 		
 		override public function isBlocking( walkSprite : TinyWalkSprite ) : Boolean
 		{
-			return !this.instant && walkSprite.currentDirection == this.requiredFacing; 			
+			return false; 			
 		}
 	}
 }

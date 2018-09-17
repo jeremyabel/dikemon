@@ -230,6 +230,8 @@ package com.tinyrpg.display
 			// If we're already walking, we don't need to do anything
 			if ( this.spritesheet.isWalking ) return;
 			
+			TinyLogManager.log( 'startWalking', this );
+			
 			// Start walking in the desired direction
 			this.spritesheet.startWalking( TinyInputManager.getInstance().getCurrentArrowKey(), this.speed );
 			this.currentDirection = this.spritesheet.facing;
@@ -331,6 +333,8 @@ package com.tinyrpg.display
 
 		protected function onMovementStart( facing : String ) : void
 		{	
+			TinyLogManager.log( 'onMovementStart', this );
+			
 			// Check for grass collisions
 			this.hasCollidedWithGrass = this.checkGrassCollision();
 			
@@ -363,18 +367,23 @@ package com.tinyrpg.display
 			{
 				this.hasCollidedWithWall = TinyMapManager.getInstance().currentMap.checkWallCollision( this.movementBox ).hit;
 				this.hasCollidedWithJump = this.checkJumpCollision();
-				this.hasCollidedWithObject = this.checkObjectCollision();
+				
+				// Check for object collisions but do not emit any events yet, since that will be done 
+				// in the onMovementComplete() function.
+				this.hasCollidedWithObject = this.checkObjectCollision( true, false, false );
 			}
 			
 			// Force an early timeline completion if this sprite has collided with something (player only)
 			if ( this.isPlayer && ( this.hasCollidedWithWall || this.hasCollidedWithObject || this.hasCollidedWithJump ) ) 
 			{
 				// Reset the latest tween so no movement happens
-				if ( this.movementTimeline )
+				if ( this.movementTimeline.getActive().length > 0 ) 
 				{
+					TinyLogManager.log( 'onMovementStart: removing last movement tween', this );
 					this.movementTimeline.getActive()[ 0 ].time( 0 );
-					this.onMovementComplete();
 				}
+				
+				this.onMovementComplete();
 			}
 			else
 			{
@@ -384,6 +393,8 @@ package com.tinyrpg.display
 		
 		protected function onMovementComplete( event : Event = null ) : void
 		{
+			TinyLogManager.log( 'onMovementComplete', this );
+			
 			// Clean up the movement timeline
 			if ( this.movementTimeline )
 			{
@@ -395,7 +406,7 @@ package com.tinyrpg.display
 			// Update the grass overlay visibility			
 			this.grassOverlay.visible = false;
 			
-			// Check for map object collisions
+			// Check for map object collisions, running any required events
 			this.checkObjectCollision();
 				
 			// Emit move complete event
@@ -450,7 +461,7 @@ package com.tinyrpg.display
 			}
 		}
 		
-		public function checkObjectCollision( useMovementHitbox : Boolean = false, fromAcceptKeypress : Boolean = false ) : Boolean
+		public function checkObjectCollision( useMovementHitbox : Boolean = false, fromAcceptKeypress : Boolean = false, dispatchEvents : Boolean = true ) : Boolean
 		{
 			// Emit collision events depending on if an object has been hit by the player
 			if ( this.isPlayer && this.hasControl )
@@ -473,30 +484,42 @@ package com.tinyrpg.display
 					// so ignore those if necessary. Otherwise just use the collision object as normal. 
 					if ( objectCollision.object is TinyTrainerSightHitbox && !fromAcceptKeypress )
 					{
+						TinyLogManager.log( 'checkObjectCollision: hitObject - TinyTrainerSightHitbox', this );
+						
 						hitObject = ( objectCollision.object as TinyTrainerSightHitbox ).owner;
 						isBlocking = false;
 						isSightbox = true;
 					}
 					else if ( objectCollision.object is TinyWalkSpriteHitbox )
 					{
+						TinyLogManager.log( 'checkObjectCollision: hitObject - TinyWalkSpriteHitbox', this );
+						
 						hitObject = ( objectCollision.object as TinyWalkSpriteHitbox ).owner;
 						isBlocking = hitObject.isBlocking( this );
 					}
 					else 
 					{
+						TinyLogManager.log( 'checkObjectCollision: hitObject - TinyFieldMapObject', this );
+						
 						hitObject = objectCollision.object as TinyFieldMapObject;
 						isBlocking = hitObject.isBlocking( this );
 					}
 					
-					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, { 
-						object: hitObject,
-						isSightbox: isSightbox,
-						fromAcceptKeypress: fromAcceptKeypress
-					}));
+					// Only dispatch events if requested
+					if ( dispatchEvents ) 
+					{
+						this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.OBJECT_HIT, { 
+							object: hitObject,
+							isSightbox: isSightbox,
+							fromAcceptKeypress: fromAcceptKeypress
+						}));
+					}
+					
+					TinyLogManager.log( 'checkObjectCollision: isBlocking = ' + isBlocking, this );
 					
 					return isBlocking;
 				} 
-				else 
+				else if ( dispatchEvents )
 				{
 					this.dispatchEvent( new TinyFieldMapEvent( TinyFieldMapEvent.NOTHING_HIT ) );
 					return false;
