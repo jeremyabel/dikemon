@@ -23,10 +23,7 @@ package com.tinyrpg.sequence
 		public var winSequence		: TinyEventSequence;
 		public var loseSequence		: TinyEventSequence;
 			
-		public function TinyTrainerBattleCommand() : void
-		{
-			
-		}
+		public function TinyTrainerBattleCommand() : void { }
 		
 		public static function newFromXML( xmlData : XML ) : TinyTrainerBattleCommand
 		{

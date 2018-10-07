@@ -1,4 +1,4 @@
-package com.tinyrpg.sequence 
+	package com.tinyrpg.sequence 
 {
 	import com.greensock.TweenLite;
 	import com.greensock.easing.Linear;
@@ -16,6 +16,18 @@ package com.tinyrpg.sequence
 	import flash.events.EventDispatcher;
 
 	/**
+	 * Class which represents an "CAMERA_MOVE" command in the event sequencer.
+	 * 
+	 * This command plays a single-axis camera pan animation. Valid XML parameter tags are:
+	 * 
+	 * 	DIRECTION: 	The direction of the camera pan. Valid direcions are LEFT, RIGHT, UP, and DOWN.
+	 * 	TILES: 		The number of map tiles to move. 
+	 * 	SPEED:		The speed of the pan animation, in frames-per-tile.
+	 * 	
+	 * Valid XML attributes on the CAMERA_MOVE tag are:
+	 * 	
+	 *  sync:		If set to "true", the next event in the sequence executes immediately.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyCameraMoveCommand extends EventDispatcher
@@ -37,6 +49,9 @@ package com.tinyrpg.sequence
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 		}
 		
+		/**
+		 * Returns a new {@link TinyCameraMoveCommand} created from the given XML data.
+		 */
 		public static function newFromXML( xmlData : XML ) : TinyCameraMoveCommand
 		{
 			var newCommand : TinyCameraMoveCommand = new TinyCameraMoveCommand();
@@ -60,6 +75,7 @@ package com.tinyrpg.sequence
 		{	
 			TinyLogManager.log( 'execute, sync: ' + this.sync, this );
 			
+			// Cache the original camera location so that we can use it as a starting point for the tween
 			this.origCamX = TinyMath.deepCopyInt( TinyMapManager.getInstance().currentMap.x );
 			this.origCamY = TinyMath.deepCopyInt( TinyMapManager.getInstance().currentMap.y );
 			
@@ -91,11 +107,17 @@ package com.tinyrpg.sequence
 			}
 		}
 		
+		/**
+		 * Callback for updating the camera movement tween.
+		 */
 		private function onCameraMoveUpdate() : void
 		{
 			TinyMapManager.getInstance().updateCamera( -this.origCamX + this.xTween, -this.origCamY + this.yTween, false );
 		}
 		
+		/**
+		 * Listener called when the camerae movement tween is complete.
+		 */
 		private function onCameraMoveComplete( event : Event = null ) : void
 		{
 			TinyLogManager.log( 'onCameraMoveComplete', this );

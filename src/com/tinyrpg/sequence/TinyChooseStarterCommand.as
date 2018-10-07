@@ -20,6 +20,13 @@ package com.tinyrpg.sequence
 	import flash.events.EventDispatcher;
 	
 	/**
+	 * Class which deals with the one-off "CHOOSE_STARTER" command. 
+	 * 
+	 * This command is used just once, as part of the game's intro sequence where the 
+	 * player has to chose their starting mon. This event is different for each player, 
+	 * and is thus defined in the event XML to keep everything in one place. This 
+	 * command is only used in the TownHouseProf.xml file.   
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyChooseStarterCommand extends EventDispatcher

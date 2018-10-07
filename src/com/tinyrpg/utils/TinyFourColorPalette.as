@@ -2,6 +2,10 @@ package com.tinyrpg.utils
 {
 
 	/**
+	 * Class which represents a Gameboy Color four-color palette.
+	 * 
+	 * Used for doing color transforms and fades during battle fx animations.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyFourColorPalette 
@@ -11,6 +15,12 @@ package com.tinyrpg.utils
 		public var color3 : TinyColor = null;
 		public var color4 : TinyColor = null;
 		
+		/**
+		 * @param	color1	The first color.
+		 * @param	color2	The second color.
+		 * @param	color3	The third color.
+		 * @param	color4	The fourth color.
+		 */
 		public function TinyFourColorPalette( color1 : TinyColor = null, color2 : TinyColor = null, color3 : TinyColor = null, color4 : TinyColor = null )
 		{
 			this.color1 = color1;
@@ -19,16 +29,28 @@ package com.tinyrpg.utils
 			this.color4 = color4;
 		}
 		
+		/**
+		 * Returns a new {@link TinyFourColorPalette} using a given array of {@link TinyColor}s. 
+		 * The array must have at least 4 elements.
+		 */
 		public static function newFromArray( colors : Array ) : TinyFourColorPalette
 		{
 			return new TinyFourColorPalette( colors[ 0 ], colors[ 1 ], colors[ 2 ], colors[ 3 ] );
 		}
 		
+		/**
+		 * Returns a new {@link TinyFourColorPalette} using a given array of {@link TinyColor}s, in reverse order.
+		 * The array must have at least 4 elements.
+		 */
 		public static function newFromArrayInv( colors : Array ) : TinyFourColorPalette
 		{
 			return new TinyFourColorPalette( colors[ 3 ], colors[ 2 ], colors[ 1 ], colors[ 0 ] );	
 		}
 		
+		/**
+		 * Returns the palette color array with indicies shifted by a given amount.
+		 * For example: getShifted(1) = [4, 1, 2, 3].
+		 */
 		public function getShifted( shiftAmount : int ) : Array
 		{
 			switch ( shiftAmount )
@@ -41,6 +63,10 @@ package com.tinyrpg.utils
 			}
 		}
 		
+		/**
+		 * Returns the palette color array at a given step value in the lightness scale. 
+		 * This simulates the gameboy's 4-step fade-to-white transition.
+		 */
 		public function getLightenOffset( offsetAmount : int ) : Array 
 		{	
 			var white : TinyColor = TinyColor.newFromHex( 0xFFFFFF );
@@ -56,6 +82,10 @@ package com.tinyrpg.utils
 			}
 		}
 		
+		/**
+		 * Returns the palette color array at a given step value in the darkness scale.
+		 * This simulates the gameboy's 4-step fade-to-black transition.
+		 */
 		public function getDarkenOffset( offsetAmount : int ) : Array
 		{
 			var black : TinyColor = TinyColor.newFromHex( 0x000000 );
@@ -71,6 +101,9 @@ package com.tinyrpg.utils
 			}
 		}
 		
+		/**
+		 * Returns a copy of the palette with the color order reversed. 
+		 */
 		public function getInverted() : TinyFourColorPalette 
 		{
 			return new TinyFourColorPalette( 
@@ -81,6 +114,9 @@ package com.tinyrpg.utils
 			);	
 		}
 		
+		/**
+		 * Returns true if the palette contains a given color.
+		 */
 		public function contains( color : TinyColor ) : Boolean
 		{
 			if ( this.color1 && this.color1.equals( color ) ) return true;
@@ -90,6 +126,9 @@ package com.tinyrpg.utils
 			return false;
 		}
 		
+		/**
+		 * Adds a given {@link TinyColor} to the next available slot in the palette.
+		 */
 		public function addColor( color : TinyColor ) : void
 		{
 			if ( !this.color1 ) { this.color1 = color; return; }
@@ -98,11 +137,17 @@ package com.tinyrpg.utils
 			if ( !this.color4 ) { this.color4 = color; return; }
 		}
 		
+		/**
+		 * Returs true if all four colors in the palette are set.
+		 */
 		public function isFull() : Boolean
 		{
 			return this.color1 && this.color2 && this.color3 && this.color4;
 		}
 		
+		/**
+		 * Sorts the palette array by luminance, darkest to lightest.
+		 */
 		public function sort() : void
 		{
 			var colorArray : Array = [ 
@@ -120,6 +165,9 @@ package com.tinyrpg.utils
 			this.color4 = colorArray[ 3 ];
 		}
 		
+		/**
+		 * Returns a string representation of the palette.
+		 */
 		public function toString() : String
 		{
 			return '(' + this.color1.toString() + '), \n' +

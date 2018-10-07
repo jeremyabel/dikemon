@@ -26,7 +26,7 @@
 	 * 
 	 * The saved data is only what is needed to recreate the game state:
 	 * 
-	 * - Trainer stats (money, mon list, etc)
+	 * - Trainer stats (money, inventory, mon list, etc)
 	 * - Event flag values
 	 * - The name of the current map
 	 * - Player's XY grid coordinates on the current map

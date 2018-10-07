@@ -17,10 +17,10 @@ package com.tinyrpg.display
 	 * 
 	 * There are four distortion effects available:
 	 *
-	 *  	WAVE_X: An effect which offsets each line of the screen on the x-axis, creating a horizontal wavy effect.
-	 *		WAVE_Y: An effect which offsets each line of the screen on the y-axis, creating a vertical wavy effect.
-	 *		HIDE: An effect which blanks the effected area of the screen.
-	 *		WAGGLE: An effect which wobbles the entire effected area of the screen back and forth.
+	 *  	WAVE_X: Offset each line of the screen on the x-axis, creating a horizontal wavy effect.
+	 *		WAVE_Y: Offset each line of the screen on the y-axis, creating a vertical wavy effect.
+	 *		HIDE: Blank the effected area of the screen.
+	 *		WAGGLE: Wobble the entire effected area of the screen back and forth.
 	 *	
 	 * These effects are defined per-move using the ANIM_DISTORTION_EFFECT tag. The tag's contents must be in the format:
 	 * 

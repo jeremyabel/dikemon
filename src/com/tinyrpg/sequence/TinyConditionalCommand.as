@@ -10,6 +10,26 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.utils.TinyLogManager;
 	
 	/**
+	 * Class which represents an "CONDITIONAL" command in the event sequencer.
+	 * 
+	 * This command immediately evaluates the truthy state of various kinds of parameters and runs
+	 * a corresponding sub-sequence depending on the result. Valid XML parameter tags are:
+	 * 
+	 * 	TYPE: 		The type of conditional check to use. These are discussed more below.
+	 * 	VALUE:		The truthy value for the conditional check.
+	 * 	IF_TRUE:	The inline sub-sequence which will run if the conditional is true.
+	 * 	IF_FALSE:	The inline sub-sequence which will run if the conditional is false.
+	 * 
+	 * Serval kinds of conditional checks can be chosen using the "TYPE" parameter tag. These are:
+	 *  
+	 *  FLAG: 		{@link TinyEventFlag} with the given name is set.
+	 *  ITEM:		Player has an item with the given name. 
+	 *  NAME:		Player's name matches the given string.
+	 *  RIVAL:		Player's rival name matches the given string. 
+	 *  MONEY:		Player has at least a given value of money.
+	 *  FACING:	 	Player's sprite facing matches the given value.
+	 *  HEALTHY: 	Player's mons are all in a healthy state.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyConditionalCommand 
@@ -27,11 +47,11 @@ package com.tinyrpg.sequence
 		public var trueSequence		: TinyEventSequence;
 		public var falseSequence	: TinyEventSequence;
 		
-		public function TinyConditionalCommand() : void 
-		{
-			 
-		}
+		public function TinyConditionalCommand() : void { }
 		
+		/**
+		 * Returns a new {@link TinyConditionalCommand} created from the given XML data.
+		 */
 		public static function newFromXML( xmlData : XML ) : TinyConditionalCommand
 		{
 			var newCommand : TinyConditionalCommand = new TinyConditionalCommand();

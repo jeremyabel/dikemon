@@ -8,7 +8,7 @@ package com.tinyrpg.utils
 	 */
 	public class TinyMath 
 	{
-		public static function random(minValue : Number = 0, maxValue : Number = 1) : Number
+		public static function random( minValue : Number = 0, maxValue : Number = 1 ) : Number
 		{
 			return minValue + (Math.random() * (maxValue - minValue));
 		}
@@ -33,7 +33,7 @@ package com.tinyrpg.utils
 			return table[ randomInt() ];
 		}
 
-		public static function normalize(value : Number, min : Number, max : Number) : Number
+		public static function normalize( value : Number, min : Number, max : Number ) : Number
 		{
 			return (value - min) / (max - min);
 		}
@@ -43,60 +43,86 @@ package com.tinyrpg.utils
 			return min + (max - min) * normValue;
 		}
 
-		public static function map(value : Number, min1 : Number, max1 : Number, min2 : Number, max2 : Number) : Number 
+		/** 
+		 * Returns the given value remapped from one range to another.
+		 */
+		public static function map( value : Number, min1 : Number, max1 : Number, min2 : Number, max2 : Number ) : Number 
 		{
 			return interpolate(normalize(value, min1, max1), min2, max2);	
 		}
 		
-		public static function mapClamped(value : Number, min1 : Number, max1 : Number, min2 : Number, max2 : Number) : Number
+		public static function mapClamped( value : Number, min1 : Number, max1 : Number, min2 : Number, max2 : Number ) : Number
 		{
 			return clamp(map(value, min1, max1, min2, max2), min2, max2);
 		}
 
-		public static function clamp(value : Number, min : Number, max : Number) : Number
+		/*
+		 * Returns the given number clamped to the given min and max values.
+		 */
+		public static function clamp( value : Number, min : Number, max : Number ) : Number
 		{
-			return Math.max(min, Math.min(max, value));
+			return Math.max( min, Math.min( max, value ) );
 		}
 
-		public static function deg2rad(degrees : Number) : Number
+		/**
+		 * Returns the given degrees in radians
+		 */
+		public static function deg2rad( degrees : Number ) : Number
 		{
 			return degrees * (Math.PI / 180);
 		}
 
-		public static function rad2deg(radians : Number) : Number
+		/** 
+		 * Returns the given radians in degrees.
+		 */
+		public static function rad2deg( radians : Number ) : Number
 		{
 			return radians * (180 / Math.PI);
 		}
 
-		public static function dotProduct(v1 : Point, v2 : Point) : Number 
+		/**
+		 * Returns the dot product between two 2D vectors.
+		 */
+		public static function dotProduct( v1 : Point, v2 : Point ) : Number 
 		{ 
 			return v1.x * v2.x + v1.y * v2.y; 
 		}
 		
-		public static function deepCopyInt(source : *) : int
+		/**
+		 * Returns a deep copy of a given integer.
+		 */
+		public static function deepCopyInt( source : * ) : int
 		{
 			var copier : ByteArray = new ByteArray();
-			copier.writeObject(source);
+			copier.writeObject( source );
 			copier.position = 0;
-			return int(copier.readObject());
+			return int( copier.readObject() );
 		}
 		
-		public static function deepCopyString(source : *) : String
+		/**
+		 * Returns a deep copy of a given string.
+		 */
+		public static function deepCopyString( source : * ) : String
 		{
 			var copier : ByteArray = new ByteArray();
-			copier.writeObject(source);
+			copier.writeObject( source );
 			copier.position = 0;
-			return String(copier.readObject());
+			return String( copier.readObject() );
 		}
 		
-		public static function arrayShuffle(arr : Array) : Array
+		/**
+		 * Returns a shuffled version of the given Array.
+		 */
+		public static function arrayShuffle( arr : Array ) : Array
 		{
-			var len:int = arr.length;
-			var arr2:Array = new Array(len);
-			for(var i:int = 0; i<len; i++)
+			var len : int = arr.length;
+			var arr2 : Array = new Array( len );
+			
+			for ( var i : int = 0; i < len; i++ )
 			{
-				arr2[i] = arr.splice(int(Math.random() * (len - i)), 1)[0];
+				arr2[ i ] = arr.splice( int( Math.random() * (len - i) ), 1 )[0];
 			}
+			
 			return arr2;
 		}
 	}

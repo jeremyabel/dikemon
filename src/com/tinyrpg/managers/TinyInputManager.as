@@ -50,13 +50,15 @@ package com.tinyrpg.managers
 			TinyLogManager.log('setTarget : ' + newTarget, this);
 			
 			// Notify previous target
-			if (this.target) {
+			if (this.target) 
+			{
 				this.previousTarget = this.target;
 				this.previousTarget.dispatchEvent(new TinyInputEvent(TinyInputEvent.CONTROL_REMOVED));
 			}
 			
 			// Only add a new target if there is one
-			if (newTarget) {
+			if (newTarget) 
+			{
 				// Notify new target
 				this.target = newTarget;
 				this.target.dispatchEvent(new TinyInputEvent(TinyInputEvent.CONTROL_ADDED));

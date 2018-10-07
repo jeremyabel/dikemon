@@ -2,6 +2,9 @@ package com.tinyrpg.sequence
 {
 
 	/**
+	 * Class which provides a universal data container for things that need to be executed
+	 * by the {@link TinyEventSequencer} or the {@link TinyBattleEventSequener}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyEventItem 
@@ -34,7 +37,6 @@ package com.tinyrpg.sequence
 		public static const SHOW_OBJECT	  			: String = 'SHOW_OBJECT';
 		public static const HIDE_OBJECT	  			: String = 'HIDE_OBJECT';
 		public static const CAMERA_MOVE				: String = 'CAMERA_MOVE';
-		public static const PLAY_ANIM	  			: String = 'PLAY_ANIM';
 		public static const PLAY_SOUND	  			: String = 'PLAY_SOUND';
 		public static const PLAY_MUSIC	  			: String = 'PLAY_MUSIC';
 		public static const DELAY		  			: String = 'DELAY';

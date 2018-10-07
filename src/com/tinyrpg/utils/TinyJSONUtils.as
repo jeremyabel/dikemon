@@ -8,6 +8,10 @@ package com.tinyrpg.utils
 	import flash.geom.Point;
 	
 	/**
+	 * Class which contains static functions for serializing various game structures to JSON.
+	 * 
+	 * Used for generating save game data.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyJSONUtils 

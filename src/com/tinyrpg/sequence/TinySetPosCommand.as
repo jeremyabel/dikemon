@@ -9,6 +9,15 @@ package com.tinyrpg.sequence
 	import flash.geom.Point;
 
 	/**
+	 * Class which represents a "SET_POSITION" command in the event sequencer.
+	 * 
+	 * This command immediately sets the position of a given target sprite on the map.
+	 * Valid XML parameter tags are:
+	 * 
+	 *  TARGET:		The name of the sprite, or "PLAYER" for the player sprite.
+	 *  POSITION:	The X and Y position on the map. In pixel units for all but the player sprite,
+	 *  			which is in grid units.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinySetPosCommand 
@@ -19,6 +28,9 @@ package com.tinyrpg.sequence
 		
 		public function TinySetPosCommand() : void { }
 		
+		/**
+		 * Returns a new {@link TinySetPosCommand} created from the given XML data.
+		 */
 		public static function newFromXML( xmlData : XML ) : TinySetPosCommand
 		{
 			var newCommand : TinySetPosCommand = new TinySetPosCommand;

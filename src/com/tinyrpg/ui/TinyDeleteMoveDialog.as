@@ -13,6 +13,14 @@ package com.tinyrpg.ui
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which handles the UI and flow for the dialogs and selection lists
+	 * shown during the move-replacement process. 
+	 * 
+	 * This process is triggered when a mon learns a new move during a level-up,
+	 * but already has all four moveslots filled. This class manages the flow of
+	 * this process, allowing the player to remove a previous move and replace it
+	 * with the new one, or discard the new move entirely.
+	 *  
 	 * @author jeremyabel
 	 */
 	public class TinyDeleteMoveDialog extends Sprite implements IShowHideObject
@@ -32,6 +40,10 @@ package com.tinyrpg.ui
 		private var mon : TinyMon;
 		private var move : TinyMoveData;
 		
+		/**
+		 * @param	mon		The mon who's moves we'll be fiddling with.
+		 * @param	move	The new move the mon is trying to learn.
+		 */
 		public function TinyDeleteMoveDialog( mon : TinyMon, move : TinyMoveData )
 		{
 			this.mon = mon;
@@ -90,6 +102,12 @@ package com.tinyrpg.ui
 			this.visible = false;
 		}
 		
+		/**
+		 * Shows the first dialog and starts the interaction flow.
+		 * 
+		 * The first dialog is a regular dialog that asks if the player wants to delete a move to 
+		 * make room for a new one. 
+		 */
 		public function show() : void
 		{
 			TinyLogManager.log('show', this);
@@ -103,6 +121,11 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this.deleteMoveAskDialog );
 		}
 
+		/**
+		 * Listener called when the "delete move?" dialog is done drawing in.
+		 * 
+		 * After this is done, the yes / no selection list is shown. 
+		 */
 		private function onDeleteMoveAskDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onDeleteMoveAskDialogCompleted', this);
@@ -118,6 +141,11 @@ package com.tinyrpg.ui
 			this.passControlToYesNoSelector( this.onDeleteMoveYesSelected, this.onDeleteMoveNoSelected );
 		}
 
+		/**
+		 * Listener for selecting "yes" on the "delete move?" prompt.
+		 * 
+		 * After "yes" is selected, the player can choose a move to replace. 
+		 */
 		private function onDeleteMoveYesSelected( event : Event = null ) : void
 		{
 			TinyLogManager.log('onDeleteMoveYesSelected', this);
@@ -134,7 +162,13 @@ package com.tinyrpg.ui
 			this.chooseMoveAskDialog.addEventListener( Event.COMPLETE, this.onChooseMoveAskDialogCompleted );
 			TinyInputManager.getInstance().setTarget( this.chooseMoveAskDialog );
 		}
-
+		
+		/**
+		 * Listener for selecting "no" on the "delete move?" prompt.
+		 * 
+		 * After "no" is selected, the player must verify whether or not they really want 
+		 * to stop learning the move.
+		 */
 		private function onDeleteMoveNoSelected( event : TinyInputEvent = null ) : void
 		{
 			TinyLogManager.log('onDeleteMoveNoSelected', this);
@@ -151,7 +185,12 @@ package com.tinyrpg.ui
 			this.stopLearningAskDialog.addEventListener( Event.COMPLETE, this.onStopLearningAskDialogCompleted );
 			TinyInputManager.getInstance().setTarget( this.stopLearningAskDialog );
 		}
-
+	
+		/**
+		 * Listener called when the "stop learning?" dialog is done drawing in.
+		 * 
+		 * After this is done, the yes / no selection list is shown. 
+		 */
 		private function onStopLearningAskDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onStopLearningAskDialogCompleted', this);
@@ -167,6 +206,12 @@ package com.tinyrpg.ui
 			this.passControlToYesNoSelector( this.onStopLearningYesSelected, this.onStopLearningNoSelected );	
 		}
 		
+		/**
+		 * Listener for selecting "yes" on the "stop learning?" prompt.
+		 * 
+		 * After "yes" is selected, the "didn't learn" dialog is shown, and the level-up process
+		 * continues as normal.
+		 */
 		private function onStopLearningYesSelected( event : Event = null ) : void
 		{
 			TinyLogManager.log('onStopLearningYesSelected', this);
@@ -183,7 +228,32 @@ package com.tinyrpg.ui
 			this.didNotLearnDialog.addEventListener( Event.COMPLETE, this.onDidntLearnDialogCompleted );
 			TinyInputManager.getInstance().setTarget( this.didNotLearnDialog );
 		}
+				
+		/**
+		 * Listener for when the "did not learn" dialog is done drawing in.
+		 * 
+		 * This marks the end of the flow if the player rejects learing the move.
+		 * After this, control is returned to the level-up sequence and the game 
+		 * proceeds normally. 
+		 */
+		private function onDidntLearnDialogCompleted( event : Event = null ) : void
+		{
+			TinyLogManager.log('onDidntLearnDialogCompleted', this);
+			
+			// Clean up
+			this.didNotLearnDialog.removeEventListener( Event.COMPLETE, this.onDidntLearnDialogCompleted );
+			this.didNotLearnDialog.hide();
+			TinyInputManager.getInstance().setTarget( null );
 
+			// Finished			
+			this.dispatchEvent( new Event( Event.COMPLETE ) );
+		}
+
+		/**
+		 * Listener for selecting "no" after the "stop learning?" prompt.
+		 * 
+		 * After "no" is selected, the "delete move" flow is restarted from the beginning.
+		 */
 		private function onStopLearningNoSelected( event : TinyInputEvent = null ) : void
 		{
 			TinyLogManager.log('onStopLearningNoSelected', this);
@@ -197,6 +267,11 @@ package com.tinyrpg.ui
 			this.show();
 		}
 		
+		/** 
+		 * Listener called when the "choose a move" dialog is done drawing in.
+		 * 
+		 * The move selection dialog is shown and control is passed to it. 
+		 */
 		private function onChooseMoveAskDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onChooseMoveAskDialogCompleted', this);
@@ -215,6 +290,11 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this.moveSelector );
 		}
 		
+		/**
+		 * Listener called when the move to replace has been chosen.
+		 * 
+		 * After picking a move, the user must confirm this with another yes / no prompt.
+		 */
 		private function onChooseMoveMoveChosen( event : TinyBattleEvent ) : void
 		{
 			TinyLogManager.log('onChooseMoveMoveChosen: ' + event.move, this );
@@ -248,7 +328,12 @@ package com.tinyrpg.ui
 			this.deleteConfirmAskDialog.addEventListener( Event.COMPLETE, this.onConfirmDeleteAskDialogCompleted );
 			TinyInputManager.getInstance().setTarget( this.deleteConfirmAskDialog );
 		}
-
+		
+		/**
+		 * Listener for pressing the cancel button when prompted to choose a move to replace.
+		 * 
+		 * After the cancel button is pressed, the "delete move" flow is restarted from the beginning.
+		 */
 		private function onChooseMoveCancelled( event : TinyInputEvent = null ) : void
 		{
 			TinyLogManager.log('onChooseMoveCancelled', this);
@@ -263,6 +348,12 @@ package com.tinyrpg.ui
 			this.show();
 		}
 		
+		/** 
+		 * Listener called when the "you sure?" dialog is done drawing in.
+		 * 
+		 * The yes / no prompt is shown and the player must confirm whether or not to replace the 
+		 * previously-selected move. 
+		 */
 		private function onConfirmDeleteAskDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onConfirmDeleteAskDialogCompleted', this);
@@ -278,6 +369,12 @@ package com.tinyrpg.ui
 			this.passControlToYesNoSelector( this.onConfirmDeleteYesSelected, this.onConfirmDeleteNoSelected );	
 		}
 
+		/**
+		 * Listener called when "yes" is selected after choosing a move to replace.
+		 * 
+		 * A series of dialogs is then shown to illustrate the move replacement process.
+		 * The first of these is an "and it's gone" message. 
+		 */
 		private function onConfirmDeleteYesSelected( event : Event = null ) : void
 		{
 			TinyLogManager.log('onConfirmDeleteYesSelected', this);
@@ -295,7 +392,12 @@ package com.tinyrpg.ui
 			this.andItsGoneDialog.addEventListener( Event.COMPLETE, this.onAndItsGoneDialogCompleted );
 			TinyInputManager.getInstance().setTarget( this.andItsGoneDialog );
 		}
-
+		
+		/**
+		 * Listener called when "no" is selected after chosing a move to replace.
+		 * 
+		 * After "no" is selected, the "delete move" flow is restarted from the beginning.
+		 */
 		private function onConfirmDeleteNoSelected( event : TinyInputEvent = null ) : void
 		{
 			TinyLogManager.log('onConfirmDeleteNoSelected', this);
@@ -309,20 +411,13 @@ package com.tinyrpg.ui
 			// Return to start
 			this.show();	
 		}
-		
-		private function onDidntLearnDialogCompleted( event : Event = null ) : void
-		{
-			TinyLogManager.log('onDidntLearnDialogCompleted', this);
-			
-			// Clean up
-			this.didNotLearnDialog.removeEventListener( Event.COMPLETE, this.onDidntLearnDialogCompleted );
-			this.didNotLearnDialog.hide();
-			TinyInputManager.getInstance().setTarget( null );
 
-			// Finished			
-			this.dispatchEvent( new Event( Event.COMPLETE ) );
-		}
-
+		/**
+		 * Listener for when the "and it's gone" dialog is done drawing in.
+		 * 
+		 * After this is done, the second dialog in the sequence is shown, alerting the player of the 
+		 * forgotten move.
+		 */
 		private function onAndItsGoneDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onAndItsGoneDialogCompleted', this);
@@ -340,6 +435,12 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this.forgotMoveDialog );
 		}
 
+		/**
+		 * Listener for when the "mon forgot" dialog is done drawing in.
+		 * 
+		 * After this is done, the third dialog in the sequence is shown, alerting the player of the
+		 * newly-learned move. 
+		 */
 		private function onMonForgotDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onMonForgotDialogCompleted', this);
@@ -357,6 +458,12 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this.learnedMoveDialog );
 		}
 		
+		/**
+		 * Listener for when the "mon learned" dialog is done drawing in.
+		 * 
+		 * After this is done, the move replacement is complete and the flow is complete.
+		 * Control is returned to the leve-up sequence and the game proceeds normally.
+		 */
 		private function onMonLearnedDialogCompleted( event : Event = null ) : void
 		{
 			TinyLogManager.log('onMonLearnedDialogCompleted', this);
@@ -377,6 +484,9 @@ package com.tinyrpg.ui
 			this.dispatchEvent( new Event( Event.COMPLETE ) );	
 		}
 		
+		/**
+		 * Binds the given two event listeners to the yes / no selection list and passes control to it.
+		 */
 		private function passControlToYesNoSelector( yesCallback : Function, noCallback : Function ) : void
 		{
 			TinyLogManager.log('passControlToYesNoSelector', this);
@@ -386,6 +496,9 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this.yesNoSelectList );
 		}
 		
+		/**
+		 * Unbinds the given two event listeners from the yes / no selection list and removes control from it.
+		 */
 		private function cleanYesNoSelector( yesCallback : Function, noCallback : Function ) : void
 		{
 			TinyLogManager.log('cleanYesNoSelector', this);

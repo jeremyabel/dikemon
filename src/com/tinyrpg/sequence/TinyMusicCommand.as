@@ -11,10 +11,7 @@ package com.tinyrpg.sequence
 		public var loop : Boolean = false;
 		public var interrupt : Boolean = false;
 		
-		public function TinyMusicCommand() : void
-		{
-			
-		}
+		public function TinyMusicCommand() : void { }
 		
 		public static function newFromXML(xmlData : XML) : TinyMusicCommand
 		{

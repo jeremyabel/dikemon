@@ -5,6 +5,14 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which represents the "SHOW_EMOTE" and "HIDE_EMOTE" commands in the event sequencer.
+	 * 
+	 * This command immediately shows or hides a little emote icon above a given target sprite.
+	 * Valid XML parameter tags are: 
+	 * 
+	 * 	TARGET: The name of the NPC to use, or "PLAYER" for the player character.
+	 * 	EMOTE: 	The name of the emote icon to show. Valid values are specified in {@link TinyEmoteIcon}.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyEmoteCommand 
@@ -15,6 +23,12 @@ package com.tinyrpg.sequence
 		
 		public function TinyEmoteCommand() : void { }
 		
+		/**
+		 * Returns a new {@link TinyEmoteCommand} created from the given XML data.
+		 * 
+		 * @param	xmlData		The source XML data from the event.
+		 * @param	isVisible	True if this is a SHOW_EMOTE command, false for a HIDE_EMOTE command.
+		 */
 		public static function newFromXML( xmlData : XML, isVisible : Boolean ) : TinyEmoteCommand
 		{
 			var newCommand : TinyEmoteCommand = new TinyEmoteCommand;

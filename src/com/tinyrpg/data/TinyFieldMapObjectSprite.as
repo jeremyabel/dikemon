@@ -14,7 +14,8 @@ package com.tinyrpg.data
 	/**
 	 * Class which represents a sprite graphic placed on the map. 
 	 * 
-	 * Used during the intro cutscene to show the big character and mon sprites.
+	 * Used during the intro cutscene to show the big character and mon sprites,
+	 * and also to show some specific larger movable objects on the field map.
 	 * 
 	 * @author jeremyabel
 	 */
@@ -23,16 +24,13 @@ package com.tinyrpg.data
 		// The name of the sprite to display
 		public var spriteName : String;
 		
-		// The type of sprite to display, either "TRAINER" or "MONSTER"
+		// The type of sprite to display, either "TRAINER", "MONSTER", or "OBJECT"
 		public var spriteType : String;
 		
 		// Whether or not the sprite is visible when it is created
 		public var startVisible : Boolean = false;
 		
-		public function TinyFieldMapObjectSprite() : void 
-		{
-						
-		}
+		public function TinyFieldMapObjectSprite() : void { }
 		
 		override public function dataReady() : void
 		{
@@ -42,6 +40,7 @@ package com.tinyrpg.data
 			// Replace sprite name "PLAYER" with the current player's trainer name 
 			if ( spriteName == 'PLAYER' )
 			{
+				// TODO: Make dynamic
 				replacedSpriteName = 'ANDY'; // Default player name
 				
 				if ( TinyGameManager.getInstance().playerTrainer ) {
@@ -52,6 +51,7 @@ package com.tinyrpg.data
 			// Replace sprite name "RIVAL" with the current player's rival name
 			if ( spriteName == 'RIVAL' )
 			{
+				// TODO: Make dynamic
 				replacedSpriteName = 'RACHEL'; // Default rival name
 				
 				if ( TinyGameManager.getInstance().playerTrainer ) {
@@ -64,6 +64,7 @@ package com.tinyrpg.data
 			{
 				case 'TRAINER': spriteBitmap = new Bitmap( TinySpriteLookup.getTrainerSprite( replacedSpriteName ) ); break;
 				case 'MONSTER': spriteBitmap = new Bitmap( TinySpriteLookup.getMonsterSprite( replacedSpriteName ) ); break;
+				case 'OBJECT':  spriteBitmap = new Bitmap( TinySpriteLookup.getObjectSprite(  replacedSpriteName ) ); break;
 			}
 			
 			// Place the sprite's origin in the center

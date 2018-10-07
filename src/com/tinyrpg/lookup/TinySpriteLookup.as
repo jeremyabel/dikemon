@@ -2,6 +2,7 @@ package com.tinyrpg.lookup
 {
 	import com.tinyrpg.display.monsters.*;
 	import com.tinyrpg.display.trainers.*;
+	import com.tinyrpg.display.objects.*;
 	
 	import com.tinyrpg.utils.TinyLogManager;
 
@@ -352,6 +353,20 @@ package com.tinyrpg.lookup
 				case 'WALLY':			newSprite = new TrainerWally; break;
 				
 				default: 				newSprite = new TrainerPlayer; break;
+			}
+			
+			return newSprite;
+		}
+		
+		public static function getObjectSprite( name : String ) : BitmapData
+		{
+			TinyLogManager.log( 'getObjectSprite: ' + name, null );
+			
+			var newSprite : BitmapData;
+			
+			switch ( name.toUpperCase() ) 
+			{
+				case 'BOAT':	newSprite = new BoatObject; break;
 			}
 			
 			return newSprite;

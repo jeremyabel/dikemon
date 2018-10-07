@@ -37,7 +37,6 @@ package com.tinyrpg.core
 			this.walkSprite.addEventListener( TinyFieldMapEvent.NOTHING_HIT, this.onHitNothing );
 		}
 		
-		
 		/**
 		 * Prepares object for destruction by removing all event listeners.
 		 */	

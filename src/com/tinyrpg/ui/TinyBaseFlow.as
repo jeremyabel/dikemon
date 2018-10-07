@@ -10,15 +10,9 @@ package com.tinyrpg.ui
 	 */
 	public class TinyBaseFlow extends Sprite 
 	{
-		public function TinyGameMenuBaseFlow() : void
-		{
-			
-		}
+		public function TinyGameMenuBaseFlow() : void {}
 		
-		public function execute() : void 
-		{
-			
-		}
+		public function execute() : void {}
 		
 		protected function onFlowComplete( event : Event = null ) : void
 		{

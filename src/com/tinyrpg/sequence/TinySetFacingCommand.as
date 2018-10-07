@@ -5,6 +5,15 @@ package com.tinyrpg.sequence
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which represents the "SET_FACING" command in the event sequencer.
+	 * 
+	 * This command immediately sets the sprite facing for a given target sprite.
+	 * Valid XML parameter tags are: 
+	 * 
+	 * 	TARGET: The name of the NPC to use, or "PLAYER" for the player character.
+	 * 	FACING: The facing value. Valid values are UP, DOWN, LEFT, and RIGHT.
+	 * 	TO_NPC: The name of another NPC to face towards, instead of a specific direction.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinySetFacingCommand 
@@ -15,6 +24,9 @@ package com.tinyrpg.sequence
 		
 		public function TinySetFacingCommand() : void { }
 		
+		/**
+		 * Returns a new {@link TinySetFacingCommand} created from the given XML data.
+		 */
 		public static function newFromXML( xmlData : XML ) : TinySetFacingCommand
 		{
 			var newCommand : TinySetFacingCommand = new TinySetFacingCommand;
@@ -47,16 +59,18 @@ package com.tinyrpg.sequence
 				target = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName ).walkSprite;
 			}
 			
+			// If another NPC name is provided in the "TO_NPC" parameter tag, then find the other NPC that this one 
+			// should face towards and and set the new facing value so that we're facing towards them.
 			if ( this.targetFacingNPCName )
 			{
 				var targetFacingNPC : TinyWalkSprite = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetFacingNPCName ).walkSprite;
 				
 				switch ( targetFacingNPC.currentDirection )
 				{
-					case TinyWalkSprite.UP: 	this.targetFacing = 'DOWN'; break;
-					case TinyWalkSprite.DOWN:	this.targetFacing = 'UP'; break;
+					case TinyWalkSprite.UP: 	this.targetFacing = 'DOWN';  break;
+					case TinyWalkSprite.DOWN:	this.targetFacing = 'UP';  	 break;
 					case TinyWalkSprite.LEFT:	this.targetFacing = 'RIGHT'; break;
-					case TinyWalkSprite.RIGHT:	this.targetFacing = 'LEFT'; break;
+					case TinyWalkSprite.RIGHT:	this.targetFacing = 'LEFT';  break;
 				}
 			}
 			

@@ -19,6 +19,11 @@ package com.tinyrpg.ui
 	import com.tinyrpg.utils.TinyLogManager;
 
 	/**
+	 * Class which handles the UI for the item selection menu while in battle.
+	 * 
+	 * Extends from the {@link TinyItemMenu} class and adds a {@link TinyMoveSelectMenu}
+	 * for picking a move after using a PP-restoring item.
+	 * 
 	 * @author jeremyabel
 	 */
 	public class TinyBattleItemMenu extends TinyItemMenu 
@@ -26,8 +31,10 @@ package com.tinyrpg.ui
 		protected var moveInfoBox : TinyOneLineBox;
 		protected var moveSelectMenu : TinyMoveSelectMenu;
 		protected var currentMon : TinyMon;
-		
-
+	
+		/**
+		 * @param	trainer		The trainer who's inventory will be used for item selection. 
+		 */
 		public function TinyBattleItemMenu( trainer : TinyTrainer )
 		{
 			super( trainer, 130, 49, 4 );
@@ -52,20 +59,26 @@ package com.tinyrpg.ui
 			this.addChild( this.moveSelectMenu );
 		}
 		
-		
+		/**
+		 * Sets the current target mon of any item being used.  
+		 */
 		public function setCurrentMon( mon : TinyMon ) : void
 		{
-			TinyLogManager.log('setCurrentMon: ' + mon.name, this );
+			TinyLogManager.log( 'setCurrentMon: ' + mon.name, this );
 			
 			this.currentMon = mon;
 			this.moveSelectMenu.setCurrentMon( this.currentMon );
 		}
 
-
+		/**
+		 * Listener for the accept button. Determines if an item can be used, and handles 
+		 * move selection if the item restores PP.
+		 */
 		override protected function onAccept( event : TinyInputEvent ) : void
 		{
 			if ( this.selectedItem.textString == TinyCommonStrings.CANCEL )
 			{
+				// Menu was canceled
 				this.dispatchEvent( new TinyInputEvent( TinyInputEvent.CANCEL ) );	
 			}
 			else
@@ -107,7 +120,10 @@ package com.tinyrpg.ui
 			}
 		}
 		
-		
+		/**
+		 * Listener for MOVE_SELECTED events in the move selection menu. 
+		 * This is only thrown when showing the move selection menu as a result of using a PP-restoring item. 
+		 */
 		private function onMoveSelected( event : TinyBattleEvent ) : void
 		{
 			var selectedMove : TinyMoveData = event.move;
@@ -135,7 +151,10 @@ package com.tinyrpg.ui
 			this.dispatchEvent( new TinyBattleEvent( TinyBattleEvent.ITEM_USED, selectedMove, null, this.item ) );
 		}
 		
-		
+		/**
+		 * Listener for CANCEL events in the move selection menu.
+		 * This is only thrown when showing the move selection menu as a result of using a PP-restoring item.
+		 */
 		private function onMoveSelectCancelled( event : TinyInputEvent ) : void
 		{
 			TinyLogManager.log( 'onMoveSelectCancelled', this );
@@ -153,9 +172,13 @@ package com.tinyrpg.ui
 			TinyInputManager.getInstance().setTarget( this );
 		}
 		
-		
+		/**
+		 * Listener for SELECTED events in the move selection menu.
+		 * This is only thrown when showing the move selection menu as a result of using a PP-restoring item.
+		 */
 		private function onMoveSelectionChanged( event : TinyInputEvent ) : void
 		{
+			// Update the contents of the one-line text box to ask the player to select a move.
 			this.moveInfoBox.text = TinyBattleStrings.ASK_MOVE_RESTORE_PP;
 		}
 	}

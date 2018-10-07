@@ -37,7 +37,7 @@
 
 			<DIALOG>
 				<SPEAKER>OAK</SPEAKER>
-				<TEXT>This world is inhabitied by Dikémon. [halt]Some people keep them as pets. [halt]Others do [delay 8]different [delay 8]things [delay 8]with them[delay 4].[delay 4].[delay 4].   [end]</TEXT>
+				<TEXT>This world is inhabited by Dikémon. [halt]Some people keep them as pets. [halt]Others do [delay 8]different [delay 8]things [delay 8]with them[delay 4].[delay 4].[delay 4].   [end]</TEXT>
 			</DIALOG>
 
 			<!-- Player sprite appears -->
