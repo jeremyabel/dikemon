@@ -66,7 +66,7 @@ package com.tinyrpg.managers
 			// Fade out the current map, if there is one
 			if ( this.m_currentMap && !this.warpObjectInProgress.fromGameOver ) 
 			{
-				var fadeOutSpeed : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeSpeed : 6;
+				var fadeOutSpeed : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeOutSpeed : 6;
 				
 				this.fadeTransition.addEventListener( TinyGameEvent.FADE_OUT_COMPLETE, this.onWarpHideComplete );
 				this.fadeTransition.fadeOutToWhite( fadeOutSpeed );
@@ -153,7 +153,10 @@ package com.tinyrpg.managers
 				}
 				else 
 				{
-					this.fadeTransition.fadeInFromWhite( 6, 12 );
+					var fadeInSpeed : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeInSpeed : 6;
+					var fadeInDelay : uint = this.warpCommandInProgress ? this.warpCommandInProgress.fadeHangTime : 12;
+					
+					this.fadeTransition.fadeInFromWhite( fadeInSpeed, fadeInDelay );
 				}
 			}
 		}
@@ -267,8 +270,8 @@ package com.tinyrpg.managers
 			// If the completed event sequence's name matches the name of the pre-fade event sequence, then
 			// the completed event was the pre-fade sequence, so start the fade-in.
 			if ( this.warpCommandInProgress && event.param.eventName == this.warpCommandInProgress.preFadeSequenceName )
-			{
-				this.fadeTransition.fadeInFromWhite( this.warpCommandInProgress.fadeSpeed, this.warpCommandInProgress.fadeDelay );
+			{				
+				this.fadeTransition.fadeInFromWhite( this.warpCommandInProgress.fadeInSpeed, this.warpCommandInProgress.fadeHangTime );
 				return;
 			}
 			

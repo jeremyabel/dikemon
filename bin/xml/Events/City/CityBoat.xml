@@ -1,3 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_get_on_boat>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>not_ready_for_boat</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>Welcome back,[delay 8] are you ready to start your Dikémon adventure?!   [end]</TEXT>
+						</DIALOG>
+						<SUB_SEQUENCE>ask_if_ready</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>Whoa there partner![halt] Are you ready for the adventure of a lifetime?![halt] Make sure you're ready to go,[delay 8] you might be gone for a while!   [end]</TEXT> 
+						</DIALOG>
+						<SUB_SEQUENCE>ask_if_ready</SUB_SEQUENCE>
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_get_on_boat>
+
+	<EVENT_ask_if_ready>
+		<SEQUENCE>	
+			<YESNO_QUESTION>
+				<QUESTION>Get on the boat?</QUESTION>
+				<IF_YES>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>Great! Let me just check your ticket real quick.[delay 4].[delay 4].[delay 4]   [end]</TEXT>
+						</DIALOG>
+						<DELAY>60</DELAY>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>M[delay 4]m[delay 4]m[delay 4]mMM[delay 8]H[delay 2]M[delay 4]mm.[delay 4].[delay 4].[delay 4]</TEXT>
+						</DIALOG>
+						<DELAY>60</DELAY>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>.[delay 4].[delay 4].[delay 4].[halt]looks good, all aboard!   [end]</TEXT>
+						</DIALOG>
+						<DELAY>8</DELAY>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>DOWN</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>11</SPEED>
+						</WALK>
+						<HIDE_PLAYER></HIDE_PLAYER>
+						
+						<DELAY>24</DELAY>
+						<!-- TODO: Play boat horn sound -->
+						<DELAY>52</DELAY>
+						
+						<TWEEN_SPRITE relative="TRUE" sync="TRUE">
+							<TARGET>Boat</TARGET>
+							<DURATION>400</DURATION>
+							<X>-160</X>
+						</TWEEN_SPRITE>
+						
+						<DELAY>90</DELAY>
+						
+						<WARP>
+							<MAP_NAME>ISLANDBOATDOCK</MAP_NAME>
+							<WARP_NAME>warpBoatSailingCutscene</WARP_NAME>
+							<PREFADE>prefade_boat_sailing_cutscene</PREFADE>
+							<POSTFADE>boat_sailing_cutscene</POSTFADE>
+							<FADEOUT_SPEED>24</FADEOUT_SPEED>
+							<FADE_HANGTIME>48</FADE_HANGTIME>
+							<FADEIN_SPEED>24</FADEIN_SPEED>
+						</WARP>
+						
+						<END></END>	
+					</SEQUENCE>
+				</IF_YES>
+				<IF_NO>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Eager Guy</SPEAKER>
+							<TEXT>Ok, but hurry on back,[delay 8] the boat could leave any minute![halt] Boats are unpredictable!   [end]</TEXT>
+						</DIALOG>
+						<SET_FLAG>not_ready_for_boat</SET_FLAG>
+						<DELAY>8</DELAY>
+						<WALK>
+							<TARGET>PLAYER</TARGET>
+							<DIRECTION>UP</DIRECTION>
+							<TILES>1</TILES>
+							<SPEED>11</SPEED>
+						</WALK>
+						<END></END>
+					</SEQUENCE>
+				</IF_NO>
+			</YESNO_QUESTION>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_ask_if_ready>
+	
 </EVENTS>

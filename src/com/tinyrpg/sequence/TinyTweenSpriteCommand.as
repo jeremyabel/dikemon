@@ -5,7 +5,7 @@ package com.tinyrpg.sequence
 	import com.greensock.plugins.RoundPropsPlugin;
 	import com.greensock.plugins.TweenPlugin;
 	
-	import com.tinyrpg.display.TinyWalkSprite;
+	import com.tinyrpg.data.TinyFieldMapObjectSprite;
 	import com.tinyrpg.events.TinyFieldMapEvent;
 	import com.tinyrpg.events.TinySequenceEvent;
 	import com.tinyrpg.managers.TinyMapManager;
@@ -17,7 +17,7 @@ package com.tinyrpg.sequence
 	/**
 	 * @author jeremyabel
 	 */
-	public class TinyTweenNPCCommand extends EventDispatcher
+	public class TinyTweenSpriteCommand extends EventDispatcher
 	{
 		public var duration		: int;
 		public var delay 		: int;
@@ -28,16 +28,16 @@ package com.tinyrpg.sequence
 		public var relative		: Boolean = false;
 		public var sync		 	: Boolean = false;
 		public var targetName	: String;
-		public var targetSprite : TinyWalkSprite;
+		public var targetSprite : TinyFieldMapObjectSprite;
 		
-		public function TinyTweenNPCCommand() : void 
+		public function TinyTweenSpriteCommand() : void 
 		{ 
 			TweenPlugin.activate( [ RoundPropsPlugin ] );
 		}
 		
-		public static function newFromXML(xmlData : XML) : TinyTweenNPCCommand
+		public static function newFromXML(xmlData : XML) : TinyTweenSpriteCommand
 		{
-			var newCommand : TinyTweenNPCCommand = new TinyTweenNPCCommand();
+			var newCommand : TinyTweenSpriteCommand = new TinyTweenSpriteCommand();
 			
 			// Get target name
 			newCommand.targetName = xmlData.child( 'TARGET' ).toString().toUpperCase();
@@ -71,17 +71,9 @@ package com.tinyrpg.sequence
 		
 		public function execute() : void
 		{	
-			// Get target sprite from either the player or the current map
-			if ( this.targetName == 'PLAYER' ) 
-			{
-				TinyLogManager.log( 'execute: Player, sync: ' + this.sync, this );
-				this.targetSprite = TinyMapManager.getInstance().playerSprite;
-			} 
-			else 
-			{	
-				TinyLogManager.log( 'execute: ' + this.targetName + ', sync: ' + this.sync, this );
-				this.targetSprite = TinyMapManager.getInstance().currentMap.getNPCObjectByName( this.targetName ).walkSprite;
-			}
+			// Get the target sprite from the current map
+			TinyLogManager.log( 'execute: ' + this.targetName + ', sync: ' + this.sync, this );
+			this.targetSprite = TinyMapManager.getInstance().currentMap.getSpriteObjectByName( this.targetName );
 			
 			if ( !this.delay ) this.delay = 0;
 			if ( !this.yoyo ) this.yoyo = false;

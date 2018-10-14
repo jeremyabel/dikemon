@@ -34,6 +34,8 @@ package com.tinyrpg.sequence
 		public static const HIDE_PLAYER				: String = 'HIDE_PLAYER';
 		public static const SHOW_SPRITE				: String = 'SHOW_SPRITE';
 		public static const HIDE_SPRITE				: String = 'HIDE_SPRITE';
+		public static const TWEEN_SPRITE			: String = 'TWEEN_SPRITE';
+		public static const REMOVE_SPRITE			: String = 'REMOVE_SPRITE';
 		public static const SHOW_OBJECT	  			: String = 'SHOW_OBJECT';
 		public static const HIDE_OBJECT	  			: String = 'HIDE_OBJECT';
 		public static const CAMERA_MOVE				: String = 'CAMERA_MOVE';

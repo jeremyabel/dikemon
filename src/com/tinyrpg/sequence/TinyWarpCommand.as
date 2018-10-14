@@ -15,14 +15,12 @@ package com.tinyrpg.sequence
 		public var postFadeSequenceName		: String;
 		public var isPostFadeSequenceGlobal	: Boolean = false;
 		public var stepForward				: Boolean = false;
-		public var fadeSpeed				: uint;
-		public var fadeDelay				: uint; 
+		public var fadeOutSpeed				: uint = 6;
+		public var fadeHangTime				: uint = 12;
+		public var fadeInSpeed				: uint = 6;
 		public var warpObject 				: TinyFieldMapObjectWarp;
 			
-		public function TinyWarpCommand() : void
-		{
-			
-		}
+		public function TinyWarpCommand() : void { }
 		
 		public static function newFromXML( xmlData : XML ) : TinyWarpCommand
 		{
@@ -43,7 +41,7 @@ package com.tinyrpg.sequence
 			// Get whether the pre-fade event is global
 			if ( newCommand.preFadeSequenceName )
 			{
-				newCommand.isPreFadeSequenceGlobal = xmlData.child( 'PREFADE' ).attribute( 'global' ).toString.toUpperCase() == 'TRUE';
+				newCommand.isPreFadeSequenceGlobal = xmlData.child( 'PREFADE' ).attribute( 'global' ).toString().toUpperCase() == 'TRUE';
 			}
 			
 			// Get post-fade sequence name
@@ -52,12 +50,13 @@ package com.tinyrpg.sequence
 			// Get whether the post-fade event is global
 			if ( newCommand.postFadeSequenceName ) 
 			{ 
-				newCommand.isPostFadeSequenceGlobal = xmlData.child( 'POSTFADE' ).attribute( 'global' ).toString.toUpperCase() == 'TRUE';
+				newCommand.isPostFadeSequenceGlobal = xmlData.child( 'POSTFADE' ).attribute( 'global' ).toString().toUpperCase() == 'TRUE';
 			}
 			
 			// Get fade settings
-			newCommand.fadeSpeed = uint( xmlData.child( 'FADE_SPEED' ).toString() );
-			newCommand.fadeDelay = uint( xmlData.child( 'FADE_DELAY' ).toString() );
+			newCommand.fadeOutSpeed = uint( xmlData.child( 'FADEOUT_SPEED' ).toString() );
+			newCommand.fadeHangTime = uint( xmlData.child( 'FADE_HANGTIME' ).toString() );
+			newCommand.fadeInSpeed = uint( xmlData.child( 'FADEIN_SPEED' ).toString() );
 			
 			// Get step forward status
 			newCommand.stepForward = xmlData.attribute( 'stepforward' ).toString().toUpperCase() == 'TRUE';

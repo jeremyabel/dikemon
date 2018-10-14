@@ -170,6 +170,7 @@
 							<TILES>4</TILES>
 							<SPEED>15</SPEED>
 						</CAMERA_MOVE>
+						
 						<DELAY>14</DELAY>
 					
 						<SET_FACING>
@@ -205,7 +206,7 @@
 							<MAP_NAME>OFFICEFLOOR2</MAP_NAME>
 							<WARP_NAME>warpOfficeFloor3</WARP_NAME>
 							<FACING>DOWN</FACING>
-							<FADE_SPEED>11</FADE_SPEED>
+							<FADEOUT_SPEED>11</FADEOUT_SPEED>
 						</WARP>
 						
 						<END></END>

@@ -30,6 +30,9 @@ package com.tinyrpg.data
 		// Whether or not the sprite is visible when it is created
 		public var startVisible : Boolean = false;
 		
+		// Whether or not the sprite should be drawn on top of all other sprites, including the player
+		public var isOnTop : Boolean = false;
+		
 		public function TinyFieldMapObjectSprite() : void { }
 		
 		override public function dataReady() : void

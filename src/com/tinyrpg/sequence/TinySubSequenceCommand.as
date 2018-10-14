@@ -9,10 +9,7 @@ package com.tinyrpg.sequence
 	{
 		public var subSequence : TinyEventSequence;
 		
-		public function TinySubSequenceCommand() : void 
-		{
-			 
-		}
+		public function TinySubSequenceCommand() : void { }
 		
 		public static function newFromXML( xmlData : XML ) : TinySubSequenceCommand
 		{

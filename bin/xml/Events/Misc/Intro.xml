@@ -96,7 +96,7 @@
 				<MAP_NAME>TOWNHOUSEPLAYERFLOOR2</MAP_NAME>
 				<WARP_NAME>warpFromIntro</WARP_NAME>
 				<FACING>RIGHT</FACING>
-				<FADE_SPEED>16</FADE_SPEED>
+				<FADEOUT_SPEED>16</FADEOUT_SPEED>
 			</WARP>
 
 			<END></END>
@@ -262,5 +262,27 @@
 			<END></END>
 		</SEQUENCE>
 	</EVENT_rival_dialog>
+	
+	<!-- Not part of the intro, just using this map as a plain white background for showing a dialog box in-between map transitions. -->
+	<EVENT_boat_time_passing>	
+		<SEQUENCE>
+			<DELAY>24</DELAY>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>3 Days Later...   [end]</TEXT>
+			</DIALOG>
+			<DELAY>24</DELAY>
+			
+			<!-- All done, head back to the island boat dock map. -->
+			<WARP>
+				<MAP_NAME>ISLANDBOATDOCK</MAP_NAME>
+				<WARP_NAME>warpBoatArrivingCutscene</WARP_NAME>
+				<PREFADE>prefade_boat_arrivial_cutscene</PREFADE>
+				<POSTFADE>boat_arrival_cutscene</POSTFADE>
+				<FADEIN_SPEED>24</FADEIN_SPEED>
+			</WARP>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_boat_time_passing>
 
 </EVENTS>

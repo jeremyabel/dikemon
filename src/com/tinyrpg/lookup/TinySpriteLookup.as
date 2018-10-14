@@ -366,7 +366,10 @@ package com.tinyrpg.lookup
 			
 			switch ( name.toUpperCase() ) 
 			{
-				case 'BOAT':	newSprite = new BoatObject; break;
+				case 'BOAT':
+				case 'BOAT_DOCKED':
+				case 'BOAT_ARRIVING':
+				case 'BOAT_SAILING': 	newSprite = new BoatObject; break;
 			}
 			
 			return newSprite;

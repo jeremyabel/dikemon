@@ -1,3 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>boat_arrival_complete</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<REMOVE_WARP>warpBoatArrivingCutscene</REMOVE_WARP>
+						<REMOVE_WARP>warpBoatSailingCutscene</REMOVE_WARP>
+						<REMOVE_SPRITE>Boat_Arriving</REMOVE_SPRITE>
+						<REMOVE_SPRITE>Boat_Sailing</REMOVE_SPRITE>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+	
+	<EVENT_prefade_boat_sailing_cutscene>
+		<SEQUENCE>
+			<REMOVE_SPRITE>Boat_Arriving</REMOVE_SPRITE>
+			<REMOVE_SPRITE>Boat_Docked</REMOVE_SPRITE>
+			<HIDE_PLAYER></HIDE_PLAYER>
+			<TWEEN_SPRITE relative="TRUE" sync="TRUE">
+				<TARGET>Boat_Sailing</TARGET>
+				<DURATION>330</DURATION>
+				<X>-450</X>
+			</TWEEN_SPRITE>
+			<CAMERA_MOVE sync="TRUE">
+				<DIRECTION>LEFT</DIRECTION>
+				<TILES>16</TILES>
+				<SPEED>20</SPEED>
+			</CAMERA_MOVE>
+			<END></END>
+		</SEQUENCE>	
+	</EVENT_prefade_boat_sailing_cutscene>
+	
+	<EVENT_boat_sailing_cutscene restoreControl="FALSE">
+		<SEQUENCE>
+			<DELAY>240</DELAY>
+			
+			<!-- Warp to the intro map so we have a plain white background for showing the "3 Days Later..." dialog -->
+			<WARP>
+				<MAP_NAME>INTRO</MAP_NAME>
+				<WARP_NAME>warpIntro</WARP_NAME>
+				<POSTFADE>boat_time_passing</POSTFADE>
+				<FADEOUT_SPEED>24</FADEOUT_SPEED>
+				<FADE_HANGTIME>24</FADE_HANGTIME>
+			</WARP>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_boat_sailing_cutscene>
+	
+	<EVENT_prefade_boat_arrivial_cutscene>
+		<SEQUENCE>
+			<REMOVE_WARP>warpBoatArrivingCutscene</REMOVE_WARP>
+			<REMOVE_SPRITE>Boat_Sailing</REMOVE_SPRITE>
+			<REMOVE_SPRITE>Boat_Docked</REMOVE_SPRITE>
+			<HIDE_PLAYER></HIDE_PLAYER>
+			<TWEEN_SPRITE relative="TRUE" sync="TRUE">
+				<TARGET>Boat_Arriving</TARGET>
+				<DURATION>128</DURATION>
+				<X>-128</X>
+			</TWEEN_SPRITE>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_prefade_boat_arrivial_cutscene>
+	
+	<EVENT_boat_arrival_cutscene>
+		<SEQUENCE>
+			<DELAY>110</DELAY>
+			<SHOW_PLAYER></SHOW_PLAYER>
+			<WALK>
+				<TARGET>PLAYER</TARGET>
+				<DIRECTION>UP</DIRECTION>
+				<TILES>2</TILES>
+				<SPEED>11</SPEED>
+			</WALK>
+			<SET_FLAG>boat_arrival_complete</SET_FLAG>
+			<END></END>
+		</SEQUENCE>	
+	</EVENT_boat_arrival_cutscene>
+	
+	<EVENT_check_boat_docked>
+		<SEQUENCE>
+			<DIALOG>
+				<SPEAKER></SPEAKER>
+				<TEXT>The door was locked behind you![halt] Looks like you're stuck here[delay 2].[delay 2].[delay 2].   [end]</TEXT>
+			</DIALOG>
+		</SEQUENCE>
+	</EVENT_check_boat_docked>
+	
 </EVENTS>

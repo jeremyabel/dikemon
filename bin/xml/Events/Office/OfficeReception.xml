@@ -280,7 +280,7 @@
 				<MAP_NAME>OFFICEFLOOR2</MAP_NAME>
 				<WARP_NAME>warpOfficeReception</WARP_NAME>
 				<FACING>DOWN</FACING>
-				<FADE_SPEED>10</FADE_SPEED>
+				<FADEOUT_SPEED>10</FADEOUT_SPEED>
 			</WARP>
 			
 			<!-- Continue walking one step up during the warp fade-out -->

@@ -34,6 +34,7 @@
 	<FLAG>finished_guide_guy_tutorial</FLAG>
 	<FLAG>refused_guide_guy_tutorial</FLAG>
 	<FLAG>gave_boat_ticket</FLAG>
+	<FLAG>not_ready_for_boat</FLAG>
 	
 	<!-- Office -->
 	<FLAG>checked_in_with_receptionist</FLAG>
@@ -41,5 +42,8 @@
 	<FLAG>defeated_steve_pizazz</FLAG>
 	<FLAG>defeated_wally</FLAG>
 	<FLAG>defeated_bobsy_twins</FLAG>
+	
+	<!-- Island: Boat Dock -->
+	<FLAG>boat_arrival_complete</FLAG>
 
 </FLAGS>
