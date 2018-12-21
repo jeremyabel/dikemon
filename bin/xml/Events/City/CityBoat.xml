@@ -20,7 +20,7 @@
 					<SEQUENCE>
 						<DIALOG>
 							<SPEAKER>Eager Guy</SPEAKER>
-							<TEXT>Whoa there partner![halt] Are you ready for the adventure of a lifetime?![halt] Make sure you're ready to go,[delay 8] you might be gone for a while!   [end]</TEXT> 
+							<TEXT>Whoa there partner![halt] Are you ready for the Dikémon adventure of a lifetime?![halt] Make sure you're ready to go,[delay 8] you might be gone for a while!   [end]</TEXT> 
 						</DIALOG>
 						<SUB_SEQUENCE>ask_if_ready</SUB_SEQUENCE>
 						<END></END>

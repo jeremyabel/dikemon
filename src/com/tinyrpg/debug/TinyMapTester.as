@@ -36,10 +36,10 @@ package com.tinyrpg.debug
 			TinyEventFlagLookup.getInstance().getFlagByName( 'finished_intro_cutscene' ).value = true;
 			
 			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
-			testWarpObject.targetMapName = 'CITYBOAT';
-			testWarpObject.targetWarpName = 'warpCity2';
+			testWarpObject.targetMapName = 'ISLANDBOATEXIT';
+			testWarpObject.targetWarpName = 'warpBoatDock1';
 			testWarpObject.stepForwardAfterWarp = true;
-			testWarpObject.destinationFacing = 'DOWN';
+			testWarpObject.destinationFacing = 'UP';
 			
 //			var testWarpObject : TinyFieldMapObjectWarp = new TinyFieldMapObjectWarp();
 //			testWarpObject.targetMapName = 'Route29';

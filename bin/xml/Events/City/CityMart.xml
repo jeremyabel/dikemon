@@ -7,6 +7,7 @@
 				<WELCOME>Welcome! [delay 4]How may I help you?   [end]</WELCOME>
 				<ANYTHING_ELSE>Can I do anything else for you?   [end]</ANYTHING_ELSE>
 				<ITEMS>
+					<ITEM>Pokeball</ITEM>
 					<ITEM>Potion</ITEM>
 					<ITEM>Antidote</ITEM>
 					<ITEM>Paralyze Heal</ITEM>

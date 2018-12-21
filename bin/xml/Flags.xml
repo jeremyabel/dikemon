@@ -45,5 +45,8 @@
 	
 	<!-- Island: Boat Dock -->
 	<FLAG>boat_arrival_complete</FLAG>
+	
+	<!-- Island: Boat Exit -->
+	<FLAG>defeated_disheveled_guy</FLAG>
 
 </FLAGS>

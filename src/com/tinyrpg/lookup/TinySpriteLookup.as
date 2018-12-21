@@ -351,6 +351,7 @@ package com.tinyrpg.lookup
 				case 'GARY MONTANA': 	newSprite = new TrainerGaryMontana; break;
 				case 'STEVE PIZAZZ':	newSprite = new TrainerStevePizazz; break;
 				case 'WALLY':			newSprite = new TrainerWally; break;
+				case 'DISHEVELED GUY':	newSprite = new TrainerDisheveledGuy; break;
 				
 				default: 				newSprite = new TrainerPlayer; break;
 			}

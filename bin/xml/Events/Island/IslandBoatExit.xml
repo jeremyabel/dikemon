@@ -1,3 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EVENTS>
+
+	<EVENT_map_setup>
+		<SEQUENCE>
+		
+			<!-- Reposition the Disheveled Guy if the player has beaten them already -->
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_disheveled_guy</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+	
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE><SEQUENCE><END></END></SEQUENCE></IF_FALSE>
+			</CONDITIONAL>
+			
+			<END></END>
+		</SEQUENCE>
+	</EVENT_map_setup>
+
+	<EVENT_talk_disheveled_guy>
+		<SEQUENCE>
+			<CONDITIONAL>
+				<TYPE>FLAG</TYPE>
+				<VALUE>defeated_disheveled_guy</VALUE>
+				<IF_TRUE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Disheveled Guy</SPEAKER>
+							<TEXT>.[delay 6].[delay 6].  [end]</TEXT>
+						</DIALOG>
+						<END></END>
+					</SEQUENCE>
+				</IF_TRUE>
+				<IF_FALSE>
+					<SEQUENCE>
+						<DIALOG>
+							<SPEAKER>Disheveled Guy</SPEAKER>
+							<TEXT>.[delay 6].[delay 6].  [end]</TEXT>
+						</DIALOG>
+						<DELAY>10</DELAY>	
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uh,[delay 4] hi![halt] are you on vacation too?   [end]</TEXT>
+						</DIALOG>
+						<DELAY>10</DELAY>
+						<DIALOG>
+							<SPEAKER>Disheveled Guy</SPEAKER>
+							<TEXT>.[delay 6].[delay 6].  [end]</TEXT>
+						</DIALOG>
+						<DELAY>8</DELAY>
+						<DIALOG>
+							<SPEAKER>PLAYER</SPEAKER>
+							<TEXT>Uh,[delay 4] maybe a few too many boat drinks?  [end]</TEXT>
+						</DIALOG>
+						<DELAY>25</DELAY>
+						<SET_FACING>
+							<TARGET>Disheveled Guy</TARGET>
+							<FACING>DOWN</FACING>
+						</SET_FACING>
+						<SHOW_EMOTE>
+							<TARGET>Disheveled Guy</TARGET>
+							<EMOTE>EXCLAIM</EMOTE>
+						</SHOW_EMOTE>
+						<DELAY>15</DELAY>
+						<HIDE_EMOTE>
+							<TARGET>Disheveled Guy</TARGET>
+						</HIDE_EMOTE>
+						
+						<TRAINER_BATTLE>
+							<TRAINER_NAME>Disheveled Guy</TRAINER_NAME>
+							<TRAINER_MONEY>96</TRAINER_MONEY>
+							<TRAINER_AI>ai_basic</TRAINER_AI>
+							<TRAINER_MONS>
+								<MON><NAME>Box</NAME><LEVEL>2</LEVEL></MON>
+							</TRAINER_MONS>
+							<IF_WIN>
+								<SEQUENCE>
+									
+									<SET_FLAG>defeated_disheveled_guy</SET_FLAG>
+									
+									<!-- Disheveled Guy runs and hides in the bushes -->
+									<DELAY>4</DELAY>
+									<WALK>
+										<TARGET>Disheveled Guy</TARGET>
+										<DIRECTION>UP</DIRECTION>
+										<TILES>1</TILES>
+										<SPEED>5</SPEED>
+									</WALK>
+									<WALK>
+										<TARGET>Disheveled Guy</TARGET>
+										<DIRECTION>LEFT</DIRECTION>
+										<TILES>7</TILES>
+										<SPEED>5</SPEED>
+									</WALK>
+									
+									<SHOW_EMOTE>
+										<TARGET>PLAYER</TARGET>
+										<EMOTE>Question</EMOTE>
+									</SHOW_EMOTE>
+									<DIALOG>
+										<SPEAKER>PLAYER</SPEAKER>
+										<TEXT>That was weird!   [end]</TEXT>
+									</DIALOG>
+									<HIDE_EMOTE>
+										<TARGET>PLAYER</TARGET>
+									</HIDE_EMOTE>
+									
+									<END></END>
+								</SEQUENCE>
+							</IF_WIN>
+							<IF_LOSE>
+								<SEQUENCE><END></END></SEQUENCE>
+							</IF_LOSE>
+						</TRAINER_BATTLE>
+						
+						<END></END>
+					</SEQUENCE>
+				</IF_FALSE>
+			</CONDITIONAL>
+			<END></END>
+		</SEQUENCE>
+	</EVENT_talk_disheveled_guy>
+	
 </EVENTS>

@@ -104,7 +104,7 @@ package com.tinyrpg.lookup
 			
 			if ( monXML ) return new TinyMon( monXML, level, evolved );
 			return null;
-		}
+		} 
 		
 		/**
 		 * Returns the mon with a given human name.
@@ -121,7 +121,7 @@ package com.tinyrpg.lookup
 			
 			if ( monXML ) return new TinyMon( monXML, level, evolved );
 			return null;
-		}
+		}	
 		
 		/**
 		 * Returns the singleton instance.
